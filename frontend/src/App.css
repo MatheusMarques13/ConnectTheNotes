@@ -572,20 +572,19 @@ body {
    START GAME
    ================================ */
 
-.start-section {
-  margin-top: 36px;
-}
-
 .start-game-btn {
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 3px;
   padding: 14px 52px;
-  border: 1px solid var(--diamond-accent);
+  border: 1px solid rgba(100, 116, 139, 0.2);
   border-radius: 4px;
-  cursor: pointer;
+  cursor: not-allowed;
   transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.4s;
   text-transform: uppercase;
+  background: transparent;
+  color: var(--text-muted);
+  margin-top: 24px;
 }
 
 .start-game-btn.ready {
