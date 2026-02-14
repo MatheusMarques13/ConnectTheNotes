@@ -6,6 +6,7 @@ import {
   findConnection,
   getArtistById,
 } from '../services/api';
+import { getAvatarUrl, getSmallAvatarUrl, getLargeAvatarUrl, getGenreColor } from '../utils/avatars';
 
 const typeIcons = {
   song: <Music size={14} />,
@@ -21,6 +22,24 @@ const typeLabels = {
   feature: 'Feature',
 };
 
+const ArtistMiniAvatar = ({ name, size = 28, className = '' }) => {
+  const [loaded, setLoaded] = useState(false);
+  const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  return (
+    <div className={`mini-avatar ${className}`} style={{ width: size, height: size }}>
+      <img
+        src={getSmallAvatarUrl(name)}
+        alt={name}
+        className={`mini-avatar-img ${loaded ? 'loaded' : ''}`}
+        onLoad={() => setLoaded(true)}
+        onError={(e) => { e.target.style.display = 'none'; }}
+        style={{ width: size, height: size }}
+      />
+      {!loaded && <span className="mini-avatar-fallback" style={{ fontSize: size * 0.35 }}>{initials}</span>}
+    </div>
+  );
+};
+
 const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
   const [chain, setChain] = useState([{ artist: artist1, collab: null }]);
   const [selectedCollab, setSelectedCollab] = useState(null);
@@ -29,22 +48,18 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
   const [hint, setHint] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Async data
   const [availableCollabs, setAvailableCollabs] = useState([]);
   const [connectedArtists, setConnectedArtists] = useState([]);
   const [collabArtists, setCollabArtists] = useState([]);
   const [loading, setLoading] = useState(false);
-  // Cache for artist lookups
   const [artistCache, setArtistCache] = useState({});
 
   const currentArtist = chain[chain.length - 1].artist;
 
-  // Cache an artist
   const cacheArtist = useCallback((artist) => {
     setArtistCache(prev => ({ ...prev, [artist.id]: artist }));
   }, []);
 
-  // Fetch collaborations when current artist changes
   useEffect(() => {
     let cancelled = false;
     const fetchData = async () => {
@@ -56,7 +71,6 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
       if (!cancelled) {
         setAvailableCollabs(collabs);
         setConnectedArtists(connected);
-        // Cache connected artists
         connected.forEach(a => cacheArtist(a));
         setLoading(false);
       }
@@ -65,7 +79,6 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
     return () => { cancelled = true; };
   }, [currentArtist.id, cacheArtist]);
 
-  // Fetch hint when needed
   useEffect(() => {
     if (!showHints || !showHint) {
       setHint(null);
@@ -76,7 +89,6 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
       const path = await findConnection(currentArtist.id, artist2.id);
       if (!cancelled && path && path.length > 0) {
         const nextId = path[0].toArtist;
-        // Look up in cache or connected artists
         const cached = artistCache[nextId];
         if (cached) {
           setHint(cached);
@@ -93,7 +105,6 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
     return () => { cancelled = true; };
   }, [currentArtist.id, artist2.id, showHints, showHint, artistCache, cacheArtist]);
 
-  // When a collab is selected, compute which artists it leads to
   useEffect(() => {
     if (!selectedCollab) {
       setCollabArtists([]);
@@ -150,10 +161,6 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
     ? collabArtists.filter(a => a.name.toLowerCase().includes(searchQuery.toLowerCase()))
     : collabArtists;
 
-  const getInitials = (name) => {
-    return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
-  };
-
   if (gameWon) {
     return (
       <div className="game-board">
@@ -173,9 +180,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
             {chain.map((step, i) => (
               <React.Fragment key={i}>
                 <div className="won-chain-artist">
-                  <div className="won-avatar">
-                    <span>{getInitials(step.artist.name)}</span>
-                  </div>
+                  <ArtistMiniAvatar name={step.artist.name} size={56} className="won-avatar-wrap" />
                   <span className="won-artist-name">{step.artist.name}</span>
                 </div>
                 {i < chain.length - 1 && (
@@ -207,16 +212,12 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
         </button>
         <div className="game-goal">
           <div className="goal-artist">
-            <div className="goal-avatar small">
-              <span>{getInitials(artist1.name)}</span>
-            </div>
+            <ArtistMiniAvatar name={artist1.name} size={28} />
             <span>{artist1.name}</span>
           </div>
           <ArrowRight size={16} className="goal-arrow" />
           <div className="goal-artist">
-            <div className="goal-avatar small">
-              <span>{getInitials(artist2.name)}</span>
-            </div>
+            <ArtistMiniAvatar name={artist2.name} size={28} />
             <span>{artist2.name}</span>
           </div>
         </div>
@@ -245,6 +246,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
           {chain.map((step, i) => (
             <React.Fragment key={i}>
               <div className={`chain-node ${i === chain.length - 1 ? 'current' : 'visited'}`}>
+                <ArtistMiniAvatar name={step.artist.name} size={20} />
                 <span>{step.artist.name}</span>
               </div>
               {i < chain.length - 1 && (
@@ -267,8 +269,13 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
 
       {/* Current artist display */}
       <div className="current-artist-section">
-        <div className="current-avatar-large">
-          <span>{getInitials(currentArtist.name)}</span>
+        <div className="current-avatar-large" style={{ borderColor: getGenreColor(currentArtist.genre) }}>
+          <img
+            src={getLargeAvatarUrl(currentArtist.name)}
+            alt={currentArtist.name}
+            className="current-avatar-img"
+            onError={(e) => { e.target.style.display = 'none'; }}
+          />
         </div>
         <h2 className="current-artist-name">{currentArtist.name}</h2>
         <p className="current-artist-genre">{currentArtist.genre}</p>
@@ -296,9 +303,16 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
                     className="collab-card"
                     onClick={() => handleSelectCollab(collab)}
                   >
-                    <div className="collab-type-badge">
-                      {typeIcons[collab.type]}
-                      <span>{typeLabels[collab.type] || collab.type}</span>
+                    <div className="collab-card-top">
+                      <div className="collab-type-badge">
+                        {typeIcons[collab.type]}
+                        <span>{typeLabels[collab.type] || collab.type}</span>
+                      </div>
+                      <div className="collab-artists-avatars">
+                        {otherArtists.slice(0, 2).map(a => (
+                          <ArtistMiniAvatar key={a.id} name={a.name} size={24} className="collab-mini-av" />
+                        ))}
+                      </div>
                     </div>
                     <div className="collab-title">{collab.title}</div>
                     <div className="collab-year">{collab.year}</div>
@@ -340,9 +354,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
                 className={`next-artist-card ${artist.id === artist2.id ? 'target' : ''} ${showHint && hint && artist.id === hint.id ? 'hinted' : ''}`}
                 onClick={() => handleSelectNextArtist(artist)}
               >
-                <div className="next-avatar">
-                  <span>{getInitials(artist.name)}</span>
-                </div>
+                <ArtistMiniAvatar name={artist.name} size={40} />
                 <div className="next-artist-info">
                   <span className="next-artist-name">{artist.name}</span>
                   <span className="next-artist-genre">{artist.genre}</span>
