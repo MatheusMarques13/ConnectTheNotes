@@ -1,15 +1,16 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter, Query, HTTPException
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import logging
 from pathlib import Path
-from pydantic import BaseModel, Field, ConfigDict
-from typing import List
+from pydantic import BaseModel, Field
+from typing import List, Optional
 import uuid
-from datetime import datetime, timezone
-
+import random
+from datetime import datetime
+from collections import deque
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -17,67 +18,185 @@ load_dotenv(ROOT_DIR / '.env')
 # MongoDB connection
 mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+db = client[os.environ.get('DB_NAME', 'connect_the_notes')]
 
-# Create the main app without a prefix
 app = FastAPI()
-
-# Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
 
+# ── Models ──────────────────────────────────────────────
 
-# Define Models
-class StatusCheck(BaseModel):
-    model_config = ConfigDict(extra="ignore")  # Ignore MongoDB's _id field
-    
+class Artist(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
-    client_name: str
-    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    name: str
+    genre: str
+    imageUrl: str = ""
 
-class StatusCheckCreate(BaseModel):
-    client_name: str
+class ArtistCreate(BaseModel):
+    name: str
+    genre: str
+    imageUrl: str = ""
 
-# Add your routes to the router instead of directly to app
+class Collaboration(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    artistIds: List[str]
+    title: str
+    type: str  # song, album, live, feature
+    year: int
+
+class CollaborationCreate(BaseModel):
+    artistIds: List[str]
+    title: str
+    type: str
+    year: int
+
+class PathStep(BaseModel):
+    collab: dict
+    fromArtist: str
+    toArtist: str
+
+class FindPathRequest(BaseModel):
+    startId: str
+    endId: str
+
+# ── Routes ──────────────────────────────────────────────
+
 @api_router.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Connect the Notes API"}
 
-@api_router.post("/status", response_model=StatusCheck)
-async def create_status_check(input: StatusCheckCreate):
-    status_dict = input.model_dump()
-    status_obj = StatusCheck(**status_dict)
-    
-    # Convert to dict and serialize datetime to ISO string for MongoDB
-    doc = status_obj.model_dump()
-    doc['timestamp'] = doc['timestamp'].isoformat()
-    
-    _ = await db.status_checks.insert_one(doc)
-    return status_obj
+@api_router.get("/artists")
+async def get_artists(search: Optional[str] = None, limit: int = Query(default=10, le=50)):
+    if search and len(search) >= 1:
+        cursor = db.artists.find(
+            {"name": {"$regex": search, "$options": "i"}},
+            {"_id": 0}
+        ).limit(limit)
+    else:
+        cursor = db.artists.find({}, {"_id": 0}).limit(limit)
+    artists = await cursor.to_list(limit)
+    return {"artists": artists}
 
-@api_router.get("/status", response_model=List[StatusCheck])
-async def get_status_checks():
-    # Exclude MongoDB's _id field from the query results
-    status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
-    
-    # Convert ISO string timestamps back to datetime objects
-    for check in status_checks:
-        if isinstance(check['timestamp'], str):
-            check['timestamp'] = datetime.fromisoformat(check['timestamp'])
-    
-    return status_checks
+@api_router.get("/artists/random")
+async def get_random_artist(excludeIds: Optional[str] = None):
+    pipeline = []
+    if excludeIds:
+        exclude_list = [e.strip() for e in excludeIds.split(",") if e.strip()]
+        if exclude_list:
+            pipeline.append({"$match": {"id": {"$nin": exclude_list}}})
+    pipeline.append({"$sample": {"size": 1}})
+    pipeline.append({"$project": {"_id": 0}})
+    results = await db.artists.aggregate(pipeline).to_list(1)
+    if not results:
+        raise HTTPException(status_code=404, detail="No artists available")
+    return {"artist": results[0]}
 
-# Include the router in the main app
+@api_router.get("/artists/{artist_id}")
+async def get_artist(artist_id: str):
+    artist = await db.artists.find_one({"id": artist_id}, {"_id": 0})
+    if not artist:
+        raise HTTPException(status_code=404, detail="Artist not found")
+    return artist
+
+@api_router.get("/artists/{artist_id}/collaborations")
+async def get_artist_collaborations(artist_id: str):
+    collabs = await db.collaborations.find(
+        {"artistIds": artist_id},
+        {"_id": 0}
+    ).to_list(500)
+    return {"collaborations": collabs}
+
+@api_router.get("/artists/{artist_id}/connected")
+async def get_connected_artists(artist_id: str):
+    collabs = await db.collaborations.find(
+        {"artistIds": artist_id},
+        {"_id": 0}
+    ).to_list(500)
+    
+    connected_ids = set()
+    for c in collabs:
+        for aid in c["artistIds"]:
+            if aid != artist_id:
+                connected_ids.add(aid)
+    
+    if not connected_ids:
+        return {"artists": []}
+    
+    artists = await db.artists.find(
+        {"id": {"$in": list(connected_ids)}},
+        {"_id": 0}
+    ).to_list(200)
+    return {"artists": artists}
+
+@api_router.get("/collaborations/between/{id1}/{id2}")
+async def get_collaborations_between(id1: str, id2: str):
+    collabs = await db.collaborations.find(
+        {"artistIds": {"$all": [id1, id2]}},
+        {"_id": 0}
+    ).to_list(100)
+    return {"collaborations": collabs}
+
+@api_router.post("/game/find-path")
+async def find_path(request: FindPathRequest):
+    start_id = request.startId
+    end_id = request.endId
+    
+    if start_id == end_id:
+        return {"path": []}
+    
+    # BFS
+    visited = {start_id}
+    queue = deque([(start_id, [])])
+    
+    while queue:
+        current_id, path = queue.popleft()
+        
+        collabs = await db.collaborations.find(
+            {"artistIds": current_id},
+            {"_id": 0}
+        ).to_list(500)
+        
+        for collab in collabs:
+            for next_id in collab["artistIds"]:
+                if next_id == current_id:
+                    continue
+                if next_id == end_id:
+                    return {
+                        "path": path + [{
+                            "collab": collab,
+                            "fromArtist": current_id,
+                            "toArtist": next_id
+                        }]
+                    }
+                if next_id not in visited:
+                    visited.add(next_id)
+                    queue.append((next_id, path + [{
+                        "collab": collab,
+                        "fromArtist": current_id,
+                        "toArtist": next_id
+                    }]))
+    
+    return {"path": None}
+
+@api_router.get("/stats")
+async def get_stats():
+    artist_count = await db.artists.count_documents({})
+    collab_count = await db.collaborations.count_documents({})
+    return {
+        "totalArtists": artist_count,
+        "totalCollaborations": collab_count
+    }
+
+# Include router
 app.include_router(api_router)
 
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
-    allow_origins=os.environ.get('CORS_ORIGINS', '*').split(','),
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
