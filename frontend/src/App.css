@@ -607,6 +607,18 @@ body {
   cursor: not-allowed;
 }
 
+/* Footer Stats */
+.footer-stats {
+  margin-top: auto;
+  padding: 24px 0;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
 /* ================================
    FOOTER
    ================================ */
