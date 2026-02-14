@@ -98,6 +98,128 @@
 
 
 
+
+user_problem_statement: "Connect the Notes - Musical artist connection trivia game. Users pick two artists and connect them through collaborations (songs, albums, live performances). 459 artists, 834 collaborations. Backend: FastAPI + MongoDB. Frontend: React."
+
+backend:
+  - task: "Search artists by name"
+    implemented: true
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "GET /api/artists?search=query&limit=10 - searches artists by regex"
+
+  - task: "Get random artist"
+    implemented: true
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "GET /api/artists/random?excludeIds=id1,id2 - returns random artist excluding given IDs"
+
+  - task: "Get artist by ID"
+    implemented: true
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "GET /api/artists/{id} - returns single artist"
+
+  - task: "Get collaborations for artist"
+    implemented: true
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "GET /api/artists/{id}/collaborations - returns all collabs for an artist"
+
+  - task: "Get connected artists"
+    implemented: true
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "GET /api/artists/{id}/connected - returns all artists connected to given artist"
+
+  - task: "Get collaborations between two artists"
+    implemented: true
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "GET /api/collaborations/between/{id1}/{id2}"
+
+  - task: "Find path between artists (BFS)"
+    implemented: true
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "POST /api/game/find-path with {startId, endId} - BFS pathfinding"
+
+  - task: "Get stats"
+    implemented: true
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "GET /api/stats - returns artist and collab counts"
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Search artists by name"
+    - "Get random artist"
+    - "Get collaborations for artist"
+    - "Get connected artists"
+    - "Find path between artists (BFS)"
+    - "Get stats"
+  stuck_tasks: []
+  test_all: true
+  test_priority: "high_first"
+
+agent_communication:
+    - agent: "main"
+      message: "All backend APIs implemented with FastAPI + MongoDB. Database seeded with 459 artists and 834 collaborations. Please test all endpoints. Backend runs on port 8001. All routes prefixed with /api."
+
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
