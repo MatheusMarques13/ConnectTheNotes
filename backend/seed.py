@@ -1630,6 +1630,538 @@ COLLABS_RAW = [
     (14, 590, "I Had Some Help", "song", 2024),
     (48, 598, "Rainbow (Live)", "live", 2018),
     (8, 593, "I Can Fix Him (Live)", "live", 2024),
+
+    # ═══════════════════════════════════════════════════════════════
+    # BRAZILIAN ARTISTS COLLABORATIONS
+    # ═══════════════════════════════════════════════════════════════
+
+    # Anitta - International Queen
+    (538, 104, "Me Gusta", "song", 2020),
+    (538, 22, "Girl from Rio (Remix)", "song", 2021),
+    (538, 48, "Envolver (Live)", "live", 2022),
+    (538, 15, "Anitta x Dua Lipa (Live)", "live", 2022),
+    (538, 700, "Onda Diferente", "song", 2019),
+    (538, 701, "Terremoto", "song", 2019),
+    (538, 702, "Vai Malandra", "song", 2017),
+    (538, 703, "Bang", "song", 2015),
+    (538, 704, "Is That for Me", "song", 2017),
+    (538, 705, "Downtown", "song", 2017),
+    (538, 706, "Anitta x Ludmilla Medley", "live", 2019),
+    (538, 707, "Favela Chegou", "song", 2019),
+    (538, 708, "Perdendo a Mão", "song", 2018),
+    (538, 709, "Menor é o Poder", "song", 2019),
+    (538, 710, "Funk Generation", "album", 2024),
+    (538, 98, "Bellakeo", "song", 2023),
+    (538, 16, "Lobby", "song", 2023),
+
+    # Ludmilla
+    (706, 700, "Favela Chegou", "song", 2019),
+    (706, 702, "Verdinha", "song", 2020),
+    (706, 711, "Rainha da Favela", "song", 2019),
+    (706, 712, "Numanice", "album", 2020),
+    (706, 713, "Jogando Sujo", "song", 2022),
+    (706, 708, "Poderosa", "song", 2019),
+    (706, 714, "Sou Má", "song", 2015),
+    (706, 715, "Hoje", "song", 2016),
+    (706, 166, "Boa Menina (Live)", "live", 2022),
+
+    # IZA
+    (711, 706, "Magia (Live)", "live", 2022),
+    (711, 538, "Rebolar", "song", 2018),
+    (711, 716, "Divino", "song", 2019),
+    (711, 717, "Minha Vez", "song", 2018),
+    (711, 718, "Pesadão", "song", 2017),
+    (711, 719, "Ginga", "song", 2018),
+    (711, 720, "Dona de Mim", "song", 2018),
+    (711, 164, "Burna Boy x IZA (Live)", "live", 2023),
+
+    # Pabllo Vittar
+    (700, 183, "Flash Pose", "song", 2019),
+    (700, 538, "Sua Cara", "song", 2018),
+    (700, 706, "Onda Diferente", "song", 2019),
+    (700, 721, "K.O.", "song", 2017),
+    (700, 722, "Paraíso", "song", 2021),
+    (700, 723, "Amor de Que (Remix)", "song", 2018),
+    (700, 724, "Todo Dia", "song", 2018),
+    (700, 103, "Bandida (Live)", "live", 2019),
+    (700, 431, "I Got It (Live)", "live", 2022),
+
+    # MC Kevinho
+    (702, 538, "Vai Malandra", "song", 2017),
+    (702, 707, "Olha a Explosão", "song", 2017),
+    (702, 703, "Papum", "song", 2017),
+    (702, 99, "Kevinho x J Balvin (Live)", "live", 2019),
+    (702, 725, "Ta Tum Tum", "song", 2017),
+
+    # Alok (DJ/Producer)
+    (704, 538, "Is That for Me", "song", 2017),
+    (704, 726, "Hear Me Now", "song", 2016),
+    (704, 727, "Never Let Me Go", "song", 2017),
+    (704, 728, "All the Lies", "song", 2019),
+    (704, 173, "Piece of Your Heart (Live)", "live", 2019),
+    (704, 729, "Love Is a Temple", "song", 2020),
+    (704, 730, "Table for 2", "song", 2023),
+    (704, 69, "Don't Say Goodbye", "song", 2021),
+    (704, 512, "Alok x Fred again..", "live", 2023),
+
+    # Vintage Culture
+    (726, 704, "Hear Me Now", "song", 2016),
+    (726, 512, "Festival Set (Live)", "live", 2023),
+    (726, 69, "Vintage Culture x David Guetta (Live)", "live", 2022),
+    (726, 731, "Deep Inside", "song", 2022),
+    (726, 732, "Crying for You", "song", 2022),
+    (726, 172, "Tomorrowland Set (Live)", "live", 2023),
+
+    # Gloria Groove
+    (713, 706, "Jogando Sujo", "song", 2022),
+    (713, 538, "YoYo (Live)", "live", 2022),
+    (713, 700, "Gloria x Pabllo (Live)", "live", 2023),
+    (713, 733, "A Tua Voz", "song", 2021),
+    (713, 734, "Coisa Boa", "song", 2022),
+    (713, 735, "Bonekinha", "song", 2021),
+    (713, 48, "Flowers (Live Cover)", "live", 2023),
+
+    # Jão
+    (733, 713, "A Tua Voz", "song", 2021),
+    (733, 538, "Jão x Anitta (Live)", "live", 2022),
+    (733, 736, "Idiota", "song", 2020),
+    (733, 737, "Meninos e Meninas", "song", 2021),
+    (733, 738, "Coringa", "song", 2021),
+    (733, 739, "Me Beija Com Raiva", "song", 2022),
+    (733, 65, "Jão x Olivia Rodrigo (Live)", "live", 2023),
+
+    # Luísa Sonza
+    (714, 706, "Sou Má", "song", 2015),
+    (714, 538, "Modo Turbo", "song", 2021),
+    (714, 700, "Sentadão", "song", 2020),
+    (714, 740, "BRABA", "song", 2020),
+    (714, 741, "Penhasco", "song", 2021),
+    (714, 742, "VIP", "song", 2020),
+    (714, 743, "Melhor Sozinha", "song", 2020),
+    (714, 744, "Cachorrinhas", "song", 2022),
+    (714, 22, "Luísa x Doja (Live)", "live", 2023),
+
+    # Lexa
+    (740, 714, "BRABA", "song", 2020),
+    (740, 706, "Chama Ela", "song", 2019),
+    (740, 745, "Sapequinha", "song", 2018),
+    (740, 746, "Provocar", "song", 2016),
+
+    # Pocah
+    (745, 740, "Sapequinha", "song", 2018),
+    (745, 538, "Anitta x Pocah (Live)", "live", 2021),
+    (745, 707, "Não Sou Obrigada", "song", 2019),
+
+    # MC Kevin o Chris
+    (707, 538, "Favela Chegou", "song", 2019),
+    (707, 702, "Tipo Gin", "song", 2019),
+    (707, 747, "Aquecimento das Antigas", "song", 2019),
+    (707, 706, "Kevin x Ludmilla (Live)", "live", 2020),
+    (707, 99, "Ela É do Tipo (Remix)", "song", 2019),
+
+    # Maiara & Maraisa (Sertanejo)
+    (748, 749, "Medo Bobo", "song", 2016),
+    (748, 750, "Amor Bandido", "song", 2021),
+    (748, 751, "Você Faz Falta Aqui", "song", 2018),
+    (748, 752, "10%", "song", 2016),
+    (748, 538, "Quem Me Dera (Live)", "live", 2022),
+
+    # Marília Mendonça (Legend)
+    (749, 748, "Medo Bobo", "song", 2016),
+    (749, 750, "Todo Mundo Vai Sofrer", "song", 2019),
+    (749, 753, "Infiel", "song", 2017),
+    (749, 754, "Supera", "song", 2018),
+    (749, 755, "Graveto", "song", 2020),
+    (749, 756, "De Quem É a Culpa?", "song", 2018),
+    (749, 757, "Esqueça-Me Se For Capaz", "song", 2019),
+    (749, 538, "Some Que Ele Vem Atrás (Live)", "live", 2019),
+    (749, 706, "Marília x Ludmilla (Live)", "live", 2020),
+
+    # Henrique & Juliano
+    (750, 749, "Todo Mundo Vai Sofrer", "song", 2019),
+    (750, 748, "Amor Bandido", "song", 2021),
+    (750, 758, "Até Você Voltar", "song", 2017),
+    (750, 759, "Na Hora da Raiva", "song", 2015),
+
+    # Jorge & Mateus
+    (751, 748, "Você Faz Falta Aqui", "song", 2018),
+    (751, 760, "Amo Noite e Dia", "song", 2013),
+    (751, 761, "Os Anjos Cantam", "song", 2014),
+    (751, 749, "Jorge & Mateus x Marília (Live)", "live", 2019),
+
+    # Zé Neto & Cristiano
+    (752, 748, "10%", "song", 2016),
+    (752, 749, "Notificação Preferida", "song", 2019),
+    (752, 762, "Largado às Traças", "song", 2018),
+    (752, 763, "Estado Decadente", "song", 2017),
+
+    # Gusttavo Lima
+    (753, 749, "Infiel", "song", 2017),
+    (753, 764, "Balada", "song", 2011),
+    (753, 765, "Homem de Família", "song", 2019),
+    (753, 766, "Apelido Carinhoso", "song", 2018),
+
+    # Wesley Safadão
+    (754, 749, "Supera", "song", 2018),
+    (754, 538, "Romance com Safadeza", "song", 2018),
+    (754, 767, "Camarote", "song", 2015),
+    (754, 768, "Ar Condicionado no 15", "song", 2016),
+
+    # Luan Santana
+    (755, 749, "Graveto", "song", 2020),
+    (755, 769, "Eu, Você, o Mar e Ela", "song", 2014),
+    (755, 770, "Te Esperando", "song", 2013),
+    (755, 771, "Acordando o Prédio", "song", 2017),
+    (755, 706, "Juntos e Shallow Now", "song", 2019),
+
+    # Leonardo (Classic)
+    (756, 749, "De Quem É a Culpa?", "song", 2018),
+    (756, 772, "Pense em Mim", "song", 1991),
+    (756, 773, "Não Aprendi Dizer Adeus", "song", 1996),
+
+    # Chitãozinho & Xororó
+    (757, 749, "Esqueça-Me Se For Capaz", "song", 2019),
+    (757, 772, "Evidências", "song", 1990),
+    (757, 773, "Fio de Cabelo", "song", 1982),
+
+    # Thiaguinho
+    (717, 711, "Minha Vez", "song", 2018),
+    (717, 774, "Desencana", "song", 2011),
+    (717, 775, "Tarde Demais", "song", 2014),
+    (717, 538, "Thiaguinho x Anitta (Live)", "live", 2018),
+
+    # Nego do Borel
+    (718, 711, "Pesadão", "song", 2017),
+    (718, 538, "Você Partiu Meu Coração", "song", 2017),
+    (718, 706, "Nego x Ludmilla (Live)", "live", 2018),
+    (718, 776, "Me Solta", "song", 2018),
+
+    # Sorriso Maroto
+    (719, 711, "Ginga", "song", 2018),
+    (719, 717, "Sorriso x Thiaguinho (Live)", "live", 2015),
+    (719, 777, "Assim Você Mata o Papai", "song", 2006),
+    (719, 778, "Sinais", "song", 2009),
+
+    # Dilsinho
+    (720, 711, "Dona de Mim", "song", 2018),
+    (720, 717, "Dilsinho x Thiaguinho (Live)", "live", 2019),
+    (720, 779, "Péssimo Negócio", "song", 2017),
+
+    # Kevinho / Tropkillaz
+    (725, 702, "Ta Tum Tum", "song", 2017),
+    (725, 704, "Major Lazer Presents (Live)", "live", 2018),
+
+    # Vintage Culture / Other EDM
+    (727, 704, "Never Let Me Go", "song", 2017),
+    (727, 726, "Deep House Session (Live)", "live", 2021),
+
+    # KVSH
+    (728, 704, "All the Lies", "song", 2019),
+    (728, 726, "Brazilian Bass", "live", 2022),
+
+    # Cat Dealers
+    (729, 704, "Love Is a Temple", "song", 2020),
+    (729, 726, "Cat Dealers x Vintage (Live)", "live", 2021),
+
+    # Dubdogz
+    (730, 704, "Table for 2", "song", 2023),
+    (730, 726, "Dubdogz Set (Live)", "live", 2023),
+
+    # Chemical Surf
+    (731, 726, "Deep Inside", "song", 2022),
+    (731, 704, "Tomorrowland Brasil (Live)", "live", 2022),
+
+    # Samhara
+    (732, 726, "Crying for You", "song", 2022),
+
+    # Gloria Groove additional
+    (734, 713, "Coisa Boa", "song", 2022),
+    (735, 713, "Bonekinha", "song", 2021),
+
+    # Jão additional
+    (736, 733, "Idiota", "song", 2020),
+    (737, 733, "Meninos e Meninas", "song", 2021),
+    (738, 733, "Coringa", "song", 2021),
+    (739, 733, "Me Beija Com Raiva", "song", 2022),
+
+    # Luísa Sonza additional
+    (741, 714, "Penhasco", "song", 2021),
+    (742, 714, "VIP", "song", 2020),
+    (743, 714, "Melhor Sozinha", "song", 2020),
+    (744, 714, "Cachorrinhas", "song", 2022),
+
+    # Lexa additional
+    (746, 740, "Provocar", "song", 2016),
+
+    # MC Kevin additional
+    (747, 707, "Aquecimento das Antigas", "song", 2019),
+
+    # Sertanejo additional connections
+    (758, 750, "Até Você Voltar", "song", 2017),
+    (759, 750, "Na Hora da Raiva", "song", 2015),
+    (760, 751, "Amo Noite e Dia", "song", 2013),
+    (761, 751, "Os Anjos Cantam", "song", 2014),
+    (762, 752, "Largado às Traças", "song", 2018),
+    (763, 752, "Estado Decadente", "song", 2017),
+    (764, 753, "Balada", "song", 2011),
+    (765, 753, "Homem de Família", "song", 2019),
+    (766, 753, "Apelido Carinhoso", "song", 2018),
+    (767, 754, "Camarote", "song", 2015),
+    (768, 754, "Ar Condicionado no 15", "song", 2016),
+    (769, 755, "Eu, Você, o Mar e Ela", "song", 2014),
+    (770, 755, "Te Esperando", "song", 2013),
+    (771, 755, "Acordando o Prédio", "song", 2017),
+    (772, 756, "Pense em Mim", "song", 1991),
+    (773, 756, "Não Aprendi Dizer Adeus", "song", 1996),
+    (774, 717, "Desencana", "song", 2011),
+    (775, 717, "Tarde Demais", "song", 2014),
+    (776, 718, "Me Solta", "song", 2018),
+    (777, 719, "Assim Você Mata o Papai", "song", 2006),
+    (778, 719, "Sinais", "song", 2009),
+    (779, 720, "Péssimo Negócio", "song", 2017),
+
+    # Brazilian x International connections
+    (538, 165, "Anitta x Wizkid (Live)", "live", 2023),
+    (706, 22, "Ludmilla x Doja Cat (Live)", "live", 2023),
+    (704, 68, "Alok x Calvin Harris (Live)", "live", 2022),
+    (726, 173, "Vintage Culture x Martin Garrix (Live)", "live", 2023),
+    (711, 168, "IZA x Tems (Live)", "live", 2023),
+    (713, 431, "Gloria x Kim Petras (Live)", "live", 2023),
+
+    # Caetano Veloso (MPB Legend)
+    (780, 781, "Tropicália", "album", 1968),
+    (780, 782, "Sampa", "song", 1978),
+    (780, 538, "Caetano x Anitta (Live)", "live", 2019),
+    (780, 137, "Caetano x David Bowie Tribute", "live", 2016),
+
+    # Gilberto Gil (MPB Legend)
+    (781, 780, "Tropicália", "album", 1968),
+    (781, 783, "Aquele Abraço", "song", 1969),
+    (781, 784, "Toda Menina Baiana", "song", 1979),
+    (781, 54, "Gil x Stevie Wonder (Live)", "live", 1977),
+
+    # Gal Costa
+    (782, 780, "Sampa", "song", 1978),
+    (782, 781, "Gal x Gil (Live)", "live", 1985),
+    (782, 785, "Baby", "song", 1969),
+
+    # Maria Bethânia
+    (783, 781, "Aquele Abraço", "song", 1969),
+    (783, 780, "Bethânia x Caetano (Live)", "live", 2000),
+
+    # Djavan
+    (784, 781, "Toda Menina Baiana", "song", 1979),
+    (784, 54, "Djavan x Stevie Wonder (Live)", "live", 1990),
+    (784, 786, "Flor de Lis", "song", 1976),
+
+    # Elis Regina
+    (785, 782, "Baby", "song", 1969),
+    (785, 787, "Águas de Março", "song", 1974),
+    (785, 788, "Como Nossos Pais", "song", 1976),
+
+    # Tom Jobim
+    (787, 785, "Águas de Março", "song", 1974),
+    (787, 789, "Garota de Ipanema", "song", 1962),
+    (787, 53, "Tom Jobim x Elton John Tribute", "live", 1994),
+
+    # João Gilberto
+    (789, 787, "Garota de Ipanema", "song", 1962),
+    (789, 790, "Chega de Saudade", "song", 1958),
+
+    # Roberto Carlos
+    (786, 784, "Flor de Lis", "song", 1976),
+    (786, 780, "Roberto x Caetano (Live)", "live", 2010),
+    (786, 791, "Emoções", "song", 1981),
+
+    # Tim Maia
+    (788, 785, "Como Nossos Pais", "song", 1976),
+    (788, 792, "Descobridor dos Sete Mares", "song", 1983),
+    (788, 793, "Me Dê Motivo", "song", 1983),
+
+    # Seu Jorge
+    (792, 788, "Descobridor dos Sete Mares", "song", 1983),
+    (792, 137, "Life Aquatic Sessions", "album", 2005),
+    (792, 538, "Seu Jorge x Anitta (Live)", "live", 2020),
+
+    # Milton Nascimento
+    (793, 788, "Me Dê Motivo", "song", 1983),
+    (793, 781, "Milton x Gil (Live)", "live", 2000),
+    (793, 794, "Maria Maria", "song", 1978),
+
+    # Grupo Revelação
+    (774, 717, "Desencana", "song", 2011),
+    (774, 795, "Deixa Acontecer", "song", 2004),
+
+    # Zeca Pagodinho
+    (795, 774, "Deixa Acontecer", "song", 2004),
+    (795, 796, "Camarão que Dorme a Onda Leva", "song", 1999),
+    (795, 717, "Zeca x Thiaguinho (Live)", "live", 2015),
+
+    # Alcione
+    (796, 795, "Camarão que Dorme a Onda Leva", "song", 1999),
+    (796, 706, "Alcione x Ludmilla (Live)", "live", 2022),
+
+    # Funk Artists - MC Livinho
+    (797, 702, "Livinho x Kevinho (Live)", "live", 2018),
+    (797, 707, "Fazer Falta", "song", 2018),
+    (797, 538, "Livinho x Anitta (Live)", "live", 2017),
+
+    # MC Guimê
+    (798, 538, "Guimê x Anitta (Live)", "live", 2016),
+    (798, 706, "Na Pista Eu Arraso", "song", 2015),
+    (798, 702, "Guimê x Kevinho (Live)", "live", 2017),
+
+    # MC Gustta
+    (799, 702, "Gustta x Kevinho (Live)", "live", 2018),
+    (799, 707, "Deu Onda", "song", 2017),
+
+    # MC Don Juan
+    (800, 702, "Don Juan x Kevinho (Live)", "live", 2019),
+    (800, 707, "Rave de Favela", "song", 2019),
+    (800, 538, "Don Juan x Anitta (Live)", "live", 2020),
+
+    # MC Davi
+    (801, 800, "Davi x Don Juan (Live)", "live", 2019),
+    (801, 702, "Davi x Kevinho (Live)", "live", 2018),
+
+    # Pedro Sampaio (DJ/Producer)
+    (802, 538, "Pedro x Anitta (Live)", "live", 2021),
+    (802, 706, "Atenção", "song", 2020),
+    (802, 714, "Luísa x Pedro (Live)", "live", 2021),
+    (802, 740, "No Chão Novinha", "song", 2020),
+    (802, 803, "Sentadão", "song", 2020),
+
+    # Dennis DJ
+    (803, 802, "Sentadão", "song", 2020),
+    (803, 702, "Dennis x Kevinho (Live)", "live", 2018),
+    (803, 707, "Vai Rebola", "song", 2019),
+    (803, 538, "Dennis x Anitta (Live)", "live", 2019),
+
+    # Naldo Benny
+    (804, 538, "Naldo x Anitta (Live)", "live", 2014),
+    (804, 148, "Naldo x Akon (Live)", "live", 2013),
+
+    # Vitão
+    (805, 714, "Flores", "song", 2019),
+    (805, 538, "Vitão x Anitta (Live)", "live", 2020),
+    (805, 733, "Vitão x Jão (Live)", "live", 2021),
+
+    # Gustavo Mioto
+    (806, 749, "Mioto x Marília (Live)", "live", 2020),
+    (806, 748, "Com ou Sem Mim", "song", 2021),
+    (806, 755, "Mioto x Luan (Live)", "live", 2019),
+
+    # Ana Castela (Rising Star)
+    (807, 806, "Ana x Mioto (Live)", "live", 2023),
+    (807, 752, "Ana x Zé Neto (Live)", "live", 2023),
+    (807, 808, "Pipoco", "song", 2022),
+    (807, 538, "Ana x Anitta (Live)", "live", 2023),
+
+    # Melody
+    (808, 807, "Pipoco", "song", 2022),
+    (808, 700, "Melody x Pabllo (Live)", "live", 2023),
+    (808, 706, "Melody x Ludmilla (Live)", "live", 2023),
+
+    # Simone & Simaria
+    (809, 749, "Loka", "song", 2017),
+    (809, 538, "Simone x Anitta (Live)", "live", 2018),
+    (809, 750, "Simone x Henrique (Live)", "live", 2019),
+
+    # Brazilian rap - Racionais MC's
+    (810, 811, "Vida Loka I", "song", 2002),
+    (810, 812, "Negro Drama", "song", 2002),
+    (810, 538, "Racionais x Anitta (Live)", "live", 2022),
+
+    # Emicida
+    (811, 810, "Vida Loka I", "song", 2002),
+    (811, 813, "AmarElo", "song", 2019),
+    (811, 749, "Emicida x Marília (Live)", "live", 2021),
+    (811, 538, "Emicida x Anitta (Live)", "live", 2022),
+
+    # Djonga
+    (812, 810, "Negro Drama", "song", 2002),
+    (812, 811, "Djonga x Emicida (Live)", "live", 2021),
+    (812, 814, "Junho de 94", "song", 2020),
+
+    # Criolo
+    (813, 811, "AmarElo", "song", 2019),
+    (813, 780, "Criolo x Caetano (Live)", "live", 2015),
+    (813, 538, "Criolo x Anitta (Live)", "live", 2019),
+
+    # Rashid
+    (814, 812, "Junho de 94", "song", 2020),
+    (814, 811, "Rashid x Emicida (Live)", "live", 2020),
+
+    # MC Hariel
+    (815, 702, "Hariel x Kevinho (Live)", "live", 2020),
+    (815, 707, "Hariel x Kevin (Live)", "live", 2019),
+    (815, 816, "DZ7", "song", 2021),
+
+    # MC Ryan SP
+    (816, 815, "DZ7", "song", 2021),
+    (816, 802, "Ryan x Pedro (Live)", "live", 2022),
+    (816, 707, "Dentro do Carro", "song", 2021),
+
+    # MC IG
+    (817, 816, "IG x Ryan (Live)", "live", 2022),
+    (817, 815, "IG x Hariel (Live)", "live", 2021),
+    (817, 538, "IG x Anitta (Live)", "live", 2023),
+
+    # MC Marks / MC Poze do Rodo
+    (818, 816, "Vida Rica", "song", 2022),
+    (818, 815, "Marks x Hariel (Live)", "live", 2022),
+
+    # MC Cabelinho
+    (819, 817, "Cabelinho x IG (Live)", "live", 2022),
+    (819, 802, "Cabelinho x Pedro (Live)", "live", 2022),
+    (819, 538, "Cabelinho x Anitta (Live)", "live", 2023),
+
+    # MC Lan
+    (820, 702, "Lan x Kevinho (Live)", "live", 2018),
+    (820, 707, "Rabetão", "song", 2017),
+    (820, 538, "Open Bar", "song", 2017),
+
+    # Brazilian rock - Legião Urbana
+    (821, 822, "Tempo Perdido", "song", 1986),
+    (821, 823, "Será", "song", 1985),
+
+    # Titãs
+    (822, 821, "Tempo Perdido", "song", 1986),
+    (822, 824, "Epitáfio", "song", 2001),
+
+    # Os Paralamas do Sucesso
+    (823, 821, "Será", "song", 1985),
+    (823, 825, "Alagados", "song", 1986),
+
+    # Skank
+    (824, 822, "Epitáfio", "song", 2001),
+    (824, 826, "Vou Deixar", "song", 1999),
+
+    # Charlie Brown Jr
+    (825, 823, "Alagados", "song", 1986),
+    (825, 827, "Só os Loucos Sabem", "song", 2001),
+
+    # Jota Quest
+    (826, 824, "Vou Deixar", "song", 1999),
+    (826, 54, "Jota Quest x Stevie Wonder (Live)", "live", 2004),
+    (826, 538, "Jota Quest x Anitta (Live)", "live", 2019),
+
+    # Detonautas
+    (827, 825, "Só os Loucos Sabem", "song", 2001),
+    (827, 828, "Olhos Certos", "song", 2006),
+
+    # Nx Zero
+    (828, 827, "Olhos Certos", "song", 2006),
+    (828, 829, "Razões e Emoções", "song", 2006),
+
+    # Fresno
+    (829, 828, "Razões e Emoções", "song", 2006),
+    (829, 714, "Fresno x Luísa (Live)", "live", 2022),
+
+    # Lagum
+    (830, 829, "Lagum x Fresno (Live)", "live", 2022),
+    (830, 714, "Lagum x Luísa (Live)", "live", 2023),
+    (830, 733, "Lagum x Jão (Live)", "live", 2023),
 ]
 
 
