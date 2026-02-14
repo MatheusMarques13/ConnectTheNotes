@@ -2049,6 +2049,7 @@ COLLABS_RAW = [
 
     # MC Kevin additional
     (747, 707, "Aquecimento das Antigas", "song", 2019),
+    (747, 8, "Long Live", "song", 2012),
 
     # Sertanejo additional connections
     (758, 750, "Até Você Voltar", "song", 2017),
