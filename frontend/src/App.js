@@ -176,6 +176,7 @@ function App() {
         onClose={() => setShowOptions(false)}
         options={options}
         onOptionsChange={setOptions}
+        difficultyConfig={DIFFICULTY_CONFIG}
       />
     </div>
   );
