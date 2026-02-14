@@ -120,7 +120,7 @@ function App() {
           {/* Footer */}
           <footer className="home-footer">
             <p className="footer-credit">
-              A musical connections game
+              {stats.totalArtists} artists · {stats.totalCollaborations} connections
             </p>
           </footer>
         </div>
