@@ -110,6 +110,29 @@ body {
   margin-bottom: 36px;
 }
 
+/* Logo Section */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.logo-diamond {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+  animation: diamondFloat 5s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px rgba(184, 198, 224, 0.3));
+}
+
+.diamond-svg {
+  width: 100%;
+  height: 100%;
+  color: var(--diamond);
+}
+
 .logo-icon {
   margin-bottom: 16px;
   animation: diamondFloat 5s ease-in-out infinite;
