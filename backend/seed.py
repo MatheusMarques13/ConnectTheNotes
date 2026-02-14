@@ -2315,6 +2315,28 @@ COLLABS_RAW = [
     (830, 829, "Lagum x Fresno (Live)", "live", 2022),
     (830, 714, "Lagum x Luísa (Live)", "live", 2023),
     (830, 733, "Lagum x Jão (Live)", "live", 2023),
+
+    # ── CELINE DION COLLABORATIONS ──
+    (831, 832, "The Prayer", "song", 1999),
+    (831, 833, "Tell Him", "song", 1997),
+    (831, 834, "Immortality", "song", 1997),
+    (831, 440, "I'm Your Angel", "song", 1998),
+    (831, 7, "The Worlds We Make (Together)", "live", 2022),
+    (831, 57, "Rolling in the Deep (Cover Tribute)", "live", 2012),
+
+    # Andrea Bocelli
+    (832, 831, "The Prayer", "song", 1999),
+    (832, 7, "Perfect Symphony", "song", 2017),
+    (832, 57, "Fall on Me", "song", 2018),
+
+    # Barbra Streisand
+    (833, 831, "Tell Him", "song", 1997),
+    (833, 832, "I Still Can See Your Face", "song", 1999),
+
+    # Bee Gees
+    (834, 831, "Immortality", "song", 1997),
+    (834, 154, "Guilty", "song", 1980),
+    (834, 833, "Woman in Love", "song", 1980),
 ]
 
 
