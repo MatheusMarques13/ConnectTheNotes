@@ -755,6 +755,22 @@ body {
 }
 
 /* Options Modal */
+.options-section {
+  margin-bottom: 24px;
+}
+
+.options-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--diamond-accent);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
 .options-list {
   display: flex;
   flex-direction: column;
@@ -779,6 +795,18 @@ body {
 
 .option-label svg {
   color: var(--diamond-accent);
+  flex-shrink: 0;
+}
+
+.option-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.option-description {
+  font-size: 11px;
+  color: var(--text-muted);
 }
 
 .toggle-btn {
@@ -790,6 +818,7 @@ body {
   cursor: pointer;
   position: relative;
   transition: background-color 0.3s;
+  flex-shrink: 0;
 }
 
 .toggle-btn.active {
@@ -812,6 +841,72 @@ body {
   transform: translateX(20px);
 }
 
+/* Difficulty Selector */
+.difficulty-selector {
+  margin-top: 16px;
+  padding: 16px;
+  background: rgba(184, 198, 224, 0.03);
+  border-radius: 10px;
+  border: 1px solid rgba(184, 198, 224, 0.06);
+}
+
+.difficulty-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.difficulty-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.difficulty-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  background: rgba(184, 198, 224, 0.04);
+  border: 1px solid rgba(184, 198, 224, 0.08);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.difficulty-btn:hover {
+  background: rgba(184, 198, 224, 0.08);
+  border-color: rgba(184, 198, 224, 0.15);
+}
+
+.difficulty-btn.active {
+  background: rgba(184, 198, 224, 0.12);
+  border-color: var(--diamond-accent);
+  box-shadow: 0 0 12px rgba(184, 198, 224, 0.1);
+}
+
+.difficulty-name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.difficulty-btn.active .difficulty-name {
+  color: var(--diamond-bright);
+}
+
+.difficulty-desc {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
 .options-stats {
   margin-top: 28px;
   padding-top: 20px;
@@ -819,6 +914,9 @@ body {
 }
 
 .options-stats h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 2px;
@@ -830,14 +928,14 @@ body {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 10px;
 }
 
 .stat-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 14px;
+  padding: 12px 8px;
   background: rgba(184, 198, 224, 0.03);
   border-radius: 8px;
   border: 1px solid rgba(184, 198, 224, 0.05);
@@ -845,18 +943,19 @@ body {
 
 .stat-value {
   font-family: var(--font-display);
-  font-size: 26px;
+  font-size: 22px;
   color: var(--diamond-light);
   font-weight: 500;
 }
 
 .stat-label {
-  font-size: 9px;
+  font-size: 8px;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 4px;
   font-family: var(--font-mono);
+  text-align: center;
 }
 
 /* ================================
