@@ -1,13 +1,15 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Search, Shuffle, X, Music } from 'lucide-react';
-import { searchArtists, getRandomArtist } from '../data/mockData';
+import { searchArtists, getRandomArtist } from '../services/api';
 
 const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [loading, setLoading] = useState(false);
   const inputRef = useRef(null);
   const dropdownRef = useRef(null);
+  const debounceRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -20,17 +22,25 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const handleSearch = (value) => {
+  const handleSearch = useCallback((value) => {
     setQuery(value);
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    
     if (value.length > 0) {
-      const found = searchArtists(value).filter(a => !excludeIds.includes(a.id));
-      setResults(found);
-      setShowDropdown(true);
+      setLoading(true);
+      debounceRef.current = setTimeout(async () => {
+        const found = await searchArtists(value);
+        const filtered = found.filter(a => !excludeIds.includes(a.id));
+        setResults(filtered);
+        setShowDropdown(true);
+        setLoading(false);
+      }, 200);
     } else {
       setResults([]);
       setShowDropdown(false);
+      setLoading(false);
     }
-  };
+  }, [excludeIds]);
 
   const handleSelect = (selectedArtist) => {
     onSelect(selectedArtist);
@@ -39,11 +49,15 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
     setShowDropdown(false);
   };
 
-  const handleRandom = () => {
-    const randomArtist = getRandomArtist(excludeIds);
-    onSelect(randomArtist);
+  const handleRandom = async () => {
+    setLoading(true);
+    const randomArtist = await getRandomArtist(excludeIds);
+    if (randomArtist) {
+      onSelect(randomArtist);
+    }
     setQuery('');
     setShowDropdown(false);
+    setLoading(false);
   };
 
   const handleClear = () => {
@@ -92,6 +106,7 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
               className="search-input"
               onFocus={() => query.length > 0 && setShowDropdown(true)}
             />
+            {loading && <span className="search-spinner" />}
           </div>
           {showDropdown && results.length > 0 && (
             <div className="search-dropdown" ref={dropdownRef}>
@@ -112,9 +127,9 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
               ))}
             </div>
           )}
-          <button className="choose-for-me-btn" onClick={handleRandom}>
+          <button className="choose-for-me-btn" onClick={handleRandom} disabled={loading}>
             <Shuffle size={14} />
-            <span>CHOOSE FOR ME</span>
+            <span>{loading ? 'PICKING...' : 'CHOOSE FOR ME'}</span>
           </button>
         </div>
       )}
