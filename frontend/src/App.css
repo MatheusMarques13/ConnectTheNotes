@@ -590,6 +590,8 @@ body {
 .start-game-btn.ready {
   background: transparent;
   color: var(--diamond);
+  border-color: var(--diamond-accent);
+  cursor: pointer;
 }
 
 .start-game-btn.ready:hover {
