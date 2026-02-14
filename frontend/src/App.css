@@ -1064,15 +1064,18 @@ body {
 }
 
 .current-avatar-large {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--diamond-light) 0%, var(--diamond-accent) 50%, #7b93c4 100%);
+  border: 3px solid var(--diamond-accent);
+  background: linear-gradient(135deg, #141e30 0%, #0f1628 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 50px rgba(184, 198, 224, 0.15), 0 0 100px rgba(184, 198, 224, 0.05);
   margin-bottom: 12px;
+  overflow: hidden;
+  transition: border-color 0.3s;
 }
 
 .current-avatar-large span {
@@ -1081,6 +1084,87 @@ body {
   font-weight: 500;
   color: var(--bg-primary);
   letter-spacing: 1px;
+}
+
+.current-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Mini Avatar (reusable) */
+.mini-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  background: linear-gradient(135deg, #d4dff5 0%, #a8b8d8 100%);
+}
+
+.mini-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mini-avatar-img.loaded {
+  opacity: 1;
+}
+
+.mini-avatar-fallback {
+  position: absolute;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--bg-primary);
+  letter-spacing: 0.5px;
+}
+
+.won-avatar-wrap {
+  box-shadow: 0 0 20px rgba(184, 198, 224, 0.12);
+  border: 2px solid rgba(184, 198, 224, 0.2);
+}
+
+/* Collab card avatars */
+.collab-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.collab-artists-avatars {
+  display: flex;
+  gap: -4px;
+}
+
+.collab-mini-av {
+  border: 1.5px solid rgba(184, 198, 224, 0.12);
+  margin-left: -4px;
+}
+
+.collab-mini-av:first-child {
+  margin-left: 0;
+}
+
+/* Chain node with avatar */
+.chain-node {
+  padding: 5px 14px 5px 6px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  font-family: var(--font-display);
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .current-artist-name {
