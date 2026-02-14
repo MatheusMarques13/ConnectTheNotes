@@ -1,52 +1,134 @@
-import { useEffect } from "react";
-import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import React, { useState, useCallback } from "react";
+import "./App.css";
+import StarryBackground from "./components/StarryBackground";
+import ArtistCard from "./components/ArtistCard";
+import HowToPlayModal from "./components/HowToPlayModal";
+import OptionsModal from "./components/OptionsModal";
+import GameBoard from "./components/GameBoard";
+import { Info, Settings } from "lucide-react";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+function App() {
+  const [artist1, setArtist1] = useState(null);
+  const [artist2, setArtist2] = useState(null);
+  const [gameStarted, setGameStarted] = useState(false);
+  const [showHowToPlay, setShowHowToPlay] = useState(false);
+  const [showOptions, setShowOptions] = useState(false);
+  const [options, setOptions] = useState({
+    sound: true,
+    showGenres: true,
+    showHints: true,
+    gamesPlayed: 0,
+    gamesWon: 0,
+    bestScore: null,
+  });
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
+  const handleStartGame = () => {
+    if (artist1 && artist2) {
+      setGameStarted(true);
+      setOptions(prev => ({ ...prev, gamesPlayed: prev.gamesPlayed + 1 }));
     }
   };
 
-  useEffect(() => {
-    helloWorldApi();
+  const handleBack = useCallback(() => {
+    setGameStarted(false);
+    setArtist1(null);
+    setArtist2(null);
+  }, []);
+
+  const handleWin = useCallback((steps) => {
+    setOptions(prev => ({
+      ...prev,
+      gamesWon: prev.gamesWon + 1,
+      bestScore: prev.bestScore === null ? steps : Math.min(prev.bestScore, steps),
+    }));
   }, []);
 
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+    <div className="app-container">
+      <StarryBackground />
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      {!gameStarted ? (
+        <div className="home-screen">
+          {/* Top bar */}
+          <div className="top-bar">
+            <button className="top-btn" onClick={() => setShowHowToPlay(true)}>
+              <Info size={16} />
+              <span>HOW TO PLAY</span>
+            </button>
+            <button className="top-btn" onClick={() => setShowOptions(true)}>
+              <Settings size={16} />
+              <span>OPTIONS</span>
+            </button>
+          </div>
+
+          {/* Logo & Title */}
+          <div className="hero-section">
+            <div className="logo-icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <path d="M28 4L32.5 20H49L35.5 30L40 46L28 36L16 46L20.5 30L7 20H23.5L28 4Z" 
+                      stroke="#c4a35a" strokeWidth="2" fill="none"/>
+                <circle cx="28" cy="28" r="6" stroke="#c4a35a" strokeWidth="1.5" fill="none"/>
+                <circle cx="28" cy="28" r="2" fill="#c4a35a"/>
+              </svg>
+            </div>
+            <h1 className="main-title">Connect the Notes</h1>
+            <p className="subtitle">CHOOSE TWO ARTISTS</p>
+          </div>
+
+          {/* Artist Selection Cards */}
+          <div className="cards-container">
+            <ArtistCard
+              number={1}
+              artist={artist1}
+              onSelect={setArtist1}
+              onClear={() => setArtist1(null)}
+              excludeIds={artist2 ? [artist2.id] : []}
+            />
+            <ArtistCard
+              number={2}
+              artist={artist2}
+              onSelect={setArtist2}
+              onClear={() => setArtist2(null)}
+              excludeIds={artist1 ? [artist1.id] : []}
+            />
+          </div>
+
+          {/* Start Game Button */}
+          <div className="start-section">
+            <button
+              className={`start-game-btn ${artist1 && artist2 ? 'ready' : 'disabled'}`}
+              onClick={handleStartGame}
+              disabled={!artist1 || !artist2}
+            >
+              Start Game
+            </button>
+          </div>
+
+          {/* Footer */}
+          <footer className="home-footer">
+            <p className="footer-credit">
+              A musical connections game
+            </p>
+          </footer>
+        </div>
+      ) : (
+        <GameBoard
+          artist1={artist1}
+          artist2={artist2}
+          onBack={handleBack}
+          showHints={options.showHints}
+          onWin={handleWin}
+        />
+      )}
+
+      {/* Modals */}
+      <HowToPlayModal isOpen={showHowToPlay} onClose={() => setShowHowToPlay(false)} />
+      <OptionsModal
+        isOpen={showOptions}
+        onClose={() => setShowOptions(false)}
+        options={options}
+        onOptionsChange={setOptions}
+      />
     </div>
   );
 }
