@@ -22,6 +22,11 @@ function App() {
     gamesWon: 0,
     bestScore: null,
   });
+  const [stats, setStats] = useState({ totalArtists: 0, totalCollaborations: 0 });
+
+  useEffect(() => {
+    getStats().then(s => setStats(s));
+  }, []);
 
   const handleStartGame = () => {
     if (artist1 && artist2) {
