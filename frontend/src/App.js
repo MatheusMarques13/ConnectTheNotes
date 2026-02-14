@@ -53,13 +53,32 @@ function App() {
     setArtist2(null);
   }, []);
 
-  const handleWin = useCallback((steps) => {
+  const handleWin = useCallback((steps, timeSpent) => {
     setOptions(prev => ({
       ...prev,
       gamesWon: prev.gamesWon + 1,
       bestScore: prev.bestScore === null ? steps : Math.min(prev.bestScore, steps),
+      bestTime: prev.timedMode 
+        ? (prev.bestTime === null ? timeSpent : Math.min(prev.bestTime, timeSpent))
+        : prev.bestTime,
     }));
   }, []);
+
+  const handleLose = useCallback(() => {
+    setOptions(prev => ({
+      ...prev,
+      gamesLost: prev.gamesLost + 1,
+    }));
+  }, []);
+
+  // Get current game settings based on difficulty
+  const getGameSettings = useCallback(() => {
+    const diffConfig = DIFFICULTY_CONFIG[options.difficulty];
+    return {
+      timeLimit: options.timedMode ? diffConfig.timeLimit : null,
+      hintsEnabled: options.timedMode ? diffConfig.hintsEnabled : options.showHints,
+    };
+  }, [options.timedMode, options.difficulty, options.showHints]);
 
   return (
     <div className="app-container">
