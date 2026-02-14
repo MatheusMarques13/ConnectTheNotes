@@ -229,6 +229,39 @@ body {
   opacity: 0.5;
 }
 
+/* Placeholder Icons Grid */
+.placeholder-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 24px;
+}
+
+.placeholder-icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  color: #94a3b8;
+  opacity: 0.45;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.artist-card:hover .placeholder-icon-item {
+  opacity: 0.65;
+}
+
+.artist-card:hover .placeholder-icon-item:nth-child(1) { transform: scale(1.05); transition-delay: 0s; }
+.artist-card:hover .placeholder-icon-item:nth-child(2) { transform: scale(1.08); transition-delay: 0.05s; }
+.artist-card:hover .placeholder-icon-item:nth-child(3) { transform: scale(1.05); transition-delay: 0.1s; }
+.artist-card:hover .placeholder-icon-item:nth-child(4) { transform: scale(1.08); transition-delay: 0.15s; }
+.artist-card:hover .placeholder-icon-item:nth-child(5) { transform: scale(1.05); transition-delay: 0.2s; }
+.artist-card:hover .placeholder-icon-item:nth-child(6) { transform: scale(1.08); transition-delay: 0.25s; }
+
 .artist-selected {
   position: relative;
   width: 100%;
