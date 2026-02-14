@@ -65,10 +65,17 @@ function App() {
           <div className="hero-section">
             <div className="logo-icon">
               <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-                <path d="M28 4L32.5 20H49L35.5 30L40 46L28 36L16 46L20.5 30L7 20H23.5L28 4Z" 
-                      stroke="#c4a35a" strokeWidth="2" fill="none"/>
-                <circle cx="28" cy="28" r="6" stroke="#c4a35a" strokeWidth="1.5" fill="none"/>
-                <circle cx="28" cy="28" r="2" fill="#c4a35a"/>
+                {/* Diamond shape */}
+                <path d="M28 2L48 22L28 54L8 22L28 2Z" 
+                      stroke="#a3bffa" strokeWidth="1.5" fill="none" opacity="0.6"/>
+                <path d="M28 8L42 22L28 48L14 22L28 8Z" 
+                      stroke="#c7d2fe" strokeWidth="1" fill="none" opacity="0.3"/>
+                {/* Inner facets */}
+                <line x1="8" y1="22" x2="48" y2="22" stroke="#a3bffa" strokeWidth="0.8" opacity="0.4"/>
+                <line x1="28" y1="2" x2="18" y2="22" stroke="#a3bffa" strokeWidth="0.5" opacity="0.3"/>
+                <line x1="28" y1="2" x2="38" y2="22" stroke="#a3bffa" strokeWidth="0.5" opacity="0.3"/>
+                {/* Center sparkle */}
+                <circle cx="28" cy="22" r="2" fill="#d4dff5" opacity="0.7"/>
               </svg>
             </div>
             <h1 className="main-title">Connect the Notes</h1>
