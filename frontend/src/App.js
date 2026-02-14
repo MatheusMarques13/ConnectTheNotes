@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import "./App.css";
 import StarryBackground from "./components/StarryBackground";
 import ArtistCard from "./components/ArtistCard";
@@ -6,6 +6,7 @@ import HowToPlayModal from "./components/HowToPlayModal";
 import OptionsModal from "./components/OptionsModal";
 import GameBoard from "./components/GameBoard";
 import { Info, Settings } from "lucide-react";
+import { getStats } from "./services/api";
 
 function App() {
   const [artist1, setArtist1] = useState(null);
