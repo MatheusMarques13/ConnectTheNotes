@@ -138,6 +138,7 @@ A musical artist connection trivia game where players connect two artists throug
 - [x] **User game history**
 - [x] **Game result submission with stats tracking**
 - [x] Comprehensive testing (100% pass rate)
+- [x] **Bug Fix (Dec 2024)**: Fixed critical UI layout bug where diamond logo was too large, covering "Start Game" button and preventing artist selection. Added missing CSS classes (.logo-section, .logo-diamond, .diamond-svg, .footer-stats) and fixed prop mismatch in ArtistCard component.
 
 ## Future/Backlog Tasks
 - [ ] Social sharing of completed chains
