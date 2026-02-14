@@ -1,12 +1,17 @@
 import React, { useState, useCallback, useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import "./App.css";
 import StarryBackground from "./components/StarryBackground";
 import ArtistCard from "./components/ArtistCard";
 import HowToPlayModal from "./components/HowToPlayModal";
 import OptionsModal from "./components/OptionsModal";
 import GameBoard from "./components/GameBoard";
-import { Info, Settings } from "lucide-react";
-import { getStats } from "./services/api";
+import AuthCallback from "./components/AuthCallback";
+import UserMenu from "./components/UserMenu";
+import LeaderboardModal from "./components/LeaderboardModal";
+import GameHistoryModal from "./components/GameHistoryModal";
+import { Info, Settings, Trophy } from "lucide-react";
+import { getStats, getCurrentUser, submitGameResult } from "./services/api";
 
 // Difficulty settings configuration
 const DIFFICULTY_CONFIG = {
@@ -16,12 +21,31 @@ const DIFFICULTY_CONFIG = {
   expert: { timeLimit: 60, hintsEnabled: false, label: 'Expert', description: '60 sec, no hints' },
 };
 
-function App() {
+// Main App Router - handles session_id detection BEFORE rendering routes
+function AppRouter() {
+  const location = useLocation();
+  
+  // Check URL fragment for session_id synchronously during render
+  // This prevents race conditions by processing auth FIRST before any route checks
+  if (location.hash?.includes('session_id=')) {
+    return <AuthCallback />;
+  }
+  
+  return <MainApp />;
+}
+
+function MainApp() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  
+  const [user, setUser] = useState(location.state?.user || null);
   const [artist1, setArtist1] = useState(null);
   const [artist2, setArtist2] = useState(null);
   const [gameStarted, setGameStarted] = useState(false);
   const [showHowToPlay, setShowHowToPlay] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
+  const [showLeaderboard, setShowLeaderboard] = useState(false);
+  const [showHistory, setShowHistory] = useState(false);
   const [options, setOptions] = useState({
     sound: true,
     showGenres: true,
@@ -35,6 +59,19 @@ function App() {
     bestTime: null,
   });
   const [stats, setStats] = useState({ totalArtists: 0, totalCollaborations: 0 });
+
+  // Check authentication on mount
+  useEffect(() => {
+    if (!location.state?.user) {
+      getCurrentUser().then(u => {
+        if (u) setUser(u);
+      });
+    }
+    // Clear location state after reading
+    if (location.state) {
+      navigate(location.pathname, { replace: true, state: null });
+    }
+  }, [location.state, location.pathname, navigate]);
 
   useEffect(() => {
     getStats().then(s => setStats(s));
@@ -53,23 +90,55 @@ function App() {
     setArtist2(null);
   }, []);
 
-  const handleWin = useCallback((steps, timeSpent) => {
+  const handleWin = useCallback(async (steps, timeSpent) => {
     setOptions(prev => ({
       ...prev,
       gamesWon: prev.gamesWon + 1,
       bestScore: prev.bestScore === null ? steps : Math.min(prev.bestScore, steps),
-      bestTime: prev.timedMode 
+      bestTime: options.timedMode 
         ? (prev.bestTime === null ? timeSpent : Math.min(prev.bestTime, timeSpent))
         : prev.bestTime,
     }));
-  }, []);
 
-  const handleLose = useCallback(() => {
+    // Submit result to server if logged in
+    if (user && artist1 && artist2) {
+      const result = await submitGameResult({
+        artist1_name: artist1.name,
+        artist2_name: artist2.name,
+        steps,
+        time_seconds: timeSpent,
+        difficulty: options.timedMode ? options.difficulty : null,
+        timed_mode: options.timedMode,
+        won: true
+      });
+      if (result && result.user) {
+        setUser(result.user);
+      }
+    }
+  }, [user, artist1, artist2, options.timedMode, options.difficulty]);
+
+  const handleLose = useCallback(async () => {
     setOptions(prev => ({
       ...prev,
       gamesLost: prev.gamesLost + 1,
     }));
-  }, []);
+
+    // Submit loss to server if logged in
+    if (user && artist1 && artist2) {
+      const result = await submitGameResult({
+        artist1_name: artist1.name,
+        artist2_name: artist2.name,
+        steps: 0,
+        time_seconds: null,
+        difficulty: options.timedMode ? options.difficulty : null,
+        timed_mode: options.timedMode,
+        won: false
+      });
+      if (result && result.user) {
+        setUser(result.user);
+      }
+    }
+  }, [user, artist1, artist2, options.timedMode, options.difficulty]);
 
   // Get current game settings based on difficulty
   const getGameSettings = useCallback(() => {
@@ -80,80 +149,82 @@ function App() {
     };
   }, [options.timedMode, options.difficulty, options.showHints]);
 
+  const handleLogout = () => {
+    setUser(null);
+  };
+
   return (
     <div className="app-container">
       <StarryBackground />
-
       {!gameStarted ? (
-        <div className="home-screen">
-          {/* Top bar */}
+        <div className="main-content">
+          {/* Header with nav buttons */}
           <div className="top-bar">
             <button className="top-btn" onClick={() => setShowHowToPlay(true)}>
-              <Info size={16} />
+              <Info size={18} />
               <span>HOW TO PLAY</span>
             </button>
-            <button className="top-btn" onClick={() => setShowOptions(true)}>
-              <Settings size={16} />
-              <span>OPTIONS</span>
-            </button>
+            
+            <div className="top-bar-right">
+              <button className="top-btn" onClick={() => setShowLeaderboard(true)} data-testid="leaderboard-btn">
+                <Trophy size={18} />
+                <span>LEADERBOARD</span>
+              </button>
+              <button className="top-btn" onClick={() => setShowOptions(true)}>
+                <Settings size={18} />
+                <span>OPTIONS</span>
+              </button>
+              <UserMenu 
+                user={user} 
+                onLogout={handleLogout}
+                onShowLeaderboard={() => setShowLeaderboard(true)}
+                onShowHistory={() => setShowHistory(true)}
+              />
+            </div>
           </div>
 
-          {/* Logo & Title */}
-          <div className="hero-section">
-            <div className="logo-icon">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-                {/* Diamond shape */}
-                <path d="M28 2L48 22L28 54L8 22L28 2Z" 
-                      stroke="#a3bffa" strokeWidth="1.5" fill="none" opacity="0.6"/>
-                <path d="M28 8L42 22L28 48L14 22L28 8Z" 
-                      stroke="#c7d2fe" strokeWidth="1" fill="none" opacity="0.3"/>
-                {/* Inner facets */}
-                <line x1="8" y1="22" x2="48" y2="22" stroke="#a3bffa" strokeWidth="0.8" opacity="0.4"/>
-                <line x1="28" y1="2" x2="18" y2="22" stroke="#a3bffa" strokeWidth="0.5" opacity="0.3"/>
-                <line x1="28" y1="2" x2="38" y2="22" stroke="#a3bffa" strokeWidth="0.5" opacity="0.3"/>
-                {/* Center sparkle */}
-                <circle cx="28" cy="22" r="2" fill="#d4dff5" opacity="0.7"/>
+          {/* Main logo and title */}
+          <div className="logo-section">
+            <div className="logo-diamond">
+              <svg viewBox="0 0 100 100" className="diamond-svg">
+                <polygon points="50,5 95,50 50,95 5,50" fill="none" stroke="currentColor" strokeWidth="1"/>
+                <polygon points="50,15 85,50 50,85 15,50" fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.5"/>
               </svg>
             </div>
             <h1 className="main-title">Connect the Notes</h1>
             <p className="subtitle">CHOOSE TWO ARTISTS</p>
           </div>
 
-          {/* Artist Selection Cards */}
+          {/* Artist selection cards */}
           <div className="cards-container">
             <ArtistCard
-              number={1}
-              artist={artist1}
+              position={1}
+              selectedArtist={artist1}
               onSelect={setArtist1}
-              onClear={() => setArtist1(null)}
-              excludeIds={artist2 ? [artist2.id] : []}
+              excludeId={artist2?.id}
             />
             <ArtistCard
-              number={2}
-              artist={artist2}
+              position={2}
+              selectedArtist={artist2}
               onSelect={setArtist2}
-              onClear={() => setArtist2(null)}
-              excludeIds={artist1 ? [artist1.id] : []}
+              excludeId={artist1?.id}
             />
           </div>
 
-          {/* Start Game Button */}
-          <div className="start-section">
-            <button
-              className={`start-game-btn ${artist1 && artist2 ? 'ready' : 'disabled'}`}
-              onClick={handleStartGame}
-              disabled={!artist1 || !artist2}
-            >
-              Start Game
-            </button>
-          </div>
+          {/* Start button */}
+          <button
+            className={`start-game-btn ${artist1 && artist2 ? "ready" : ""}`}
+            onClick={handleStartGame}
+            disabled={!artist1 || !artist2}
+          >
+            <span className="btn-diamond" />
+            START GAME
+          </button>
 
-          {/* Footer */}
-          <footer className="home-footer">
-            <p className="footer-credit">
-              {stats.totalArtists} artists · {stats.totalCollaborations} connections
-            </p>
-          </footer>
+          {/* Footer stats */}
+          <div className="footer-stats">
+            {stats.totalArtists} ARTISTS · {stats.totalCollaborations} CONNECTIONS
+          </div>
         </div>
       ) : (
         <GameBoard
@@ -169,7 +240,6 @@ function App() {
         />
       )}
 
-      {/* Modals */}
       <HowToPlayModal isOpen={showHowToPlay} onClose={() => setShowHowToPlay(false)} />
       <OptionsModal
         isOpen={showOptions}
@@ -178,7 +248,25 @@ function App() {
         onOptionsChange={setOptions}
         difficultyConfig={DIFFICULTY_CONFIG}
       />
+      <LeaderboardModal 
+        isOpen={showLeaderboard} 
+        onClose={() => setShowLeaderboard(false)} 
+        currentUser={user}
+      />
+      <GameHistoryModal
+        isOpen={showHistory}
+        onClose={() => setShowHistory(false)}
+        currentUser={user}
+      />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 
