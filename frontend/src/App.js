@@ -8,6 +8,14 @@ import GameBoard from "./components/GameBoard";
 import { Info, Settings } from "lucide-react";
 import { getStats } from "./services/api";
 
+// Difficulty settings configuration
+const DIFFICULTY_CONFIG = {
+  easy: { timeLimit: 300, hintsEnabled: true, label: 'Easy', description: '5 min, hints on' },
+  medium: { timeLimit: 180, hintsEnabled: true, label: 'Medium', description: '3 min, hints on' },
+  hard: { timeLimit: 90, hintsEnabled: false, label: 'Hard', description: '90 sec, no hints' },
+  expert: { timeLimit: 60, hintsEnabled: false, label: 'Expert', description: '60 sec, no hints' },
+};
+
 function App() {
   const [artist1, setArtist1] = useState(null);
   const [artist2, setArtist2] = useState(null);
@@ -18,9 +26,13 @@ function App() {
     sound: true,
     showGenres: true,
     showHints: true,
+    timedMode: false,
+    difficulty: 'medium',
     gamesPlayed: 0,
     gamesWon: 0,
+    gamesLost: 0,
     bestScore: null,
+    bestTime: null,
   });
   const [stats, setStats] = useState({ totalArtists: 0, totalCollaborations: 0 });
 
