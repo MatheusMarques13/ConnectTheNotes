@@ -4,8 +4,9 @@
 A musical artist connection trivia game where players connect two artists through their collaborations (songs, albums, live performances). Inspired by Connect the Stars but for music.
 
 ## Tech Stack
-- **Frontend**: React + Tailwind CSS + Lucide React icons
+- **Frontend**: React + React Router + Tailwind CSS + Lucide React icons
 - **Backend**: FastAPI + MongoDB (motor async driver)
+- **Auth**: Emergent Google OAuth
 - **Database**: 590 artists, 1087 collaborations across all major genres
 
 ## Core Features
@@ -18,9 +19,14 @@ A musical artist connection trivia game where players connect two artists throug
 - How to Play & Options modals
 - Animated starry/constellation background with mouse interactivity
 
-## Game Modes (December 2024)
+## User Authentication (December 2024)
+- **Google OAuth** via Emergent Auth service
+- Session management with httpOnly cookies (7-day expiry)
+- User profile display with avatar and stats
+- Protected game result submission
+
+## Game Modes
 ### Timed Challenge Mode
-- Toggle on/off in Options
 - Four difficulty levels:
   - **Easy**: 5 minutes, hints enabled
   - **Medium**: 3 minutes, hints enabled
@@ -33,80 +39,84 @@ A musical artist connection trivia game where players connect two artists throug
 ### Classic Mode (Default)
 - No time limit
 - Hints toggleable in Options
-- Relaxed exploration of connections
+
+## Leaderboard System (December 2024)
+- **Period filters**: Today, This Week, All Time
+- **Sort options**: Most Wins, Fewest Steps, Fastest Time
+- User rank card showing personal stats
+- Game history view
 
 ## Visual Features
 - **DiceBear Avatars**: Unique "lorelei" style SVG avatars for each artist
-- **Genre Icons**: Lucide-react icons mapped by genre (mic-2 for Hip-Hop, guitar for Rock, flame for Latin, etc.)
-- **Genre-colored Rings**: Avatar rings colored by genre for visual distinction
-- **Timer States**: Color-coded urgency (normal → yellow → red)
-
-## Design Theme
-- Diamond/crystal atmosphere: icy blues, silvers, deep navy
-- Fonts: Cormorant Garamond (display), Outfit (body), JetBrains Mono (mono)
-- Constellation animations with shooting stars
+- **Genre Icons**: Lucide-react icons mapped by genre
+- **Genre-colored Rings**: Avatar rings colored by genre
+- **Timer States**: Color-coded urgency
 
 ## Player Stats
-- Games Played
-- Games Won
-- Games Lost
-- Best Steps (fewest steps to win)
-- Best Time (fastest win in timed mode)
+- Games Played / Won / Lost
+- Best Steps / Best Time
 - Win Rate percentage
+- Rank position on leaderboard
 
 ## Artist Database
 ### Coverage by Genre:
-- **Hip-Hop/Rap**: 100+ artists (Drake, Kendrick, Travis Scott, UK Rap, etc.)
-- **Pop**: 50+ artists (Taylor Swift, Ariana Grande, Dua Lipa, etc.)
-- **R&B/Soul**: 40+ artists (The Weeknd, SZA, Frank Ocean, etc.)
-- **Rock/Alternative**: 50+ artists (Coldplay, Arctic Monkeys, etc.)
-- **EDM/Electronic**: 30+ artists (Calvin Harris, Marshmello, Fred again.., etc.)
-- **Latin/Reggaeton**: 30+ artists (Bad Bunny, Rosalía, J Balvin, etc.)
-- **K-Pop**: 30+ artists (BTS, BLACKPINK, NewJeans, etc.)
-- **Afrobeats**: 20+ artists (Burna Boy, Wizkid, Tems, etc.)
-- **Country**: 30+ artists (Morgan Wallen, Chris Stapleton, etc.)
+- **Hip-Hop/Rap**: 100+ artists
+- **Pop**: 50+ artists
+- **R&B/Soul**: 40+ artists
+- **Rock/Alternative**: 50+ artists
+- **EDM/Electronic**: 30+ artists
+- **Latin/Reggaeton**: 30+ artists
+- **K-Pop**: 30+ artists
+- **Afrobeats**: 20+ artists
+- **Country**: 30+ artists
 - **Brazilian**: 130+ artists
 
-### Brazilian Artists (December 2024):
-- **Funk/Pop**: Anitta, Ludmilla, MC Kevinho, Pabllo Vittar, Gloria Groove, Luísa Sonza
-- **Sertanejo**: Marília Mendonça, Gusttavo Lima, Luan Santana, Maiara & Maraisa, Henrique & Juliano
-- **MPB Legends**: Caetano Veloso, Gilberto Gil, Tom Jobim, Elis Regina, Milton Nascimento
-- **EDM**: Alok, Vintage Culture, Cat Dealers, Dubdogz, KVSH
-- **Hip-Hop**: Racionais MC's, Emicida, Criolo, Djonga
-- **Pagode**: Thiaguinho, Zeca Pagodinho, Sorriso Maroto, Dilsinho
-- **Rock**: Legião Urbana, Titãs, Charlie Brown Jr, Fresno
-
 ## API Endpoints
-- `GET /api/artists?search={query}&limit={n}` - Search artists
+### Auth
+- `POST /api/auth/session` - Exchange session_id for user data
+- `GET /api/auth/me` - Get current authenticated user
+- `POST /api/auth/logout` - Logout user
+
+### Game Results & Leaderboard
+- `POST /api/game/submit-result` - Submit game result (requires auth)
+- `GET /api/leaderboard` - Get leaderboard with period/sort filters
+- `GET /api/leaderboard/user/{user_id}` - Get user's rank
+- `GET /api/user/{user_id}/history` - Get user's game history
+
+### Artists & Game
+- `GET /api/artists?search={query}` - Search artists
 - `GET /api/artists/random` - Get random artist
-- `GET /api/artists/{id}` - Get artist by ID
 - `GET /api/artists/{id}/collaborations` - Get artist collaborations
-- `GET /api/artists/{id}/connected` - Get connected artists
-- `POST /api/game/find-path` - BFS pathfinding between two artists
+- `POST /api/game/find-path` - BFS pathfinding
 - `GET /api/stats` - Database statistics
 
 ## File Structure
 ```
 /app
 ├── backend/
-│   ├── server.py       # FastAPI routes and DB connection
-│   ├── seed.py         # Database seeding script (590 artists, 1087 collabs)
-│   └── tests/          # Pytest test files
+│   ├── server.py       # FastAPI routes (auth, leaderboard, game)
+│   ├── seed.py         # Database seeding (590 artists, 1087 collabs)
+│   └── tests/
+│       └── test_auth_leaderboard.py
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── ArtistCard.jsx     # Artist selection with avatars
-│   │   │   ├── GameBoard.jsx      # Game interface + timer + game lost screen
-│   │   │   ├── StarryBackground.jsx
-│   │   │   ├── HowToPlayModal.jsx
-│   │   │   └── OptionsModal.jsx   # Timed mode + difficulty selector
+│   │   │   ├── ArtistCard.jsx
+│   │   │   ├── GameBoard.jsx
+│   │   │   ├── AuthCallback.jsx      # OAuth callback handler
+│   │   │   ├── UserMenu.jsx          # Login/profile dropdown
+│   │   │   ├── LeaderboardModal.jsx  # Leaderboard with filters
+│   │   │   ├── GameHistoryModal.jsx  # User game history
+│   │   │   ├── OptionsModal.jsx      # Settings + difficulty
+│   │   │   └── StarryBackground.jsx
 │   │   ├── services/
-│   │   │   └── api.js             # Centralized API calls
+│   │   │   └── api.js                # Auth + leaderboard API
 │   │   ├── utils/
-│   │   │   └── avatars.js         # DiceBear & genre icon utilities
-│   │   ├── App.js                 # DIFFICULTY_CONFIG, game state
-│   │   └── App.css                # Diamond theme + timer + game lost styles
+│   │   │   └── avatars.js
+│   │   ├── App.js                    # BrowserRouter, auth state
+│   │   └── App.css
 │   └── package.json
+├── auth_testing.md
 └── memory/
     └── PRD.md
 ```
@@ -120,16 +130,18 @@ A musical artist connection trivia game where players connect two artists throug
 - [x] DiceBear avatar integration
 - [x] Genre-specific icons
 - [x] Brazilian artists expansion (130+ artists)
-- [x] **Timed Challenge Mode** with 4 difficulty levels
-- [x] **Timer display** with warning/critical states
-- [x] **Game Lost screen** ("Time's Up!")
-- [x] **Stats tracking** (played, won, lost, best time, win rate)
+- [x] Timed Challenge Mode with 4 difficulties
+- [x] Timer display with warning/critical states
+- [x] Game Lost screen ("Time's Up!")
+- [x] **Google OAuth via Emergent Auth**
+- [x] **Leaderboard with period/sort filters**
+- [x] **User game history**
+- [x] **Game result submission with stats tracking**
 - [x] Comprehensive testing (100% pass rate)
 
 ## Future/Backlog Tasks
-- [ ] User accounts for persistent game history/stats
 - [ ] Social sharing of completed chains
-- [ ] Leaderboards (daily/weekly/all-time)
+- [ ] Daily Challenge mode (same artists for all players)
 - [ ] More regional artists (African, Asian beyond K-Pop)
 - [ ] Music API integration (MusicBrainz/Spotify) for automated data expansion
 - [ ] Sound effects implementation
