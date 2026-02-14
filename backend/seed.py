@@ -644,6 +644,12 @@ ARTISTS_RAW = [
     (828, "Nx Zero", "Rock/Emo"),
     (829, "Fresno", "Rock/Emo"),
     (830, "Lagum", "Pop/Rock Brasileiro"),
+    
+    # ── LEGENDARY VOCALISTS ──
+    (831, "Celine Dion", "Pop/Adult Contemporary"),
+    (832, "Andrea Bocelli", "Classical Crossover"),
+    (833, "Barbra Streisand", "Pop/Adult Contemporary"),
+    (834, "Bee Gees", "Pop/Disco"),
 ]
 
 # ─── COLLABORATIONS ─────────────────────────────────────
