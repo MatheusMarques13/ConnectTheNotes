@@ -34,14 +34,14 @@ print('User ID: ' + userId);
 ## Step 2: Test Backend API
 ```bash
 # Test auth endpoint
-curl -X GET "https://music-six-degrees.preview.emergentagent.com/api/auth/me" \
+curl -X GET "https://artist-connect-35.preview.emergentagent.com/api/auth/me" \
   -H "Authorization: Bearer YOUR_SESSION_TOKEN"
 
 # Test leaderboard
-curl -X GET "https://music-six-degrees.preview.emergentagent.com/api/leaderboard?period=all&sort_by=wins"
+curl -X GET "https://artist-connect-35.preview.emergentagent.com/api/leaderboard?period=all&sort_by=wins"
 
 # Test game result submission (authenticated)
-curl -X POST "https://music-six-degrees.preview.emergentagent.com/api/game/submit-result" \
+curl -X POST "https://artist-connect-35.preview.emergentagent.com/api/game/submit-result" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_SESSION_TOKEN" \
   -d '{"artist1_name": "Drake", "artist2_name": "Rihanna", "steps": 2, "won": true}'
@@ -59,7 +59,7 @@ await page.context.add_cookies([{
     "secure": true,
     "sameSite": "None"
 }]);
-await page.goto("https://music-six-degrees.preview.emergentagent.com");
+await page.goto("https://artist-connect-35.preview.emergentagent.com");
 ```
 
 ## Quick Debug

@@ -10,7 +10,7 @@ import sys
 from typing import Dict, Any, Optional, List
 
 # Backend URL from frontend environment
-BACKEND_URL = "https://music-six-degrees.preview.emergentagent.com/api"
+BACKEND_URL = "https://artist-connect-35.preview.emergentagent.com/api"
 
 class ConnectNotesAPITester:
     def __init__(self, base_url: str):
