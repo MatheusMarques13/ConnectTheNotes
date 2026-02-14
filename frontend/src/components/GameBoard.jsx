@@ -1,13 +1,11 @@
-import React, { useState, useMemo } from 'react';
-import { ArrowLeft, ArrowRight, Music, Disc, Radio, Mic2, RotateCcw, Lightbulb, Check, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { ArrowLeft, ArrowRight, Music, Disc, Radio, Mic2, RotateCcw, Lightbulb, Check, ChevronRight, Loader2 } from 'lucide-react';
 import {
-  getArtistById,
   getCollaborationsForArtist,
-  getCollaborationsBetween,
-  findConnection,
-  searchArtists,
   getConnectedArtists,
-} from '../data/mockData';
+  findConnection,
+  getArtistById,
+} from '../services/api';
 
 const typeIcons = {
   song: <Music size={14} />,
@@ -28,33 +26,89 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
   const [selectedCollab, setSelectedCollab] = useState(null);
   const [gameWon, setGameWon] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [hint, setHint] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
+
+  // Async data
+  const [availableCollabs, setAvailableCollabs] = useState([]);
+  const [connectedArtists, setConnectedArtists] = useState([]);
+  const [collabArtists, setCollabArtists] = useState([]);
+  const [loading, setLoading] = useState(false);
+  // Cache for artist lookups
+  const [artistCache, setArtistCache] = useState({});
 
   const currentArtist = chain[chain.length - 1].artist;
 
-  const availableCollabs = useMemo(() => {
-    return getCollaborationsForArtist(currentArtist.id);
-  }, [currentArtist.id]);
+  // Cache an artist
+  const cacheArtist = useCallback((artist) => {
+    setArtistCache(prev => ({ ...prev, [artist.id]: artist }));
+  }, []);
 
-  const connectedArtists = useMemo(() => {
-    return getConnectedArtists(currentArtist.id);
-  }, [currentArtist.id]);
+  // Fetch collaborations when current artist changes
+  useEffect(() => {
+    let cancelled = false;
+    const fetchData = async () => {
+      setLoading(true);
+      const [collabs, connected] = await Promise.all([
+        getCollaborationsForArtist(currentArtist.id),
+        getConnectedArtists(currentArtist.id),
+      ]);
+      if (!cancelled) {
+        setAvailableCollabs(collabs);
+        setConnectedArtists(connected);
+        // Cache connected artists
+        connected.forEach(a => cacheArtist(a));
+        setLoading(false);
+      }
+    };
+    fetchData();
+    return () => { cancelled = true; };
+  }, [currentArtist.id, cacheArtist]);
 
-  const hint = useMemo(() => {
-    if (!showHints) return null;
-    const path = findConnection(currentArtist.id, artist2.id);
-    if (path && path.length > 0) {
-      const nextArtist = getArtistById(path[0].toArtist);
-      return nextArtist;
+  // Fetch hint when needed
+  useEffect(() => {
+    if (!showHints || !showHint) {
+      setHint(null);
+      return;
     }
-    return null;
-  }, [currentArtist.id, artist2.id, showHints]);
+    let cancelled = false;
+    const fetchHint = async () => {
+      const path = await findConnection(currentArtist.id, artist2.id);
+      if (!cancelled && path && path.length > 0) {
+        const nextId = path[0].toArtist;
+        // Look up in cache or connected artists
+        const cached = artistCache[nextId];
+        if (cached) {
+          setHint(cached);
+        } else {
+          const artist = await getArtistById(nextId);
+          if (!cancelled && artist) {
+            setHint(artist);
+            cacheArtist(artist);
+          }
+        }
+      }
+    };
+    fetchHint();
+    return () => { cancelled = true; };
+  }, [currentArtist.id, artist2.id, showHints, showHint, artistCache, cacheArtist]);
+
+  // When a collab is selected, compute which artists it leads to
+  useEffect(() => {
+    if (!selectedCollab) {
+      setCollabArtists([]);
+      return;
+    }
+    const otherIds = selectedCollab.artistIds.filter(id => id !== currentArtist.id);
+    const artists = otherIds.map(id => {
+      return connectedArtists.find(a => a.id === id) || artistCache[id] || null;
+    }).filter(Boolean);
+    setCollabArtists(artists);
+  }, [selectedCollab, currentArtist.id, connectedArtists, artistCache]);
 
   const handleSelectCollab = (collab) => {
     setSelectedCollab(collab);
     setSearchQuery('');
-    setSearchResults([]);
   };
 
   const handleSelectNextArtist = (nextArtist) => {
@@ -62,7 +116,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
     setChain(newChain);
     setSelectedCollab(null);
     setSearchQuery('');
-    setSearchResults([]);
+    cacheArtist(nextArtist);
 
     if (nextArtist.id === artist2.id) {
       setGameWon(true);
@@ -88,21 +142,13 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
   const getArtistsForCollab = (collab) => {
     return collab.artistIds
       .filter(id => id !== currentArtist.id)
-      .map(id => getArtistById(id))
+      .map(id => connectedArtists.find(a => a.id === id) || artistCache[id])
       .filter(Boolean);
   };
 
-  const handleArtistSearch = (value) => {
-    setSearchQuery(value);
-    if (value.length > 0) {
-      const filtered = connectedArtists.filter(a =>
-        a.name.toLowerCase().includes(value.toLowerCase())
-      );
-      setSearchResults(filtered);
-    } else {
-      setSearchResults([]);
-    }
-  };
+  const filteredCollabArtists = searchQuery
+    ? collabArtists.filter(a => a.name.toLowerCase().includes(searchQuery.toLowerCase()))
+    : collabArtists;
 
   const getInitials = (name) => {
     return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
@@ -228,55 +274,67 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
         <p className="current-artist-genre">{currentArtist.genre}</p>
       </div>
 
-      {/* Select collaboration */}
-      {!selectedCollab ? (
+      {loading ? (
+        <div className="loading-section">
+          <Loader2 size={24} className="spin-icon" />
+          <span>Loading collaborations...</span>
+        </div>
+      ) : !selectedCollab ? (
         <div className="collab-section">
           <h3 className="section-title">SELECT A COLLABORATION</h3>
-          <div className="collab-grid">
-            {availableCollabs.map(collab => {
-              const otherArtists = getArtistsForCollab(collab);
-              return (
-                <button
-                  key={collab.id}
-                  className="collab-card"
-                  onClick={() => handleSelectCollab(collab)}
-                >
-                  <div className="collab-type-badge">
-                    {typeIcons[collab.type]}
-                    <span>{typeLabels[collab.type]}</span>
-                  </div>
-                  <div className="collab-title">{collab.title}</div>
-                  <div className="collab-year">{collab.year}</div>
-                  <div className="collab-with">
-                    with {otherArtists.map(a => a.name).join(', ')}
-                  </div>
-                </button>
-              );
-            })}
-          </div>
+          {availableCollabs.length === 0 ? (
+            <div className="empty-state">
+              <p>No collaborations found for this artist. Try undoing your last step.</p>
+            </div>
+          ) : (
+            <div className="collab-grid">
+              {availableCollabs.map(collab => {
+                const otherArtists = getArtistsForCollab(collab);
+                return (
+                  <button
+                    key={collab.id}
+                    className="collab-card"
+                    onClick={() => handleSelectCollab(collab)}
+                  >
+                    <div className="collab-type-badge">
+                      {typeIcons[collab.type]}
+                      <span>{typeLabels[collab.type] || collab.type}</span>
+                    </div>
+                    <div className="collab-title">{collab.title}</div>
+                    <div className="collab-year">{collab.year}</div>
+                    <div className="collab-with">
+                      with {otherArtists.map(a => a.name).join(', ') || '...'}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </div>
       ) : (
         <div className="next-artist-section">
           <div className="selected-collab-display">
             <div className="collab-type-badge">
               {typeIcons[selectedCollab.type]}
-              <span>{typeLabels[selectedCollab.type]}</span>
+              <span>{typeLabels[selectedCollab.type] || selectedCollab.type}</span>
             </div>
             <span className="selected-collab-title">{selectedCollab.title} ({selectedCollab.year})</span>
             <button className="change-collab-btn" onClick={() => setSelectedCollab(null)}>Change</button>
           </div>
           <h3 className="section-title">SELECT NEXT ARTIST</h3>
-          <div className="next-artist-search">
-            <input
-              type="text"
-              placeholder="Search connected artist..."
-              value={searchQuery}
-              onChange={e => handleArtistSearch(e.target.value)}
-              className="artist-search-input"
-            />
-          </div>
+          {collabArtists.length > 3 && (
+            <div className="next-artist-search">
+              <input
+                type="text"
+                placeholder="Search connected artist..."
+                value={searchQuery}
+                onChange={e => setSearchQuery(e.target.value)}
+                className="artist-search-input"
+              />
+            </div>
+          )}
           <div className="next-artist-grid">
-            {(searchQuery ? searchResults : getArtistsForCollab(selectedCollab)).map(artist => (
+            {filteredCollabArtists.map(artist => (
               <button
                 key={artist.id}
                 className={`next-artist-card ${artist.id === artist2.id ? 'target' : ''} ${showHint && hint && artist.id === hint.id ? 'hinted' : ''}`}
