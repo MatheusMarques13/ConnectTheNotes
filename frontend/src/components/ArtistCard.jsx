@@ -1,15 +1,36 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { Search, Shuffle, X, Music } from 'lucide-react';
+import { Search, Shuffle, X, Music, Mic2, Disc3, Guitar, Heart, Sparkles, Flame, Trees, Sun, Cloud, Star, Radio } from 'lucide-react';
 import { searchArtists, getRandomArtist } from '../services/api';
+import { getAvatarUrl, getSmallAvatarUrl, getGenreIcon, getGenreColor } from '../utils/avatars';
+
+const iconMap = {
+  'music': Music,
+  'mic-2': Mic2,
+  'disc-3': Disc3,
+  'guitar': Guitar,
+  'heart': Heart,
+  'sparkles': Sparkles,
+  'flame': Flame,
+  'trees': Trees,
+  'sun': Sun,
+  'cloud': Cloud,
+  'star': Star,
+  'radio': Radio,
+};
 
 const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [imgLoaded, setImgLoaded] = useState(false);
   const inputRef = useRef(null);
   const dropdownRef = useRef(null);
   const debounceRef = useRef(null);
+
+  useEffect(() => {
+    setImgLoaded(false);
+  }, [artist]);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -69,14 +90,65 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
     return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
   };
 
+  // Render genre-specific placeholder icon
+  const renderPlaceholderIcons = () => {
+    return (
+      <div className="placeholder-icons-grid">
+        <div className="placeholder-icon-item">
+          <Mic2 size={28} strokeWidth={1.2} />
+        </div>
+        <div className="placeholder-icon-item">
+          <Music size={28} strokeWidth={1.2} />
+        </div>
+        <div className="placeholder-icon-item">
+          <Guitar size={28} strokeWidth={1.2} />
+        </div>
+        <div className="placeholder-icon-item">
+          <Disc3 size={28} strokeWidth={1.2} />
+        </div>
+        <div className="placeholder-icon-item">
+          <Star size={28} strokeWidth={1.2} />
+        </div>
+        <div className="placeholder-icon-item">
+          <Radio size={28} strokeWidth={1.2} />
+        </div>
+      </div>
+    );
+  };
+
+  const renderGenreBadge = (genre) => {
+    const iconName = getGenreIcon(genre);
+    const IconComp = iconMap[iconName] || Music;
+    const color = getGenreColor(genre);
+    return (
+      <span className="genre-icon-badge" style={{ color }}>
+        <IconComp size={12} />
+      </span>
+    );
+  };
+
   return (
     <div className="artist-card">
       <div className="card-number">{number}</div>
       <div className="card-image-area">
         {artist ? (
           <div className="artist-selected">
-            <div className="artist-avatar">
-              <span className="artist-initials">{getInitials(artist.name)}</span>
+            <div className="artist-avatar-wrapper">
+              <div 
+                className="artist-avatar-ring"
+                style={{ borderColor: getGenreColor(artist.genre) }}
+              >
+                <img
+                  src={getAvatarUrl(artist.name)}
+                  alt={artist.name}
+                  className={`artist-avatar-img ${imgLoaded ? 'loaded' : ''}`}
+                  onLoad={() => setImgLoaded(true)}
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
+                {!imgLoaded && (
+                  <span className="artist-initials-fallback">{getInitials(artist.name)}</span>
+                )}
+              </div>
             </div>
             <button className="clear-btn" onClick={handleClear}>
               <X size={14} />
@@ -84,14 +156,17 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
           </div>
         ) : (
           <div className="artist-placeholder">
-            <Music size={64} strokeWidth={1} className="placeholder-icon" />
+            {renderPlaceholderIcons()}
           </div>
         )}
       </div>
       {artist ? (
         <div className="artist-info">
           <div className="artist-name-display">{artist.name}</div>
-          <div className="artist-genre">{artist.genre}</div>
+          <div className="artist-genre">
+            {renderGenreBadge(artist.genre)}
+            {artist.genre}
+          </div>
         </div>
       ) : (
         <div className="search-area" style={{ position: 'relative' }}>
@@ -116,12 +191,20 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
                   className="search-result-item"
                   onClick={() => handleSelect(r)}
                 >
-                  <div className="result-avatar-small">
-                    <span>{getInitials(r.name)}</span>
+                  <div className="result-avatar-img-wrapper">
+                    <img
+                      src={getSmallAvatarUrl(r.name)}
+                      alt={r.name}
+                      className="result-avatar-img"
+                      onError={(e) => { e.target.style.display = 'none'; }}
+                    />
                   </div>
                   <div className="result-info">
                     <span className="result-name">{r.name}</span>
-                    <span className="result-genre">{r.genre}</span>
+                    <span className="result-genre">
+                      {renderGenreBadge(r.genre)}
+                      {r.genre}
+                    </span>
                   </div>
                 </button>
               ))}
