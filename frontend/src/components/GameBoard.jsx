@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { ArrowLeft, ArrowRight, Music, Disc, Radio, Mic2, RotateCcw, Lightbulb, Check, ChevronRight, Loader2 } from 'lucide-react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { ArrowLeft, ArrowRight, Music, Disc, Radio, Mic2, RotateCcw, Lightbulb, Check, ChevronRight, Loader2, Clock, AlertTriangle, XCircle } from 'lucide-react';
 import {
   getCollaborationsForArtist,
   getConnectedArtists,
@@ -40,10 +40,35 @@ const ArtistMiniAvatar = ({ name, size = 28, className = '' }) => {
   );
 };
 
-const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
+// Timer Component
+const GameTimer = ({ timeRemaining, timeLimit, isWarning, isCritical }) => {
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+  };
+
+  const percentage = (timeRemaining / timeLimit) * 100;
+
+  return (
+    <div className={`game-timer ${isWarning ? 'warning' : ''} ${isCritical ? 'critical' : ''}`} data-testid="game-timer">
+      <Clock size={16} className="timer-icon" />
+      <span className="timer-value">{formatTime(timeRemaining)}</span>
+      <div className="timer-bar">
+        <div 
+          className="timer-bar-fill" 
+          style={{ width: `${percentage}%` }}
+        />
+      </div>
+    </div>
+  );
+};
+
+const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMode, timeLimit, difficulty }) => {
   const [chain, setChain] = useState([{ artist: artist1, collab: null }]);
   const [selectedCollab, setSelectedCollab] = useState(null);
   const [gameWon, setGameWon] = useState(false);
+  const [gameLost, setGameLost] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [hint, setHint] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -54,7 +79,45 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
   const [loading, setLoading] = useState(false);
   const [artistCache, setArtistCache] = useState({});
 
+  // Timer state
+  const [timeRemaining, setTimeRemaining] = useState(timeLimit || 0);
+  const [timeSpent, setTimeSpent] = useState(0);
+  const timerRef = useRef(null);
+  const startTimeRef = useRef(Date.now());
+
   const currentArtist = chain[chain.length - 1].artist;
+
+  // Timer logic
+  useEffect(() => {
+    if (!timedMode || gameWon || gameLost) return;
+
+    timerRef.current = setInterval(() => {
+      setTimeRemaining(prev => {
+        if (prev <= 1) {
+          clearInterval(timerRef.current);
+          setGameLost(true);
+          if (onLose) onLose();
+          return 0;
+        }
+        return prev - 1;
+      });
+      setTimeSpent(prev => prev + 1);
+    }, 1000);
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [timedMode, gameWon, gameLost, onLose]);
+
+  // Calculate time spent on win (for non-timed mode tracking too)
+  useEffect(() => {
+    if (!timedMode) {
+      const interval = setInterval(() => {
+        setTimeSpent(Math.floor((Date.now() - startTimeRef.current) / 1000));
+      }, 1000);
+      return () => clearInterval(interval);
+    }
+  }, [timedMode]);
 
   const cacheArtist = useCallback((artist) => {
     setArtistCache(prev => ({ ...prev, [artist.id]: artist }));
@@ -131,7 +194,8 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
 
     if (nextArtist.id === artist2.id) {
       setGameWon(true);
-      if (onWin) onWin(newChain.length - 1);
+      if (timerRef.current) clearInterval(timerRef.current);
+      if (onWin) onWin(newChain.length - 1, timeSpent);
     }
   };
 
@@ -147,7 +211,11 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
     setChain([{ artist: artist1, collab: null }]);
     setSelectedCollab(null);
     setGameWon(false);
+    setGameLost(false);
     setShowHint(false);
+    setTimeRemaining(timeLimit || 0);
+    setTimeSpent(0);
+    startTimeRef.current = Date.now();
   };
 
   const getArtistsForCollab = (collab) => {
@@ -161,10 +229,63 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
     ? collabArtists.filter(a => a.name.toLowerCase().includes(searchQuery.toLowerCase()))
     : collabArtists;
 
-  if (gameWon) {
+  const isWarning = timedMode && timeRemaining <= 30 && timeRemaining > 10;
+  const isCritical = timedMode && timeRemaining <= 10;
+
+  // Game Lost Screen (Time's Up)
+  if (gameLost) {
     return (
       <div className="game-board">
-        <div className="game-won">
+        <div className="game-lost" data-testid="game-lost-screen">
+          <div className="lost-icon-wrap">
+            <XCircle size={64} className="lost-icon" />
+          </div>
+          <h2 className="lost-title">Time's Up!</h2>
+          <p className="lost-subtitle">
+            You ran out of time trying to connect {artist1.name} to {artist2.name}
+          </p>
+          <div className="lost-stats">
+            <div className="lost-stat">
+              <span className="lost-stat-value">{chain.length - 1}</span>
+              <span className="lost-stat-label">Steps Taken</span>
+            </div>
+            <div className="lost-stat">
+              <span className="lost-stat-value">{currentArtist.name}</span>
+              <span className="lost-stat-label">Last Artist</span>
+            </div>
+          </div>
+          <div className="lost-chain">
+            <h4>Your Progress:</h4>
+            <div className="lost-chain-display">
+              {chain.map((step, i) => (
+                <React.Fragment key={i}>
+                  <ArtistMiniAvatar name={step.artist.name} size={32} />
+                  {i < chain.length - 1 && <ChevronRight size={14} className="lost-chain-arrow" />}
+                </React.Fragment>
+              ))}
+              <span className="lost-chain-target">→ {artist2.name}</span>
+            </div>
+          </div>
+          <div className="lost-actions">
+            <button className="btn-primary" onClick={handleRestart}>Try Again</button>
+            <button className="btn-secondary" onClick={onBack}>New Game</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Game Won Screen
+  if (gameWon) {
+    const formatTime = (seconds) => {
+      const mins = Math.floor(seconds / 60);
+      const secs = seconds % 60;
+      return mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
+    };
+
+    return (
+      <div className="game-board">
+        <div className="game-won" data-testid="game-won-screen">
           <div className="won-fireworks">
             {[...Array(12)].map((_, i) => (
               <div key={i} className="firework" style={{
@@ -175,7 +296,10 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
             ))}
           </div>
           <h2 className="won-title">Connected!</h2>
-          <p className="won-subtitle">You linked {artist1.name} to {artist2.name} in {chain.length - 1} step{chain.length - 1 !== 1 ? 's' : ''}!</p>
+          <p className="won-subtitle">
+            You linked {artist1.name} to {artist2.name} in {chain.length - 1} step{chain.length - 1 !== 1 ? 's' : ''}
+            {timedMode && <span className="won-time"> • {formatTime(timeSpent)}</span>}
+          </p>
           <div className="won-chain">
             {chain.map((step, i) => (
               <React.Fragment key={i}>
@@ -210,6 +334,17 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin }) => {
           <ArrowLeft size={18} />
           <span>BACK</span>
         </button>
+        
+        {/* Timer (if timed mode) */}
+        {timedMode && (
+          <GameTimer 
+            timeRemaining={timeRemaining}
+            timeLimit={timeLimit}
+            isWarning={isWarning}
+            isCritical={isCritical}
+          />
+        )}
+        
         <div className="game-goal">
           <div className="goal-artist">
             <ArtistMiniAvatar name={artist1.name} size={28} />
