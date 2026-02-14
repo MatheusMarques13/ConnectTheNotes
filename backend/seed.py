@@ -811,6 +811,7 @@ COLLABS_RAW = [
     (8, 433, "Gracie Abrams Tour (Live)", "live", 2024),
     (8, 604, "Jolene (Live Duet)", "live", 2023),
     (8, 608, "Betty (Live)", "live", 2020),
+    (8, 747, "Long Live", "song", 2012),
 
     # Weeknd
     (9, 10, "Love Me Harder", "song", 2014),
