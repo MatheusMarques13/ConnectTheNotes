@@ -160,8 +160,12 @@ function App() {
           artist1={artist1}
           artist2={artist2}
           onBack={handleBack}
-          showHints={options.showHints}
+          showHints={getGameSettings().hintsEnabled}
           onWin={handleWin}
+          onLose={handleLose}
+          timedMode={options.timedMode}
+          timeLimit={getGameSettings().timeLimit}
+          difficulty={options.difficulty}
         />
       )}
 
