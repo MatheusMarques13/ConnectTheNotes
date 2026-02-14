@@ -10,7 +10,7 @@ A musical artist connection trivia game where players connect two artists throug
 
 ## Core Features
 - Artist search with autocomplete (backed by MongoDB text index)
-- Random artist selection
+- Random artist selection ("Choose for Me")
 - Game board with collaboration chain-building
 - BFS pathfinding for connection paths and hints
 - Step counter, undo, restart functionality
@@ -18,15 +18,41 @@ A musical artist connection trivia game where players connect two artists throug
 - How to Play & Options modals
 - Animated starry/constellation background with mouse interactivity
 
+## Game Modes (December 2024)
+### Timed Challenge Mode
+- Toggle on/off in Options
+- Four difficulty levels:
+  - **Easy**: 5 minutes, hints enabled
+  - **Medium**: 3 minutes, hints enabled
+  - **Hard**: 90 seconds, hints disabled
+  - **Expert**: 60 seconds, hints disabled
+- Visual timer with progress bar
+- Warning states: Yellow at 30s, Red pulse at 10s
+- "Time's Up!" game lost screen on timeout
+
+### Classic Mode (Default)
+- No time limit
+- Hints toggleable in Options
+- Relaxed exploration of connections
+
 ## Visual Features
 - **DiceBear Avatars**: Unique "lorelei" style SVG avatars for each artist
 - **Genre Icons**: Lucide-react icons mapped by genre (mic-2 for Hip-Hop, guitar for Rock, flame for Latin, etc.)
 - **Genre-colored Rings**: Avatar rings colored by genre for visual distinction
+- **Timer States**: Color-coded urgency (normal → yellow → red)
 
 ## Design Theme
 - Diamond/crystal atmosphere: icy blues, silvers, deep navy
 - Fonts: Cormorant Garamond (display), Outfit (body), JetBrains Mono (mono)
 - Constellation animations with shooting stars
+
+## Player Stats
+- Games Played
+- Games Won
+- Games Lost
+- Best Steps (fewest steps to win)
+- Best Time (fastest win in timed mode)
+- Win Rate percentage
 
 ## Artist Database
 ### Coverage by Genre:
@@ -39,9 +65,9 @@ A musical artist connection trivia game where players connect two artists throug
 - **K-Pop**: 30+ artists (BTS, BLACKPINK, NewJeans, etc.)
 - **Afrobeats**: 20+ artists (Burna Boy, Wizkid, Tems, etc.)
 - **Country**: 30+ artists (Morgan Wallen, Chris Stapleton, etc.)
-- **Brazilian**: 130+ artists (see below)
+- **Brazilian**: 130+ artists
 
-### Brazilian Artists (December 2024 Update):
+### Brazilian Artists (December 2024):
 - **Funk/Pop**: Anitta, Ludmilla, MC Kevinho, Pabllo Vittar, Gloria Groove, Luísa Sonza
 - **Sertanejo**: Marília Mendonça, Gusttavo Lima, Luan Santana, Maiara & Maraisa, Henrique & Juliano
 - **MPB Legends**: Caetano Veloso, Gilberto Gil, Tom Jobim, Elis Regina, Milton Nascimento
@@ -64,28 +90,28 @@ A musical artist connection trivia game where players connect two artists throug
 /app
 ├── backend/
 │   ├── server.py       # FastAPI routes and DB connection
-│   ├── seed.py         # Database seeding script
+│   ├── seed.py         # Database seeding script (590 artists, 1087 collabs)
 │   └── tests/          # Pytest test files
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── ArtistCard.jsx     # Artist selection with avatars
-│   │   │   ├── GameBoard.jsx      # Main game interface
+│   │   │   ├── GameBoard.jsx      # Game interface + timer + game lost screen
 │   │   │   ├── StarryBackground.jsx
 │   │   │   ├── HowToPlayModal.jsx
-│   │   │   └── OptionsModal.jsx
+│   │   │   └── OptionsModal.jsx   # Timed mode + difficulty selector
 │   │   ├── services/
 │   │   │   └── api.js             # Centralized API calls
 │   │   ├── utils/
 │   │   │   └── avatars.js         # DiceBear & genre icon utilities
-│   │   ├── App.js                 # Main app component
-│   │   └── App.css                # Diamond theme styles
+│   │   ├── App.js                 # DIFFICULTY_CONFIG, game state
+│   │   └── App.css                # Diamond theme + timer + game lost styles
 │   └── package.json
 └── memory/
     └── PRD.md
 ```
 
-## Completed Tasks (December 2024)
+## Completed Tasks
 - [x] Full-stack scaffolding (React + FastAPI + MongoDB)
 - [x] Artist search and selection
 - [x] Game board with collaboration display
@@ -94,12 +120,17 @@ A musical artist connection trivia game where players connect two artists throug
 - [x] DiceBear avatar integration
 - [x] Genre-specific icons
 - [x] Brazilian artists expansion (130+ artists)
+- [x] **Timed Challenge Mode** with 4 difficulty levels
+- [x] **Timer display** with warning/critical states
+- [x] **Game Lost screen** ("Time's Up!")
+- [x] **Stats tracking** (played, won, lost, best time, win rate)
 - [x] Comprehensive testing (100% pass rate)
 
-## Upcoming/Future Tasks
-- [ ] Integrate music data API (MusicBrainz/Spotify) for scalable data sourcing
-- [ ] Add more international regions (African artists, Asian pop beyond K-Pop)
-- [ ] Timed challenge mode
-- [ ] Difficulty settings
-- [ ] User accounts with game history/stats
+## Future/Backlog Tasks
+- [ ] User accounts for persistent game history/stats
 - [ ] Social sharing of completed chains
+- [ ] Leaderboards (daily/weekly/all-time)
+- [ ] More regional artists (African, Asian beyond K-Pop)
+- [ ] Music API integration (MusicBrainz/Spotify) for automated data expansion
+- [ ] Sound effects implementation
+- [ ] Achievement system
