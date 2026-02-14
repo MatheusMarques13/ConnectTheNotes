@@ -198,16 +198,18 @@ function MainApp() {
           {/* Artist selection cards */}
           <div className="cards-container">
             <ArtistCard
-              position={1}
-              selectedArtist={artist1}
+              number={1}
+              artist={artist1}
               onSelect={setArtist1}
-              excludeId={artist2?.id}
+              onClear={() => setArtist1(null)}
+              excludeIds={artist2 ? [artist2.id] : []}
             />
             <ArtistCard
-              position={2}
-              selectedArtist={artist2}
+              number={2}
+              artist={artist2}
               onSelect={setArtist2}
-              excludeId={artist1?.id}
+              onClear={() => setArtist2(null)}
+              excludeIds={artist1 ? [artist1.id] : []}
             />
           </div>
 
