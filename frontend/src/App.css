@@ -1167,6 +1167,136 @@ body {
   border-radius: 10px;
 }
 
+/* ================================
+   CONSTELLATION GRAPH
+   ================================ */
+
+.constellation-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 12px;
+  border-radius: 12px;
+  background: rgba(12, 17, 33, 0.6);
+  border: 1px solid rgba(184, 198, 224, 0.08);
+  overflow: hidden;
+}
+
+.constellation-container svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Victory state */
+.constellation-victory {
+  border-color: rgba(192, 132, 252, 0.25);
+  box-shadow: 0 0 32px rgba(192, 132, 252, 0.08);
+}
+
+/* Nodes */
+.constellation-node {
+  animation: nodeAppear 0.45s ease-out both, nodeFloat 4s ease-in-out infinite;
+}
+
+.node-ring-pulse {
+  animation: nodeRingPulse 2.4s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+/* Lines */
+.constellation-line {
+  animation: lineDrawIn 0.6s ease-out forwards;
+}
+
+/* Labels */
+.constellation-label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  fill: var(--text-secondary);
+  letter-spacing: 0.3px;
+}
+
+.constellation-label.label-current {
+  fill: var(--diamond-light);
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.constellation-collab-label {
+  font-family: var(--font-body);
+  font-size: 9px;
+  fill: var(--text-muted);
+  opacity: 0.75;
+  font-style: italic;
+}
+
+/* --------------------------------
+   Animations
+   -------------------------------- */
+
+@keyframes nodeAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes nodeFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes nodeRingPulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.12);
+  }
+}
+
+@keyframes lineDrawIn {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes victoryPulse {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(192, 132, 252, 0.6));
+  }
+  50% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 14px rgba(232, 238, 255, 0.9));
+  }
+}
+
+.constellation-victory .constellation-node {
+  animation: nodeAppear 0.45s ease-out both, nodeFloat 3s ease-in-out infinite, victoryPulse 2s ease-in-out infinite;
+}
+
+/* --------------------------------
+   Responsive
+   -------------------------------- */
+
+@media (max-width: 640px) {
+  .constellation-container {
+    margin-bottom: 8px;
+  }
+}
+
 /* Hint Bar */
 .hint-bar {
   display: flex;
