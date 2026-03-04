@@ -7,6 +7,7 @@ import {
   getArtistById,
 } from '../services/api';
 import { getAvatarUrl, getSmallAvatarUrl, getLargeAvatarUrl, getGenreColor } from '../utils/avatars';
+import ConstellationGraph from './ConstellationGraph';
 
 const typeIcons = {
   song: <Music size={14} />,
@@ -256,15 +257,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
           </div>
           <div className="lost-chain">
             <h4>Your Progress:</h4>
-            <div className="lost-chain-display">
-              {chain.map((step, i) => (
-                <React.Fragment key={i}>
-                  <ArtistMiniAvatar name={step.artist.name} size={32} />
-                  {i < chain.length - 1 && <ChevronRight size={14} className="lost-chain-arrow" />}
-                </React.Fragment>
-              ))}
-              <span className="lost-chain-target">→ {artist2.name}</span>
-            </div>
+            <ConstellationGraph chain={chain} targetArtist={artist2} />
           </div>
           <div className="lost-actions">
             <button className="btn-primary" onClick={handleRestart}>Try Again</button>
@@ -300,23 +293,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
             You linked {artist1.name} to {artist2.name} in {chain.length - 1} step{chain.length - 1 !== 1 ? 's' : ''}
             {timedMode && <span className="won-time"> • {formatTime(timeSpent)}</span>}
           </p>
-          <div className="won-chain">
-            {chain.map((step, i) => (
-              <React.Fragment key={i}>
-                <div className="won-chain-artist">
-                  <ArtistMiniAvatar name={step.artist.name} size={56} className="won-avatar-wrap" />
-                  <span className="won-artist-name">{step.artist.name}</span>
-                </div>
-                {i < chain.length - 1 && (
-                  <div className="won-chain-collab">
-                    <ChevronRight size={16} />
-                    <span className="won-collab-title">{chain[i + 1].collab?.title}</span>
-                    <ChevronRight size={16} />
-                  </div>
-                )}
-              </React.Fragment>
-            ))}
-          </div>
+          <ConstellationGraph chain={chain} targetArtist={artist2} isVictory={true} />
           <div className="won-actions">
             <button className="btn-primary" onClick={onBack}>New Game</button>
             <button className="btn-secondary" onClick={handleRestart}>Play Again</button>
@@ -377,21 +354,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
 
       {/* Chain so far */}
       {chain.length > 1 && (
-        <div className="chain-display">
-          {chain.map((step, i) => (
-            <React.Fragment key={i}>
-              <div className={`chain-node ${i === chain.length - 1 ? 'current' : 'visited'}`}>
-                <ArtistMiniAvatar name={step.artist.name} size={20} />
-                <span>{step.artist.name}</span>
-              </div>
-              {i < chain.length - 1 && (
-                <div className="chain-edge">
-                  <span className="chain-collab-name">{chain[i + 1].collab?.title}</span>
-                </div>
-              )}
-            </React.Fragment>
-          ))}
-        </div>
+        <ConstellationGraph chain={chain} targetArtist={artist2} />
       )}
 
       {/* Hint display */}
