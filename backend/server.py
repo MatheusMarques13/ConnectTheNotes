@@ -20,7 +20,7 @@ mongo_url = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ.get('DB_NAME', 'connect_the_notes')]
 
-app = FastAPI(title="Connect the Notes API", version="1.0.0")
+app = FastAPI(title="Connect the Notes API", version="2.0.0")
 api_router = APIRouter(prefix="/api")
 
 # ── Models ──────────────────────────────────────────────
@@ -33,7 +33,7 @@ class FindPathRequest(BaseModel):
 
 @api_router.get("/")
 async def root():
-    return {"message": "Connect the Notes API", "version": "1.0.0"}
+    return {"message": "Connect the Notes API - Song Mode", "version": "2.0.0"}
 
 @api_router.get("/health")
 async def health():
@@ -43,7 +43,7 @@ async def health():
     except Exception as e:
         return JSONResponse(status_code=503, content={"status": "unhealthy", "error": str(e)})
 
-# ── TEMPORARY SEED ENDPOINT (just open this URL in browser!) ──
+# ── TEMPORARY SEED ENDPOINT ──
 
 @api_router.get("/seed")
 async def run_seed():
@@ -52,11 +52,12 @@ async def run_seed():
         from seed import seed
         await seed()
         artist_count = await db.artists.count_documents({})
-        collab_count = await db.collaborations.count_documents({})
+        connection_count = await db.artistConnections.count_documents({})
         return {
-            "message": "✅ Seed complete! Database populated.",
+            "message": "✅ Seed complete! Database populated with song-based connections.",
             "artists": artist_count,
-            "collaborations": collab_count
+            "connections": connection_count,
+            "mode": "Artists connected by SHARED SONGS"
         }
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
@@ -132,26 +133,27 @@ async def get_artist(artist_id: str):
         raise HTTPException(status_code=404, detail="Artist not found")
     return artist
 
-@api_router.get("/artists/{artist_id}/collaborations")
-async def get_artist_collaborations(artist_id: str):
-    collabs = await db.collaborations.find(
-        {"artistIds": artist_id},
+@api_router.get("/artists/{artist_id}/connections")
+async def get_artist_connections(artist_id: str):
+    """Get all songs that connect this artist to others"""
+    connections = await db.artistConnections.find(
+        {"$or": [{"artist1": artist_id}, {"artist2": artist_id}]},
         {"_id": 0}
     ).to_list(500)
-    return {"collaborations": collabs}
+    return {"connections": connections}
 
 @api_router.get("/artists/{artist_id}/connected")
 async def get_connected_artists(artist_id: str):
-    collabs = await db.collaborations.find(
-        {"artistIds": artist_id},
+    """Get all artists directly connected via songs"""
+    connections = await db.artistConnections.find(
+        {"$or": [{"artist1": artist_id}, {"artist2": artist_id}]},
         {"_id": 0}
     ).to_list(500)
     
     connected_ids = set()
-    for c in collabs:
-        for aid in c["artistIds"]:
-            if aid != artist_id:
-                connected_ids.add(aid)
+    for conn in connections:
+        other_id = conn["artist2"] if conn["artist1"] == artist_id else conn["artist1"]
+        connected_ids.add(other_id)
     
     if not connected_ids:
         return {"artists": []}
@@ -162,57 +164,115 @@ async def get_connected_artists(artist_id: str):
     ).to_list(200)
     return {"artists": artists}
 
-# ── Collaboration Routes ──────────────────────────────────
+# ── Connection Routes ──────────────────────────────────────
 
-@api_router.get("/collaborations/between/{id1}/{id2}")
-async def get_collaborations_between(id1: str, id2: str):
-    collabs = await db.collaborations.find(
-        {"artistIds": {"$all": [id1, id2]}},
+@api_router.get("/connections/between/{id1}/{id2}")
+async def get_connections_between(id1: str, id2: str):
+    """Get songs connecting two artists directly"""
+    connections = await db.artistConnections.find(
+        {"$or": [
+            {"artist1": id1, "artist2": id2},
+            {"artist1": id2, "artist2": id1}
+        ]},
         {"_id": 0}
     ).to_list(100)
-    return {"collaborations": collabs}
+    return {"connections": connections}
 
-# ── Game Logic ──────────────────────────────────────────────
+# ── Game Logic (NEW: Song-based BFS) ──────────────────────────────────
 
 @api_router.post("/game/find-path")
 async def find_path(request: FindPathRequest):
+    """
+    NEW ALGORITHM: Find shortest path between artists via SHARED SONGS
+    Path format: [Artist A, Song X, Artist B, Song Y, Artist C]
+    
+    Example result:
+    {
+      "path": [
+        {"type": "artist", "id": "abc", "name": "Taylor Swift"},
+        {"type": "song", "title": "Everything Has Changed", "year": 2012},
+        {"type": "artist", "id": "def", "name": "Ed Sheeran"},
+        {"type": "song", "title": "Perfect Duet", "year": 2017},
+        {"type": "artist", "id": "ghi", "name": "Beyoncé"}
+      ]
+    }
+    """
     start_id = request.startId
     end_id = request.endId
     
     if start_id == end_id:
         return {"path": []}
     
+    # Check if direct connection exists
+    direct = await db.artistConnections.find_one(
+        {"$or": [
+            {"artist1": start_id, "artist2": end_id},
+            {"artist1": end_id, "artist2": start_id}
+        ]},
+        {"_id": 0}
+    )
+    
+    if direct:
+        # Direct connection found!
+        start_artist = await db.artists.find_one({"id": start_id}, {"_id": 0})
+        end_artist = await db.artists.find_one({"id": end_id}, {"_id": 0})
+        
+        return {
+            "path": [
+                {"type": "artist", **start_artist},
+                {"type": "song", **direct["song"]},
+                {"type": "artist", **end_artist}
+            ]
+        }
+    
+    # BFS to find shortest path
     visited = {start_id}
     queue = deque([(start_id, [])])
     
     while queue:
         current_id, path = queue.popleft()
         
-        collabs = await db.collaborations.find(
-            {"artistIds": current_id},
+        # Find all songs connecting current artist to others
+        connections = await db.artistConnections.find(
+            {"$or": [{"artist1": current_id}, {"artist2": current_id}]},
             {"_id": 0}
         ).to_list(500)
         
-        for collab in collabs:
-            for next_id in collab["artistIds"]:
-                if next_id == current_id:
-                    continue
-                if next_id == end_id:
-                    return {
-                        "path": path + [{
-                            "collab": collab,
-                            "fromArtist": current_id,
-                            "toArtist": next_id
-                        }]
-                    }
-                if next_id not in visited:
-                    visited.add(next_id)
-                    queue.append((next_id, path + [{
-                        "collab": collab,
-                        "fromArtist": current_id,
-                        "toArtist": next_id
-                    }]))
+        for conn in connections:
+            # Determine the next artist
+            next_id = conn["artist2"] if conn["artist1"] == current_id else conn["artist1"]
+            
+            if next_id == end_id:
+                # Found the target!
+                # Build complete path with all artists and songs
+                full_path = []
+                
+                # Start artist
+                start_artist = await db.artists.find_one({"id": start_id}, {"_id": 0})
+                full_path.append({"type": "artist", **start_artist})
+                
+                # Add intermediate steps
+                for step in path:
+                    full_path.append({"type": "song", **step["song"]})
+                    artist = await db.artists.find_one({"id": step["toArtist"]}, {"_id": 0})
+                    full_path.append({"type": "artist", **artist})
+                
+                # Add final song and end artist
+                full_path.append({"type": "song", **conn["song"]})
+                end_artist = await db.artists.find_one({"id": end_id}, {"_id": 0})
+                full_path.append({"type": "artist", **end_artist})
+                
+                return {"path": full_path}
+            
+            if next_id not in visited:
+                visited.add(next_id)
+                queue.append((next_id, path + [{
+                    "song": conn["song"],
+                    "fromArtist": current_id,
+                    "toArtist": next_id
+                }]))
     
+    # No path found
     return {"path": None}
 
 # ── Stats ──────────────────────────────────────────────────
@@ -220,17 +280,18 @@ async def find_path(request: FindPathRequest):
 @api_router.get("/stats")
 async def get_stats():
     artist_count = await db.artists.count_documents({})
-    collab_count = await db.collaborations.count_documents({})
+    connection_count = await db.artistConnections.count_documents({})
     return {
         "totalArtists": artist_count,
-        "totalCollaborations": collab_count
+        "totalConnections": connection_count,
+        "mode": "song-based"
     }
 
 # ── Setup ──────────────────────────────────────────────────
 
 app.include_router(api_router)
 
-# CORS - allow frontend origins
+# CORS
 allowed_origins = os.environ.get('ALLOWED_ORIGINS', '*').split(',')
 
 app.add_middleware(
