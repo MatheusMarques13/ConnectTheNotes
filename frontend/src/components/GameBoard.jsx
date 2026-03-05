@@ -24,13 +24,15 @@ const typeLabels = {
   feature: 'Feature',
 };
 
-const ArtistMiniAvatar = ({ name, size = 28, className = '' }) => {
+const ArtistMiniAvatar = ({ artist, size = 28, className = '' }) => {
   const [loaded, setLoaded] = useState(false);
+  const name = typeof artist === 'string' ? artist : artist?.name || 'Unknown';
+  const imageUrl = getAvatarUrl(artist, size);
   const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
   return (
     <div className={`mini-avatar ${className}`} style={{ width: size, height: size }}>
       <img
-        src={getSmallAvatarUrl(name)}
+        src={imageUrl}
         alt={name}
         className={`mini-avatar-img ${loaded ? 'loaded' : ''}`}
         onLoad={() => setLoaded(true)}
@@ -332,12 +334,12 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
         )}
         <div className="game-goal">
           <div className="goal-artist">
-            <ArtistMiniAvatar name={artist1.name} size={28} />
+            <ArtistMiniAvatar artist={artist1} size={28} />
             <span>{artist1.name}</span>
           </div>
           <ArrowRight size={16} className="goal-arrow" />
           <div className="goal-artist">
-            <ArtistMiniAvatar name={artist2.name} size={28} />
+            <ArtistMiniAvatar artist={artist2} size={28} />
             <span>{artist2.name}</span>
           </div>
         </div>
@@ -368,7 +370,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
       {/* Current artist */}
       <div className="current-artist-section">
         <div className="current-avatar-large" style={{ borderColor: getGenreColor(currentArtist.genre) }}>
-          <img src={getLargeAvatarUrl(currentArtist.name)} alt={currentArtist.name} className="current-avatar-img" onError={(e) => { e.target.style.display = 'none'; }} />
+          <img src={getLargeAvatarUrl(currentArtist)} alt={currentArtist.name} className="current-avatar-img" onError={(e) => { e.target.style.display = 'none'; }} />
         </div>
         <h2 className="current-artist-name">{currentArtist.name}</h2>
         <p className="current-artist-genre">{currentArtist.genre}</p>
@@ -422,7 +424,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
                   className={`search-dropdown-item ${artist.id === artist2.id ? 'target' : ''} ${showHint && hint && artist.id === hint.id ? 'hinted' : ''}`}
                   onClick={() => handleQuickSelect(artist)}
                 >
-                  <ArtistMiniAvatar name={artist.name} size={36} />
+                  <ArtistMiniAvatar artist={artist} size={36} />
                   <div className="dropdown-artist-info">
                     <span className="dropdown-artist-name">{artist.name}</span>
                     <span className="dropdown-artist-genre">{artist.genre}</span>
