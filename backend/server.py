@@ -43,18 +43,18 @@ async def health():
     except Exception as e:
         return JSONResponse(status_code=503, content={"status": "unhealthy", "error": str(e)})
 
-# ── TEMPORARY SEED ENDPOINT ───────────────────────────────
+# ── TEMPORARY SEED ENDPOINT (just open this URL in browser!) ──
 
-@api_router.post("/seed")
+@api_router.get("/seed")
 async def run_seed():
-    """Temporary endpoint to seed the database. Remove after use."""
+    """Open this URL in any browser to seed the database. Remove after use."""
     try:
         from seed import seed
         await seed()
         artist_count = await db.artists.count_documents({})
         collab_count = await db.collaborations.count_documents({})
         return {
-            "message": "Seed complete!",
+            "message": "✅ Seed complete! Database populated.",
             "artists": artist_count,
             "collaborations": collab_count
         }
