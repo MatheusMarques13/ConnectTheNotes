@@ -169,7 +169,7 @@ const ConstellationGraph = ({ chain, targetArtist, isVictory = false }) => {
           if (!pos) return null;
           const isCurrentNode = i === chain.length - 1;
           const isTargetNode = targetArtist && step.artist.id === targetArtist.id;
-          const avatarUrl = getSmallAvatarUrl(step.artist.name);
+          const avatarUrl = getSmallAvatarUrl(step.artist);
 
           const ringColor = isVictory
             ? '#c084fc'
