@@ -1,103 +1,50 @@
 import axios from 'axios';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
 const API = `${BACKEND_URL}/api`;
 
 const api = axios.create({
   baseURL: API,
   timeout: 15000,
-  withCredentials: true, // Send cookies with requests
 });
 
-// ── Auth API ──────────────────────────────────────────
+// ── Auth API (stubs - coming soon) ────────────────────
 
-// Exchange session_id for user data
-export async function exchangeSessionId(sessionId) {
-  try {
-    const res = await api.post('/auth/session', { session_id: sessionId });
-    return res.data;
-  } catch (err) {
-    console.error('exchangeSessionId error:', err);
-    return null;
-  }
-}
-
-// Get current authenticated user
 export async function getCurrentUser() {
-  try {
-    const res = await api.get('/auth/me');
-    return res.data;
-  } catch (err) {
-    if (err.response?.status === 401) {
-      return null; // Not authenticated
-    }
-    console.error('getCurrentUser error:', err);
-    return null;
-  }
+  return null;
 }
 
-// Logout
+export async function exchangeSessionId() {
+  return null;
+}
+
 export async function logout() {
-  try {
-    await api.post('/auth/logout');
-    return true;
-  } catch (err) {
-    console.error('logout error:', err);
-    return false;
-  }
+  return true;
 }
 
-// ── Game Results & Leaderboard API ──────────────────────
-
-// Submit game result
-export async function submitGameResult(result) {
-  try {
-    const res = await api.post('/game/submit-result', result);
-    return res.data;
-  } catch (err) {
-    console.error('submitGameResult error:', err);
-    return null;
-  }
+export async function submitGameResult() {
+  return null;
 }
 
-// Get leaderboard
 export async function getLeaderboard(period = 'all', sortBy = 'wins', limit = 20) {
   try {
-    const res = await api.get('/leaderboard', { 
-      params: { period, sort_by: sortBy, limit } 
-    });
+    const res = await api.get('/leaderboard', { params: { period, sort_by: sortBy, limit } });
     return res.data;
   } catch (err) {
-    console.error('getLeaderboard error:', err);
     return { leaderboard: [] };
   }
 }
 
-// Get user rank
 export async function getUserRank(userId, period = 'all') {
-  try {
-    const res = await api.get(`/leaderboard/user/${userId}`, { params: { period } });
-    return res.data;
-  } catch (err) {
-    console.error('getUserRank error:', err);
-    return null;
-  }
+  return null;
 }
 
-// Get user game history
 export async function getUserGameHistory(userId, limit = 20) {
-  try {
-    const res = await api.get(`/user/${userId}/history`, { params: { limit } });
-    return res.data;
-  } catch (err) {
-    console.error('getUserGameHistory error:', err);
-    return { history: [] };
-  }
+  return { history: [] };
 }
 
 // ── Artist API ──────────────────────────────────────────
 
-// Search artists by name
 export async function searchArtists(query, limit = 8) {
   if (!query || query.length < 1) return [];
   try {
@@ -109,7 +56,6 @@ export async function searchArtists(query, limit = 8) {
   }
 }
 
-// Get random artist (exclude certain IDs)
 export async function getRandomArtist(excludeIds = []) {
   try {
     const params = {};
@@ -124,7 +70,6 @@ export async function getRandomArtist(excludeIds = []) {
   }
 }
 
-// Get artist by ID
 export async function getArtistById(id) {
   try {
     const res = await api.get(`/artists/${id}`);
@@ -135,7 +80,6 @@ export async function getArtistById(id) {
   }
 }
 
-// Get collaborations for an artist
 export async function getCollaborationsForArtist(artistId) {
   try {
     const res = await api.get(`/artists/${artistId}/collaborations`);
@@ -146,7 +90,6 @@ export async function getCollaborationsForArtist(artistId) {
   }
 }
 
-// Get connected artists
 export async function getConnectedArtists(artistId) {
   try {
     const res = await api.get(`/artists/${artistId}/connected`);
@@ -157,7 +100,6 @@ export async function getConnectedArtists(artistId) {
   }
 }
 
-// Get collaborations between two specific artists
 export async function getCollaborationsBetween(id1, id2) {
   try {
     const res = await api.get(`/collaborations/between/${id1}/${id2}`);
@@ -168,7 +110,6 @@ export async function getCollaborationsBetween(id1, id2) {
   }
 }
 
-// Find path between two artists (BFS)
 export async function findConnection(startId, endId) {
   try {
     const res = await api.post('/game/find-path', { startId, endId });
@@ -179,7 +120,6 @@ export async function findConnection(startId, endId) {
   }
 }
 
-// Get stats
 export async function getStats() {
   try {
     const res = await api.get('/stats');

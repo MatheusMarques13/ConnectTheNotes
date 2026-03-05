@@ -1,19 +1,17 @@
 import React, { useState, useCallback, useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import StarryBackground from "./components/StarryBackground";
 import ArtistCard from "./components/ArtistCard";
 import HowToPlayModal from "./components/HowToPlayModal";
 import OptionsModal from "./components/OptionsModal";
 import GameBoard from "./components/GameBoard";
-import AuthCallback from "./components/AuthCallback";
 import UserMenu from "./components/UserMenu";
 import LeaderboardModal from "./components/LeaderboardModal";
 import GameHistoryModal from "./components/GameHistoryModal";
 import { Info, Settings, Trophy } from "lucide-react";
-import { getStats, getCurrentUser, submitGameResult } from "./services/api";
+import { getStats } from "./services/api";
 
-// Difficulty settings configuration
 const DIFFICULTY_CONFIG = {
   easy: { timeLimit: 300, hintsEnabled: true, label: 'Easy', description: '5 min, hints on' },
   medium: { timeLimit: 180, hintsEnabled: true, label: 'Medium', description: '3 min, hints on' },
@@ -21,24 +19,7 @@ const DIFFICULTY_CONFIG = {
   expert: { timeLimit: 60, hintsEnabled: false, label: 'Expert', description: '60 sec, no hints' },
 };
 
-// Main App Router - handles session_id detection BEFORE rendering routes
-function AppRouter() {
-  const location = useLocation();
-  
-  // Check URL fragment for session_id synchronously during render
-  // This prevents race conditions by processing auth FIRST before any route checks
-  if (location.hash?.includes('session_id=')) {
-    return <AuthCallback />;
-  }
-  
-  return <MainApp />;
-}
-
 function MainApp() {
-  const location = useLocation();
-  const navigate = useNavigate();
-  
-  const [user, setUser] = useState(location.state?.user || null);
   const [artist1, setArtist1] = useState(null);
   const [artist2, setArtist2] = useState(null);
   const [gameStarted, setGameStarted] = useState(false);
@@ -59,19 +40,6 @@ function MainApp() {
     bestTime: null,
   });
   const [stats, setStats] = useState({ totalArtists: 0, totalCollaborations: 0 });
-
-  // Check authentication on mount
-  useEffect(() => {
-    if (!location.state?.user) {
-      getCurrentUser().then(u => {
-        if (u) setUser(u);
-      });
-    }
-    // Clear location state after reading
-    if (location.state) {
-      navigate(location.pathname, { replace: true, state: null });
-    }
-  }, [location.state, location.pathname, navigate]);
 
   useEffect(() => {
     getStats().then(s => setStats(s));
@@ -99,48 +67,15 @@ function MainApp() {
         ? (prev.bestTime === null ? timeSpent : Math.min(prev.bestTime, timeSpent))
         : prev.bestTime,
     }));
-
-    // Submit result to server if logged in
-    if (user && artist1 && artist2) {
-      const result = await submitGameResult({
-        artist1_name: artist1.name,
-        artist2_name: artist2.name,
-        steps,
-        time_seconds: timeSpent,
-        difficulty: options.timedMode ? options.difficulty : null,
-        timed_mode: options.timedMode,
-        won: true
-      });
-      if (result && result.user) {
-        setUser(result.user);
-      }
-    }
-  }, [user, artist1, artist2, options.timedMode, options.difficulty]);
+  }, [options.timedMode]);
 
   const handleLose = useCallback(async () => {
     setOptions(prev => ({
       ...prev,
       gamesLost: prev.gamesLost + 1,
     }));
+  }, []);
 
-    // Submit loss to server if logged in
-    if (user && artist1 && artist2) {
-      const result = await submitGameResult({
-        artist1_name: artist1.name,
-        artist2_name: artist2.name,
-        steps: 0,
-        time_seconds: null,
-        difficulty: options.timedMode ? options.difficulty : null,
-        timed_mode: options.timedMode,
-        won: false
-      });
-      if (result && result.user) {
-        setUser(result.user);
-      }
-    }
-  }, [user, artist1, artist2, options.timedMode, options.difficulty]);
-
-  // Get current game settings based on difficulty
   const getGameSettings = useCallback(() => {
     const diffConfig = DIFFICULTY_CONFIG[options.difficulty];
     return {
@@ -149,16 +84,11 @@ function MainApp() {
     };
   }, [options.timedMode, options.difficulty, options.showHints]);
 
-  const handleLogout = () => {
-    setUser(null);
-  };
-
   return (
     <div className="app-container">
       <StarryBackground />
       {!gameStarted ? (
         <div className="main-content">
-          {/* Header with nav buttons */}
           <div className="top-bar">
             <button className="top-btn" onClick={() => setShowHowToPlay(true)}>
               <Info size={18} />
@@ -174,16 +104,10 @@ function MainApp() {
                 <Settings size={18} />
                 <span>OPTIONS</span>
               </button>
-              <UserMenu 
-                user={user} 
-                onLogout={handleLogout}
-                onShowLeaderboard={() => setShowLeaderboard(true)}
-                onShowHistory={() => setShowHistory(true)}
-              />
+              <UserMenu />
             </div>
           </div>
 
-          {/* Main logo and title */}
           <div className="logo-section">
             <div className="logo-diamond">
               <svg viewBox="0 0 100 100" className="diamond-svg">
@@ -195,7 +119,6 @@ function MainApp() {
             <p className="subtitle">CHOOSE TWO ARTISTS</p>
           </div>
 
-          {/* Artist selection cards */}
           <div className="cards-container">
             <ArtistCard
               number={1}
@@ -213,7 +136,6 @@ function MainApp() {
             />
           </div>
 
-          {/* Start button */}
           <button
             className={`start-game-btn ${artist1 && artist2 ? "ready" : ""}`}
             onClick={handleStartGame}
@@ -223,7 +145,6 @@ function MainApp() {
             START GAME
           </button>
 
-          {/* Footer stats */}
           <div className="footer-stats">
             {stats.totalArtists} ARTISTS · {stats.totalCollaborations} CONNECTIONS
           </div>
@@ -253,12 +174,12 @@ function MainApp() {
       <LeaderboardModal 
         isOpen={showLeaderboard} 
         onClose={() => setShowLeaderboard(false)} 
-        currentUser={user}
+        currentUser={null}
       />
       <GameHistoryModal
         isOpen={showHistory}
         onClose={() => setShowHistory(false)}
-        currentUser={user}
+        currentUser={null}
       />
     </div>
   );
@@ -267,7 +188,7 @@ function MainApp() {
 function App() {
   return (
     <BrowserRouter>
-      <AppRouter />
+      <MainApp />
     </BrowserRouter>
   );
 }
