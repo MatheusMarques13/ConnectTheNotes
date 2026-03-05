@@ -43,6 +43,24 @@ async def health():
     except Exception as e:
         return JSONResponse(status_code=503, content={"status": "unhealthy", "error": str(e)})
 
+# ── TEMPORARY SEED ENDPOINT ───────────────────────────────
+
+@api_router.post("/seed")
+async def run_seed():
+    """Temporary endpoint to seed the database. Remove after use."""
+    try:
+        from seed import seed
+        await seed()
+        artist_count = await db.artists.count_documents({})
+        collab_count = await db.collaborations.count_documents({})
+        return {
+            "message": "Seed complete!",
+            "artists": artist_count,
+            "collaborations": collab_count
+        }
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
+
 # ── Auth Stubs (Coming Soon) ──────────────────────────────
 
 @api_router.get("/auth/me")
