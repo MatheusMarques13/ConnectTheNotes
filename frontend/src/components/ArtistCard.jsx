@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Search, Shuffle, X, Music, Mic2, Disc3, Guitar, Heart, Sparkles, Flame, Trees, Sun, Cloud, Star, Radio } from 'lucide-react';
 import { searchArtists, getRandomArtist } from '../services/api';
-import { getAvatarUrl, getSmallAvatarUrl, getGenreIcon, getGenreColor } from '../utils/avatars';
+import { getGenreIcon, getGenreColor } from '../utils/avatars';
+import { useArtistImage } from '../hooks/useArtistImage';
 
 const iconMap = {
   'music': Music,
@@ -18,19 +19,54 @@ const iconMap = {
   'radio': Radio,
 };
 
+const ArtistAvatar = ({ name, genre }) => {
+  const { imageUrl } = useArtistImage(name, 'large');
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+
+  return (
+    <div className="artist-avatar-ring" style={{ borderColor: getGenreColor(genre) }}>
+      <img
+        src={imageUrl}
+        alt={name}
+        className={`artist-avatar-img ${imgLoaded ? 'loaded' : ''}`}
+        onLoad={() => setImgLoaded(true)}
+        onError={(e) => { e.target.style.display = 'none'; }}
+      />
+      {!imgLoaded && (
+        <span className="artist-initials-fallback">{initials}</span>
+      )}
+    </div>
+  );
+};
+
+const SearchResultAvatar = ({ name }) => {
+  const { imageUrl } = useArtistImage(name, 'medium');
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+
+  return (
+    <div className="result-avatar-img-wrapper">
+      <img
+        src={imageUrl}
+        alt={name}
+        className={`result-avatar-img ${imgLoaded ? 'loaded' : ''}`}
+        onLoad={() => setImgLoaded(true)}
+        onError={(e) => { e.target.style.display = 'none'; }}
+      />
+      {!imgLoaded && <span style={{ fontSize: '11px', fontWeight: 600 }}>{initials}</span>}
+    </div>
+  );
+};
+
 const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [imgLoaded, setImgLoaded] = useState(false);
   const inputRef = useRef(null);
   const dropdownRef = useRef(null);
   const debounceRef = useRef(null);
-
-  useEffect(() => {
-    setImgLoaded(false);
-  }, [artist]);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -86,10 +122,6 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
     setQuery('');
   };
 
-  const getInitials = (name) => {
-    return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
-  };
-
   // Render genre-specific placeholder icon
   const renderPlaceholderIcons = () => {
     return (
@@ -134,21 +166,7 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
         {artist ? (
           <div className="artist-selected">
             <div className="artist-avatar-wrapper">
-              <div 
-                className="artist-avatar-ring"
-                style={{ borderColor: getGenreColor(artist.genre) }}
-              >
-                <img
-                  src={getAvatarUrl(artist.name)}
-                  alt={artist.name}
-                  className={`artist-avatar-img ${imgLoaded ? 'loaded' : ''}`}
-                  onLoad={() => setImgLoaded(true)}
-                  onError={(e) => { e.target.style.display = 'none'; }}
-                />
-                {!imgLoaded && (
-                  <span className="artist-initials-fallback">{getInitials(artist.name)}</span>
-                )}
-              </div>
+              <ArtistAvatar name={artist.name} genre={artist.genre} />
             </div>
             <button className="clear-btn" onClick={handleClear}>
               <X size={14} />
@@ -191,14 +209,7 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
                   className="search-result-item"
                   onClick={() => handleSelect(r)}
                 >
-                  <div className="result-avatar-img-wrapper">
-                    <img
-                      src={getSmallAvatarUrl(r.name)}
-                      alt={r.name}
-                      className="result-avatar-img"
-                      onError={(e) => { e.target.style.display = 'none'; }}
-                    />
-                  </div>
+                  <SearchResultAvatar name={r.name} />
                   <div className="result-info">
                     <span className="result-name">{r.name}</span>
                     <span className="result-genre">
