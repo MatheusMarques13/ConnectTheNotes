@@ -1,0 +1,80 @@
+name: Populate Artist Images
+
+on:
+  workflow_dispatch:
+
+jobs:
+  populate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        pip install pymongo requests dnspython
+    
+    - name: Populate artist images from Deezer
+      env:
+        MONGO_URL: mongodb+srv://connectnotes:cedryck@cluster0.4837mip.mongodb.net/connect_the_notes?retryWrites=true&w=majority
+      run: |
+        python3 << 'EOF'
+        import requests
+        from pymongo import MongoClient
+        import time
+        import os
+        
+        client = MongoClient(os.environ['MONGO_URL'])
+        db = client['connect_the_notes']
+        
+        artists = list(db.artists.find({'imageUrl': {'$exists': False}}, {'id': 1, 'name': 1}))
+        total = len(artists)
+        print(f'🚀 Populando fotos de {total} artistas...')
+        print('='*60)
+        
+        updated = 0
+        failed = 0
+        
+        for i, artist in enumerate(artists, 1):
+            try:
+                r = requests.get(
+                    'https://api.deezer.com/search/artist',
+                    params={'q': artist['name'], 'limit': 1},
+                    timeout=5
+                )
+                data = r.json()
+                
+                if data.get('data') and len(data['data']) > 0:
+                    img_url = data['data'][0].get('picture_medium')
+                    if img_url:
+                        db.artists.update_one(
+                            {'id': artist['id']},
+                            {'$set': {'imageUrl': img_url}}
+                        )
+                        updated += 1
+                        if i <= 10 or i % 50 == 0:
+                            print(f"[{i}/{total}] ✅ {artist['name'][:40]}")
+                else:
+                    failed += 1
+            except Exception as e:
+                failed += 1
+                if i <= 5:
+                    print(f"[{i}/{total}] ❌ {artist['name'][:40]} - {str(e)[:30]}")
+            
+            time.sleep(0.15)
+        
+        print('\n' + '='*60)
+        print(f'✨ CONCLUÍDO!')
+        print(f'✅ Atualizados: {updated}')
+        print(f'❌ Falharam: {failed}')
+        print(f'📊 Total: {total}')
+        print('='*60)
+        
+        client.close()
+        EOF
