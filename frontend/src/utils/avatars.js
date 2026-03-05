@@ -1,60 +1,53 @@
 // Avatar and icon utilities for artist display
 
-// Helper to fetch artist image from Last.fm (free API, no auth required)
-const LASTFM_API_KEY = '9d1c9c9d7f4c0e4e8b9c9c9d7f4c0e4e'; // Public demo key
 const imageCache = new Map();
 
-export function getArtistImageUrl(artistName, size = 'large') {
-  // Return cached URL if available
-  const cacheKey = `${artistName}-${size}`;
-  if (imageCache.has(cacheKey)) {
-    return imageCache.get(cacheKey);
-  }
-
-  // Return placeholder that will be replaced by actual fetch
-  return null;
-}
-
-// Fetch real artist image from Last.fm API
+// Fetch artist photo from MusicBrainz + Cover Art Archive (free, no auth)
 export async function fetchArtistImage(artistName) {
   try {
-    const response = await fetch(
-      `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${encodeURIComponent(artistName)}&api_key=${LASTFM_API_KEY}&format=json`
-    );
-    const data = await response.json();
+    // Step 1: Search MusicBrainz for artist
+    const searchUrl = `https://musicbrainz.org/ws/2/artist/?query=${encodeURIComponent(artistName)}&fmt=json&limit=1`;
+    const searchRes = await fetch(searchUrl);
+    const searchData = await searchRes.json();
     
-    if (data.artist?.image) {
-      // Last.fm returns images in sizes: small, medium, large, extralarge, mega
-      const images = data.artist.image;
-      const largeImg = images.find(img => img.size === 'extralarge' || img.size === 'large');
+    if (searchData.artists && searchData.artists.length > 0) {
+      const artistMbid = searchData.artists[0].id;
       
-      if (largeImg && largeImg['#text']) {
-        // Cache for future use
-        imageCache.set(`${artistName}-large`, largeImg['#text']);
-        const mediumImg = images.find(img => img.size === 'medium');
-        if (mediumImg?.['#text']) {
-          imageCache.set(`${artistName}-medium`, mediumImg['#text']);
+      // Step 2: Try to get image from Fanart.tv (has CORS enabled)
+      const fanartUrl = `https://webservice.fanart.tv/v3/music/${artistMbid}?api_key=439f6e9277143b734c95f08f45513c0d`;
+      try {
+        const fanartRes = await fetch(fanartUrl);
+        const fanartData = await fanartRes.json();
+        
+        if (fanartData.artistthumb && fanartData.artistthumb.length > 0) {
+          const imageUrl = fanartData.artistthumb[0].url;
+          imageCache.set(`${artistName}-large`, imageUrl);
+          imageCache.set(`${artistName}-medium`, imageUrl);
+          return imageUrl;
         }
-        return largeImg['#text'];
+      } catch (e) {
+        console.log('Fanart.tv fetch failed, trying alternatives');
       }
     }
   } catch (error) {
-    console.warn('Failed to fetch artist image from Last.fm:', error);
+    console.warn('MusicBrainz fetch failed:', error);
   }
   
-  // Return null if fetch fails - component will use fallback
+  // Fallback: return null so component uses UI Avatars
   return null;
 }
 
 // Generate fallback avatar URL using UI Avatars (initials-based)
 function getFallbackAvatarUrl(name, size = 128) {
   const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
-  const colors = ['6366f1', '8b5cf6', 'ec4899', 'ef4444', '14b8a6', '06b6d4', 'f59e0b'];
-  const color = colors[name.charCodeAt(0) % colors.length];
-  return `https://ui-avatars.com/api/?name=${encodeURIComponent(initials)}&size=${size}&background=${color}&color=fff&bold=true&font-size=0.4`;
+  // Use genre-based color from the artist's genre if available, otherwise pick from palette
+  const colors = ['6366f1', '8b5cf6', 'ec4899', 'ef4444', '14b8a6', '06b6d4', 'f59e0b', 'a78bfa', 'fb923c'];
+  const colorIndex = name.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % colors.length;
+  const color = colors[colorIndex];
+  return `https://ui-avatars.com/api/?name=${encodeURIComponent(initials)}&size=${size}&background=${color}&color=fff&bold=true&font-size=0.4&rounded=true`;
 }
 
-// Avatar URL with fallback chain: Last.fm → UI Avatars
+// Avatar URL with fallback chain: MusicBrainz → Fanart.tv → UI Avatars
 export function getAvatarUrl(name, size = 128) {
   const cached = imageCache.get(`${name}-large`);
   if (cached) return cached;
