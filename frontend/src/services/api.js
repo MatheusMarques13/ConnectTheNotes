@@ -80,10 +80,21 @@ export async function getArtistById(id) {
   }
 }
 
+// UPDATED: Now uses /connections endpoint with song data
 export async function getCollaborationsForArtist(artistId) {
   try {
-    const res = await api.get(`/artists/${artistId}/collaborations`);
-    return res.data.collaborations || [];
+    const res = await api.get(`/artists/${artistId}/connections`);
+    // Backend returns connections with song data
+    // Map to collab format for UI compatibility
+    const connections = res.data.connections || [];
+    return connections.map(conn => ({
+      id: conn.id,
+      title: conn.song.title,
+      type: conn.song.type,
+      year: conn.song.year,
+      artistIds: [conn.artist1, conn.artist2],
+      coverUrl: conn.song.coverUrl
+    }));
   } catch (err) {
     console.error('getCollaborationsForArtist error:', err);
     return [];
@@ -100,20 +111,76 @@ export async function getConnectedArtists(artistId) {
   }
 }
 
+// UPDATED: Now uses /connections/between endpoint
 export async function getCollaborationsBetween(id1, id2) {
   try {
-    const res = await api.get(`/collaborations/between/${id1}/${id2}`);
-    return res.data.collaborations || [];
+    const res = await api.get(`/connections/between/${id1}/${id2}`);
+    // Map connections to collab format
+    const connections = res.data.connections || [];
+    return connections.map(conn => ({
+      id: conn.id,
+      title: conn.song.title,
+      type: conn.song.type,
+      year: conn.song.year,
+      artistIds: [conn.artist1, conn.artist2],
+      coverUrl: conn.song.coverUrl
+    }));
   } catch (err) {
     console.error('getCollaborationsBetween error:', err);
     return [];
   }
 }
 
+// UPDATED: Backend now returns path with type: artist/song alternating
 export async function findConnection(startId, endId) {
   try {
     const res = await api.post('/game/find-path', { startId, endId });
-    return res.data.path;
+    const rawPath = res.data.path;
+    
+    if (!rawPath || rawPath.length === 0) return null;
+    
+    // New backend format: [{type: 'artist', ...}, {type: 'song', ...}, {type: 'artist', ...}]
+    // Convert to old format for GameBoard compatibility
+    // Old format: [{fromArtist, toArtist, collab}]
+    
+    const convertedPath = [];
+    
+    for (let i = 0; i < rawPath.length; i++) {
+      const item = rawPath[i];
+      
+      // Skip if not an artist (we only track artist-to-artist steps)
+      if (item.type !== 'artist') continue;
+      
+      // Find next artist in path
+      let nextArtistIndex = i + 1;
+      while (nextArtistIndex < rawPath.length && rawPath[nextArtistIndex].type !== 'artist') {
+        nextArtistIndex++;
+      }
+      
+      if (nextArtistIndex >= rawPath.length) break;
+      
+      // Find song between current and next artist
+      const songIndex = i + 1;
+      if (songIndex < rawPath.length && rawPath[songIndex].type === 'song') {
+        const song = rawPath[songIndex];
+        const nextArtist = rawPath[nextArtistIndex];
+        
+        convertedPath.push({
+          fromArtist: item.id,
+          toArtist: nextArtist.id,
+          collab: {
+            title: song.title,
+            type: song.type,
+            year: song.year,
+            coverUrl: song.coverUrl
+          }
+        });
+      }
+      
+      i = nextArtistIndex - 1; // Skip to next artist
+    }
+    
+    return convertedPath;
   } catch (err) {
     console.error('findConnection error:', err);
     return null;
@@ -126,7 +193,7 @@ export async function getStats() {
     return res.data;
   } catch (err) {
     console.error('getStats error:', err);
-    return { totalArtists: 0, totalCollaborations: 0 };
+    return { totalArtists: 0, totalConnections: 0 };
   }
 }
 
