@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Search, Shuffle, X, Music, Mic2, Disc3, Guitar, Heart, Sparkles, Flame, Trees, Sun, Cloud, Star, Radio } from 'lucide-react';
 import { searchArtists, getRandomArtist } from '../services/api';
-import { getGenreIcon, getGenreColor } from '../utils/avatars';
-import { useArtistImage } from '../hooks/useArtistImage';
+import { getGenreIcon, getGenreColor, getAvatarUrl } from '../utils/avatars';
 
 const iconMap = {
   'music': Music,
@@ -19,9 +18,10 @@ const iconMap = {
   'radio': Radio,
 };
 
-const ArtistAvatar = ({ name, genre }) => {
-  const { imageUrl } = useArtistImage(name, 'large');
+const ArtistAvatar = ({ artist, genre }) => {
   const [imgLoaded, setImgLoaded] = useState(false);
+  const imageUrl = getAvatarUrl(artist, 128);
+  const name = typeof artist === 'string' ? artist : artist?.name || 'Unknown';
   const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
 
   return (
@@ -40,9 +40,10 @@ const ArtistAvatar = ({ name, genre }) => {
   );
 };
 
-const SearchResultAvatar = ({ name }) => {
-  const { imageUrl } = useArtistImage(name, 'medium');
+const SearchResultAvatar = ({ artist }) => {
   const [imgLoaded, setImgLoaded] = useState(false);
+  const imageUrl = getAvatarUrl(artist, 64);
+  const name = typeof artist === 'string' ? artist : artist?.name || 'Unknown';
   const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
 
   return (
@@ -166,7 +167,7 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
         {artist ? (
           <div className="artist-selected">
             <div className="artist-avatar-wrapper">
-              <ArtistAvatar name={artist.name} genre={artist.genre} />
+              <ArtistAvatar artist={artist} genre={artist.genre} />
             </div>
             <button className="clear-btn" onClick={handleClear}>
               <X size={14} />
@@ -209,7 +210,7 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
                   className="search-result-item"
                   onClick={() => handleSelect(r)}
                 >
-                  <SearchResultAvatar name={r.name} />
+                  <SearchResultAvatar artist={r} />
                   <div className="result-info">
                     <span className="result-name">{r.name}</span>
                     <span className="result-genre">
