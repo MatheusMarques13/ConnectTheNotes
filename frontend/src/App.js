@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import "./components/GameBoard.css";
 import StarryBackground from "./components/StarryBackground";
@@ -10,6 +10,7 @@ import GameBoard from "./components/GameBoard";
 import UserMenu from "./components/UserMenu";
 import LeaderboardModal from "./components/LeaderboardModal";
 import GameHistoryModal from "./components/GameHistoryModal";
+import AdminPanel from "./components/AdminPanel";
 import { Info, Settings, Trophy } from "lucide-react";
 import { getStats } from "./services/api";
 
@@ -189,7 +190,11 @@ function MainApp() {
 function App() {
   return (
     <BrowserRouter>
-      <MainApp />
+      <Routes>
+        <Route path="/" element={<MainApp />} />
+        <Route path="/admin" element={<AdminPanel />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     </BrowserRouter>
   );
 }
