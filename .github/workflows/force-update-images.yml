@@ -1,0 +1,75 @@
+name: Force Update All Images
+
+on:
+  workflow_dispatch:
+
+jobs:
+  force-update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: pip install pymongo requests dnspython
+    
+    - name: Force update ALL artist images
+      env:
+        MONGO_URL: mongodb+srv://connectnotes:cedryck@cluster0.4837mip.mongodb.net/connect_the_notes?retryWrites=true&w=majority
+      run: |
+        python3 << 'EOF'
+        import requests
+        from pymongo import MongoClient
+        import time
+        import os
+        
+        client = MongoClient(os.environ['MONGO_URL'])
+        db = client['connect_the_notes']
+        
+        # Get ALL artists (no filter)
+        artists = list(db.artists.find({}, {'id': 1, 'name': 1}))
+        total = len(artists)
+        print(f'🔥 FORCE UPDATING {total} artist images...')
+        print('='*60)
+        
+        updated = 0
+        failed = 0
+        
+        for i, artist in enumerate(artists, 1):
+            try:
+                r = requests.get(
+                    'https://api.deezer.com/search/artist',
+                    params={'q': artist['name'], 'limit': 1},
+                    timeout=5
+                )
+                data = r.json()
+                
+                if data.get('data') and len(data['data']) > 0:
+                    img_url = data['data'][0].get('picture_medium')
+                    if img_url:
+                        # FORCE UPDATE (no filter)
+                        db.artists.update_one(
+                            {'id': artist['id']},
+                            {'$set': {'imageUrl': img_url}}
+                        )
+                        updated += 1
+                        if i <= 20 or i % 100 == 0:
+                            print(f"[{i}/{total}] ✅ {artist['name'][:40]}")
+                else:
+                    failed += 1
+            except Exception as e:
+                failed += 1
+            
+            time.sleep(0.12)
+        
+        print('\n' + '='*60)
+        print(f'🎉 DONE!')
+        print(f'✅ Updated: {updated}')
+        print(f'❌ Failed: {failed}')
+        print(f'📊 Total: {total}')
+        print('='*60)
+        
+        client.close()
+        EOF
