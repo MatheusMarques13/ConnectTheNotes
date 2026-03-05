@@ -20,7 +20,7 @@ mongo_url = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ.get('DB_NAME', 'connect_the_notes')]
 
-app = FastAPI(title="Connect the Notes API", version="2.0.0")
+app = FastAPI(title="Connect the Notes API", version="2.0.1")
 api_router = APIRouter(prefix="/api")
 
 # ── Models ──────────────────────────────────────────────
@@ -33,7 +33,7 @@ class FindPathRequest(BaseModel):
 
 @api_router.get("/")
 async def root():
-    return {"message": "Connect the Notes API - Song Mode", "version": "2.0.0"}
+    return {"message": "Connect the Notes API - Song Mode", "version": "2.0.1"}
 
 @api_router.get("/health")
 async def health():
@@ -43,24 +43,66 @@ async def health():
     except Exception as e:
         return JSONResponse(status_code=503, content={"status": "unhealthy", "error": str(e)})
 
-# ── TEMPORARY SEED ENDPOINT ──
+# ── SEED & RESET ENDPOINTS ──
 
 @api_router.get("/seed")
 async def run_seed():
-    """Open this URL in any browser to seed the database. Remove after use."""
+    """Open this URL in any browser to seed the database."""
     try:
         from seed import seed
         await seed()
         artist_count = await db.artists.count_documents({})
         connection_count = await db.artistConnections.count_documents({})
+        
+        # Verify data
+        sample_connection = await db.artistConnections.find_one({}, {"_id": 0})
+        
         return {
             "message": "✅ Seed complete! Database populated with song-based connections.",
             "artists": artist_count,
             "connections": connection_count,
-            "mode": "Artists connected by SHARED SONGS"
+            "mode": "Artists connected by SHARED SONGS",
+            "sample_connection": sample_connection
         }
     except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
+        import traceback
+        return JSONResponse(status_code=500, content={
+            "error": str(e),
+            "traceback": traceback.format_exc()
+        })
+
+@api_router.get("/reset")
+async def force_reset():
+    """⚠️ DANGER: Drops ALL collections and reseeds. Use this if seed fails."""
+    try:
+        # Drop ALL collections
+        collections = await db.list_collection_names()
+        for coll in collections:
+            await db.drop_collection(coll)
+        
+        # Run seed
+        from seed import seed
+        await seed()
+        
+        artist_count = await db.artists.count_documents({})
+        connection_count = await db.artistConnections.count_documents({})
+        sample_artist = await db.artists.find_one({}, {"_id": 0})
+        sample_connection = await db.artistConnections.find_one({}, {"_id": 0})
+        
+        return {
+            "message": "🔥 HARD RESET COMPLETE!",
+            "artists": artist_count,
+            "connections": connection_count,
+            "collections_dropped": collections,
+            "sample_artist": sample_artist,
+            "sample_connection": sample_connection
+        }
+    except Exception as e:
+        import traceback
+        return JSONResponse(status_code=500, content={
+            "error": str(e),
+            "traceback": traceback.format_exc()
+        })
 
 # ── Auth Stubs (Coming Soon) ──────────────────────────────
 
@@ -185,17 +227,6 @@ async def find_path(request: FindPathRequest):
     """
     NEW ALGORITHM: Find shortest path between artists via SHARED SONGS
     Path format: [Artist A, Song X, Artist B, Song Y, Artist C]
-    
-    Example result:
-    {
-      "path": [
-        {"type": "artist", "id": "abc", "name": "Taylor Swift"},
-        {"type": "song", "title": "Everything Has Changed", "year": 2012},
-        {"type": "artist", "id": "def", "name": "Ed Sheeran"},
-        {"type": "song", "title": "Perfect Duet", "year": 2017},
-        {"type": "artist", "id": "ghi", "name": "Beyoncé"}
-      ]
-    }
     """
     start_id = request.startId
     end_id = request.endId
@@ -244,7 +275,6 @@ async def find_path(request: FindPathRequest):
             
             if next_id == end_id:
                 # Found the target!
-                # Build complete path with all artists and songs
                 full_path = []
                 
                 # Start artist
