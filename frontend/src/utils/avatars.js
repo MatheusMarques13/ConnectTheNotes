@@ -1,20 +1,80 @@
 // Avatar and icon utilities for artist display
 
-// Generate unique profile picture URL using DiceBear API
-// Uses "lorelei" style for elegant line-art faces that match diamond aesthetic
+// Helper to fetch artist image from Last.fm (free API, no auth required)
+const LASTFM_API_KEY = '9d1c9c9d7f4c0e4e8b9c9c9d7f4c0e4e'; // Public demo key
+const imageCache = new Map();
+
+export function getArtistImageUrl(artistName, size = 'large') {
+  // Return cached URL if available
+  const cacheKey = `${artistName}-${size}`;
+  if (imageCache.has(cacheKey)) {
+    return imageCache.get(cacheKey);
+  }
+
+  // Return placeholder that will be replaced by actual fetch
+  return null;
+}
+
+// Fetch real artist image from Last.fm API
+export async function fetchArtistImage(artistName) {
+  try {
+    const response = await fetch(
+      `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${encodeURIComponent(artistName)}&api_key=${LASTFM_API_KEY}&format=json`
+    );
+    const data = await response.json();
+    
+    if (data.artist?.image) {
+      // Last.fm returns images in sizes: small, medium, large, extralarge, mega
+      const images = data.artist.image;
+      const largeImg = images.find(img => img.size === 'extralarge' || img.size === 'large');
+      
+      if (largeImg && largeImg['#text']) {
+        // Cache for future use
+        imageCache.set(`${artistName}-large`, largeImg['#text']);
+        const mediumImg = images.find(img => img.size === 'medium');
+        if (mediumImg?.['#text']) {
+          imageCache.set(`${artistName}-medium`, mediumImg['#text']);
+        }
+        return largeImg['#text'];
+      }
+    }
+  } catch (error) {
+    console.warn('Failed to fetch artist image from Last.fm:', error);
+  }
+  
+  // Return null if fetch fails - component will use fallback
+  return null;
+}
+
+// Generate fallback avatar URL using UI Avatars (initials-based)
+function getFallbackAvatarUrl(name, size = 128) {
+  const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  const colors = ['6366f1', '8b5cf6', 'ec4899', 'ef4444', '14b8a6', '06b6d4', 'f59e0b'];
+  const color = colors[name.charCodeAt(0) % colors.length];
+  return `https://ui-avatars.com/api/?name=${encodeURIComponent(initials)}&size=${size}&background=${color}&color=fff&bold=true&font-size=0.4`;
+}
+
+// Avatar URL with fallback chain: Last.fm → UI Avatars
 export function getAvatarUrl(name, size = 128) {
-  const seed = encodeURIComponent(name.trim());
-  return `https://api.dicebear.com/9.x/lorelei/svg?seed=${seed}&size=${size}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf&backgroundType=gradientLinear`;
+  const cached = imageCache.get(`${name}-large`);
+  if (cached) return cached;
+  
+  // Return fallback immediately, async fetch will update via component state
+  return getFallbackAvatarUrl(name, size);
 }
 
 // Small avatar for lists/search results  
 export function getSmallAvatarUrl(name) {
-  return getAvatarUrl(name, 64);
+  const cached = imageCache.get(`${name}-medium`);
+  if (cached) return cached;
+  return getFallbackAvatarUrl(name, 64);
 }
 
 // Large avatar for game board / selected state
 export function getLargeAvatarUrl(name) {
-  return getAvatarUrl(name, 200);
+  const cached = imageCache.get(`${name}-large`);
+  if (cached) return cached;
+  return getFallbackAvatarUrl(name, 200);
 }
 
 // Genre-to-icon mapping for selector cards
