@@ -12,6 +12,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from dotenv import load_dotenv
 from pathlib import Path
 from collections import defaultdict
+import urllib.parse
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -22,6 +23,11 @@ db = client[os.environ.get('DB_NAME', 'connect_the_notes')]
 
 def uid():
     return str(uuid.uuid4())[:8]
+
+def get_avatar_url(name: str) -> str:
+    """Generate avatar URL from UI Avatars API"""
+    encoded_name = urllib.parse.quote(name)
+    return f"https://ui-avatars.com/api/?name={encoded_name}&size=200&background=random&bold=true"
 
 # ─── ARTIST DATA ─────────────────────────────────────────
 ARTISTS_RAW = [
@@ -89,8 +95,6 @@ ARTISTS_RAW = [
     (37, "Shakira", "Latin Pop"),
     (98, "Rosalía", "Latin Pop/Flamenco"),
     (99, "J Balvin", "Reggaeton"),
-
-    # Add more as needed - keeping it smaller for clarity
 ]
 
 # ─── COLLABORATIONS (Song-based) ─────────────────────────────────────
@@ -246,17 +250,14 @@ async def seed():
             "id": real_id,
             "name": name,
             "genre": genre,
-            "imageUrl": "",
+            "imageUrl": get_avatar_url(name),
         })
     
-    print(f"✅ Inserting {len(artist_docs)} artists...")
+    print(f"✅ Inserting {len(artist_docs)} artists with avatars...")
     if artist_docs:
         await db.artists.insert_many(artist_docs)
     
     # ─── 2. BUILD SONG-BASED CONNECTIONS ─────────────────────
-    # New structure: each document represents a direct connection between 2 artists via a shared song
-    # Format: {artist1, artist2, song, type, year}
-    
     connection_docs = []
     seen = set()
     
@@ -266,7 +267,6 @@ async def seed():
         if a1 == a2:
             continue
         
-        # Create bidirectional connections (A→B and B→A)
         key_forward = (a1, a2, title)
         key_backward = (a2, a1, title)
         
@@ -282,7 +282,7 @@ async def seed():
                     "title": title,
                     "type": ctype,
                     "year": year,
-                    "coverUrl": ""  # Can add Spotify/Apple Music cover URLs later
+                    "coverUrl": ""
                 }
             })
     
