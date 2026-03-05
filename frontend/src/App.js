@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import "./components/GameBoard.css";
 import StarryBackground from "./components/StarryBackground";
 import ArtistCard from "./components/ArtistCard";
 import HowToPlayModal from "./components/HowToPlayModal";
