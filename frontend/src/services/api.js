@@ -84,17 +84,26 @@ export async function getArtistById(id) {
 export async function getCollaborationsForArtist(artistId) {
   try {
     const res = await api.get(`/artists/${artistId}/connections`);
-    // Backend returns connections with song data
-    // Map to collab format for UI compatibility
     const connections = res.data.connections || [];
-    return connections.map(conn => ({
-      id: conn.id,
-      title: conn.song.title,
-      type: conn.song.type,
-      year: conn.song.year,
-      artistIds: [conn.artist1, conn.artist2],
-      coverUrl: conn.song.coverUrl
-    }));
+    
+    console.log(`[API] Got ${connections.length} connections for artist ${artistId}`);
+    console.log('[API] Sample connection:', connections[0]);
+    
+    // Map to collab format for UI compatibility
+    return connections.map(conn => {
+      if (!conn.song) {
+        console.warn('[API] Connection missing song data:', conn);
+        return null;
+      }
+      return {
+        id: conn.id,
+        title: conn.song.title || 'Unknown',
+        type: conn.song.type || 'song',
+        year: conn.song.year || 2024,
+        artistIds: [conn.artist1, conn.artist2],
+        coverUrl: conn.song.coverUrl || ''
+      };
+    }).filter(Boolean);
   } catch (err) {
     console.error('getCollaborationsForArtist error:', err);
     return [];
@@ -115,16 +124,26 @@ export async function getConnectedArtists(artistId) {
 export async function getCollaborationsBetween(id1, id2) {
   try {
     const res = await api.get(`/connections/between/${id1}/${id2}`);
-    // Map connections to collab format
     const connections = res.data.connections || [];
-    return connections.map(conn => ({
-      id: conn.id,
-      title: conn.song.title,
-      type: conn.song.type,
-      year: conn.song.year,
-      artistIds: [conn.artist1, conn.artist2],
-      coverUrl: conn.song.coverUrl
-    }));
+    
+    console.log(`[API] Got ${connections.length} connections between ${id1} and ${id2}`);
+    console.log('[API] Sample connection:', connections[0]);
+    
+    // Map connections to collab format
+    return connections.map(conn => {
+      if (!conn.song) {
+        console.warn('[API] Connection missing song data:', conn);
+        return null;
+      }
+      return {
+        id: conn.id,
+        title: conn.song.title || 'Unknown',
+        type: conn.song.type || 'song',
+        year: conn.song.year || 2024,
+        artistIds: [conn.artist1, conn.artist2],
+        coverUrl: conn.song.coverUrl || ''
+      };
+    }).filter(Boolean);
   } catch (err) {
     console.error('getCollaborationsBetween error:', err);
     return [];
@@ -136,6 +155,8 @@ export async function findConnection(startId, endId) {
   try {
     const res = await api.post('/game/find-path', { startId, endId });
     const rawPath = res.data.path;
+    
+    console.log('[API] Raw path from backend:', rawPath);
     
     if (!rawPath || rawPath.length === 0) return null;
     
@@ -169,10 +190,10 @@ export async function findConnection(startId, endId) {
           fromArtist: item.id,
           toArtist: nextArtist.id,
           collab: {
-            title: song.title,
-            type: song.type,
-            year: song.year,
-            coverUrl: song.coverUrl
+            title: song.title || 'Unknown',
+            type: song.type || 'song',
+            year: song.year || 2024,
+            coverUrl: song.coverUrl || ''
           }
         });
       }
@@ -180,6 +201,7 @@ export async function findConnection(startId, endId) {
       i = nextArtistIndex - 1; // Skip to next artist
     }
     
+    console.log('[API] Converted path:', convertedPath);
     return convertedPath;
   } catch (err) {
     console.error('findConnection error:', err);
