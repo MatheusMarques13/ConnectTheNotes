@@ -21,13 +21,16 @@ connected component, so there is always a path between any two artists.
 
 The entire game runs **client-side** — the dataset and the BFS pathfinding live
 in the browser (`frontend/src/data/dataset.js` + `frontend/src/services/api.js`).
-There is **no backend and no database at runtime**, so it deploys as a plain
-static site.
+There is **no backend and no database**, so it deploys as a plain static site.
 
-The `backend/` folder is optional tooling: the canonical dataset
-(`seed_data.py`), the pure graph logic, and Python tests that prove the
-"every pair is solvable" invariant. `scripts/gen_dataset_js.py` regenerates the
-browser dataset from it.
+```
+frontend/        the React app (this is the whole product)
+  src/data/dataset.js     generated graph (do not edit by hand)
+  src/services/api.js     client-side engine (BFS, daily, difficulty)
+data/            data source + build tool (Python, optional — only to edit data)
+  source_data.py          human-editable artists & collaborations
+  build.py                regenerates dataset.js + asserts it's solvable
+```
 
 ## Run it locally
 
@@ -43,10 +46,11 @@ Push to your default branch — Vercel builds the static React app
 (`frontend/`). No environment variables, database, or serverless functions
 required.
 
-## Tests / data tooling (optional, Python)
+## Editing the artist data (optional, Python)
+
+Edit `data/source_data.py`, then regenerate and validate the shipped dataset:
 
 ```bash
-python backend/tests/test_game_logic.py   # proves the dataset is one component
-python scripts/gen_dataset_js.py          # regenerate frontend/src/data/dataset.js
-python scripts/gen_seed_data.py           # regenerate backend/seed_data.py from source
+python data/build.py   # rewrites frontend/src/data/dataset.js;
+                       # fails loudly if any artist pair becomes unsolvable
 ```

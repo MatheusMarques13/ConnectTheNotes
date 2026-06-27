@@ -18,7 +18,6 @@ const DIFFICULTY_CONFIG = {
 };
 
 const DEFAULT_OPTIONS = {
-  sound: true,
   showGenres: true,
   showHints: true,
   timedMode: false,
