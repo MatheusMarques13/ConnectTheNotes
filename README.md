@@ -5,8 +5,8 @@ songs. Inspired by *Connect the Stars*, but for music.
 
 > Drake → *“Forever”* → Eminem → *“River”* → Ed Sheeran
 
-Every puzzle is **guaranteed solvable** — the artist database is filtered to a
-single connected component, so there is always a path between any two artists.
+Every puzzle is **guaranteed solvable** — the artist dataset is a single
+connected component, so there is always a path between any two artists.
 
 ## Game modes
 
@@ -20,70 +20,69 @@ single connected component, so there is always a path between any two artists.
 ## Tech stack
 
 - **Frontend:** React (Create React App via CRACO), Tailwind, lucide-react.
-- **Backend:** FastAPI + MongoDB (Motor). Shortest-path via in-memory BFS.
+- **Backend:** FastAPI. The dataset is a small static read-only graph served
+  **entirely in memory — no database required.** Shortest paths via BFS.
 - **Deploy:** Vercel (frontend static build + Python serverless backend).
 
 ## Project layout
 
 ```
 backend/
-  server.py        # FastAPI app (the ONLY active backend)
+  server.py        # FastAPI app (all endpoints)
+  store.py         # in-memory data store, built from seed_data.py
   game_logic.py    # pure graph logic (BFS, difficulty bands) — unit-tested
   seed_data.py     # canonical dataset (95 artists, single connected component)
-  seed.py          # loads seed_data into MongoDB; asserts connectivity
   tests/           # pytest-style tests, no DB required
 frontend/
   src/             # React app
 scripts/
+  smoke_test.py    # end-to-end backend test (no DB)
   gen_seed_data.py # regenerates seed_data.py from the source dataset
 ```
 
-## Local development
+## Run it locally
 
-### Backend
+### Backend (no database!)
 
 ```bash
 cd backend
 pip install -r requirements.txt
-cp .env.example .env          # then edit MONGO_URL / DB_NAME / SEED_TOKEN
-python seed.py                # one-time: populate the database
 uvicorn server:app --reload --port 8001
 ```
+
+That's it — the data loads in memory at startup.
 
 ### Frontend
 
 ```bash
 cd frontend
-yarn install
-# REACT_APP_BACKEND_URL='' uses same-origin /api; set it for a split deploy
-yarn start
+echo "REACT_APP_BACKEND_URL=http://localhost:8001" >> .env   # dev is cross-origin
+yarn install        # if you hit a node-engine error: yarn install --ignore-engines
+yarn start          # opens http://localhost:3000
 ```
+
+## Quick checks (no UI)
+
+```bash
+python backend/tests/test_game_logic.py   # dataset + graph logic
+python scripts/smoke_test.py              # full backend e2e + simulated playthrough
+```
+
+Both verify the core invariant: the dataset is a single connected component and
+**every artist pair is solvable**.
 
 ## Environment variables
 
 | Var | Where | Purpose |
 |-----|-------|---------|
-| `MONGO_URL` | backend | MongoDB connection string |
-| `DB_NAME` | backend | database name (default `connect_the_notes`) |
 | `ALLOWED_ORIGINS` | backend | comma-separated CORS origins (pin in prod) |
-| `SEED_TOKEN` | backend | secret required to call `POST /api/admin/seed` |
 | `REACT_APP_BACKEND_URL` | frontend | backend origin; empty = same-origin |
 
-## Seeding in production
+## Updating the dataset
 
-There is **no public seed/reset endpoint**. To (re)seed a deployed database,
-either run `python seed.py` against the production `MONGO_URL`, or call the
-protected endpoint:
+Edit the source data and regenerate:
 
 ```bash
-curl -X POST https://<your-api>/api/admin/seed -H "X-Seed-Token: $SEED_TOKEN"
+python scripts/gen_seed_data.py   # rewrites backend/seed_data.py, keeping only
+                                  # the largest connected component (100% solvable)
 ```
-
-## Tests
-
-```bash
-python backend/tests/test_game_logic.py     # dataset + graph logic (no DB)
-```
-
-The suite verifies the core invariant: the dataset is a single connected
-component and **every artist pair is solvable**.

@@ -1,10 +1,11 @@
 # Connect the Notes — API Contract
 
 The active backend is **`backend/server.py`** (FastAPI). All routes are prefixed
-with `/api`. Data lives in two MongoDB collections:
+with `/api`. There is **no database**: data is served in memory from
+`backend/store.py` (built from `seed_data.py`). Shapes:
 
-- `artists` — `{ id, name, genre, imageUrl }`
-- `artistConnections` — `{ id, artist1, artist2, song: { title, type, year, coverUrl } }`
+- artist — `{ id, name, genre, imageUrl }`
+- connection — `{ id, artist1, artist2, song: { title, type, year, coverUrl } }`
 
 `type` is one of `song | album | live | feature`.
 
@@ -33,14 +34,11 @@ with `/api`. Data lives in two MongoDB collections:
 ## Stats & ops
 
 - `GET /api/stats` → `{ totalArtists, totalConnections, mode }`
-- `GET /api/health` → `{ status, database }`
-- `POST /api/admin/seed` (requires `X-Seed-Token`) → reseeds the database.
-  There is intentionally **no public seed/reset endpoint**.
+- `GET /api/health` → `{ status, totalArtists, totalConnections }`
 
 ## Notes
 
-- Shortest paths are computed by an in-memory BFS (`backend/game_logic.py`): the
-  whole graph is loaded once per request, then traversed in memory.
+- Shortest paths are computed by BFS over the in-memory graph
+  (`backend/game_logic.py` + `backend/store.py`).
 - The dataset (`backend/seed_data.py`) is filtered to a single connected
-  component, so **every artist pair is solvable**. `seed.py` re-asserts this
-  invariant before inserting.
+  component, so **every artist pair is solvable**.
