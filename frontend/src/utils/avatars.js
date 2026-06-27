@@ -45,9 +45,8 @@ export function getGenreIcon(genre) {
   if (g.includes('country') || g.includes('folk')) return 'trees';
   if (g.includes('afrobeat') || g.includes('afro')) return 'sun';
   if (g.includes('indie') || g.includes('alternative')) return 'cloud';
-  if (g.includes('jazz')) return 'music-3';
-  if (g.includes('classical')) return 'music-4';
-  if (g.includes('reggae') || g.includes('dancehall')) return 'palmtree';
+  if (g.includes('jazz') || g.includes('classical') || g.includes('soul')) return 'music';
+  if (g.includes('reggae') || g.includes('dancehall')) return 'sun';
   if (g.includes('pop')) return 'star';
   if (g.includes('producer') || g.includes('dj')) return 'radio';
   return 'music';

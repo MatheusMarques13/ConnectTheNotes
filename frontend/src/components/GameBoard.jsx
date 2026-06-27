@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { ArrowLeft, ArrowRight, Music, Disc, Radio, Mic2, RotateCcw, Lightbulb, Check, Loader2, Clock, XCircle, Search, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Music, Disc, Radio, Mic2, RotateCcw, Lightbulb, Check, Loader2, Clock, XCircle, Search, X, Flag, Share2 } from 'lucide-react';
 import {
-  getCollaborationsForArtist,
   getConnectedArtists,
   getCollaborationsBetween,
   findConnection,
   getArtistById,
 } from '../services/api';
-import { getAvatarUrl, getSmallAvatarUrl, getLargeAvatarUrl, getGenreColor } from '../utils/avatars';
+import { getAvatarUrl, getLargeAvatarUrl, getGenreColor } from '../utils/avatars';
 import ConstellationGraph from './ConstellationGraph';
 
 const typeIcons = {
@@ -22,6 +21,14 @@ const typeLabels = {
   album: 'Album',
   live: 'Live Performance',
   feature: 'Feature',
+};
+
+const parLabel = (used, optimal) => {
+  if (optimal == null) return null;
+  if (used <= optimal) return 'Perfect — optimal path!';
+  if (used <= optimal + 1) return 'Great';
+  if (used <= optimal + 3) return 'Nice';
+  return 'Connected';
 };
 
 const ArtistMiniAvatar = ({ artist, size = 28, className = '' }) => {
@@ -62,19 +69,26 @@ const GameTimer = ({ timeRemaining, timeLimit, isWarning, isCritical }) => {
   );
 };
 
-const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMode, timeLimit, difficulty }) => {
+const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHints, onWin, onLose, showGenres = true, timedMode, timeLimit, difficulty }) => {
   const [chain, setChain] = useState([{ artist: artist1, collab: null }]);
   const [gameWon, setGameWon] = useState(false);
   const [gameLost, setGameLost] = useState(false);
+  const [gaveUp, setGaveUp] = useState(false);
+  const [solutionChain, setSolutionChain] = useState(null);
+  const [revealing, setRevealing] = useState(false);
   const [showHint, setShowHint] = useState(false);
   const [hint, setHint] = useState(null);
+  const [hintStatus, setHintStatus] = useState('idle'); // idle|loading|found|none
   const [searchQuery, setSearchQuery] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedArtist, setSelectedArtist] = useState(null);
   const [matchingCollabs, setMatchingCollabs] = useState([]);
   const [loadingCollabs, setLoadingCollabs] = useState(false);
+  const [moving, setMoving] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const [connectedArtists, setConnectedArtists] = useState([]);
+  const [loadError, setLoadError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [artistCache, setArtistCache] = useState({});
 
@@ -139,6 +153,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
     let cancelled = false;
     const fetchData = async () => {
       setLoading(true);
+      setLoadError(false);
       setSearchQuery('');
       setSelectedArtist(null);
       setMatchingCollabs([]);
@@ -147,6 +162,7 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
       if (!cancelled) {
         setConnectedArtists(connected);
         connected.forEach(a => cacheArtist(a));
+        setLoadError(connected.length === 0);
         setLoading(false);
       }
     };
@@ -156,18 +172,23 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
 
   // Hint logic
   useEffect(() => {
-    if (!showHints || !showHint) { setHint(null); return; }
+    if (!showHints || !showHint) { setHint(null); setHintStatus('idle'); return; }
     let cancelled = false;
     const fetchHint = async () => {
-      const path = await findConnection(currentArtist.id, artist2.id);
-      if (!cancelled && path && path.length > 0) {
-        const nextId = path[0].toArtist;
+      setHintStatus('loading');
+      const { steps } = await findConnection(currentArtist.id, artist2.id);
+      if (cancelled) return;
+      if (steps && steps.length > 0) {
+        const nextId = steps[0].toArtist;
         const cached = artistCache[nextId];
-        if (cached) { setHint(cached); }
+        if (cached) { setHint(cached); setHintStatus('found'); }
         else {
           const artist = await getArtistById(nextId);
-          if (!cancelled && artist) { setHint(artist); cacheArtist(artist); }
+          if (!cancelled && artist) { setHint(artist); cacheArtist(artist); setHintStatus('found'); }
         }
+      } else {
+        setHint(null);
+        setHintStatus('none');
       }
     };
     fetchHint();
@@ -181,59 +202,49 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
       ).slice(0, 8)
     : [];
 
-  // When user selects an artist from dropdown
-  const handleSelectArtist = async (artist) => {
-    setSelectedArtist(artist);
-    setSearchQuery(artist.name);
-    setShowDropdown(false);
-    setLoadingCollabs(true);
-    const collabs = await getCollaborationsBetween(currentArtist.id, artist.id);
-    setMatchingCollabs(collabs);
-    setLoadingCollabs(false);
+  const targetIsNeighbor = connectedArtists.some(a => a.id === artist2.id);
+
+  const winWith = (newChain) => {
+    setChain(newChain);
+    setGameWon(true);
+    if (timerRef.current) clearInterval(timerRef.current);
+    if (onWin) onWin(newChain.length - 1, timeSpent);
   };
 
   // When user confirms the move with a specific collab
   const handleConfirmMove = (collab) => {
     const nextArtist = selectedArtist;
     const newChain = [...chain, { artist: nextArtist, collab }];
-    setChain(newChain);
     setSelectedArtist(null);
     setSearchQuery('');
     setMatchingCollabs([]);
     cacheArtist(nextArtist);
-
-    if (nextArtist.id === artist2.id) {
-      setGameWon(true);
-      if (timerRef.current) clearInterval(timerRef.current);
-      if (onWin) onWin(newChain.length - 1, timeSpent);
-    }
+    if (nextArtist.id === artist2.id) winWith(newChain);
+    else setChain(newChain);
   };
 
   // Quick confirm if only 1 collab
   const handleQuickSelect = async (artist) => {
+    if (moving) return;
+    setMoving(true);
     setLoadingCollabs(true);
     const collabs = await getCollaborationsBetween(currentArtist.id, artist.id);
     setLoadingCollabs(false);
     if (collabs.length === 1) {
-      // Auto-select the only collab
-      const nextArtist = artist;
-      const newChain = [...chain, { artist: nextArtist, collab: collabs[0] }];
-      setChain(newChain);
+      const newChain = [...chain, { artist, collab: collabs[0] }];
       setSelectedArtist(null);
       setSearchQuery('');
       setMatchingCollabs([]);
-      cacheArtist(nextArtist);
-      if (nextArtist.id === artist2.id) {
-        setGameWon(true);
-        if (timerRef.current) clearInterval(timerRef.current);
-        if (onWin) onWin(newChain.length - 1, timeSpent);
-      }
+      cacheArtist(artist);
+      if (artist.id === artist2.id) winWith(newChain);
+      else setChain(newChain);
     } else {
       setSelectedArtist(artist);
       setSearchQuery(artist.name);
       setShowDropdown(false);
       setMatchingCollabs(collabs);
     }
+    setMoving(false);
   };
 
   const handleClearSearch = () => {
@@ -250,8 +261,18 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
       setSelectedArtist(null);
       setSearchQuery('');
       setMatchingCollabs([]);
-      setGameWon(false);
     }
+  };
+
+  const handleGiveUp = async () => {
+    if (revealing) return;
+    setRevealing(true);
+    const { chain: solChain } = await findConnection(artist1.id, artist2.id);
+    setRevealing(false);
+    if (solChain && solChain.length) setSolutionChain(solChain);
+    setGaveUp(true);
+    if (timerRef.current) clearInterval(timerRef.current);
+    if (onLose) onLose();
   };
 
   const handleRestart = () => {
@@ -261,28 +282,60 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
     setMatchingCollabs([]);
     setGameWon(false);
     setGameLost(false);
+    setGaveUp(false);
+    setSolutionChain(null);
     setShowHint(false);
     setTimeRemaining(timeLimit || 0);
     setTimeSpent(0);
     startTimeRef.current = Date.now();
   };
 
+  const buildShare = () => {
+    const used = chain.length - 1;
+    const head = puzzleType === 'daily' ? 'Connect the Notes — Daily' : 'Connect the Notes';
+    const par = optimalSteps != null ? ` (best possible: ${optimalSteps})` : '';
+    return `${head}\n${artist1.name} → ${artist2.name}\nSolved in ${used} step${used !== 1 ? 's' : ''}${par}\n${'🎵'.repeat(Math.min(used, 12))}`;
+  };
+
+  const handleShare = async () => {
+    const text = buildShare();
+    try {
+      if (navigator.share) { await navigator.share({ text }); return; }
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch (e) { /* user cancelled */ }
+  };
+
   const isWarning = timedMode && timeRemaining <= 30 && timeRemaining > 10;
   const isCritical = timedMode && timeRemaining <= 10;
 
-  // Game Lost Screen
-  if (gameLost) {
+  // Game Lost / Gave Up Screen
+  if (gameLost || gaveUp) {
     return (
       <div className="game-board">
         <div className="game-lost" data-testid="game-lost-screen">
           <div className="lost-icon-wrap"><XCircle size={64} className="lost-icon" /></div>
-          <h2 className="lost-title">Time's Up!</h2>
-          <p className="lost-subtitle">You ran out of time trying to connect {artist1.name} to {artist2.name}</p>
-          <div className="lost-stats">
-            <div className="lost-stat"><span className="lost-stat-value">{chain.length - 1}</span><span className="lost-stat-label">Steps Taken</span></div>
-            <div className="lost-stat"><span className="lost-stat-value">{currentArtist.name}</span><span className="lost-stat-label">Last Artist</span></div>
-          </div>
-          <div className="lost-chain"><h4>Your Progress:</h4><ConstellationGraph chain={chain} targetArtist={artist2} /></div>
+          <h2 className="lost-title">{gaveUp ? 'Solution Revealed' : "Time's Up!"}</h2>
+          <p className="lost-subtitle">
+            {gaveUp
+              ? `Here's one way to connect ${artist1.name} to ${artist2.name}:`
+              : `You ran out of time trying to connect ${artist1.name} to ${artist2.name}`}
+          </p>
+          {gaveUp && solutionChain ? (
+            <div className="lost-chain">
+              <h4>Optimal path{optimalSteps != null ? ` · ${optimalSteps} steps` : ''}:</h4>
+              <ConstellationGraph chain={solutionChain} targetArtist={artist2} isVictory={true} />
+            </div>
+          ) : (
+            <>
+              <div className="lost-stats">
+                <div className="lost-stat"><span className="lost-stat-value">{chain.length - 1}</span><span className="lost-stat-label">Steps Taken</span></div>
+                <div className="lost-stat"><span className="lost-stat-value">{currentArtist.name}</span><span className="lost-stat-label">Last Artist</span></div>
+              </div>
+              <div className="lost-chain"><h4>Your Progress:</h4><ConstellationGraph chain={chain} targetArtist={artist2} /></div>
+            </>
+          )}
           <div className="lost-actions">
             <button className="btn-primary" onClick={handleRestart}>Try Again</button>
             <button className="btn-secondary" onClick={onBack}>New Game</button>
@@ -294,6 +347,8 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
 
   // Game Won Screen
   if (gameWon) {
+    const used = chain.length - 1;
+    const rating = parLabel(used, optimalSteps);
     const formatTime = (seconds) => {
       const mins = Math.floor(seconds / 60);
       const secs = seconds % 60;
@@ -304,16 +359,27 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
         <div className="game-won" data-testid="game-won-screen">
           <div className="won-fireworks">
             {[...Array(12)].map((_, i) => (
-              <div key={i} className="firework" style={{ '--delay': `${i * 0.15}s`, '--x': `${Math.random() * 100}%`, '--y': `${Math.random() * 60}%` }} />
+              <div key={i} className="firework" style={{ '--delay': `${i * 0.15}s`, '--x': `${(i * 37) % 100}%`, '--y': `${(i * 23) % 60}%` }} />
             ))}
           </div>
           <h2 className="won-title">Connected!</h2>
           <p className="won-subtitle">
-            You linked {artist1.name} to {artist2.name} in {chain.length - 1} step{chain.length - 1 !== 1 ? 's' : ''}
+            You linked {artist1.name} to {artist2.name} in {used} step{used !== 1 ? 's' : ''}
             {timedMode && <span className="won-time"> • {formatTime(timeSpent)}</span>}
           </p>
+          {rating && (
+            <div className="won-par">
+              <span className="won-par-rating">{rating}</span>
+              {optimalSteps != null && (
+                <span className="won-par-detail">You: {used} · Best possible: {optimalSteps}</span>
+              )}
+            </div>
+          )}
           <ConstellationGraph chain={chain} targetArtist={artist2} isVictory={true} />
           <div className="won-actions">
+            <button className="btn-secondary won-share" onClick={handleShare}>
+              <Share2 size={16} /> {copied ? 'Copied!' : 'Share'}
+            </button>
             <button className="btn-primary" onClick={onBack}>New Game</button>
             <button className="btn-secondary" onClick={handleRestart}>Play Again</button>
           </div>
@@ -344,7 +410,9 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
           </div>
         </div>
         <div className="game-controls">
-          <span className="step-counter">Steps: {chain.length - 1}</span>
+          <span className="step-counter">
+            Steps: {chain.length - 1}{optimalSteps != null ? ` · par ${optimalSteps}` : ''}
+          </span>
           {chain.length > 1 && (
             <button className="game-ctrl-btn" onClick={handleUndo} title="Undo"><RotateCcw size={16} /></button>
           )}
@@ -353,17 +421,29 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
               <Lightbulb size={16} />
             </button>
           )}
+          <button className="game-ctrl-btn give-up-btn" onClick={handleGiveUp} title="Give up & reveal solution" disabled={revealing}>
+            {revealing ? <Loader2 size={16} className="spin-icon" /> : <Flag size={16} />}
+          </button>
         </div>
       </div>
 
       {/* Chain graph */}
       {chain.length > 1 && <ConstellationGraph chain={chain} targetArtist={artist2} />}
 
+      {/* Target reachable banner */}
+      {targetIsNeighbor && !loading && (
+        <div className="target-near-banner">
+          <Check size={14} /> <strong>{artist2.name}</strong> is one step away — search their name to finish!
+        </div>
+      )}
+
       {/* Hint */}
-      {showHint && hint && (
+      {showHint && (
         <div className="hint-bar">
           <Lightbulb size={14} />
-          <span>Try connecting through <strong>{hint.name}</strong></span>
+          {hintStatus === 'loading' && <span>Finding a route…</span>}
+          {hintStatus === 'found' && hint && <span>Try connecting through <strong>{hint.name}</strong></span>}
+          {hintStatus === 'none' && <span>No route from here — try Undo to take another path.</span>}
         </div>
       )}
 
@@ -373,13 +453,22 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
           <img src={getLargeAvatarUrl(currentArtist)} alt={currentArtist.name} className="current-avatar-img" onError={(e) => { e.target.style.display = 'none'; }} />
         </div>
         <h2 className="current-artist-name">{currentArtist.name}</h2>
-        <p className="current-artist-genre">{currentArtist.genre}</p>
+        {showGenres && <p className="current-artist-genre">{currentArtist.genre}</p>}
       </div>
 
       {loading ? (
         <div className="loading-section">
           <Loader2 size={24} className="spin-icon" />
           <span>Loading connections...</span>
+        </div>
+      ) : loadError ? (
+        <div className="dead-end-panel" data-testid="dead-end">
+          <p className="dead-end-title">No further connections from {currentArtist.name}.</p>
+          <p className="dead-end-hint">This can be a network hiccup. Undo to take another route.</p>
+          <div className="dead-end-actions">
+            {chain.length > 1 && <button className="btn-primary" onClick={handleUndo}>Undo last step</button>}
+            <button className="btn-secondary" onClick={handleGiveUp}>Reveal solution</button>
+          </div>
         </div>
       ) : (
         <div className="search-section">
@@ -423,11 +512,12 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
                   key={artist.id}
                   className={`search-dropdown-item ${artist.id === artist2.id ? 'target' : ''} ${showHint && hint && artist.id === hint.id ? 'hinted' : ''}`}
                   onClick={() => handleQuickSelect(artist)}
+                  disabled={moving}
                 >
                   <ArtistMiniAvatar artist={artist} size={36} />
                   <div className="dropdown-artist-info">
                     <span className="dropdown-artist-name">{artist.name}</span>
-                    <span className="dropdown-artist-genre">{artist.genre}</span>
+                    {showGenres && <span className="dropdown-artist-genre">{artist.genre}</span>}
                   </div>
                   {artist.id === artist2.id && (
                     <div className="target-badge"><Check size={14} /><span>TARGET</span></div>
@@ -440,8 +530,8 @@ const GameBoard = ({ artist1, artist2, onBack, showHints, onWin, onLose, timedMo
           {/* No results message */}
           {showDropdown && searchQuery.length >= 1 && filteredArtists.length === 0 && !selectedArtist && (
             <div className="search-no-results">
-              <p>No connected artist found matching "{searchQuery}"</p>
-              <p className="search-no-results-hint">Try a different name — they need to have a collaboration with {currentArtist.name}</p>
+              <p>No direct collaborator of {currentArtist.name} matches "{searchQuery}".</p>
+              <p className="search-no-results-hint">They may still be reachable — pick a different artist to keep building the chain, or use a hint.</p>
             </div>
           )}
 

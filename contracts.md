@@ -1,49 +1,46 @@
-# Connect the Notes - API Contracts
+# Connect the Notes — API Contract
 
-## A. API Endpoints
+The active backend is **`backend/server.py`** (FastAPI). All routes are prefixed
+with `/api`. Data lives in two MongoDB collections:
 
-### GET /api/artists
-- Query params: `?search=<query>&limit=10`
-- Returns: `{ artists: [{ id, name, genre, imageUrl }] }`
+- `artists` — `{ id, name, genre, imageUrl }`
+- `artistConnections` — `{ id, artist1, artist2, song: { title, type, year, coverUrl } }`
 
-### GET /api/artists/random
-- Query params: `?excludeIds=1,2`
-- Returns: `{ artist: { id, name, genre, imageUrl } }`
+`type` is one of `song | album | live | feature`.
 
-### GET /api/artists/:id
-- Returns: `{ id, name, genre, imageUrl }`
+## Artists
 
-### GET /api/artists/:id/collaborations
-- Returns: `{ collaborations: [{ id, artistIds, title, type, year }] }`
+- `GET /api/artists?search=<q>&limit=10` → `{ artists: [...] }`
+- `GET /api/artists/random?excludeIds=a,b` → `{ artist }`
+- `GET /api/artists/:id` → artist object
+- `GET /api/artists/:id/connections` → `{ connections: [...] }`
+- `GET /api/artists/:id/connected` → `{ artists: [...] }`
+- `GET /api/connections/between/:id1/:id2` → `{ connections: [...] }`
 
-### GET /api/collaborations/between/:id1/:id2
-- Returns: `{ collaborations: [{ id, artistIds, title, type, year }] }`
+## Game
 
-### GET /api/artists/:id/connected
-- Returns: `{ artists: [{ id, name, genre, imageUrl }] }`
+- `POST /api/game/find-path` — body `{ startId, endId }` →
+  `{ path: [ {kind:'artist', artist}, {kind:'song', song}, ... ] | null, optimalSteps }`.
+  `path === null` means unreachable (cannot happen within the seeded dataset,
+  which is a single connected component). The structural marker is `kind`, so a
+  song's own `type` (`album`/`live`/…) is never overwritten.
+- `GET /api/game/random-pair?difficulty=easy|medium|hard|any` →
+  `{ artist1, artist2, optimalSteps }` — guaranteed connected, distance within
+  the difficulty band.
+- `GET /api/game/daily?date=YYYY-MM-DD` →
+  `{ date, artist1, artist2, optimalSteps }` — deterministic per date.
 
-### POST /api/game/find-path
-- Body: `{ startId: string, endId: string }`
-- Returns: `{ path: [{ collab, fromArtist, toArtist }] | null }`
+## Stats & ops
 
-## B. Mocked Data to Replace
-- `ARTISTS` array in mockData.js → MongoDB `artists` collection
-- `COLLABORATIONS` array → MongoDB `collaborations` collection
-- `findConnection()` → Backend BFS via `/api/game/find-path`
-- `searchArtists()` → Backend text search via `/api/artists?search=`
-- `getRandomArtist()` → Backend random via `/api/artists/random`
-- `getCollaborationsForArtist()` → Backend via `/api/artists/:id/collaborations`
-- `getCollaborationsBetween()` → Backend via `/api/collaborations/between/:id1/:id2`
-- `getConnectedArtists()` → Backend via `/api/artists/:id/connected`
+- `GET /api/stats` → `{ totalArtists, totalConnections, mode }`
+- `GET /api/health` → `{ status, database }`
+- `POST /api/admin/seed` (requires `X-Seed-Token`) → reseeds the database.
+  There is intentionally **no public seed/reset endpoint**.
 
-## C. Backend Implementation
-1. MongoDB models: `artists`, `collaborations` collections
-2. Seed script with 200+ artists and 500+ collaborations
-3. BFS pathfinding endpoint
-4. Text search index on artist names
+## Notes
 
-## D. Frontend Integration
-- Create `api.js` service layer that calls backend
-- Replace all mockData imports in components with api calls
-- Add loading states and error handling
-- Components to update: ArtistCard, GameBoard, App.js
+- Shortest paths are computed by an in-memory BFS (`backend/game_logic.py`): the
+  whole graph is loaded once per request, then traversed in memory.
+- The dataset (`backend/seed_data.py`) is filtered to a single connected
+  component, so **every artist pair is solvable**. `seed.py` re-asserts this
+  invariant before inserting.

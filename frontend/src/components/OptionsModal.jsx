@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Volume2, VolumeX, Palette, RotateCcw, Timer, Zap, Trophy, Clock } from 'lucide-react';
+import { X, Palette, RotateCcw, Timer, Zap, Trophy, Clock } from 'lucide-react';
 
 const OptionsModal = ({ isOpen, onClose, options, onOptionsChange, difficultyConfig }) => {
   if (!isOpen) return null;
@@ -71,19 +71,6 @@ const OptionsModal = ({ isOpen, onClose, options, onOptionsChange, difficultyCon
             <Zap size={16} />
             <span>Gameplay</span>
           </h3>
-          
-          <div className="option-item">
-            <div className="option-label">
-              {options.sound ? <Volume2 size={18} /> : <VolumeX size={18} />}
-              <span>Sound Effects</span>
-            </div>
-            <button 
-              className={`toggle-btn ${options.sound ? 'active' : ''}`}
-              onClick={() => onOptionsChange({ ...options, sound: !options.sound })}
-            >
-              <div className="toggle-knob" />
-            </button>
-          </div>
           
           <div className="option-item">
             <div className="option-label">

@@ -2842,3 +2842,167 @@ body {
     text-align: right;
   }
 }
+
+/* ════════════════════════════════════════════════════════
+   Revival additions: Daily puzzle, Surprise Me, par, give-up
+   ════════════════════════════════════════════════════════ */
+
+/* Daily puzzle banner */
+.daily-banner {
+  width: 100%;
+  max-width: 540px;
+  margin: 0.5rem auto 0.25rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(184,198,224,0.08), rgba(163,191,250,0.05));
+  border: 1px solid var(--diamond-dim);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: 0 0 24px rgba(184,198,224,0.06);
+}
+.daily-banner-head {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  color: var(--diamond-accent);
+}
+.daily-streak {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(251,146,60,0.15);
+  color: #fb923c;
+  font-weight: 600;
+}
+.daily-pair {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--diamond-bright);
+}
+.daily-arrow { color: var(--diamond-accent); opacity: 0.7; }
+.daily-play-btn {
+  margin-top: 0.2rem;
+  padding: 0.55rem 1.4rem;
+  border: 1px solid var(--diamond-accent);
+  border-radius: 999px;
+  background: rgba(184,198,224,0.1);
+  color: var(--diamond-bright);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.daily-play-btn:hover { background: rgba(184,198,224,0.2); box-shadow: 0 0 18px var(--diamond-glow); }
+.daily-play-btn.done { border-color: var(--text-muted); color: var(--text-secondary); }
+
+.freeplay-label {
+  margin: 0.9rem 0 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  color: var(--text-muted);
+}
+
+/* Start actions: START GAME + SURPRISE ME */
+.start-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.surprise-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 1.1rem;
+  background: transparent;
+  border: 1px solid var(--diamond-dim);
+  border-radius: 999px;
+  color: var(--diamond-accent);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.surprise-btn:hover:not(:disabled) { color: var(--diamond-bright); border-color: var(--diamond-accent); }
+.surprise-btn:disabled { opacity: 0.6; cursor: default; }
+
+.start-error {
+  max-width: 480px;
+  margin: 0.25rem auto 0;
+  padding: 0.6rem 0.9rem;
+  text-align: center;
+  background: rgba(248,113,113,0.08);
+  border: 1px solid rgba(248,113,113,0.3);
+  border-radius: 12px;
+  color: #fca5a5;
+  font-size: 0.85rem;
+}
+
+/* Win-screen par / rating */
+.won-par {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  margin: 0.2rem 0 0.6rem;
+}
+.won-par-rating {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--diamond-bright);
+}
+.won-par-detail {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+}
+.won-share { display: inline-flex; align-items: center; gap: 0.4rem; }
+
+/* Target-one-step-away banner */
+.target-near-banner {
+  max-width: 540px;
+  margin: 0.5rem auto;
+  padding: 0.5rem 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+  background: rgba(110,231,183,0.08);
+  border: 1px solid rgba(110,231,183,0.25);
+  border-radius: 12px;
+  color: #6ee7b7;
+  font-size: 0.85rem;
+}
+
+/* Dead-end / give-up panel */
+.dead-end-panel {
+  max-width: 480px;
+  margin: 1.2rem auto;
+  padding: 1.4rem;
+  text-align: center;
+  background: var(--bg-card-dark);
+  border: 1px solid var(--diamond-dim);
+  border-radius: 16px;
+}
+.dead-end-title { font-family: var(--font-display); font-size: 1.2rem; color: var(--diamond-bright); margin-bottom: 0.3rem; }
+.dead-end-hint { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem; }
+.dead-end-actions { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; }
+
+.give-up-btn:hover { color: #fca5a5 !important; border-color: rgba(248,113,113,0.4) !important; }

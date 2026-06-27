@@ -54,11 +54,11 @@ const HowToPlayModal = ({ isOpen, onClose }) => {
           <div className="htp-example-chain">
             <span className="example-artist">Drake</span>
             <span className="example-arrow">→</span>
-            <span className="example-collab">\"Forever\"</span>
+            <span className="example-collab">“Forever”</span>
             <span className="example-arrow">→</span>
             <span className="example-artist">Eminem</span>
             <span className="example-arrow">→</span>
-            <span className="example-collab">\"River\"</span>
+            <span className="example-collab">“River”</span>
             <span className="example-arrow">→</span>
             <span className="example-artist">Ed Sheeran</span>
           </div>

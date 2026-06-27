@@ -77,11 +77,13 @@ agenthub/agents/youtube/db
 .cache/
 
 # Mobile development
-android-sdk/ -e 
-# Environment files
-*.env
-*.env.*
--e 
-# Environment files
-*.env
-*.env.*
+android-sdk/
+
+# Environment files — never commit real secrets (MONGO_URL, SEED_TOKEN, …)
+.env
+.env.local
+.env.*.local
+backend/.env
+# Keep tracked build-flag / example files:
+!**/.env.example
+!frontend/.env

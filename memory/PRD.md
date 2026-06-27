@@ -1,5 +1,11 @@
 # Connect the Notes - PRD
 
+> ⚠️ **Historical document.** Some figures here (e.g. "590 artists / 1087
+> collaborations", Emergent OAuth, leaderboard) describe an earlier iteration and
+> are **out of date**. The live dataset is **95 artists** in a single connected
+> component (see `backend/seed_data.py`); auth/leaderboard are not implemented.
+> Treat `README.md` and `contracts.md` as the source of truth.
+
 ## Overview
 A musical artist connection trivia game where players connect two artists through their collaborations (songs, albums, live performances). Inspired by Connect the Stars but for music.
 
