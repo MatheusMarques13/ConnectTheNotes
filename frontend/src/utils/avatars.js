@@ -1,4 +1,5 @@
 // Avatar and icon utilities for artist display
+import { ARTIST_IMAGES } from '../data/images.generated';
 
 // Generate fallback avatar URL using UI Avatars (initials-based)
 function getFallbackAvatarUrl(name, size = 128) {
@@ -9,14 +10,12 @@ function getFallbackAvatarUrl(name, size = 128) {
   return `https://ui-avatars.com/api/?name=${encodeURIComponent(initials)}&size=${size}&background=${color}&color=fff&bold=true&font-size=0.4&rounded=true`;
 }
 
-// Avatar URL: prioritize DB imageUrl, fallback to UI Avatars
+// Avatar URL: prefer a real photo (baked at build time), then any explicit
+// imageUrl, then a styled initials fallback.
 export function getAvatarUrl(artist, size = 128) {
-  // If artist object with imageUrl
-  if (typeof artist === 'object' && artist?.imageUrl) {
-    return artist.imageUrl;
-  }
-  // Fallback to initials avatar
   const name = typeof artist === 'string' ? artist : artist?.name || 'Unknown';
+  if (ARTIST_IMAGES[name]) return ARTIST_IMAGES[name];
+  if (typeof artist === 'object' && artist?.imageUrl) return artist.imageUrl;
   return getFallbackAvatarUrl(name, size);
 }
 
