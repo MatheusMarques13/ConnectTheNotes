@@ -1,0 +1,5 @@
+# Dev/test-only dependencies (not needed in production).
+-r requirements.txt
+# In-memory async Mongo used by scripts/smoke_test.py to run the backend
+# end-to-end without a real database.
+mongomock-motor
