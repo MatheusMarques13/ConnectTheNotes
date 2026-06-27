@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { ArrowLeft, ArrowRight, Music, Disc, Radio, Mic2, RotateCcw, Lightbulb, Check, Loader2, Clock, XCircle, Search, X, Flag, Share2 } from 'lucide-react';
 import {
-  getConnectedArtists,
-  getCollaborationsBetween,
+  getArtistSongs,
   findConnection,
   getArtistById,
 } from '../services/api';
@@ -80,14 +79,9 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
   const [hint, setHint] = useState(null);
   const [hintStatus, setHintStatus] = useState('idle'); // idle|loading|found|none
   const [searchQuery, setSearchQuery] = useState('');
-  const [showDropdown, setShowDropdown] = useState(false);
-  const [selectedArtist, setSelectedArtist] = useState(null);
-  const [matchingCollabs, setMatchingCollabs] = useState([]);
-  const [loadingCollabs, setLoadingCollabs] = useState(false);
-  const [moving, setMoving] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const [connectedArtists, setConnectedArtists] = useState([]);
+  const [songs, setSongs] = useState([]);
   const [loadError, setLoadError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [artistCache, setArtistCache] = useState({});
@@ -97,25 +91,8 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
   const timerRef = useRef(null);
   const startTimeRef = useRef(Date.now());
   const searchRef = useRef(null);
-  const dropdownRef = useRef(null);
 
   const currentArtist = chain[chain.length - 1].artist;
-
-  // Close dropdown on outside click
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target) &&
-          searchRef.current && !searchRef.current.contains(e.target)) {
-        setShowDropdown(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('touchstart', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('touchstart', handleClickOutside);
-    };
-  }, []);
 
   // Timer logic
   useEffect(() => {
@@ -148,21 +125,18 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
     setArtistCache(prev => ({ ...prev, [artist.id]: artist }));
   }, []);
 
-  // Fetch connected artists for current artist
+  // Load the current artist's songs (each carries its collaborator)
   useEffect(() => {
     let cancelled = false;
     const fetchData = async () => {
       setLoading(true);
       setLoadError(false);
       setSearchQuery('');
-      setSelectedArtist(null);
-      setMatchingCollabs([]);
-      setShowDropdown(false);
-      const connected = await getConnectedArtists(currentArtist.id);
+      const list = await getArtistSongs(currentArtist.id);
       if (!cancelled) {
-        setConnectedArtists(connected);
-        connected.forEach(a => cacheArtist(a));
-        setLoadError(connected.length === 0);
+        setSongs(list);
+        list.forEach(s => cacheArtist(s.collaborator));
+        setLoadError(list.length === 0);
         setLoading(false);
       }
     };
@@ -170,7 +144,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
     return () => { cancelled = true; };
   }, [currentArtist.id, cacheArtist]);
 
-  // Hint logic
+  // Hint logic — points at the next artist toward the target
   useEffect(() => {
     if (!showHints || !showHint) { setHint(null); setHintStatus('idle'); return; }
     let cancelled = false;
@@ -195,14 +169,13 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
     return () => { cancelled = true; };
   }, [currentArtist.id, artist2.id, showHints, showHint, artistCache, cacheArtist]);
 
-  // Filter connected artists based on search
-  const filteredArtists = searchQuery.length >= 1
-    ? connectedArtists.filter(a =>
-        a.name.toLowerCase().includes(searchQuery.toLowerCase())
-      ).slice(0, 8)
-    : [];
+  // Filter songs by title OR collaborator name
+  const q = searchQuery.trim().toLowerCase();
+  const filteredSongs = q
+    ? songs.filter(s => s.title.toLowerCase().includes(q) || s.collaborator.name.toLowerCase().includes(q))
+    : songs;
 
-  const targetIsNeighbor = connectedArtists.some(a => a.id === artist2.id);
+  const targetIsNeighbor = songs.some(s => s.collaborator.id === artist2.id);
 
   const winWith = (newChain) => {
     setChain(newChain);
@@ -211,56 +184,25 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
     if (onWin) onWin(newChain.length - 1, timeSpent);
   };
 
-  // When user confirms the move with a specific collab
-  const handleConfirmMove = (collab) => {
-    const nextArtist = selectedArtist;
-    const newChain = [...chain, { artist: nextArtist, collab }];
-    setSelectedArtist(null);
+  // Pick a song -> travel to whoever the current artist made it with
+  const handlePickSong = (song) => {
+    const next = song.collaborator;
+    const newChain = [...chain, { artist: next, collab: { title: song.title, type: song.type, year: song.year, coverUrl: song.coverUrl } }];
     setSearchQuery('');
-    setMatchingCollabs([]);
-    cacheArtist(nextArtist);
-    if (nextArtist.id === artist2.id) winWith(newChain);
+    cacheArtist(next);
+    if (next.id === artist2.id) winWith(newChain);
     else setChain(newChain);
-  };
-
-  // Quick confirm if only 1 collab
-  const handleQuickSelect = async (artist) => {
-    if (moving) return;
-    setMoving(true);
-    setLoadingCollabs(true);
-    const collabs = await getCollaborationsBetween(currentArtist.id, artist.id);
-    setLoadingCollabs(false);
-    if (collabs.length === 1) {
-      const newChain = [...chain, { artist, collab: collabs[0] }];
-      setSelectedArtist(null);
-      setSearchQuery('');
-      setMatchingCollabs([]);
-      cacheArtist(artist);
-      if (artist.id === artist2.id) winWith(newChain);
-      else setChain(newChain);
-    } else {
-      setSelectedArtist(artist);
-      setSearchQuery(artist.name);
-      setShowDropdown(false);
-      setMatchingCollabs(collabs);
-    }
-    setMoving(false);
   };
 
   const handleClearSearch = () => {
     setSearchQuery('');
-    setSelectedArtist(null);
-    setMatchingCollabs([]);
-    setShowDropdown(false);
     if (searchRef.current) searchRef.current.focus();
   };
 
   const handleUndo = () => {
     if (chain.length > 1) {
       setChain(chain.slice(0, -1));
-      setSelectedArtist(null);
       setSearchQuery('');
-      setMatchingCollabs([]);
     }
   };
 
@@ -277,9 +219,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
 
   const handleRestart = () => {
     setChain([{ artist: artist1, collab: null }]);
-    setSelectedArtist(null);
     setSearchQuery('');
-    setMatchingCollabs([]);
     setGameWon(false);
     setGameLost(false);
     setGaveUp(false);
@@ -294,7 +234,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
     const used = chain.length - 1;
     const head = puzzleType === 'daily' ? 'Connect the Notes — Daily' : 'Connect the Notes';
     const par = optimalSteps != null ? ` (best possible: ${optimalSteps})` : '';
-    return `${head}\n${artist1.name} → ${artist2.name}\nSolved in ${used} step${used !== 1 ? 's' : ''}${par}\n${'🎵'.repeat(Math.min(used, 12))}`;
+    return `${head}\n${artist1.name} → ${artist2.name}\nSolved in ${used} song${used !== 1 ? 's' : ''}${par}\n${'🎵'.repeat(Math.min(used, 12))}`;
   };
 
   const handleShare = async () => {
@@ -324,13 +264,13 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
           </p>
           {gaveUp && solutionChain ? (
             <div className="lost-chain">
-              <h4>Optimal path{optimalSteps != null ? ` · ${optimalSteps} steps` : ''}:</h4>
+              <h4>Optimal path{optimalSteps != null ? ` · ${optimalSteps} songs` : ''}:</h4>
               <ConstellationGraph chain={solutionChain} targetArtist={artist2} isVictory={true} />
             </div>
           ) : (
             <>
               <div className="lost-stats">
-                <div className="lost-stat"><span className="lost-stat-value">{chain.length - 1}</span><span className="lost-stat-label">Steps Taken</span></div>
+                <div className="lost-stat"><span className="lost-stat-value">{chain.length - 1}</span><span className="lost-stat-label">Songs Played</span></div>
                 <div className="lost-stat"><span className="lost-stat-value">{currentArtist.name}</span><span className="lost-stat-label">Last Artist</span></div>
               </div>
               <div className="lost-chain"><h4>Your Progress:</h4><ConstellationGraph chain={chain} targetArtist={artist2} /></div>
@@ -364,7 +304,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
           </div>
           <h2 className="won-title">Connected!</h2>
           <p className="won-subtitle">
-            You linked {artist1.name} to {artist2.name} in {used} step{used !== 1 ? 's' : ''}
+            You linked {artist1.name} to {artist2.name} in {used} song{used !== 1 ? 's' : ''}
             {timedMode && <span className="won-time"> • {formatTime(timeSpent)}</span>}
           </p>
           {rating && (
@@ -411,7 +351,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
         </div>
         <div className="game-controls">
           <span className="step-counter">
-            Steps: {chain.length - 1}{optimalSteps != null ? ` · par ${optimalSteps}` : ''}
+            Songs: {chain.length - 1}{optimalSteps != null ? ` · par ${optimalSteps}` : ''}
           </span>
           {chain.length > 1 && (
             <button className="game-ctrl-btn" onClick={handleUndo} title="Undo"><RotateCcw size={16} /></button>
@@ -433,7 +373,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
       {/* Target reachable banner */}
       {targetIsNeighbor && !loading && (
         <div className="target-near-banner">
-          <Check size={14} /> <strong>{artist2.name}</strong> is one step away — search their name to finish!
+          <Check size={14} /> <strong>{artist2.name}</strong> is one song away — find the track you both share!
         </div>
       )}
 
@@ -442,7 +382,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
         <div className="hint-bar">
           <Lightbulb size={14} />
           {hintStatus === 'loading' && <span>Finding a route…</span>}
-          {hintStatus === 'found' && hint && <span>Try connecting through <strong>{hint.name}</strong></span>}
+          {hintStatus === 'found' && hint && <span>Try a song with <strong>{hint.name}</strong></span>}
           {hintStatus === 'none' && <span>No route from here — try Undo to take another path.</span>}
         </div>
       )}
@@ -459,12 +399,12 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
       {loading ? (
         <div className="loading-section">
           <Loader2 size={24} className="spin-icon" />
-          <span>Loading connections...</span>
+          <span>Loading songs...</span>
         </div>
       ) : loadError ? (
         <div className="dead-end-panel" data-testid="dead-end">
-          <p className="dead-end-title">No further connections from {currentArtist.name}.</p>
-          <p className="dead-end-hint">This can be a network hiccup. Undo to take another route.</p>
+          <p className="dead-end-title">No songs found for {currentArtist.name}.</p>
+          <p className="dead-end-hint">Undo to take another route.</p>
           <div className="dead-end-actions">
             {chain.length > 1 && <button className="btn-primary" onClick={handleUndo}>Undo last step</button>}
             <button className="btn-secondary" onClick={handleGiveUp}>Reveal solution</button>
@@ -472,26 +412,18 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
         </div>
       ) : (
         <div className="search-section">
-          <h3 className="section-title">WHO DID THEY COLLABORATE WITH?</h3>
-          <p className="search-subtitle">Type an artist name to make your next move</p>
+          <h3 className="section-title">PICK A SONG BY {currentArtist.name.toUpperCase()}</h3>
+          <p className="search-subtitle">Choose a track to travel to whoever they made it with</p>
 
-          {/* Search input */}
+          {/* Search input (by song title or collaborator) */}
           <div className="search-input-wrapper">
             <Search size={18} className="search-icon" />
             <input
               ref={searchRef}
               type="text"
-              placeholder="Search for a connected artist..."
+              placeholder="Search a song or collaborator..."
               value={searchQuery}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-                setShowDropdown(true);
-                if (selectedArtist && e.target.value !== selectedArtist.name) {
-                  setSelectedArtist(null);
-                  setMatchingCollabs([]);
-                }
-              }}
-              onFocus={() => { if (searchQuery.length >= 1) setShowDropdown(true); }}
+              onChange={(e) => setSearchQuery(e.target.value)}
               className="game-search-input"
               autoComplete="off"
               autoCorrect="off"
@@ -504,75 +436,44 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
             )}
           </div>
 
-          {/* Autocomplete dropdown */}
-          {showDropdown && filteredArtists.length > 0 && !selectedArtist && (
-            <div className="search-dropdown" ref={dropdownRef}>
-              {filteredArtists.map(artist => (
-                <button
-                  key={artist.id}
-                  className={`search-dropdown-item ${artist.id === artist2.id ? 'target' : ''} ${showHint && hint && artist.id === hint.id ? 'hinted' : ''}`}
-                  onClick={() => handleQuickSelect(artist)}
-                  disabled={moving}
-                >
-                  <ArtistMiniAvatar artist={artist} size={36} />
-                  <div className="dropdown-artist-info">
-                    <span className="dropdown-artist-name">{artist.name}</span>
-                    {showGenres && <span className="dropdown-artist-genre">{artist.genre}</span>}
-                  </div>
-                  {artist.id === artist2.id && (
-                    <div className="target-badge"><Check size={14} /><span>TARGET</span></div>
-                  )}
-                </button>
-              ))}
-            </div>
-          )}
-
-          {/* No results message */}
-          {showDropdown && searchQuery.length >= 1 && filteredArtists.length === 0 && !selectedArtist && (
-            <div className="search-no-results">
-              <p>No direct collaborator of {currentArtist.name} matches "{searchQuery}".</p>
-              <p className="search-no-results-hint">They may still be reachable — pick a different artist to keep building the chain, or use a hint.</p>
-            </div>
-          )}
-
-          {/* Loading collabs */}
-          {loadingCollabs && (
-            <div className="loading-section" style={{ marginTop: '1rem' }}>
-              <Loader2 size={20} className="spin-icon" />
-              <span>Finding collaborations...</span>
-            </div>
-          )}
-
-          {/* Show matching collaborations after selecting an artist */}
-          {selectedArtist && matchingCollabs.length > 0 && (
-            <div className="matching-collabs">
-              <h4 className="collabs-header">
-                Collaborations between {currentArtist.name} & {selectedArtist.name}
-              </h4>
-              <div className="collabs-list">
-                {matchingCollabs.map(collab => (
+          {/* Song list */}
+          {filteredSongs.length > 0 ? (
+            <div className="song-list">
+              {filteredSongs.map(song => {
+                const isTarget = song.collaborator.id === artist2.id;
+                const isHinted = showHint && hint && song.collaborator.id === hint.id;
+                return (
                   <button
-                    key={collab.id}
-                    className="collab-list-item"
-                    onClick={() => handleConfirmMove(collab)}
+                    key={song.id}
+                    className={`song-item ${isTarget ? 'target' : ''} ${isHinted ? 'hinted' : ''}`}
+                    onClick={() => handlePickSong(song)}
                   >
-                    <div className="collab-list-icon">
-                      {typeIcons[collab.type] || <Music size={14} />}
+                    <div className="song-type-icon">{typeIcons[song.type] || <Music size={14} />}</div>
+                    <div className="song-info">
+                      <span className="song-title">{song.title}</span>
+                      <span className="song-meta">{typeLabels[song.type] || song.type} · {song.year}</span>
                     </div>
-                    <div className="collab-list-info">
-                      <span className="collab-list-title">{collab.title}</span>
-                      <span className="collab-list-meta">{typeLabels[collab.type] || collab.type} • {collab.year}</span>
+                    <div className="song-collab">
+                      <span className="song-with">with</span>
+                      <ArtistMiniAvatar artist={song.collaborator} size={26} />
+                      <span className="song-collab-name">{song.collaborator.name}</span>
                     </div>
-                    <ArrowRight size={16} className="collab-list-arrow" />
+                    {isTarget
+                      ? <div className="target-badge"><Check size={14} /><span>TARGET</span></div>
+                      : <ArrowRight size={16} className="collab-list-arrow" />}
                   </button>
-                ))}
-              </div>
+                );
+              })}
+            </div>
+          ) : (
+            <div className="search-no-results">
+              <p>No song or collaborator of {currentArtist.name} matches "{searchQuery}".</p>
+              <p className="search-no-results-hint">Clear the search to see all their tracks, or use a hint.</p>
             </div>
           )}
 
-          {/* Connected artists count */}
           <div className="connections-count">
-            {connectedArtists.length} artists connected to {currentArtist.name}
+            {songs.length} song{songs.length !== 1 ? 's' : ''} by {currentArtist.name}
           </div>
         </div>
       )}

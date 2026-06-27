@@ -26,8 +26,8 @@ const HowToPlayModal = ({ isOpen, onClose }) => {
               <Link2 size={24} />
             </div>
             <div className="htp-step-content">
-              <h3>2. Find the Connection</h3>
-              <p>Connect the two artists by finding a chain of collaborations. Artists can be linked through songs, albums, features, or live performances they've shared.</p>
+              <h3>2. Travel Through Songs</h3>
+              <p>From the current artist, pick one of their songs — you'll travel to whoever they made it with. Tracks can be songs, albums, features, or live performances.</p>
             </div>
           </div>
           <div className="htp-step">
@@ -36,7 +36,7 @@ const HowToPlayModal = ({ isOpen, onClose }) => {
             </div>
             <div className="htp-step-content">
               <h3>3. Build Your Chain</h3>
-              <p>At each step, pick a collaboration, then choose the next artist until you reach your target. The fewer steps, the better!</p>
+              <p>Keep hopping from song to song through their collaborators until you reach your target artist. The fewer songs, the better!</p>
             </div>
           </div>
           <div className="htp-step">

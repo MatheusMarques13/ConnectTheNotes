@@ -124,6 +124,30 @@ export async function getConnectedArtists(artistId) {
   return [...ids].map((id) => ARTISTS_BY_ID[id]).filter(Boolean);
 }
 
+// Every song the artist appears on, with the collaborator resolved — this is
+// what the player browses to travel through the music web.
+export async function getArtistSongs(artistId) {
+  return CONNECTIONS
+    .filter((c) => c.artist1 === artistId || c.artist2 === artistId)
+    .map((c) => {
+      const otherId = c.artist1 === artistId ? c.artist2 : c.artist1;
+      const collaborator = ARTISTS_BY_ID[otherId];
+      if (!collaborator) return null;
+      return {
+        id: c.id,
+        title: c.song.title,
+        type: c.song.type,
+        year: c.song.year,
+        coverUrl: c.song.coverUrl || '',
+        collaborator,
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) =>
+      a.collaborator.name.localeCompare(b.collaborator.name) || a.title.localeCompare(b.title)
+    );
+}
+
 export async function getCollaborationsBetween(id1, id2) {
   return CONNECTIONS
     .filter((c) => (c.artist1 === id1 && c.artist2 === id2) || (c.artist1 === id2 && c.artist2 === id1))
