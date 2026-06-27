@@ -17,72 +17,36 @@ connected component, so there is always a path between any two artists.
 - Win screen shows your steps vs. the **optimal (par)** and a shareable result.
 - **Give up** reveals the optimal solution at any time.
 
-## Tech stack
+## Architecture
 
-- **Frontend:** React (Create React App via CRACO), Tailwind, lucide-react.
-- **Backend:** FastAPI. The dataset is a small static read-only graph served
-  **entirely in memory — no database required.** Shortest paths via BFS.
-- **Deploy:** Vercel (frontend static build + Python serverless backend).
+The entire game runs **client-side** — the dataset and the BFS pathfinding live
+in the browser (`frontend/src/data/dataset.js` + `frontend/src/services/api.js`).
+There is **no backend and no database at runtime**, so it deploys as a plain
+static site.
 
-## Project layout
-
-```
-backend/
-  server.py        # FastAPI app (all endpoints)
-  store.py         # in-memory data store, built from seed_data.py
-  game_logic.py    # pure graph logic (BFS, difficulty bands) — unit-tested
-  seed_data.py     # canonical dataset (95 artists, single connected component)
-  tests/           # pytest-style tests, no DB required
-frontend/
-  src/             # React app
-scripts/
-  smoke_test.py    # end-to-end backend test (no DB)
-  gen_seed_data.py # regenerates seed_data.py from the source dataset
-```
+The `backend/` folder is optional tooling: the canonical dataset
+(`seed_data.py`), the pure graph logic, and Python tests that prove the
+"every pair is solvable" invariant. `scripts/gen_dataset_js.py` regenerates the
+browser dataset from it.
 
 ## Run it locally
 
-### Backend (no database!)
-
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn server:app --reload --port 8001
-```
-
-That's it — the data loads in memory at startup.
-
-### Frontend
-
 ```bash
 cd frontend
-echo "REACT_APP_BACKEND_URL=http://localhost:8001" >> .env   # dev is cross-origin
 yarn install        # if you hit a node-engine error: yarn install --ignore-engines
-yarn start          # opens http://localhost:3000
+yarn start          # opens http://localhost:3000 — that's it, no backend needed
 ```
 
-## Quick checks (no UI)
+## Deploy
+
+Push to your default branch — Vercel builds the static React app
+(`frontend/`). No environment variables, database, or serverless functions
+required.
+
+## Tests / data tooling (optional, Python)
 
 ```bash
-python backend/tests/test_game_logic.py   # dataset + graph logic
-python scripts/smoke_test.py              # full backend e2e + simulated playthrough
-```
-
-Both verify the core invariant: the dataset is a single connected component and
-**every artist pair is solvable**.
-
-## Environment variables
-
-| Var | Where | Purpose |
-|-----|-------|---------|
-| `ALLOWED_ORIGINS` | backend | comma-separated CORS origins (pin in prod) |
-| `REACT_APP_BACKEND_URL` | frontend | backend origin; empty = same-origin |
-
-## Updating the dataset
-
-Edit the source data and regenerate:
-
-```bash
-python scripts/gen_seed_data.py   # rewrites backend/seed_data.py, keeping only
-                                  # the largest connected component (100% solvable)
+python backend/tests/test_game_logic.py   # proves the dataset is one component
+python scripts/gen_dataset_js.py          # regenerate frontend/src/data/dataset.js
+python scripts/gen_seed_data.py           # regenerate backend/seed_data.py from source
 ```

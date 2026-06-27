@@ -1,175 +1,168 @@
-import axios from 'axios';
+// Client-side game engine — the whole game is a small static graph, so there is
+// no backend at runtime. These functions keep the same names/shapes the app
+// already expects, but compute everything locally from the embedded dataset.
+import { ARTISTS, CONNECTIONS } from '../data/dataset';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
-const API = `${BACKEND_URL}/api`;
+// ── Indexes ─────────────────────────────────────────────
+const ARTISTS_BY_ID = {};
+ARTISTS.forEach((a) => { ARTISTS_BY_ID[a.id] = a; });
 
-const api = axios.create({
-  baseURL: API,
-  timeout: 15000,
+const ADJ = {}; // id -> [{ to, song }]
+CONNECTIONS.forEach((c) => {
+  if (!ADJ[c.artist1]) ADJ[c.artist1] = [];
+  if (!ADJ[c.artist2]) ADJ[c.artist2] = [];
+  ADJ[c.artist1].push({ to: c.artist2, song: c.song });
+  ADJ[c.artist2].push({ to: c.artist1, song: c.song });
+});
+const ARTIST_IDS = ARTISTS.map((a) => a.id);
+
+const DIFFICULTY_BANDS = { easy: [2, 3], medium: [3, 4], hard: [4, 7], any: [2, 7] };
+
+const normSong = (s = {}) => ({
+  title: s.title || 'Unknown',
+  type: s.type || 'song',
+  year: s.year || 2024,
+  coverUrl: s.coverUrl || '',
 });
 
-// ── Artist API ──────────────────────────────────────────
+// ── Graph traversal ─────────────────────────────────────
+function bfsSteps(start, end) {
+  if (start === end) return [];
+  const visited = new Set([start]);
+  const queue = [[start, []]];
+  let qi = 0;
+  while (qi < queue.length) {
+    const [cur, path] = queue[qi++];
+    for (const { to, song } of ADJ[cur] || []) {
+      const step = { fromArtist: cur, song, toArtist: to };
+      if (to === end) return [...path, step];
+      if (!visited.has(to)) {
+        visited.add(to);
+        queue.push([to, [...path, step]]);
+      }
+    }
+  }
+  return null;
+}
 
+function bfsDistances(start) {
+  const dist = { [start]: 0 };
+  const queue = [start];
+  let qi = 0;
+  while (qi < queue.length) {
+    const cur = queue[qi++];
+    for (const { to } of ADJ[cur] || []) {
+      if (!(to in dist)) { dist[to] = dist[cur] + 1; queue.push(to); }
+    }
+  }
+  return dist;
+}
+
+// ── Deterministic RNG (for the daily puzzle) ────────────
+function xmur3(str) {
+  let h = 1779033703 ^ str.length;
+  for (let i = 0; i < str.length; i++) {
+    h = Math.imul(h ^ str.charCodeAt(i), 3432918353);
+    h = (h << 13) | (h >>> 19);
+  }
+  return () => {
+    h = Math.imul(h ^ (h >>> 16), 2246822507);
+    h = Math.imul(h ^ (h >>> 13), 3266489909);
+    h ^= h >>> 16;
+    return h >>> 0;
+  };
+}
+function mulberry32(a) {
+  return () => {
+    a |= 0; a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+const seededRng = (str) => mulberry32(xmur3(str)());
+
+const choice = (rng, arr) => arr[Math.floor(rng() * arr.length)];
+
+function pickPairInBand(rng, lo, hi) {
+  for (let i = 0; i < 60; i++) {
+    const start = choice(rng, ARTIST_IDS);
+    const dist = bfsDistances(start);
+    const candidates = Object.keys(dist).filter((id) => dist[id] >= lo && dist[id] <= hi);
+    if (candidates.length) {
+      const end = choice(rng, candidates);
+      return { start, end, dist: dist[end] };
+    }
+  }
+  const start = choice(rng, ARTIST_IDS);
+  const dist = bfsDistances(start);
+  const far = Object.keys(dist).filter((id) => dist[id] >= 2);
+  if (far.length) { const end = choice(rng, far); return { start, end, dist: dist[end] }; }
+  return null;
+}
+
+// ── Public API (async to match existing callers) ────────
 export async function searchArtists(query, limit = 8) {
   if (!query || query.length < 1) return [];
-  try {
-    const res = await api.get('/artists', { params: { search: query, limit } });
-    return res.data.artists || [];
-  } catch (err) {
-    console.error('searchArtists error:', err);
-    return [];
-  }
+  const q = query.toLowerCase();
+  return ARTISTS.filter((a) => a.name.toLowerCase().includes(q)).slice(0, limit);
 }
 
 export async function getRandomArtist(excludeIds = []) {
-  try {
-    const params = {};
-    if (excludeIds.length > 0) {
-      params.excludeIds = excludeIds.join(',');
-    }
-    const res = await api.get('/artists/random', { params });
-    return res.data.artist || null;
-  } catch (err) {
-    console.error('getRandomArtist error:', err);
-    return null;
-  }
+  const ex = new Set(excludeIds);
+  const pool = ARTISTS.filter((a) => !ex.has(a.id));
+  return pool.length ? pool[Math.floor(Math.random() * pool.length)] : null;
 }
 
 export async function getArtistById(id) {
-  try {
-    const res = await api.get(`/artists/${id}`);
-    return res.data || null;
-  } catch (err) {
-    console.error('getArtistById error:', err);
-    return null;
-  }
+  return ARTISTS_BY_ID[id] || null;
 }
 
 export async function getConnectedArtists(artistId) {
-  try {
-    const res = await api.get(`/artists/${artistId}/connected`);
-    return res.data.artists || [];
-  } catch (err) {
-    console.error('getConnectedArtists error:', err);
-    return [];
-  }
+  const ids = new Set();
+  for (const { to } of ADJ[artistId] || []) ids.add(to);
+  return [...ids].map((id) => ARTISTS_BY_ID[id]).filter(Boolean);
 }
 
-// UPDATED: Now uses /connections/between endpoint
 export async function getCollaborationsBetween(id1, id2) {
-  try {
-    const res = await api.get(`/connections/between/${id1}/${id2}`);
-    const connections = res.data.connections || [];
-    
-    console.log(`[API] Got ${connections.length} connections between ${id1} and ${id2}`);
-    console.log('[API] Sample connection:', connections[0]);
-    
-    // Map connections to collab format
-    return connections.map(conn => {
-      if (!conn.song) {
-        console.warn('[API] Connection missing song data:', conn);
-        return null;
-      }
-      return {
-        id: conn.id,
-        title: conn.song.title || 'Unknown',
-        type: conn.song.type || 'song',
-        year: conn.song.year || 2024,
-        artistIds: [conn.artist1, conn.artist2],
-        coverUrl: conn.song.coverUrl || ''
-      };
-    }).filter(Boolean);
-  } catch (err) {
-    console.error('getCollaborationsBetween error:', err);
-    return [];
-  }
+  return CONNECTIONS
+    .filter((c) => (c.artist1 === id1 && c.artist2 === id2) || (c.artist1 === id2 && c.artist2 === id1))
+    .map((c) => ({
+      id: c.id,
+      title: c.song.title,
+      type: c.song.type,
+      year: c.song.year,
+      artistIds: [c.artist1, c.artist2],
+      coverUrl: c.song.coverUrl || '',
+    }));
 }
 
-// Backend returns { path: [{kind:'artist', artist}, {kind:'song', song}, ...], optimalSteps }
-// Returns { steps: [{fromArtist, toArtist, collab}] | null, optimalSteps: number | null }.
-// steps === null means the two artists are NOT connected.
+// Returns { steps, chain, optimalSteps }. steps === null => unreachable.
 export async function findConnection(startId, endId) {
-  try {
-    const res = await api.post('/game/find-path', { startId, endId });
-    const rawPath = res.data.path;
-
-    // null => unreachable; [] => same artist
-    if (rawPath === null || rawPath === undefined) return { steps: null, chain: null, optimalSteps: null };
-    if (rawPath.length === 0) return { steps: [], chain: [], optimalSteps: 0 };
-
-    const normSong = (song = {}) => ({
-      title: song.title || 'Unknown',
-      type: song.type || 'song',
-      year: song.year || 2024,
-      coverUrl: song.coverUrl || '',
-    });
-
-    // steps: [{fromArtist:id, toArtist:id, collab}] for hints/logic
-    const steps = [];
-    for (let i = 0; i < rawPath.length; i++) {
-      const node = rawPath[i];
-      if (node.kind !== 'artist') continue;
-      const songNode = rawPath[i + 1];
-      const nextArtistNode = rawPath[i + 2];
-      if (!songNode || songNode.kind !== 'song' || !nextArtistNode || nextArtistNode.kind !== 'artist') break;
-      steps.push({
-        fromArtist: node.artist?.id,
-        toArtist: nextArtistNode.artist?.id,
-        collab: normSong(songNode.song),
-      });
-    }
-
-    // chain: [{artist:obj, collab}] ready for <ConstellationGraph />
-    const chain = [];
-    let pendingSong = null;
-    for (const node of rawPath) {
-      if (node.kind === 'artist') {
-        chain.push({ artist: node.artist, collab: pendingSong });
-        pendingSong = null;
-      } else if (node.kind === 'song') {
-        pendingSong = normSong(node.song);
-      }
-    }
-
-    return { steps, chain, optimalSteps: res.data.optimalSteps ?? steps.length };
-  } catch (err) {
-    console.error('findConnection error:', err);
-    // Network/server error is distinct from "no path"; surface as undefined steps.
-    return { steps: undefined, chain: undefined, optimalSteps: null };
-  }
+  if (startId === endId) return { steps: [], chain: [], optimalSteps: 0 };
+  const raw = bfsSteps(startId, endId);
+  if (raw === null) return { steps: null, chain: null, optimalSteps: null };
+  const steps = raw.map((s) => ({ fromArtist: s.fromArtist, toArtist: s.toArtist, collab: normSong(s.song) }));
+  const chain = [{ artist: ARTISTS_BY_ID[startId], collab: null }];
+  for (const s of raw) chain.push({ artist: ARTISTS_BY_ID[s.toArtist], collab: normSong(s.song) });
+  return { steps, chain, optimalSteps: steps.length };
 }
 
-// Two artists guaranteed to be connected, with their optimal step count.
 export async function getRandomPair(difficulty = 'any') {
-  try {
-    const res = await api.get('/game/random-pair', { params: { difficulty } });
-    return res.data || null;
-  } catch (err) {
-    console.error('getRandomPair error:', err);
-    return null;
-  }
+  const [lo, hi] = DIFFICULTY_BANDS[difficulty] || DIFFICULTY_BANDS.any;
+  const p = pickPairInBand(Math.random, lo, hi);
+  if (!p) return null;
+  return { artist1: ARTISTS_BY_ID[p.start], artist2: ARTISTS_BY_ID[p.end], optimalSteps: p.dist };
 }
 
-// Deterministic, always-solvable puzzle for the given date (YYYY-MM-DD).
 export async function getDailyPuzzle(dateStr) {
-  try {
-    const params = dateStr ? { date: dateStr } : {};
-    const res = await api.get('/game/daily', { params });
-    return res.data || null;
-  } catch (err) {
-    console.error('getDailyPuzzle error:', err);
-    return null;
-  }
+  const day = dateStr || new Date().toISOString().slice(0, 10);
+  const [lo, hi] = DIFFICULTY_BANDS.medium;
+  const p = pickPairInBand(seededRng(day), lo, hi);
+  if (!p) return null;
+  return { date: day, artist1: ARTISTS_BY_ID[p.start], artist2: ARTISTS_BY_ID[p.end], optimalSteps: p.dist };
 }
 
 export async function getStats() {
-  try {
-    const res = await api.get('/stats');
-    return res.data;
-  } catch (err) {
-    console.error('getStats error:', err);
-    return { totalArtists: 0, totalConnections: 0 };
-  }
+  return { totalArtists: ARTISTS.length, totalConnections: CONNECTIONS.length };
 }
-
-export default api;
