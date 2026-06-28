@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/ConnectTheNotes/static/css/main.45b7b25b.css",
+    "main.js": "/ConnectTheNotes/static/js/main.18a2bfbb.js",
+    "index.html": "/ConnectTheNotes/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.45b7b25b.css",
+    "static/js/main.18a2bfbb.js"
+  ]
+}
