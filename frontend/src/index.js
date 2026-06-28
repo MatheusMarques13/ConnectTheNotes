@@ -1,3 +1,4 @@
+// build marker: hidden-collaborator + fullscreen play UX
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.css";
