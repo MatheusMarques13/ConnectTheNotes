@@ -27,7 +27,7 @@ const HowToPlayModal = ({ isOpen, onClose }) => {
             </div>
             <div className="htp-step-content">
               <h3>2. Travel Through Songs</h3>
-              <p>From the current artist, pick one of their songs — you'll travel to whoever they made it with. Tracks can be songs, albums, features, or live performances.</p>
+              <p>From the current artist, pick one of their songs. The featured artist is hidden — recall who they worked with, then travel to whoever they made it with. Tracks can be songs, albums, features, or live performances.</p>
             </div>
           </div>
           <div className="htp-step">

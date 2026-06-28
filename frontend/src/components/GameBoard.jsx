@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { ArrowLeft, ArrowRight, Music, Disc, Disc3, Radio, Mic2, Tv, Film, RotateCcw, Lightbulb, Check, Loader2, Clock, XCircle, Search, X, Flag, Share2 } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Music, Disc, Disc3, Radio, Mic2, Tv, Film, RotateCcw, Lightbulb, Check, Loader2, Clock, XCircle, Search, X, Flag, Share2, ChevronDown } from 'lucide-react';
 import {
   getArtistSongs,
   findConnection,
@@ -87,6 +87,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
   const [hint, setHint] = useState(null);
   const [hintStatus, setHintStatus] = useState('idle'); // idle|loading|found|none
   const [searchQuery, setSearchQuery] = useState('');
+  const [revealedSongId, setRevealedSongId] = useState(null);
   const [copied, setCopied] = useState(false);
 
   const [songs, setSongs] = useState([]);
@@ -140,6 +141,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
       setLoading(true);
       setLoadError(false);
       setSearchQuery('');
+      setRevealedSongId(null);
       const list = await getArtistSongs(currentArtist.id);
       if (!cancelled) {
         setSongs(list);
@@ -196,6 +198,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
   const handlePick = (song, next) => {
     const newChain = [...chain, { artist: next, collab: { title: song.title, type: song.type, year: song.year, coverUrl: song.coverUrl } }];
     setSearchQuery('');
+    setRevealedSongId(null);
     cacheArtist(next);
     if (next.id === artist2.id) winWith(newChain);
     else setChain(newChain);
@@ -210,6 +213,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
     if (chain.length > 1) {
       setChain(chain.slice(0, -1));
       setSearchQuery('');
+      setRevealedSongId(null);
     }
   };
 
@@ -227,6 +231,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
   const handleRestart = () => {
     setChain([{ artist: artist1, collab: null }]);
     setSearchQuery('');
+    setRevealedSongId(null);
     setGameWon(false);
     setGameLost(false);
     setGaveUp(false);
@@ -336,7 +341,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
   }
 
   return (
-    <div className="game-board">
+    <div className="game-board playing">
       {/* Header bar */}
       <div className="game-header">
         <button className="game-back-btn" onClick={onBack}>
@@ -443,40 +448,63 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
             )}
           </div>
 
-          {/* Song list — pick a collaborator chip to travel via that track */}
+          {/* Song list — the collaborator is hidden; you pick a track and find
+              out who it leads to (multi-artist songs reveal a choice on tap). */}
           {filteredSongs.length > 0 ? (
             <div className="song-list">
-              {filteredSongs.map(song => (
-                <div key={song.id} className="song-item">
-                  <div className="song-cover">
-                    {song.coverUrl
-                      ? <img src={song.coverUrl} alt="" className="song-cover-img" onError={(e) => { e.target.style.display = 'none'; }} />
-                      : <span className="song-type-icon">{typeIcons[song.type] || <Music size={14} />}</span>}
+              {filteredSongs.map(song => {
+                const multi = song.collaborators.length > 1;
+                const revealed = revealedSongId === song.id;
+                return (
+                  <div key={song.id} className={`song-item ${revealed ? 'revealed' : ''}`}>
+                    <button
+                      type="button"
+                      className="song-main"
+                      onClick={() => {
+                        if (multi) setRevealedSongId(revealed ? null : song.id);
+                        else handlePick(song, song.collaborators[0]);
+                      }}
+                      title={multi ? 'Reveal who is featured' : 'Travel via this track'}
+                    >
+                      <div className="song-cover">
+                        {song.coverUrl
+                          ? <img src={song.coverUrl} alt="" className="song-cover-img" onError={(e) => { e.target.style.display = 'none'; }} />
+                          : <span className="song-type-icon">{typeIcons[song.type] || <Music size={14} />}</span>}
+                      </div>
+                      <div className="song-info">
+                        <span className="song-title">{song.title}</span>
+                        <span className="song-meta">{typeLabels[song.type] || song.type} · {song.year}</span>
+                      </div>
+                      <div className="song-mask">
+                        <span className="mask-avatars">
+                          {song.collaborators.slice(0, 3).map((_, i) => (
+                            <span key={i} className="mask-dot">?</span>
+                          ))}
+                        </span>
+                        <span className="mask-label">{multi ? `feat. ${song.collaborators.length}` : 'feat.'}</span>
+                        {multi
+                          ? <ChevronDown size={16} className={`mask-arrow ${revealed ? 'open' : ''}`} />
+                          : <ArrowRight size={16} className="mask-arrow" />}
+                      </div>
+                    </button>
+                    {multi && revealed && (
+                      <div className="song-collabs reveal">
+                        {song.collaborators.map(c => (
+                          <button
+                            key={c.id}
+                            className="collab-chip"
+                            onClick={() => handlePick(song, c)}
+                            title={`Go to ${c.name}`}
+                          >
+                            <ArtistMiniAvatar artist={c} size={22} />
+                            <span className="collab-chip-name">{c.name}</span>
+                          </button>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                  <div className="song-info">
-                    <span className="song-title">{song.title}</span>
-                    <span className="song-meta">{typeLabels[song.type] || song.type} · {song.year}</span>
-                  </div>
-                  <div className="song-collabs">
-                    {song.collaborators.map(c => {
-                      const isTarget = c.id === artist2.id;
-                      const isHinted = showHint && hint && c.id === hint.id;
-                      return (
-                        <button
-                          key={c.id}
-                          className={`collab-chip ${isTarget ? 'target' : ''} ${isHinted ? 'hinted' : ''}`}
-                          onClick={() => handlePick(song, c)}
-                          title={`Go to ${c.name}`}
-                        >
-                          <ArtistMiniAvatar artist={c} size={22} />
-                          <span className="collab-chip-name">{c.name}</span>
-                          {isTarget && <Check size={13} className="collab-chip-check" />}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           ) : (
             <div className="search-no-results">
