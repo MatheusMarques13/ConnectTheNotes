@@ -1,4 +1,4 @@
-// build marker: art-comfy (partitura + polaroid cards) — retrigger 2
+// build marker: modo mynd (definitive rebrand) — production
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.css";
