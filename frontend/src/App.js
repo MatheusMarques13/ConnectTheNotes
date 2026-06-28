@@ -2,7 +2,7 @@ import React, { useState, useCallback, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import "./components/GameBoard.css";
-import StarryBackground from "./components/StarryBackground";
+import PaperBackground from "./components/PaperBackground";
 import ArtistCard from "./components/ArtistCard";
 import HowToPlayModal from "./components/HowToPlayModal";
 import OptionsModal from "./components/OptionsModal";
@@ -167,7 +167,7 @@ function MainApp() {
 
   return (
     <div className="app-container">
-      <StarryBackground />
+      <PaperBackground />
       {!gameStarted ? (
         <div className="main-content">
           <div className="top-bar">

@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 /* ================================
-   ROOT & GLOBAL — Diamond Atmosphere
+   ROOT & GLOBAL — Comfy Paper (art-comfy)
+   Monospace everywhere (IBM Plex Mono), warm ruled paper, muted ink.
    ================================ */
 
 * {
@@ -11,36 +12,65 @@
 }
 
 :root {
-  --bg-primary: #070b14;
-  --bg-secondary: #0c1121;
-  --bg-card-dark: #0f1628;
-  --diamond: #b8c6e0;
-  --diamond-light: #d4dff5;
-  --diamond-bright: #e8eeff;
-  --diamond-accent: #8fa8d6;
-  --diamond-dim: rgba(184, 198, 224, 0.1);
-  --diamond-glow: rgba(184, 198, 224, 0.25);
-  --ice-blue: #a3bffa;
-  --crystal: #c7d2fe;
-  --silver: #9ca3af;
-  --text-primary: #e2e8f0;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --card-bg: #f0f2f8;
-  --card-bg-warm: #e8ecf4;
-  --card-border: #c8d0e0;
+  /* paper + ruled lines (staff-paper vibe) */
+  --paper: #faf6ed;
+  --paper-2: #f3ecdd;
+  --paper-line: #e9dfca;
+  --paper-margin: #e2b9a0;
+
+  /* legacy bg names remapped to light surfaces */
+  --bg-primary: #faf6ed;
+  --bg-secondary: #f3ecdd;
+  --bg-card-dark: #fffdf8;
+
+  /* ink scale (text + soft strokes) */
+  --text-primary: #2c2722;
+  --text-secondary: #6f6657;
+  --text-muted: #9c9384;
+
+  /* sparse, muted accents */
+  --accent: #3e6ad4;
+  --accent-warm: #c4663c;
+  --accent-mint: #3aa37c;
+
+  /* legacy "diamond" names remapped so var-driven rules read on paper */
+  --diamond: #4a6cae;
+  --diamond-light: #5a7cbe;
+  --diamond-bright: #2c2722;
+  --diamond-accent: #3e6ad4;
+  --diamond-dim: rgba(62, 106, 212, 0.10);
+  --diamond-glow: rgba(62, 106, 212, 0.22);
+  --ice-blue: #5a7cbe;
+  --crystal: #c4663c;
+  --silver: #9c9384;
+
+  --card-bg: #fffdf8;
+  --card-bg-warm: #f7f1e6;
+  --card-border: #e7ddca;
   --white: #ffffff;
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Outfit', -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+
+  /* cobalt-style surfaces + one radius */
+  --surface: #f1eadc;
+  --surface-hover: #eae1cf;
+  --surface-press: #e2d8c2;
+  --border-soft: rgba(44, 39, 34, 0.10);
+  --border-hair: rgba(44, 39, 34, 0.06);
+  --radius: 12px;
+
+  --font-display: 'IBM Plex Mono', monospace;
+  --font-body: 'IBM Plex Mono', monospace;
+  --font-mono: 'IBM Plex Mono', monospace;
 }
 
 body {
-  background: var(--bg-primary);
+  background: var(--paper);
   color: var(--text-primary);
   font-family: var(--font-body);
+  font-weight: 400;
   overflow-x: hidden;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ================================
@@ -52,6 +82,22 @@ body {
   min-height: 100vh;
   width: 100%;
 }
+
+/* ── Comfy paper backdrop ──────────────────────────────── */
+.paper-bg { position: fixed; inset: 0; z-index: 0; pointer-events: none; background: var(--paper); }
+.paper-rules {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(90deg, transparent 62px, var(--paper-margin) 62px, var(--paper-margin) 63px, transparent 63px),
+    repeating-linear-gradient(var(--paper) 0px, var(--paper) 31px, var(--paper-line) 31px, var(--paper-line) 32px);
+  opacity: 0.9;
+}
+.paper-vignette {
+  position: absolute; inset: 0;
+  background: radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,0.5), transparent 55%),
+              radial-gradient(140% 120% at 50% 120%, rgba(196,102,60,0.06), transparent 60%);
+}
+@media (max-width: 600px) { .paper-rules { background-image: repeating-linear-gradient(var(--paper) 0px, var(--paper) 31px, var(--paper-line) 31px, var(--paper-line) 32px); } }
 
 /* ================================
    HOME SCREEN
@@ -3009,3 +3055,59 @@ body {
 .dead-end-actions { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; }
 
 .give-up-btn:hover { color: #fca5a5 !important; border-color: rgba(248,113,113,0.4) !important; }
+
+/* ════════════════════════════════════════════════════════════════════════
+   ART-COMFY — home + modal light overrides (parallel art direction)
+   ════════════════════════════════════════════════════════════════════════ */
+.main-title { font-weight: 500; letter-spacing: 1px; text-shadow: none; text-transform: lowercase; }
+.subtitle, .freeplay-label { text-transform: lowercase; color: var(--text-muted); }
+
+/* artist cards / search */
+.artist-card, .card-image-area, .artist-placeholder, .artist-selected { background: #fffdf8 !important; border-color: var(--card-border) !important; }
+.artist-card { box-shadow: 0 6px 20px rgba(44,39,34,.08); }
+.artist-name-display, .result-name { color: var(--text-primary); }
+.artist-genre, .result-genre, .card-number { color: var(--text-muted); }
+.search-area .search-input-wrapper, .artist-card .search-input-wrapper { background: #fffdf8; border: 1px solid var(--border-soft); }
+.search-input { color: var(--text-primary); }
+.search-dropdown { background: #fffdf8 !important; border: 1px solid var(--border-soft); box-shadow: 0 12px 30px rgba(44,39,34,.14); }
+.search-result-item:hover { background: var(--surface); }
+.genre-icon-badge { background: var(--surface); }
+.clear-btn { background: var(--surface); color: var(--text-muted); }
+.choose-for-me-btn { background: var(--surface); border: 1px solid var(--border-soft); color: var(--text-secondary); }
+.choose-for-me-btn:hover { background: var(--surface-hover); color: var(--accent); }
+
+/* buttons */
+.top-btn { background: var(--surface); border: 1px solid var(--border-soft); color: var(--text-secondary); }
+.top-btn:hover { background: var(--surface-hover); border-color: var(--accent); color: var(--accent); }
+.start-game-btn { background: var(--surface); border: 1px solid var(--border-soft); color: var(--text-secondary); }
+.start-game-btn.ready { background: var(--accent); border-color: var(--accent); color: #fff; }
+.start-game-btn.ready:hover { background: #3560bf; }
+.surprise-btn { color: var(--text-secondary); border-color: var(--border-soft); }
+.surprise-btn:hover:not(:disabled) { color: var(--accent); border-color: var(--accent); }
+.footer-stats { color: var(--text-muted); }
+
+/* daily banner */
+.daily-banner { background: #fffdf8; border: 1px solid var(--border-soft); box-shadow: 0 6px 20px rgba(44,39,34,.08); }
+.daily-streak { color: var(--accent-warm); }
+.daily-play-btn { background: var(--accent); border: none; color: #fff; }
+.daily-play-btn:hover { background: #3560bf; box-shadow: none; }
+.daily-play-btn.done { background: var(--surface); color: var(--text-secondary); }
+
+/* modals */
+.modal-overlay { background: rgba(44,39,34,.32); }
+.modal-content { background: #fffdf8 !important; border: 1px solid var(--border-soft) !important; color: var(--text-primary); box-shadow: 0 24px 60px rgba(44,39,34,.22); }
+.modal-title { color: var(--text-primary); }
+.modal-close-btn { background: var(--surface); color: var(--text-muted); }
+.htp-step-icon { background: var(--surface); color: var(--accent); }
+.htp-step-content h3 { color: var(--text-primary); }
+.htp-step-content p, .option-description, .htp-example { color: var(--text-secondary); }
+.option-item { background: var(--surface); border-color: var(--border-soft); }
+.option-label, .option-text { color: var(--text-primary); }
+.example-artist { color: var(--accent); }
+.example-collab { color: var(--text-primary); }
+
+/* win/lose summary constellation card */
+.constellation-container { background: rgba(255,253,248,.6) !important; border-color: var(--border-soft) !important; box-shadow: inset 0 0 40px rgba(196,102,60,.04); }
+.constellation-label { fill: var(--text-secondary); }
+.constellation-collab-label { fill: var(--text-muted); }
+.constellation-anchor-tag { fill: var(--text-muted); }
