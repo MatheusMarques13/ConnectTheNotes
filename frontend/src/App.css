@@ -2977,7 +2977,7 @@ body {
 .daily-play-btn.done { border-color: var(--text-muted); color: var(--text-secondary); }
 
 .freeplay-label {
-  margin: 0.9rem 0 0.3rem;
+  margin: 0.9rem 0 1.5rem;
   font-family: var(--font-mono);
   font-size: 0.62rem;
   letter-spacing: 0.22em;
@@ -3133,49 +3133,100 @@ body {
 /* ════════════════════════════════════════════════════════════════════════
    ART-COMFY — artist selection polaroids (solid, shadowed, post-it held)
    ════════════════════════════════════════════════════════════════════════ */
-.artist-card.has-artist { background: transparent !important; border: none !important; box-shadow: none !important; }
-.artist-card.has-artist .card-image-area { height: auto; min-height: 0; padding: 0; }
-.artist-selected { position: relative; display: flex; justify-content: center; padding: 22px 0 6px; }
-.artist-selected .clear-btn { position: absolute; top: 4px; right: 30px; z-index: 6; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border-soft); }
+/* the card is just a vertical stack now: polaroid on top, search/genre below —
+   no chrome of its own (the polaroid is the object). */
+.artist-card,
+.artist-card.has-artist {
+  width: 300px; max-width: 86vw;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  overflow: visible;
+  display: flex; flex-direction: column; align-items: center;
+}
+.artist-card:hover { transform: none; box-shadow: none; }
+.artist-card .card-number { display: none; }           /* identity carried by the post-it + caption */
 
+/* ── the polaroid (full-size, 1989 instant-photo) ───────────────────────── */
 .artist-polaroid {
-  position: relative; width: 172px; padding: 13px 13px 0; border-radius: 4px;
-  background: #fffefb;
-  box-shadow: 0 16px 30px rgba(44,39,34,.24), 0 3px 8px rgba(44,39,34,.18);
-  transform: rotate(-2.2deg);
-  transition: transform .25s cubic-bezier(.2,.7,.3,1), box-shadow .25s;
+  position: relative; width: 100%;
+  padding: 16px 16px 0;                                 /* thick frame; bottom border is the caption */
+  background: #fffefb; border-radius: 4px;
+  box-shadow: 0 18px 34px rgba(44,39,34,.22), 0 4px 10px rgba(44,39,34,.16);
+  transform: rotate(-1.6deg);
+  transition: transform .28s cubic-bezier(.2,.7,.3,1), box-shadow .28s;
 }
-.artist-polaroid:hover { transform: rotate(0deg) translateY(-3px); box-shadow: 0 24px 42px rgba(44,39,34,.3); }
+.artist-card:hover .artist-polaroid { transform: rotate(0deg) translateY(-4px); box-shadow: 0 26px 48px rgba(44,39,34,.28); }
+.artist-polaroid.empty { box-shadow: 0 10px 22px rgba(44,39,34,.12); }
+
+/* square instant photo */
 .artist-polaroid-photo {
-  position: relative; width: 100%; aspect-ratio: 1 / 1; border-radius: 2px; overflow: hidden;
-  background: #e8e1d4; display: flex; align-items: center; justify-content: center;
+  position: relative; width: 100%; aspect-ratio: 1 / 1;
+  border-radius: 1px; overflow: hidden; background: #ece5d8;
+  display: flex; align-items: center; justify-content: center;
 }
-.artist-polaroid-photo img { width: 100%; height: 100%; object-fit: cover; }
-.artist-card .artist-initials-fallback { font-family: var(--font-mono); font-size: 42px; font-weight: 600; color: #b5a98f; }
-.artist-polaroid-cap {
-  padding: 12px 6px 16px; text-align: center; font-family: var(--font-mono);
-  font-size: 14px; font-weight: 500; color: #3a342c; line-height: 1.2;
-  overflow: hidden; text-overflow: ellipsis;
+/* photo fills the square; 1989 crop biases toward the face */
+.artist-polaroid .polaroid-img {
+  width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%;
+  border-radius: 0; opacity: 0; transition: opacity .5s ease;
+}
+.artist-polaroid .polaroid-img.loaded { opacity: 1; }
+
+/* empty frame — a faint note, waiting for its photo */
+.polaroid-empty-mark { color: #c9bfa9; opacity: .7; }
+.artist-card .artist-initials-fallback {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-size: 46px; font-weight: 600; color: #b5a98f; letter-spacing: 1px;
 }
 
-/* solid post-it stuck to the polaroid corner */
-.artist-postit {
-  position: absolute; top: -15px; left: -13px; width: 52px; height: 52px;
-  transform: rotate(-11deg);
-  background: var(--postit, #f6c2d5);
-  box-shadow: 0 6px 11px rgba(44,39,34,.24);
-  z-index: 3;
+/* thick taped bottom border with the hand-labelled caption */
+.artist-polaroid-cap {
+  padding: 16px 10px 20px; text-align: center; font-family: var(--font-mono);
+  font-size: 15px; font-weight: 500; color: #3a342c; line-height: 1.2; letter-spacing: .2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.artist-postit::after { content: ''; position: absolute; inset: 0; background: linear-gradient(155deg, rgba(255,255,255,.3), transparent 48%); }
+.artist-polaroid.empty .artist-polaroid-cap { color: #c1b7a1; font-size: 13px; letter-spacing: 1.5px; }
+
+/* solid post-it taped to the polaroid's top-left corner */
+.artist-postit {
+  position: absolute; top: -16px; left: 16px; width: 50px; height: 50px;
+  transform: rotate(-9deg);
+  background: var(--postit, #f6c2d5);
+  box-shadow: 0 7px 12px rgba(44,39,34,.22);
+  z-index: 4;
+}
+.artist-postit::after { content: ''; position: absolute; inset: 0; background: linear-gradient(155deg, rgba(255,255,255,.32), transparent 48%); }
 .artist-polaroid.tone-0 { --postit: #9ec8f2; } /* blue   */
 .artist-polaroid.tone-1 { --postit: #f4b6cd; } /* pink   */
 .artist-polaroid.tone-2 { --postit: #9fdcbd; } /* mint   */
 .artist-polaroid.tone-3 { --postit: #f5dc97; } /* yellow */
 .artist-polaroid.tone-4 { --postit: #c6b4ee; } /* lilac  */
 
-/* genre line under the polaroid */
-.artist-card.has-artist .artist-info { margin-top: 10px; }
+/* clear (X) sits on the photo's top-right */
+.artist-card .clear-btn {
+  position: absolute; top: 26px; right: 26px; z-index: 6;
+  width: 28px; height: 28px; border-radius: 50%;
+  background: rgba(44,39,34,.55); border: 1px solid rgba(255,255,255,.25);
+  color: #fff; display: flex; align-items: center; justify-content: center;
+}
+.artist-card .clear-btn:hover { background: rgba(196,102,60,.9); border-color: transparent; }
+
+/* genre line under the polaroid (selected) */
+.artist-card.has-artist .artist-info { margin-top: 14px; padding: 0; background: transparent; }
 .artist-card.has-artist .artist-genre { justify-content: center; color: var(--text-muted); }
+
+/* ── search dock, directly below the polaroid ───────────────────────────── */
+.artist-card .search-area {
+  width: 100%; margin-top: 16px;
+  background: #fffdf8; border: 1px solid var(--border-soft);
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: 0 6px 18px rgba(44,39,34,.07);
+}
+.artist-card .search-input-wrapper { border-top: none; padding: 2px 14px; background: transparent; }
+.artist-card .choose-for-me-btn { border-top: 1px solid var(--border-soft); background: transparent; }
+.artist-card .choose-for-me-btn:hover { background: var(--surface-hover); }
+.artist-card .search-dropdown { top: 52px; }
 
 /* search dropdown thumbnails -> soft rounded squares (consistent) */
 .result-avatar-img-wrapper { border-radius: 9px !important; }

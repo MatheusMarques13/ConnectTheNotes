@@ -20,28 +20,38 @@ const iconMap = {
 
 const hashStr = (s) => { let h = 0; const str = String(s || ''); for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0; return h; };
 
-// Solid polaroid (photo + name caption) held by a solid post-it sticker.
-const ArtistPolaroid = ({ artist }) => {
+// Full-size polaroid, 1989-style: a square instant photo over a thick taped
+// bottom border. Empty until an artist is picked — the photo only loads on
+// selection.
+const ArtistPolaroid = ({ artist, number }) => {
   const [imgLoaded, setImgLoaded] = useState(false);
-  const imageUrl = getAvatarUrl(artist, 256);
-  const name = typeof artist === 'string' ? artist : artist?.name || 'Unknown';
-  const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
-  const tone = hashStr(artist?.id || name) % 5;
+  const hasArtist = !!artist;
+  const name = typeof artist === 'string' ? artist : artist?.name || '';
+  const initials = name ? name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase() : '';
+  const tone = hashStr(artist?.id || name || `slot-${number}`) % 5;
+  const imageUrl = hasArtist ? getAvatarUrl(artist, 400) : null;
 
   return (
-    <div className={`artist-polaroid tone-${tone}`}>
+    <div className={`artist-polaroid tone-${tone} ${hasArtist ? 'filled' : 'empty'}`}>
       <span className="artist-postit" />
       <div className="artist-polaroid-photo">
-        <img
-          src={imageUrl}
-          alt={name}
-          className={`artist-avatar-img ${imgLoaded ? 'loaded' : ''}`}
-          onLoad={() => setImgLoaded(true)}
-          onError={(e) => { e.target.style.display = 'none'; }}
-        />
-        {!imgLoaded && <span className="artist-initials-fallback">{initials}</span>}
+        {hasArtist ? (
+          <>
+            <img
+              key={imageUrl}
+              src={imageUrl}
+              alt={name}
+              className={`polaroid-img ${imgLoaded ? 'loaded' : ''}`}
+              onLoad={() => setImgLoaded(true)}
+              onError={(e) => { e.target.style.display = 'none'; }}
+            />
+            {!imgLoaded && <span className="artist-initials-fallback">{initials}</span>}
+          </>
+        ) : (
+          <span className="polaroid-empty-mark"><Music size={44} strokeWidth={1.3} /></span>
+        )}
       </div>
-      <div className="artist-polaroid-cap">{name}</div>
+      <div className="artist-polaroid-cap">{hasArtist ? name : `artist ${number}`}</div>
     </div>
   );
 };
@@ -89,7 +99,7 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
   const handleSearch = useCallback((value) => {
     setQuery(value);
     if (debounceRef.current) clearTimeout(debounceRef.current);
-    
+
     if (value.length > 0) {
       setLoading(true);
       debounceRef.current = setTimeout(async () => {
@@ -129,32 +139,6 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
     setQuery('');
   };
 
-  // Render genre-specific placeholder icon
-  const renderPlaceholderIcons = () => {
-    return (
-      <div className="placeholder-icons-grid">
-        <div className="placeholder-icon-item">
-          <Mic2 size={28} strokeWidth={1.2} />
-        </div>
-        <div className="placeholder-icon-item">
-          <Music size={28} strokeWidth={1.2} />
-        </div>
-        <div className="placeholder-icon-item">
-          <Guitar size={28} strokeWidth={1.2} />
-        </div>
-        <div className="placeholder-icon-item">
-          <Disc3 size={28} strokeWidth={1.2} />
-        </div>
-        <div className="placeholder-icon-item">
-          <Star size={28} strokeWidth={1.2} />
-        </div>
-        <div className="placeholder-icon-item">
-          <Radio size={28} strokeWidth={1.2} />
-        </div>
-      </div>
-    );
-  };
-
   const renderGenreBadge = (genre) => {
     const iconName = getGenreIcon(genre);
     const IconComp = iconMap[iconName] || Music;
@@ -169,20 +153,15 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
   return (
     <div className={`artist-card${artist ? ' has-artist' : ''}`}>
       <div className="card-number">{number}</div>
-      <div className="card-image-area">
-        {artist ? (
-          <div className="artist-selected">
-            <ArtistPolaroid artist={artist} />
-            <button className="clear-btn" onClick={handleClear}>
-              <X size={14} />
-            </button>
-          </div>
-        ) : (
-          <div className="artist-placeholder">
-            {renderPlaceholderIcons()}
-          </div>
-        )}
-      </div>
+
+      <ArtistPolaroid artist={artist} number={number} />
+
+      {artist && (
+        <button className="clear-btn" onClick={handleClear} aria-label="remove artist">
+          <X size={14} />
+        </button>
+      )}
+
       {artist ? (
         <div className="artist-info">
           <div className="artist-genre">
