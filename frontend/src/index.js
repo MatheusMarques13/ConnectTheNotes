@@ -1,4 +1,4 @@
-// build marker: web mode (name songs by any found artist) + premium graph
+// build marker: full-screen pan/zoom/drag constellation board
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.css";
