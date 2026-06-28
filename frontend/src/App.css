@@ -103,13 +103,13 @@ body {
   );
   opacity: .8;
 }
-/* faint beamed-eighth-notes scattered across the staves */
+/* faint beamed-eighth-notes scattered across the staves (sparse) */
 .paper-notes {
   position: absolute; inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20210%2088'%3E%3Cg%20fill='%23b29c74'%3E%3Cellipse%20cx='20'%20cy='44'%20rx='6'%20ry='4.2'%20transform='rotate(-18%2020%2044)'/%3E%3Cellipse%20cx='40'%20cy='40'%20rx='6'%20ry='4.2'%20transform='rotate(-18%2040%2040)'/%3E%3Crect%20x='24.6'%20y='14'%20width='2.2'%20height='30'/%3E%3Crect%20x='44.6'%20y='10'%20width='2.2'%20height='30'/%3E%3Cpath%20d='M24.6%2014%20L46.8%2010%20L46.8%2015%20L24.6%2019%20Z'/%3E%3Cellipse%20cx='140'%20cy='33'%20rx='6'%20ry='4.2'%20transform='rotate(-18%20140%2033)'/%3E%3Crect%20x='144.6'%20y='5'%20width='2.2'%20height='28'/%3E%3Cpath%20d='M144.6%205%20q9%202%208%2011%20q-3%20-6%20-8%20-5%20Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20320%20176'%3E%3Cg%20fill='%23b29c74'%3E%3Cellipse%20cx='40'%20cy='44'%20rx='6'%20ry='4.2'%20transform='rotate(-18%2040%2044)'/%3E%3Cellipse%20cx='60'%20cy='40'%20rx='6'%20ry='4.2'%20transform='rotate(-18%2060%2040)'/%3E%3Crect%20x='44.6'%20y='14'%20width='2.2'%20height='30'/%3E%3Crect%20x='64.6'%20y='10'%20width='2.2'%20height='30'/%3E%3Cpath%20d='M44.6%2014%20L66.8%2010%20L66.8%2015%20L44.6%2019%20Z'/%3E%3Cellipse%20cx='210'%20cy='121'%20rx='6'%20ry='4.2'%20transform='rotate(-18%20210%20121)'/%3E%3Crect%20x='214.6'%20y='93'%20width='2.2'%20height='28'/%3E%3Cpath%20d='M214.6%2093%20q9%202%208%2011%20q-3%20-6%20-8%20-5%20Z'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: repeat;
-  background-size: 210px 88px;
-  opacity: .16;
+  background-size: 320px 176px;
+  opacity: .12;
 }
 .paper-vignette {
   position: absolute; inset: 0;
@@ -184,11 +184,11 @@ body {
 }
 
 .logo-diamond {
-  width: 80px;
-  height: 80px;
+  width: 84px;
+  height: 84px;
   margin-bottom: 16px;
   animation: diamondFloat 5s ease-in-out infinite;
-  filter: drop-shadow(0 0 12px rgba(184, 198, 224, 0.3));
+  filter: drop-shadow(0 7px 13px rgba(176, 120, 150, 0.30));
 }
 
 .diamond-svg {
@@ -3230,3 +3230,32 @@ body {
 
 /* search dropdown thumbnails -> soft rounded squares (consistent) */
 .result-avatar-img-wrapper { border-radius: 9px !important; }
+
+/* square icon-only top button (dark-mode toggle) */
+.top-btn-icon { padding: 9px; gap: 0; }
+.top-btn-icon span { display: none; }
+
+/* ════════════════════════════════════════════════════════════════════════
+   DARK MODE — swaps ONLY the background canvas; post-its, polaroids and every
+   container keep their original colours (scrapbook on a dark desk).
+   ════════════════════════════════════════════════════════════════════════ */
+[data-theme="dark"] body { background: #1b1813; }
+[data-theme="dark"] .paper-bg { background: #1b1813; }
+[data-theme="dark"] .paper-staves { --staff-line: #3b3527; opacity: .85; }
+[data-theme="dark"] .paper-notes { opacity: .09; }
+[data-theme="dark"] .paper-vignette {
+  background: radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,0.045), transparent 55%),
+              radial-gradient(140% 120% at 50% 120%, rgba(0,0,0,0.45), transparent 60%);
+}
+
+/* bare text that sits directly on the canvas flips to light so it stays legible */
+[data-theme="dark"] .main-title { color: #f2ead9; text-shadow: 0 1px 14px rgba(0,0,0,.35); }
+[data-theme="dark"] .subtitle,
+[data-theme="dark"] .freeplay-label,
+[data-theme="dark"] .footer-stats { color: #b9ae98; }
+
+/* canvas-level (chrome-less) buttons get a readable light treatment */
+[data-theme="dark"] .top-btn { background: rgba(255,253,248,.92); color: #4a4234; border-color: rgba(255,255,255,.10); }
+[data-theme="dark"] .top-btn:hover { background: #fffdf8; color: var(--accent); }
+[data-theme="dark"] .surprise-btn { color: #cabfa9; border-color: rgba(255,255,255,.16); }
+[data-theme="dark"] .surprise-btn:hover:not(:disabled) { color: #f2ead9; border-color: rgba(255,255,255,.32); }
