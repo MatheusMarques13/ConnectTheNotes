@@ -58,7 +58,7 @@ function MainApp() {
   const [showHowToPlay, setShowHowToPlay] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
   const [options, setOptions] = useState(loadOptions);
-  const [stats, setStats] = useState({ totalArtists: 0, totalConnections: 0 });
+  const [stats, setStats] = useState({ totalArtists: 0, totalSongs: 0 });
   const [daily, setDaily] = useState(null);
 
   const today = localDateStr();
@@ -256,7 +256,7 @@ function MainApp() {
           </div>
 
           <div className="footer-stats">
-            {stats.totalArtists} ARTISTS · {stats.totalConnections} CONNECTIONS
+            {stats.totalArtists} ARTISTS · {stats.totalSongs} SONGS
           </div>
         </div>
       ) : (

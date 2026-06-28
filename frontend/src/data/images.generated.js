@@ -1,3 +1,4 @@
 // Default (empty) — overwritten at build time by scripts/fetch-images.mjs.
-// In `yarn start` (dev) this stays empty and artists show styled initials.
+// In `yarn start` (dev) these stay empty and artists/songs use fallbacks.
 export const ARTIST_IMAGES = {};
+export const SONG_COVERS = {};

@@ -135,7 +135,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
       const list = await getArtistSongs(currentArtist.id);
       if (!cancelled) {
         setSongs(list);
-        list.forEach(s => cacheArtist(s.collaborator));
+        list.forEach(s => s.collaborators.forEach(c => cacheArtist(c)));
         setLoadError(list.length === 0);
         setLoading(false);
       }
@@ -169,13 +169,13 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
     return () => { cancelled = true; };
   }, [currentArtist.id, artist2.id, showHints, showHint, artistCache, cacheArtist]);
 
-  // Filter songs by title OR collaborator name
+  // Filter songs by title OR any collaborator name
   const q = searchQuery.trim().toLowerCase();
   const filteredSongs = q
-    ? songs.filter(s => s.title.toLowerCase().includes(q) || s.collaborator.name.toLowerCase().includes(q))
+    ? songs.filter(s => s.title.toLowerCase().includes(q) || s.collaborators.some(c => c.name.toLowerCase().includes(q)))
     : songs;
 
-  const targetIsNeighbor = songs.some(s => s.collaborator.id === artist2.id);
+  const targetIsNeighbor = songs.some(s => s.collaborators.some(c => c.id === artist2.id));
 
   const winWith = (newChain) => {
     setChain(newChain);
@@ -184,9 +184,8 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
     if (onWin) onWin(newChain.length - 1, timeSpent);
   };
 
-  // Pick a song -> travel to whoever the current artist made it with
-  const handlePickSong = (song) => {
-    const next = song.collaborator;
+  // Pick a song + which collaborator to travel to (a track may credit several)
+  const handlePick = (song, next) => {
     const newChain = [...chain, { artist: next, collab: { title: song.title, type: song.type, year: song.year, coverUrl: song.coverUrl } }];
     setSearchQuery('');
     cacheArtist(next);
@@ -436,34 +435,40 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
             )}
           </div>
 
-          {/* Song list */}
+          {/* Song list — pick a collaborator chip to travel via that track */}
           {filteredSongs.length > 0 ? (
             <div className="song-list">
-              {filteredSongs.map(song => {
-                const isTarget = song.collaborator.id === artist2.id;
-                const isHinted = showHint && hint && song.collaborator.id === hint.id;
-                return (
-                  <button
-                    key={song.id}
-                    className={`song-item ${isTarget ? 'target' : ''} ${isHinted ? 'hinted' : ''}`}
-                    onClick={() => handlePickSong(song)}
-                  >
-                    <div className="song-type-icon">{typeIcons[song.type] || <Music size={14} />}</div>
-                    <div className="song-info">
-                      <span className="song-title">{song.title}</span>
-                      <span className="song-meta">{typeLabels[song.type] || song.type} · {song.year}</span>
-                    </div>
-                    <div className="song-collab">
-                      <span className="song-with">with</span>
-                      <ArtistMiniAvatar artist={song.collaborator} size={26} />
-                      <span className="song-collab-name">{song.collaborator.name}</span>
-                    </div>
-                    {isTarget
-                      ? <div className="target-badge"><Check size={14} /><span>TARGET</span></div>
-                      : <ArrowRight size={16} className="collab-list-arrow" />}
-                  </button>
-                );
-              })}
+              {filteredSongs.map(song => (
+                <div key={song.id} className="song-item">
+                  <div className="song-cover">
+                    {song.coverUrl
+                      ? <img src={song.coverUrl} alt="" className="song-cover-img" onError={(e) => { e.target.style.display = 'none'; }} />
+                      : <span className="song-type-icon">{typeIcons[song.type] || <Music size={14} />}</span>}
+                  </div>
+                  <div className="song-info">
+                    <span className="song-title">{song.title}</span>
+                    <span className="song-meta">{typeLabels[song.type] || song.type} · {song.year}</span>
+                  </div>
+                  <div className="song-collabs">
+                    {song.collaborators.map(c => {
+                      const isTarget = c.id === artist2.id;
+                      const isHinted = showHint && hint && c.id === hint.id;
+                      return (
+                        <button
+                          key={c.id}
+                          className={`collab-chip ${isTarget ? 'target' : ''} ${isHinted ? 'hinted' : ''}`}
+                          onClick={() => handlePick(song, c)}
+                          title={`Go to ${c.name}`}
+                        >
+                          <ArtistMiniAvatar artist={c} size={22} />
+                          <span className="collab-chip-name">{c.name}</span>
+                          {isTarget && <Check size={13} className="collab-chip-check" />}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
             </div>
           ) : (
             <div className="search-no-results">

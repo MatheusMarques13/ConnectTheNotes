@@ -408,3 +408,62 @@
   .song-with { display: none; }
   .song-collab-name { max-width: 90px; }
 }
+
+/* ── Song row: cover + collaborator chips (multi-artist aware) ── */
+.song-item { cursor: default; flex-wrap: wrap; }
+.song-item:hover { transform: none; }
+.song-cover {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(184, 198, 224, 0.08);
+}
+.song-cover-img { width: 100%; height: 100%; object-fit: cover; }
+.song-collabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
+  flex: 1;
+  min-width: 0;
+}
+.collab-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 4px;
+  border-radius: 999px;
+  background: rgba(184, 198, 224, 0.08);
+  border: 1px solid rgba(184, 198, 224, 0.12);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.18s;
+  font-size: 0.82rem;
+  max-width: 100%;
+}
+.collab-chip:hover {
+  background: rgba(184, 198, 224, 0.16);
+  border-color: var(--diamond-accent);
+  color: var(--diamond-bright);
+  transform: translateY(-1px);
+}
+.collab-chip.target {
+  background: rgba(110, 231, 183, 0.12);
+  border-color: rgba(110, 231, 183, 0.45);
+  color: #a7f3d0;
+  font-weight: 600;
+}
+.collab-chip.hinted {
+  box-shadow: 0 0 0 2px rgba(184, 198, 224, 0.18);
+}
+.collab-chip-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.collab-chip-check { color: #6ee7b7; flex-shrink: 0; }
+@media (max-width: 600px) {
+  .song-collabs { justify-content: flex-start; width: 100%; }
+  .collab-chip-name { max-width: 110px; }
+}

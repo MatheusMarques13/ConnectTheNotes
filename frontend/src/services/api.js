@@ -1,28 +1,35 @@
-// Client-side game engine — the whole game is a small static graph, so there is
-// no backend at runtime. These functions keep the same names/shapes the app
-// already expects, but compute everything locally from the embedded dataset.
-import { ARTISTS, CONNECTIONS } from '../data/dataset';
+// Client-side game engine. The game is a small static graph, so there is no
+// backend at runtime — everything is computed locally from the embedded dataset.
+// A SONG links artists: a track with N collaborators connects all of them.
+import { ARTISTS, SONGS } from '../data/dataset';
+import { ARTIST_IMAGES, SONG_COVERS } from '../data/images.generated';
 
 // ── Indexes ─────────────────────────────────────────────
 const ARTISTS_BY_ID = {};
 ARTISTS.forEach((a) => { ARTISTS_BY_ID[a.id] = a; });
 
-const ADJ = {}; // id -> [{ to, song }]
-CONNECTIONS.forEach((c) => {
-  if (!ADJ[c.artist1]) ADJ[c.artist1] = [];
-  if (!ADJ[c.artist2]) ADJ[c.artist2] = [];
-  ADJ[c.artist1].push({ to: c.artist2, song: c.song });
-  ADJ[c.artist2].push({ to: c.artist1, song: c.song });
-});
+// adjacency: artist_id -> [{ to, song }] for every co-credit on every shared song
+const ADJ = {};
+for (const s of SONGS) {
+  const song = { id: s.id, title: s.title, type: s.type, year: s.year, coverUrl: s.coverUrl };
+  for (const a of s.artists) {
+    for (const b of s.artists) {
+      if (a === b) continue;
+      if (!ADJ[a]) ADJ[a] = [];
+      ADJ[a].push({ to: b, song });
+    }
+  }
+}
 const ARTIST_IDS = ARTISTS.map((a) => a.id);
 
 const DIFFICULTY_BANDS = { easy: [2, 3], medium: [3, 4], hard: [4, 7], any: [2, 7] };
 
+const songCover = (s) => SONG_COVERS[s.id] || s.coverUrl || '';
 const normSong = (s = {}) => ({
   title: s.title || 'Unknown',
   type: s.type || 'song',
   year: s.year || 2024,
-  coverUrl: s.coverUrl || '',
+  coverUrl: songCover(s),
 });
 
 // ── Graph traversal ─────────────────────────────────────
@@ -118,47 +125,24 @@ export async function getArtistById(id) {
   return ARTISTS_BY_ID[id] || null;
 }
 
-export async function getConnectedArtists(artistId) {
-  const ids = new Set();
-  for (const { to } of ADJ[artistId] || []) ids.add(to);
-  return [...ids].map((id) => ARTISTS_BY_ID[id]).filter(Boolean);
-}
-
-// Every song the artist appears on, with the collaborator resolved — this is
-// what the player browses to travel through the music web.
+// Every song the artist is on, each carrying ALL its other collaborators —
+// so a track with 2+ guests lets the player reach any of them.
 export async function getArtistSongs(artistId) {
-  return CONNECTIONS
-    .filter((c) => c.artist1 === artistId || c.artist2 === artistId)
-    .map((c) => {
-      const otherId = c.artist1 === artistId ? c.artist2 : c.artist1;
-      const collaborator = ARTISTS_BY_ID[otherId];
-      if (!collaborator) return null;
-      return {
-        id: c.id,
-        title: c.song.title,
-        type: c.song.type,
-        year: c.song.year,
-        coverUrl: c.song.coverUrl || '',
-        collaborator,
-      };
-    })
-    .filter(Boolean)
-    .sort((a, b) =>
-      a.collaborator.name.localeCompare(b.collaborator.name) || a.title.localeCompare(b.title)
-    );
-}
-
-export async function getCollaborationsBetween(id1, id2) {
-  return CONNECTIONS
-    .filter((c) => (c.artist1 === id1 && c.artist2 === id2) || (c.artist1 === id2 && c.artist2 === id1))
-    .map((c) => ({
-      id: c.id,
-      title: c.song.title,
-      type: c.song.type,
-      year: c.song.year,
-      artistIds: [c.artist1, c.artist2],
-      coverUrl: c.song.coverUrl || '',
-    }));
+  const out = [];
+  for (const s of SONGS) {
+    if (!s.artists.includes(artistId)) continue;
+    const collaborators = s.artists
+      .filter((id) => id !== artistId)
+      .map((id) => ARTISTS_BY_ID[id])
+      .filter(Boolean);
+    if (!collaborators.length) continue;
+    out.push({ id: s.id, title: s.title, type: s.type, year: s.year, coverUrl: songCover(s), collaborators });
+  }
+  out.sort((a, b) =>
+    (a.collaborators[0]?.name || '').localeCompare(b.collaborators[0]?.name || '') ||
+    a.title.localeCompare(b.title)
+  );
+  return out;
 }
 
 // Returns { steps, chain, optimalSteps }. steps === null => unreachable.
@@ -188,5 +172,5 @@ export async function getDailyPuzzle(dateStr) {
 }
 
 export async function getStats() {
-  return { totalArtists: ARTISTS.length, totalConnections: CONNECTIONS.length };
+  return { totalArtists: ARTISTS.length, totalSongs: SONGS.length };
 }
