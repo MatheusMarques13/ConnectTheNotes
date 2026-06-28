@@ -662,3 +662,34 @@
   .guess-form { flex-direction: column; }
   .guess-submit-btn { justify-content: center; padding: 12px; }
 }
+
+/* ── Premium constellation: scales to fit, always fully contained ───────── */
+.constellation-container {
+  aspect-ratio: 88 / 34;
+  background: radial-gradient(120% 120% at 50% 0%, rgba(20, 28, 48, 0.55) 0%, rgba(12, 17, 33, 0.55) 70%);
+  border: 1px solid rgba(184, 198, 224, 0.10);
+  box-shadow: inset 0 0 60px rgba(143, 168, 214, 0.05);
+}
+.constellation-container svg { width: 100%; height: 100%; display: block; }
+.constellation-anchor-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 1.6px;
+  fill: var(--text-muted);
+  text-transform: uppercase;
+}
+.constellation-victory .constellation-anchor-tag { fill: #c4b5fd; }
+
+/* In fullscreen play the graph is the hero: fixed, responsive height. */
+.game-board.playing .constellation-container {
+  aspect-ratio: auto;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto 6px;
+  height: clamp(186px, 36vh, 344px);
+  flex-shrink: 0;
+}
+.game-board.playing .hint-bar { flex-shrink: 0; }
+@media (max-width: 600px) {
+  .game-board.playing .constellation-container { height: clamp(150px, 28vh, 240px); }
+}

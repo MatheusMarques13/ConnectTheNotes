@@ -145,6 +145,31 @@ export async function getArtistSongs(artistId) {
   return out;
 }
 
+// Recall move for the "web" mode: the player types a song title; we match it
+// against every song that credits at least one artist they've already found,
+// and return the song with ALL of its credited artists (so multi-feature tracks
+// reveal everyone). Returns null if nothing real matches.
+const normTitle = (s) => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+export async function nameSong(foundIds, typed) {
+  const set = new Set(foundIds);
+  const nq = normTitle(typed);
+  if (nq.length < 2) return null;
+  const candidates = SONGS.filter((s) => s.artists.some((a) => set.has(a)));
+  const exact = candidates.filter((s) => normTitle(s.title) === nq);
+  const partial = candidates.filter((s) => {
+    const nt = normTitle(s.title);
+    return nt.includes(nq) || (nq.length >= 4 && nq.includes(nt) && nt.length >= 4);
+  });
+  const pool = exact.length ? exact : partial;
+  if (!pool.length) return null;
+  const s = pool[0];
+  return {
+    song: { id: s.id, title: s.title, type: s.type, year: s.year, coverUrl: songCover(s) },
+    artists: s.artists.map((id) => ARTISTS_BY_ID[id]).filter(Boolean),
+  };
+}
+
 // Returns { steps, chain, optimalSteps }. steps === null => unreachable.
 export async function findConnection(startId, endId) {
   if (startId === endId) return { steps: [], chain: [], optimalSteps: 0 };

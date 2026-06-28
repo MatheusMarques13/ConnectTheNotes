@@ -27,7 +27,7 @@ const HowToPlayModal = ({ isOpen, onClose }) => {
             </div>
             <div className="htp-step-content">
               <h3>2. Name a Song</h3>
-              <p>Type a song the current artist made with someone — no list and no autocomplete, just recall it. If it's a real collaboration, you travel to whoever they're on it with (songs, albums, features, or live performances all count).</p>
+              <p>Both stars are in play from the start. Type a song by <strong>anyone you've found</strong> — no list, no autocomplete, just recall it. If it's real, everyone credited on the track (songs, albums, features, live shows) joins your web.</p>
             </div>
           </div>
           <div className="htp-step">
@@ -35,8 +35,8 @@ const HowToPlayModal = ({ isOpen, onClose }) => {
               <ArrowRight size={24} />
             </div>
             <div className="htp-step-content">
-              <h3>3. Build Your Chain</h3>
-              <p>Keep hopping from song to song through their collaborators until you reach your target artist. The fewer songs, the better!</p>
+              <h3>3. Build the Web</h3>
+              <p>Work from either end — name songs to uncover more artists and grow your web until it links the two stars. The fewer songs, the better!</p>
             </div>
           </div>
           <div className="htp-step">

@@ -479,6 +479,7 @@ COLLABORATIONS = [
     (7, 18, 'Blow', 'song', 2019),
     (8, 96, 'exile', 'song', 2020),
     (8, 29, 'End Game', 'song', 2017),
+    (8, 7, 'End Game', 'song', 2017),
     (8, 46, 'Bad Blood (Remix)', 'song', 2015),
     (8, 66, 'Lover (Remix)', 'song', 2019),
     (8, 77, 'Royals (Live Duet)', 'live', 2014),
