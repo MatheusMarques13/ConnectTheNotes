@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { ArrowLeft, ArrowRight, RotateCcw, Lightbulb, Loader2, Clock, XCircle, Search, X, Flag, Share2 } from 'lucide-react';
+import { ChevronLeft, Gem, HelpCircle, Crosshair, Plus, Minus, MousePointerClick, Hand, ZoomIn, Music2, CornerDownLeft, AlertCircle, RotateCcw, Lightbulb, Loader2, Clock, XCircle, X, Flag, Share2 } from 'lucide-react';
 import { nameSong, findConnection } from '../services/api';
-import { getAvatarUrl } from '../utils/avatars';
 import ConstellationGraph from './ConstellationGraph';
+import InteractiveBoard from './InteractiveBoard';
+import InfoModal from './InfoModal';
 
 const parLabel = (used, optimal) => {
   if (optimal == null) return null;
@@ -39,26 +40,6 @@ function chainToWeb(chain) {
   return { found, edges };
 }
 
-const ArtistMiniAvatar = ({ artist, size = 28, className = '' }) => {
-  const [loaded, setLoaded] = useState(false);
-  const name = typeof artist === 'string' ? artist : artist?.name || 'Unknown';
-  const imageUrl = getAvatarUrl(artist, size);
-  const initials = name.split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase();
-  return (
-    <div className={`mini-avatar ${className}`} style={{ width: size, height: size }}>
-      <img
-        src={imageUrl}
-        alt={name}
-        className={`mini-avatar-img ${loaded ? 'loaded' : ''}`}
-        onLoad={() => setLoaded(true)}
-        onError={(e) => { e.target.style.display = 'none'; }}
-        style={{ width: size, height: size }}
-      />
-      {!loaded && <span className="mini-avatar-fallback" style={{ fontSize: size * 0.35 }}>{initials}</span>}
-    </div>
-  );
-};
-
 const GameTimer = ({ timeRemaining, timeLimit, isWarning, isCritical }) => {
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
@@ -75,7 +56,7 @@ const GameTimer = ({ timeRemaining, timeLimit, isWarning, isCritical }) => {
   );
 };
 
-const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHints, onWin, onLose, showGenres = true, timedMode, timeLimit, difficulty }) => {
+const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowToPlay, showHints, onWin, onLose, showGenres = true, timedMode, timeLimit, difficulty }) => {
   // The "web": the artists you've uncovered, and the songs you've named to link
   // them. Both endpoints are in play from the start — name a song by any of
   // them (or anyone you reveal) to grow the web until the two ends meet.
@@ -94,6 +75,8 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
   const [hint, setHint] = useState(null);
   const [hintStatus, setHintStatus] = useState('idle'); // idle|loading|found|none
   const [copied, setCopied] = useState(false);
+  const [infoNode, setInfoNode] = useState(null);
+  const boardApiRef = useRef(null);
 
   const [timeRemaining, setTimeRemaining] = useState(timeLimit || 0);
   const [timeSpent, setTimeSpent] = useState(0);
@@ -301,72 +284,96 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
 
   // ── Playing ─────────────────────────────────────────────
   return (
-    <div className="game-board playing web">
-      <div className="game-header">
-        <button className="game-back-btn" onClick={onBack}><ArrowLeft size={18} /><span>BACK</span></button>
-        {timedMode && <GameTimer timeRemaining={timeRemaining} timeLimit={timeLimit} isWarning={isWarning} isCritical={isCritical} />}
-        <div className="game-goal">
-          <div className="goal-artist"><ArtistMiniAvatar artist={artist1} size={28} /><span>{artist1.name}</span></div>
-          <ArrowRight size={16} className="goal-arrow" />
-          <div className="goal-artist"><ArtistMiniAvatar artist={artist2} size={28} /><span>{artist2.name}</span></div>
+    <div className="ctn-board-root game-board ctn-fullbleed" data-victory={gameWon || undefined}>
+      <InteractiveBoard
+        found={found}
+        edges={edges}
+        startId={artist1.id}
+        targetId={artist2.id}
+        isVictory={gameWon}
+        onOpenInfo={setInfoNode}
+        boardApiRef={boardApiRef}
+      />
+
+      {/* Top bar */}
+      <header className="ctn-topbar">
+        <div className="ctn-topbar-left">
+          <button className="ctn-btn-ghost ctn-back" onClick={onBack}><ChevronLeft size={16} /><span>BACK</span></button>
         </div>
-        <div className="game-controls">
-          <span className="step-counter">Songs: {edges.length}{optimalSteps != null ? ` · par ${optimalSteps}` : ''}</span>
-          {edges.length > 0 && (
-            <button className="game-ctrl-btn" onClick={handleUndo} title="Undo"><RotateCcw size={16} /></button>
-          )}
-          {showHints && (
-            <button className={`game-ctrl-btn ${showHint ? 'active' : ''}`} onClick={() => setShowHint(!showHint)} title="Hint"><Lightbulb size={16} /></button>
-          )}
-          <button className="game-ctrl-btn give-up-btn" onClick={handleGiveUp} title="Give up & reveal solution" disabled={revealing}>
-            {revealing ? <Loader2 size={16} className="spin-icon" /> : <Flag size={16} />}
-          </button>
+        <div className="ctn-brand">
+          <div className="ctn-brand-logo"><Gem size={18} className="ctn-brand-gem" /><span>Connect the Notes</span></div>
+          <div className="ctn-brand-sub">
+            CONNECT <span className="ctn-brand-endpoint">{artist1.name}</span> AND <span className="ctn-brand-endpoint">{artist2.name}</span>
+          </div>
         </div>
+        <div className="ctn-topbar-right">
+          {timedMode && <GameTimer timeRemaining={timeRemaining} timeLimit={timeLimit} isWarning={isWarning} isCritical={isCritical} />}
+          {edges.length > 0 && <button className="ctn-btn-ghost ctn-btn-icon" onClick={handleUndo} title="Undo last song"><RotateCcw size={16} /></button>}
+          {showHints && <button className={`ctn-btn-ghost ctn-btn-icon ${showHint ? 'active' : ''}`} onClick={() => setShowHint(!showHint)} title="Hint"><Lightbulb size={16} /></button>}
+          <button className="ctn-btn-ghost ctn-btn-icon" onClick={handleGiveUp} title="Give up & reveal solution" disabled={revealing}>{revealing ? <Loader2 size={16} className="spin-icon" /> : <Flag size={16} />}</button>
+          <button className="ctn-btn-ghost ctn-help" onClick={onHowToPlay}><HelpCircle size={16} /><span>HOW TO PLAY</span></button>
+        </div>
+      </header>
+
+      {/* Recenter + zoom (bottom-left) */}
+      <button className="ctn-recenter" onClick={() => boardApiRef.current?.recenter()} aria-label="Recenter board"><Crosshair size={20} /></button>
+      <div className="ctn-zoom">
+        <button onClick={() => boardApiRef.current?.zoomBy(1.2)} aria-label="Zoom in"><Plus size={16} /></button>
+        <span className="ctn-zoom-div" />
+        <button onClick={() => boardApiRef.current?.zoomBy(1 / 1.2)} aria-label="Zoom out"><Minus size={16} /></button>
       </div>
 
-      <ConstellationGraph found={found} edges={edges} startId={artist1.id} targetId={artist2.id} />
+      {/* Helper hints (bottom-right) */}
+      <div className={`ctn-hints${edges.length > 0 ? ' dismissed' : ''}`}>
+        <span className="ctn-hint"><MousePointerClick size={13} />CLICK A CARD FOR MORE INFO</span>
+        <span className="ctn-hint"><Hand size={13} />DRAG THE BOARD OR A CARD</span>
+        <span className="ctn-hint"><ZoomIn size={13} />ZOOM IN / OUT</span>
+      </div>
 
-      {showHint && (
-        <div className="hint-bar">
-          <Lightbulb size={14} />
-          {hintStatus === 'loading' && <span>Finding a route…</span>}
-          {hintStatus === 'found' && hint && <span>Try a song with <strong>{hint.name}</strong></span>}
-          {hintStatus === 'none' && <span>You've already uncovered everyone on the best route — name the song that links them.</span>}
+      {/* Bottom input dock + status */}
+      <div className="ctn-input-dock">
+        {showHint && (
+          <div className="ctn-input-error" style={{ background: 'rgba(184,198,224,.08)', borderColor: 'rgba(184,198,224,.25)', color: 'var(--diamond-light)' }} role="status">
+            <Lightbulb size={14} />
+            {hintStatus === 'loading' && <span>Finding a route…</span>}
+            {hintStatus === 'found' && hint && <span>Try a song with <strong>{hint.name}</strong></span>}
+            {hintStatus === 'none' && <span>You've uncovered everyone on the best route — name the song that links them.</span>}
+          </div>
+        )}
+        <div className="ctn-status">
+          <div className="ctn-stat"><span className="ctn-stat-label">Artists Found</span><span className="ctn-stat-value" key={'a' + found.length}>{found.length}</span></div>
+          <span className="ctn-stat-sep" />
+          <div className="ctn-stat"><span className="ctn-stat-label">Songs Found</span><span className="ctn-stat-value" key={'s' + edges.length}>{edges.length}</span></div>
+          <span className="ctn-stat-sep" />
+          <div className="ctn-stat"><span className="ctn-stat-label">My Best Path</span>
+            {optimalSteps != null
+              ? <span className="ctn-stat-value">{optimalSteps}</span>
+              : <span className="ctn-stat-value ctn-unknown">???</span>}
+          </div>
         </div>
-      )}
 
-      <div className="search-section guess-mode">
-        <h3 className="section-title">NAME A SONG</h3>
-        <p className="search-subtitle">
-          Type a track by <strong>anyone you've found</strong> — either end or anyone in between — then press Enter. No list, recall it.
-        </p>
-
-        <form className="guess-form" onSubmit={handleGuessSubmit}>
-          <div className={`search-input-wrapper ${guessError ? 'has-error' : ''}`}>
-            <Search size={18} className="search-icon" />
+        <form className="ctn-input-form" onSubmit={handleGuessSubmit}>
+          <div className={`ctn-input-wrap${guessError ? ' has-error' : ''}`}>
+            <Music2 size={18} className="ctn-input-icon" />
             <input
               ref={searchRef}
-              type="text"
-              placeholder="Name a collaboration…"
+              className="ctn-input"
+              placeholder="Name a song..."
               value={guess}
               onChange={(e) => { setGuess(e.target.value); if (guessError) setGuessError(''); }}
-              className="game-search-input"
               autoComplete="off"
               autoCorrect="off"
               spellCheck="false"
               autoFocus
             />
-            {guess && <button type="button" className="search-clear-btn" onClick={handleClearGuess}><X size={16} /></button>}
+            {guess && <button type="button" className="ctn-input-clear" onClick={handleClearGuess}><X size={16} /></button>}
           </div>
-          <button type="submit" className="guess-submit-btn" disabled={!guess.trim()}>Travel <ArrowRight size={16} /></button>
+          <button type="submit" className="ctn-input-submit" disabled={!guess.trim()}>PLAY <CornerDownLeft size={16} /></button>
         </form>
-
-        {guessError && <div className="guess-error" role="alert"><XCircle size={14} /> {guessError}</div>}
-
-        <p className="guess-tip">
-          {found.length} artist{found.length !== 1 ? 's' : ''} in play · stuck? use the <Lightbulb size={13} /> hint or <Flag size={13} /> to reveal.
-        </p>
+        {guessError && <div className="ctn-input-error" role="alert"><AlertCircle size={14} /> {guessError}</div>}
       </div>
+
+      {infoNode && <InfoModal node={infoNode} onClose={() => setInfoNode(null)} />}
     </div>
   );
 };

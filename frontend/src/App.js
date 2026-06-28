@@ -266,6 +266,7 @@ function MainApp() {
           optimalSteps={optimalSteps}
           puzzleType={puzzleType}
           onBack={handleBack}
+          onHowToPlay={() => setShowHowToPlay(true)}
           showHints={getGameSettings().hintsEnabled}
           onWin={handleWin}
           onLose={handleLose}
