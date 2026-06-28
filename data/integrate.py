@@ -45,16 +45,37 @@ def main(path):
             next_id += 1
             added_artists += 1
 
+    def resolve_or_add(name):
+        """Map a collaborator name to an id, auto-adding a real referenced
+        artist that wasn't in any artists list (so bridges aren't lost)."""
+        nonlocal next_id, added_artists
+        name = (name or "").strip()
+        k = norm(name)
+        if not k:
+            return None
+        if k in by_norm:
+            return by_norm[k]
+        if len(name) < 2:
+            return None
+        by_norm[k] = next_id
+        artists.append([next_id, name, "Other"])
+        next_id += 1
+        added_artists += 1
+        return by_norm[k]
+
     seen = set((min(a, b), max(a, b), t, ty, y) for (a, b, t, ty, y) in collabs)
     added_collabs = dropped = 0
     for batch in batches:
         for c in batch.get("collaborations", []):
-            ai = by_norm.get(norm(c.get("a", "")))
-            bi = by_norm.get(norm(c.get("b", "")))
             title = (c.get("title") or "").strip()
             ctype = (c.get("type") or "song").strip()
             year = c.get("year")
-            if not ai or not bi or ai == bi or not title or not isinstance(year, (int, float)):
+            if not title or not isinstance(year, (int, float)):
+                dropped += 1
+                continue
+            ai = resolve_or_add(c.get("a", ""))
+            bi = resolve_or_add(c.get("b", ""))
+            if not ai or not bi or ai == bi:
                 dropped += 1
                 continue
             key = (min(ai, bi), max(ai, bi), title, ctype, int(year))
