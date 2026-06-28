@@ -13,6 +13,7 @@ const ANCHOR_GAP = 760, STEP = 70, RING_BASE = 170, GAP = 26, MAX_RING = 16;
 const MIN_Z = 0.4, MAX_Z = 2.4, THRESH = 5;
 const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 const snap = (v) => Math.round(v / STEP) * STEP;
+const hashStr = (s) => { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; };
 
 const TYPE_ICON = { song: Music2, album: Disc, ep: Disc3, mixtape: Disc3, live: Radio, dvd: Tv, video: Film, feature: Mic2 };
 const TYPE_LABEL = { song: 'Song', album: 'Album', ep: 'EP', mixtape: 'Mixtape', live: 'Live', dvd: 'DVD', video: 'Video', feature: 'Feature' };
@@ -47,7 +48,7 @@ const ArtistCardInner = ({ artist, isStart, isTarget }) => {
   const [loaded, setLoaded] = React.useState(false);
   const initials = (artist?.name || '?').split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase();
   return (
-    <>
+    <div className="ctn-artist-note">
       {(isStart || isTarget) && <span className={`ctn-node-tag ${isStart ? 'start' : 'target'}`}>{isStart ? 'Start' : 'Target'}</span>}
       <div className="ctn-artist-photo">
         <span className="ctn-artist-ring" />
@@ -55,7 +56,7 @@ const ArtistCardInner = ({ artist, isStart, isTarget }) => {
         {!loaded && <span className="ctn-artist-fallback">{initials}</span>}
       </div>
       <div className="ctn-artist-name">{artist.name}</div>
-    </>
+    </div>
   );
 };
 
@@ -334,9 +335,11 @@ const InteractiveBoard = ({ found, edges, startId, targetId, onOpenInfo, boardAp
           const p = posRef.current[node.id]; if (!p) return null;
           const isStart = node.kind === 'artist' && node.artistId === startId;
           const isTarget = node.kind === 'artist' && node.artistId === targetId;
-          const cls = node.kind === 'artist'
+          const h = hashStr(node.id);
+          const deco = ` ctn-tone-${h % 5} ctn-tilt-${h % 3}`;
+          const cls = (node.kind === 'artist'
             ? `ctn-node ctn-node-artist${isStart ? ' is-start' : ''}${isTarget ? ' is-target' : ''}${selectedId === node.id ? ' selected' : ''}`
-            : `ctn-node ctn-node-song${selectedId === node.id ? ' selected' : ''}`;
+            : `ctn-node ctn-node-song${selectedId === node.id ? ' selected' : ''}`) + deco;
           return (
             <div
               key={node.id}

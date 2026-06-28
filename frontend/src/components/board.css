@@ -386,3 +386,98 @@
 .ctn-info-credit { background: var(--surface); }
 .ctn-info-credit-name { color: var(--text-primary); }
 .ctn-info-credit-av { border-color: var(--border-soft); }
+
+/* ════════════════════════════════════════════════════════════════════════
+   ART-COMFY v2 — post-it / polaroid cards (pastel, cute notebook)
+   ════════════════════════════════════════════════════════════════════════ */
+/* pastel tone palette (set per node via ctn-tone-N) */
+.ctn-tone-0 { --tone-bg: #dce9fb; --tone-bd: #b9d2f2; --tone-ink: #39598a; --tone-tape: rgba(108,150,212,.4); }
+.ctn-tone-1 { --tone-bg: #fbdde8; --tone-bd: #f1c1d4; --tone-ink: #9a4d68; --tone-tape: rgba(224,138,172,.42); }
+.ctn-tone-2 { --tone-bg: #d9f0e4; --tone-bd: #bde5d1; --tone-ink: #3a7a5c; --tone-tape: rgba(120,200,160,.4); }
+.ctn-tone-3 { --tone-bg: #fbf1c9; --tone-bd: #efe2a6; --tone-ink: #7d6a2c; --tone-tape: rgba(214,192,108,.42); }
+.ctn-tone-4 { --tone-bg: #e8e0f7; --tone-bd: #d5c8ef; --tone-ink: #5e4e86; --tone-tape: rgba(170,150,220,.4); }
+
+/* gentle hand-placed tilt (rotate the inner card, not the positioned node) */
+.ctn-tilt-0 .ctn-artist-note, .ctn-tilt-0 .ctn-song-card { transform: rotate(-2.2deg); }
+.ctn-tilt-1 .ctn-artist-note, .ctn-tilt-1 .ctn-song-card { transform: rotate(1.7deg); }
+.ctn-tilt-2 .ctn-artist-note, .ctn-tilt-2 .ctn-song-card { transform: rotate(-0.6deg); }
+.ctn-node:hover .ctn-artist-note, .ctn-node:hover .ctn-song-card { transform: rotate(0deg) translateY(-3px); }
+.ctn-node.dragging .ctn-artist-note, .ctn-node.dragging .ctn-song-card { transform: rotate(0deg) scale(1.03); }
+
+/* ── Artist = polaroid note ─────────────────────────────── */
+.ctn-artist-note {
+  position: relative; display: flex; flex-direction: column; align-items: center;
+  padding: 11px 11px 9px; border-radius: 11px;
+  background: #fffdf8; border: 1px solid var(--border-soft);
+  box-shadow: 0 9px 20px rgba(44,39,34,.15);
+  transition: transform .22s cubic-bezier(.2,.7,.3,1), box-shadow .22s;
+}
+/* washi tape across the top */
+.ctn-artist-note::before {
+  content: ''; position: absolute; top: -7px; left: 50%; width: 48px; height: 15px;
+  transform: translateX(-50%) rotate(-3deg);
+  background: var(--tone-tape, rgba(150,170,210,.4));
+  border-radius: 2px; box-shadow: 0 1px 2px rgba(44,39,34,.08);
+}
+.ctn-node-artist .ctn-artist-photo {
+  width: 86px; height: 86px; margin: 2px auto 0; border-radius: 12px;
+  border: 3px solid #fff; background: #ece6da;
+  box-shadow: 0 3px 9px rgba(44,39,34,.18); overflow: hidden;
+}
+.ctn-node-artist .ctn-artist-photo img { border-radius: 9px; }
+.ctn-artist-ring { display: none; }
+.ctn-artist-fallback { color: var(--tone-ink, var(--text-secondary)); font-family: var(--font-mono); }
+.ctn-artist-name { margin-top: 9px; font-size: 13px; font-weight: 500; color: var(--tone-ink, var(--text-primary)); text-shadow: none; }
+
+/* start / target keep their identity (blue / pink), no random tone tape */
+.ctn-node-artist.is-start .ctn-artist-note { background: #eef4fe; border-color: #bcd4f5; }
+.ctn-node-artist.is-target .ctn-artist-note { background: #fdeef4; border-color: #f3c6d8; }
+.ctn-node-artist.is-start .ctn-artist-note::before,
+.ctn-node-artist.is-target .ctn-artist-note::before { display: none; }
+.ctn-node-artist.is-start .ctn-artist-name { color: #39598a; }
+.ctn-node-artist.is-target .ctn-artist-name { color: #9a4d68; }
+.ctn-node-artist.is-start .ctn-artist-photo,
+.ctn-node-artist.is-target .ctn-artist-photo { border-color: #fff; box-shadow: 0 3px 9px rgba(44,39,34,.18); }
+.ctn-node-tag { top: -9px; box-shadow: 0 2px 6px rgba(44,39,34,.18); }
+.ctn-node-artist.selected .ctn-artist-note { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ctn-node-artist.selected .ctn-artist-photo { box-shadow: 0 3px 9px rgba(44,39,34,.18); }
+
+/* ── Song = pastel post-it with a "taped" cover ─────────── */
+.ctn-song-card {
+  position: relative; background: var(--tone-bg, #fffdf8);
+  border: 1px solid var(--tone-bd, var(--border-soft));
+  box-shadow: 0 9px 20px rgba(44,39,34,.14);
+  border-radius: 12px; backdrop-filter: none; overflow: visible;
+  transition: transform .22s cubic-bezier(.2,.7,.3,1), box-shadow .22s;
+}
+.ctn-song-cover {
+  width: auto; margin: 9px 9px 0; border-radius: 7px; aspect-ratio: 1 / 1; overflow: hidden;
+  border: 3px solid #fff; box-shadow: 0 3px 8px rgba(44,39,34,.16);
+}
+.ctn-song-cover::after { display: none; }
+.ctn-song-cover, .ctn-song-cover.no-art { background: #efe8db; }
+.ctn-song-cover.no-art svg { color: var(--tone-ink, var(--diamond-accent)); opacity: .55; }
+.ctn-song-type {
+  background: rgba(255,255,255,.82); border-color: rgba(255,255,255,.6);
+  color: var(--tone-ink, var(--diamond)); top: 14px; left: 14px;
+}
+.ctn-song-body { padding: 9px 12px 13px; }
+.ctn-song-title { color: var(--tone-ink, var(--text-primary)); }
+.ctn-song-year, .ctn-song-caption { color: var(--tone-ink, var(--text-muted)); opacity: .68; }
+.ctn-mini-av { border-color: #fff; }
+.ctn-credit-more { background: rgba(255,255,255,.6); border-color: #fff; color: var(--tone-ink); }
+/* folded corner */
+.ctn-song-card::after {
+  content: ''; position: absolute; right: 0; bottom: 0; width: 0; height: 0;
+  border-style: solid; border-width: 0 0 18px 18px;
+  border-color: transparent transparent rgba(44,39,34,.12) transparent;
+  border-bottom-right-radius: 12px;
+}
+.ctn-node-song:hover .ctn-song-card { box-shadow: 0 14px 28px rgba(44,39,34,.2); border-color: var(--tone-bd); }
+.ctn-node-song.selected .ctn-song-card { outline: 2px solid var(--accent); outline-offset: 2px; box-shadow: 0 14px 28px rgba(44,39,34,.2); }
+
+/* edges tinted a touch warmer to sit on pastel */
+.ctn-edge-line { stroke: #9a8f7c; opacity: .5; }
+.ctn-edge-line.is-active { stroke: var(--accent); opacity: 1; }
+/* keep hover on the polaroid (note) only, not the inner photo */
+.ctn-node-artist:hover .ctn-artist-photo { transform: none; border-color: #fff; box-shadow: 0 3px 9px rgba(44,39,34,.2); }
