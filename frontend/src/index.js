@@ -1,4 +1,4 @@
-// build marker: modo mynd — polaroid + turntable + dark + wood bg (production)
+// build marker: modo mynd — full design + wood bg (production, vercel back)
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.css";
