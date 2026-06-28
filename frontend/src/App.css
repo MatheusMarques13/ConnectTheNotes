@@ -12,11 +12,11 @@
 }
 
 :root {
-  /* paper + ruled lines (staff-paper vibe) */
-  --paper: #faf6ed;
-  --paper-2: #f3ecdd;
-  --paper-line: #e9dfca;
-  --paper-margin: #e2b9a0;
+  /* paper + ruled lines (staff-paper vibe) — warm wood/kraft ground */
+  --paper: #e4d0a4;
+  --paper-2: #dcc69a;
+  --paper-line: #cdb98a;
+  --paper-margin: #c79a78;
 
   /* legacy bg names remapped to light surfaces */
   --bg-primary: #faf6ed;
@@ -87,7 +87,7 @@ body {
 .paper-bg { position: fixed; inset: 0; z-index: 0; pointer-events: none; background: var(--paper); }
 .paper-staves {
   position: absolute; inset: 0;
-  --staff-line: #cdc2a8;
+  --staff-line: #bfa979;
   background-image: repeating-linear-gradient(
     to bottom,
     var(--staff-line) 0, var(--staff-line) 1.4px,
@@ -101,20 +101,22 @@ body {
     var(--staff-line) 44px, var(--staff-line) 45.4px,
     transparent 45.4px, transparent 88px
   );
-  opacity: .8;
+  opacity: .5;
 }
 /* faint beamed-eighth-notes scattered across the staves (sparse) */
 .paper-notes {
   position: absolute; inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20320%20176'%3E%3Cg%20fill='%23b29c74'%3E%3Cellipse%20cx='40'%20cy='44'%20rx='6'%20ry='4.2'%20transform='rotate(-18%2040%2044)'/%3E%3Cellipse%20cx='60'%20cy='40'%20rx='6'%20ry='4.2'%20transform='rotate(-18%2060%2040)'/%3E%3Crect%20x='44.6'%20y='14'%20width='2.2'%20height='30'/%3E%3Crect%20x='64.6'%20y='10'%20width='2.2'%20height='30'/%3E%3Cpath%20d='M44.6%2014%20L66.8%2010%20L66.8%2015%20L44.6%2019%20Z'/%3E%3Cellipse%20cx='210'%20cy='121'%20rx='6'%20ry='4.2'%20transform='rotate(-18%20210%20121)'/%3E%3Crect%20x='214.6'%20y='93'%20width='2.2'%20height='28'/%3E%3Cpath%20d='M214.6%2093%20q9%202%208%2011%20q-3%20-6%20-8%20-5%20Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20320%20176'%3E%3Cg%20fill='%238a7345'%3E%3Cellipse%20cx='40'%20cy='44'%20rx='6'%20ry='4.2'%20transform='rotate(-18%2040%2044)'/%3E%3Cellipse%20cx='60'%20cy='40'%20rx='6'%20ry='4.2'%20transform='rotate(-18%2060%2040)'/%3E%3Crect%20x='44.6'%20y='14'%20width='2.2'%20height='30'/%3E%3Crect%20x='64.6'%20y='10'%20width='2.2'%20height='30'/%3E%3Cpath%20d='M44.6%2014%20L66.8%2010%20L66.8%2015%20L44.6%2019%20Z'/%3E%3Cellipse%20cx='210'%20cy='121'%20rx='6'%20ry='4.2'%20transform='rotate(-18%20210%20121)'/%3E%3Crect%20x='214.6'%20y='93'%20width='2.2'%20height='28'/%3E%3Cpath%20d='M214.6%2093%20q9%202%208%2011%20q-3%20-6%20-8%20-5%20Z'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 320px 176px;
   opacity: .12;
 }
 .paper-vignette {
   position: absolute; inset: 0;
-  background: radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,0.5), transparent 55%),
-              radial-gradient(140% 120% at 50% 120%, rgba(196,102,60,0.06), transparent 60%);
+  background:
+    repeating-linear-gradient(90deg, rgba(110,78,38,0.035) 0 1px, transparent 1px 6px),
+    radial-gradient(120% 90% at 50% 0%, rgba(255,248,228,0.40), transparent 55%),
+    radial-gradient(150% 130% at 50% 120%, rgba(96,64,30,0.20), transparent 62%);
 }
 
 /* ================================
