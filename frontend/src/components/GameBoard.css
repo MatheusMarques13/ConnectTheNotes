@@ -587,12 +587,78 @@
   width: 100%;
   padding-bottom: 0;
 }
-.game-board.playing .search-subtitle { margin-bottom: 10px; }
+.game-board.playing .search-subtitle { margin-bottom: 16px; }
 .game-board.playing .search-input-wrapper { flex-shrink: 0; }
-.game-board.playing .song-list {
-  flex: 1 1 auto;
-  min-height: 0;
-  max-height: none;
-  margin-top: 10px;
+/* Center the recall/guess block in the available space (clean, focal). */
+.game-board.playing .search-section.guess-mode { justify-content: center; }
+
+/* ── Recall move: type a song title, no list, no autocomplete ──────────── */
+.search-section.guess-mode { text-align: center; }
+.guess-form {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  max-width: 540px;
+  margin: 0 auto;
 }
-.game-board.playing .connections-count { flex-shrink: 0; margin-top: 10px; margin-bottom: 0; }
+.guess-form .search-input-wrapper { flex: 1; margin: 0; }
+.search-input-wrapper.has-error { border-color: rgba(239, 68, 68, 0.5); }
+.guess-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 18px;
+  border-radius: 12px;
+  border: 1px solid var(--diamond-accent);
+  background: var(--diamond-dim);
+  color: var(--diamond-bright);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s, opacity 0.2s, transform 0.1s;
+}
+.guess-submit-btn:hover:not(:disabled) { background: rgba(184, 198, 224, 0.18); transform: translateY(-1px); }
+.guess-submit-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.guess-error {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 14px auto 0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #fca5a5;
+  font-size: 13px;
+  animation: fadeSlideIn 0.18s ease-out;
+}
+.guess-tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.guess-tip svg { vertical-align: middle; opacity: 0.85; }
+.guess-back-link {
+  margin-top: 16px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.guess-back-link:hover { color: var(--diamond-light); }
+.song-collabs.reveal.center { justify-content: center; padding: 10px 0 0; }
+@media (max-width: 600px) {
+  .guess-form { flex-direction: column; }
+  .guess-submit-btn { justify-content: center; padding: 12px; }
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { ArrowLeft, ArrowRight, Music, Disc, Disc3, Radio, Mic2, Tv, Film, RotateCcw, Lightbulb, Check, Loader2, Clock, XCircle, Search, X, Flag, Share2, ChevronDown } from 'lucide-react';
+import { ArrowLeft, ArrowRight, RotateCcw, Lightbulb, Check, Loader2, Clock, XCircle, Search, X, Flag, Share2 } from 'lucide-react';
 import {
   getArtistSongs,
   findConnection,
@@ -7,28 +7,6 @@ import {
 } from '../services/api';
 import { getAvatarUrl, getLargeAvatarUrl, getGenreColor } from '../utils/avatars';
 import ConstellationGraph from './ConstellationGraph';
-
-const typeIcons = {
-  song: <Music size={14} />,
-  album: <Disc size={14} />,
-  ep: <Disc3 size={14} />,
-  mixtape: <Disc3 size={14} />,
-  live: <Radio size={14} />,
-  dvd: <Tv size={14} />,
-  video: <Film size={14} />,
-  feature: <Mic2 size={14} />,
-};
-
-const typeLabels = {
-  song: 'Song',
-  album: 'Album',
-  ep: 'EP',
-  mixtape: 'Mixtape',
-  live: 'Live',
-  dvd: 'DVD',
-  video: 'Music Video',
-  feature: 'Feature',
-};
 
 const parLabel = (used, optimal) => {
   if (optimal == null) return null;
@@ -86,8 +64,9 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
   const [showHint, setShowHint] = useState(false);
   const [hint, setHint] = useState(null);
   const [hintStatus, setHintStatus] = useState('idle'); // idle|loading|found|none
-  const [searchQuery, setSearchQuery] = useState('');
-  const [revealedSongId, setRevealedSongId] = useState(null);
+  const [guess, setGuess] = useState('');
+  const [guessError, setGuessError] = useState('');
+  const [matchedSong, setMatchedSong] = useState(null); // a correctly-named multi-credit song awaiting a pick
   const [copied, setCopied] = useState(false);
 
   const [songs, setSongs] = useState([]);
@@ -140,8 +119,9 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
     const fetchData = async () => {
       setLoading(true);
       setLoadError(false);
-      setSearchQuery('');
-      setRevealedSongId(null);
+      setGuess('');
+      setGuessError('');
+      setMatchedSong(null);
       const list = await getArtistSongs(currentArtist.id);
       if (!cancelled) {
         setSongs(list);
@@ -179,13 +159,34 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
     return () => { cancelled = true; };
   }, [currentArtist.id, artist2.id, showHints, showHint, artistCache, cacheArtist]);
 
-  // Filter songs by title OR any collaborator name
-  const q = searchQuery.trim().toLowerCase();
-  const filteredSongs = q
-    ? songs.filter(s => s.title.toLowerCase().includes(q) || s.collaborators.some(c => c.name.toLowerCase().includes(q)))
-    : songs;
-
   const targetIsNeighbor = songs.some(s => s.collaborators.some(c => c.id === artist2.id));
+
+  // Recall-based move: the player TYPES a song title (no list, no suggestions).
+  // We match it against the current artist's collaborations and, if it's real,
+  // travel to whoever they made it with — just like naming a film in Connect
+  // the Stars.
+  const normTitle = (s) => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+  const handleGuessSubmit = (e) => {
+    if (e) e.preventDefault();
+    const raw = guess.trim();
+    const nq = normTitle(raw);
+    if (nq.length < 2) { setGuessError('Type the name of a song to travel.'); return; }
+    const exact = songs.filter(s => normTitle(s.title) === nq);
+    const partial = songs.filter(s => {
+      const nt = normTitle(s.title);
+      return nt.includes(nq) || (nq.length >= 4 && nq.includes(nt) && nt.length >= 4);
+    });
+    const pool = exact.length ? exact : partial;
+    if (!pool.length) {
+      setGuessError(`No ${currentArtist.name} collaboration called “${raw}” that we know. Try another song.`);
+      return;
+    }
+    const song = pool[0];
+    setGuessError('');
+    if (song.collaborators.length === 1) handlePick(song, song.collaborators[0]);
+    else { setMatchedSong(song); setGuess(''); }
+  };
 
   const winWith = (newChain) => {
     setChain(newChain);
@@ -197,23 +198,26 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
   // Pick a song + which collaborator to travel to (a track may credit several)
   const handlePick = (song, next) => {
     const newChain = [...chain, { artist: next, collab: { title: song.title, type: song.type, year: song.year, coverUrl: song.coverUrl } }];
-    setSearchQuery('');
-    setRevealedSongId(null);
+    setGuess('');
+    setGuessError('');
+    setMatchedSong(null);
     cacheArtist(next);
     if (next.id === artist2.id) winWith(newChain);
     else setChain(newChain);
   };
 
-  const handleClearSearch = () => {
-    setSearchQuery('');
+  const handleClearGuess = () => {
+    setGuess('');
+    setGuessError('');
     if (searchRef.current) searchRef.current.focus();
   };
 
   const handleUndo = () => {
     if (chain.length > 1) {
       setChain(chain.slice(0, -1));
-      setSearchQuery('');
-      setRevealedSongId(null);
+      setGuess('');
+      setGuessError('');
+      setMatchedSong(null);
     }
   };
 
@@ -230,8 +234,9 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
 
   const handleRestart = () => {
     setChain([{ artist: artist1, collab: null }]);
-    setSearchQuery('');
-    setRevealedSongId(null);
+    setGuess('');
+    setGuessError('');
+    setMatchedSong(null);
     setGameWon(false);
     setGameLost(false);
     setGaveUp(false);
@@ -422,100 +427,68 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, showHin
             <button className="btn-secondary" onClick={handleGiveUp}>Reveal solution</button>
           </div>
         </div>
-      ) : (
-        <div className="search-section">
-          <h3 className="section-title">PICK A SONG BY {currentArtist.name.toUpperCase()}</h3>
-          <p className="search-subtitle">Choose a track to travel to whoever they made it with</p>
-
-          {/* Search input (by song title or collaborator) */}
-          <div className="search-input-wrapper">
-            <Search size={18} className="search-icon" />
-            <input
-              ref={searchRef}
-              type="text"
-              placeholder="Search a song or collaborator..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="game-search-input"
-              autoComplete="off"
-              autoCorrect="off"
-              spellCheck="false"
-            />
-            {searchQuery && (
-              <button className="search-clear-btn" onClick={handleClearSearch}>
-                <X size={16} />
+      ) : matchedSong ? (
+        /* A correctly-named track with several credits — choose who to follow. */
+        <div className="search-section guess-mode">
+          <h3 className="section-title">“{matchedSong.title}”</h3>
+          <p className="search-subtitle">More than one artist is on this track — who do you follow?</p>
+          <div className="song-collabs reveal center">
+            {matchedSong.collaborators.map(c => (
+              <button
+                key={c.id}
+                className="collab-chip"
+                onClick={() => handlePick(matchedSong, c)}
+                title={`Go to ${c.name}`}
+              >
+                <ArtistMiniAvatar artist={c} size={22} />
+                <span className="collab-chip-name">{c.name}</span>
               </button>
-            )}
+            ))}
           </div>
+          <button className="guess-back-link" onClick={() => setMatchedSong(null)}>
+            ← name a different song
+          </button>
+        </div>
+      ) : (
+        <div className="search-section guess-mode">
+          <h3 className="section-title">NAME A SONG BY {currentArtist.name.toUpperCase()}</h3>
+          <p className="search-subtitle">
+            Type a track {currentArtist.name} made with someone, then press Enter. No list, no hints — recall it.
+          </p>
 
-          {/* Song list — the collaborator is hidden; you pick a track and find
-              out who it leads to (multi-artist songs reveal a choice on tap). */}
-          {filteredSongs.length > 0 ? (
-            <div className="song-list">
-              {filteredSongs.map(song => {
-                const multi = song.collaborators.length > 1;
-                const revealed = revealedSongId === song.id;
-                return (
-                  <div key={song.id} className={`song-item ${revealed ? 'revealed' : ''}`}>
-                    <button
-                      type="button"
-                      className="song-main"
-                      onClick={() => {
-                        if (multi) setRevealedSongId(revealed ? null : song.id);
-                        else handlePick(song, song.collaborators[0]);
-                      }}
-                      title={multi ? 'Reveal who is featured' : 'Travel via this track'}
-                    >
-                      <div className="song-cover">
-                        {song.coverUrl
-                          ? <img src={song.coverUrl} alt="" className="song-cover-img" onError={(e) => { e.target.style.display = 'none'; }} />
-                          : <span className="song-type-icon">{typeIcons[song.type] || <Music size={14} />}</span>}
-                      </div>
-                      <div className="song-info">
-                        <span className="song-title">{song.title}</span>
-                        <span className="song-meta">{typeLabels[song.type] || song.type} · {song.year}</span>
-                      </div>
-                      <div className="song-mask">
-                        <span className="mask-avatars">
-                          {song.collaborators.slice(0, 3).map((_, i) => (
-                            <span key={i} className="mask-dot">?</span>
-                          ))}
-                        </span>
-                        <span className="mask-label">{multi ? `feat. ${song.collaborators.length}` : 'feat.'}</span>
-                        {multi
-                          ? <ChevronDown size={16} className={`mask-arrow ${revealed ? 'open' : ''}`} />
-                          : <ArrowRight size={16} className="mask-arrow" />}
-                      </div>
-                    </button>
-                    {multi && revealed && (
-                      <div className="song-collabs reveal">
-                        {song.collaborators.map(c => (
-                          <button
-                            key={c.id}
-                            className="collab-chip"
-                            onClick={() => handlePick(song, c)}
-                            title={`Go to ${c.name}`}
-                          >
-                            <ArtistMiniAvatar artist={c} size={22} />
-                            <span className="collab-chip-name">{c.name}</span>
-                          </button>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
+          <form className="guess-form" onSubmit={handleGuessSubmit}>
+            <div className={`search-input-wrapper ${guessError ? 'has-error' : ''}`}>
+              <Search size={18} className="search-icon" />
+              <input
+                ref={searchRef}
+                type="text"
+                placeholder={`Name a ${currentArtist.name} collaboration…`}
+                value={guess}
+                onChange={(e) => { setGuess(e.target.value); if (guessError) setGuessError(''); }}
+                className="game-search-input"
+                autoComplete="off"
+                autoCorrect="off"
+                spellCheck="false"
+                autoFocus
+              />
+              {guess && (
+                <button type="button" className="search-clear-btn" onClick={handleClearGuess}>
+                  <X size={16} />
+                </button>
+              )}
             </div>
-          ) : (
-            <div className="search-no-results">
-              <p>No song or collaborator of {currentArtist.name} matches "{searchQuery}".</p>
-              <p className="search-no-results-hint">Clear the search to see all their tracks, or use a hint.</p>
-            </div>
+            <button type="submit" className="guess-submit-btn" disabled={!guess.trim()}>
+              Travel <ArrowRight size={16} />
+            </button>
+          </form>
+
+          {guessError && (
+            <div className="guess-error" role="alert"><XCircle size={14} /> {guessError}</div>
           )}
 
-          <div className="connections-count">
-            {songs.length} song{songs.length !== 1 ? 's' : ''} by {currentArtist.name}
-          </div>
+          <p className="guess-tip">
+            Stuck? Use the <Lightbulb size={13} /> hint for the next artist, or <Flag size={13} /> to reveal the answer.
+          </p>
         </div>
       )}
     </div>

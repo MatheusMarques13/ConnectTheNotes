@@ -26,8 +26,8 @@ const HowToPlayModal = ({ isOpen, onClose }) => {
               <Link2 size={24} />
             </div>
             <div className="htp-step-content">
-              <h3>2. Travel Through Songs</h3>
-              <p>From the current artist, pick one of their songs. The featured artist is hidden — recall who they worked with, then travel to whoever they made it with. Tracks can be songs, albums, features, or live performances.</p>
+              <h3>2. Name a Song</h3>
+              <p>Type a song the current artist made with someone — no list and no autocomplete, just recall it. If it's a real collaboration, you travel to whoever they're on it with (songs, albums, features, or live performances all count).</p>
             </div>
           </div>
           <div className="htp-step">
