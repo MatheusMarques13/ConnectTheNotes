@@ -1,4 +1,4 @@
-// build marker: hidden-collaborator + fullscreen play UX
+// build marker: recall-based moves (type the song, no list/autocomplete)
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.css";
