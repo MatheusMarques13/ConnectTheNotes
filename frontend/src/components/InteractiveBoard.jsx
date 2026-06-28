@@ -6,10 +6,10 @@ import './board.css';
 // ── node id helpers (namespace by first char: 'a' artist, 's' song) ──
 const artistNodeId = (id) => 'a' + id;
 const songNodeId = (id) => 's' + id;
-const W_A = 132, H_A = 150, W_S = 184, H_S = 250;
+const W_A = 132, H_A = 150, W_S = 162, H_S = 228;
 const sizeById = (id) => (id[0] === 'a' ? { w: W_A, h: H_A } : { w: W_S, h: H_S });
 
-const ANCHOR_GAP = 760, STEP = 70, RING_BASE = 170, GAP = 26, MAX_RING = 16;
+const ANCHOR_GAP = 500, STEP = 58, RING_BASE = 140, GAP = 16, MAX_RING = 16;
 const MIN_Z = 0.4, MAX_Z = 2.4, THRESH = 5;
 const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 const snap = (v) => Math.round(v / STEP) * STEP;
@@ -199,16 +199,28 @@ const InteractiveBoard = ({ found, edges, startId, targetId, onOpenInfo, boardAp
     if (!ids.length) { camRef.current = { panX: r.width / 2, panY: r.height / 2, zoom: 1 }; applyTransform(); setCameraCommit(); return; }
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
     for (const id of ids) { const p = posRef.current[id]; const s = sizeById(id); minX = Math.min(minX, p.x - s.w / 2); maxX = Math.max(maxX, p.x + s.w / 2); minY = Math.min(minY, p.y - s.h / 2); maxY = Math.max(maxY, p.y + s.h / 2); }
-    const PAD = 90, bw = (maxX - minX) + 2 * PAD, bh = (maxY - minY) + 2 * PAD;
+    // fit into the area left clear of the fixed chrome (top bar, input dock,
+    // zoom controls, helper hints), with a little breathing room.
+    const insT = 80, insB = 140, insX = 80;
+    const availW = Math.max(80, r.width - 2 * insX), availH = Math.max(80, r.height - insT - insB);
+    const contentW = Math.max(1, maxX - minX), contentH = Math.max(1, maxY - minY);
     const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
-    const z = clamp(Math.min(r.width / bw, r.height / bh), MIN_Z, 1.4);
-    tweenTo({ zoom: z, panX: r.width / 2 - cx * z, panY: r.height / 2 - cy * z });
+    const z = clamp(Math.min(availW / contentW, availH / contentH) * 0.96, MIN_Z, 1.15);
+    const regionCx = insX + availW / 2, regionCy = insT + availH / 2;
+    tweenTo({ zoom: z, panX: regionCx - cx * z, panY: regionCy - cy * z });
   }, [applyTransform]);
   const zoomBy = useCallback((f) => { const r = rectOf(); zoomAt(r.width / 2, r.height / 2, camRef.current.zoom * f); applyTransform(); setCameraCommit(); }, [applyTransform]);
 
   useEffect(() => { if (boardApiRef) boardApiRef.current = { recenter, zoomBy }; }, [boardApiRef, recenter, zoomBy]);
-  // center once after first layout
-  useEffect(() => { if (!didCenterRef.current && nodes.length) { didCenterRef.current = true; recenter(); } }, [nodes.length, recenter]);
+  // keep the whole web framed: fit once after first layout, then re-fit whenever
+  // the web grows (a new artist/song appears) — but never mid-gesture.
+  const prevCountRef = useRef(0);
+  useEffect(() => {
+    const n = nodes.length; if (!n) return;
+    if (!didCenterRef.current) { didCenterRef.current = true; prevCountRef.current = n; recenter(); return; }
+    if (n > prevCountRef.current && modeRef.current === 'IDLE') recenter();
+    prevCountRef.current = n;
+  }, [nodes.length, recenter]);
 
   // ── imperative painters during drag ──
   const paintNode = (id) => { const el = nodeElRef.current[id]; const p = posRef.current[id]; if (el && p) { el.style.left = p.x + 'px'; el.style.top = p.y + 'px'; } };
