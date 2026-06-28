@@ -86,7 +86,7 @@ const SongCardInner = ({ song, artists }) => {
   );
 };
 
-const InteractiveBoard = ({ found, edges, startId, targetId, isVictory, onOpenInfo, boardApiRef }) => {
+const InteractiveBoard = ({ found, edges, startId, targetId, onOpenInfo, boardApiRef }) => {
   const viewportRef = useRef(null), layerRef = useRef(null), edgesGroupRef = useRef(null);
   const camRef = useRef({ panX: 0, panY: 0, zoom: 1 });
   const [, bump] = useReducer((c) => c + 1, 0);
@@ -124,6 +124,7 @@ const InteractiveBoard = ({ found, edges, startId, targetId, isVictory, onOpenIn
     if (edgesGroupRef.current) edgesGroupRef.current.setAttribute('transform', `translate(${panX} ${panY}) scale(${zoom})`);
   }, []);
   const schedule = (fn) => { if (!rafRef.current) rafRef.current = requestAnimationFrame(() => { rafRef.current = 0; fn(); }); };
+  const freezeCam = () => { cancelAnimationFrame(tweenRef.current); tweenRef.current = 0; camRef.current = { ...camRef.current }; };
 
   const toBoard = (cx, cy) => { const r = rectOf(); const c = camRef.current; return { x: (cx - r.left - c.panX) / c.zoom, y: (cy - r.top - c.panY) / c.zoom }; };
   const zoomAt = (sx, sy, nextZoom) => { const c = camRef.current; const nz = clamp(nextZoom, MIN_Z, MAX_Z); const k = nz / c.zoom; c.panX = sx - (sx - c.panX) * k; c.panY = sy - (sy - c.panY) * k; c.zoom = nz; };
@@ -222,7 +223,7 @@ const InteractiveBoard = ({ found, edges, startId, targetId, isVictory, onOpenIn
 
   // ── pinch ──
   const startPinch = () => {
-    const pts = [...pointers.current.values()]; if (pts.length < 2) return; const r = rectOf();
+    const pts = [...pointers.current.values()]; if (pts.length < 2) return; freezeCam(); const r = rectOf();
     const p0 = { x: pts[0].x - r.left, y: pts[0].y - r.top }, p1 = { x: pts[1].x - r.left, y: pts[1].y - r.top };
     pinchRef.current = { startDist: Math.hypot(p1.x - p0.x, p1.y - p0.y) || 1, startZoom: camRef.current.zoom, lastMid: { x: (p0.x + p1.x) / 2, y: (p0.y + p1.y) / 2 } };
     modeRef.current = 'PINCH';
@@ -249,6 +250,7 @@ const InteractiveBoard = ({ found, edges, startId, targetId, isVictory, onOpenIn
     viewportRef.current.setPointerCapture(e.pointerId);
     pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
     startRef.current = lastRef.current = { x: e.clientX, y: e.clientY };
+    if (pointers.current.size === 2) { startPinch(); return; } // 2nd finger on a card → pinch, not node-drag
     dragIdRef.current = id; modeRef.current = 'MAYBE_NODE';
   };
   const onPointerMove = (e) => {
@@ -259,6 +261,7 @@ const InteractiveBoard = ({ found, edges, startId, targetId, isVictory, onOpenIn
     if (modeRef.current === 'MAYBE_BG' || modeRef.current === 'MAYBE_NODE') {
       if (Math.hypot(e.clientX - startRef.current.x, e.clientY - startRef.current.y) <= THRESH) { lastRef.current = { x: e.clientX, y: e.clientY }; return; }
       modeRef.current = modeRef.current === 'MAYBE_BG' ? 'PAN' : 'NODE_DRAG';
+      freezeCam(); // stop any in-flight recenter tween so it doesn't fight the drag
       if (modeRef.current === 'PAN' && viewportRef.current) viewportRef.current.classList.add('panning');
       if (modeRef.current === 'NODE_DRAG') { const el = nodeElRef.current[dragIdRef.current]; if (el) el.classList.add('dragging'); }
     }
@@ -283,7 +286,7 @@ const InteractiveBoard = ({ found, edges, startId, targetId, isVictory, onOpenIn
       const el = nodeElRef.current[dragIdRef.current]; if (el) el.classList.remove('dragging');
       bump();
     }
-    if (pointers.current.size === 1) { modeRef.current = 'PAN'; const only = [...pointers.current.values()][0]; lastRef.current = { ...only }; pinchRef.current = null; }
+    if (pointers.current.size === 1) { modeRef.current = 'PAN'; const only = [...pointers.current.values()][0]; startRef.current = lastRef.current = { ...only }; dragIdRef.current = null; pinchRef.current = null; }
     else if (pointers.current.size === 0) { modeRef.current = 'IDLE'; dragIdRef.current = null; pinchRef.current = null; }
   };
 
@@ -308,8 +311,6 @@ const InteractiveBoard = ({ found, edges, startId, targetId, isVictory, onOpenIn
             <stop offset="50%" stopColor="#e8eeff" stopOpacity="1" />
             <stop offset="100%" stopColor="#c084fc" stopOpacity="0.7" />
           </linearGradient>
-          <filter id="ctnLineGlow" x="-20%" y="-120%" width="140%" height="340%"><feGaussianBlur stdDeviation="2.2" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
-          <filter id="ctnLineGlowBright" x="-20%" y="-120%" width="140%" height="340%"><feGaussianBlur stdDeviation="4" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
         </defs>
         <g ref={edgesGroupRef}>
           {links.map((lk) => {

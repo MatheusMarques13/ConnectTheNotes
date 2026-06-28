@@ -106,6 +106,11 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
     }
   }, [timedMode]);
 
+  // Focus the input on desktop only — don't pop the soft keyboard over a touch board.
+  useEffect(() => {
+    if (window.matchMedia && window.matchMedia('(pointer: fine)').matches) searchRef.current?.focus();
+  }, []);
+
   // Hint — the next artist on an optimal route that you haven't uncovered yet.
   useEffect(() => {
     if (!showHints || !showHint) { setHint(null); setHintStatus('idle'); return; }
@@ -207,82 +212,12 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
 
   const isWarning = timedMode && timeRemaining <= 30 && timeRemaining > 10;
   const isCritical = timedMode && timeRemaining <= 10;
+  const used = edges.length;
+  const rating = parLabel(used, optimalSteps);
+  const fmtTime = (s) => { const m = Math.floor(s / 60); const r = s % 60; return m > 0 ? `${m}m ${r}s` : `${r}s`; };
+  const atPar = gameWon && optimalSteps != null && used <= optimalSteps;
 
-  // ── Lost / Gave-up screen ───────────────────────────────
-  if (gameLost || gaveUp) {
-    return (
-      <div className="game-board">
-        <div className="game-lost" data-testid="game-lost-screen">
-          <div className="lost-icon-wrap"><XCircle size={64} className="lost-icon" /></div>
-          <h2 className="lost-title">{gaveUp ? 'Solution Revealed' : "Time's Up!"}</h2>
-          <p className="lost-subtitle">
-            {gaveUp
-              ? `Here's one way to connect ${artist1.name} to ${artist2.name}:`
-              : `You ran out of time trying to connect ${artist1.name} to ${artist2.name}`}
-          </p>
-          {gaveUp && solutionWeb ? (
-            <div className="lost-chain">
-              <h4>Optimal path{optimalSteps != null ? ` · ${optimalSteps} songs` : ''}:</h4>
-              <ConstellationGraph found={solutionWeb.found} edges={solutionWeb.edges} startId={artist1.id} targetId={artist2.id} isVictory />
-            </div>
-          ) : (
-            <>
-              <div className="lost-stats">
-                <div className="lost-stat"><span className="lost-stat-value">{edges.length}</span><span className="lost-stat-label">Songs Played</span></div>
-                <div className="lost-stat"><span className="lost-stat-value">{found.length}</span><span className="lost-stat-label">Artists Found</span></div>
-              </div>
-              <div className="lost-chain"><h4>Your Web:</h4><ConstellationGraph found={found} edges={edges} startId={artist1.id} targetId={artist2.id} /></div>
-            </>
-          )}
-          <div className="lost-actions">
-            <button className="btn-primary" onClick={handleRestart}>Try Again</button>
-            <button className="btn-secondary" onClick={onBack}>New Game</button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // ── Win screen ──────────────────────────────────────────
-  if (gameWon) {
-    const used = edges.length;
-    const rating = parLabel(used, optimalSteps);
-    const formatTime = (seconds) => {
-      const mins = Math.floor(seconds / 60);
-      const secs = seconds % 60;
-      return mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
-    };
-    return (
-      <div className="game-board">
-        <div className="game-won" data-testid="game-won-screen">
-          <div className="won-fireworks">
-            {[...Array(12)].map((_, i) => (
-              <div key={i} className="firework" style={{ '--delay': `${i * 0.15}s`, '--x': `${(i * 37) % 100}%`, '--y': `${(i * 23) % 60}%` }} />
-            ))}
-          </div>
-          <h2 className="won-title">Connected!</h2>
-          <p className="won-subtitle">
-            You linked {artist1.name} to {artist2.name} in {used} song{used !== 1 ? 's' : ''}
-            {timedMode && <span className="won-time"> • {formatTime(timeSpent)}</span>}
-          </p>
-          {rating && (
-            <div className="won-par">
-              <span className="won-par-rating">{rating}</span>
-              {optimalSteps != null && <span className="won-par-detail">You: {used} · Best possible: {optimalSteps}</span>}
-            </div>
-          )}
-          <ConstellationGraph found={found} edges={edges} startId={artist1.id} targetId={artist2.id} isVictory />
-          <div className="won-actions">
-            <button className="btn-secondary won-share" onClick={handleShare}><Share2 size={16} /> {copied ? 'Copied!' : 'Share'}</button>
-            <button className="btn-primary" onClick={onBack}>New Game</button>
-            <button className="btn-secondary" onClick={handleRestart}>Play Again</button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // ── Playing ─────────────────────────────────────────────
+  // ── Full-screen board (overlays handle win / lose on top of it) ─────────
   return (
     <div className="ctn-board-root game-board ctn-fullbleed" data-victory={gameWon || undefined}>
       <InteractiveBoard
@@ -290,7 +225,6 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
         edges={edges}
         startId={artist1.id}
         targetId={artist2.id}
-        isVictory={gameWon}
         onOpenInfo={setInfoNode}
         boardApiRef={boardApiRef}
       />
@@ -347,7 +281,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
           <span className="ctn-stat-sep" />
           <div className="ctn-stat"><span className="ctn-stat-label">My Best Path</span>
             {optimalSteps != null
-              ? <span className="ctn-stat-value">{optimalSteps}</span>
+              ? <span className={`ctn-stat-value${atPar ? ' is-par' : ''}`}>{optimalSteps}</span>
               : <span className="ctn-stat-value ctn-unknown">???</span>}
           </div>
         </div>
@@ -364,7 +298,6 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
               autoComplete="off"
               autoCorrect="off"
               spellCheck="false"
-              autoFocus
             />
             {guess && <button type="button" className="ctn-input-clear" onClick={handleClearGuess}><X size={16} /></button>}
           </div>
@@ -374,6 +307,55 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
       </div>
 
       {infoNode && <InfoModal node={infoNode} onClose={() => setInfoNode(null)} />}
+
+      {/* Win overlay — board stays mounted behind it (data-victory glow). */}
+      {gameWon && (
+        <div className="ctn-overlay win">
+          <div className="ctn-win-fireworks">
+            {[...Array(14)].map((_, i) => (
+              <div key={i} className="firework" style={{ '--delay': `${i * 0.13}s`, '--x': `${(i * 37) % 100}%`, '--y': `${(i * 23) % 70}%` }} />
+            ))}
+          </div>
+          <h2 className="ctn-overlay-title">Connected!</h2>
+          <p className="ctn-overlay-sub">
+            You linked {artist1.name} to {artist2.name} in {used} song{used !== 1 ? 's' : ''}
+            {timedMode && <span className="ctn-win-time"> · {fmtTime(timeSpent)}</span>}
+          </p>
+          {rating && (
+            <div className="ctn-overlay-par">
+              <span className="rating">{rating}</span>
+              {optimalSteps != null && <span className="detail">You: {used} · Best possible: {optimalSteps}</span>}
+            </div>
+          )}
+          <div className="ctn-overlay-actions">
+            <button className="ctn-btn-primary" onClick={handleRestart}>Play Again</button>
+            <button className="ctn-btn-secondary" onClick={handleShare}><Share2 size={16} /> {copied ? 'Copied!' : 'Share'}</button>
+            <button className="ctn-btn-secondary" onClick={onBack}>New Game</button>
+          </div>
+        </div>
+      )}
+
+      {/* Lose / give-up overlay */}
+      {(gameLost || gaveUp) && (
+        <div className="ctn-overlay lose">
+          <XCircle size={56} className="ctn-lose-icon" />
+          <h2 className="ctn-overlay-title">{gaveUp ? 'Solution Revealed' : "Time's Up!"}</h2>
+          <p className="ctn-overlay-sub">
+            {gaveUp
+              ? `One way to connect ${artist1.name} and ${artist2.name}${optimalSteps != null ? ` in ${optimalSteps} songs` : ''}:`
+              : `You ran out of time connecting ${artist1.name} to ${artist2.name}.`}
+          </p>
+          {gaveUp && solutionWeb && (
+            <div className="ctn-overlay-solution">
+              <ConstellationGraph found={solutionWeb.found} edges={solutionWeb.edges} startId={artist1.id} targetId={artist2.id} isVictory />
+            </div>
+          )}
+          <div className="ctn-overlay-actions">
+            <button className="ctn-btn-primary" onClick={handleRestart}>Try Again</button>
+            <button className="ctn-btn-secondary" onClick={onBack}>New Game</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
