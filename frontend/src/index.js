@@ -1,4 +1,4 @@
-// build marker: art-comfy (partitura bg + polaroid selection cards)
+// build marker: art-comfy (partitura + polaroid cards) — retrigger 2
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.css";
