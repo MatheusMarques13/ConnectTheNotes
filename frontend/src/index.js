@@ -1,4 +1,4 @@
-// build marker: full-screen pan/zoom/drag constellation board (retrigger 3)
+// build marker: art-comfy (partitura bg + polaroid selection cards)
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.css";
