@@ -18,24 +18,30 @@ const iconMap = {
   'radio': Radio,
 };
 
-const ArtistAvatar = ({ artist, genre }) => {
+const hashStr = (s) => { let h = 0; const str = String(s || ''); for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0; return h; };
+
+// Solid polaroid (photo + name caption) held by a solid post-it sticker.
+const ArtistPolaroid = ({ artist }) => {
   const [imgLoaded, setImgLoaded] = useState(false);
-  const imageUrl = getAvatarUrl(artist, 128);
+  const imageUrl = getAvatarUrl(artist, 256);
   const name = typeof artist === 'string' ? artist : artist?.name || 'Unknown';
   const initials = name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  const tone = hashStr(artist?.id || name) % 5;
 
   return (
-    <div className="artist-avatar-ring" style={{ borderColor: getGenreColor(genre) }}>
-      <img
-        src={imageUrl}
-        alt={name}
-        className={`artist-avatar-img ${imgLoaded ? 'loaded' : ''}`}
-        onLoad={() => setImgLoaded(true)}
-        onError={(e) => { e.target.style.display = 'none'; }}
-      />
-      {!imgLoaded && (
-        <span className="artist-initials-fallback">{initials}</span>
-      )}
+    <div className={`artist-polaroid tone-${tone}`}>
+      <span className="artist-postit" />
+      <div className="artist-polaroid-photo">
+        <img
+          src={imageUrl}
+          alt={name}
+          className={`artist-avatar-img ${imgLoaded ? 'loaded' : ''}`}
+          onLoad={() => setImgLoaded(true)}
+          onError={(e) => { e.target.style.display = 'none'; }}
+        />
+        {!imgLoaded && <span className="artist-initials-fallback">{initials}</span>}
+      </div>
+      <div className="artist-polaroid-cap">{name}</div>
     </div>
   );
 };
@@ -161,14 +167,12 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
   };
 
   return (
-    <div className="artist-card">
+    <div className={`artist-card${artist ? ' has-artist' : ''}`}>
       <div className="card-number">{number}</div>
       <div className="card-image-area">
         {artist ? (
           <div className="artist-selected">
-            <div className="artist-avatar-wrapper">
-              <ArtistAvatar artist={artist} genre={artist.genre} />
-            </div>
+            <ArtistPolaroid artist={artist} />
             <button className="clear-btn" onClick={handleClear}>
               <X size={14} />
             </button>
@@ -181,7 +185,6 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
       </div>
       {artist ? (
         <div className="artist-info">
-          <div className="artist-name-display">{artist.name}</div>
           <div className="artist-genre">
             {renderGenreBadge(artist.genre)}
             {artist.genre}
