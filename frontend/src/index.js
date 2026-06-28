@@ -1,4 +1,4 @@
-// build marker: modo mynd (definitive rebrand) — production
+// build marker: modo mynd — polaroid + turntable + dark mode (production)
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.css";
