@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { ArrowLeft, ArrowRight, Music, Disc, Radio, Mic2, RotateCcw, Lightbulb, Check, Loader2, Clock, XCircle, Search, X, Flag, Share2 } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Music, Disc, Disc3, Radio, Mic2, Tv, Film, RotateCcw, Lightbulb, Check, Loader2, Clock, XCircle, Search, X, Flag, Share2 } from 'lucide-react';
 import {
   getArtistSongs,
   findConnection,
@@ -11,14 +11,22 @@ import ConstellationGraph from './ConstellationGraph';
 const typeIcons = {
   song: <Music size={14} />,
   album: <Disc size={14} />,
+  ep: <Disc3 size={14} />,
+  mixtape: <Disc3 size={14} />,
   live: <Radio size={14} />,
+  dvd: <Tv size={14} />,
+  video: <Film size={14} />,
   feature: <Mic2 size={14} />,
 };
 
 const typeLabels = {
   song: 'Song',
   album: 'Album',
-  live: 'Live Performance',
+  ep: 'EP',
+  mixtape: 'Mixtape',
+  live: 'Live',
+  dvd: 'DVD',
+  video: 'Music Video',
   feature: 'Feature',
 };
 
