@@ -1,18 +1,44 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { ChevronLeft, HelpCircle, Crosshair, Plus, Minus, MousePointerClick, Hand, ZoomIn, Music2, CornerDownLeft, AlertCircle, RotateCcw, Lightbulb, Loader2, Clock, XCircle, X, Flag, Share2 } from 'lucide-react';
+import { ChevronLeft, HelpCircle, Crosshair, Plus, Minus, MousePointerClick, Hand, ZoomIn, Music2, CornerDownLeft, AlertCircle, RotateCcw, Lightbulb, Loader2, Clock, XCircle, X, Flag, Share2, Moon, Sun } from 'lucide-react';
 import { nameSong, findConnection } from '../services/api';
 import ConstellationGraph from './ConstellationGraph';
 import InteractiveBoard from './InteractiveBoard';
 import InfoModal from './InfoModal';
 import MyndLogo from './MyndLogo';
+import { useI18n } from '../i18n';
 
-const parLabel = (used, optimal) => {
+const parKey = (used, optimal) => {
   if (optimal == null) return null;
-  if (used <= optimal) return 'Perfect — optimal path!';
-  if (used <= optimal + 1) return 'Great';
-  if (used <= optimal + 3) return 'Nice';
-  return 'Connected';
+  if (used <= optimal) return 'rating_perfect';
+  if (used <= optimal + 1) return 'rating_great';
+  if (used <= optimal + 3) return 'rating_nice';
+  return 'rating_connected';
 };
+
+// The path the player actually used to link the two stars: BFS over the named
+// songs, returning start + alternating song→artist steps ending at the target.
+function victoryTrail(edges, startId, targetId, artistById) {
+  const adj = {};
+  for (const e of edges) {
+    const ids = e.artistIds;
+    for (let i = 0; i < ids.length; i++) for (let j = 0; j < ids.length; j++) {
+      if (i === j) continue;
+      (adj[ids[i]] = adj[ids[i]] || []).push({ to: ids[j], song: e.song });
+    }
+  }
+  const prev = { [startId]: null };
+  const q = [startId]; let qi = 0;
+  while (qi < q.length) {
+    const cur = q[qi++];
+    if (cur === targetId) break;
+    for (const { to, song } of adj[cur] || []) if (!(to in prev)) { prev[to] = { from: cur, song }; q.push(to); }
+  }
+  if (!(targetId in prev)) return null;
+  const steps = [];
+  let cur = targetId;
+  while (prev[cur]) { steps.unshift({ song: prev[cur].song, artist: artistById[cur] }); cur = prev[cur].from; }
+  return { start: artistById[startId], steps };
+}
 
 // Are two artists connected through the songs the player has named?
 function connected(edges, a, b) {
@@ -57,7 +83,8 @@ const GameTimer = ({ timeRemaining, timeLimit, isWarning, isCritical }) => {
   );
 };
 
-const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowToPlay, showHints, onWin, onLose, showGenres = true, timedMode, timeLimit, difficulty }) => {
+const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowToPlay, showHints, onWin, onLose, showGenres = true, timedMode, timeLimit, difficulty, darkMode, onToggleDark }) => {
+  const { t } = useI18n();
   // The "web": the artists you've uncovered, and the songs you've named to link
   // them. Both endpoints are in play from the start — name a song by any of
   // them (or anyone you reveal) to grow the web until the two ends meet.
@@ -65,6 +92,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
   const [edges, setEdges] = useState([]);
   const [guess, setGuess] = useState('');
   const [guessError, setGuessError] = useState('');
+  const [suggestion, setSuggestion] = useState(null);
 
   const [gameWon, setGameWon] = useState(false);
   const [gameLost, setGameLost] = useState(false);
@@ -129,17 +157,23 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
 
   const focusInput = () => { if (searchRef.current) searchRef.current.focus(); };
 
-  const handleGuessSubmit = async (e) => {
-    if (e) e.preventDefault();
-    const raw = guess.trim();
+  const tryName = async (raw) => {
     if (!raw) return;
     const res = await nameSong([...foundIds], raw);
     if (!res) {
-      setGuessError(`No collaboration called “${raw}” by anyone you've found. Try another song.`);
+      setSuggestion(null);
+      setGuessError(t('no_collab', { q: raw }));
+      return;
+    }
+    if (res.suggestion) {
+      // typed almost right — offer the real title
+      setSuggestion(res.suggestion);
+      setGuessError('');
       return;
     }
     if (edges.some((ed) => ed.song.id === res.song.id)) {
-      setGuessError(`You've already played “${res.song.title}”.`);
+      setSuggestion(null);
+      setGuessError(t('already_played', { title: res.song.title }));
       return;
     }
     const newArtists = res.artists.filter((a) => !foundIds.has(a.id));
@@ -148,6 +182,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
     setFound((prev) => [...prev, ...newArtists]);
     setGuess('');
     setGuessError('');
+    setSuggestion(null);
     if (connected(newEdges, artist1.id, artist2.id)) {
       setGameWon(true);
       if (timerRef.current) clearInterval(timerRef.current);
@@ -155,7 +190,10 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
     }
   };
 
-  const handleClearGuess = () => { setGuess(''); setGuessError(''); focusInput(); };
+  const handleGuessSubmit = (e) => { if (e) e.preventDefault(); tryName(guess.trim()); };
+  const acceptSuggestion = () => { if (suggestion) { setGuess(suggestion); tryName(suggestion); } };
+
+  const handleClearGuess = () => { setGuess(''); setGuessError(''); setSuggestion(null); focusInput(); };
 
   const handleUndo = () => {
     if (!edges.length) return;
@@ -214,7 +252,9 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
   const isWarning = timedMode && timeRemaining <= 30 && timeRemaining > 10;
   const isCritical = timedMode && timeRemaining <= 10;
   const used = edges.length;
-  const rating = parLabel(used, optimalSteps);
+  const ratingKey = parKey(used, optimalSteps);
+  const artistById = useMemo(() => { const m = {}; found.forEach((a) => { m[a.id] = a; }); return m; }, [found]);
+  const trail = gameWon ? victoryTrail(edges, artist1.id, artist2.id, artistById) : null;
   const fmtTime = (s) => { const m = Math.floor(s / 60); const r = s % 60; return m > 0 ? `${m}m ${r}s` : `${r}s`; };
   const atPar = gameWon && optimalSteps != null && used <= optimalSteps;
 
@@ -233,20 +273,21 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
       {/* Top bar */}
       <header className="ctn-topbar">
         <div className="ctn-topbar-left">
-          <button className="ctn-btn-ghost ctn-back" onClick={onBack}><ChevronLeft size={16} /><span>BACK</span></button>
+          <button className="ctn-btn-ghost ctn-back" onClick={onBack}><ChevronLeft size={16} /><span>{t('back')}</span></button>
         </div>
         <div className="ctn-brand">
           <div className="ctn-brand-logo"><MyndLogo className="ctn-brand-gem" size={20} /><span>Connect the Notes</span></div>
           <div className="ctn-brand-sub">
-            CONNECT <span className="ctn-brand-endpoint start">{artist1.name}</span> AND <span className="ctn-brand-endpoint target">{artist2.name}</span>
+            {t('connect')} <span className="ctn-brand-endpoint start">{artist1.name}</span> {t('and')} <span className="ctn-brand-endpoint target">{artist2.name}</span>
           </div>
         </div>
         <div className="ctn-topbar-right">
           {timedMode && <GameTimer timeRemaining={timeRemaining} timeLimit={timeLimit} isWarning={isWarning} isCritical={isCritical} />}
-          {edges.length > 0 && <button className="ctn-btn-ghost ctn-btn-icon" onClick={handleUndo} title="Undo last song"><RotateCcw size={16} /></button>}
-          {showHints && <button className={`ctn-btn-ghost ctn-btn-icon ${showHint ? 'active' : ''}`} onClick={() => setShowHint(!showHint)} title="Hint"><Lightbulb size={16} /></button>}
-          <button className="ctn-btn-ghost ctn-btn-icon" onClick={handleGiveUp} title="Give up & reveal solution" disabled={revealing}>{revealing ? <Loader2 size={16} className="spin-icon" /> : <Flag size={16} />}</button>
-          <button className="ctn-btn-ghost ctn-help" onClick={onHowToPlay}><HelpCircle size={16} /><span>HOW TO PLAY</span></button>
+          {edges.length > 0 && <button className="ctn-btn-ghost ctn-btn-icon" onClick={handleUndo} title={t('undo')}><RotateCcw size={16} /></button>}
+          {showHints && <button className={`ctn-btn-ghost ctn-btn-icon ${showHint ? 'active' : ''}`} onClick={() => setShowHint(!showHint)} title={t('hint')}><Lightbulb size={16} /></button>}
+          <button className="ctn-btn-ghost ctn-btn-icon" onClick={handleGiveUp} title={t('give_up')} disabled={revealing}>{revealing ? <Loader2 size={16} className="spin-icon" /> : <Flag size={16} />}</button>
+          {onToggleDark && <button className="ctn-btn-ghost ctn-btn-icon" onClick={onToggleDark} title={darkMode ? t('light_mode') : t('dark_mode')}>{darkMode ? <Sun size={16} /> : <Moon size={16} />}</button>}
+          <button className="ctn-btn-ghost ctn-help" onClick={onHowToPlay}><HelpCircle size={16} /><span>{t('how_to_play')}</span></button>
         </div>
       </header>
 
@@ -260,9 +301,9 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
 
       {/* Helper hints (bottom-right) */}
       <div className={`ctn-hints${edges.length > 0 ? ' dismissed' : ''}`}>
-        <span className="ctn-hint"><MousePointerClick size={13} />CLICK A CARD FOR MORE INFO</span>
-        <span className="ctn-hint"><Hand size={13} />DRAG THE BOARD OR A CARD</span>
-        <span className="ctn-hint"><ZoomIn size={13} />ZOOM IN / OUT</span>
+        <span className="ctn-hint"><MousePointerClick size={13} />{t('click_card')}</span>
+        <span className="ctn-hint"><Hand size={13} />{t('drag_board')}</span>
+        <span className="ctn-hint"><ZoomIn size={13} />{t('zoom_hint')}</span>
       </div>
 
       {/* Bottom input dock + status */}
@@ -270,17 +311,17 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
         {showHint && (
           <div className="ctn-input-error" style={{ background: 'rgba(184,198,224,.08)', borderColor: 'rgba(184,198,224,.25)', color: 'var(--diamond-light)' }} role="status">
             <Lightbulb size={14} />
-            {hintStatus === 'loading' && <span>Finding a route…</span>}
-            {hintStatus === 'found' && hint && <span>Try a song with <strong>{hint.name}</strong></span>}
-            {hintStatus === 'none' && <span>You've uncovered everyone on the best route — name the song that links them.</span>}
+            {hintStatus === 'loading' && <span>{t('finding_route')}</span>}
+            {hintStatus === 'found' && hint && <span dangerouslySetInnerHTML={{ __html: t('try_song_with', { name: `<strong>${hint.name}</strong>` }) }} />}
+            {hintStatus === 'none' && <span>{t('everyone_found')}</span>}
           </div>
         )}
         <div className="ctn-status">
-          <div className="ctn-stat"><span className="ctn-stat-label">Artists Found</span><span className="ctn-stat-value" key={'a' + found.length}>{found.length}</span></div>
+          <div className="ctn-stat"><span className="ctn-stat-label">{t('artists_found')}</span><span className="ctn-stat-value" key={'a' + found.length}>{found.length}</span></div>
           <span className="ctn-stat-sep" />
-          <div className="ctn-stat"><span className="ctn-stat-label">Songs Found</span><span className="ctn-stat-value" key={'s' + edges.length}>{edges.length}</span></div>
+          <div className="ctn-stat"><span className="ctn-stat-label">{t('songs_found')}</span><span className="ctn-stat-value" key={'s' + edges.length}>{edges.length}</span></div>
           <span className="ctn-stat-sep" />
-          <div className="ctn-stat"><span className="ctn-stat-label">My Best Path</span>
+          <div className="ctn-stat"><span className="ctn-stat-label">{t('best_path')}</span>
             {optimalSteps != null
               ? <span className={`ctn-stat-value${atPar ? ' is-par' : ''}`}>{optimalSteps}</span>
               : <span className="ctn-stat-value ctn-unknown">???</span>}
@@ -293,17 +334,22 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
             <input
               ref={searchRef}
               className="ctn-input"
-              placeholder="Name a song..."
+              placeholder={t('name_a_song')}
               value={guess}
-              onChange={(e) => { setGuess(e.target.value); if (guessError) setGuessError(''); }}
+              onChange={(e) => { setGuess(e.target.value); if (guessError) setGuessError(''); if (suggestion) setSuggestion(null); }}
               autoComplete="off"
               autoCorrect="off"
               spellCheck="false"
             />
             {guess && <button type="button" className="ctn-input-clear" onClick={handleClearGuess}><X size={16} /></button>}
           </div>
-          <button type="submit" className="ctn-input-submit" disabled={!guess.trim()}>PLAY <CornerDownLeft size={16} /></button>
+          <button type="submit" className="ctn-input-submit" disabled={!guess.trim()}>{t('play')} <CornerDownLeft size={16} /></button>
         </form>
+        {suggestion && (
+          <button type="button" className="ctn-suggest" onClick={acceptSuggestion}>
+            {t('did_you_mean')} <strong>“{suggestion}”</strong>? <span className="ctn-suggest-use">{t('use_it')}</span>
+          </button>
+        )}
         {guessError && <div className="ctn-input-error" role="alert"><AlertCircle size={14} /> {guessError}</div>}
       </div>
 
@@ -312,26 +358,41 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
       {/* Win overlay — board stays mounted behind it (data-victory glow). */}
       {gameWon && (
         <div className="ctn-overlay win">
+          <button className="ctn-overlay-close" onClick={onBack} aria-label={t('close')} title={t('close')}><X size={20} /></button>
           <div className="ctn-win-fireworks">
             {[...Array(14)].map((_, i) => (
               <div key={i} className="firework" style={{ '--delay': `${i * 0.13}s`, '--x': `${(i * 37) % 100}%`, '--y': `${(i * 23) % 70}%` }} />
             ))}
           </div>
-          <h2 className="ctn-overlay-title">Connected!</h2>
+          <h2 className="ctn-overlay-title">{t('connected')}</h2>
           <p className="ctn-overlay-sub">
-            You linked {artist1.name} to {artist2.name} in {used} song{used !== 1 ? 's' : ''}
+            {t('you_linked', { a: artist1.name, b: artist2.name, n: used, songs: t(used !== 1 ? 'songs' : 'song') })}
             {timedMode && <span className="ctn-win-time"> · {fmtTime(timeSpent)}</span>}
           </p>
-          {rating && (
+          {trail && (
+            <div className="ctn-trail-wrap">
+              <div className="ctn-trail-label">{t('your_trail')}</div>
+              <div className="ctn-trail">
+                <span className="ctn-trail-artist start">{trail.start?.name}</span>
+                {trail.steps.map((s, i) => (
+                  <React.Fragment key={i}>
+                    <span className="ctn-trail-link"><Music2 size={11} /> {s.song.title}</span>
+                    <span className={`ctn-trail-artist${i === trail.steps.length - 1 ? ' target' : ''}`}>{s.artist?.name}</span>
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+          )}
+          {ratingKey && (
             <div className="ctn-overlay-par">
-              <span className="rating">{rating}</span>
-              {optimalSteps != null && <span className="detail">You: {used} · Best possible: {optimalSteps}</span>}
+              <span className="rating">{t(ratingKey)}</span>
+              {optimalSteps != null && <span className="detail">{t('you_best', { used, best: optimalSteps })}</span>}
             </div>
           )}
           <div className="ctn-overlay-actions">
-            <button className="ctn-btn-primary" onClick={handleRestart}>Play Again</button>
-            <button className="ctn-btn-secondary" onClick={handleShare}><Share2 size={16} /> {copied ? 'Copied!' : 'Share'}</button>
-            <button className="ctn-btn-secondary" onClick={onBack}>New Game</button>
+            <button className="ctn-btn-primary" onClick={handleRestart}>{t('play_again')}</button>
+            <button className="ctn-btn-secondary" onClick={handleShare}><Share2 size={16} /> {copied ? t('copied') : t('share')}</button>
+            <button className="ctn-btn-secondary" onClick={onBack}>{t('new_game')}</button>
           </div>
         </div>
       )}
@@ -339,12 +400,13 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
       {/* Lose / give-up overlay */}
       {(gameLost || gaveUp) && (
         <div className="ctn-overlay lose">
+          <button className="ctn-overlay-close" onClick={onBack} aria-label={t('close')} title={t('close')}><X size={20} /></button>
           <XCircle size={56} className="ctn-lose-icon" />
-          <h2 className="ctn-overlay-title">{gaveUp ? 'Solution Revealed' : "Time's Up!"}</h2>
+          <h2 className="ctn-overlay-title">{gaveUp ? t('solution_revealed') : t('times_up')}</h2>
           <p className="ctn-overlay-sub">
             {gaveUp
-              ? `One way to connect ${artist1.name} and ${artist2.name}${optimalSteps != null ? ` in ${optimalSteps} songs` : ''}:`
-              : `You ran out of time connecting ${artist1.name} to ${artist2.name}.`}
+              ? t('one_way', { a: artist1.name, b: artist2.name, par: optimalSteps != null ? t('in_n_songs', { n: optimalSteps }) : '' })
+              : t('ran_out', { a: artist1.name, b: artist2.name })}
           </p>
           {gaveUp && solutionWeb && (
             <div className="ctn-overlay-solution">
@@ -352,8 +414,8 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
             </div>
           )}
           <div className="ctn-overlay-actions">
-            <button className="ctn-btn-primary" onClick={handleRestart}>Try Again</button>
-            <button className="ctn-btn-secondary" onClick={onBack}>New Game</button>
+            <button className="ctn-btn-primary" onClick={handleRestart}>{t('try_again')}</button>
+            <button className="ctn-btn-secondary" onClick={onBack}>{t('new_game')}</button>
           </div>
         </div>
       )}

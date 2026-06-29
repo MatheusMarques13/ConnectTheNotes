@@ -3191,19 +3191,15 @@ body {
 .artist-polaroid.empty .artist-polaroid-cap { color: #c1b7a1; font-size: 13px; letter-spacing: 1.5px; }
 
 /* solid post-it taped to the polaroid's top-left corner */
+/* flat red pushpin in the polaroid's top-right corner (replaces the post-it) */
 .artist-postit {
-  position: absolute; top: -16px; left: 16px; width: 50px; height: 50px;
-  transform: rotate(-9deg);
-  background: var(--postit, #f6c2d5);
-  box-shadow: 0 7px 12px rgba(44,39,34,.22);
-  z-index: 4;
+  position: absolute; top: -7px; right: 16px; left: auto; width: 16px; height: 16px;
+  transform: none; border-radius: 50%;
+  background: #d6493a;
+  box-shadow: 0 2px 4px rgba(44,39,34,.32);
+  z-index: 5;
 }
-.artist-postit::after { content: ''; position: absolute; inset: 0; background: linear-gradient(155deg, rgba(255,255,255,.32), transparent 48%); }
-.artist-polaroid.tone-0 { --postit: #9ec8f2; } /* blue   */
-.artist-polaroid.tone-1 { --postit: #f4b6cd; } /* pink   */
-.artist-polaroid.tone-2 { --postit: #9fdcbd; } /* mint   */
-.artist-polaroid.tone-3 { --postit: #f5dc97; } /* yellow */
-.artist-polaroid.tone-4 { --postit: #c6b4ee; } /* lilac  */
+.artist-postit::after { display: none; }
 
 /* clear (X) sits on the photo's top-right */
 .artist-card .clear-btn {
@@ -3261,3 +3257,41 @@ body {
 [data-theme="dark"] .top-btn:hover { background: #fffdf8; color: var(--accent); }
 [data-theme="dark"] .surprise-btn { color: #cabfa9; border-color: rgba(255,255,255,.16); }
 [data-theme="dark"] .surprise-btn:hover:not(:disabled) { color: #f2ead9; border-color: rgba(255,255,255,.32); }
+
+/* ════════════════════════════════════════════════════════════════════════
+   BATCH: cobalt font everywhere · title post-it · language switcher
+   ════════════════════════════════════════════════════════════════════════ */
+/* form controls don't inherit font-family — force the cobalt mono everywhere */
+button, input, select, textarea, optgroup { font-family: var(--font-mono); }
+
+/* a paper note pinned behind the home title */
+.title-card {
+  position: relative; display: inline-block; margin: 6px auto 2px;
+  padding: 12px 30px 16px; background: #fffdf8;
+  border: 1px solid var(--border-soft); border-radius: 4px;
+  box-shadow: 0 9px 22px rgba(44,39,34,.12);
+  transform: rotate(-1.1deg);
+}
+.title-card::before {
+  content: ''; position: absolute; top: -8px; left: 50%; transform: translateX(-50%);
+  width: 16px; height: 16px; border-radius: 50%; background: #d6493a;
+  box-shadow: 0 2px 4px rgba(44,39,34,.32); z-index: 2;
+}
+.title-card .main-title { margin: 0; }
+.title-tagline {
+  font-family: var(--font-mono); font-size: 12px; color: var(--text-secondary);
+  text-align: center; margin: 7px 0 0; text-transform: lowercase; letter-spacing: .3px;
+}
+[data-theme="dark"] .title-card { background: #2a2620; border-color: rgba(255,255,255,.08); box-shadow: 0 9px 24px rgba(0,0,0,.4); }
+[data-theme="dark"] .title-card .main-title { color: #f2ead9; }
+[data-theme="dark"] .title-tagline { color: #b9ae98; }
+
+/* language switcher (Options) */
+.lang-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.lang-btn {
+  padding: 7px 13px; border-radius: 9px; border: 1px solid var(--border-soft);
+  background: var(--surface); color: var(--text-secondary);
+  font-family: var(--font-mono); font-size: 12px; cursor: pointer; transition: background-color .15s, color .15s, border-color .15s;
+}
+.lang-btn:hover:not(.active) { background: var(--surface-hover); color: var(--accent); }
+.lang-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }

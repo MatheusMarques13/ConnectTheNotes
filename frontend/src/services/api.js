@@ -2,7 +2,7 @@
 // backend at runtime — everything is computed locally from the embedded dataset.
 // A SONG links artists: a track with N collaborators connects all of them.
 import { ARTISTS, SONGS } from '../data/dataset';
-import { ARTIST_IMAGES, SONG_COVERS } from '../data/images.generated';
+import { ARTIST_IMAGES, SONG_COVERS, SONG_PREVIEWS } from '../data/images.generated';
 
 // ── Indexes ─────────────────────────────────────────────
 const ARTISTS_BY_ID = {};
@@ -25,12 +25,32 @@ const ARTIST_IDS = ARTISTS.map((a) => a.id);
 const DIFFICULTY_BANDS = { easy: [2, 3], medium: [3, 4], hard: [4, 7], any: [2, 7] };
 
 const songCover = (s) => SONG_COVERS[s.id] || s.coverUrl || '';
+const songPreview = (s) => (s && s.id != null ? SONG_PREVIEWS[s.id] : '') || '';
+const songObj = (s) => ({ id: s.id, title: s.title, type: s.type, year: s.year, coverUrl: songCover(s), previewUrl: songPreview(s) });
 const normSong = (s = {}) => ({
+  id: s.id,
   title: s.title || 'Unknown',
   type: s.type || 'song',
   year: s.year || 2024,
   coverUrl: songCover(s),
+  previewUrl: songPreview(s),
 });
+
+// Levenshtein edit distance (tiny strings) — for "did you mean…?" suggestions.
+function lev(a, b) {
+  const m = a.length, n = b.length;
+  if (!m) return n; if (!n) return m;
+  let prev = Array.from({ length: n + 1 }, (_, i) => i);
+  for (let i = 1; i <= m; i++) {
+    let cur = [i];
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost);
+    }
+    prev = cur;
+  }
+  return prev[n];
+}
 
 // ── Graph traversal ─────────────────────────────────────
 function bfsSteps(start, end) {
@@ -162,12 +182,22 @@ export async function nameSong(foundIds, typed) {
     return nt.includes(nq) || (nq.length >= 4 && nq.includes(nt) && nt.length >= 4);
   });
   const pool = exact.length ? exact : partial;
-  if (!pool.length) return null;
-  const s = pool[0];
-  return {
-    song: { id: s.id, title: s.title, type: s.type, year: s.year, coverUrl: songCover(s) },
-    artists: s.artists.map((id) => ARTISTS_BY_ID[id]).filter(Boolean),
-  };
+  if (pool.length) {
+    const s = pool[0];
+    return { song: songObj(s), artists: s.artists.map((id) => ARTISTS_BY_ID[id]).filter(Boolean) };
+  }
+  // Near-miss: the player typed it ALMOST right (a few letters off) — suggest
+  // the real title with a "did you mean…?" so they can confirm.
+  let best = null, bestD = Infinity;
+  for (const s of candidates) {
+    const nt = normTitle(s.title);
+    if (!nt || Math.abs(nt.length - nq.length) > 3) continue;
+    const d = lev(nq, nt);
+    if (d < bestD) { bestD = d; best = s; }
+  }
+  const tol = nq.length <= 5 ? 1 : nq.length <= 9 ? 2 : 3;
+  if (best && bestD <= tol) return { suggestion: best.title };
+  return null;
 }
 
 // Returns { steps, chain, optimalSteps }. steps === null => unreachable.

@@ -1,7 +1,9 @@
 import React from 'react';
-import { X, Palette, RotateCcw, Timer, Zap, Trophy, Clock } from 'lucide-react';
+import { X, Palette, RotateCcw, Timer, Zap, Trophy, Clock, Globe } from 'lucide-react';
+import { useI18n, LANGUAGES } from '../i18n';
 
 const OptionsModal = ({ isOpen, onClose, options, onOptionsChange, difficultyConfig }) => {
+  const { t, lang, setLang } = useI18n();
   if (!isOpen) return null;
 
   const formatTime = (seconds) => {
@@ -17,8 +19,27 @@ const OptionsModal = ({ isOpen, onClose, options, onOptionsChange, difficultyCon
         <button className="modal-close-btn" onClick={onClose}>
           <X size={20} />
         </button>
-        <h2 className="modal-title">Options</h2>
-        
+        <h2 className="modal-title">{t('options')}</h2>
+
+        {/* Language Section */}
+        <div className="options-section">
+          <h3 className="options-section-title">
+            <Globe size={16} />
+            <span>{t('language')}</span>
+          </h3>
+          <div className="lang-grid">
+            {LANGUAGES.map((l) => (
+              <button
+                key={l.code}
+                className={`lang-btn ${lang === l.code ? 'active' : ''}`}
+                onClick={() => setLang(l.code)}
+              >
+                {l.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Game Mode Section */}
         <div className="options-section">
           <h3 className="options-section-title">

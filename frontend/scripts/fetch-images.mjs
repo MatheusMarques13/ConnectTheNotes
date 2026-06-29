@@ -57,15 +57,20 @@ const artistImage = (name) => withRetry(async () => {
   return !url || url.includes("/artist//") ? null : url;
 });
 
-const songCover = (title, artistName) => withRetry(async () => {
+// One lookup gets both the cover art AND a 30s audio preview (Deezer's `preview`
+// MP3). Returns { cover?, preview? } so adding songs auto-gets both.
+const songMedia = (title, artistName) => withRetry(async () => {
   const q = `artist:"${artistName}" track:"${title}"`;
   const hits = await deezer(`search?q=${encodeURIComponent(q)}&limit=1`);
   const hit = hits[0];
-  if (!hit?.album) return null;
+  if (!hit) return null;
   const t = norm(title), ht = norm(hit.title || "");
   if (!(t.includes(ht) || ht.includes(t))) return null;
-  const url = hit.album.cover_big || hit.album.cover_medium || "";
-  return !url || url.includes("/cover//") ? null : url;
+  const out = {};
+  const cover = (hit.album && (hit.album.cover_big || hit.album.cover_medium)) || "";
+  if (cover && !cover.includes("/cover//")) out.cover = cover;
+  if (hit.preview) out.preview = hit.preview;
+  return Object.keys(out).length ? out : null;
 });
 
 async function pacedMap(items, fetchOne) {
@@ -93,18 +98,26 @@ async function run() {
   const songTasks = songs.map((s) => ({ key: s.id, title: s.title, artist: nameById[s.artists[0]] || "" }));
 
   const images = await pacedMap(artistTasks, (t) => artistImage(t.name));
-  const covers = await pacedMap(songTasks, (t) => songCover(t.title, t.artist));
+  const media = await pacedMap(songTasks, (t) => songMedia(t.title, t.artist));
+
+  const covers = {}, previews = {};
+  for (const [k, v] of Object.entries(media.results)) {
+    if (v && v.cover) covers[k] = v.cover;
+    if (v && v.preview) previews[k] = v.preview;
+  }
+  const coverN = Object.keys(covers).length, previewN = Object.keys(previews).length;
 
   const body =
     "// AUTO-GENERATED at build time by scripts/fetch-images.mjs — do not edit.\n" +
     "export const ARTIST_IMAGES = " + JSON.stringify(images.results) + ";\n" +
-    "export const SONG_COVERS = " + JSON.stringify(covers.results) + ";\n";
+    "export const SONG_COVERS = " + JSON.stringify(covers) + ";\n" +
+    "export const SONG_PREVIEWS = " + JSON.stringify(previews) + ";\n";
   await writeFile(OUTPUT, body);
-  console.log(`[images] ${images.ok}/${artistTasks.length} artist photos, ${covers.ok}/${songTasks.length} song covers`);
+  console.log(`[images] ${images.ok}/${artistTasks.length} artist photos, ${coverN} covers, ${previewN} previews`);
 }
 
 run().catch(async (e) => {
   console.warn("[images] fetch step failed, continuing without media:", e?.message);
-  try { await writeFile(OUTPUT, "export const ARTIST_IMAGES = {};\nexport const SONG_COVERS = {};\n"); } catch {}
+  try { await writeFile(OUTPUT, "export const ARTIST_IMAGES = {};\nexport const SONG_COVERS = {};\nexport const SONG_PREVIEWS = {};\n"); } catch {}
   process.exit(0);
 });

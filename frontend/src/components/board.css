@@ -525,3 +525,57 @@
 /* mini-polaroid artist photo: square the corners so it reads as an instant photo */
 .ctn-node-artist .ctn-artist-photo { border-radius: 4px; }
 .ctn-node-artist .ctn-artist-photo img { border-radius: 2px; }
+
+/* ════════════════════════════════════════════════════════════════════════
+   BATCH: victory trail · close button · did-you-mean · audio preview
+   ════════════════════════════════════════════════════════════════════════ */
+/* close (X) on the win / lose overlays — back to the panel */
+.ctn-overlay-close {
+  position: absolute; top: 18px; right: 18px; width: 42px; height: 42px;
+  border-radius: 50%; border: 1px solid var(--border-soft); background: var(--surface);
+  color: var(--text-secondary); display: flex; align-items: center; justify-content: center;
+  cursor: pointer; z-index: 6; transition: background-color .15s, color .15s;
+}
+.ctn-overlay-close:hover { background: var(--surface-hover); color: var(--accent); }
+
+/* the trail the player took to win */
+.ctn-trail-wrap { margin: 4px auto 16px; max-width: 680px; }
+.ctn-trail-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 9px; }
+.ctn-trail { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 4px; }
+.ctn-trail-artist {
+  font-family: var(--font-mono); font-size: 12px; font-weight: 600; padding: 5px 11px;
+  border-radius: 9px; background: #fffdf8; border: 1px solid var(--border-soft); color: var(--text-primary);
+}
+.ctn-trail-artist.start { color: #39598a; border-color: #bcd4f5; background: #eef4fe; }
+.ctn-trail-artist.target { color: #9a4d68; border-color: #f3c6d8; background: #fdeef4; }
+.ctn-trail-link { display: inline-flex; align-items: center; gap: 4px; font-family: var(--font-mono); font-size: 10.5px; color: var(--text-secondary); }
+.ctn-trail-link svg { color: var(--accent); flex-shrink: 0; }
+.ctn-trail-link::before { content: '→'; color: var(--text-muted); }
+.ctn-trail-link::after { content: '→'; color: var(--text-muted); }
+
+/* "did you mean …?" near-miss suggestion under the input */
+.ctn-suggest {
+  display: inline-flex; align-items: center; gap: 7px; margin: 8px auto 0; padding: 8px 14px;
+  border-radius: 11px; border: 1px dashed var(--accent); background: rgba(62,106,212,.08);
+  color: var(--text-primary); font-family: var(--font-mono); font-size: 12px; cursor: pointer;
+}
+.ctn-suggest:hover { background: rgba(62,106,212,.15); }
+.ctn-suggest-use { color: var(--accent); font-weight: 600; text-decoration: underline; }
+
+/* 30s audio preview button in the song info popover */
+.ctn-preview { margin: 6px 0 14px; display: flex; justify-content: center; }
+.ctn-preview-btn {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 999px;
+  border: 1px solid var(--accent); background: rgba(62,106,212,.08); color: var(--accent);
+  font-family: var(--font-mono); font-size: 12px; font-weight: 600; cursor: pointer;
+}
+.ctn-preview-btn:hover { background: rgba(62,106,212,.16); }
+.ctn-preview-eq { display: none; align-items: flex-end; gap: 2px; height: 12px; }
+.ctn-preview-btn.playing .ctn-preview-eq { display: inline-flex; }
+.ctn-preview-eq i { width: 2.5px; background: var(--accent); border-radius: 1px; transform-origin: bottom; animation: ctnEq .8s ease-in-out infinite; }
+.ctn-preview-eq i:nth-child(1) { height: 5px; animation-delay: 0s; }
+.ctn-preview-eq i:nth-child(2) { height: 11px; animation-delay: .15s; }
+.ctn-preview-eq i:nth-child(3) { height: 7px; animation-delay: .3s; }
+.ctn-preview-eq i:nth-child(4) { height: 10px; animation-delay: .45s; }
+@keyframes ctnEq { 0%, 100% { transform: scaleY(.4); } 50% { transform: scaleY(1); } }
+.ctn-preview-none { margin: 6px 0 14px; font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); }

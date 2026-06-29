@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Search, Shuffle, X, Music, Mic2, Disc3, Guitar, Heart, Sparkles, Flame, Trees, Sun, Cloud, Star, Radio } from 'lucide-react';
 import { searchArtists, getRandomArtist } from '../services/api';
 import { getGenreIcon, getGenreColor, getAvatarUrl } from '../utils/avatars';
+import { useI18n } from '../i18n';
 
 const iconMap = {
   'music': Music,
@@ -24,6 +25,7 @@ const hashStr = (s) => { let h = 0; const str = String(s || ''); for (let i = 0;
 // bottom border. Empty until an artist is picked — the photo only loads on
 // selection.
 const ArtistPolaroid = ({ artist, number }) => {
+  const { t } = useI18n();
   const [imgLoaded, setImgLoaded] = useState(false);
   const hasArtist = !!artist;
   const name = typeof artist === 'string' ? artist : artist?.name || '';
@@ -51,7 +53,7 @@ const ArtistPolaroid = ({ artist, number }) => {
           <span className="polaroid-empty-mark"><Music size={44} strokeWidth={1.3} /></span>
         )}
       </div>
-      <div className="artist-polaroid-cap">{hasArtist ? name : `artist ${number}`}</div>
+      <div className="artist-polaroid-cap">{hasArtist ? name : t('artist_n', { n: number })}</div>
     </div>
   );
 };
@@ -77,6 +79,7 @@ const SearchResultAvatar = ({ artist }) => {
 };
 
 const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
+  const { t } = useI18n();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -176,7 +179,7 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
             <input
               ref={inputRef}
               type="text"
-              placeholder="Enter an artist's name"
+              placeholder={t('enter_artist')}
               value={query}
               onChange={(e) => handleSearch(e.target.value)}
               className="search-input"
@@ -206,7 +209,7 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
           )}
           <button className="choose-for-me-btn" onClick={handleRandom} disabled={loading}>
             <Shuffle size={14} />
-            <span>{loading ? 'PICKING...' : 'CHOOSE FOR ME'}</span>
+            <span>{loading ? t('picking') : t('choose_for_me')}</span>
           </button>
         </div>
       )}

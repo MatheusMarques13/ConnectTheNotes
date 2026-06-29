@@ -10,6 +10,7 @@ import GameBoard from "./components/GameBoard";
 import MyndLogo from "./components/MyndLogo";
 import { Info, Settings, Sparkles, Loader2, Calendar, Flame, Moon, Sun } from "lucide-react";
 import { getStats, findConnection, getRandomPair, getDailyPuzzle } from "./services/api";
+import { I18nProvider, useI18n } from "./i18n";
 
 const DIFFICULTY_CONFIG = {
   easy: { timeLimit: 300, hintsEnabled: true, label: 'Easy', description: '5 min, hints on' },
@@ -62,6 +63,7 @@ function MainApp() {
   const [options, setOptions] = useState(loadOptions);
   const [stats, setStats] = useState({ totalArtists: 0, totalSongs: 0 });
   const [daily, setDaily] = useState(null);
+  const { t } = useI18n();
 
   const today = localDateStr();
   const dailyDoneToday = options.lastDailyDate === today;
@@ -180,7 +182,7 @@ function MainApp() {
           <div className="top-bar">
             <button className="top-btn" onClick={() => setShowHowToPlay(true)}>
               <Info size={18} />
-              <span>HOW TO PLAY</span>
+              <span>{t('how_to_play')}</span>
             </button>
 
             <div className="top-bar-right">
@@ -194,7 +196,7 @@ function MainApp() {
               </button>
               <button className="top-btn" onClick={() => setShowOptions(true)}>
                 <Settings size={18} />
-                <span>OPTIONS</span>
+                <span>{t('options')}</span>
               </button>
             </div>
           </div>
@@ -203,8 +205,11 @@ function MainApp() {
             <div className="logo-diamond">
               <MyndLogo className="diamond-svg" />
             </div>
-            <h1 className="main-title">Connect the Notes</h1>
-            <p className="subtitle">CHOOSE TWO ARTISTS</p>
+            <div className="title-card">
+              <h1 className="main-title">Connect the Notes</h1>
+              <p className="title-tagline">{t('tagline')}</p>
+            </div>
+            <p className="subtitle">{t('choose_two')}</p>
           </div>
 
           {/* Daily Puzzle */}
@@ -212,7 +217,7 @@ function MainApp() {
             <div className="daily-banner">
               <div className="daily-banner-head">
                 <Calendar size={15} />
-                <span>TODAY'S PUZZLE</span>
+                <span>{t('todays_puzzle')}</span>
                 {options.dailyStreak > 0 && (
                   <span className="daily-streak"><Flame size={13} /> {options.dailyStreak}</span>
                 )}
@@ -226,12 +231,12 @@ function MainApp() {
                 className={`daily-play-btn ${dailyDoneToday ? 'done' : ''}`}
                 onClick={handlePlayDaily}
               >
-                {dailyDoneToday ? '✓ PLAY AGAIN' : 'PLAY TODAY'}
+                {dailyDoneToday ? `✓ ${t('play_again')}` : t('play_today')}
               </button>
             </div>
           )}
 
-          <div className="freeplay-label">OR PLAY FREELY</div>
+          <div className="freeplay-label">{t('or_play_freely')}</div>
 
           <div className="cards-container">
             <ArtistCard
@@ -259,16 +264,16 @@ function MainApp() {
               disabled={!artist1 || !artist2 || checking}
             >
               <span className="btn-diamond" />
-              {checking ? 'CHECKING…' : 'START GAME'}
+              {checking ? `${t('picking')}` : t('start_game')}
             </button>
             <button className="surprise-btn" onClick={handleSurprise} disabled={surprising}>
               {surprising ? <Loader2 size={16} className="spin-icon" /> : <Sparkles size={16} />}
-              <span>{surprising ? 'PICKING…' : 'SURPRISE ME'}</span>
+              <span>{surprising ? t('picking') : t('surprise_me')}</span>
             </button>
           </div>
 
           <div className="footer-stats">
-            {stats.totalArtists} ARTISTS · {stats.totalSongs} SONGS
+            {t('footer_stats', { artists: stats.totalArtists, songs: stats.totalSongs })}
           </div>
         </div>
       ) : (
@@ -286,6 +291,8 @@ function MainApp() {
           timedMode={options.timedMode}
           timeLimit={getGameSettings().timeLimit}
           difficulty={options.difficulty}
+          darkMode={options.darkMode}
+          onToggleDark={() => setOptions(o => ({ ...o, darkMode: !o.darkMode }))}
         />
       )}
 
@@ -303,12 +310,14 @@ function MainApp() {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainApp />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </BrowserRouter>
+    <I18nProvider>
+      <BrowserRouter basename={process.env.PUBLIC_URL || '/'}>
+        <Routes>
+          <Route path="/" element={<MainApp />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </BrowserRouter>
+    </I18nProvider>
   );
 }
 
