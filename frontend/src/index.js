@@ -1,4 +1,4 @@
-// build marker: modo mynd — batch (trail, i18n, audio, fonts) → production [deploy]
+// build marker: modo mynd batch -> production (retrigger 2)
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.css";
