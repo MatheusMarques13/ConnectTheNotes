@@ -189,7 +189,11 @@ export async function nameSong(foundIds, typed) {
     const distinct = [];
     for (const s of pool) { if (!seen.has(s.id)) { seen.add(s.id); distinct.push(s); } }
     const mk = (s) => ({ song: songObj(s), artists: s.artists.map((id) => ARTISTS_BY_ID[id]).filter(Boolean) });
-    if (distinct.length > 1) return { options: distinct.map(mk) };
+    if (distinct.length > 1) {
+      // most artists first (the "main" version), then most recent; cap the list.
+      distinct.sort((a, b) => (b.artists.length - a.artists.length) || ((b.year || 0) - (a.year || 0)));
+      return { options: distinct.slice(0, 6).map(mk) };
+    }
     return mk(distinct[0]);
   }
   // Near-miss: the player typed it ALMOST right (a few letters off) — suggest

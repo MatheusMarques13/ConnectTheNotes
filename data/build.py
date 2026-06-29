@@ -12,6 +12,7 @@ Run:  python data/build.py
 """
 import json
 import os
+import re
 import sys
 from collections import deque, OrderedDict
 
@@ -26,25 +27,41 @@ def slug(n):
     return f"a{n}"
 
 
+def _songkey(t):
+    return re.sub(r"\s+", " ", (t or "").strip()).lower()
+
+
+def _better_title(a, b):
+    # Prefer a title that uses mixed case over ALL-CAPS / all-lowercase variants.
+    def score(s):
+        letters = [c for c in s if c.isalpha()]
+        if not letters:
+            return 0
+        return 2 if (any(c.isupper() for c in letters) and any(c.islower() for c in letters)) else 1
+    return b if score(b) > score(a) else a
+
+
 def build():
     artists = [{"id": slug(i), "name": n, "genre": g, "imageUrl": ""} for (i, n, g) in ARTISTS]
     by_id = {a["id"]: a for a in artists}
 
-    # Merge collaborations that are the same track (title, type, year) into one
-    # song crediting every artist on it.
-    grouped = OrderedDict()  # (title, type, year) -> ordered set of artist slugs
+    # Group collaboration edges by (normalized title, type, year) — case/spacing
+    # insensitive, so "SICKO MODE" / "Sicko Mode" / "sicko mode" don't become
+    # separate songs.
+    groups = OrderedDict()   # key -> list of (s1, s2) edges
+    titles = {}              # key -> canonical display title
     for a1, a2, title, ctype, year in COLLABORATIONS:
         s1, s2 = slug(a1), slug(a2)
         if s1 not in by_id or s2 not in by_id or s1 == s2:
             continue
-        key = (title, ctype, year)
-        members = grouped.setdefault(key, OrderedDict())
-        members[s1] = True
-        members[s2] = True
+        key = (_songkey(title), ctype, year)
+        groups.setdefault(key, []).append((s1, s2))
+        titles[key] = title if key not in titles else _better_title(titles[key], title)
 
     songs = []
-    for (title, ctype, year), members in grouped.items():
-        ids = list(members.keys())
+    for key, edges in groups.items():
+        ctype, year, title = key[1], key[2], titles[key]
+        ids = list(OrderedDict((s, True) for e in edges for s in e).keys())
         if len(ids) < 2:
             continue
         songs.append({
