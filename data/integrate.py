@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -20,7 +21,10 @@ OUT = os.path.join(HERE, "source_data.py")
 
 
 def norm(n):
-    return re.sub(r"[^a-z0-9]", "", (n or "").lower())
+    # Accent-insensitive: "Beyoncé" == "Beyonce", "Sơn Tùng" == "Son Tung".
+    s = unicodedata.normalize("NFKD", (n or "").lower())
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]", "", s)
 
 
 def main(path):
