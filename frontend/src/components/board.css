@@ -496,29 +496,31 @@
 .ctn-stat-value.is-par { color: var(--accent-mint); }
 .ctn-stat-value.ctn-unknown { color: var(--text-muted); }
 
-/* solid pushpin colour per tone */
+/* pin colour per tone (solid, flat) */
 .ctn-tone-0 { --pin: #6c96d4; }
 .ctn-tone-1 { --pin: #e08aac; }
 .ctn-tone-2 { --pin: #5fb98c; }
 .ctn-tone-3 { --pin: #d3b145; }
 .ctn-tone-4 { --pin: #9a82d0; }
+.ctn-node-artist.is-start { --pin: #5c87cf; }
+.ctn-node-artist.is-target { --pin: #d77fa0; }
 
-/* solid pushpin ("alfinete") — replaces the translucent washi tape and pins the
-   card onto the wooden board */
+/* flat pushpin ("alfinete") in the top-right corner — no 3D, just a solid dot
+   with a soft shadow, pinning the card to the wooden board */
 .ctn-artist-note::before,
 .ctn-song-card::before {
-  content: ''; position: absolute; top: -10px; left: 50%;
-  transform: translateX(-50%); width: 17px; height: 17px; border-radius: 50%;
+  content: ''; position: absolute; top: -6px; right: 11px; left: auto;
+  transform: none; width: 13px; height: 13px; border-radius: 50%;
   z-index: 6; border: none;
-  background:
-    radial-gradient(circle at 36% 30%, #ffffff 0%, var(--pin, #6c96d4) 48%, rgba(60,40,18,.5) 128%);
-  box-shadow: 0 3px 5px rgba(44,39,34,.36), 0 1px 1px rgba(44,39,34,.22);
+  background: #d6493a;                       /* classic warm-red pushpin, flat */
+  box-shadow: 0 2px 3px rgba(44,39,34,.3);
 }
-.ctn-song-card::before { width: 16px; height: 16px; top: -9px; }
+.ctn-song-card::before { right: 13px; width: 13px; height: 13px; }
 
-/* start / target artists keep their identity tag instead of a pin */
+/* every card is pinned now (start / target included; the tag sits centred, the
+   pin in the corner — no clash) */
 .ctn-node-artist.is-start .ctn-artist-note::before,
-.ctn-node-artist.is-target .ctn-artist-note::before { display: none; }
+.ctn-node-artist.is-target .ctn-artist-note::before { display: block; }
 
 /* mini-polaroid artist photo: square the corners so it reads as an instant photo */
 .ctn-node-artist .ctn-artist-photo { border-radius: 4px; }
