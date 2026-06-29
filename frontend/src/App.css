@@ -3109,8 +3109,10 @@ body {
 /* daily banner */
 .daily-banner { background: #fffdf8; border: 1px solid var(--border-soft); box-shadow: 0 6px 20px rgba(44,39,34,.08); }
 .daily-streak { color: var(--accent-warm); }
-.daily-play-btn { background: var(--accent); border: none; color: #fff; }
-.daily-play-btn:hover { background: #3560bf; box-shadow: none; }
+.daily-play-btn { background: #cfe0ff; border: 1px solid #b9d0fb; color: #2f4f9e; font-weight: 700; }
+.daily-play-btn:hover { background: #bcd4ff; box-shadow: none; }
+.daily-play-btn.done { background: #f4dceb; border-color: #f0c8de; color: #9a5f80; }
+.daily-pair { font-weight: 700; }
 .daily-play-btn.done { background: var(--surface); color: var(--text-secondary); }
 
 /* modals */

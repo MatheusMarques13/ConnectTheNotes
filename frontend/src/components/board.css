@@ -597,3 +597,31 @@
 .ctn-song-play:hover { transform: scale(1.09); background: #c5283d; }
 .ctn-song-play.playing { background: #c5283d; border-color: #fff; box-shadow: 0 0 0 3px rgba(197,40,61,.28); }
 .ctn-song-play svg { display: block; }
+
+/* ── Comfy victory card (white / dark) with alternating pastel edge ─────── */
+.ctn-win-card {
+  position: relative; width: min(92vw, 560px); margin: 0 auto;
+  padding: 34px 30px 26px; background: #fffdf8;
+  border: 2px solid var(--win-edge, #b9d0fb); border-radius: 22px;
+  box-shadow: 0 26px 64px rgba(44,39,34,.30), 0 0 0 6px rgba(255,255,255,.45);
+  animation: ctnFadeIn .35s ease;
+}
+.ctn-win-card.tone-blue { --win-edge: #b9d0fb; box-shadow: 0 26px 64px rgba(44,39,34,.30), 0 0 0 6px rgba(185,208,251,.30); }
+.ctn-win-card.tone-pink { --win-edge: #f4bcd3; box-shadow: 0 26px 64px rgba(44,39,34,.30), 0 0 0 6px rgba(244,188,211,.32); }
+.ctn-win-card .ctn-overlay-title { font-size: clamp(34px, 6vw, 50px); }
+.ctn-win-card .ctn-trail-wrap { max-width: 100%; }
+[data-theme="dark"] .ctn-win-card { background: #14110c; box-shadow: 0 26px 64px rgba(0,0,0,.55), 0 0 0 6px rgba(255,255,255,.06); }
+[data-theme="dark"] .ctn-win-card .ctn-overlay-title { color: #f5eee0; }
+[data-theme="dark"] .ctn-win-card .ctn-overlay-sub { color: #c9bca4; }
+
+/* floating button to reopen the result after peeking at the board */
+.ctn-show-result {
+  position: fixed; top: 72px; left: 50%; transform: translateX(-50%); z-index: 55;
+  display: inline-flex; align-items: center; gap: 7px; padding: 9px 18px;
+  border-radius: 999px; cursor: pointer; background: #fffdf8; color: #3a342c;
+  border: 2px solid #b9d0fb; box-shadow: 0 8px 22px rgba(44,39,34,.18);
+  font-family: var(--font-mono); font-size: 12px; font-weight: 700; letter-spacing: 1px;
+  animation: ctnFadeIn .3s ease;
+}
+.ctn-show-result:hover { background: #fff; box-shadow: 0 10px 26px rgba(44,39,34,.26); }
+[data-theme="dark"] .ctn-show-result { background: #14110c; color: #f5eee0; border-color: #f4bcd3; }

@@ -98,6 +98,11 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
   const [gameWon, setGameWon] = useState(false);
   const [gameLost, setGameLost] = useState(false);
   const [gaveUp, setGaveUp] = useState(false);
+  const [victoryHidden, setVictoryHidden] = useState(false);  // peek at the board after winning
+
+  // Stop any playing preview when the player leaves the game (the victory
+  // overlay keeps the board mounted, so the celebration song keeps playing).
+  useEffect(() => () => preview.stopAll(), []);
   const [solutionWeb, setSolutionWeb] = useState(null);
   const [revealing, setRevealing] = useState(false);
 
@@ -228,6 +233,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
     setGameWon(false);
     setGameLost(false);
     setGaveUp(false);
+    setVictoryHidden(false);
     setSolutionWeb(null);
     setShowHint(false);
     setTimeRemaining(timeLimit || 0);
@@ -359,14 +365,15 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
       {infoNode && <InfoModal node={infoNode} onClose={() => setInfoNode(null)} />}
 
       {/* Win overlay — board stays mounted behind it (data-victory glow). */}
-      {gameWon && (
+      {gameWon && !victoryHidden && (
         <div className="ctn-overlay win">
-          <button className="ctn-overlay-close" onClick={onBack} aria-label={t('close')} title={t('close')}><X size={20} /></button>
           <div className="ctn-win-fireworks">
             {[...Array(14)].map((_, i) => (
               <div key={i} className="firework" style={{ '--delay': `${i * 0.13}s`, '--x': `${(i * 37) % 100}%`, '--y': `${(i * 23) % 70}%` }} />
             ))}
           </div>
+          <div className={`ctn-win-card tone-${used % 2 ? 'pink' : 'blue'}`}>
+          <button className="ctn-overlay-close" onClick={onBack} aria-label={t('close')} title={t('close')}><X size={20} /></button>
           <h2 className="ctn-overlay-title">{t('connected')}</h2>
           <p className="ctn-overlay-sub">
             {t('you_linked', { a: artist1.name, b: artist2.name, n: used, songs: t(used !== 1 ? 'songs' : 'song') })}
@@ -394,10 +401,15 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
           )}
           <div className="ctn-overlay-actions">
             <button className="ctn-btn-primary" onClick={handleRestart}>{t('play_again')}</button>
+            <button className="ctn-btn-secondary" onClick={() => setVictoryHidden(true)}>{t('back_to_board')}</button>
             <button className="ctn-btn-secondary" onClick={handleShare}><Share2 size={16} /> {copied ? t('copied') : t('share')}</button>
             <button className="ctn-btn-secondary" onClick={onBack}>{t('new_game')}</button>
           </div>
+          </div>
         </div>
+      )}
+      {gameWon && victoryHidden && (
+        <button className="ctn-show-result" onClick={() => setVictoryHidden(false)}>🏆 {t('view_result')}</button>
       )}
 
       {/* Lose / give-up overlay */}
