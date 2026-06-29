@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { X, Music2, Disc, Disc3, Radio, Tv, Film, Mic2, Play, Pause } from 'lucide-react';
-import { getLargeAvatarUrl, getSmallAvatarUrl } from '../utils/avatars';
+import { getSmallAvatarUrl } from '../utils/avatars';
+import { useArtistImage } from '../utils/useArtistImage';
 import * as preview from '../utils/preview';
 import { useI18n } from '../i18n';
 
@@ -14,6 +15,7 @@ const InfoModal = ({ node, onClose }) => {
   const song = isSong ? node.song : null;
   const primary = (isSong && node.artists[0] && node.artists[0].name) || '';
   const [st, setSt] = useState(() => (song ? preview.status(song.id) : { playing: false }));
+  const artistImg = useArtistImage(node && node.kind === 'artist' ? node.artist : null, 200);
 
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') onClose(); };
@@ -43,7 +45,7 @@ const InfoModal = ({ node, onClose }) => {
         {node.kind === 'artist' ? (
           <>
             <div className="ctn-info-photo">
-              <img src={getLargeAvatarUrl(node.artist)} alt={node.artist.name} onError={(e) => { e.target.style.display = 'none'; }} />
+              <img src={artistImg} alt={node.artist.name} onError={(e) => { e.target.style.display = 'none'; }} />
             </div>
             <div className="ctn-info-name">{node.artist.name}</div>
             <div className="ctn-info-meta">{node.artist.genre || t('genre')}</div>

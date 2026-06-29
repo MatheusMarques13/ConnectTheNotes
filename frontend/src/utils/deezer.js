@@ -34,6 +34,27 @@ async function search(q) {
   return (data && data.data && data.data[0]) || null;
 }
 
+// Runtime artist photo (fills the many artists whose photo wasn't baked at
+// build time). Resolves to a URL or null; cached like song media.
+const artistMem = new Map();
+export async function getArtistImage(name) {
+  const key = 'art::' + norm(name);
+  if (artistMem.has(key)) return artistMem.get(key);
+  if (key in store) { artistMem.set(key, store[key]); return store[key]; }
+  const data = await jsonp(`https://api.deezer.com/search/artist?q=${encodeURIComponent(name)}&limit=1`);
+  const hit = data && data.data && data.data[0];
+  let url = null;
+  if (hit) {
+    const a = norm(name), b = norm(hit.name || '');
+    if (a && b && (a === b || a.includes(b) || b.includes(a))) {
+      url = hit.picture_xl || hit.picture_big || hit.picture_medium || null;
+      if (url && url.includes('/artist//')) url = null;
+    }
+  }
+  artistMem.set(key, url); store[key] = url; persist();
+  return url;
+}
+
 // Returns { preview?, cover? } for a (title, artist) pair. Always resolves
 // (never throws); returns {} when nothing usable is found.
 export async function getSongMedia(title, artist) {

@@ -183,8 +183,14 @@ export async function nameSong(foundIds, typed) {
   });
   const pool = exact.length ? exact : partial;
   if (pool.length) {
-    const s = pool[0];
-    return { song: songObj(s), artists: s.artists.map((id) => ARTISTS_BY_ID[id]).filter(Boolean) };
+    // De-dupe to distinct songs; if more than one real song shares the typed
+    // title (e.g. two different "Faz Gostoso"), let the player choose.
+    const seen = new Set();
+    const distinct = [];
+    for (const s of pool) { if (!seen.has(s.id)) { seen.add(s.id); distinct.push(s); } }
+    const mk = (s) => ({ song: songObj(s), artists: s.artists.map((id) => ARTISTS_BY_ID[id]).filter(Boolean) });
+    if (distinct.length > 1) return { options: distinct.map(mk) };
+    return mk(distinct[0]);
   }
   // Near-miss: the player typed it ALMOST right (a few letters off) — suggest
   // the real title with a "did you mean…?" so they can confirm.

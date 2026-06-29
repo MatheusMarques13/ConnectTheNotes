@@ -1,7 +1,8 @@
 import React, { useRef, useReducer, useMemo, useEffect, useLayoutEffect, useCallback } from 'react';
 import { Music2, Disc, Disc3, Radio, Tv, Film, Mic2, Play, Pause } from 'lucide-react';
-import { getSmallAvatarUrl, getLargeAvatarUrl } from '../utils/avatars';
+import { getSmallAvatarUrl } from '../utils/avatars';
 import { getSongMedia } from '../utils/deezer';
+import { useArtistImage } from '../utils/useArtistImage';
 import * as preview from '../utils/preview';
 import './board.css';
 
@@ -48,13 +49,14 @@ const MiniAvatar = ({ artist }) => {
 
 const ArtistCardInner = ({ artist, isStart, isTarget }) => {
   const [loaded, setLoaded] = React.useState(false);
+  const imgUrl = useArtistImage(artist, 200);
   const initials = (artist?.name || '?').split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase();
   return (
     <div className="ctn-artist-note">
       {(isStart || isTarget) && <span className={`ctn-node-tag ${isStart ? 'start' : 'target'}`}>{isStart ? 'Start' : 'Target'}</span>}
       <div className="ctn-artist-photo">
         <span className="ctn-artist-ring" />
-        <img src={getLargeAvatarUrl(artist)} alt={artist.name} onLoad={() => setLoaded(true)} onError={(e) => { e.target.style.display = 'none'; }} style={{ opacity: loaded ? 1 : 0 }} />
+        <img src={imgUrl} alt={artist.name} onLoad={() => setLoaded(true)} onError={(e) => { e.target.style.display = 'none'; }} style={{ opacity: loaded ? 1 : 0 }} />
         {!loaded && <span className="ctn-artist-fallback">{initials}</span>}
       </div>
       <div className="ctn-artist-name">{artist.name}</div>

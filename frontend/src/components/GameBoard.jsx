@@ -94,6 +94,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
   const [guess, setGuess] = useState('');
   const [guessError, setGuessError] = useState('');
   const [suggestion, setSuggestion] = useState(null);
+  const [choices, setChoices] = useState(null);   // multiple songs share the typed title → let the player pick
 
   const [gameWon, setGameWon] = useState(false);
   const [gameLost, setGameLost] = useState(false);
@@ -163,22 +164,11 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
 
   const focusInput = () => { if (searchRef.current) searchRef.current.focus(); };
 
-  const tryName = async (raw) => {
-    if (!raw) return;
-    const res = await nameSong([...foundIds], raw);
-    if (!res) {
-      setSuggestion(null);
-      setGuessError(t('no_collab', { q: raw }));
-      return;
-    }
-    if (res.suggestion) {
-      // typed almost right — offer the real title
-      setSuggestion(res.suggestion);
-      setGuessError('');
-      return;
-    }
+  // Add a chosen/matched song to the web (shared by the single-match path and
+  // the multi-match chooser).
+  const commitSong = (res) => {
     if (edges.some((ed) => ed.song.id === res.song.id)) {
-      setSuggestion(null);
+      setSuggestion(null); setChoices(null);
       setGuessError(t('already_played', { title: res.song.title }));
       return;
     }
@@ -189,6 +179,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
     setGuess('');
     setGuessError('');
     setSuggestion(null);
+    setChoices(null);
     // Seamlessly start the 30s preview the moment the song lands on the board.
     preview.play(res.song, (res.artists[0] && res.artists[0].name) || '');
     if (connected(newEdges, artist1.id, artist2.id)) {
@@ -198,10 +189,30 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
     }
   };
 
+  const tryName = async (raw) => {
+    if (!raw) return;
+    const res = await nameSong([...foundIds], raw);
+    if (!res) {
+      setSuggestion(null); setChoices(null);
+      setGuessError(t('no_collab', { q: raw }));
+      return;
+    }
+    if (res.suggestion) {
+      setSuggestion(res.suggestion); setChoices(null); setGuessError('');
+      return;
+    }
+    if (res.options) {
+      // multiple distinct songs share the title — ask which one
+      setChoices(res.options); setSuggestion(null); setGuessError('');
+      return;
+    }
+    commitSong(res);
+  };
+
   const handleGuessSubmit = (e) => { if (e) e.preventDefault(); preview.unlock(); tryName(guess.trim()); };
   const acceptSuggestion = () => { if (suggestion) { setGuess(suggestion); tryName(suggestion); } };
 
-  const handleClearGuess = () => { setGuess(''); setGuessError(''); setSuggestion(null); focusInput(); };
+  const handleClearGuess = () => { setGuess(''); setGuessError(''); setSuggestion(null); setChoices(null); focusInput(); };
 
   const handleUndo = () => {
     if (!edges.length) return;
@@ -345,7 +356,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
               className="ctn-input"
               placeholder={t('name_a_song')}
               value={guess}
-              onChange={(e) => { setGuess(e.target.value); if (guessError) setGuessError(''); if (suggestion) setSuggestion(null); }}
+              onChange={(e) => { setGuess(e.target.value); if (guessError) setGuessError(''); if (suggestion) setSuggestion(null); if (choices) setChoices(null); }}
               autoComplete="off"
               autoCorrect="off"
               spellCheck="false"
@@ -358,6 +369,17 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
           <button type="button" className="ctn-suggest" onClick={acceptSuggestion}>
             {t('did_you_mean')} <strong>“{suggestion}”</strong>? <span className="ctn-suggest-use">{t('use_it')}</span>
           </button>
+        )}
+        {choices && (
+          <div className="ctn-choices">
+            <span className="ctn-choices-label">{t('which_one')}</span>
+            {choices.map((opt, i) => (
+              <button key={i} type="button" className="ctn-choice" onClick={() => commitSong(opt)}>
+                <span className="ctn-choice-title">{opt.song.title}</span>
+                <span className="ctn-choice-meta">{opt.song.year} · {opt.artists.slice(0, 4).map((a) => a.name).join(', ')}{opt.artists.length > 4 ? ` +${opt.artists.length - 4}` : ''}</span>
+              </button>
+            ))}
+          </div>
         )}
         {guessError && <div className="ctn-input-error" role="alert"><AlertCircle size={14} /> {guessError}</div>}
       </div>

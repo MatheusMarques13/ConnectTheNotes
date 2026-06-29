@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Search, Shuffle, X, Music, Mic2, Disc3, Guitar, Heart, Sparkles, Flame, Trees, Sun, Cloud, Star, Radio } from 'lucide-react';
 import { searchArtists, getRandomArtist } from '../services/api';
 import { getGenreIcon, getGenreColor, getAvatarUrl } from '../utils/avatars';
+import { useArtistImage } from '../utils/useArtistImage';
 import { useI18n } from '../i18n';
 
 const iconMap = {
@@ -32,7 +33,7 @@ const ArtistPolaroid = ({ artist, number }) => {
   const genre = (typeof artist === 'object' && artist?.genre) || '';
   const initials = name ? name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase() : '';
   const tone = hashStr(artist?.id || name || `slot-${number}`) % 5;
-  const imageUrl = hasArtist ? getAvatarUrl(artist, 400) : null;
+  const imageUrl = useArtistImage(artist, 400);
   const GenreIcon = iconMap[getGenreIcon(genre)] || Music;
 
   return (

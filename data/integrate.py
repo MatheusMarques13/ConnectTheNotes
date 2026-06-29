@@ -20,11 +20,35 @@ import source_data as sd  # noqa: E402
 OUT = os.path.join(HERE, "source_data.py")
 
 
+# Tokens that are just connectors/articles — dropped so duo & alias spellings
+# collapse to one node ("Israel & Rodolffo" == "Israel e Rodolffo", "Wisin &
+# Yandel" == "Wisin y Yandel", "The Black Eyed Peas" == "Black Eyed Peas").
+_DROP = {"e", "and", "y", "the", "feat", "ft", "featuring", "x"}
+# Known same-person aliases (normalized-variant -> normalized-canonical).
+_ALIASES = {"jaden": "jadensmith"}
+
+
 def norm(n):
-    # Accent-insensitive: "Beyoncé" == "Beyonce", "Sơn Tùng" == "Son Tung".
+    # Accent-insensitive + connector-insensitive.
     s = unicodedata.normalize("NFKD", (n or "").lower())
     s = "".join(c for c in s if not unicodedata.combining(c))
-    return re.sub(r"[^a-z0-9]", "", s)
+    s = re.sub(r"[^a-z0-9]+", " ", s)
+    toks = [t for t in s.split() if t and t not in _DROP]
+    key = "".join(toks)
+    return _ALIASES.get(key, key)
+
+
+def _prettier(a, b):
+    """Pick the nicer display name between two variants that normalize equal."""
+    if a is None:
+        return b
+    au, bu = "_" in a, "_" in b
+    if au != bu:
+        return b if au else a            # prefer the one without underscores
+    aamp, bamp = "&" in a, "&" in b
+    if aamp != bamp:
+        return a if aamp else b           # prefer "&" duo form over "e"/"y"
+    return a if len(a) >= len(b) else b   # else the longer/more complete name
 
 
 def main(path):
@@ -32,8 +56,16 @@ def main(path):
 
     artists = [list(a) for a in sd.ARTISTS]          # (id, name, genre)
     collabs = [list(c) for c in sd.COLLABORATIONS]   # (a, b, title, type, year)
-    by_norm = {norm(name): aid for (aid, name, genre) in artists}
+    by_norm = {}
+    for aid, name, genre in artists:
+        by_norm.setdefault(norm(name), aid)          # first (core) name wins the id
+    idx_by_id = {a[0]: i for i, a in enumerate(artists)}
     next_id = max(a[0] for a in artists) + 1
+
+    def upgrade_name(aid, name):
+        i = idx_by_id.get(aid)
+        if i is not None:
+            artists[i][1] = _prettier(artists[i][1], name)
 
     added_artists = 0
     for batch in batches:
@@ -43,9 +75,11 @@ def main(path):
                 continue
             k = norm(name)
             if k in by_norm:
+                upgrade_name(by_norm[k], name)
                 continue
             by_norm[k] = next_id
             artists.append([next_id, name, (art.get("genre") or "Unknown").strip()])
+            idx_by_id[next_id] = len(artists) - 1
             next_id += 1
             added_artists += 1
 
@@ -58,11 +92,13 @@ def main(path):
         if not k:
             return None
         if k in by_norm:
+            upgrade_name(by_norm[k], name)
             return by_norm[k]
         if len(name) < 2:
             return None
         by_norm[k] = next_id
         artists.append([next_id, name, "Other"])
+        idx_by_id[next_id] = len(artists) - 1
         next_id += 1
         added_artists += 1
         return by_norm[k]

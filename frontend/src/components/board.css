@@ -625,3 +625,27 @@
 }
 .ctn-show-result:hover { background: #fff; box-shadow: 0 10px 26px rgba(44,39,34,.26); }
 [data-theme="dark"] .ctn-show-result { background: #14110c; color: #f5eee0; border-color: #f4bcd3; }
+
+/* Dark mode: the topbar / input-dock fades were paper-coloured, which showed as
+   ugly white bands top & bottom. Fade from the dark page colour instead. */
+[data-theme="dark"] .ctn-topbar {
+  background: linear-gradient(180deg, rgba(27,24,19,.94), rgba(27,24,19,.55) 60%, transparent);
+}
+[data-theme="dark"] .ctn-input-dock {
+  background: linear-gradient(0deg, rgba(27,24,19,.96), rgba(27,24,19,.6) 60%, transparent);
+}
+
+/* ── Song chooser: multiple songs share the typed title ────────────────── */
+.ctn-choices { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; width: min(92vw, 520px); }
+.ctn-choices-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--text-muted); }
+.ctn-choice {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left;
+  padding: 9px 13px; border-radius: 10px; cursor: pointer; background: #fffdf8;
+  border: 1px solid var(--border-soft); box-shadow: 0 4px 14px rgba(44,39,34,.10);
+  transition: border-color .15s, transform .12s;
+}
+.ctn-choice:hover { border-color: var(--accent); transform: translateY(-1px); }
+.ctn-choice-title { font-family: var(--font-body); font-weight: 600; font-size: 13px; color: var(--text-primary); }
+.ctn-choice-meta { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); }
+[data-theme="dark"] .ctn-choice { background: #221d16; border-color: rgba(255,255,255,.12); }
+[data-theme="dark"] .ctn-choice-title { color: #f5eee0; }
