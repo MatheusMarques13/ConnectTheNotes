@@ -8,9 +8,12 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const DATASET = new URL("../src/data/dataset.js", import.meta.url);
 const OUTPUT = new URL("../src/data/images.generated.js", import.meta.url);
-const CONCURRENCY = 3;
-const PACE_MS = 140;
+const CONCURRENCY = 5;
+const PACE_MS = 110;
 const TIMEOUT_MS = 8000;
+// Hard cap on total media-fetch time so a 5k-artist / 12k-song dataset can never
+// stall the Vercel build. Whatever isn't fetched in time just uses the fallback.
+const DEADLINE_MS = 18 * 60 * 1000;
 
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -73,11 +76,11 @@ const songMedia = (title, artistName) => withRetry(async () => {
   return Object.keys(out).length ? out : null;
 });
 
-async function pacedMap(items, fetchOne) {
+async function pacedMap(items, fetchOne, deadline) {
   const results = {};
   let i = 0, ok = 0;
   async function worker() {
-    while (i < items.length) {
+    while (i < items.length && Date.now() < deadline) {
       const it = items[i++];
       const url = await fetchOne(it);
       if (url) { results[it.key] = url; ok++; }
@@ -97,8 +100,11 @@ async function run() {
   const artistTasks = artists.map((a) => ({ key: a.name, name: a.name }));
   const songTasks = songs.map((s) => ({ key: s.id, title: s.title, artist: nameById[s.artists[0]] || "" }));
 
-  const images = await pacedMap(artistTasks, (t) => artistImage(t.name));
-  const media = await pacedMap(songTasks, (t) => songMedia(t.title, t.artist));
+  // Shared deadline: fetch artist photos first (most visible), then song media
+  // until the time budget runs out. Partial results are fine — the UI falls back.
+  const deadline = Date.now() + DEADLINE_MS;
+  const images = await pacedMap(artistTasks, (t) => artistImage(t.name), deadline);
+  const media = await pacedMap(songTasks, (t) => songMedia(t.title, t.artist), deadline);
 
   const covers = {}, previews = {};
   for (const [k, v] of Object.entries(media.results)) {
