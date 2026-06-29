@@ -5,6 +5,7 @@ import ConstellationGraph from './ConstellationGraph';
 import InteractiveBoard from './InteractiveBoard';
 import InfoModal from './InfoModal';
 import MyndLogo from './MyndLogo';
+import * as preview from '../utils/preview';
 import { useI18n } from '../i18n';
 
 const parKey = (used, optimal) => {
@@ -183,6 +184,8 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
     setGuess('');
     setGuessError('');
     setSuggestion(null);
+    // Seamlessly start the 30s preview the moment the song lands on the board.
+    preview.play(res.song, (res.artists[0] && res.artists[0].name) || '');
     if (connected(newEdges, artist1.id, artist2.id)) {
       setGameWon(true);
       if (timerRef.current) clearInterval(timerRef.current);
@@ -190,7 +193,7 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
     }
   };
 
-  const handleGuessSubmit = (e) => { if (e) e.preventDefault(); tryName(guess.trim()); };
+  const handleGuessSubmit = (e) => { if (e) e.preventDefault(); preview.unlock(); tryName(guess.trim()); };
   const acceptSuggestion = () => { if (suggestion) { setGuess(suggestion); tryName(suggestion); } };
 
   const handleClearGuess = () => { setGuess(''); setGuessError(''); setSuggestion(null); focusInput(); };

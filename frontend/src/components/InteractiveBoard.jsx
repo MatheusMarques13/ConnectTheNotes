@@ -1,6 +1,8 @@
 import React, { useRef, useReducer, useMemo, useEffect, useLayoutEffect, useCallback } from 'react';
-import { Music2, Disc, Disc3, Radio, Tv, Film, Mic2 } from 'lucide-react';
+import { Music2, Disc, Disc3, Radio, Tv, Film, Mic2, Play, Pause } from 'lucide-react';
 import { getSmallAvatarUrl, getLargeAvatarUrl } from '../utils/avatars';
+import { getSongMedia } from '../utils/deezer';
+import * as preview from '../utils/preview';
 import './board.css';
 
 // ── node id helpers (namespace by first char: 'a' artist, 's' song) ──
@@ -62,17 +64,41 @@ const ArtistCardInner = ({ artist, isStart, isTarget }) => {
 
 const SongCardInner = ({ song, artists }) => {
   const [broken, setBroken] = React.useState(false);
+  const [cover, setCover] = React.useState(song.coverUrl || '');
+  const [st, setSt] = React.useState(() => preview.status(song.id));
   const Icon = TYPE_ICON[song.type] || Music2;
-  const hasArt = song.coverUrl && !broken;
+  const primary = (artists[0] && artists[0].name) || '';
+
+  // Keep the play/pause button in sync with the single shared audio.
+  React.useEffect(() => preview.subscribe(() => setSt(preview.status(song.id))), [song.id]);
+  // Lazily pull the album cover from Deezer at runtime if it wasn't baked.
+  React.useEffect(() => {
+    if (cover) return undefined;
+    let alive = true;
+    getSongMedia(song.title, primary).then((m) => { if (alive && m && m.cover) setCover(m.cover); });
+    return () => { alive = false; };
+  }, [song.id]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const hasArt = cover && !broken;
   const shown = artists.slice(0, 4);
   const extra = artists.length - shown.length;
+  const onPlay = (e) => { e.stopPropagation(); e.preventDefault(); preview.unlock(); preview.toggle(song, primary); };
+
   return (
     <div className="ctn-song-card">
       <div className={`ctn-song-cover${hasArt ? '' : ' no-art'}`}>
         {hasArt
-          ? <img src={song.coverUrl} alt="" onError={() => setBroken(true)} />
+          ? <img src={cover} alt="" onError={() => setBroken(true)} />
           : <Icon />}
         <span className="ctn-song-type"><Icon size={9} /> {TYPE_LABEL[song.type] || song.type}</span>
+        <button
+          className={`ctn-song-play${st.playing ? ' playing' : ''}`}
+          onPointerDown={(e) => e.stopPropagation()}
+          onClick={onPlay}
+          aria-label={st.playing ? 'pause preview' : 'play preview'}
+        >
+          {st.playing ? <Pause size={15} /> : <Play size={15} />}
+        </button>
       </div>
       <div className="ctn-song-body">
         <div className="ctn-song-title">{song.title}</div>

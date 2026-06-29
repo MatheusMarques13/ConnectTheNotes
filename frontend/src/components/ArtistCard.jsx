@@ -29,9 +29,11 @@ const ArtistPolaroid = ({ artist, number }) => {
   const [imgLoaded, setImgLoaded] = useState(false);
   const hasArtist = !!artist;
   const name = typeof artist === 'string' ? artist : artist?.name || '';
+  const genre = (typeof artist === 'object' && artist?.genre) || '';
   const initials = name ? name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase() : '';
   const tone = hashStr(artist?.id || name || `slot-${number}`) % 5;
   const imageUrl = hasArtist ? getAvatarUrl(artist, 400) : null;
+  const GenreIcon = iconMap[getGenreIcon(genre)] || Music;
 
   return (
     <div className={`artist-polaroid tone-${tone} ${hasArtist ? 'filled' : 'empty'}`}>
@@ -53,7 +55,15 @@ const ArtistPolaroid = ({ artist, number }) => {
           <span className="polaroid-empty-mark"><Music size={44} strokeWidth={1.3} /></span>
         )}
       </div>
-      <div className="artist-polaroid-cap">{hasArtist ? name : t('artist_n', { n: number })}</div>
+      <div className="artist-polaroid-cap">
+        <span className="artist-polaroid-name">{hasArtist ? name : t('artist_n', { n: number })}</span>
+        {hasArtist && genre && (
+          <span className="artist-polaroid-genre" style={{ color: getGenreColor(genre) }}>
+            <GenreIcon size={11} strokeWidth={2} />
+            {genre}
+          </span>
+        )}
+      </div>
     </div>
   );
 };
@@ -165,14 +175,7 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
         </button>
       )}
 
-      {artist ? (
-        <div className="artist-info">
-          <div className="artist-genre">
-            {renderGenreBadge(artist.genre)}
-            {artist.genre}
-          </div>
-        </div>
-      ) : (
+      {!artist && (
         <div className="search-area" style={{ position: 'relative' }}>
           <div className="search-input-wrapper">
             <Search size={14} className="search-icon" />

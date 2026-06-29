@@ -96,32 +96,21 @@ async function pacedMap(items, fetchOne, deadline) {
 async function run() {
   const text = await readFile(DATASET, "utf8");
   const artists = sliceArray(text, "ARTISTS");
-  const songs = sliceArray(text, "SONGS");
-  const nameById = Object.fromEntries(artists.map((a) => [a.id, a.name]));
 
+  // Only artist photos are baked at build time. Song covers + 30s previews are
+  // fetched on demand at RUNTIME (Deezer JSONP), so the build no longer does
+  // ~12k song lookups — this keeps the production build fast.
   const artistTasks = artists.map((a) => ({ key: a.name, name: a.name }));
-  const songTasks = songs.map((s) => ({ key: s.id, title: s.title, artist: nameById[s.artists[0]] || "" }));
-
-  // Shared deadline: fetch artist photos first (most visible), then song media
-  // until the time budget runs out. Partial results are fine — the UI falls back.
   const deadline = Date.now() + DEADLINE_MS;
   const images = await pacedMap(artistTasks, (t) => artistImage(t.name), deadline);
-  const media = await pacedMap(songTasks, (t) => songMedia(t.title, t.artist), deadline);
-
-  const covers = {}, previews = {};
-  for (const [k, v] of Object.entries(media.results)) {
-    if (v && v.cover) covers[k] = v.cover;
-    if (v && v.preview) previews[k] = v.preview;
-  }
-  const coverN = Object.keys(covers).length, previewN = Object.keys(previews).length;
 
   const body =
     "// AUTO-GENERATED at build time by scripts/fetch-images.mjs — do not edit.\n" +
     "export const ARTIST_IMAGES = " + JSON.stringify(images.results) + ";\n" +
-    "export const SONG_COVERS = " + JSON.stringify(covers) + ";\n" +
-    "export const SONG_PREVIEWS = " + JSON.stringify(previews) + ";\n";
+    "export const SONG_COVERS = {};\n" +
+    "export const SONG_PREVIEWS = {};\n";
   await writeFile(OUTPUT, body);
-  console.log(`[images] ${images.ok}/${artistTasks.length} artist photos, ${coverN} covers, ${previewN} previews`);
+  console.log(`[images] ${images.ok}/${artistTasks.length} artist photos (song media is runtime)`);
 }
 
 run().catch(async (e) => {

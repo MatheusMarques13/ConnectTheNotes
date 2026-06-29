@@ -476,9 +476,13 @@
 .ctn-node-song:hover .ctn-song-card { box-shadow: 0 14px 28px rgba(44,39,34,.2); border-color: var(--tone-bd); }
 .ctn-node-song.selected .ctn-song-card { outline: 2px solid var(--accent); outline-offset: 2px; box-shadow: 0 14px 28px rgba(44,39,34,.2); }
 
-/* edges tinted a touch warmer to sit on pastel */
-.ctn-edge-line { stroke: #9a8f7c; opacity: .5; }
-.ctn-edge-line.is-active { stroke: var(--accent); opacity: 1; }
+/* connections drawn as taut red sewing thread strung between the cards */
+.ctn-edge-line {
+  stroke: #c5283d; stroke-width: 2.1; stroke-linecap: round; opacity: .95;
+  filter: drop-shadow(0 1px 1.5px rgba(120,20,30,.35));
+}
+.ctn-edge-line.is-active { stroke: #e23146; stroke-width: 2.8; opacity: 1; filter: drop-shadow(0 1px 3px rgba(180,30,40,.5)); }
+.ctn-board-root[data-victory] .ctn-edge-line { stroke: #e23146; stroke-width: 2.8; opacity: 1; }
 /* keep hover on the polaroid (note) only, not the inner photo */
 .ctn-node-artist:hover .ctn-artist-photo { transform: none; border-color: #fff; box-shadow: 0 3px 9px rgba(44,39,34,.2); }
 
@@ -579,3 +583,17 @@
 .ctn-preview-eq i:nth-child(4) { height: 10px; animation-delay: .45s; }
 @keyframes ctnEq { 0%, 100% { transform: scaleY(.4); } 50% { transform: scaleY(1); } }
 .ctn-preview-none { margin: 6px 0 14px; font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); }
+
+/* ── Always-visible play/pause button on each song card's cover ─────────── */
+.ctn-song-play {
+  position: absolute; right: 7px; bottom: 7px; z-index: 4;
+  width: 30px; height: 30px; padding: 0; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(18,22,33,.80); color: #fff;
+  border: 1.5px solid rgba(255,255,255,.9);
+  box-shadow: 0 2px 7px rgba(0,0,0,.32); cursor: pointer;
+  transition: transform .15s ease, background .15s ease;
+}
+.ctn-song-play:hover { transform: scale(1.09); background: #c5283d; }
+.ctn-song-play.playing { background: #c5283d; border-color: #fff; box-shadow: 0 0 0 3px rgba(197,40,61,.28); }
+.ctn-song-play svg { display: block; }

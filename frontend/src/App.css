@@ -3184,11 +3184,25 @@ body {
 
 /* thick taped bottom border with the hand-labelled caption */
 .artist-polaroid-cap {
-  padding: 16px 10px 20px; text-align: center; font-family: var(--font-mono);
-  font-size: 15px; font-weight: 500; color: #3a342c; line-height: 1.2; letter-spacing: .2px;
+  padding: 13px 10px 15px; text-align: center; font-family: var(--font-mono);
+  color: #3a342c; line-height: 1.2; letter-spacing: .2px;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.artist-polaroid-name {
+  font-size: 15px; font-weight: 500; max-width: 100%;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.artist-polaroid.empty .artist-polaroid-cap { color: #c1b7a1; font-size: 13px; letter-spacing: 1.5px; }
+/* genre lives inside the polaroid as a small chip under the name */
+.artist-polaroid-genre {
+  display: inline-flex; align-items: center; gap: 5px; max-width: 100%;
+  font-size: 10px; font-weight: 600; letter-spacing: 1.1px; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 999px;
+  background: rgba(58,52,44,.055); border: 1px solid rgba(58,52,44,.10);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.artist-polaroid-genre svg { flex: none; }
+.artist-polaroid.empty .artist-polaroid-cap { color: #c1b7a1; }
+.artist-polaroid.empty .artist-polaroid-name { font-size: 13px; letter-spacing: 1.5px; }
 
 /* solid post-it taped to the polaroid's top-left corner */
 /* flat red pushpin in the polaroid's top-right corner (replaces the post-it) */
