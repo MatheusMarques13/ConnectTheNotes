@@ -1,4 +1,4 @@
-// build marker: modo mynd — full design + wood bg (production, vercel back)
+// build marker: modo mynd — batch (trail, i18n, audio, fonts) → production
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "@/index.css";

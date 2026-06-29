@@ -7,8 +7,10 @@ import ArtistCard from "./components/ArtistCard";
 import HowToPlayModal from "./components/HowToPlayModal";
 import OptionsModal from "./components/OptionsModal";
 import GameBoard from "./components/GameBoard";
+import MyndLogo from "./components/MyndLogo";
 import { Info, Settings, Sparkles, Loader2, Calendar, Flame, Moon, Sun } from "lucide-react";
 import { getStats, findConnection, getRandomPair, getDailyPuzzle } from "./services/api";
+import { I18nProvider, useI18n } from "./i18n";
 
 const DIFFICULTY_CONFIG = {
   easy: { timeLimit: 300, hintsEnabled: true, label: 'Easy', description: '5 min, hints on' },
@@ -61,6 +63,7 @@ function MainApp() {
   const [options, setOptions] = useState(loadOptions);
   const [stats, setStats] = useState({ totalArtists: 0, totalSongs: 0 });
   const [daily, setDaily] = useState(null);
+  const { t } = useI18n();
 
   const today = localDateStr();
   const dailyDoneToday = options.lastDailyDate === today;
@@ -179,7 +182,7 @@ function MainApp() {
           <div className="top-bar">
             <button className="top-btn" onClick={() => setShowHowToPlay(true)}>
               <Info size={18} />
-              <span>HOW TO PLAY</span>
+              <span>{t('how_to_play')}</span>
             </button>
 
             <div className="top-bar-right">
@@ -193,39 +196,20 @@ function MainApp() {
               </button>
               <button className="top-btn" onClick={() => setShowOptions(true)}>
                 <Settings size={18} />
-                <span>OPTIONS</span>
+                <span>{t('options')}</span>
               </button>
             </div>
           </div>
 
           <div className="logo-section">
             <div className="logo-diamond">
-              <svg viewBox="0 0 100 100" className="diamond-svg" aria-hidden="true">
-                {/* plinth */}
-                <rect x="8" y="11" width="84" height="78" rx="13" fill="#f4d7e2" stroke="#e3b3c7" strokeWidth="1.4" />
-                {/* platter mat */}
-                <circle cx="44" cy="51" r="32" fill="#ecc3d3" />
-                {/* spinning vinyl */}
-                <g>
-                  <animateTransform attributeName="transform" type="rotate" from="0 44 51" to="360 44 51" dur="14s" repeatCount="indefinite" />
-                  <circle cx="44" cy="51" r="30" fill="#b07f93" />
-                  <circle cx="44" cy="51" r="24" fill="none" stroke="#c8a0b1" strokeWidth="0.8" />
-                  <circle cx="44" cy="51" r="18" fill="none" stroke="#c8a0b1" strokeWidth="0.8" />
-                  <circle cx="44" cy="51" r="12" fill="none" stroke="#c8a0b1" strokeWidth="0.8" />
-                  <path d="M44 51 L44 23 A28 28 0 0 1 61 30 Z" fill="#ffffff" opacity="0.12" />
-                  <circle cx="44" cy="51" r="9" fill="#f6b6d0" />
-                </g>
-                {/* spindle */}
-                <circle cx="44" cy="51" r="1.6" fill="#6e4a59" />
-                {/* tonearm */}
-                <circle cx="80" cy="24" r="5" fill="#f6b6d0" stroke="#e3b3c7" strokeWidth="1" />
-                <circle cx="85" cy="20" r="2.6" fill="#9b7686" />
-                <line x1="80" y1="24" x2="58" y2="42" stroke="#a98b97" strokeWidth="2.4" strokeLinecap="round" />
-                <rect x="53.5" y="39.5" width="7" height="4.6" rx="1.2" fill="#9b7686" transform="rotate(140 57 42)" />
-              </svg>
+              <MyndLogo className="diamond-svg" />
             </div>
-            <h1 className="main-title">Connect the Notes</h1>
-            <p className="subtitle">CHOOSE TWO ARTISTS</p>
+            <div className="title-card">
+              <h1 className="main-title">Connect the Notes</h1>
+              <p className="title-tagline">{t('tagline')}</p>
+            </div>
+            <p className="subtitle">{t('choose_two')}</p>
           </div>
 
           {/* Daily Puzzle */}
@@ -233,7 +217,7 @@ function MainApp() {
             <div className="daily-banner">
               <div className="daily-banner-head">
                 <Calendar size={15} />
-                <span>TODAY'S PUZZLE</span>
+                <span>{t('todays_puzzle')}</span>
                 {options.dailyStreak > 0 && (
                   <span className="daily-streak"><Flame size={13} /> {options.dailyStreak}</span>
                 )}
@@ -247,12 +231,12 @@ function MainApp() {
                 className={`daily-play-btn ${dailyDoneToday ? 'done' : ''}`}
                 onClick={handlePlayDaily}
               >
-                {dailyDoneToday ? '✓ PLAY AGAIN' : 'PLAY TODAY'}
+                {dailyDoneToday ? `✓ ${t('play_again')}` : t('play_today')}
               </button>
             </div>
           )}
 
-          <div className="freeplay-label">OR PLAY FREELY</div>
+          <div className="freeplay-label">{t('or_play_freely')}</div>
 
           <div className="cards-container">
             <ArtistCard
@@ -280,16 +264,16 @@ function MainApp() {
               disabled={!artist1 || !artist2 || checking}
             >
               <span className="btn-diamond" />
-              {checking ? 'CHECKING…' : 'START GAME'}
+              {checking ? `${t('picking')}` : t('start_game')}
             </button>
             <button className="surprise-btn" onClick={handleSurprise} disabled={surprising}>
               {surprising ? <Loader2 size={16} className="spin-icon" /> : <Sparkles size={16} />}
-              <span>{surprising ? 'PICKING…' : 'SURPRISE ME'}</span>
+              <span>{surprising ? t('picking') : t('surprise_me')}</span>
             </button>
           </div>
 
           <div className="footer-stats">
-            {stats.totalArtists} ARTISTS · {stats.totalSongs} SONGS
+            {t('footer_stats', { artists: stats.totalArtists, songs: stats.totalSongs })}
           </div>
         </div>
       ) : (
@@ -307,6 +291,8 @@ function MainApp() {
           timedMode={options.timedMode}
           timeLimit={getGameSettings().timeLimit}
           difficulty={options.difficulty}
+          darkMode={options.darkMode}
+          onToggleDark={() => setOptions(o => ({ ...o, darkMode: !o.darkMode }))}
         />
       )}
 
@@ -324,12 +310,14 @@ function MainApp() {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainApp />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </BrowserRouter>
+    <I18nProvider>
+      <BrowserRouter basename={process.env.PUBLIC_URL || '/'}>
+        <Routes>
+          <Route path="/" element={<MainApp />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </BrowserRouter>
+    </I18nProvider>
   );
 }
 
