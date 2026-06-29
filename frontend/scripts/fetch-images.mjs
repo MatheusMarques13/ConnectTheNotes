@@ -15,7 +15,9 @@ const TIMEOUT_MS = 8000;
 // stall the Vercel build. Whatever isn't fetched in time just uses the fallback.
 const DEADLINE_MS = 18 * 60 * 1000;
 
-const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+// Accent-insensitive so our "Celine Dion" matches Deezer's "Céline Dion"
+// (folds é->e etc. instead of deleting the accented char).
+const norm = (s) => s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function sliceArray(text, name) {
