@@ -481,3 +481,45 @@
 .ctn-edge-line.is-active { stroke: var(--accent); opacity: 1; }
 /* keep hover on the polaroid (note) only, not the inner photo */
 .ctn-node-artist:hover .ctn-artist-photo { transform: none; border-color: #fff; box-shadow: 0 3px 9px rgba(44,39,34,.2); }
+
+/* ════════════════════════════════════════════════════════════════════════
+   BOARD POLISH — turntable header, pastel/assorted text, pushpins, mini polaroid
+   ════════════════════════════════════════════════════════════════════════ */
+/* header logo = the Modo Mynd turntable (replaces the gem) */
+.ctn-brand-gem { display: inline-block; vertical-align: middle; color: inherit; filter: drop-shadow(0 2px 4px rgba(176,120,150,.32)); }
+
+/* light-blue text -> soft assorted pastels (blue / rose) */
+.ctn-brand-endpoint { color: #5c87cf; font-weight: 600; }
+.ctn-brand-endpoint.target { color: #c8769c; }
+.ctn-stat-value { color: #5c87cf; }
+.ctn-status .ctn-stat:nth-child(3) .ctn-stat-value { color: #c8769c; }
+.ctn-stat-value.is-par { color: var(--accent-mint); }
+.ctn-stat-value.ctn-unknown { color: var(--text-muted); }
+
+/* solid pushpin colour per tone */
+.ctn-tone-0 { --pin: #6c96d4; }
+.ctn-tone-1 { --pin: #e08aac; }
+.ctn-tone-2 { --pin: #5fb98c; }
+.ctn-tone-3 { --pin: #d3b145; }
+.ctn-tone-4 { --pin: #9a82d0; }
+
+/* solid pushpin ("alfinete") — replaces the translucent washi tape and pins the
+   card onto the wooden board */
+.ctn-artist-note::before,
+.ctn-song-card::before {
+  content: ''; position: absolute; top: -10px; left: 50%;
+  transform: translateX(-50%); width: 17px; height: 17px; border-radius: 50%;
+  z-index: 6; border: none;
+  background:
+    radial-gradient(circle at 36% 30%, #ffffff 0%, var(--pin, #6c96d4) 48%, rgba(60,40,18,.5) 128%);
+  box-shadow: 0 3px 5px rgba(44,39,34,.36), 0 1px 1px rgba(44,39,34,.22);
+}
+.ctn-song-card::before { width: 16px; height: 16px; top: -9px; }
+
+/* start / target artists keep their identity tag instead of a pin */
+.ctn-node-artist.is-start .ctn-artist-note::before,
+.ctn-node-artist.is-target .ctn-artist-note::before { display: none; }
+
+/* mini-polaroid artist photo: square the corners so it reads as an instant photo */
+.ctn-node-artist .ctn-artist-photo { border-radius: 4px; }
+.ctn-node-artist .ctn-artist-photo img { border-radius: 2px; }

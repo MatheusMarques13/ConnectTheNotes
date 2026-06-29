@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { ChevronLeft, Gem, HelpCircle, Crosshair, Plus, Minus, MousePointerClick, Hand, ZoomIn, Music2, CornerDownLeft, AlertCircle, RotateCcw, Lightbulb, Loader2, Clock, XCircle, X, Flag, Share2 } from 'lucide-react';
+import { ChevronLeft, HelpCircle, Crosshair, Plus, Minus, MousePointerClick, Hand, ZoomIn, Music2, CornerDownLeft, AlertCircle, RotateCcw, Lightbulb, Loader2, Clock, XCircle, X, Flag, Share2 } from 'lucide-react';
 import { nameSong, findConnection } from '../services/api';
 import ConstellationGraph from './ConstellationGraph';
 import InteractiveBoard from './InteractiveBoard';
 import InfoModal from './InfoModal';
+import MyndLogo from './MyndLogo';
 
 const parLabel = (used, optimal) => {
   if (optimal == null) return null;
@@ -235,9 +236,9 @@ const GameBoard = ({ artist1, artist2, optimalSteps, puzzleType, onBack, onHowTo
           <button className="ctn-btn-ghost ctn-back" onClick={onBack}><ChevronLeft size={16} /><span>BACK</span></button>
         </div>
         <div className="ctn-brand">
-          <div className="ctn-brand-logo"><Gem size={18} className="ctn-brand-gem" /><span>Connect the Notes</span></div>
+          <div className="ctn-brand-logo"><MyndLogo className="ctn-brand-gem" size={20} /><span>Connect the Notes</span></div>
           <div className="ctn-brand-sub">
-            CONNECT <span className="ctn-brand-endpoint">{artist1.name}</span> AND <span className="ctn-brand-endpoint">{artist2.name}</span>
+            CONNECT <span className="ctn-brand-endpoint start">{artist1.name}</span> AND <span className="ctn-brand-endpoint target">{artist2.name}</span>
           </div>
         </div>
         <div className="ctn-topbar-right">
