@@ -3218,8 +3218,15 @@ body {
 .artist-card .search-area {
   width: 100%; margin-top: 16px;
   background: #fffdf8; border: 1px solid var(--border-soft);
-  border-radius: var(--radius); overflow: hidden;
+  border-radius: var(--radius); overflow: visible;
   box-shadow: 0 6px 18px rgba(44,39,34,.07);
+}
+/* The input box keeps its rounded clip; the results dropdown must NOT be
+   clipped by it, so it expands to show all matches (was showing only one). */
+.artist-card .search-input-wrapper { border-radius: var(--radius) var(--radius) 0 0; }
+.artist-card .search-dropdown {
+  border-radius: 0 0 var(--radius) var(--radius);
+  max-height: 320px;
 }
 .artist-card .search-input-wrapper { border-top: none; padding: 2px 14px; background: transparent; }
 .artist-card .choose-for-me-btn { border-top: 1px solid var(--border-soft); background: transparent; }

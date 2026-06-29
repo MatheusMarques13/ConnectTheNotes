@@ -19608,4 +19608,6 @@ COLLABORATIONS = [
     (2804, 2805, '親愛的那不是愛情 (Dear, That Is Not Love)', 'song', 2009),
     (2805, 2803, 'Te Amo', 'song', 2008),
     (2805, 6300, '棒棒堂 vs. 飛輪海 joint concert', 'live', 2009),
+    (3095, 3451, 'Tell Him', 'song', 1997),
+    (3095, 1987, "I'm Your Angel", 'song', 1998),
 ]
