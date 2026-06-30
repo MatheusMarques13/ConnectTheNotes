@@ -171,9 +171,14 @@ const ArtistCard = ({ number, artist, onSelect, onClear, excludeIds = [] }) => {
       <ArtistPolaroid artist={artist} number={number} />
 
       {artist && (
-        <button className="clear-btn" onClick={handleClear} aria-label="remove artist">
-          <X size={14} />
-        </button>
+        <div className="artist-card-actions">
+          <button className="clear-btn" onClick={handleClear} aria-label="remove artist">
+            <X size={14} />
+          </button>
+          <button className="shuffle-btn" onClick={handleRandom} disabled={loading} aria-label="shuffle artist">
+            {loading ? <span className="search-spinner small" /> : <Shuffle size={14} />}
+          </button>
+        </div>
       )}
 
       {!artist && (

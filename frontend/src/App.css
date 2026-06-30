@@ -3217,14 +3217,26 @@ body {
 }
 .artist-postit::after { display: none; }
 
-/* clear (X) sits on the photo's top-right */
-.artist-card .clear-btn {
+/* X + shuffle buttons stacked on the photo's top-right */
+.artist-card .artist-card-actions {
   position: absolute; top: 26px; right: 26px; z-index: 6;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.artist-card .artist-card-actions .clear-btn {
+  position: static;
+}
+.artist-card .clear-btn,
+.artist-card .shuffle-btn {
   width: 28px; height: 28px; border-radius: 50%;
   background: rgba(44,39,34,.55); border: 1px solid rgba(255,255,255,.25);
   color: #fff; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: background 0.2s, border-color 0.2s;
 }
 .artist-card .clear-btn:hover { background: rgba(196,102,60,.9); border-color: transparent; }
+.artist-card .shuffle-btn:hover { background: rgba(60,100,196,.9); border-color: transparent; }
+.artist-card .shuffle-btn:disabled { opacity: 0.55; cursor: default; }
+.artist-card .shuffle-btn:disabled:hover { background: rgba(44,39,34,.55); border-color: rgba(255,255,255,.25); }
+.search-spinner.small { width: 12px; height: 12px; border-width: 1.5px; }
 
 /* genre line under the polaroid (selected) */
 .artist-card.has-artist .artist-info { margin-top: 14px; padding: 0; background: transparent; }
