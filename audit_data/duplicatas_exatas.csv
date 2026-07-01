@@ -1,0 +1,633 @@
+i,a,b,title,type,year,final,motivo,evidencia,flags
+119,SZA,Drake,Slime You Out,song,2023,SUSPEITA,"Slime You Out real porém flag dup_of_11, possível duplicata",,dup_of_11
+137,Calvin Harris,Pharrell Williams,Feels,live,2017,SUSPEITA,"versão live com flag dup_of_136, possível duplicata",,dup_of_136
+151,Metro Boomin,Future,Heroes & Villains,album,2022,SUSPEITA,"flag dup_of_149, possível duplicata",,dup_of_149
+178,Cardi B,Bruno Mars,Finesse (Remix),song,2018,SUSPEITA,"Finesse Remix real porém flag dup_of_109, possível duplicata",,dup_of_109
+229,Sia,David Guetta,Titanium,song,2011,SUSPEITA,possível duplicata de 212,,dup_of_212
+242,Swae Lee,Post Malone,Sunflower,song,2018,SUSPEITA,possível duplicata de 93,,dup_of_93
+246,Mac Miller,Anderson .Paak,Dang!,song,2016,SUSPEITA,possível duplicata de 154,,dup_of_154
+248,Chance the Rapper,Kanye West,Ultralight Beam,song,2016,SUSPEITA,possível duplicata de 24,,dup_of_24
+420,Bryson Tiller,Rihanna,Wild Thoughts,song,2017,SUSPEITA,possível duplicata (dup_of_418),,dup_of_418
+477,DJ Snake,Major Lazer,Lean On,song,2015,SUSPEITA,possível duplicata,,dup_of_206
+597,The 1975,Phoebe Bridgers,Jesus Christ 2005 God Bless America,song,2020,SUSPEITA,possível duplicata (dup_of_452),,dup_of_452
+602,Caetano Veloso,Gilberto Gil,"Dois Amigos, Um Século de Música",dvd,2016,SUSPEITA,possível duplicata (dup_of_584),,dup_of_584
+619,Wesley Safadão,Anitta,Romance Com Safadeza,song,2016,SUSPEITA,possível duplicata (dup_of_582),,dup_of_582
+655,Titãs,Os Paralamas do Sucesso,Titãs e Os Paralamas Juntos,live,2009,SUSPEITA,possível duplicata de 654,,dup_of_654
+683,Caetano Veloso,Maria Bethânia,Caetano e Bethânia ao Vivo,live,1978,SUSPEITA,possível duplicata (dup_of_585),,dup_of_585
+719,Jorge Ben Jor,Gilberto Gil,"Gil e Jorge (Ogum, Xangô)",album,1975,SUSPEITA,possível duplicata (dup_of_587),,dup_of_587
+781,Anitta,Ludmilla,Onda Diferente,song,2018,SUSPEITA,possível duplicata (dup_of_563),,dup_of_563
+799,Swedish House Mafia,The Weeknd,Moth To A Flame,song,2021,SUSPEITA,possível duplicata (dup_of_465),,dup_of_465
+846,Myke Towers,Bad Bunny,Estamos Arriba,song,2021,SUSPEITA,possível duplicata (dup_of_502),,dup_of_502
+852,SZA,Doja Cat,Kiss Me More,feature,2021,SUSPEITA,possível duplicata (dup_of_120),,dup_of_120
+853,SZA,Drake,Slime You Out,feature,2023,SUSPEITA,possível duplicata (dup_of_11),,dup_of_11
+864,Madonna,Nicki Minaj,Bitch I'm Madonna,feature,2015,SUSPEITA,possível duplicata (dup_of_546),,dup_of_546
+865,Madonna,Maluma,Medellín,feature,2019,SUSPEITA,possível duplicata (dup_of_547),,dup_of_547
+867,Mariah Carey,Snoop Dogg,Crybaby,feature,1999,SUSPEITA,possível duplicata (dup_of_284),,dup_of_284
+936,Tems,Future,Wait for U,song,2022,SUSPEITA,possível duplicata (dup_of_514),,dup_of_514
+1001,Fireboy DML,Ed Sheeran,Peru (Remix),remix,2021,SUSPEITA,possível duplicata (dup_of_526),,dup_of_526
+1410,Anitta,MC Zaac,Desce Pro Play (Pa Pa Pa),song,2017,SUSPEITA,possível duplicata (dup_of_566),,dup_of_566
+1450,MC Kevinho,Léo Santana,Encaixa,song,2018,SUSPEITA,possível duplicata (dup_of_578),,dup_of_578
+1791,Wesley Safadão,Claudia Leitte,Camarote,song,2017,SUSPEITA,possível duplicata (dup_of_1552),,dup_of_1552
+1915,Anitta,Cardi B,Me Gusta,song,2021,SUSPEITA,possível duplicata (dup_of_315),,dup_of_315
+2047,Olodum,Daniela Mercury,O Canto da Cidade,song,2014,SUSPEITA,possível duplicata (dup_of_1776),,dup_of_1776
+2129,Emicida,Caetano Veloso,AmarElo,song,2019,SUSPEITA,possível duplicata (dup_of_670),,dup_of_670
+2312,Anitta,Maluma,El Que Espera,song,2018,SUSPEITA,dup_of_1709 possível duplicata,,dup_of_1709
+2442,Jão,Anitta,Pilantra,song,2020,SUSPEITA,possível duplicata (dup_of_915),,dup_of_915
+2449,MC Fioti,J. Balvin,Bum Bum Tam Tam,song,2018,SUSPEITA,possível duplicata (dup_of_1559),,dup_of_1559
+2479,Gusttavo Lima,Henrique & Juliano,Apelido Carinhoso,song,2020,SUSPEITA,possível duplicata (dup_of_2013),,dup_of_2013
+2599,Anitta,Ludmilla,Cheia de Marra,song,2015,SUSPEITA,possível duplicata (dup_of_1409),,dup_of_1409
+2772,Fundo de Quintal,Zeca Pagodinho,Ao Vivo,live,2008,SUSPEITA,dup_of_2289; possível duplicata,,generic_title;dup_of_2289
+2891,Luke Combs,Miranda Lambert,Outrunnin' Your Memory,song,2021,SUSPEITA,possível duplicata (dup_of_543),,dup_of_543
+2935,Reba McEntire,brooks_and_dunn_official,If You See Him / If You See Her,album,1998,SUSPEITA,possível duplicata (dup_of_2914),,dup_of_2914
+2943,Kacey Musgraves,Willie Nelson,Are You Sure,song,2020,SUSPEITA,possível duplicata (dup_of_542),,dup_of_542
+3027,Jason Aldean,Luke Bryan,The Only Way I Know,feature,2012,SUSPEITA,possível duplicata (dup_of_2989),,dup_of_2989
+3076,Beyoncé,Miley Cyrus,II Most Wanted,song,2024,SUSPEITA,possivel duplicata (dup_of_42),,dup_of_42
+3130,Sean Paul,Dua Lipa,No Lie,song,2017,SUSPEITA,possivel duplicata (dup_of_328),,dup_of_328
+3195,Luis Fonsi,Justin Bieber,Despacito (Remix),remix,2017,SUSPEITA,"dup_of_331, possível duplicata",,dup_of_331
+3301,Calvin Harris,Ellie Goulding,I Need Your Love,song,2012,SUSPEITA,possível duplicata,,dup_of_365
+3502,Black Coffee,Pharrell Williams,10 Missed Calls,song,2023,SUSPEITA,possível duplicata (dup_of_944),,dup_of_944
+3503,Black Coffee,David Guetta,Drive,song,2023,SUSPEITA,possível duplicata (dup_of_942),,dup_of_942
+3533,Major Lazer,Showtek,Believer,song,2015,SUSPEITA,possível duplicata (dup_of_487),,dup_of_487
+3608,David Guetta,Ne-Yo,Play Hard,song,2013,SUSPEITA,possível duplicata (dup_of_3289),,dup_of_3289
+3620,David Guetta,Bebe Rexha,Say My Name,song,2018,SUSPEITA,possível duplicata (dup_of_3290),,dup_of_3290
+3624,DJ Snake,Bipolar Sunshine,Middle,song,2015,SUSPEITA,possível duplicata (dup_of_3409),,dup_of_3409
+3627,DJ Snake,Tyga,Enzo,song,2018,SUSPEITA,"possível duplicata (dup_of_3407), Tyga em 'Enzo'",,dup_of_3407
+3628,DJ Snake,French Montana,Enzo,song,2018,SUSPEITA,possível duplicata (dup_of_3408),,dup_of_3408
+4031,Alan Walker,Noah Cyrus,All Falls Down,song,2017,SUSPEITA,possível duplicata (dup_of_3479),,dup_of_3479
+4073,Angèle,Roméo Elvis,Tout oublier,song,2017,SUSPEITA,possível duplicata (dup_of_3655),,dup_of_3655
+4844,Rosalía,Billie Eilish,Lo Vas a Olvidar,song,2021,SUSPEITA,possível duplicata (dup_of_238),,dup_of_238
+4845,Rosalía,Bad Bunny,La Noche de Anoche,song,2021,SUSPEITA,possível duplicata (dup_of_106),,dup_of_106
+4846,Rosalía,Rauw Alejandro,Beso,song,2022,SUSPEITA,possível duplicata (dup_of_499),,dup_of_499
+4929,Biagio Antonacci,Laura Pausini,Il coraggio di andare,song,2015,SUSPEITA,possível duplicata (dup_of_4797),,dup_of_4797
+5017,Nicky Jam,Enrique Iglesias,El Perdón,song,2015,SUSPEITA,possível duplicata (dup_of_497),,dup_of_497
+5073,CL,Diplo,Doctor Pepper,song,2014,SUSPEITA,dup_of_535 possível duplicata,,dup_of_535
+5188,Rich Brian,NIKI,California,song,2020,SUSPEITA,possível duplicata,,dup_of_818
+5269,Grupo Frontera,Bad Bunny,un x100to,song,2023,SUSPEITA,possível duplicata (dup_of_334),,dup_of_334
+5426,Rosalía,C. Tangana,Antes de Morirme,song,2018,SUSPEITA,possível duplicata (dup_of_4829),,dup_of_4829
+5430,Feid,Karol G,Friki,song,2022,SUSPEITA,possível duplicata (dup_of_501),,dup_of_501
+5464,Anitta,Maluma,El Que Espera,song,2022,SUSPEITA,possível duplicata (dup_of_1709),,dup_of_1709
+5492,Beyoncé,Nicki Minaj,Feeling Myself,song,2015,SUSPEITA,possível duplicata,,dup_of_41
+5496,Rihanna,David Guetta,Who's That Chick,song,2010,SUSPEITA,possível duplicata,,dup_of_3293
+5536,Sam Smith,Normani,Dancing with a Stranger,song,2019,SUSPEITA,possível duplicata,,dup_of_256
+5541,Charlie Puth,Kehlani,Done for Me,song,2018,SUSPEITA,possível duplicata,,dup_of_426
+5557,Chris Brown,Pitbull,International Love,song,2012,SUSPEITA,possível duplicata,,dup_of_235
+5567,Coldplay,Rihanna,Princess of China,song,2011,SUSPEITA,possível duplicata,,dup_of_142
+5593,Khalid,Billie Eilish,lovely,song,2018,SUSPEITA,possível duplicata (dup_of),,dup_of_237
+5604,David Guetta,Usher,Without You,song,2010,SUSPEITA,possível duplicata (dup_of),,dup_of_3285
+5608,Diplo,Justin Bieber,Where Are U Now,song,2015,SUSPEITA,possível duplicata (dup_of),,dup_of_207
+5646,Flo Rida,Sia,Wild Ones,song,2011,SUSPEITA,possível duplicata (dup_of),,dup_of_287
+5651,Kehlani,Cardi B,Ring,song,2018,SUSPEITA,possível duplicata (dup_of),,dup_of_425
+5657,Post Malone,21 Savage,Rockstar,song,2017,SUSPEITA,possível duplicata (dup_of),,dup_of_97
+5668,Nelly,Tim McGraw,Over and Over,song,2004,SUSPEITA,possível duplicata (dup_of),,dup_of_2869
+5701,Marshmello,Anne-Marie,Friends,song,2018,SUSPEITA,possível duplicata (dup_of_380),,dup_of_380
+5764,Regard,Troye Sivan,You,song,2020,SUSPEITA,possível duplicata,,dup_of_4026
+5766,Meduza,Becky Hill,Lose Control,song,2019,SUSPEITA,possível duplicata,,dup_of_3493
+5792,Bad Bunny,J. Balvin,OASIS,ep,2019,SUSPEITA,possível duplicata,,dup_of_104
+5801,Bad Bunny,Rauw Alejandro,Party,song,2021,SUSPEITA,possível duplicata,,dup_of_500
+5805,J. Balvin,Dua Lipa,Un Día (One Day),song,2020,SUSPEITA,possível duplicata,,dup_of_5511
+5828,Ozuna,Romeo Santos,El Farsante (remix),remix,2017,SUSPEITA,possível duplicata,,dup_of_837
+5844,Maluma,Shakira,Clandestino,song,2017,SUSPEITA,possível duplicata,,dup_of_5619
+5845,Maluma,The Weeknd,Hawái (remix),remix,2020,SUSPEITA,possível duplicata,,dup_of_319
+5857,Karol G,Becky G,MAMIII,song,2022,SUSPEITA,possível duplicata (dup_of_318),,dup_of_318
+5898,Rauw Alejandro,Camilo,Tattoo (remix),remix,2021,SUSPEITA,possível duplicata (dup_of_841),,dup_of_841
+5899,Sech,Jhay Cortez,Relación,remix,2020,SUSPEITA,possível duplicata (dup_of_5775),,dup_of_5775
+5944,Enrique Iglesias,Pitbull,I Like It,song,2014,SUSPEITA,possível duplicata (dup_of_5561),,dup_of_5561
+5947,Luis Fonsi,Demi Lovato,Échame La Culpa,song,2017,SUSPEITA,possível duplicata (dup_of_332),,dup_of_332
+5952,Prince Royce,Shakira,Deja Vu,song,2017,SUSPEITA,possível duplicata (dup_of_5706),,dup_of_5706
+5956,Reik,Maluma,Amigos Con Derechos,song,2019,SUSPEITA,possível duplicata (dup_of_5378),,dup_of_5378
+5957,Reik,Ozuna,Me Niego,song,2017,SUSPEITA,possível duplicata (dup_of_5380),,dup_of_5380
+5980,Anitta,Maluma,El Que Espera,song,2020,SUSPEITA,possível duplicata (dup_of_1709),,dup_of_1709
+5993,Lunay,Daddy Yankee,Soltera (remix),remix,2019,SUSPEITA,possível duplicata (dup_of_5773),,dup_of_5773
+6018,Beyoncé,J. Balvin,Mi Gente (remix),remix,2017,SUSPEITA,possível duplicata (dup_of_5615),,dup_of_5615
+6072,Linkin Park,Jay-Z,Collision Course,ep,2004,SUSPEITA,possível duplicata (dup_of_454),,dup_of_454
+6074,Lana Del Rey,The Weeknd,Lust for Life,song,2017,SUSPEITA,possível duplicata (dup_of_858),,dup_of_858
+6234,Måneskin,Iggy Pop,I Wanna Be Your Slave (remix),song,2021,SUSPEITA,possível duplicata (dup_of_5013),,dup_of_5013
+6434,Mary J. Blige,Jay-Z,Can't Knock the Hustle,feature,1996,SUSPEITA,possível duplicata,,dup_of_5664
+6435,Alicia Keys,Usher,My Boo,feature,2004,SUSPEITA,possível duplicata,,dup_of_225
+6436,John Legend,Kanye West,Blame Game,feature,2010,SUSPEITA,possível duplicata,,dup_of_224
+6442,Janet Jackson,Busta Rhymes,What's It Gonna Be?!,feature,1999,SUSPEITA,possível duplicata,,dup_of_5675
+6444,Kanye West,Common,Southside,song,2005,SUSPEITA,possível duplicata,,dup_of_6439
+6447,Missy Elliott,Beyoncé,Check On It,feature,2006,SUSPEITA,possível duplicata,,dup_of_5666
+6513,Maceo Parker,James Brown,Soul Power,live,1991,SUSPEITA,possível duplicata (dup_of_6371),,dup_of_6371
+6553,Central Cee,Lil Baby,Band4Band,song,2023,SUSPEITA,possível duplicata (dup_of_410),,dup_of_410
+6566,Dua Lipa,Angèle,Fever,song,2020,SUSPEITA,possível duplicata (dup_of_3658),,dup_of_3658
+6669,Tiësto,sevenn,BOOM!,song,2017,SUSPEITA,possível duplicata (dup_of_4066),,dup_of_4066
+6772,Drake,Future,What a Time to Be Alive,mixtape,2015,SUSPEITA,possível duplicata (dup_of_4),,dup_of_4
+6776,Drake,Travis Scott,Sicko Mode,song,2018,SUSPEITA,possível duplicata (dup_of_9),,dup_of_9
+6798,Future,Juice WRLD,WRLD on Drugs,mixtape,2018,SUSPEITA,possível duplicata (dup_of_173),,dup_of_173
+6803,Future,Nicki Minaj,You Da Baddest,song,2017,SUSPEITA,possível duplicata (dup_of_85),,dup_of_85
+6805,Metro Boomin,21 Savage,Savage Mode,ep,2016,SUSPEITA,possível duplicata (dup_of_604),,dup_of_604
+6841,Offset,Metro Boomin,Without Warning,album,2017,SUSPEITA,possível duplicata (dup_of_607),,dup_of_607
+6873,Roddy Ricch,DaBaby,Rockstar,song,2020,SUSPEITA,possível duplicata (dup_of_240),,dup_of_240
+6874,Roddy Ricch,Marshmello,Project Dreams,song,2019,SUSPEITA,possível duplicata (dup_of_3563),,dup_of_3563
+6916,Nicki Minaj,Lil Wayne,Truffle Butter,song,2015,SUSPEITA,possível duplicata (dup_of_84),,dup_of_84
+6938,Kendrick Lamar,J. Cole,Black Friday,song,2014,SUSPEITA,possível duplicata (dup_of_253),,dup_of_253
+6962,Big Sean,Jhené Aiko,Twenty88,album,2016,SUSPEITA,possível duplicata (dup_of_266),,dup_of_266
+6981,Don Toliver,Travis Scott,Can't Say,song,2019,SUSPEITA,possível duplicata (dup_of_396),,dup_of_396
+7063,City Girls,Cardi B,Twerk,song,2018,SUSPEITA,possível duplicata (dup_of),,dup_of_6911
+7117,Jay-Z,Beyoncé,Apeshit,song,2018,SUSPEITA,possível duplicata (dup_of_608),,dup_of_608
+7163,Kehlani,Cardi B,Ring,song,2019,SUSPEITA,possível duplicata (dup_of_425),,dup_of_425
+7187,Anderson .Paak,Dr. Dre,Meds,song,2016,SUSPEITA,possível duplicata (dup_of_6399),,dup_of_6399
+7204,Kabza De Small,DJ Maphorisa,Sponono,song,2020,SUSPEITA,possível duplicata,,dup_of_1098
+7211,DJ Maphorisa,Focalistic,Ke Star Remix,song,2021,SUSPEITA,possível duplicata,,dup_of_1109
+7224,Master KG,Burna Boy,Jerusalema Remix,song,2020,SUSPEITA,possível duplicata,,dup_of_1093
+7267,Sun-El Musician,Samthing Soweto,Akanamali,song,2017,SUSPEITA,possível duplicata,,dup_of_1168
+7268,Sun-El Musician,Ami Faku,Into Ingawe,song,2020,SUSPEITA,possível duplicata,,dup_of_1197
+7338,Mlindo The Vocalist,DJ Maphorisa,Emakhaya,song,2019,SUSPEITA,possível duplicata (dup_of_1195),,dup_of_1195
+7568,Ali Kiba,Diamond Platnumz,Number One,song,2016,SUSPEITA,possível duplicata (dup_of_7380),,dup_of_7380
+7615,Kanye West,Paul McCartney,Only One,song,2015,SUSPEITA,possível duplicata (dup_of_551),,dup_of_551
+7618,Eminem,Dr. Dre,Forgot About Dre,song,2000,SUSPEITA,possível duplicata (dup_of_44),,dup_of_44
+7621,Taylor Swift,Bon Iver,Exile,song,2020,SUSPEITA,possível duplicata (dup_of_58),,dup_of_58
+7622,Taylor Swift,Brendon Urie,ME!,song,2019,SUSPEITA,título ultrashort e possível duplicata (dup_of_5656),,ultrashort_title;dup_of_5656
+7636,Kendrick Lamar,Dr. Dre,Compton,song,2015,SUSPEITA,possível duplicata (dup_of_133),,dup_of_133
+7655,Future,Young Thug,Patek,song,2016,SUSPEITA,possível duplicata (dup_of_5709),,dup_of_5709
+7658,Pharrell Williams,Kanye West,Number One,song,2005,SUSPEITA,possível duplicata (dup_of_25),,dup_of_25
+7675,BLACKPINK,Cardi B,Bet You Wanna,song,2020,SUSPEITA,possível duplicata (dup_of_5038),,dup_of_5038
+7678,Alicia Keys,Beyoncé,Put It in a Love Song,song,2009,SUSPEITA,possível duplicata (dup_of_5546),,dup_of_5546
+7683,"Tyler, The Creator",A$AP Rocky,Potato Salad,song,2018,SUSPEITA,possível duplicata (dup_of_251),,dup_of_251
+7692,Juice WRLD,The Weeknd,Smile,song,2020,SUSPEITA,possível duplicata (dup_of_6992),,dup_of_6992
+7698,Migos,Cardi B,MotorSport,song,2017,SUSPEITA,possível duplicata (dup_of_6835),,dup_of_6835
+7809,Alceu Valença,Elba Ramalho,La Belle de Jour,song,1995,SUSPEITA,possível duplicata (dup_of_2114),,dup_of_2114
+7863,Maiara & Maraisa,Marília Mendonça,Esqueça-me se For Capaz,live,2021,SUSPEITA,possível duplicata (dup_of_2469),,dup_of_2469
+8385,Steve Aoki,Lauren Jauregui,All Night,song,2016,SUSPEITA,possível duplicata (dup_of_5767),,dup_of_5767
+8391,Galantis,OneRepublic,Bones,song,2019,SUSPEITA,possível duplicata (dup_of_3412),,dup_of_3412
+8396,Daddy Yankee,Nicky Jam,Shaky Shaky (Remix),song,2016,SUSPEITA,possível duplicata (dup_of_5826),,dup_of_5826
+8408,Rauw Alejandro,Rosalía,RR,album,2023,SUSPEITA,título ultracurto e possível duplicata (dup_of_4847),,ultrashort_title;dup_of_4847
+8420,Manuel Turizo,Maluma,El Préstamo,song,2017,SUSPEITA,possível duplicata (dup_of_5431),,dup_of_5431
+8434,Arcángel,Bad Bunny,Tu No Metes Cabra,song,2016,SUSPEITA,possível duplicata (dup_of_5910),,dup_of_5910
+8443,Agust D,Halsey,SUGA's Interlude,song,2020,SUSPEITA,possível duplicata (dup_of_595),,dup_of_595
+8449,Rema,Selena Gomez,Calm Down (Remix),song,2022,SUSPEITA,possível duplicata (dup_of_988),,dup_of_988
+8458,Willie Nelson,Merle Haggard,Pancho & Lefty,song,1982,SUSPEITA,possível duplicata (dup_of_2922),,dup_of_2922
+8474,Carrie Underwood,Ludacris,The Champion,song,2018,SUSPEITA,possível duplicata (dup_of_553),,dup_of_553
+8487,Luísa Sonza,Vitão,FLORES,song,2020,SUSPEITA,possível duplicata (dup_of_794),,dup_of_794
+8488,Luísa Sonza,Anitta,Modo Turbo,song,2022,SUSPEITA,possível duplicata (dup_of_576),,dup_of_576
+8493,Léo Santana,Anitta,Contatinho,song,2019,SUSPEITA,possível duplicata (dup_of_594),,dup_of_594
+8495,Wesley Safadão,Aviões do Forró,Camarote,song,2014,SUSPEITA,possível duplicata (dup_of_1820),,dup_of_1820
+8497,Simone & Simaria,Anitta,Loka,song,2017,SUSPEITA,possível duplicata (dup_of_581),,dup_of_581
+8529,Zeca Pagodinho,Beth Carvalho,Vai Vadiar,song,1991,SUSPEITA,possível duplicata (dup_of_2265),,dup_of_2265
+8545,Sebastian Ingrosso,Alesso,Calling (Lose My Mind),song,2011,SUSPEITA,possível duplicata (dup_of_3554),,dup_of_3554
+8547,Flume,Lorde,Tennis Court (Flume Remix),song,2013,SUSPEITA,possível duplicata (dup_of_3426),,dup_of_3426
+8550,Jackson Wang,Ciara,Slow,song,2019,SUSPEITA,possível duplicata,,dup_of_877
+8551,Jackson Wang,Galantis,Pretty Please,song,2021,SUSPEITA,possível duplicata,,dup_of_5044
+8567,Lauryn Hill,Mary J. Blige,I Used to Love Him,song,1998,SUSPEITA,possível duplicata,,dup_of_862
+8570,Kali Uchis,"Tyler, The Creator",See You Again,song,2017,SUSPEITA,possível duplicata,,dup_of_851
+8577,Romeo Santos,Usher,Promise,song,2013,SUSPEITA,possível duplicata,,dup_of_5625
+8580,Kid Cudi,MGMT,Pursuit of Happiness,song,2009,SUSPEITA,possível duplicata,,dup_of_896
+8584,Marília Mendonça,Maiara & Maraisa,Esqueça-me Se For Capaz,song,2018,SUSPEITA,possível duplicata,,dup_of_2469
+8588,Henrique & Juliano,Marília Mendonça,Cuida Bem Dela,song,2019,SUSPEITA,possível duplicata; Cuida Bem Dela é do H&J,,dup_of_2483
+8624,Dennis DJ,MC Kevinho,Olha a Explosão,song,2016,SUSPEITA,possível duplicata,,dup_of_1441
+8625,Dennis DJ,Anitta,Funk Rave,song,2019,SUSPEITA,possível duplicata; Funk Rave é da Anitta,,dup_of_1944
+8629,Zhu,Skrillex,Working for It,song,2016,SUSPEITA,possível duplicata,,dup_of_488
+8701,CeCe Winans,Whitney Houston,Count On Me,song,1996,SUSPEITA,possível duplicata (dup_of_6327),,dup_of_6327
+9398,Nathy Peluso,C. Tangana,Ateo,song,2021,SUSPEITA,possível duplicata (dup_of_4830),,dup_of_4830
+9483,Arcángel,De La Ghetto,La Formula,song,2020,SUSPEITA,possível duplicata (dup_of_8435),,dup_of_8435
+9531,Luísa Sonza,Anitta,TOMA,song,2022,SUSPEITA,possível duplicata (dup_of_1723),,dup_of_1723
+9539,Don Omar,Nicky Jam,Hasta Abajo,song,2018,SUSPEITA,possível duplicata (dup_of_5876),,dup_of_5876
+10730,Caetano Veloso,Gilberto Gil,Tropicália,album,1975,SUSPEITA,possível duplicata (dup_of_2069),,dup_of_2069
+10738,Daniela Mercury,Olodum,O Canto da Cidade,album,1992,SUSPEITA,possível duplicata (dup_of_1776); álbum solo de Daniela,,dup_of_1776
+10739,Carlinhos Brown,Marisa Monte,A Menina Dança,song,2002,SUSPEITA,possível duplicata (dup_of_8518),,dup_of_8518
+10756,Claudia Leitte,Anitta,Largadinho,song,2014,SUSPEITA,possível duplicata (dup_of_7901),,dup_of_7901
+10857,Tom Jobim,Vinicius de Moraes,Garota de Ipanema,song,1975,SUSPEITA,possível duplicata (dup_of_2416),,dup_of_2416
+11047,Little Big,Morgenshtern,Uno (remix),song,2020,SUSPEITA,possível duplicata (dup_of_10042),,dup_of_10042
+11283,Wynonna Judd,Clint Black,A Bad Goodbye,song,1992,SUSPEITA,"flag dup_of_11097, possível duplicata",,dup_of_11097
+11308,Les Rita Mitsouko,Sparks,Singing in the Shower,song,1988,SUSPEITA,"flag dup_of_11065, possível duplicata",,dup_of_11065
+11426,Ranking Toyan,Henry 'Junjo' Lawes,How the West Was Won,album,1982,SUSPEITA,possível duplicata (dup_of_11186),,dup_of_11186
+11486,Tin Tin Out,Everything But the Girl,Here's Where the Story Ends,song,1997,SUSPEITA,possível duplicata (dup_of_11243),,dup_of_11243
+11504,Marc Anthony,Alejandro Sanz,Y Hubo Alguien,song,2013,SUSPEITA,possível duplicata (dup_of_4961),,dup_of_4961
+11584,Shakira,Alejandro Sanz,Te Lo Agradezco Pero No,song,2006,SUSPEITA,possível duplicata (dup_of_4868),,dup_of_4868
+11586,Shakira,Karol G,TQG,song,2023,SUSPEITA,"possível duplicata (dup_of_5861), TQG é real",,dup_of_5861
+11626,Enrique Iglesias,Pitbull,I Like It,song,2010,SUSPEITA,possível duplicata (dup_of_5561),,dup_of_5561
+11634,Ricky Martin,Maluma,No Se Me Quita,song,2017,SUSPEITA,possível duplicata (dup_of_5621),,dup_of_5621
+11649,J. Balvin,Bad Bunny,QUÉ PRETENDES,song,2019,SUSPEITA,possível duplicata (dup_of_5611),,dup_of_5611
+11671,Farruko,Anuel AA,Krippy Kush (Remix),song,2017,SUSPEITA,possível duplicata (dup_of_5880),,dup_of_5880
+11673,Anuel AA,Karol G,Secreto,song,2018,SUSPEITA,possível duplicata (dup_of_5434),,dup_of_5434
+11895,Protoje,Chronixx,Who Knows,song,2014,SUSPEITA,possível duplicata (dup_of_3174),,dup_of_3174
+12042,Eric Clapton,George Harrison,While My Guitar Gently Weeps,feature,1968,SUSPEITA,possível duplicata (dup_of_6125),,dup_of_6125
+12200,John Lennon,Elton John,Whatever Gets You Thru the Night,song,1974,SUSPEITA,flag dup_of_6124; possível duplicata,,dup_of_6124
+12221,Waylon Jennings,Willie Nelson,Good Hearted Woman,song,1972,SUSPEITA,flag dup_of_2923; possível duplicata,,dup_of_2923
+12228,Rihanna,Jay-Z,Umbrella,feature,2007,SUSPEITA,flag dup_of_13; possível duplicata,,dup_of_13
+12240,Justin Bieber,Travis Scott,Second Emotion,song,2018,SUSPEITA,possível duplicata (dup_of_80); 'Second Emotion' não é colaboração conhecida entre eles,,dup_of_80
+12241,Nicki Minaj,Migos,MotorSport,song,2017,SUSPEITA,possível duplicata (dup_of_6836),,dup_of_6836
+12247,Dua Lipa,Bad Bunny,Un Día (One Day),song,2020,SUSPEITA,possível duplicata (dup_of_5512); par/título incerto,,dup_of_5512
+12253,Kendrick Lamar,Jay Rock,Money Trees,feature,2012,SUSPEITA,possível duplicata (dup_of_6937); Money Trees real mas marcada como dup,,dup_of_6937
+12259,Chris Brown,Tyga,Loyal,song,2014,SUSPEITA,possível duplicata (dup_of_272); Loyal real mas marcada dup,,dup_of_272
+12260,Chris Brown,Pitbull,International Love,feature,2012,SUSPEITA,"possível duplicata (dup_of_235); 'International Love' é Pitbull feat. Chris Brown, par ok mas dup",,dup_of_235
+12264,J. Cole,21 Savage,a lot,feature,2018,SUSPEITA,possível duplicata (dup_of_5659); 'a lot' real mas dup,,dup_of_5659
+12272,21 Savage,Metro Boomin,Savage Mode,album,2016,SUSPEITA,possível duplicata (dup_of_604); Savage Mode real mas dup,,dup_of_604
+12274,21 Savage,Cardi B,Bartier Cardi,song,2018,SUSPEITA,possível duplicata (dup_of_6865); Bartier Cardi real mas dup,,dup_of_6865
+12278,Dr. Dre,50 Cent,In Da Club,feature,2003,SUSPEITA,possível duplicata (dup_of_132); In Da Club real mas dup,,dup_of_132
+12294,Coldplay,Jay-Z,Lost!,song,2009,SUSPEITA,possível duplicata (dup_of_5568); Jay-Z em Lost+ real mas dup,,dup_of_5568
+12296,BTS,Steve Aoki,Waste It on Me,feature,2018,SUSPEITA,possível duplicata (dup_of_8388); Waste It on Me real mas dup,,dup_of_8388
+12297,BLACKPINK,Cardi B,Bet You Wanna,song,2021,SUSPEITA,possível duplicata (dup_of_5038); Bet You Wanna real mas dup,,dup_of_5038
+12327,Metro Boomin,Young Thug,Digits,feature,2016,SUSPEITA,possível duplicata (dup_of_6811),,dup_of_6811
+12329,Jack Harlow,Lil Wayne,Common Ground,song,2020,SUSPEITA,possível duplicata (dup_of_6930),,dup_of_6930
+12353,Halsey,Juice WRLD,Without Me (Remix),song,2018,SUSPEITA,possível duplicata; remix não confirmado,,dup_of_5682
+12355,Juice WRLD,Lil Uzi Vert,Wishing Well,feature,2020,SUSPEITA,possível duplicata,,dup_of_6989
+12368,Roddy Ricch,Post Malone,Wow. (Remix),song,2019,SUSPEITA,possível duplicata,,dup_of_7696
+12373,Migos,Lil Uzi Vert,Bad and Boujee,feature,2016,SUSPEITA,possível duplicata,,dup_of_6832
+12380,Quavo,Travis Scott,Pick Up the Phone,feature,2016,SUSPEITA,possível duplicata,,dup_of_192
+12392,James Blake,Travis Scott,Mile High,song,2018,SUSPEITA,possível duplicata,,dup_of_214
+12397,Daniel Caesar,Justin Bieber,Peaches,feature,2021,SUSPEITA,possível duplicata; Peaches com Daniel Caesar e Giveon,,dup_of_258
+12403,Giveon,Justin Bieber,Peaches,feature,2021,SUSPEITA,possível duplicata,,dup_of_261
+12404,Giveon,Drake,Chicago Freestyle,feature,2020,SUSPEITA,possível duplicata,,dup_of_262
+12440,Lil Durk,Morgan Wallen,broadway girls,song,2021,SUSPEITA,possível duplicata (dup_of_545),,dup_of_545
+12448,Latto,Cardi B,Put It on Da Floor Again,song,2023,SUSPEITA,possível duplicata (dup_of_279),,dup_of_279
+12474,Ludacris,Mary J. Blige,Runaway Love,song,2006,SUSPEITA,possível duplicata (dup_of_5663),,dup_of_5663
+12476,Ludacris,Fergie,Glamorous,song,2007,SUSPEITA,possível duplicata (dup_of_5756),,dup_of_5756
+12514,Martin Garrix,Bebe Rexha,In the Name of Love,song,2015,SUSPEITA,possível duplicata (dup_of_312),,dup_of_312
+12516,Martin Garrix,Bonn,High on Life,song,2018,SUSPEITA,possível duplicata (dup_of_3540),,dup_of_3540
+12519,Anitta,Maluma,El Que Espera,song,2021,SUSPEITA,possível duplicata (dup_of_1709),,dup_of_1709
+12524,Karol G,Maluma,Creeme,song,2017,SUSPEITA,possível duplicata (dup_of_11655),,dup_of_11655
+12541,Jennifer Lopez,Bad Bunny,Te Guste,song,2021,SUSPEITA,possível duplicata (dup_of_11630),,dup_of_11630
+12559,Camila Cabello,DaBaby,My Oh My,song,2019,SUSPEITA,possível duplicata (dup_of_357),,dup_of_357
+12561,Tate McRae,Khalid,working,song,2021,SUSPEITA,possível duplicata (dup_of_361); título genérico,,dup_of_361
+12571,Ellie Goulding,Diplo,Close to Me,song,2019,SUSPEITA,possível duplicata (dup_of_5677),,dup_of_5677
+12586,Anne-Marie,Niall Horan,Our Song,song,2019,SUSPEITA,possível duplicata (dup_of_382),,dup_of_382
+12587,Anne-Marie,KSI,Don't Play,song,2021,SUSPEITA,possível duplicata (dup_of_6673),,dup_of_6673
+12604,Wale,Jeremih,The Body,song,2016,SUSPEITA,possível duplicata,,dup_of_7150
+12635,Method Man,Mary J. Blige,I'll Be There for You / You're All I Need to Get By,song,1995,SUSPEITA,possível duplicata,,dup_of_407
+12648,Bryson Tiller,H.E.R.,Could've Been,song,2018,SUSPEITA,possível duplicata,,dup_of_12400
+12650,Brent Faiyaz,"Tyler, The Creator",Gravity,song,2019,SUSPEITA,possível duplicata,,dup_of_422
+12676,D'Angelo,Q-Tip,Me and Those Dreamin' Eyes of Mine,song,1995,SUSPEITA,possível duplicata,,dup_of_6400
+12706,Jack White,Loretta Lynn,"Portland, Oregon",song,2004,SUSPEITA,possível duplicata (dup_of_2967),,dup_of_2967
+12729,Tiësto,Karol G,Don't Be Shy,song,2022,SUSPEITA,possível duplicata (dup_of_3341),,dup_of_3341
+12805,Akhenaton,Oxmo Puccino,Black Album,song,2003,SUSPEITA,possível duplicata (dup_of_12798),,dup_of_12798
+13066,Fiona Apple,Jon Brion,When the Pawn...,album,1999,SUSPEITA,possível duplicata,,dup_of_11326
+13165,Yung Miami,JT,Act Up,song,2019,SUSPEITA,possível duplicata (dup_of_11264),,dup_of_11264
+13168,Flo Milli,Mulatto,In the Party,song,2020,SUSPEITA,possível duplicata (dup_of_11249),,dup_of_11249
+13283,Mia Martini,Riccardo Cocciante,Innamorata,song,1993,SUSPEITA,possível duplicata,,dup_of_11206
+13393,Gesaffelstein,The Weeknd,Lost in the Fire,song,2019,SUSPEITA,possível duplicata (dup_of_12236),,dup_of_12236
+13418,Flosstradamus,GTA,Prison Riot,song,2015,SUSPEITA,possível duplicata,,dup_of_11294
+13488,The Rolling Stones,Lady Gaga,Gimme Shelter,live,2012,SUSPEITA,possível duplicata,,dup_of_13049
+13553,Stereophonics,Tom Jones,Mama Told Me Not to Come,song,2004,SUSPEITA,"flag dup_of, possível duplicata",,dup_of_11286
+13792,2PM,Miss A,JYP Nation concert,live,2012,SUSPEITA,possivel duplicata,,dup_of_13782
+13944,Tokio Hotel,Kerli,Strange (collaboration),song,2009,SUSPEITA,possível duplicata (dup_of_11440),,dup_of_11440
+14193,Ed Sheeran,Justin Bieber,Love Yourself,song,2015,SUSPEITA,'Love Yourself' Bieber coescrita por Ed mas flag dup,,dup_of_12231
+14198,Ed Sheeran,Rudimental,Bloodstream,song,2015,SUSPEITA,Rudimental 'Bloodstream' feat Ed real mas flag dup,,dup_of_5534
+14222,SZA,Justin Timberlake,The Other Side,song,2019,SUSPEITA,possível duplicata (dup_of_7638),,dup_of_7638
+14242,Alicia Keys,Swizz Beatz,Like You'll Never See Me Again,song,2007,SUSPEITA,possível duplicata (dup_of_12306),,dup_of_12306
+14255,David Guetta,Bebe Rexha,Say My Name,song,2019,SUSPEITA,possível duplicata (dup_of_3290),,dup_of_3290
+14256,David Guetta,J. Balvin,Say My Name,song,2019,SUSPEITA,possível duplicata (dup_of_3621),,dup_of_3621
+14282,Future,Rihanna,Selfish,song,2017,SUSPEITA,possível duplicata (dup_of_5498),,dup_of_5498
+14284,Future,Juice WRLD,Wrld on Drugs,album,2018,SUSPEITA,possível duplicata (dup_of_173),,dup_of_173
+14304,Roddy Ricch,Gunna,Start Wit Me,song,2020,SUSPEITA,possível duplicata (dup_of_6875),,dup_of_6875
+14332,Don Toliver,Kali Uchis,Drugs N Hella Melodies,song,2020,SUSPEITA,possível duplicata (dup_of_12614),,dup_of_12614
+14342,Karol G,Maluma,Créeme,song,2018,SUSPEITA,possível duplicata (dup_of_11655),,dup_of_11655
+14348,Ozuna,J. Balvin,Reggaetón,song,2017,SUSPEITA,possível duplicata (dup_of_5813),,dup_of_5813
+14366,Manuel Turizo,Maluma,El Préstamo,song,2018,SUSPEITA,possível duplicata (dup_of_5431),,dup_of_5431
+14370,Manuel Turizo,Karol G,El Makinón,song,2021,SUSPEITA,possível duplicata; 'El Makinón' é Karol G & Mariah Angeliq,,dup_of_9644
+14387,Marc Anthony,Celia Cruz,La Vida Es Un Carnaval,song,2002,SUSPEITA,possível duplicata; 'La Vida Es Un Carnaval' é da Celia Cruz,,dup_of_11501
+14389,Nicki Nicole,Trueno,Mamichula,song,2021,SUSPEITA,possível duplicata (dup_of_9250),,dup_of_9250
+14405,Emicida,Pabllo Vittar,AmarElo,song,2019,SUSPEITA,possível duplicata (dup_of_589),,dup_of_589
+14412,Caetano Veloso,Gilberto Gil,Tropicália,album,1968,SUSPEITA,possível duplicata (dup_of_2069),,dup_of_2069
+14418,MC Kevinho,Psirico,Encaixa,song,2018,SUSPEITA,possível duplicata (dup_of_1457),,dup_of_1457
+14426,BTS,Nicki Minaj,IDOL,song,2018,SUSPEITA,real mas marcada como duplicata (dup_of_5028),,dup_of_5028
+14429,BTS,Steve Aoki,Waste It on Me,song,2018,SUSPEITA,real mas marcada como duplicata (dup_of_8388),,dup_of_8388
+14438,Jackson Wang,Galantis,Pretty Please,song,2019,SUSPEITA,real mas marcada como duplicata (dup_of_5044),,dup_of_5044
+14443,Agust D,Halsey,SUGA's Interlude,song,2019,SUSPEITA,real mas marcada como duplicata (dup_of_595),,dup_of_595
+14445,Agust D,MAX,Burn It,song,2021,SUSPEITA,real mas marcada como duplicata (dup_of_8444),,dup_of_8444
+14462,Måneskin,Iggy Pop,I Wanna Be Your Slave,song,2021,SUSPEITA,real mas marcada como duplicata (dup_of_4753),,dup_of_4753
+14484,Carrie Underwood,John Legend,Hallelujah,song,2019,SUSPEITA,real mas marcada como duplicata (dup_of_8475),,dup_of_8475
+14501,Bruno Mars,Gucci Mane,Wake Up in the Sky,song,2018,SUSPEITA,possível duplicata (dup_of_12619),,dup_of_12619
+14518,Meghan Trainor,Nicki Minaj,Nice to Meet Ya,song,2019,SUSPEITA,possível duplicata (dup_of_372),,dup_of_372
+14520,Meghan Trainor,"Earth, Wind & Fire",With You,song,2020,SUSPEITA,possível duplicata (dup_of_12576),,dup_of_12576
+14531,H.E.R.,YG,Slide (Remix),song,2019,SUSPEITA,possível duplicata (dup_of_5732),,dup_of_5732
+14551,John Legend,Jhené Aiko,"U Move, I Move",song,2019,SUSPEITA,possível duplicata (dup_of_12304),,dup_of_12304
+14581,Kendrick Lamar,U2,XXX,song,2017,SUSPEITA,possível duplicata (dup_of_7637),,dup_of_7637
+14599,Megan Thee Stallion,GloRilla,Wanna Be,song,2023,SUSPEITA,possível duplicata (dup_of_348),,dup_of_348
+14600,50 Cent,Dr. Dre,In da Club,song,2003,SUSPEITA,possível duplicata (dup_of_132),,dup_of_132
+14608,50 Cent,Jeremih,Down on Me,song,2010,SUSPEITA,possível duplicata (dup_of_7663),,dup_of_7663
+14615,Juice WRLD,Young Thug,Bad Boy,song,2020,SUSPEITA,possível duplicata (dup_of_12356),,dup_of_12356
+14647,French Montana,Max B,Coke Boys,song,2013,SUSPEITA,possível duplicata (dup_of_12435),,dup_of_12435
+14676,Shakira,Manuel Turizo,Copa Vacía,song,2023,SUSPEITA,possível duplicata (dup_of_503); Copa Vacía real,,dup_of_503
+14688,Peso Pluma,Natanael Cano,AMG,song,2022,SUSPEITA,possível duplicata (dup_of_5253); AMG real,,dup_of_5253
+14709,Don Omar,Lucenzo,Danza Kuduro,song,2010,SUSPEITA,possível duplicata (dup_of_5874); Danza Kuduro real,,dup_of_5874
+14716,Don Omar,Tego Calderón,Bandolero,song,2006,SUSPEITA,possível duplicata (dup_of_11641); Bandolero real,,dup_of_11641
+14733,Luísa Sonza,Pabllo Vittar,MODO TURBO,song,2019,SUSPEITA,possível duplicata (dup_of_574); MODO TURBO real,,dup_of_574
+14739,Wesley Safadão,Ivete Sangalo,Camarote,song,2014,SUSPEITA,possível duplicata (dup_of_1553); Camarote real,,dup_of_1553
+14750,Gilberto Gil,Caetano Veloso,Tropicália,song,1968,SUSPEITA,possível duplicata (dup_of_2069); Tropicália real,,dup_of_2069
+14784,J-Hope,J. Cole,on the street,song,2023,SUSPEITA,possível duplicata (dup_of_5063),,dup_of_5063
+14787,Maroon 5,Cardi B,Girls Like You (Remix),song,2018,SUSPEITA,possível duplicata (dup_of_6163),,dup_of_6163
+14789,Maroon 5,Rihanna,If I Never See Your Face Again,song,2007,SUSPEITA,possível duplicata (dup_of_203),,dup_of_203
+14799,Burna Boy,Dave,Location,song,2019,CONFIRMADA,'Location' Burna Boy feat. Dave é real (2019),,dup_of_930
+14810,Asake,Burna Boy,Fuji Vibe,song,2023,SUSPEITA,possível duplicata (dup_of_1008),,dup_of_1008
+14815,Kacey Musgraves,Troye Sivan,Easy,song,2019,SUSPEITA,possível duplicata (dup_of_8463),,dup_of_8463
+14822,Rihanna,Nicki Minaj,Fly,song,2011,SUSPEITA,possível duplicata (dup_of_15),,dup_of_15
+14826,Rihanna,David Guetta,Right Now,song,2013,SUSPEITA,possível duplicata (dup_of_209),,dup_of_209
+14827,The Weeknd,Lana Del Rey,Stargirl Interlude,song,2016,SUSPEITA,possível duplicata (dup_of_859),,dup_of_859
+14854,Khalid,Swae Lee,My Bad,song,2019,SUSPEITA,possível duplicata,,dup_of_12378
+14877,Diplo,Thomas Wesley,Do Si Do,song,2020,SUSPEITA,possível duplicata,,dup_of_3512
+14887,J. Cole,Kendrick Lamar,Black Panther Soundtrack,album,2018,SUSPEITA,possível duplicata,,dup_of_12262
+14888,J. Cole,Lil Baby,The Bigger Picture (Remix),song,2020,SUSPEITA,possível duplicata,,dup_of_12265
+14896,Cardi B,Chance the Rapper,Best Part (Remix),song,2017,SUSPEITA,possível duplicata,,dup_of_5642
+14901,Lil Baby,Young Thug,Bubbly,song,2018,SUSPEITA,possível duplicata,,dup_of_6848
+14916,Young Thug,Drake,Sacrifices,song,2017,SUSPEITA,possível duplicata,,dup_of_12363
+14919,Lil Uzi Vert,Juice WRLD,Wishing Well,song,2020,SUSPEITA,possível duplicata,,dup_of_6989
+14923,Quavo,Post Malone,Congratulations,song,2017,SUSPEITA,possível duplicata,,dup_of_7111
+14938,2 Chainz,Lil Wayne,Collegrove,album,2016,SUSPEITA,possível duplicata,,dup_of_7070
+14943,DJ Khaled,Beyoncé,Hold You Down,song,2015,SUSPEITA,possível duplicata; Beyoncé não está na faixa,,dup_of_12285
+14946,DJ Khaled,SZA,Higher,song,2020,SUSPEITA,possível duplicata,,dup_of_7672
+14947,DJ Khaled,Post Malone,Higher,song,2020,SUSPEITA,possível duplicata,,dup_of_5599
+14965,Maluma,Marc Anthony,Felices los 4 (Salsa Version),song,2017,SUSPEITA,possível duplicata,,dup_of_12530
+14966,Maluma,J. Balvin,Qué Pena,song,2020,SUSPEITA,possível duplicata,,dup_of_320
+14967,Maluma,Jennifer Lopez,Pa' Ti + Lonely,song,2020,SUSPEITA,possível duplicata,,dup_of_5620
+14968,Maluma,Ricky Martin,No Se Me Quita,song,2019,SUSPEITA,possível duplicata,,dup_of_5621
+14972,Rauw Alejandro,Camilo,Tattoo (Remix),song,2021,SUSPEITA,possível duplicata,,dup_of_841
+14973,Rauw Alejandro,Daddy Yankee,Panties y Brasieres,song,2021,SUSPEITA,possível duplicata,,dup_of_511
+14985,Myke Towers,Farruko,La Tóxica (Remix),song,2020,SUSPEITA,possível duplicata,,dup_of_5882
+14987,Tainy,J. Balvin,Agua,song,2021,SUSPEITA,possível duplicata,,dup_of_8429
+14992,Enrique Iglesias,Ricky Martin,Súbeme la Radio (Remix),song,2017,SUSPEITA,possível duplicata,,dup_of_4916
+14996,Enrique Iglesias,Usher,Dirty Dancer,song,2010,SUSPEITA,possível duplicata,,dup_of_12546
+15007,Anitta,J. Balvin,Downtown,song,2018,SUSPEITA,possível duplicata,,dup_of_316
+15017,Iza,Ludmilla,Rainha,song,2019,SUSPEITA,possível duplicata,,dup_of_1426
+15027,Seu Jorge,David Bowie,Life on Mars?,song,2004,SUSPEITA,possível duplicata,,dup_of_2213
+15062,OneRepublic,Alesso,If I Lose Myself (Alesso Remix),song,2013,SUSPEITA,possível duplicata (dup_of_3392),,dup_of_3392
+15064,OneRepublic,Logic,Start Again,song,2018,SUSPEITA,possível duplicata (dup_of_373),,dup_of_373
+15088,Morgan Wallen,HARDY,Sand in My Boots,song,2020,SUSPEITA,possível duplicata (dup_of_3012),,dup_of_3012
+15090,Morgan Wallen,Lil Durk,Broadway Girls,song,2020,SUSPEITA,possível duplicata (dup_of_545),,dup_of_545
+15096,Ariana Grande,Miley Cyrus,Don't Dream It's Over,song,2015,SUSPEITA,possível duplicata (dup_of_12299),,dup_of_12299
+15097,Ariana Grande,2 Chainz,Rule the World,song,2018,SUSPEITA,possível duplicata (dup_of_14940),,dup_of_14940
+15098,Ariana Grande,Doja Cat,34+35 Remix,song,2021,SUSPEITA,possível duplicata (dup_of_75),,dup_of_75
+15099,Ariana Grande,Megan Thee Stallion,34+35 Remix,song,2021,SUSPEITA,possível duplicata (dup_of_76),,dup_of_76
+15102,Justin Bieber,Luis Fonsi,Despacito Remix,song,2017,SUSPEITA,possível duplicata (dup_of_331),,dup_of_331
+15103,Justin Bieber,Daddy Yankee,Despacito Remix,song,2017,SUSPEITA,possível duplicata (dup_of_8395),,dup_of_8395
+15110,Justin Bieber,Khalid,As I Am,song,2019,SUSPEITA,possível duplicata (dup_of_82),,dup_of_82
+15115,Shawn Mendes,Zedd,Lost in Japan (Remix),song,2019,SUSPEITA,possível duplicata (dup_of_5540),,dup_of_5540
+15119,Demi Lovato,Nick Jonas,Close,song,2021,SUSPEITA,possível duplicata (dup_of_12552),,dup_of_12552
+15127,Doja Cat,Nicki Minaj,Say So Remix,song,2020,SUSPEITA,possível duplicata (dup_of),,dup_of_122
+15137,Frank Ocean,Jay-Z,Made in America,song,2013,SUSPEITA,possível duplicata e ano divergente,,dup_of_12315
+15144,Frank Ocean,Pharrell Williams,Sweet Life,song,2012,SUSPEITA,'Sweet Life' é solo; possível duplicata,,dup_of_12318
+15149,Mariah Carey,Snoop Dogg,Crybaby,song,1995,SUSPEITA,possível duplicata e ano divergente,,dup_of_284
+15150,Mariah Carey,Ol' Dirty Bastard,Fantasy Remix,song,1995,SUSPEITA,possível duplicata (dup_of),,dup_of_12457
+15170,Kygo,Rita Ora,Carry On,song,2018,SUSPEITA,possível duplicata (dup_of),,dup_of_5678
+15182,Tiësto,The Chainsmokers,Split (Only U),song,2022,SUSPEITA,possível duplicata (dup_of),,dup_of_12727
+15196,Travis Scott,Kid Cudi,The scotts,song,2020,SUSPEITA,possível duplicata (dup_of),,dup_of_5692
+15203,Travis Scott,Kendrick Lamar,goosebumps (Remix),song,2016,SUSPEITA,'goosebumps' original tem Kendrick; 'remix' + dup,,dup_of_12242
+15228,A$AP Rocky,"Tyler, The Creator",Potato Salad,song,2019,SUSPEITA,possível duplicata (dup_of),,dup_of_251
+15234,DaBaby,Post Malone,Enemies,song,2019,SUSPEITA,possível duplicata (dup_of),,dup_of_12371
+15256,Rick Ross,Lil Wayne,9 Piece,song,2013,SUSPEITA,possível duplicata (dup_of),,dup_of_12598
+15265,Swae Lee,Travis Scott,SICKO MODE,song,2018,SUSPEITA,possível duplicata (dup_of),,dup_of_15204
+15270,Ice Spice,Central Cee,Did It First,song,2023,SUSPEITA,possível duplicata (dup_of),,dup_of_12454
+15271,J. Balvin,Beyoncé,Mi Gente Remix,song,2017,SUSPEITA,possível duplicata (dup_of),,dup_of_5615
+15272,J. Balvin,Daddy Yankee,Bichota (Remix),song,2021,SUSPEITA,possível duplicata; Bichota é Karol G,,dup_of_5808
+15279,Daddy Yankee,Marc Anthony,De Vuelta Pa' La Vuelta,song,2019,SUSPEITA,possível duplicata (dup_of),,dup_of_11509
+15292,Becky G,Peso Pluma,Chanel,song,2022,SUSPEITA,possível duplicata (dup_of),,dup_of_505
+15318,Marília Mendonça,Maiara & Maraisa,Esqueça-me Se For Capaz,song,2019,SUSPEITA,possível duplicata (dup_of_2469),,dup_of_2469
+15338,Alok,Ina Wroldsen,Favela,song,2019,SUSPEITA,possível duplicata (dup_of_3505),,dup_of_3505
+15365,Coldplay,Jay-Z,Lost+,song,2008,SUSPEITA,possível duplicata (dup_of_5568),,dup_of_5568
+15413,Andrea Bocelli,Ed Sheeran,Perfect Symphony,song,2017,SUSPEITA,"possível duplicata (dup_of_4809), embora 'Perfect Symphony' seja real",,dup_of_4809
+15460,Giveon,Kaash Paige,Love Songs,song,2021,SUSPEITA,possível duplicata (dup_of_14230),,dup_of_14230
+15461,Giveon,Daniel Caesar,Remember Me,song,2021,SUSPEITA,possível duplicata (dup_of_12399),,dup_of_12399
+15484,Troye Sivan,Tate McRae,you,song,2021,SUSPEITA,possível duplicata (dup_of_12563),,dup_of_12563
+15486,David Guetta,Akon,Play Hard,song,2012,SUSPEITA,possível duplicata (dup_of_3609),,dup_of_3609
+15491,David Guetta,Rihanna,Who's That Chick?,song,2010,SUSPEITA,possível duplicata (dup_of_3293),,dup_of_3293
+15502,DJ Snake,AlunaGeorge,You Know You Like It,song,2014,SUSPEITA,possível duplicata (dup_of_3402),,dup_of_3402
+15516,Jay-Z,Beyoncé,'03 Bonnie & Clyde,song,2002,SUSPEITA,possível duplicata (dup_of_14276),,dup_of_14276
+15517,Jay-Z,UGK,Big Pimpin',song,2000,SUSPEITA,possível duplicata (dup_of_14280),,dup_of_14280
+15527,Future,Juice WRLD,Fine China,song,2019,SUSPEITA,possível duplicata (dup_of_6799),,dup_of_6799
+15532,Future,Young Thug,Group Home,song,2017,SUSPEITA,possível duplicata (dup_of_12271),,dup_of_12271
+15533,Future,Metro Boomin,Super Slimey,song,2017,SUSPEITA,possível duplicata (dup_of_12323),,dup_of_12323
+15538,21 Savage,J. Cole,A Lot,song,2018,SUSPEITA,possível duplicata (dup_of_5659),,dup_of_5659
+15562,Metro Boomin,Drake,No Complaints,song,2018,SUSPEITA,possível duplicata (dup_of_6809),,dup_of_6809
+15563,Metro Boomin,Travis Scott,No Complaints,song,2018,SUSPEITA,possível duplicata (dup_of_6810),,dup_of_6810
+15576,Lil Nas X,Jack Harlow,Industry Baby,song,2021,SUSPEITA,possível duplicata,,dup_of_230
+15577,Lil Nas X,BTS,Old Town Road (Seoul Town Road Remix),song,2020,SUSPEITA,possível duplicata,,dup_of_12266
+15582,Pharrell Williams,Justin Timberlake,Rock Your Body,song,2004,SUSPEITA,possível duplicata,,dup_of_5592
+15584,Pharrell Williams,Gwen Stefani,Hollaback Girl,song,2004,SUSPEITA,possível duplicata; Hollaback Girl é da Gwen produzida por Pharrell,,dup_of_12277
+15599,Meek Mill,Rick Ross,Tupac Back,song,2010,SUSPEITA,possível duplicata,,dup_of_415
+15602,Meek Mill,Lil Uzi Vert,Dangerous,song,2017,SUSPEITA,possível duplicata,,dup_of_14329
+15610,Central Cee,Lil Baby,Loading,song,2022,SUSPEITA,possível duplicata,,dup_of_12641
+15631,Rosalía,James Blake,Barefoot in the Park,song,2019,SUSPEITA,possível duplicata,,dup_of_14356
+15633,Rosalía,C. Tangana,Antes de Morirme,song,2017,SUSPEITA,possível duplicata,,dup_of_4829
+15648,Bizarrap,Shakira,BZRP Music Sessions Vol. 53,song,2023,SUSPEITA,possível duplicata,,dup_of_14374
+15649,Bizarrap,Paulo Londra,Bzrp Music Sessions Vol. 23,song,2019,SUSPEITA,possível duplicata,,dup_of_14378
+15660,Marc Anthony,Romeo Santos,Yo También,song,2010,SUSPEITA,possível duplicata,,dup_of_11510
+15677,Emicida,Drik Barbosa,Mandume,song,2019,SUSPEITA,possível duplicata,,dup_of_623
+15726,Fall Out Boy,Foxes,Just One Yesterday,song,2013,SUSPEITA,possível duplicata,,dup_of_14459
+15727,Fall Out Boy,Big Sean,The Mighty Fall,song,2013,SUSPEITA,possível duplicata,,dup_of_14458
+15732,Måneskin,Iggy Pop,I Wanna Be Your Slave (Remix),song,2021,SUSPEITA,possível duplicata,,dup_of_5013
+15738,Bring Me the Horizon,Halsey,Mantra (Remix),song,2018,SUSPEITA,possível duplicata,,dup_of_6147
+15739,Bring Me the Horizon,Amy Lee,One Day the Only Butterflies Left Will Be in Your Chest as You March Towards Your Death,song,2023,SUSPEITA,possível duplicata,,dup_of_6146
+15744,Tems,Wizkid,Essence,song,2021,SUSPEITA,possível duplicata,,dup_of_517
+15746,Tems,Drake,Wait for U,song,2022,SUSPEITA,possível duplicata,,dup_of_515
+15755,Carrie Underwood,Keith Urban,The Fighter,song,2017,SUSPEITA,possível duplicata,,dup_of_14481
+15772,Beyoncé,Post Malone,Levii's Jeans,song,2023,SUSPEITA,possível duplicata,,dup_of_43
+15795,Bruno Mars,Lady Gaga,Die with a Smile,song,2024,SUSPEITA,possível duplicata,,dup_of_110
+15807,Halsey,Suga,SUGA's Interlude,song,2020,SUSPEITA,possível duplicata,,dup_of_5058
+15810,Halsey,Cara Delevingne,I Feel Everything,song,2017,SUSPEITA,possível duplicata,,dup_of_14516
+15833,H.E.R.,Chris Brown,Come Together,song,2017,SUSPEITA,possível duplicata,,dup_of_14535
+15852,John Legend,Rick Ross,Ordinary People (Remix),song,2006,SUSPEITA,possível duplicata,,dup_of_14547
+15853,John Legend,Ludacris,Tonight (Best You Ever Had),song,2013,SUSPEITA,possível duplicata,,dup_of_5543
+15869,Avicii,Audra Mae,Silhouettes,song,2012,SUSPEITA,possível duplicata,,dup_of_14562
+15875,Avicii,Adam Lambert,Lay Me Down,song,2015,SUSPEITA,possível duplicata,,dup_of_12722
+15880,Skrillex,Ellie Goulding,Summit,song,2012,SUSPEITA,possível duplicata,,dup_of_14566
+15887,Skrillex,Fred again..,Rumble,song,2023,SUSPEITA,possível duplicata,,dup_of_14569
+15907,Kendrick Lamar,J. Cole,Black Friday,song,2016,SUSPEITA,possível duplicata,,dup_of_253
+15915,Nicki Minaj,Mariah Carey,Up Out My Face,song,2009,SUSPEITA,possível duplicata,,dup_of_285
+15945,Gunna,Lil Baby,Drip Harder,album,2018,SUSPEITA,possível duplicata (dup_of_6844),,dup_of_6844
+15984,Big Sean,Nicki Minaj,Dance (A$$) Remix,song,2011,SUSPEITA,possível duplicata (dup_of_268),,dup_of_268
+16004,Jack Harlow,Justin Timberlake,Parent Trap,song,2022,SUSPEITA,possível duplicata (dup_of_14660),,dup_of_14660
+16016,Nas,DJ Khaled,Nas Album Done,song,2016,SUSPEITA,possível duplicata (dup_of_12595),,dup_of_12595
+16019,Shakira,Wyclef Jean,Hips Don't Lie,song,2005,SUSPEITA,possível duplicata (dup_of_5630),,dup_of_5630
+16023,Shakira,Bizarrap,"BZRP Music Sessions, Vol. 53",song,2023,SUSPEITA,possível duplicata (dup_of),,dup_of_14374
+16025,Anuel AA,Ozuna,Adicto,song,2018,SUSPEITA,possível duplicata (dup_of),,dup_of_5827
+16034,Peso Pluma,Nicki Nicole,Por Las Noches (Remix),song,2023,SUSPEITA,possível duplicata (dup_of),,dup_of_5264
+16042,Sech,Daddy Yankee,Relación (Remix),song,2019,SUSPEITA,possível duplicata (dup_of),,dup_of_5774
+16044,Sech,Farruko,Relación (Remix),song,2019,SUSPEITA,possível duplicata (dup_of),,dup_of_14696
+16054,Don Omar,Tego Calderón,Bandoleros,song,2005,SUSPEITA,possível duplicata (dup_of),,dup_of_8400
+16055,Don Omar,Wisin & Yandel,Mayor Que Yo,song,2005,SUSPEITA,possível duplicata (dup_of),,dup_of_11639
+16056,Don Omar,Romeo Santos,Ella y Yo,song,2013,SUSPEITA,possível duplicata (dup_of),,dup_of_11640
+16068,Christina Aguilera,Blake Shelton,Just a Fool,song,2013,SUSPEITA,possível duplicata (dup_of),,dup_of_12488
+16072,Luísa Sonza,Vitão,Flores,song,2021,SUSPEITA,possível duplicata (dup_of),,dup_of_794
+16077,Wesley Safadão,Anitta,Romance com Safadeza,song,2017,SUSPEITA,possível duplicata (dup_of),,dup_of_582
+16082,Wesley Safadão,Marília Mendonça,Camarote,song,2020,SUSPEITA,possível duplicata (dup_of),,dup_of_1996
+16083,Criolo,Emicida,Duas de Cinco,song,2011,SUSPEITA,possível duplicata (dup_of),,dup_of_8116
+16091,Gilberto Gil,Jorge Ben Jor,Gil & Jorge: Ogum Xangô,album,1975,SUSPEITA,possível duplicata (dup_of),,dup_of_2231
+16138,Maroon 5,Future,Cold,song,2017,SUSPEITA,Cold do Maroon 5 com Future existe mas flag dup,,dup_of_5565
+16159,Burna Boy,Beyoncé,ALREADY,song,2020,CONFIRMADA,ALREADY do Beyoncé com Burna Boy no Lion King The Gift (2020),,dup_of_14800
+16161,Burna Boy,Dave,Location,song,2018,CONFIRMADA,Location do Dave com Burna Boy (2019); flag dup,,dup_of_930
+16203,Sia,Diplo,Elastic Heart,song,2014,SUSPEITA,possível duplicata; Diplo não é o par real de Elastic Heart,,dup_of_12301
+16205,Sia,BTS,On,song,2020,SUSPEITA,possível duplicata; título ultracurto,,ultrashort_title;dup_of_5035
+16213,Tate McRae,Jeremy Zucker,Empty,song,2019,SUSPEITA,possível duplicata,,dup_of_12560
+16214,Tate McRae,Ali Gatie,lie to me,song,2022,SUSPEITA,possível duplicata,,dup_of_12562
+16215,Tate McRae,Khalid,working,song,2022,SUSPEITA,possível duplicata,,dup_of_361
+16240,Zedd,Hayley Williams,Stay the Night,song,2014,SUSPEITA,possível duplicata; 'Stay the Night' Zedd feat. Hayley real mas dup,,dup_of_453
+16251,Martin Garrix,Troye Sivan,There for You,song,2016,SUSPEITA,possível duplicata; 'There for You' real,,dup_of_3328
+16252,Martin Garrix,Ed Sheeran,Rewind Repeat It,song,2016,SUSPEITA,possível duplicata,,dup_of_14882
+16267,Lil Baby,Gunna,Never Recover,song,2019,SUSPEITA,possível duplicata; 'Never Recover' real,,dup_of_15946
+16279,"Tyler, The Creator",Frank Ocean,Answer,song,2013,SUSPEITA,possível duplicata; Tyler x Frank existem juntos,,dup_of_15141
+16287,Young Thug,Future,Relationship,song,2016,SUSPEITA,possível duplicata; 'Relationship' Young Thug x Future real,,dup_of_148
+16289,Young Thug,Elton John,High,song,2018,SUSPEITA,possível duplicata; 'High' incerto,,dup_of_6863
+16293,Young Thug,Nicki Minaj,Anybody,song,2019,SUSPEITA,possível duplicata,,dup_of_7694
+16296,Lil Uzi Vert,Playboi Carti,wokeuplikethis,song,2017,SUSPEITA,possível duplicata,,dup_of_15238
+16312,2 Chainz,Pharrell Williams,Feds Watching,song,2013,SUSPEITA,possível duplicata,,dup_of_14939
+16317,DJ Khaled,Beyoncé,Higher,song,2016,SUSPEITA,possível duplicata,,dup_of_5600
+16318,DJ Khaled,Drake,Popstar,song,2020,SUSPEITA,possível duplicata,,dup_of_128
+16322,DJ Khaled,SZA,Beautiful,song,2023,SUSPEITA,possível duplicata,,dup_of_6906
+16331,Bad Bunny,J. Balvin,Oasis,album,2019,SUSPEITA,possível duplicata,,dup_of_104
+16332,Bad Bunny,Drake,Mia,song,2018,SUSPEITA,possível duplicata,,dup_of_103
+16345,Maluma,Ricky Martin,No Se Me Quita,song,2018,SUSPEITA,possível duplicata,,dup_of_5621
+16346,Maluma,Marc Anthony,Felices los 4 (Salsa Version),song,2018,SUSPEITA,possível duplicata,,dup_of_12530
+16364,Nicky Jam,J. Balvin,X,song,2017,SUSPEITA,título ultracurto / possível duplicata,,ultrashort_title;dup_of_498
+16386,Enrique Iglesias,Wisin & Yandel,Lloro por Ti,song,2010,SUSPEITA,possível duplicata (dup_of_11629),,dup_of_11629
+16399,Anitta,Maluma,Sim ou Não,song,2015,SUSPEITA,possível duplicata (dup_of_1411),,dup_of_1411
+16461,OneRepublic,Seeb,Rich Girl,song,2017,SUSPEITA,possível duplicata (dup_of_15061),,dup_of_15061
+16463,OneRepublic,Alesso,If I Lose Myself,song,2013,SUSPEITA,possível duplicata (dup_of_12578),,dup_of_12578
+16482,Wizkid,Davido,Manya,song,2017,SUSPEITA,possível duplicata,,dup_of_15397
+16487,Ayra Starr,Wizkid,2 Sugar,song,2022,SUSPEITA,possível duplicata,,dup_of_15084
+16494,Morgan Wallen,HARDY,Sand in My Boots,song,2021,SUSPEITA,possível duplicata,,dup_of_3012
+16499,J. Balvin,Ozuna,Reggaeton,song,2021,SUSPEITA,possível duplicata,,dup_of_5813
+16503,Ariana Grande,Miley Cyrus,Don't Dream It's Over,song,2018,SUSPEITA,possível duplicata,,dup_of_12299
+16519,Demi Lovato,Nick Jonas,Close,song,2016,SUSPEITA,possível duplicata,,dup_of_12552
+16540,Doja Cat,Tyga,Freaky Deaky,song,2022,SUSPEITA,possível duplicata,,dup_of_7078
+16550,Frank Ocean,Kanye West,New Magic Wand,song,2019,SUSPEITA,possível duplicata; faixa do Tyler,,dup_of_15138
+16565,Calvin Harris,Tinashe,Dollar Signs,song,2014,SUSPEITA,possível duplicata (dup_of_3305),,dup_of_3305
+16575,Kygo,Maty Noyes,Stay,song,2016,SUSPEITA,possível duplicata (dup_of_4038),,dup_of_4038
+16576,Major Lazer,Nicki Minaj,Run the World,song,2013,SUSPEITA,possível duplicata (dup_of_3375); atribuição incerta,,dup_of_3375
+16586,Tiësto,Nelly Furtado,Who Wants to Be Alone,song,2004,CONFIRMADA,Tiësto feat. Nelly Furtado 'Who Wants to Be Alone' existe,,dup_of_3335
+16600,Travis Scott,Drake,sicko mode,song,2018,SUSPEITA,'Sicko Mode' real mas possível duplicata (dup_of_9),,dup_of_9
+16602,Travis Scott,Future,First Take,song,2016,SUSPEITA,possível duplicata (dup_of_12243),,dup_of_12243
+16603,Travis Scott,Quavo,"Huncho Jack, Jack Huncho",album,2017,SUSPEITA,'Huncho Jack' real mas possível duplicata (dup_of_6820),,dup_of_6820
+16634,A$AP Rocky,FKA twigs,Fukk Sleep,song,2018,SUSPEITA,'Fukk Sleep' com FKA twigs; possível duplicata (dup_of_12322),,dup_of_12322
+16650,Migos,Post Malone,Congratulations,song,2017,SUSPEITA,possível duplicata (dup_of_15242),,dup_of_15242
+16676,Ice Spice,PinkPantheress,Boy's a liar Pt. 2,song,2023,SUSPEITA,possível duplicata (dup_of_12453),,dup_of_12453
+16683,J. Balvin,Karol G,Ay DiOs Mío!,song,2021,SUSPEITA,possível duplicata (dup_of_5618),,dup_of_5618
+16687,Daddy Yankee,Psy,Gangnam Style (Remix),song,2012,SUSPEITA,possível duplicata (dup_of_5825),,dup_of_5825
+16705,Becky G,Maluma,La Respuesta,song,2017,SUSPEITA,possível duplicata (dup_of_5405),,dup_of_5405
+16707,Becky G,Anitta,Banana,song,2022,SUSPEITA,possível duplicata (dup_of_1710),,dup_of_1710
+16708,Becky G,De La Ghetto,Todo Cambió,song,2016,SUSPEITA,possível duplicata (dup_of_15293),,dup_of_15293
+16725,María Becerra,TINI,Miénteme,song,2021,SUSPEITA,possível duplicata (dup_of_16396),,dup_of_16396
+16753,Ivete Sangalo,Claudia Leitte,Largadinho,song,2017,SUSPEITA,possível duplicata,,dup_of_1759
+16809,Gorillaz,Snoop Dogg,Welcome to the World of the Plastic Beach,song,2010,SUSPEITA,possível duplicata,,dup_of_196
+16811,Gorillaz,Kali Uchis,Ticker Tape,song,2018,SUSPEITA,possível duplicata,,dup_of_6250
+16816,Gorillaz,Beck,The Valley of The Pagans,song,2020,SUSPEITA,possível duplicata,,dup_of_457
+16828,Davido,Lil Baby,So Crazy,song,2021,SUSPEITA,possível duplicata,,dup_of_15398
+16830,Davido,CKay,La La,song,2022,SUSPEITA,possível duplicata,,dup_of_14476
+16831,Davido,Fireboy DML,Champion Sound,song,2022,SUSPEITA,possível duplicata,,dup_of_15396
+16833,Fireboy DML,Wande Coal,Spell,song,2019,SUSPEITA,possível duplicata,,dup_of_15400
+16836,Luke Combs,Brooks & Dunn,"1, 2 Many",song,2020,SUSPEITA,possível duplicata,,dup_of_15401
+16845,Beyoncé,Post Malone,Levii's Jeans,song,2024,SUSPEITA,possível duplicata,,dup_of_43
+16970,Drake,Lil Wayne,Grindin,song,2014,SUSPEITA,possível duplicata (dup_of_15511),,dup_of_15511
+16980,Drake,Majid Jordan,"Hold On, We're Going Home",song,2013,SUSPEITA,possível duplicata (dup_of_14273),,dup_of_14273
+16987,Taylor Swift,Marcus Mumford,Cowboy Like Me,song,2020,SUSPEITA,possível duplicata (dup_of_15417),,dup_of_15417
+16999,Bad Bunny,J. Balvin,Que Pretendes,song,2018,SUSPEITA,possível duplicata (dup_of_5611),,dup_of_5611
+17001,Bad Bunny,Jhay Cortez,No Me Conoce (Remix),song,2019,SUSPEITA,possível duplicata (dup_of_6068),,dup_of_6068
+17006,Bad Bunny,Myke Towers,Si Veo a Tu Mamá,song,2022,SUSPEITA,possível duplicata (dup_of_5800),,dup_of_5800
+17007,Bad Bunny,Ozuna,Krippy Kush (Remix),song,2017,SUSPEITA,possível duplicata (dup_of_5831),,dup_of_5831
+17016,Ed Sheeran,Bruno Mars,BLOW,song,2019,CONFIRMADA,"'BLOW' com Bruno Mars, No.6 Collaborations 2019; flag duplicata",,dup_of_57
+17023,Ed Sheeran,Skrillex,Way to Break My Heart,song,2019,SUSPEITA,não confirmo faixa com Skrillex; flag duplicata,,dup_of_14200
+17031,Ariana Grande,Pharrell Williams,blazed,song,2019,CONFIRMADA,"'blazed' de Ariana com Pharrell, Sweetener 2018; flag duplicata",,dup_of_16507
+17034,Ariana Grande,2 Chainz,Rule the World,song,2017,SUSPEITA,'Rule the World' é 2 Chainz com Ariana; flag duplicata,,dup_of_14940
+17040,Rihanna,Justin Timberlake,Rehab,song,2007,CONFIRMADA,"'Rehab' de Rihanna com Timberlake, 2007; flag duplicata",,dup_of_5495
+17043,Beyoncé,Kendrick Lamar,America Has a Problem (Remix),song,2023,CONFIRMADA,"remix de 'America Has a Problem' com Kendrick, 2023; flag duplicata",,dup_of_40
+17053,Eminem,Nicki Minaj,Roman's Revenge (Remix),song,2012,CONFIRMADA,"'Roman's Revenge' Nicki com Eminem, 2010; flag duplicata",,dup_of_14587
+17055,Eminem,"Royce da 5'9""",Bad Meets Evil,album,2011,CONFIRMADA,"Bad Meets Evil, Eminem/Royce 2011; flag duplicata",,dup_of_16628
+17056,Eminem,Skylar Grey,C'mon Let Me Ride,song,2012,CONFIRMADA,"'C'mon Let Me Ride' Skylar Grey com Eminem, 2012; flag duplicata",,dup_of_15219
+17057,Eminem,Joyner Lucas,What If I Was Gay?,song,2023,SUSPEITA,não confirmo faixa com Joyner Lucas 2023; flag duplicata,,dup_of_16626
+17065,Kanye West,Ty Dolla $ign,Violent Crimes,song,2018,CONFIRMADA,"'Violent Crimes' de Ye com Ty Dolla $ign, 2018; flag duplicata",,dup_of_12374
+17069,Post Malone,DaBaby,Enemies,song,2021,CONFIRMADA,"'Enemies' Post Malone com DaBaby, 2019; flag duplicata",,dup_of_12371
+17093,Travis Scott,James Blake,Stop Trying to Be God,song,2018,CONFIRMADA,"'Stop Trying to Be God' Astroworld com James Blake, 2018; flag duplicata",,dup_of_15200
+17096,Kendrick Lamar,J. Cole,Black Panther Soundtrack,song,2018,SUSPEITA,Black Panther é álbum de Kendrick; J. Cole não creditado; flag dup,,dup_of_12262
+17098,Kendrick Lamar,Baby Keem,family ties,song,2021,CONFIRMADA,"'family ties' Baby Keem com Kendrick, 2021; flag duplicata",,dup_of_14584
+17101,Future,Lil Uzi Vert,Patek,song,2017,SUSPEITA,possível duplicata,,dup_of_14283
+17104,Future,Lil Wayne,Love Me,song,2012,SUSPEITA,possível duplicata,,dup_of_124
+17105,Future,Gunna,Drip or Drown 2,song,2019,SUSPEITA,possível duplicata; título é nome de álbum,,dup_of_14610
+17117,Lil Wayne,T.I.,Ball,song,2011,SUSPEITA,possível duplicata,,dup_of_15921
+17119,Lil Wayne,2 Chainz,Rich As Fuck,song,2012,SUSPEITA,possível duplicata,,dup_of_7642
+17121,Lil Wayne,Gudda Gudda,Bedrock,song,2009,SUSPEITA,possível duplicata; Bedrock é Young Money,,dup_of_15923
+17124,Lil Wayne,Rick Ross,John,song,2011,SUSPEITA,possível duplicata,,dup_of_15922
+17149,Bruno Mars,Wiz Khalifa,"Young, Wild & Free",song,2011,SUSPEITA,possível duplicata,,dup_of_12288
+17177,Coldplay,Beyoncé,Hymn for the Weekend,song,2015,SUSPEITA,possível duplicata,,dup_of_143
+17189,Snoop Dogg,Dr. Dre,Nuthin' But a G Thang,song,1992,SUSPEITA,possível duplicata,,dup_of_15546
+17190,Snoop Dogg,Wiz Khalifa,"Young, Wild & Free",song,2011,SUSPEITA,"colaboração real mas flag dup_of_219, possível duplicata",,dup_of_219
+17192,Snoop Dogg,50 Cent,P.I.M.P. (remix),song,2003,SUSPEITA,"remix plausível mas flag dup_of_14604, possível duplicata",,dup_of_14604
+17215,Jay-Z,Dr. Dre,Still D.R.E.,song,1999,SUSPEITA,'Still D.R.E.' é de Dre com Snoop; Jay-Z coescreveu; flag dup,,dup_of_12279
+17219,Jay-Z,J. Cole,A Star Is Born,song,2010,SUSPEITA,'A Star Is Born' é de Jay-Z feat. J. Cole; flag dup_of_16257,,dup_of_16257
+17230,Chris Brown,Tyga,Fan of a Fan,ep,2010,SUSPEITA,'Fan of a Fan' mixtape Chris Brown x Tyga; flag dup,,dup_of_15587
+17234,Chris Brown,Future,Fine China (remix),song,2013,SUSPEITA,remix 'Fine China' com Future não confirmo; flag dup,,dup_of_12261
+17250,Chris Brown,H.E.R.,Come Together,song,2022,SUSPEITA,'Come Together' com H.E.R.; flag dup_of_14535,,dup_of_14535
+17257,Usher,Beyoncé,Bad Girl,song,2004,SUSPEITA,'Bad Girl' Usher com Beyoncé não confirmo; flag dup,,dup_of_14235
+17283,Calvin Harris,Tom Grennan,By Your Side,song,2021,SUSPEITA,possível duplicata (dup_of_3309),,dup_of_3309
+17285,Calvin Harris,Tinashe,Dollar Signs,song,2015,SUSPEITA,possível duplicata (dup_of_3305),,dup_of_3305
+17304,DJ Khaled,Lil Baby,EVERY CHANCE I GET,song,2021,SUSPEITA,possível duplicata (dup_of_6888),,dup_of_6888
+17311,DJ Khaled,Nicki Minaj,I Wanna Be with You,song,2020,SUSPEITA,possível duplicata (dup_of_16325),,dup_of_16325
+17350,Metro Boomin,Drake,Jumpman,song,2015,SUSPEITA,possível duplicata (dup_of_12326),,dup_of_12326
+17379,21 Savage,Future,X,song,2017,SUSPEITA,título ultracurto e possível duplicata,,ultrashort_title;dup_of_7657
+17385,Lil Baby,J. Cole,The Bigger Picture (remix),song,2020,SUSPEITA,possível duplicata; remix incerto,,dup_of_12265
+17387,Lil Baby,Future,Life Is Good,song,2019,SUSPEITA,"Life Is Good é Future feat. Drake, não Lil Baby; possível duplicata",,dup_of_14898
+17398,Lil Baby,Megan Thee Stallion,On Me (remix),song,2021,SUSPEITA,On Me remix; possível duplicata,,dup_of_16269
+17400,Megan Thee Stallion,Young Thug,Don't Stop,song,2021,SUSPEITA,Don't Stop é com Young Thug; possível duplicata,,dup_of_12268
+17421,Pharrell Williams,Nelly,Hot in Herre,song,2002,RESGATADA,"Hot in Herre é só de Nelly, Pharrell não participa",'Hot in Herre' de Nelly foi produzida e co-escrita por Pharrell (The Neptunes) (Wikipedia/uDiscover),dup_of_12276
+17422,Pharrell Williams,Gwen Stefani,Hollaback Girl,song,2005,CONFIRMADA,"Hollaback Girl produzida por Neptunes/Pharrell, Gwen 2005",,dup_of_12277
+17431,Pharrell Williams,Ariana Grande,Blazed,song,2019,SUSPEITA,Blazed Ariana feat. Pharrell; possível duplicata,,dup_of_16507
+17444,Timbaland,Aaliyah,Are You That Somebody?,song,1998,CONFIRMADA,"Are You That Somebody? Aaliyah/Timbaland, 1998",,dup_of_14631
+17446,Timbaland,Jay-Z,Big Pimpin',song,2000,CONFIRMADA,"Big Pimpin' de Jay-Z prod. Timbaland, 2000",,dup_of_14632
+17463,Justin Timberlake,Snoop Dogg,Signs,song,2006,SUSPEITA,possível duplicata,,dup_of_14292
+17471,Mariah Carey,Ol' Dirty Bastard,Fantasy (remix),song,1995,SUSPEITA,possível duplicata,,dup_of_12457
+17472,Mariah Carey,Da Brat,Always Be My Baby (remix),song,1995,SUSPEITA,possível duplicata,,dup_of_16559
+17478,Mariah Carey,Young Jeezy,Up Out My Face (remix),song,2010,SUSPEITA,possível duplicata,,dup_of_15152
+17491,Anitta,Pedro Sampaio,Modo Turbo,song,2021,SUSPEITA,possível duplicata,,dup_of_773
+17504,Anitta,Pedro Sampaio,Sua Cara (remix),song,2022,SUSPEITA,possível duplicata,,dup_of_16401
+17542,Luísa Sonza,Jão,Você Partiu Meu Coração,song,2020,SUSPEITA,possível duplicata,,dup_of_16071
+17543,Luísa Sonza,Pabllo Vittar,Modo Turbo,song,2019,SUSPEITA,possível duplicata,,dup_of_574
+17642,Gusttavo Lima,Wesley Safadão,Camarote (ao vivo),live,2019,SUSPEITA,possível duplicata (dup_of_2503),,dup_of_2503
+17651,Gusttavo Lima,Dennis DJ,Balada,song,2021,SUSPEITA,possível duplicata (dup_of_2481),,dup_of_2481
+17742,Ivete Sangalo,Wesley Safadão,Camarote (ao vivo),live,2019,SUSPEITA,possível duplicata (dup_of_1792),,dup_of_1792
+17774,Wesley Safadão,Claudia Leitte,Camarote (ao vivo),live,2019,SUSPEITA,possível duplicata (dup_of_2508),,dup_of_2508
+17789,Luan Santana,Sandy,Me Espera,song,2020,SUSPEITA,possível duplicata (dup_of_15023),,dup_of_15023
+17896,Alicia Keys,Kendrick Lamar,It's on Again,song,2014,SUSPEITA,possível duplicata (dup_of_14244),,dup_of_14244
+17897,Alicia Keys,Pharrell Williams,101,song,2012,SUSPEITA,possível duplicata (dup_of_14248),,dup_of_14248
+17920,John Legend,Jhené Aiko,U Move I Move,song,2020,SUSPEITA,possível duplicata,,dup_of_12304
+17923,John Legend,Sam Smith,Lay Me Down,live,2015,SUSPEITA,possível duplicata,,dup_of_14845
+17930,Shawn Mendes,Zedd,Lost in Japan (remix),song,2018,SUSPEITA,possível duplicata,,dup_of_5540
+17940,Selena Gomez,Charlie Puth,We Don't Talk Anymore,song,2015,SUSPEITA,possível duplicata,,dup_of_182
+17943,Selena Gomez,Rema,Calm Down (remix),song,2022,SUSPEITA,possível duplicata,,dup_of_988
+17946,Miley Cyrus,Stevie Nicks,Edge of Midnight (Midnight Sky remix),song,2020,SUSPEITA,possível duplicata,,dup_of_14507
+17947,Miley Cyrus,Elton John,Tiny Dancer (live),live,2020,SUSPEITA,possível duplicata,,dup_of_14508
+17953,Miley Cyrus,The Kid Laroi,Without You (remix),song,2021,SUSPEITA,possível duplicata,,dup_of_15797
+17954,Miley Cyrus,Ariana Grande,Don't Dream It's Over (live),live,2014,SUSPEITA,possível duplicata,,dup_of_15801
+17967,Charlie Puth,Boyz II Men,If You Leave Me Now,song,2022,SUSPEITA,possível duplicata,,dup_of_14836
+17976,Sam Smith,Disclosure,Latch,song,2013,CONFIRMADA,Latch de Disclosure com Sam Smith real,,dup_of_481
+17985,Marshmello,Lil Peep,Spotlight,song,2019,SUSPEITA,possível duplicata,,dup_of_3317
+17996,The Chainsmokers,Daya,Don't Let Me Down,song,2015,SUSPEITA,possível duplicata,,dup_of_3319
+18011,Jack Harlow,Quavo,Way Out,song,2020,SUSPEITA,possível duplicata; 'Way Out' é com Big Sean,,dup_of_7688
+18014,Jack Harlow,DaBaby,Whats Poppin (remix),song,2020,SUSPEITA,possível duplicata,,dup_of_14653
+18015,Jack Harlow,Tory Lanez,Whats Poppin (remix),song,2020,SUSPEITA,possível duplicata,,dup_of_14654
+18024,Lil Nas X,Billy Ray Cyrus,Old Town Road (remix),song,2019,SUSPEITA,possível duplicata,,dup_of_2962
+18026,Lil Nas X,Diplo,Old Town Road (remix),song,2019,SUSPEITA,possível duplicata,,dup_of_16248
+18029,Lil Nas X,Elton John,One of Me,song,2023,SUSPEITA,possível duplicata,,dup_of_7653
+18041,"Tyler, The Creator",Kanye West,SMUCKERS,song,2015,SUSPEITA,possível duplicata,,dup_of_7684
+18062,A$AP Rocky,Juicy J,Multiply,song,2014,SUSPEITA,possível duplicata,,dup_of_16635
+18071,A$AP Rocky,Playboi Carti,Telephone Calls,song,2016,SUSPEITA,possível duplicata,,dup_of_16631
+18079,Sabrina Carpenter,Conan Gray,Heather (live),live,2021,SUSPEITA,possível duplicata,,dup_of_15447
+18087,Lil Uzi Vert,Future,Patek,song,2018,SUSPEITA,possível duplicata,,dup_of_14283
+18089,Lil Uzi Vert,Nicki Minaj,The Way Life Goes (remix),song,2017,SUSPEITA,possível duplicata,,dup_of_12358
+18111,Gunna,Young Thug,Dollaz on My Head,song,2019,SUSPEITA,possível duplicata (dup_of),,dup_of_7695
+18129,Young Thug,Drake,Sacrifices,song,2018,CONFIRMADA,Sacrifices Drake feat Young Thug More Life real,,dup_of_12363
+18132,Young Thug,Elton John,High,song,2017,SUSPEITA,possível duplicata (dup_of),,dup_of_6863
+18139,Young Thug,Future,Group Home,song,2020,SUSPEITA,possível duplicata (dup_of),,dup_of_12271
+18143,Swae Lee,Gucci Mane,Black Beatles (remix),song,2016,SUSPEITA,possível duplicata (dup_of),,dup_of_16672
+18167,Quavo,Cardi B,Drip (remix),song,2018,SUSPEITA,possível duplicata (dup_of),,dup_of_16300
+18179,Offset,Cardi B,Set It Off,song,2024,SUSPEITA,possível duplicata (dup_of),,dup_of_15969
+18194,J. Balvin,Jhay Cortez,No Me Conoce (Remix),song,2019,SUSPEITA,possível duplicata (dup_of_6069),,dup_of_6069
+18198,J. Balvin,Feid,Porfa,song,2020,SUSPEITA,possível duplicata (dup_of_8413),,dup_of_8413
+18208,Karol G,Becky G,Dollar,song,2019,SUSPEITA,possível duplicata (dup_of_5407),,dup_of_5407
+18211,Karol G,Rauw Alejandro,PUNTO G (Remix),song,2021,SUSPEITA,possível duplicata (dup_of_5896),,dup_of_5896
+18215,Karol G,Peso Pluma,Qlona,song,2023,SUSPEITA,possível duplicata (dup_of_14346),,dup_of_14346
+18226,Shakira,Bizarrap,Bzrp Music Sessions #53,song,2023,SUSPEITA,possível duplicata (dup_of_5941),,dup_of_5941
+18228,Shakira,Cardi B,Puntería,song,2024,SUSPEITA,possível duplicata (dup_of_16022),,dup_of_16022
+18256,Daddy Yankee,Luis Fonsi,Despacito (Remix),song,2017,SUSPEITA,possível duplicata (dup_of_3194),,dup_of_3194
+18257,Daddy Yankee,Nicky Jam,Muévelo,song,2017,SUSPEITA,possível duplicata (dup_of_14977),,dup_of_14977
+18277,Daddy Yankee,Rauw Alejandro,Panties y Brasieres,song,2022,SUSPEITA,possível duplicata,,dup_of_511
+18284,Ozuna,Nicky Jam,Te Robare,song,2019,SUSPEITA,possível duplicata,,dup_of_16370
+18287,Ozuna,Sech,Cúrame,song,2020,SUSPEITA,possível duplicata,,dup_of_14351
+18325,Rauw Alejandro,Jhay Cortez,Todo de Ti (Remix),song,2021,SUSPEITA,possível duplicata,,dup_of_5891
+18360,Bizarrap,Paulo Londra,Bzrp Music Sessions #23,song,2019,SUSPEITA,possível duplicata (dup_of_5969),,dup_of_5969
+18361,Bizarrap,Anuel AA,Bzrp Music Sessions #46,song,2022,SUSPEITA,possível duplicata (dup_of_5971),,dup_of_5971
+18362,Bizarrap,Quevedo,Bzrp Music Sessions #52,song,2022,SUSPEITA,possível duplicata (dup_of_5965),,dup_of_5965
+18364,Bizarrap,Duki,Bzrp Music Sessions #50,song,2022,SUSPEITA,possível duplicata (dup_of_5967),,dup_of_5967
+18365,Bizarrap,Villano Antillano,Bzrp Music Sessions #51,song,2022,SUSPEITA,possível duplicata (dup_of_5968),,dup_of_5968
+18376,Nicky Jam,Wisin,Si Te Vas,song,2018,SUSPEITA,possível duplicata (dup_of_14980),,dup_of_14980
+18382,Wisin & Yandel,Enrique Iglesias,Algo Me Gusta de Ti,song,2011,SUSPEITA,possível duplicata (dup_of_8403),,dup_of_8403
+18409,Luis Fonsi,Ozuna,Imposible,song,2019,SUSPEITA,possível duplicata (dup_of_16060),,dup_of_16060
+18410,Luis Fonsi,Nicky Jam,Fácil,song,2020,SUSPEITA,possível duplicata (dup_of_14718),,dup_of_14718
