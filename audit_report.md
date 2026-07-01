@@ -8,24 +8,24 @@
 2. **Passe 1 — classificação por conhecimento** (206 lotes, todas as 18.460 collabs): cada registro → `CONFIRMADA` / `SUSPEITA` / `INVÁLIDA`, com a regra dura *"na dúvida, SUSPEITA; nunca confirmar por palpite"*.
 3. **Passe 2 — verificação web adversarial** das candidatas INVÁLIDA: um verificador independente tentou **provar que cada uma é real** via busca na web. Só permanece INVÁLIDA quem os **dois passes** condenam; falso-positivos viram RESGATADA; inconclusivos web viram SUSPEITA.
 
-> A verificação web parou em **1.128 de 1.391** candidatas (limite semanal de uso). As **263** restantes ficam como `INVÁLIDA_PENDENTE` (suspeita de fabricação pelo Passe 1, **ainda sem** confirmação web) — não recomendo removê-las antes de completar o Passe 2.
+> **Verificação web 100% completa**: todas as **1.391** candidatas INVÁLIDA do Passe 1 foram checadas na web. Nenhuma pendente.
 
 ## Contagem geral
 
 | Status final | Qtd | O que significa |
 |---|---:|---|
 | ✅ CONFIRMADA | 4,698 | collab real e conhecida — manter |
-| ❓ SUSPEITA | 12,564 | incerta (inclui 193 rebaixadas do Passe 1 por web inconclusiva) — manter e revisar |
-| ❌ INVÁLIDA (confirmada 2 passes) | 867 | fabricação confirmada por IA **e** web — **candidata a remoção** |
-| ⚠️ INVÁLIDA (pendente) | 263 | suspeita forte, sem verificação web ainda — **não remover ainda** |
-| ♻️ RESGATADA | 68 | Passe 1 errou; web provou que é real — **manter** |
+| ❓ SUSPEITA | 12,567 | incerta (inclui 196 rebaixadas do Passe 1 por web inconclusiva) — manter e revisar |
+| ❌ INVÁLIDA (confirmada 2 passes) | 1,096 | fabricação confirmada por IA **e** web — **candidata a remoção** |
+| ⚠️ INVÁLIDA (pendente) | 0 | suspeita forte, sem verificação web ainda — **não remover ainda** |
+| ♻️ RESGATADA | 99 | Passe 1 errou; web provou que é real — **manter** |
 | **Total** | **18,460** | 18.460 collabs / 5.898 artistas |
 
 **Categorias determinísticas** (sobrepostas ao acima): **632** cópias duplicadas exatas · **249** títulos em branco/genéricos/curtíssimos.
 
 O exemplo que você citou está capturado: **Ivete Sangalo × Ne-Yo — “What You Want”** (#1972).
 
-## ❌ INVÁLIDAS confirmadas (2 passes) — 867 — candidatas a remoção
+## ❌ INVÁLIDAS confirmadas (2 passes) — 1096 — candidatas a remoção
 
 Fabricações confirmadas pela classificação **e** pela verificação web independente. Ordenadas por id.
 
@@ -59,6 +59,14 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Wikipedia: 'Telepatía' é solo de Kali Uchis sem feature; só remixes de fãs com Bad Bunny
 - **Vampire Weekend × Diplo** — “Hold Up” [song, 2016] (#898) — _'Hold Up' não é colaboração Vampire Weekend/Diplo_  
     ↳ web: Wikipedia: 'Hold Up' é canção da Beyoncé (Lemonade); Ezra Koenig e Diplo só têm crédito de composição, não é colab VW/Diplo
+- **Wizkid × Davido** — “Ondo State Vice President” [song, 2013] (#924) — _título absurdo, fabricação provável_  
+    ↳ web: Wizkid e Davido nunca lancaram colab oficial (feud desde 2014) e titulo 'Ondo State Vice President' inexistente (deedsmag.com, legit.ng)
+- **Burna Boy × Coldplay** — “Moon Music” [song, 2024] (#927) — _Moon Music é álbum Coldplay, não feat com Burna_  
+    ↳ web: a colab real de Burna Boy no album Moon Music e a faixa 'We Pray'; a faixa-titulo MOON MUSiC nao credita Burna Boy (wikipedia.org, discogs.com)
+- **Davido × Future** — “Risky” [song, 2018] (#956) — _Risky é com Popcaan, não Future_  
+    ↳ web: Risky (2019) de Davido credita Popcaan, nao Future (spotify.com, imdb.com)
+- **Yemi Alade × Funke Akindele** — “Oga Oh” [song, 2021] (#978) — _Funke Akindele é atriz, não cantora; provável fabricação_  
+    ↳ web: a colab real Yemi Alade x Funke Akindele e 'Poverty' (2019); 'Oga' e faixa solo de Yemi Alade e 'Oga Oh' nao existe (spotify.com, shazam.com)
 - **Rema × Ruger** — “Calm Down (Remix)” [remix, 2021] (#990) — _remix de Calm Down é com Selena Gomez, não Ruger_  
     ↳ web: Remix de 'Calm Down' é Rema x Selena Gomez, não Ruger (Wikipedia)
 - **Rema × Ayra Starr** — “Bloody Samaritan (Remix)” [remix, 2022] (#991) — _Bloody Samaritan é da Ayra Starr, não single do Rema_  
@@ -127,6 +135,14 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Wikipedia PT: 'Faz Gostoso' é da Blaya, gravada por Anitta (e Madonna); sem Cacau Oliver
 - **MC Duda do Marapé × Anitta** — “Combatchy (Feat.)” [song, 2019] (#1695) — _Combatchy é Anitta/Lexa/Luísa/Rebecca, não MC Duda_  
     ↳ web: Discogs/IMDb: 'Combatchy' é Anitta, Lexa, Luísa Sonza feat. MC Rebecca; sem MC Duda do Marapé
+- **Ivete Sangalo × David Guetta** — “Mad Love” [song, 2018] (#1713) — _par improvável Axé x EDM; 'Mad Love' não é dela_  
+    ↳ web: 'Mad Love' (2018) é Sean Paul & David Guetta feat. Becky G, sem Ivete Sangalo (en.wikipedia.org, discogs.com)
+- **Pabllo Vittar × Gloria Groove** — “Que Tiro Foi Esse?” [song, 2018] (#1719) — _'Que Tiro Foi Esse?' é Jojo Maronttinni, não Pabllo x Gloria_  
+    ↳ web: 'Que Tiro Foi Esse' é de Jojo Maronttinni; nenhuma versão Pabllo Vittar x Gloria Groove encontrada (open.spotify.com, letras.mus.br)
+- **Ivete Sangalo × Claudia Leitte** — “Largadinho” [song, 2014] (#1759) — _'Largadinho' é só da Claudia Leitte, não dueto com Ivete_  
+    ↳ web: 'Largadinho' é de Claudia Leitte (versão com Anselmo Ralph), sem dueto gravado com Ivete (discogs.com, open.spotify.com)
+- **Ivete Sangalo × Léo Santana** — “Galinha Pintadinha” [song, 2019] (#1761) — _'Galinha Pintadinha' não é colaboração Ivete x Léo Santana_  
+    ↳ web: não existe faixa 'Galinha Pintadinha' de Ivete x Léo Santana; a parceria real deles é 'Um Motivo' (2024) (vagalume.com.br, letras.mus.br)
 - **Anitta × Nicky Jam** — “Sure Thing” [song, 2019] (#1912) — _'Sure Thing' é cover solo da Anitta, não feat com Nicky Jam_  
     ↳ web: 'Sure Thing' é de Miguel; colaboração real Anitta/Nicky Jam é 'Dançarina Remix' (en.wikipedia.org)
 - **MC Kevinho × MC Livinho** — “Baile da Favela” [song, 2019] (#1936) — _'Baile da Favela' é de MC João, não Kevinho/Livinho_  
@@ -149,6 +165,14 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Dueto real Elba+Gonzaga é 'Sanfoninha Choradeira'; 'Riacho do Navio' em 'Duetos com Mestre Lua' é com Fagner (Vagalume)
 - **Caetano Veloso × Elza Soares** — “AmarElo” [song, 2019] (#2227) — _AmarElo é do Emicida; não é parceria Caetano/Elza_  
     ↳ web: LETRAS/amusicade: 'AmarElo' (2019) é do Emicida com Majur e Pabllo Vittar, não parceria Caetano/Elza
+- **Chico Buarque × Elis Regina** — “Elis & Tom” [album, 1974] (#2304) — _Elis & Tom é com Tom Jobim, não Chico Buarque_  
+    ↳ web: 'Elis & Tom' (1974) é de Elis Regina com Tom Jobim, não Chico Buarque (en.wikipedia.org, discogs.com)
+- **Ivete Sangalo × Anitta** — “Esse Cara Sou Eu” [song, 2014] (#2308) — _Esse Cara Sou Eu é de Roberto Carlos, não dessa dupla_  
+    ↳ web: 'Esse Cara Sou Eu' é de Roberto Carlos; primeira parceria Anitta x Ivete foi 'Lugar Perfeito' em 2025 (ofuxico.com.br)
+- **Anitta × Bad Bunny** — “Ojitos Lindos” [song, 2022] (#2313) — _Ojitos Lindos é Bad Bunny com Bomba Estéreo, não Anitta_  
+    ↳ web: 'Ojitos Lindos' credita Bad Bunny & Bomba Estéreo, sem versão com Anitta (open.spotify.com, music.apple.com)
+- **Froid × Criolo** — “Convoque Seu Buda” [album, 2014] (#2333) — _Convoque Seu Buda é álbum de Criolo, não parceria com Froid_  
+    ↳ web: 'Convoque Seu Buda' é álbum solo de Criolo com participações de Tulipa Ruiz e Juçara Marçal, sem Froid (pt.wikipedia.org)
 - **Luedji Luna × Gilsons** — “Um Corpo no Mundo” [song, 2017] (#2342) — _'Um Corpo no Mundo' é de Luedji Luna sozinha, não com Gilsons_  
     ↳ web: Bandcamp/Spotify: 'Um Corpo no Mundo' (2017) é álbum/faixa solo de Luedji Luna, sem Gilsons
 - **Carlinhos Brown × Caetano Veloso** — “Tropicália 2” [album, 1993] (#2349) — _Tropicália 2 é de Caetano e Gil, não de Carlinhos Brown; ano 1993 inconsistente_  
@@ -179,6 +203,8 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: 'K.O.' é faixa solo de Pabllo Vittar (álbum Vai Passar Mal), sem Gloria Groove (Wikipedia)
 - **Pabllo Vittar × Anitta** — “Triste com T” [song, 2018] (#2665) — _Triste com T é de Pabllo Vittar, sem Anitta_  
     ↳ web: 'Triste com T' é solo de Pabllo Vittar (Batidão Tropical 2021), sem Anitta (pt.wikipedia/spotify)
+- **Marisa Monte × Anitta** — “Ao Vivo” [live, 2019] (#2784) — _título genérico; Marisa Monte x Anitta improvável ao vivo_  
+    ↳ web: nenhum registro de gravacao ao vivo Marisa Monte + Anitta; listas completas de parcerias de ambas nao citam uma a outra (pt.wikipedia.org, metropoles.com)
 - **Post Malone × Tim McGraw** — “I Had Some Help” [feature, 2024] (#3004) — _'I Had Some Help' é com Morgan Wallen, não Tim McGraw_  
     ↳ web: Wikipedia/Billboard: 'I Had Some Help' de Post Malone é feat. Morgan Wallen, não Tim McGraw
 - **Post Malone × Brad Paisley** — “Guy for That” [song, 2024] (#3005) — _'Guy for That' é com Morgan Wallen, não Brad Paisley_  
@@ -247,12 +273,22 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Wikipedia/laut.de: 'Ich und meine Maske' é álbum/faixa solo de Sido; Sarah Connor não participa
 - **Sido × Peter Fox** — “Beweg dein Arsch” [song, 2008] (#3952) — _'Beweg dein Arsch' é solo Sido, não feat. Peter Fox_  
     ↳ web: Wikipedia/Spotify: 'Beweg dein Arsch' credita Scooter, Kitty Kat, Tony D — não Peter Fox (esse é 'Rodeo')
+- **Gzuz × Haftbefehl** — “Stress ohne Grund” [song, 2017] (#3963) — _'Stress ohne Grund' é de Shindy/Bushido, não Gzuz×Haftbefehl_  
+    ↳ web: 'Stress ohne Grund' é de Shindy feat. Bushido (2013); Gzuz não participa (de.wikipedia.org)
+- **Apache 207 × RAF Camora** — “Komet” [song, 2022] (#3972) — _'Komet' é Apache 207 com Udo Lindenberg, não RAF Camora_  
+    ↳ web: 'Komet' é de Udo Lindenberg & Apache 207 (jan/2023), não RAF Camora (de.wikipedia.org, discogs.com)
+- **Casper × Marteria** — “Mosaik” [album, 2017] (#3987) — _'Mosaik' é álbum solo de Marteria, não dueto com Casper_  
+    ↳ web: O álbum conjunto de Casper & Marteria é '1982' (2018); não existe álbum 'Mosaik' da dupla (musikexpress.de)
+- **Haftbefehl × Kollegah** — “Nur ein Wort” [song, 2009] (#3992) — _'Nur ein Wort' é de Wir sind Helden, não Haftbefehl×Kollegah_  
+    ↳ web: 'Nur ein Wort' é de Wir sind Helden (2005); nenhuma faixa Haftbefehl×Kollegah com esse título encontrada (de.wikipedia.org)
 - **Armin van Buuren × Hardwell** — “Blah Blah Blah” [song, 2011] (#4062) — _'Blah Blah Blah' é solo de Armin (2018), não dueto com Hardwell_  
     ↳ web: Wikipedia: 'Blah Blah Blah' (2018) é solo de Armin van Buuren, vocais de Aidan Bullimore, sem Hardwell
 - **Olivia Rodrigo × Zedd** — “Deja Vu” [song, 2021] (#4087) — _'Deja Vu' é solo de Olivia Rodrigo, não feat Zedd_  
     ↳ web: Wikipedia/Billboard: 'Deja Vu' é de Olivia Rodrigo com Dan Nigro, sem Zedd
 - **DJ Snake × Bad Bunny** — “Taki Taki” [song, 2018] (#4104) — _'Taki Taki' é com Selena/Ozuna/Cardi B, não Bad Bunny_  
     ↳ web: Discogs/IMDb: 'Taki Taki' credita DJ Snake, Selena Gomez, Ozuna e Cardi B, não Bad Bunny
+- **Aurora × Guns N' Roses** — “Sweet Child of Mine” [song, 2016] (#4171) — _cover/cross improvável Aurora x Guns N' Roses_  
+    ↳ web: nenhum cover de Sweet Child O' Mine por Aurora nem gravacao conjunta com GNR nas bases de covers; covers dela documentados nao incluem a faixa (secondhandsongs.com, wikipedia.org)
 - **AP Dhillon × Dua Lipa** — “Insane” [song, 2023] (#4233) — _não existe colaboração AP Dhillon com Dua Lipa_  
     ↳ web: 'Insane' de AP Dhillon credita Shinda Kahlon, Gurinder Gill, Gminxr; sem Dua Lipa (spotify.com, en.wikipedia.org)
 - **AP Dhillon × Nick Jonas** — “Summer High” [song, 2022] (#4235) — _'Summer High' não tem Nick Jonas; fabricação cross-genre_  
@@ -385,6 +421,22 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: 'Know Your Worth' (2020) é Khalid x Disclosure (remix Davido/Tems), não 6LACK; 6LACK está em 'OTW' (en.wikipedia.org)
 - **Kelly Clarkson × Jason Derulo** — “Already Gone” [song, 2009] (#5741) — _'Already Gone' é Kelly Clarkson solo, sem Derulo_  
     ↳ web: 'Already Gone' (2009) é solo de Kelly Clarkson coescrita com Ryan Tedder, sem Jason Derulo (en.wikipedia.org)
+- **Surfaces × Kid Cudi** — “Learn to Fly” [song, 2020] (#5781) — _'Learn to Fly' é dos Foo Fighters, não Surfaces/Kid Cudi_  
+    ↳ web: 'Learn To Fly' (2020) de Surfaces é com Elton John, não Kid Cudi (spotify.com, songfacts.com)
+- **George Ezra × Dua Lipa** — “Hold My Girl (Live)” [live, 2019] (#5786) — _'Hold My Girl' é solo de George Ezra, sem Dua Lipa_  
+    ↳ web: versões ao vivo de 'Hold My Girl' (Abbey Road, World Cafe) são solo de George Ezra; nenhum dueto com Dua Lipa encontrado (georgeezra.com, npr.org)
+- **Bad Bunny × The Weeknd** — “Caro” [song, 2020] (#5795) — _'Caro' não é colaboração com The Weeknd_  
+    ↳ web: 'Caro' (X 100pre) é solo de Bad Bunny com vocais não creditados de Ricky Martin, sem The Weeknd (wikipedia.org)
+- **Bad Bunny × Myke Towers** — “Si Veo a Tu Mamá” [song, 2020] (#5800) — _'Si Veo a Tu Mamá' é solo de Bad Bunny, sem Myke Towers_  
+    ↳ web: 'Si Veo a Tu Mamá' é solo de Bad Bunny; Myke Towers aparece em 'Puesto Pa' Guerrial' no mesmo álbum (wikipedia.org, spotify.com)
+- **Daddy Yankee × Don Omar** — “Conteo” [song, 2004] (#5820) — _'Conteo' é solo de Don Omar, sem Daddy Yankee_  
+    ↳ web: 'Conteo' (King of Kings, 2006) é Don Omar feat. Juelz Santana, não Daddy Yankee (spotify.com, wikipedia.org)
+- **Daddy Yankee × Psy** — “Gangnam Style (remix)” [remix, 2012] (#5825) — _'Gangnam Style Remix' não existe com Daddy Yankee_  
+    ↳ web: remix oficial de Gangnam Style credita 2 Chainz & Tyga (Diplo Remix, Remix Style EP); versoes com Daddy Yankee sao mashups de fas no YouTube (spotify.com, reservoir-media.com)
+- **Maluma × Nicki Minaj** — “Pitbull” [song, 2018] (#5846) — _'Pitbull' não é música de Maluma com Nicki Minaj_  
+    ↳ web: nao existe musica 'Pitbull' de Maluma com Nicki Minaj; a colaboracao real deles e 'Tukoh Taka' (2022, Copa do Mundo) (complex.com, wikipedia.org)
+- **Maluma × Marc Anthony** — “El Perdedor” [song, 2021] (#5847) — _'El Perdedor' é solo de Maluma, sem Marc Anthony_  
+    ↳ web: 'El Perdedor' de Maluma so tem remix com Yandel e versao EDM; colaboracoes reais com Marc Anthony sao 'Felices los 4 (Salsa)' e 'La Formula' (wikipedia.org, amazon.com)
 - **Karol G × Feid** — “Juntos (album)” [album, 2023] (#5860) — _álbum conjunto Karol G e Feid 'Juntos' não existe_  
     ↳ web: Billboard/Letras: não existe álbum conjunto 'Juntos' de Karol G e Feid; colaboraram só em faixas ('Friki','Verano Rosa')
 - **Anuel AA × Jhay Cortez** — “Safaera (remix)” [remix, 2020] (#5887) — _Safaera é Bad Bunny, remix com Anuel/Jhay não existe_  
@@ -407,10 +459,28 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: lahiguera/Billboard: colabs Maluma+Lenny Tavárez são 'Parce'/'Sornero'; 'La Canción' é de J Balvin e Bad Bunny
 - **Imagine Dragons × Kendrick Lamar** — “Warriors” [song, 2014] (#6075) — _'Warriors' é solo do Imagine Dragons, sem Kendrick Lamar_  
     ↳ web: Wikipedia: 'Warriors' (2014) é do Imagine Dragons solo p/ League of Legends, sem Kendrick Lamar
+- **The Mars Volta × At the Drive-In** — “Acrobatic Tenement (predecessor band)” [album, 1996] (#6228) — _Acrobatic Tenement é álbum do At the Drive-In, não colab entre bandas_  
+    ↳ web: Acrobatic Tenement (1996) e creditado apenas ao At the Drive-In; The Mars Volta so foi formado em 2001 e nao aparece nos creditos (en.wikipedia.org, allmusic.com)
+- **La Femme × Gorillaz** — “Saturnz Barz (shared tourline Europe)” [live, 2017] (#6233) — _par improvável; Saturnz Barz é faixa do Gorillaz, não colab com La Femme_  
+    ↳ web: Saturnz Barz e creditada a Gorillaz feat. Popcaan; La Femme nao consta em nenhum credito da faixa (discogs.com, en.wikipedia.org)
+- **Twenty One Pilots × Stressed Out collab with Kygo** — “Never Let You Go” [song, 2015] (#6237) — _colaboração Twenty One Pilots com Kygo inexistente; título fabricado_  
+    ↳ web: Never Let You Go e de Kygo feat. John Newman (2017), sem Twenty One Pilots; colaboracao TOP+Kygo inexistente (open.spotify.com, 1001tracklists.com)
+- **Fall Out Boy × Courtney Love** — “Beat It (Mike Shinoda remix) era connection” [feature, 2008] (#6238) — _conexão fabricada entre Fall Out Boy e Courtney Love_  
+    ↳ web: o cover Beat It (2008) do Fall Out Boy credita John Mayer na guitarra, nao Courtney Love (discogs.com)
+- **Radiohead × Portishead** — “Atoms for Peace co-inspiration / Glastonbury shared bill” [live, 2013] (#6255) — _rótulo fabricado; Atoms for Peace é projeto de Thom Yorke, não colab Radiohead/Portishead_  
+    ↳ web: Nao existe gravacao com esse titulo; Atoms for Peace e supergrupo de Thom Yorke com Flea/Godrich, nao colab Radiohead-Portishead (en.wikipedia.org, archive.org)
+- **Led Zeppelin × The Black Crowes** — “No Quarter: Jimmy Page and Robert Plant Unledded” [album, 1994] (#6267) — _Unledded é projeto de Page e Plant, não colab com The Black Crowes_  
+    ↳ web: No Quarter: Unledded (1994) e creditado a Jimmy Page & Robert Plant com musicos egipcios/marroquinos; The Black Crowes nao aparecem nos creditos (en.wikipedia.org, discogs.com)
+- **Carlos Santana × Evander Grillo** — “Maria Maria” [song, 2000] (#6295) — _Maria Maria foi com The Product G&B/Wyclef, não Evander Grillo (nome fabricado)_  
+    ↳ web: Maria Maria e Santana feat. The Product G&B, escrita/produzida por Wyclef Jean e Jerry Duplessis; nenhum 'Evander Grillo' nos creditos (en.wikipedia.org, discogs.com)
 - **Aretha Franklin × Stevie Wonder** — “Rock Steady” [feature, 1971] (#6321) — _'Rock Steady' é da própria Aretha; Stevie Wonder não é feature_  
     ↳ web: Wikipedia: 'Rock Steady' é de Aretha Franklin; personnel inclui Donny Hathaway/Purdie/Dr John, sem Stevie Wonder
 - **Earth, Wind & Fire × Daft Punk** — “Let's Groove Tonight” [feature, 2013] (#6373) — _'Let's Groove' é de EWF; feature com Daft Punk em 2013 é fabricação_  
     ↳ web: Discogs/YouTube: 'Let's Groove' é single de Earth, Wind & Fire de 1981; não há colaboração oficial com Daft Punk em 2013
+- **Barry White × Quincy Jones** — “Soul Bossa Nova” [feature, 1969] (#6534) — _Soul Bossa Nova é de Quincy Jones, Barry White não participa_  
+    ↳ web: 'Soul Bossa Nova' é instrumental de Quincy Jones (1962) com Roland Kirk/Lalo Schifrin; Barry White não participa (wikipedia.org, songfacts.com)
+- **Curtis Mayfield × Wyclef Jean** — “Ghetto Superstar” [feature, 1998] (#6536) — _Ghetto Superstar é de Pras/ODB/Mýa; Mayfield não participa_  
+    ↳ web: 'Ghetto Supastar' é Pras feat. ODB & Mýa, produzida por Wyclef; Curtis Mayfield não participa (wikipedia.org, discogs.com)
 - **DJ Khaled × Tinie Tempah** — “Hold You Down” [song, 2014] (#6662) — _Tinie Tempah não consta no elenco de Hold You Down do DJ Khaled_  
     ↳ web: Wikipedia/Spotify: 'Hold You Down' credita Chris Brown, August Alsina, Future e Jeremih, não Tinie Tempah
 - **Tiësto × Anne-Marie** — “BOOM!” [song, 2017] (#6671) — _Anne-Marie não consta em BOOM! do Tiësto_  
@@ -563,6 +633,12 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Spotify/Discogs: colab Ty Dolla/Swae/Future é 'Don't Judge Me', não existe 'Bang'
 - **Gorillaz × Beck** — “Hollywood” [song, 2018] (#7701) — _'Hollywood' do Gorillaz tem Snoop Dogg, não Beck_  
     ↳ web: Wikipedia/Spotify: 'Hollywood' do Gorillaz é feat. Snoop Dogg e Jamie Principle, não Beck
+- **Oséias de Paula × Ozéias de Paula** — “Glória e Louvor” [album, 2001] (#7750) — _Oséias e Ozéias de Paula são a mesma pessoa, duplicação artificial_  
+    ↳ web: Oséias e Ozéias de Paula são a mesma pessoa (página Vagalume de Ozeias usa slug 'oseias-de-paula'); álbum 'Glória e Louvor' não encontrado (vagalume.com.br, wikipedia pt)
+- **Solange Almeida × Aviões do Forró** — “Largado às Traças” [song, 2012] (#7805) — _Largado às Traças é de Zé Neto & Cristiano, não dessa parceria_  
+    ↳ web: 'Largado às Traças' é de Zé Neto & Cristiano, lançada em 30/01/2018; não existia em 2012 nem versão Solange/Aviões (pt.wikipedia.org)
+- **Calcinha Preta × Xand Avião** — “Show das Poderosas” [live, 2017] (#7824) — _Show das Poderosas é da Anitta, não parceria Calcinha Preta/Xand_  
+    ↳ web: 'Show das Poderosas' é da Anitta (2013); nenhum registro de versão Calcinha Preta×Xand Avião nas discografias (pt.wikipedia.org, deezer.com)
 - **Tierry × Wesley Safadão** — “Só Quer Vrau” [feature, 2018] (#7831) — _'Só Quer Vrau' é de MC MM/DJ RD, não Tierry com Safadão_  
     ↳ web: Cifra Club/letras/Spotify: 'Só Quer Vrau' é de MC MM & DJ RD, não Tierry com Wesley Safadão
 - **Aldair Playboy × Garota Safada** — “Piseiro Antigo” [song, 2012] (#7871) — _Aldair Playboy não atuava em 2012; cronologia inconsistente_  
@@ -577,6 +653,32 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Spotify/Discogs: 'Largadinho' (2013) é de Claudia Leitte solo (versão feat. Anselmo Ralph), sem Anitta
 - **Rastapé × Luiz Gonzaga** — “Pé de Serra” [live, 2002] (#8035) — _Luiz Gonzaga morreu em 1989, live 2002 impossível_  
     ↳ web: Luiz Gonzaga morreu em 1989 e Rastapé só surgiu em 1999; live conjunta em 2002 impossível, sem registro (pt.wikipedia / letras.mus.br)
+- **Emicida × Gloria Groove** — “Libre Soy (feat. Gloria Groove)” [feature, 2020] (#8121) — _Libre Soy é versão Frozen de Gloria Groove, sem Emicida_  
+    ↳ web: Gloria Groove gravou 'Livre Estou' (Frozen) solo no GG Sessions da Disney, sem Emicida; 'Libre Soy' é a versão em espanhol por outras intérpretes (youtube.com, letras.com)
+- **Mahmundi × Letrux** — “Vaporwave Tropical” [song, 2018] (#8138) — _título Vaporwave Tropical com Letrux parece fabricado_  
+    ↳ web: nenhuma faixa 'Vaporwave Tropical' existe; colaborações reais Letrux x Mahmundi são 'Defaunação' (2024) e 'Essa cidade é complicada' (2026) (noize.com.br, worldanimalprotection.org.br)
+- **Nação Zumbi × Raimundos** — “Manguebeat Ao Vivo” [live, 1999] (#8155) — _live Manguebeat de Nação Zumbi com Raimundos parece fabricada_  
+    ↳ web: nenhum álbum 'Manguebeat Ao Vivo' na discografia documentada da Nação Zumbi e nenhum registro conjunto com Raimundos (wikipedia.org, dicionariompb.com.br)
+- **Jota Quest × Capital Inicial** — “Rock Brasileiro Hoje” [live, 2008] (#8159) — _título genérico Rock Brasileiro Hoje parece fabricado_  
+    ↳ web: não existe 'Rock Brasileiro Hoje'; o registro ao vivo real com as duas bandas é 'Rock In Rio - Capital Inicial + Jota Quest + Skank (Ao Vivo)' de 2013 (music.apple.com)
+- **Paralamas do Sucesso × Engenheiros do Hawaii** — “Rock Clássico Brasileiro” [live, 2009] (#8162) — _título genérico Rock Clássico Brasileiro parece fabricado_  
+    ↳ web: nenhum álbum 'Rock Clássico Brasileiro' nas discografias completas de Paralamas ou Engenheiros do Hawaii (letras.mus.br, vagalume.com.br)
+- **Engenheiros do Hawaii × Capital Inicial** — “Anos 80 Ao Vivo” [live, 2005] (#8164) — _título genérico Anos 80 Ao Vivo parece fabricado_  
+    ↳ web: nenhum álbum 'Anos 80 Ao Vivo' nas discografias completas de Engenheiros do Hawaii e Capital Inicial (vagalume.com.br, deezer.com)
+- **Barão Vermelho × Titãs** — “Rock Brasileiro Anos 80” [live, 1997] (#8165) — _título genérico Rock Brasileiro Anos 80 parece fabricado_  
+    ↳ web: não existe 'Rock Brasileiro Anos 80' (1997); o registro conjunto real chama-se 'Barão & Titãs (Ao Vivo)' e as discografias de 1997 não trazem tal título (deezer.com, wikipedia.org)
+- **Titãs × Engenheiros do Hawaii** — “Titãs e Engenheiros” [live, 1999] (#8166) — _título genérico Titãs e Engenheiros parece fabricado_  
+    ↳ web: o álbum conjunto real de 1999 é 'Sempre Livre Mix: Titãs & Paralamas Juntos ao Vivo', com Paralamas e não Engenheiros do Hawaii (wikipedia.org, immub.org)
+- **Zeca Baleiro × Lenine** — “Nordeste Ao Vivo” [live, 2007] (#8176) — _título genérico Nordeste Ao Vivo parece fabricado_  
+    ↳ web: nenhum álbum 'Nordeste Ao Vivo' nas discografias de Zeca Baleiro e Lenine; só dividiram palco em projetos como In Concert, sem esse disco (wikipedia.org, deezer.com)
+- **Cássia Eller × Paralamas do Sucesso** — “Ao Vivo Cássia” [live, 1997] (#8178) — _título genérico Ao Vivo Cássia parece fabricado_  
+    ↳ web: o disco real é 'Cássia Eller ao Vivo' (1996), solo, sem Paralamas; nenhum álbum conjunto Cássia x Paralamas existe na discografia (letras.mus.br, discografia.discosdobrasil.com.br)
+- **Natiruts × Ponto de Equilíbrio** — “Natiruts e Ponto” [live, 2006] (#8182) — _título genérico Natiruts e Ponto parece fabricado_  
+    ↳ web: não existe faixa 'Natiruts e Ponto'; a colab real ao vivo é 'Jah Jah Me Leve (part. Ponto de Equilíbrio)' no DVD Natiruts Reggae Brasil 2015 — spotify.com/youtube.com
+- **Ponto de Equilíbrio × Planta e Raiz** — “Reggae Roots Brasil” [song, 2008] (#8183) — _título genérico Reggae Roots Brasil parece fabricado_  
+    ↳ web: não existe música 'Reggae Roots Brasil'; a colab real entre as bandas é 'Santa Kaya (Convida Ao Vivo)' de 2025 — spotify.com/prusmano.com
+- **Marcelo Falcão × Charlie Brown Jr.** — “CBJ e Marcelo” [live, 2013] (#8186) — _título genérico CBJ e Marcelo parece fabricado_  
+    ↳ web: não existe gravação 'CBJ e Marcelo'; a ligação real é a faixa 'O Legado' (2025) de Falcão com sample de Chorão/part. Charlie Brown Jr. — rollingstone.com.br
 - **Jammil × Claudia Leitte** — “Lepo Lepo” [song, 2013] (#8232) — _Lepo Lepo é do Psirico, não Jammil com Claudia Leitte_  
     ↳ web: 'Lepo Lepo' é do Psirico (Márcio Victor), não Jammil com Claudia Leitte (last.fm/spotify)
 - **Irmão do Jorel × Clarice Falcão** — “Mundo dos Desenhos” [song, 2015] (#8293) — _Irmão do Jorel é desenho animado, não artista musical_  
@@ -699,6 +801,10 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: 'Lark' e solo da Angel Olsen; colab real com SVE e 'Like I Used To', remix inexistente (rollingstone.com)
 - **Lorde × Bon Iver** — “Liability (Feature)” [song, 2017] (#9117) — _'Liability' é solo da Lorde, não feature do Bon Iver_  
     ↳ web: Wikipedia: 'Liability' (Melodrama) é faixa solo da Lorde, sem feat. de Bon Iver
+- **William Onyeabor × Sufjan Stevens** — “African Festival Feature” [live, 2013] (#9201) — _Onyeabor não tocava ao vivo; par implausível com Sufjan_  
+    ↳ web: Onyeabor nunca se apresentou ao vivo e recusou participar dos tributos; título genérico sem registro (en.wikipedia.org, theworld.org)
+- **Bizarrap × WOS** — “WOS: Bzrp Music Sessions, Vol. 98” [song, 2018] (#9246) — _WOS Vol. 98 não existe (real é Vol. 12); ano errado_  
+    ↳ web: Não existe Bzrp Music Session Vol. 98; as colaborações reais de WOS com Bizarrap são Music Session #10 e Freestyle Sessions (youtube.com, en.wikipedia.org)
 - **Rels B × Quevedo** — “Safaera” [song, 2022] (#9291) — _'Safaera' é de Bad Bunny/Jowell&Randy, não Rels B/Quevedo_  
     ↳ web: Wikipedia: 'Safaera' é de Bad Bunny com Jowell & Randy e Ñengo Flow, não Rels B/Quevedo
 - **Rels B × Recycled J** — “Con Calma” [song, 2020] (#9293) — _'Con Calma' é de Daddy Yankee/Snow, não Rels B/Recycled J_  
@@ -725,6 +831,14 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Spotify/Wikipedia: 'Tutu' é Camilo & Pedro Capó (remix Shakira), não Yatra
 - **Arcángel × Jhay Cortez** — “Mamiii” [song, 2022] (#9484) — _Mamiii é de Becky G e Karol G, não Arcángel e Jhay Cortez_  
     ↳ web: Wikipedia/Spotify: 'Mamiii' (2022) é de Becky G & Karol G, não Arcángel e Jhay Cortez
+- **Linn da Quebrada × Luísa Sonza** — “Corpo Sensual” [song, 2022] (#9554) — _Corpo Sensual é de Pabllo Vittar, não dessa dupla_  
+    ↳ web: 'Corpo Sensual' (2017) é de Pabllo Vittar feat. Mateus Carrilho, não de Linn da Quebrada com Luísa Sonza (wikipedia.org, vagalume.com.br)
+- **Juanes × Carlos Rivera** — “Tu Falta de Querer” [song, 2020] (#9567) — _Tu Falta de Querer é de Mon Laferte, não dessa dupla_  
+    ↳ web: 'Tu Falta de Querer' é de Mon Laferte; não existe versão Juanes & Carlos Rivera (letras.com, spotify.com)
+- **Ricky Martin × Maluma** — “No Me Conoce” [song, 2018] (#9571) — _No Me Conoce é de Jhay Cortez/Bad Bunny, não Ricky Martin_  
+    ↳ web: 'No Me Conoce' é de Jhay Cortez, com remix J Balvin & Bad Bunny (2019); Ricky Martin e Maluma não participam (wikipedia.org, letras.com)
+- **Peso Pluma × Bad Bunny** — “La Comunidad” [song, 2023] (#9629) — _não existe colaboração documentada Peso Pluma com Bad Bunny_  
+    ↳ web: Não existe colaboração oficial Peso Pluma/Bad Bunny; fontes confirmam apenas rumores, nenhuma música 'La Comunidad' (latination.com, musicmundial.com)
 - **Villano Antillano × Bad Bunny** — “Quevedo Remix” [song, 2022] (#9640) — _Quevedo Remix não existe entre Villano e Bad Bunny_  
     ↳ web: Colab de Villano Antillano é BZRP Sessions #51 com Bizarrap; 'Quevedo Remix' com Bad Bunny não existe
 - **Manuel Turizo × Karol G** — “El Makinon” [song, 2022] (#9644) — _El Makinon é Karol G/Mariah Angeliq, não Turizo_  
@@ -799,6 +913,36 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Eurovision 2007 foi de Sarbel ('Yassou Maria'); Paparizou só convidada, sem gravação em dupla (wikipedia.org)
 - **Helena Paparizou × Demy** — “Greece Eurovision 2017” [live, 2017] (#10076) — _título de show genérico fabricado_  
     ↳ web: Demy representou a Grécia em 2017 sozinha; não há dueto/gravação Paparizou x Demy (wikipedia.org, esctoday.com)
+- **Basshunter × Alan Walker** — “Scandinavia Bass” [song, 2019] (#10080) — _título genérico, sem colaboração documentada Basshunter/Alan Walker_  
+    ↳ web: nenhuma faixa 'Scandinavia Bass' na discografia de Basshunter, so remixes de fas de Alan Walker no SoundCloud (discogs.com, en.wikipedia.org)
+- **Basshunter × Kygo** — “Bass Drive” [song, 2018] (#10081) — _sem música real Basshunter/Kygo, título genérico_  
+    ↳ web: 'Bass Drive' ausente da discografia de Basshunter e nenhuma colaboracao com Kygo documentada (discogs.com, en.wikipedia.org)
+- **Basshunter × Swedish House Mafia** — “Nordic Rave” [live, 2010] (#10082) — _show fabricado, título genérico_  
+    ↳ web: nenhum show 'Nordic Rave' no historico documentado de Basshunter ou Swedish House Mafia em 2010 (concertarchives.org, en.wikipedia.org)
+- **Avicii × Kygo** — “Norwegian Forest” [song, 2015] (#10084) — _sem música real Avicii/Kygo_  
+    ↳ web: unica faixa Avicii x Kygo e 'Forever Yours (Tribute)' de 2020; 'Norwegian Forest' nao existe nas discografias (en.wikipedia.org, edm.com)
+- **Ace of Base × Roxette** — “Swedish Pop Legends Tour” [live, 2002] (#10085) — _turnê fabricada com título genérico_  
+    ↳ web: em 2002 Ace of Base so fez promo do Da Capo e Roxette entrou em hiato pelo tumor de Marie Fredriksson; turne conjunta inexistente (en.wikipedia.org, grammy.com)
+- **Ace of Base × ABBA** — “Swedish Pop History” [live, 2000] (#10086) — _ABBA inativa em 2000, show fabricado_  
+    ↳ web: ABBA nao se apresentou junta de 1982 a 2016 e recusou US$1 bi por reuniao em 2000; show com Ace of Base inexistente (en.wikipedia.org)
+- **ABBA × Roxette** — “Scandinavian Pop Icons” [live, 1998] (#10087) — _ABBA inativa em 1998, evento fabricado_  
+    ↳ web: ultimo show conjunto do ABBA foi em 1982; nenhuma apresentacao com Roxette em 1998 (en.wikipedia.org)
+- **ABBA × Robyn** — “Swedish Generations” [live, 2010] (#10088) — _colaboração ao vivo fabricada_  
+    ↳ web: ABBA so voltou a se apresentar junta em 2016; evento ao vivo com Robyn em 2010 impossivel (en.wikipedia.org)
+- **Roxette × Robyn** — “Swedish Divas” [live, 2008] (#10089) — _título genérico, show inexistente_  
+    ↳ web: Roxette esteve em hiato de 8 anos (2002-2009) pela doenca de Marie Fredriksson, sem shows em 2008 (grammy.com)
+- **Roxette × Ace of Base** — “Retro Sweden Night” [live, 2005] (#10090) — _evento fabricado, título genérico_  
+    ↳ web: Roxette inativa em 2005 (hiato 2002-2009 por doenca de Marie); evento com Ace of Base sem qualquer registro (grammy.com, en.wikipedia.org)
+- **Björk × First Aid Kit** — “Scandinavian Women Unite” [live, 2017] (#10092) — _evento fabricado, título temático genérico_  
+    ↳ web: Nenhum registro do evento 'Scandinavian Women Unite'; sem performance conjunta Björk/First Aid Kit documentada (wikipedia.org, setlist.fm)
+- **Björk × Sigrid** — “Nordic Women Music” [live, 2019] (#10093) — _colaboração ao vivo fabricada_  
+    ↳ web: Nenhum registro de 'Nordic Women Music'; em 2019 Björk fazia a turnê Cornucopia, sem show conjunto com Sigrid (wikipedia.org)
+- **Röyksopp × Kygo** — “Northern Drift” [song, 2016] (#10100) — _sem música real Röyksopp/Kygo_  
+    ↳ web: 'Northern Drift' não consta na discografia de Röyksopp nem de Kygo; busca só retorna filme e artista homônimo sem relação (wikipedia.org, discogs/bandcamp)
+- **Ghost × Ariya** — “Metal Connection Europe” [live, 2018] (#10143) — _'Ariya' não é ato reconhecido, colaboração fabricada_  
+    ↳ web: Evento 'Metal Connection Europe' inexistente; turnê real do Ghost em 2018 foi 'A Pale Tour Named Death', sem colaboração com Ariya (wikipedia.org, metal-archives.com)
+- **Natalia Szroeder × Natalia Kills** — “Natalia Duet” [song, 2020] (#10168) — _Natalia Kills não é polonesa, par improvável fabricado_  
+    ↳ web: Nenhuma música 'Natalia Duet' existe; nenhuma colaboração documentada entre Natalia Szroeder e Natalia Kills (wikipedia.org, spotify.com)
 - **Kayah × Brodka** — “Polish Women” [live, 2018] (#10172) — _título descritivo 'Polish Women', não é música real_  
     ↳ web: Nenhum dueto Kayah/Brodka; título 'Polish Women' não existe como gravação (en.wikipedia.org, spotify)
 - **Brodka × Organek** — “Polish Alt Rock” [live, 2017] (#10174) — _título descritivo 'Polish Alt Rock', fabricado_  
@@ -861,6 +1005,156 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Kino dissolveu em 1990 após morte de Viktor Tsoi; live com Bi-2 em 2010 impossível (en.wikipedia.org)
 - **Kino × Ariya** — “Soviet Rock” [live, 2005] (#10256) — _Kino acabou em 1990, live 2005 impossível_  
     ↳ web: Kino terminou em 1990 após morte de Tsoi; colaboração live 2005 com Ariya impossível (en.wikipedia.org)
+- **t.A.T.u. × Serebro** — “Russian Girl Groups” [live, 2010] (#10260) — _título descritivo genérico, show conjunto improvável_  
+    ↳ web: 'Russian Girl Groups' é rótulo descritivo, não gravação; nenhum show/registro conjunto t.A.T.u.×Serebro em 2010 nos arquivos de turnês (setlist.fm, concertarchives.org)
+- **Glukoza × Serebro** — “Russian Pop” [live, 2011] (#10261) — _título genérico fabricado, sem registro real_  
+    ↳ web: nenhuma gravacao 'Russian Pop' Glukoza+Serebro; discografias em wikipedia.org/last.fm nao registram colaboracao
+- **Nyusha × Artik & Asti** — “Russian Divas” [live, 2018] (#10263) — _título descritivo genérico, live fabricada_  
+    ↳ web: nenhum registro de live 'Russian Divas' Nyusha+Artik & Asti; sem traco em wikipedia.org/tophit.com
+- **Nyusha × Polina Gagarina** — “Rossiyskiye Pevitsy” [live, 2017] (#10264) — _título genérico fabricado_  
+    ↳ web: titulo descritivo ('cantoras russas'); buscas em ingles e russo sem dueto Nyusha+Gagarina (wikipedia.org, loveradio.ru)
+- **Polina Gagarina × Alsou** — “Russia Beautiful Voices” [live, 2017] (#10266) — _título descritivo genérico fabricado_  
+    ↳ web: nenhum projeto 'Russia Beautiful Voices' na discografia de Gagarina (wikipedia.org/eurovision.tv); sem colaboracao com Alsou
+- **Dimash Kudaibergen × Alina Zagitova** — “Kazakhstan Russia Stars” [live, 2020] (#10267) — _patinadora x cantor, título genérico, improvável_  
+    ↳ web: Zagitova e patinadora, nao cantora; nenhuma gravacao 'Kazakhstan Russia Stars' (wikipedia.org, dimashnews.com)
+- **Dimash Kudaibergen × Valentina Monetta** — “International Connection” [live, 2021] (#10268) — _par improvável, título genérico fabricado_  
+    ↳ web: nenhum registro 'International Connection' Dimash+Monetta em dimashnews.com ou wikipedia.org
+- **Gjon's Tears × Tamta** — “Mediterranean Voices” [live, 2021] (#10269) — _título genérico fabricado, live improvável_  
+    ↳ web: nenhuma gravacao 'Mediterranean Voices'; sem colaboracao Gjon's Tears+Tamta (wikipedia.org, eurovisionworld.com)
+- **Gjon's Tears × Valentina Monetta** — “Eurovision Voices” [live, 2021] (#10270) — _título genérico fabricado_  
+    ↳ web: nenhum registro 'Eurovision Voices' Gjon's Tears+Monetta (wikipedia.org, eurovision.tv)
+- **Gjon's Tears × Eleni Foureira** — “Eurovision Stars” [live, 2022] (#10271) — _título genérico fabricado_  
+    ↳ web: sem gravacao 'Eurovision Stars'; ambos apenas no lineup do Het Grote Songfestivalfeest, sem faixa conjunta (wikipedia.org)
+- **Valentina Monetta × Naviband** — “Eurovision Connections” [live, 2017] (#10272) — _título genérico fabricado_  
+    ↳ web: dueto real de Monetta em 2017 foi 'Spirit of the Night' com Jimmie Wilson, nao Naviband (eurovision.tv)
+- **Valentina Monetta × Efendi** — “Small Countries Eurovision” [live, 2021] (#10273) — _título genérico fabricado_  
+    ↳ web: nenhum registro 'Small Countries Eurovision' Monetta+Efendi (eurovision.tv, wikipedia.org)
+- **Efendi × Tamta** — “Balkan Pop Stars” [song, 2022] (#10275) — _título genérico fabricado_  
+    ↳ web: sem musica 'Balkan Pop Stars'; duetos reais de Tamta sao com Paparizou/Hatzigiannis e de Efendi com Josephine (wiwibloggs.com, wikipedia.org)
+- **Naviband × ZENA** — “Belarus Eurovision” [live, 2019] (#10276) — _título genérico fabricado_  
+    ↳ web: Nenhuma gravação 'Belarus Eurovision' existe; Naviband (2017) e ZENA (2019) foram entradas separadas da Bielorrússia, sem colaboração documentada (wikipedia.org, eurovisionworld.com)
+- **Andrei Lenitsky × Naviband** — “Belarus Together” [live, 2019] (#10279) — _título genérico fabricado_  
+    ↳ web: Nenhuma faixa 'Belarus Together' encontrada; busca em russo não mostra nenhuma colaboração Lenitsky–Naviband (wikipedia.org, ru-music.com)
+- **Ivi Adamou × Helena Paparizou** — “Greek Cypriot Connection” [live, 2012] (#10280) — _título descritivo genérico fabricado_  
+    ↳ web: Nenhuma gravação 'Greek Cypriot Connection'; elas só dividiram residência no Diogenis Studio 2011-12, sem faixa com esse título (wikipedia.org)
+- **Ivi Adamou × Tamta** — “Cypriot Stars” [song, 2020] (#10282) — _título genérico fabricado_  
+    ↳ web: 'Cypriot Stars' não consta na lista de canções de Ivi Adamou nem em qualquer fonte; nenhuma colaboração Adamou–Tamta documentada (wikipedia.org)
+- **Ivi Adamou × Paola** — “Cyprus Sisters” [song, 2015] (#10283) — _título genérico fabricado_  
+    ↳ web: Nenhuma faixa 'Cyprus Sisters' de 2015; discografia de Adamou documentada não inclui dueto com Paola (wikipedia.org)
+- **Despina Vandi × Notis Sfakianakis** — “Laïká Night” [live, 2010] (#10285) — _título genérico fabricado_  
+    ↳ web: Vandi e Sfakianakis só cantaram juntos em 1997-98 e romperam após desentendimento; nenhum show 'Laïká Night' em 2010 (wikipedia.org)
+- **Despina Vandi × Stavros Flatley** — “Hellenic Dance” [live, 2010] (#10287) — _Stavros Flatley é dupla cômica de dança, colaboração fabricada_  
+    ↳ web: Stavros Flatley é dupla cômica de dança do Britain's Got Talent, não artista musical; nenhuma gravação 'Hellenic Dance' com Vandi existe (wikipedia.org)
+- **Sakis Rouvas × Kostas Martakis** — “Greek Boys Pop” [live, 2010] (#10291) — _título genérico fabricado_  
+    ↳ web: Nenhuma gravação 'Greek Boys Pop' em 2010; discografia de Rouvas documentada não contém tal título com Martakis (wikipedia.org)
+- **Sakis Rouvas × Demy** — “Greek Celebrities” [live, 2018] (#10292) — _título genérico fabricado_  
+    ↳ web: Nenhuma faixa 'Greek Celebrities'; Rouvas e Demy só apareceram no mesmo evento MadWalk 2018, sem gravação conjunta com esse título (esctoday.com)
+- **Eleni Foureira × Tamta** — “Balkan Party” [song, 2019] (#10293) — _título genérico fabricado_  
+    ↳ web: Nenhuma música 'Balkan Party'; colaborações de Foureira em 2019 documentadas (Snoop Dogg, Claydee) não incluem Tamta (wikipedia.org, wiwibloggs.com)
+- **Eleni Foureira × Ivi Adamou** — “Balkan Festival” [live, 2021] (#10294) — _título genérico fabricado_  
+    ↳ web: Nenhum registro 'Balkan Festival' 2021; aparições conjuntas documentadas são o musical Barbarella 2015-16 e MadWalk 2020 (wikipedia.org, wiwibloggs.com)
+- **Antique × Despina Vandi** — “Greek Night” [live, 2006] (#10295) — _título genérico fabricado_  
+    ↳ web: Antique se separou em 2003, contradizendo show conjunto em 2006; nenhuma gravação 'Greek Night' com Despina Vandi existe (wikipedia.org)
+- **Nikos Vertis × Despina Vandi** — “Greek Love Songs” [live, 2012] (#10296) — _título genérico fabricado_  
+    ↳ web: Nenhum registro 'Greek Love Songs' na discografia de Vertis; unica ligacao real com Vandi e a composicao 'Lava' no album Allaxa 2012 (en.wikipedia.org)
+- **Nikos Vertis × Giorgos Mazonakis** — “Laïká Duet” [song, 2011] (#10297) — _título genérico fabricado_  
+    ↳ web: Titulo 'Laika Duet' inexistente em Discogs/Spotify/Deezer; nenhum dueto Vertis-Mazonakis documentado (discogs.com, spotify.com)
+- **Giorgos Mazonakis × Notis Sfakianakis** — “Greek Night” [live, 2009] (#10298) — _título genérico fabricado_  
+    ↳ web: Nenhuma gravacao 'Greek Night' existe; em 2009 Sfakianakis fazia turne na America do Norte, sem colaboracao com Mazonakis (en.wikipedia.org)
+- **Giorgos Mazonakis × Despina Vandi** — “Greek Summer” [song, 2012] (#10299) — _título genérico fabricado_  
+    ↳ web: O dueto real Mazonakis-Vandi de 2012 e 'Amane' (Allaxa special edition), nao 'Greek Summer' (en.wikipedia.org, spotify.com)
+- **Paola × Helena Paparizou** — “Cypriot Greek Night” [live, 2013] (#10300) — _título genérico fabricado_  
+    ↳ web: Nenhum 'Cypriot Greek Night' encontrado; duetos live de Paparizou 2012-13 foram com Natasa Theodoridou, nao Paola (en.wikipedia.org)
+- **Kostas Martakis × Sarbel** — “Greek Boys Eurovision” [live, 2012] (#10301) — _título genérico fabricado_  
+    ↳ web: Martakis nunca foi ao Eurovision (perdeu finais nacionais 2008/2014); Sarbel foi em 2007; Grecia 2012 foi Eleftheria Eleftheriou; gravacao inexistente (en.wikipedia.org)
+- **Stereo Mike × Sarbel** — “Greek Boys” [live, 2012] (#10302) — _título genérico fabricado, par improvável_  
+    ↳ web: Nenhuma colaboracao 'Greek Boys' entre Stereo Mike e Sarbel em nenhuma base (en.wikipedia.org, last.fm)
+- **Alexandra Stan × Edward Maya** — “Romanian Night” [song, 2012] (#10304) — _título genérico fabricado_  
+    ↳ web: 'Romanian Night' ausente da discografia de Alexandra Stan e de Edward Maya; nenhuma colaboracao entre os dois documentada (en.wikipedia.org)
+- **Alexandra Stan × Akcent** — “Romanian Dance Pop” [song, 2013] (#10305) — _título genérico fabricado_  
+    ↳ web: Colaboracoes reais de Stan em 2013 foram 'Baby It's OK' e 'All My People'; nenhum feat com Akcent nem faixa 'Romanian Dance Pop' (en.wikipedia.org)
+- **Edward Maya × Inna** — “Romanian Vibes” [song, 2010] (#10306) — _título genérico fabricado_  
+    ↳ web: Singles de Maya em 2010 foram 'This Is My Life' e 'Desert Rain' com Vika Jigulina; nenhuma faixa 'Romanian Vibes' com Inna (en.wikipedia.org)
+- **Edward Maya × Akcent** — “Romanian Beats” [song, 2011] (#10307) — _título genérico fabricado_  
+    ↳ web: Maya produziu o album de Akcent em 2009, mas nao existe faixa 'Romanian Beats' (2011 ele lancou 'Desert Rain') (en.wikipedia.org)
+- **Costi × Connect-R** — “Romanian Production” [song, 2013] (#10308) — _título genérico fabricado_  
+    ↳ web: Nenhuma faixa 'Romanian Production' de Costi e Connect-R em Discogs/Spotify/AllMusic (discogs.com, allmusic.com)
+- **Akcent × Inna** — “Balkan Night” [song, 2011] (#10309) — _título genérico fabricado_  
+    ↳ web: Nenhuma faixa 'Balkan Night' na discografia de Akcent ou Inna; sem colab conhecida entre os dois (wikipedia.org, spotify.com)
+- **Smiley × Alex Velea** — “Romanian Pop” [song, 2015] (#10311) — _título genérico fabricado_  
+    ↳ web: Colabs reais de Smiley & Alex Velea sao 'Dincolo de Cuvinte' e 'Am Bani de Dat'; nao existe faixa 'Romanian Pop' (wikipedia.org)
+- **Lora × Irina Rimes** — “Pop Feminin Romania” [song, 2019] (#10314) — _título genérico fabricado_  
+    ↳ web: Nenhuma faixa 'Pop Feminin Romania' nos catalogos de Lora ou Irina Rimes (spotify.com, wikipedia.org)
+- **Lora × What's Up** — “Romanian Pop Duet” [song, 2016] (#10315) — _título genérico fabricado_  
+    ↳ web: Duetos reais de Lora listados ('Singuri in doi', 'Bine mersi', 'Lasa-ma asa'); 'Romanian Pop Duet' nao existe (wikipedia.org)
+- **Alex Velea × Costi** — “Production Collab” [song, 2017] (#10316) — _título genérico fabricado_  
+    ↳ web: Nenhuma faixa 'Production Collab' na discografia de Alex Velea (discogs.com, deezer.com)
+- **Vanotek × Carla's Dreams** — “Romanian Electronic” [song, 2018] (#10319) — _título genérico fabricado_  
+    ↳ web: Colabs reais Vanotek x Carla's Dreams sao remixes de 'Acele' e 'Pana La Sange'; 'Romanian Electronic' nao existe (discogs.com)
+- **Carla's Dreams × Smiley** — “Moldovan Romanian Night” [song, 2018] (#10320) — _título genérico fabricado_  
+    ↳ web: Nenhuma faixa 'Moldovan Romanian Night' no catalogo de Carla's Dreams ou Smiley (wikipedia.org, spotify.com)
+- **Delia × Loredana** — “Romanian Pop Legends” [live, 2018] (#10321) — _título genérico fabricado, gênero bg incoerente_  
+    ↳ web: Nenhum registro de show/gravacao 'Romanian Pop Legends' de Delia e Loredana em 2018 (wikipedia.org, deezer.com)
+- **Delia × Costi** — “Romanian Diva Production” [song, 2016] (#10322) — _título genérico fabricado_  
+    ↳ web: Nenhuma faixa 'Romanian Diva Production' na discografia de Delia; sem colab documentada com Costi (wikipedia.org)
+- **Loredana × Alex Velea** — “Romania Stage” [live, 2017] (#10323) — _título genérico fabricado_  
+    ↳ web: Colab real de Loredana e Alex Velea e 'Viva Mamaia' (2013); 'Romania Stage' nao existe (mediafax.ro)
+- **Speak × Smiley** — “Romanian Rap Pop” [song, 2017] (#10324) — _título genérico fabricado_  
+    ↳ web: Speak colaborou com Smiley no album 'Acasa' (2013); nenhuma faixa 'Romanian Rap Pop' em 2017 (wikipedia.org, spotify.com)
+- **Ioana Ignat × Carla's Dreams** — “Romanian Voices” [song, 2019] (#10325) — _título genérico fabricado_  
+    ↳ web: Colabs de Ioana Ignat documentadas (Speak, Keo, Havana) nao incluem Carla's Dreams; 'Romanian Voices' nao existe (zutv.ro, wikipedia.org)
+- **Ioana Ignat × Vanotek** — “Romanian Pop Electronic” [song, 2020] (#10326) — _título genérico fabricado_  
+    ↳ web: Nenhuma faixa 'Romanian Pop Electronic' na discografia de Ioana Ignat ou Vanotek; título é rótulo de gênero (wikipedia.org, open.spotify.com)
+- **Ioana Ignat × Smiley** — “Romanian Young Star” [song, 2021] (#10327) — _título genérico fabricado_  
+    ↳ web: Nenhuma música 'Romanian Young Star' de Ioana Ignat com Smiley; não consta em Spotify/Wikipedia (open.spotify.com, wikipedia.org)
+- **Jain × -M-** — “European Pop Ladies” [live, 2018] (#10330) — _título genérico fabricado_  
+    ↳ web: Não existe gravação 'European Pop Ladies'; a colaboração real de Jain com -M- é 'L'âme au Mali' (aficia.info)
+- **Jain × Zara Larsson** — “Pop Ladies Europe” [live, 2019] (#10331) — _título genérico fabricado, live improvável_  
+    ↳ web: Nenhum registro de show/gravação 'Pop Ladies Europe' de Jain com Zara Larsson; busca não encontra nada (songkick.com, zaralarssonofficial.com)
+- **Monika Lewczuk × Dawid Podsiadło** — “Polish Music Scene” [live, 2018] (#10332) — _título genérico fabricado_  
+    ↳ web: Nenhuma gravação 'Polish Music Scene' de Lewczuk com Podsiadło; título é descrição genérica (wikipedia.org, culture.pl)
+- **Stavros Flatley × Antique** — “Greek Heritage Night” [live, 2011] (#10337) — _Stavros Flatley dupla cômica, colaboração fabricada_  
+    ↳ web: Antique se separou em 2003, impossível live de 2011; nenhum 'Greek Heritage Night' encontrado (wikipedia.org)
+- **John Newman × Zara Larsson** — “Pop Night Europe” [live, 2017] (#10339) — _título genérico fabricado_  
+    ↳ web: Nenhum 'Pop Night Europe'; o dueto real de Zara Larsson em 2017 foi com John Legend ('God Only Knows', Nobel Concert), não John Newman (justjared.com)
+- **Dua Lipa × Zara Larsson** — “Pop Queens” [live, 2018] (#10342) — _título genérico fabricado, live improvável_  
+    ↳ web: Não existe live 'Pop Queens'; a performance real conjunta de 2018 foi 'IDGAF' no BBC Live Lounge (billboard.com, thefader.com)
+- **Dua Lipa × Sigrid** — “Pop Ladies Tour” [live, 2019] (#10343) — _título genérico fabricado, live improvável_  
+    ↳ web: Nenhuma 'Pop Ladies Tour' na lista de turnês de Dua Lipa; nenhum show conjunto com Sigrid encontrado (wikipedia.org)
+- **Coldplay × Kygo** — “Festival Stage Collab” [live, 2022] (#10344) — _título genérico fabricado_  
+    ↳ web: Coldplay x Kygo só têm remix de 'Let Somebody Go' (2022), sem performance live conjunta 'Festival Stage Collab' (coldplay.com, kygomusic.com)
+- **Alina Zagitova × Polina Gagarina** — “Russian Ice Show” [live, 2019] (#10346) — _patinadora x cantora, título genérico fabricado_  
+    ↳ web: Zagitova é patinadora; nenhuma gravação 'Russian Ice Show' com Polina Gagarina encontrada (wikipedia.org, championat.com)
+- **Alina Zagitova × Dima Bilan** — “Russian Stars on Ice” [live, 2020] (#10347) — _patinadora x cantor, título genérico fabricado_  
+    ↳ web: Nenhuma gravação 'Russian Stars on Ice' de Zagitova com Dima Bilan; Bilan cantou em Fantasy on Ice mas sem faixa com esse título (fs-gossips.com, wikipedia.org)
+- **Ozark Henry × Alan Walker** — “Scandinavian Electronic Link” [song, 2020] (#10348) — _título genérico fabricado, par improvável_  
+    ↳ web: nenhuma faixa 'Scandinavian Electronic Link' existe; discografia completa de Alan Walker nao inclui Ozark Henry (en.wikipedia.org)
+- **Ozark Henry × Kygo** — “Chill Electronic Collab” [song, 2021] (#10349) — _título genérico fabricado, par improvável_  
+    ↳ web: nenhuma faixa 'Chill Electronic Collab' existe; sem colaboracao Ozark Henry x Kygo em discografias (wikipedia.org, discogs.com)
+- **Avicii × Sigrid** — “Nordic EDM Pop” [song, 2017] (#10350) — _título genérico inventado, sem colaboração documentada Avicii x Sigrid_  
+    ↳ web: nenhuma musica 'Nordic EDM Pop' de Avicii x Sigrid existe; sem registro em discografias/plataformas (wikipedia.org, spotify.com)
+- **Avicii × Alan Walker** — “Scandi Drop” [song, 2016] (#10351) — _título 'Scandi Drop' fabricado, sem música Avicii x Alan Walker_  
+    ↳ web: 'Scandi Drop' nao existe; unica ligacao Avicii x Alan Walker e o remix de 'Lonely Together' 2017 (spotify.com, edmsauce.com)
+- **Agnez Mo × BTS** — “Not A Single Word” [feature, 2021] (#10359) — _colaboração Agnez Mo x BTS não existe, título fabricado_  
+    ↳ web: colaboracao Agnez Mo x BTS nunca foi lancada, apenas hashtag de fas pedindo colab em 2019 (liputan6.com, viva.co.id)
+- **Warren Hue × BTS** — “Yet to Come” [feature, 2022] (#10364) — _'Yet to Come' é do BTS sozinho, sem Warren Hue_  
+    ↳ web: 'Yet to Come' (2022) e do BTS sozinho, escrita por Pdogg/RM/Suga/J-Hope, sem Warren Hue (wikipedia.org, spotify.com)
+- **NIKI × Warren Hue** — “Buzzcut” [song, 2021] (#10366) — _'Buzzcut' é Rich Brian, não NIKI x Warren Hue_  
+    ↳ web: nenhum 'Buzzcut' de NIKI x Warren Hue existe; colabs reais deles sao 'California' e 'Always Rising' (spotify.com, bandwagon.asia)
+- **Juan Karlos × Moira Dela Torre** — “Buwan” [song, 2020] (#10390) — _'Buwan' é do Juan Karlos sozinho, sem Moira Dela Torre_  
+    ↳ web: 'Buwan' (2018) e do juan karlos sozinho; colab real com Moira e 'Medyo Ako' (spotify.com)
+- **Gloc-9 × Flow G** — “Upuan” [song, 2010] (#10396) — _'Upuan' é do Gloc-9 feat. Jeazell Grutas, não Flow G_  
+    ↳ web: 'Upuan' (2009) e Gloc-9 feat. Jeazell Grutas, nao Flow G (wikipedia.org, spotify.com)
+- **Abra × Gloc-9** — “Magbalik” [song, 2015] (#10400) — _'Magbalik' é do Callalily, não Abra x Gloc-9_  
+    ↳ web: 'Magbalik' e da banda Callalily (comp. Lemuel Belaro), nao Abra x Gloc-9 (spotify.com, esquiremag.ph)
+- **BINI × SB19** — “Pantropiko” [feature, 2023] (#10407) — _'Pantropiko' é do BINI sozinho, sem SB19_  
+    ↳ web: 'Pantropiko' (2023) e do BINI sozinho, sem SB19; so existe mashup de fas no YouTube (spotify.com, discogs.com)
+- **SunKissed Lola × Ben&Ben** — “Pagtingin” [song, 2022] (#10408) — _'Pagtingin' é do Ben&Ben, não SunKissed Lola_  
+    ↳ web: 'Pagtingin' (2019) e do Ben&Ben, composta por Paolo Benjamin Guico, sem SunKissed Lola (wikipedia.org, spotify.com)
+- **Ebe Dancel × Bamboo** — “Noypi” [song, 2019] (#10411) — _'Noypi' é do Bamboo, não Ebe Dancel_  
+    ↳ web: 'Noypi' (2004) é da banda Bamboo, sem versão com Ebe Dancel (spotify.com, wikipedia.org)
+- **Rizky Febian × Mahalini** — “Adu Rayu” [song, 2023] (#10438) — _'Adu Rayu' é Yovie/Tulus/Glenn, não Rizky Febian x Mahalini_  
+    ↳ web: 'Adu Rayu' (2019) é de Yovie Widianto, Tulus e Glenn Fredly; duetos Rizky x Mahalini são 'Bermuara'/'Satu Tuju' (spotify.com, imdb.com)
 - **Keisya Levronka × Tiara Andini** — “Akad” [song, 2022] (#10441) — _'Akad' é música do Payung Teduh, não colaboração Keisya/Tiara_  
     ↳ web: 'Akad' é do Payung Teduh; colabs Keisya/Tiara são 'Cantik' e '365', não 'Akad' (youtube.com/tiktok.com)
 - **Fourtwnty × Nadin Amizah** — “Zona Nyaman” [song, 2021] (#10449) — _'Zona Nyaman' é música solo do Fourtwnty, não colab com Nadin_  
@@ -917,6 +1211,18 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Wikipedia/Discogs: 'Wake Me Up' é Avicii feat. Aloe Blacc; 'ASAP Blacc' não existe
 - **Interpol × The Strokes** — “NYC Punk scene compilation” [album, 2002] (#11067) — _coletânea 'NYC Punk' fabricada, sem colaboração real entre as bandas_  
     ↳ web: Coletânea real de 2002 com Interpol e Strokes é 'Yes New York' (Vice), não 'NYC Punk'
+- **Peter Bjorn and John × Cœur de Pirate** — “Young Folks” [song, 2007] (#11115) — _Young Folks é com Victoria Bergsman, não Cœur de Pirate_  
+    ↳ web: 'Young Folks' é Peter Bjorn and John feat. Victoria Bergsman; nenhum registro com Cœur de Pirate (wikipedia.org, whosampled.com)
+- **dawn_golden × ODESZA** — “Say My Name” [song, 2014] (#11121) — _Say My Name da ODESZA é com Zyra, não dawn golden_  
+    ↳ web: 'Say My Name' da ODESZA é feat. Zyra; Dawn Golden só remixou 'All We Need' (discogs.com, whosampled.com)
+- **Dimmu Borgir × Cradle of Filth** — “Heartwork” [song, 2003] (#11135) — _Heartwork é álbum do Carcass, não desses_  
+    ↳ web: 'Heartwork' é do Carcass (1993); lista de covers não inclui Dimmu Borgir nem Cradle of Filth (wikipedia.org, secondhandsongs.com)
+- **The Who × The Rolling Stones** — “The Kids Are Alright” [song, 1965] (#11147) — _The Kids Are Alright é só do The Who_  
+    ↳ web: 'The Kids Are Alright' é do The Who (My Generation, 1965), escrita por Townshend, sem Rolling Stones (wikipedia.org)
+- **Claptone × Seal** — “No Eyes” [song, 2016] (#11152) — _No Eyes do Claptone é feat Jaw, não Seal_  
+    ↳ web: 'No Eyes' do Claptone é feat. Jaw (2013); Seal aparece em 'Just a Ghost', outra faixa (discogs.com)
+- **Breakbot × Ed Sheeran** — “Break of Dawn” [song, 2012] (#11157) — _Ed Sheeran em faixa de Breakbot é fabricação cross-genre_  
+    ↳ web: 'Break of Dawn' abre o álbum By Your Side (2012) sem feature; features do álbum são Irfane/Ruckazoid/Pacific!, nenhuma ligação com Ed Sheeran (discogs.com, bandcamp.com)
 - **Nick Drake × John Cale** — “Five Leaves Left” [album, 1969] (#11165) — _Cale tocou em Bryter Layter, não em Five Leaves Left_  
     ↳ web: John Cale tocou em 'Bryter Layter' (1971), não no álbum 'Five Leaves Left' (1969) (Wikipedia)
 - **After School × Psy** — “Rania” [song, 2011] (#11171) — _Rania é grupo, não colab com Psy_  
@@ -987,6 +1293,12 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: 'Haiti' (1993, Tropicália 2) é de Caetano Veloso e Gilberto Gil, sem Bezerra da Silva (en.wikipedia/spotify)
 - **Hadiya George × Moby** — “Natural Blues (remake)” [song, 2021] (#11429) — _'Natural Blues' é do Moby; remake c/ Hadiya George fabricado_  
     ↳ web: Remakes de 'Natural Blues' de Moby são com Gregory Porter e Amythyst Kiah (Reprise 2021), não Hadiya George (wikipedia/deutschegrammophon)
+- **Aurora Aksnes × Billie Eilish** — “No Time to Die (AURORA cover, released by Billie Eilish)” [song, 2020] (#11442) — _'No Time to Die' é da Billie Eilish, não colaboração com AURORA_  
+    ↳ web: 'No Time to Die' e de Billie Eilish, escrita por Eilish e Finneas; nenhum cover/participacao da AURORA encontrado (en.wikipedia.org, secondhandsongs.com)
+- **Alanis Morissette × Dave Coulier** — “You Oughta Know (written about)” [song, 1995] (#11458) — _Coulier é inspiração da letra, não colaboração musical_  
+    ↳ web: 'You Oughta Know' escrita por Morissette e Glen Ballard; Coulier nao e creditado, apenas suposto tema da letra (en.wikipedia.org, snopes.com)
+- **Tower of Power × Santana** — “Africa Speaks, America Responds” [album, 1972] (#11477) — _título fabricado; não há álbum conjunto Tower of Power x Santana_  
+    ↳ web: album 'Africa Speaks, America Responds' nao existe; 'Africa Speaks' e do Santana (2019) sem Tower of Power (en.wikipedia.org, allmusic.com)
 - **Juanes × Aterciopelados** — “Estoy Aquí” [song, 2003] (#11579) — _Estoy Aquí é de Shakira, não colaboração Juanes/Aterciopelados_  
     ↳ web: 'Estoy Aquí' é de Shakira (Pies Descalzos 1995), não Juanes/Aterciopelados (Wikipedia)
 - **Alejandro Sanz × Jesse & Joy** — “Don't Stop the Music” [song, 2010] (#11599) — _Don't Stop the Music é da Rihanna, fabricação_  
@@ -1053,6 +1365,22 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Wikipedia (No.6 Collaborations Project): colab Sheeran/Chance e 'Cross Me' feat. PnB Rock, nao existe faixa 'Chuck D'
 - **Taylor Swift × Bon Iver** — “both of us” [song, 2012] (#12233) — _both of us é de B.o.B com Taylor Swift, não Bon Iver_  
     ↳ web: Wikipedia/Spotify: 'Both of Us' é de B.o.B feat. Taylor Swift, Bon Iver não participa
+- **Post Malone × Travis Scott** — “No Bystanders” [feature, 2018] (#12244) — _'No Bystanders' (Astroworld) tem Juice WRLD e Sheck Wes, não Post Malone_  
+    ↳ web: 'No Bystanders' (Astroworld) tem features de Juice WRLD e Sheck Wes, não Post Malone (en.wikipedia.org)
+- **Billie Eilish × Gorillaz** — “The Valley of The Pagans” [feature, 2020] (#12250) — _'The Valley of the Pagans' do Gorillaz é com Beck, não Billie Eilish_  
+    ↳ web: 'The Valley of the Pagans' é Gorillaz feat. Beck, não Billie Eilish (en.wikipedia.org, open.spotify.com)
+- **Doja Cat × Young Thug** — “The Real Slim Shady” [feature, 2020] (#12256) — _'The Real Slim Shady' é do Eminem, não colaboração Doja x Young Thug_  
+    ↳ web: 'The Real Slim Shady' é de Eminem; nenhuma colaboração oficial Doja Cat x Young Thug com esse título (en.wikipedia.org)
+- **50 Cent × Young Buck** — “Wanksta” [feature, 2003] (#12282) — _'Wanksta' é solo de 50 Cent (8 Mile OST), sem Young Buck_  
+    ↳ web: 'Wanksta' (8 Mile OST) é faixa solo de 50 Cent, sem Young Buck creditado (en.wikipedia.org, open.spotify.com)
+- **DJ Khaled × Beyoncé** — “Hold You Down” [feature, 2015] (#12285) — _'Hold You Down' tem Chris Brown/Alsina/Future/Jeremih, não Beyoncé_  
+    ↳ web: 'Hold You Down' (2015) do DJ Khaled tem Chris Brown, August Alsina, Future e Jeremih, não Beyoncé (open.spotify.com)
+- **Adele × Beyoncé** — “No Angel” [feature, 2013] (#12314) — _'No Angel' é da Beyoncé (2013) sem Adele; feature fabricado_  
+    ↳ web: 'No Angel' (2013) é faixa solo de Beyoncé, escrita por Fauntleroy/Polachek/Beyoncé, sem Adele (wikipedia.org)
+- **Metro Boomin × Future** — “Super Slimey” [album, 2017] (#12323) — _'Super Slimey' é mixtape Future x Young Thug, não Metro Boomin_  
+    ↳ web: 'Super Slimey' (2017) é mixtape colaborativa de Future & Young Thug, não de Metro Boomin (wikipedia.org, discogs.com)
+- **Metro Boomin × Post Malone** — “No Complaints” [song, 2017] (#12324) — _'No Complaints' Metro Boomin tem Offset e Drake, não Post Malone_  
+    ↳ web: 'No Complaints' (2017) é Metro Boomin feat. Offset & Drake, sem Post Malone (discogs.com, open.spotify.com)
 - **Gunna × Post Malone** — “One Right Now” [song, 2021] (#12365) — _One Right Now é de Post Malone com The Weeknd, não Gunna_  
     ↳ web: Wikipedia: 'One Right Now' é de Post Malone com The Weeknd, sem participação de Gunna
 - **Roddy Ricch × The Weeknd** — “Lost in the Fire” [feature, 2019] (#12369) — _Lost in the Fire é de Gesaffelstein com The Weeknd, não Roddy Ricch_  
@@ -1123,6 +1451,10 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Tema 'What's New Scooby-Doo?' do Simple Plan foi escrito por Rich Dickerson, sem Rivers Cuomo (scoobydoo.fandom.com, open.spotify.com)
 - **Shinedown × Eminem** — “Dream” [song, 2022] (#13059) — _Shinedown feat Eminem implausível e inexistente_  
     ↳ web: Nenhuma faixa 'Dream' de Shinedown com Eminem em 2022; ligação Eminem/Dream On é Aerosmith/Steven Tyler (en.wikipedia.org)
+- **Waka Flocka Flame × Drake** — “Grove St. Party” [song, 2010] (#13152) — _'Grove St. Party' é Waka Flocka feat. Kebo Gotti, não Drake_  
+    ↳ web: 'Grove St. Party' (2011) e Waka Flocka Flame feat. Kebo Gotti, sem Drake nos creditos (discogs.com, open.spotify.com)
+- **Christine and the Queens × Madonna** — “Runway” [song, 2015] (#13205) — _'Runway' Christine and the Queens com Madonna não existe; fabricação_  
+    ↳ web: colabs reais Christine and the Queens x Madonna sao 'Angels crying in my bed', 'Lick the light out' e 'I met an angel' (2023); nao existe 'Runway' (open.spotify.com)
 - **Alphabeat × Robyn** — “Boyfriend” [song, 2007] (#13233) — _Boyfriend não é dueto Alphabeat/Robyn_  
     ↳ web: Wikipedia/Discogs: 'Boyfriend' é single solo do Alphabeat (prod. Mike Spencer), sem Robyn
 - **NSYNC × Michael Jackson** — “Celebrity” [song, 2001] (#13247) — _Celebrity é álbum/faixa NSYNC, não dueto com MJ_  
@@ -1139,6 +1471,8 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Spotify/SecondHandSongs: 'La Quiero a Morir' é de Cabrel; versão Café Quijano é com Alejandro Sanz, sem Boney M.
 - **MC Daniel × Lexa** — “Envolvimento (Remix)” [song, 2022] (#13297) — _Envolvimento é de MC Loma, não MC Daniel/Lexa_  
     ↳ web: Spotify/Wikipedia: 'Envolvimento' é de MC Loma e As Gêmeas Lacração; sem versão MC Daniel/Lexa
+- **Pulp × Common People** — “Common People” [song, 1995] (#13493) — _Common People não é artista, é a própria música_  
+    ↳ web: 'Common People' (1995) é música do Pulp, escrita pelos 5 membros da banda; 'Common People' não é um artista (wikipedia.org, discogs.com)
 - **D Double E × Skepta** — “Rolex Sweep” [song, 2009] (#13531) — _Rolex Sweep é do DJ Q/Skepta, não de D Double E_  
     ↳ web: Wikipedia/Discogs: 'Rolex Sweep' (2008) é solo de Skepta, prod. Bless Beats; sem D Double E
 - **Manga Saint Hilare × Ghetts** — “Talking the Hardest” [song, 2016] (#13544) — _Talking the Hardest é de Giggs, não Manga/Ghetts_  
@@ -1275,6 +1609,34 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: 'My Songs Know...' original é solo do Fall Out Boy; remix tem 2 Chainz, não Sirah (en.wikipedia.org)
 - **Måneskin × Damiano David** — “Beggin'” [song, 2021] (#14466) — _Damiano David é o próprio vocalista do Måneskin_  
     ↳ web: Damiano David é o próprio vocalista do Måneskin; 'Beggin'' é da banda, não colab (en.wikipedia.org)
+- **Halsey × Travis Scott** — “11 Minutes” [song, 2019] (#14511) — _'11 Minutes' é com Travis Barker, não Travis Scott_  
+    ↳ web: '11 Minutes' é YUNGBLUD & Halsey feat. Travis Barker, não Travis Scott (en.wikipedia.org, discogs.com)
+- **Meghan Trainor × Psy** — “Cheer Up” [song, 2016] (#14517) — _'Cheer Up' é da TWICE; não é feat Meghan Trainor x Psy_  
+    ↳ web: nenhuma colaboração Meghan Trainor x Psy existe; lista de músicas dela na Wikipedia não inclui Psy, e 'Cheer Up' (2016) é do TWICE (en.wikipedia.org)
+- **Normani × Ty Dolla $ign** — “Nicki & Normani” [song, 2018] (#14530) — _título 'Nicki & Normani' fabricado; não é faixa real deles_  
+    ↳ web: título 'Nicki & Normani' inexistente; nenhuma faixa Normani x Ty Dolla $ign encontrada (en.wikipedia.org, open.spotify.com)
+- **H.E.R. × Juice WRLD** — “Juice WRLD & H.E.R.” [feature, 2019] (#14533) — _título 'Juice WRLD & H.E.R.' fabricado; não é faixa real_  
+    ↳ web: título 'Juice WRLD & H.E.R.' fabricado; discografia de Juice WRLD não tem colaboração com H.E.R. (en.wikipedia.org)
+- **Lana Del Rey × Sublime with Rome** — “Ride” [song, 2012] (#14558) — _'Ride' é música solo de Lana Del Rey; não feat Sublime with Rome_  
+    ↳ web: 'Ride' é solo de Lana Del Rey (comp. com Justin Parker, prod. Rick Rubin), sem Sublime with Rome (en.wikipedia.org)
+- **Skrillex × Porter Robinson** — “Shelter” [song, 2016] (#14571) — _'Shelter' é Porter Robinson & Madeon, não envolve Skrillex_  
+    ↳ web: 'Shelter' (2016) é creditada a Porter Robinson & Madeon, sem Skrillex (en.wikipedia.org, discogs.com)
+- **Gunna × Roddy Ricch** — “Dollaz on My Head” [song, 2020] (#14613) — _Dollaz on My Head é Gunna/Young Thug, não Roddy Ricch_  
+    ↳ web: 'Dollaz On My Head' (Wunna, 2020) e Gunna feat. Young Thug, sem Roddy Ricch (spotify.com, amazon.com)
+- **Offset × Drake** — “No Heart” [song, 2016] (#14623) — _No Heart é 21 Savage/Metro, não Offset/Drake_  
+    ↳ web: 'No Heart' (2016) e de 21 Savage & Metro Boomin no EP Savage Mode, nao Offset/Drake (wikipedia.org)
+- **Timbaland × Ludacris** — “Do It Like a Dude” [song, 2010] (#14633) — _Do It Like a Dude é da Jessie J, não Timbaland/Ludacris_  
+    ↳ web: 'Do It Like a Dude' (2010) e single de estreia solo da Jessie J, sem Timbaland nem Ludacris nos creditos (wikipedia.org, spotify.com)
+- **Timbaland × SZA** — “I Ain't Worried (Remix)” [song, 2022] (#14634) — _I Ain't Worried é OneRepublic; remix Timbaland/SZA fabricado_  
+    ↳ web: 'I Ain't Worried' (Top Gun: Maverick, 2022) e da OneRepublic solo; nenhum remix com Timbaland/SZA existe nos catalogos (spotify.com, youtube.com)
+- **Big Sean × Chris Brown** — “Beware” [song, 2013] (#14642) — _Beware é Big Sean/Lil Wayne/Jhené, não Chris Brown_  
+    ↳ web: 'Beware' (Hall of Fame, 2013) e Big Sean feat. Lil Wayne & Jhene Aiko, sem Chris Brown (wikipedia.org, spotify.com)
+- **Jack Harlow × Lil Wayne** — “Way Out” [song, 2020] (#14652) — _Way Out de Jack Harlow é com Big Sean, não Lil Wayne_  
+    ↳ web: Way Out (2020) de Jack Harlow credita Big Sean, nao Lil Wayne; Wayne so esteve no remix de Whats Poppin (wikipedia.org, spotify.com)
+- **Jack Harlow × Lil Baby** — “Drip Hard” [song, 2020] (#14657) — _Drip Hard é Lil Baby/Gunna, não Jack Harlow_  
+    ↳ web: nao existe 'Drip Hard' de Jack Harlow/Lil Baby; Drip Too Hard e Lil Baby & Gunna e a colab real Harlow-Lil Baby e 'Face of My City' (wikipedia.org, spotify.com)
+- **Nas × Kelis** — “21 Questions” [song, 2003] (#14668) — _21 Questions é de 50 Cent/Nate Dogg, não Nas/Kelis_  
+    ↳ web: 21 Questions (2003) e de 50 Cent ft. Nate Dogg, nao Nas/Kelis (wikipedia.org, discogs.com)
 - **Don Omar × J. Balvin** — “Ella y Yo” [song, 2011] (#14714) — _Ella y Yo é de Don Omar com Aventura, não J Balvin_  
     ↳ web: Wikipedia/Spotify: 'Ella y Yo' é de Aventura feat. Don Omar (2004-05), J. Balvin não participa
 - **Christina Aguilera × Nicki Minaj** — “Primadonna (Remix)” [song, 2012] (#14724) — _Primadonna é de Marina; remix com Aguilera/Nicki não existe_  
@@ -1283,6 +1645,40 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Wikipedia (Liberation): Aguilera lamentou não ter tido Cardi B no álbum; não existe faixa 'Sault' entre elas
 - **Léo Santana × Parangolé** — “Galinha Pintadinha” [song, 2019] (#14758) — _Galinha Pintadinha não é faixa de Léo Santana com Parangolé_  
     ↳ web: Wikipedia: 'Galinha Pintadinha' é marca infantil de Juliano Prado/Marcos Luporini (voz Vera Fuzaro), não faixa de Léo Santana com Parangolé
+- **BLACKPINK × Sia** — “The Album” [feature, 2020] (#14768) — _'The Album' é álbum, não feature único; título errado_  
+    ↳ web: The Album (2020) do BLACKPINK tem apenas Selena Gomez (Ice Cream) e Cardi B (Bet You Wanna) como convidadas; Sia nao participa (en.wikipedia.org)
+- **BLACKPINK × Tyga** — “Happy New Year” [song, 2018] (#14769) — _BLACKPINK e Tyga não têm essa música juntos_  
+    ↳ web: Lista completa de musicas gravadas pelo BLACKPINK nao inclui 'Happy New Year' nem colaboracao com Tyga (en.wikipedia.org)
+- **Jennie × Vince Staples** — “90s Rap (Collab)” [feature, 2023] (#14770) — _título genérico fabricado, colab inexistente_  
+    ↳ web: Nenhum registro de '90s Rap' entre Jennie e Vince Staples; discografia de Vince Staples nao lista colaboracao com Jennie (en.wikipedia.org)
+- **Jennie × Zico** — “Any Song (Remix)” [song, 2020] (#14773) — _'Any Song' é do Zico; remix com Jennie inexistente_  
+    ↳ web: 'Any Song' (2020) e single solo do Zico sem remix com Jennie; a colab real Zico-Jennie e 'SPOT!' de 2024 (open.spotify.com, en.wikipedia.org)
+- **Red Hot Chili Peppers × Wu-Tang Clan** — “Pure Imagination (Live)” [live, 2022] (#14790) — _RHCP com Wu-Tang ao vivo é fabricação improvável_  
+    ↳ web: Nenhum registro de 'Pure Imagination' com RHCP e Wu-Tang; setlists de 2022 do RHCP nao incluem a musica (setlist.fm); so dividiram palco em 2007/2013 (concertarchives.org)
+- **Red Hot Chili Peppers × Elton John** — “True Blue” [song, 2022] (#14791) — _RHCP com Elton John 'True Blue' inexistente_  
+    ↳ web: A colaboracao real RHCP-Elton John e 'Sick Love' (The Getaway, 2016), nao existe 'True Blue' (wikipedia.org, songfacts.com)
+- **Panic! at the Disco × Lil Wayne** — “I Write Sins Not Tragedies (Remix)” [song, 2006] (#14793) — _remix de Lil Wayne com Panic! inexistente_  
+    ↳ web: Nao existe remix oficial com Lil Wayne; apenas mashups de fas no SoundCloud; whosampled.com nao lista tal remix
+- **Panic! at the Disco × Hayley Williams** — “Victorious (feature)” [feature, 2016] (#14794) — _'Victorious' não tem Hayley Williams_  
+    ↳ web: 'Victorious' (2015) e faixa solo do Panic!; creditos nao incluem Hayley Williams (wikipedia.org)
+- **The 1975 × Taylor Swift** — “The 1975 (song)” [feature, 2020] (#14796) — _The 1975 com Taylor Swift feature inexistente_  
+    ↳ web: Nenhuma colaboracao lancada The 1975 x Taylor Swift; dueto de 'Slut!' foi descartado e nunca lancado (newsweek.com, billboard.com)
+- **Burna Boy × J. Balvin** — “Tu No Metes Cabra” [song, 2019] (#14805) — _'Tu No Metes Cabra' é de Bad Bunny, não Burna/Balvin_  
+    ↳ web: 'Tu No Metes Cabra' e de Bad Bunny; remix com Daddy Yankee, Anuel AA e Cosculluela, nao Burna Boy/J Balvin (music.apple.com)
+- **Kacey Musgraves × León Larregui** — “Intercultural (feature)” [feature, 2019] (#14816) — _título genérico 'Intercultural' fabricado_  
+    ↳ web: Nao existe 'Intercultural'; a colaboracao latina real de Kacey Musgraves e 'Lost in Translation' com Carin Leon (2025), nao Leon Larregui (rollingstone.com)
+- **The Weeknd × J. Balvin** — “Miracle” [song, 2023] (#14828) — _'Miracle' é Calvin Harris/Ellie Goulding, não Weeknd/Balvin_  
+    ↳ web: Nenhuma musica 'Miracle' de The Weeknd com J Balvin encontrada; 'Miracle' (2023) e de Calvin Harris/Ellie Goulding (billboard.com, wikipedia.org)
+- **The Weeknd × Republic Records** — “Moth to a Flame” [song, 2021] (#14834) — _'Republic Records' é gravadora, não artista_  
+    ↳ web: 'Moth to a Flame' credita Swedish House Mafia e The Weeknd; Republic Records e apenas a gravadora, nao artista (discogs.com, wikipedia.org)
+- **Sia × Kylie Minogue** — “A Sky Full of Stars” [song, 2013] (#14839) — _'A Sky Full of Stars' é do Coldplay, não Sia/Kylie_  
+    ↳ web: 'A Sky Full of Stars' e do Coldplay (com Avicii, 2014); nenhuma versao Sia/Kylie Minogue existe (wikipedia.org)
+- **Tate McRae × Jeremy Zucker** — “we fell in love in october” [song, 2022] (#14849) — _'october' é de Jeremy Zucker/BENÉE, não Tate McRae_  
+    ↳ web: 'we fell in love in october' e de girl in red (2018), sem versao Tate McRae/Jeremy Zucker (en.wikipedia.org)
+- **Zedd × Alessia Cara** — “Stay the Night” [song, 2014] (#14872) — _'Stay the Night' é com Hailee/Hayley, não Alessia Cara_  
+    ↳ web: 'Stay the Night' (2013) e Zedd feat. Hayley Williams, nao Alessia Cara (wikipedia.org, discogs.com)
+- **Martin Garrix × Usher** — “Tremor” [song, 2014] (#14883) — _'Tremor' é instrumental, sem Usher_  
+    ↳ web: 'Tremor' (2014) e Dimitri Vegas & Like Mike & Martin Garrix, faixa instrumental sem Usher (discogs.com, spotify.com)
 - **Seu Jorge × David Bowie** — “Rebel Rebel” [song, 2004] (#15026) — _cover solo de Bowie, não colaboração real_  
     ↳ web: Wikipedia/Rolling Stone: 'Rebel Rebel' é cover solo de Seu Jorge (Life Aquatic, 2004); Bowie não participa da gravação
 - **Rosé × The Weeknd** — “One of the Girls” [song, 2023] (#15050) — _'One of the Girls' é The Weeknd/JENNIE/Lily-Rose Depp, não Rosé_  
@@ -1373,6 +1769,14 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: 'Standing Next to You (Remix)' é do Jungkook feat. Usher, sem Gunna (Rolling Stone/NME)
 - **Alicia Keys × Pharrell Williams** — “100 Days 100 Nights” [song, 2007] (#15474) — _'100 Days 100 Nights' é de Sharon Jones; não é dueto Alicia Keys/Pharrell_  
     ↳ web: '100 Days, 100 Nights' é da Sharon Jones & The Dap-Kings (2007), não Alicia Keys/Pharrell (Wikipedia)
+- **Roddy Ricch × Luke Combs** — “Forever After All” [song, 2021] (#15573) — _Forever After All é solo de Luke Combs, sem Roddy Ricch_  
+    ↳ web: Forever After All e faixa solo de Luke Combs; nenhum remix com Roddy Ricch documentado (wikipedia.org, spotify.com)
+- **Bizarrap × J. Balvin** — “Outro (Collab)” [song, 2023] (#15653) — _título genérico Outro Collab não é faixa real_  
+    ↳ web: faixa 'Outro (Collab)' nao existe; a colab real Bizarrap x J Balvin e 'BZRP Music Sessions #62/66' de dez/2025 (billboard.com, rollingstone.com)
+- **Marc Anthony × Will Smith** — “Gettin' Jiggy Wit It (Latin Remix)” [song, 1998] (#15656) — _remix latino de Will Smith com Marc Anthony inexistente_  
+    ↳ web: remixes oficiais de Gettin' Jiggy Wit It sao DJ Scratch e So So Def; nenhum 'Latin Remix' com Marc Anthony (discogs.com, whosampled.com)
+- **Marc Anthony × Alejandro Fernández** — “Vivir Mi Vida (Remix)” [song, 2014] (#15657) — _Vivir Mi Vida remix com Alejandro Fernández inexistente_  
+    ↳ web: single oficial 'Vivir Mi Vida - The Remixes' nao inclui Alejandro Fernandez; nenhuma versao com ele documentada (music.apple.com, spotify.com)
 - **Nicki Nicole × Peso Pluma** — “La Bebe (Remix)” [song, 2023] (#15664) — _La Bebe Remix é de Peso Pluma com Yng Lvcas, não Nicki Nicole_  
     ↳ web: 'La Bebe (Remix)' é de Yng Lvcas com Peso Pluma, sem Nicki Nicole (spotify, billboard)
 - **Nicki Nicole × Myke Towers** — “Rae Sremmurd (Remix)” [song, 2021] (#15666) — _título 'Rae Sremmurd (Remix)' não é faixa desses artistas_  
@@ -1489,6 +1893,12 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: 'Only Wanna Be With You (Pokémon 25)' é cover solo de Post Malone, sem feature; 'Halsee' inexistente (bulbapedia.bulbagarden.net)
 - **Post Malone × Young Thug** — “Scared to Be Lonely (Remix)” [song, 2017] (#16275) — _'Scared to Be Lonely' é Martin Garrix/Dua Lipa, não Post x Thug_  
     ↳ web: 'Scared to Be Lonely' é de Martin Garrix feat. Dua Lipa, não Post Malone x Young Thug (wikipedia.org)
+- **Bad Bunny × Becky G** — “Volví” [song, 2021] (#16341) — _'Volví' é Aventura, não Becky G_  
+    ↳ web: 'Volví' (2021) é Aventura e Bad Bunny, sem Becky G (wikipedia.org, spotify.com)
+- **Rauw Alejandro × Rosalía** — “Vampire (Remix)” [song, 2021] (#16353) — _'Vampire' é Olivia Rodrigo, Rauw/Rosalía fizeram 'Beso'_  
+    ↳ web: não existe 'Vampire (Remix)' deles; 'Vampire' é de Olivia Rodrigo e a faixa real do casal é 'VAMPIROS' (2023, EP RR), original e não remix (apple.com, spotify.com)
+- **Myke Towers × Bad Bunny** — “Gata Only (Remix)” [song, 2023] (#16374) — _'Gata Only' é FloyyMenor/Cris Mj, não estes_  
+    ↳ web: 'Gata Only' é FloyyMenor/Cris MJ e o remix oficial traz Ozuna e Anitta, sem Myke Towers nem Bad Bunny (spotify.com, letras.com)
 - **Marcelo D2 × Racionais MC's** — “Sobrevivendo no Inferno (Clipe)” [song, 2017] (#16444) — _'Sobrevivendo no Inferno' é álbum dos Racionais, não colab com D2_  
     ↳ web: Discogs/YouTube: 'Sobrevivendo no Inferno' (1997) é álbum solo do Racionais MC's, não clipe/colab com Marcelo D2 (havia até desavença)
 - **Jung Kook × Major Lazer** — “We Don't Talk About That” [song, 2023] (#16448) — _faixa Jung Kook-Major Lazer inexistente_  
@@ -1507,6 +1917,44 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Wikipedia (Human): OneRepublic tem 'Wild Life', não 'Wild@Heart'; nenhuma colab OneRepublic-Katy Perry existe
 - **OneRepublic × DJ Shadow** — “I'll Be Missing You” [song, 2019] (#16465) — _'I'll Be Missing You' é Puff Daddy, não OneRepublic-DJ Shadow_  
     ↳ web: Wikipedia/Discogs: 'I'll Be Missing You' é Puff Daddy & Faith Evans feat. 112; sem OneRepublic/DJ Shadow
+- **Green Day × Norah Jones** — “Love Is for Losers” [song, 2023] (#16472) — _Norah Jones colaborou com Billie Joe (Foreverly), não Green Day_  
+    ↳ web: 'Love Is for Losers' é do The Longshot (projeto solo de Billie Joe, 2018), sem Norah Jones; a colab dela foi 'Foreverly' (2013) — greendayauthority.com/nzherald.co.nz
+- **Hozier × Alicia Keys** — “In a Week (feat. Alicia Keys)” [song, 2019] (#16476) — _original tem Karen Cowley, não Alicia Keys_  
+    ↳ web: 'In a Week' do Hozier credita Karen Cowley; nenhuma versão com Alicia Keys existe — spotify.com
+- **Wizkid × Starboy** — “Manya” [song, 2017] (#16486) — _Starboy é o próprio alias/selo de Wizkid_  
+    ↳ web: 'Manya' (2017) é creditada a Mut4y & Wizkid; 'Starboy' é o selo/alias do próprio Wizkid, não um segundo artista — whosampled.com/thenativemag.com
+- **Ayra Starr × Seyi Vibez** — “Last Heartbreak Song” [song, 2023] (#16489) — _Last Heartbreak Song é com Giveon, não Seyi Vibez_  
+    ↳ web: 'Last Heartbreak Song' (2024) é Ayra Starr feat. Giveon, sem Seyi Vibez — en.wikipedia.org/spotify.com
+- **Morgan Wallen × Jason Aldean** — “Long Live Cowgirls (Duet)” [song, 2022] (#16497) — _Long Live Cowgirls é com Ernest, não Aldean_  
+    ↳ web: 'Long Live Cowgirls' é de ERNEST com Morgan Wallen (2022), Jason Aldean não participa — tiktok.com/@ernest, holler.country
+- **Morgan Wallen × Nelly** — “Wasted on You (Remix)” [song, 2021] (#16498) — _remix com Nelly não existe_  
+    ↳ web: não existe remix oficial de 'Wasted on You' com Nelly; Spotify lista a faixa só de Morgan Wallen, só mashups de fãs circulam — spotify.com/soundcloud.com
+- **J. Balvin × Khalid** — “Ecuador” [song, 2023] (#16500) — _faixa Ecuador com Khalid não existe_  
+    ↳ web: não existe faixa 'Ecuador' de J Balvin com Khalid; a colab real é 'Otra Noche Sin Ti' (2021) — rollingstone.com/billboard.com
+- **Ariana Grande × Childish Gambino** — “Just Look Up” [song, 2021] (#16504) — _Just Look Up é da Ariana com Kid Cudi, não Gambino_  
+    ↳ web: 'Just Look Up' (2021, trilha de Don't Look Up) é Ariana Grande & Kid Cudi, não Childish Gambino — en.wikipedia.org/spotify.com
+- **Justin Bieber × Blake Shelton** — “10,000 Hours” [song, 2019] (#16517) — _10,000 Hours é do Dan + Shay, não Blake Shelton_  
+    ↳ web: 10,000 Hours credita Dan + Shay e Justin Bieber; Blake Shelton nao aparece nos creditos (wikipedia.org, discogs.com)
+- **Shawn Mendes × Macklemore** — “Growing Pains” [song, 2017] (#16518) — _colaboração inexistente_  
+    ↳ web: Growing Pains e de Alessia Cara; Macklemore tem apenas Growing Up com Ed Sheeran; nenhuma faixa Mendes+Macklemore existe (wikipedia.org, billboard.com)
+- **Demi Lovato × Anitta** — “Mal Acostumbrado” [song, 2022] (#16520) — _provável fabricação cross-cultural_  
+    ↳ web: nenhuma colaboracao oficial Demi Lovato x Anitta existe; Mal Acostumbrado nao consta na lista de musicas da Demi (wikipedia.org)
+- **Demi Lovato × Iggy Pop** — “California Sober” [song, 2021] (#16523) — _California Sober é solo da Demi, sem Iggy Pop_  
+    ↳ web: California Sober e faixa solo da Demi; compositores listados (Lovato, Pennell, Aquilina etc.) sem Iggy Pop (demilovato.fandom.com, spotify.com)
+- **Demi Lovato × Sirah** — “Ain't Your Mama” [song, 2013] (#16524) — _colaboração inexistente_  
+    ↳ web: Ain't Your Mama nao consta no catalogo da Demi Lovato; a colaboracao real Demi x Sirah e Waitin' for You (2015) (wikipedia.org, demilovato.fandom.com)
+- **Demi Lovato × Kehlani** — “No Promises” [song, 2017] (#16526) — _No Promises é do Cheat Codes, não Kehlani_  
+    ↳ web: No Promises e do Cheat Codes feat. Demi Lovato (2017), sem Kehlani em nenhuma versao (wikipedia.org, discogs.com)
+- **Adele × Rick Rubin** — “30 (production)” [album, 2021] (#16528) — _Rick Rubin produziu 21, não 30_  
+    ↳ web: Rick Rubin produziu 5 faixas do 21; produtores do 30 sao Kurstin, Inflo, Goransson etc., sem Rubin (wikipedia.org)
+- **Doja Cat × Roddy Ricch** — “Streets” [song, 2021] (#16537) — _Streets é solo da Doja Cat_  
+    ↳ web: Streets e solo da Doja Cat; remixes oficiais por Disclosure, DJ Sliink, Party Favor etc., sem Roddy Ricch (wikipedia.org, nme.com)
+- **Doja Cat × Maluma** — “El Beso del Final” [song, 2022] (#16539) — _colaboração inexistente_  
+    ↳ web: El Beso del Final e da Christina Aguilera (Mi Reflejo), composta por Rudy Perez e Tom Snow; nenhuma versao Doja Cat x Maluma (letras.com, allmusic.com)
+- **Daniel Caesar × Raphael Saadiq** — “Get You” [song, 2017] (#16548) — _Get You tem Kali Uchis, não Raphael Saadiq_  
+    ↳ web: Get You e Daniel Caesar feat. Kali Uchis; Raphael Saadiq colaborou apenas em Do You Like Me? (2023) (wikipedia.org, spotify.com)
+- **Frank Ocean × John Mayer** — “Slide” [song, 2017] (#16552) — _Slide é do Calvin Harris com Frank e Migos, não Mayer_  
+    ↳ web: Slide e Calvin Harris feat. Frank Ocean & Migos; John Mayer nao e creditado na faixa (wikipedia.org, spotify.com)
 - **Mariah Carey × Bryan Adams** — “When You Believe” [song, 1998] (#16561) — _'When You Believe' foi com Whitney Houston, não Bryan Adams_  
     ↳ web: Wikipedia/whitneyhouston.com: 'When You Believe' (1998) é dueto Mariah Carey & Whitney Houston, não Bryan Adams
 - **Kanye West × Kid Cudi** — “Everybody Wants to Be My Enemy” [song, 2018] (#16591) — _'Everybody Wants to Be My Enemy' é de Studio Killers, não Kanye/Cudi_  
@@ -1753,6 +2201,8 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Wikipedia: 'Slim Pickins' creditada a Carpenter/Amy Allen/Jack Antonoff, sem Pharrell
 - **Lil Uzi Vert × The Weeknd** — “Unforgettable” [song, 2017] (#18085) — _'Unforgettable' é do French Montana, não desses_  
     ↳ web: Wikipedia: 'Unforgettable' (2017) é de French Montana feat. Swae Lee; The Weeknd apenas sampleado, sem Lil Uzi Vert
+- **Gunna × SZA** — “Fortnite” [song, 2023] (#18119) — _título Fortnite improvável entre Gunna e SZA_  
+    ↳ web: álbum de Gunna 'a Gift & a Curse' (2023) não tem participações e nenhuma faixa 'Fortnite' Gunna x SZA existe em Spotify/Genius (wikipedia.org, open.spotify.com)
 - **J. Balvin × Myke Towers** — “XO Tour Life (Remix)” [song, 2023] (#18203) — _'XO Tour Life' é de Lil Uzi Vert; remix fabricado_  
     ↳ web: 'XO Tour Llif3' é de Lil Uzi Vert; nenhum remix J Balvin+Myke Towers encontrado (Spotify)
 - **Karol G × Maluma** — “Mía” [song, 2018] (#18222) — _'Mía' é Bad Bunny/Drake, não Karol G/Maluma_  
@@ -1763,8 +2213,16 @@ Fabricações confirmadas pela classificação **e** pela verificação web inde
     ↳ web: Letras/Apple Music: 'Rompe (Remix)' feat. G-Unit (Lloyd Banks/Young Buck), não El Alfa
 - **Ozuna × Anuel AA** — “Yonaguni” [song, 2021] (#18298) — _Yonaguni é de Bad Bunny solo, não Ozuna/Anuel_  
     ↳ web: 'Yonaguni' é single solo de Bad Bunny (2021), sem Ozuna nem Anuel AA (en.wikipedia.org, open.spotify.com)
+- **Wisin & Yandel × Maluma** — “Cuatro Babys (Yandel solo)” [song, 2016] (#18384) — _Cuatro Babys é de Maluma sem Yandel/Wisin_  
+    ↳ web: 'Cuatro Babys' e de Maluma feat. Noriel, Bryant Myers & Juhn, sem Wisin nem Yandel nos creditos (wikipedia.org, spotify.com)
+- **Peso Pluma × Nicki Minaj** — “BZRP x Peso Pluma (remix feature)” [song, 2023] (#18439) — _título confuso BZRP, feature Nicki Minaj inexistente_  
+    ↳ web: BZRP Music Sessions #55 e so Bizarrap x Peso Pluma, sem Nicki Minaj; a colab real e com Nicki Nicole em 'Por Las Noches (Remix)' (rollingstone.com, apple.com)
+- **Peso Pluma × Marshmello** — “El Hombre Que Perdio” [song, 2023] (#18447) — _colaboração com Marshmello, título fabricado_  
+    ↳ web: titulo 'El Hombre Que Perdio' nao existe; a colaboracao real Peso Pluma x Marshmello e 'Un Dior' com Fuerza Regida (spotify.com, letras.com)
+- **Peso Pluma × El Alfa** — “La Jumpa” [song, 2023] (#18448) — _La Jumpa é Anuel/Bad Bunny, não Peso Pluma/El Alfa_  
+    ↳ web: 'La Jumpa' (2022) e de Arcangel & Bad Bunny, nao Peso Pluma/El Alfa (wikipedia.org, spotify.com, billboard.com)
 
-## ♻️ RESGATADAS — 68 — o sistema se corrigiu (MANTER)
+## ♻️ RESGATADAS — 99 — o sistema se corrigiu (MANTER)
 
 O Passe 1 marcou como inválidas, mas a web provou que são reais. **Prova de que o filtro não é cego** — não remover.
 
@@ -1784,6 +2242,8 @@ O Passe 1 marcou como inválidas, mas a web provou que são reais. **Prova de qu
     ↳ web: Wikipedia/edm.com: 'Ignite the Love' de Kid Cudi (Entergalactic 2022) tem Skrillex creditado na produção
 - **AKA × Burna Boy** — “All Eyes on Me” [song, 2016] (#1127) — _'All Eyes on Me' AKA com Burna Boy não existe; atribuição falsa_  
     ↳ web: 'All Eyes on Me' de AKA é feat. Burna Boy, Da L.E.S. e JR; Burna Boy consta creditado (wikipedia, spotify, audiomack)
+- **Claudia Leitte × Pitbull** — “We Are One (Ole Ola)” [song, 2014] (#1714) — _'We Are One' é Pitbull/J.Lo/Claudia Leitte; não esse par bilateral assim_  
+    ↳ web: 'We Are One (Ole Ola)' é creditada a Pitbull feat. Jennifer Lopez & Cláudia Leitte — ambos na faixa (discogs.com, open.spotify.com)
 - **Alok × Ellie Goulding** — “All by Myself” [song, 2020] (#1926) — _'All by Myself' não consta entre Alok e Ellie Goulding_  
     ↳ web: 'All by Myself' (2022) é de Alok, Sigala e Ellie Goulding, ambos creditados (en.wikipedia.org)
 - **Post Malone × Blake Shelton** — “Pour Me a Drink (feat. Blake Shelton)” [song, 2024] (#3008) — _'Pour Me a Drink' é com Luke Combs, não Blake Shelton_  
@@ -1816,10 +2276,42 @@ O Passe 1 marcou como inválidas, mas a web provou que são reais. **Prova de qu
     ↳ web: Wikipedia: 'Amor Eterno' gravada por Rocío Dúrcal com Juan Gabriel no álbum 'Canta a Juan Gabriel Vol.6' (1984), há versão em dueto
 - **James Arthur × Anne-Marie** — “Rewrite the Stars” [song, 2017] (#5745) — _'Rewrite the Stars' é trilha Greatest Showman, não James Arthur x Anne-Marie_  
     ↳ web: James Arthur & Anne-Marie gravaram cover 'Rewrite The Stars' juntos (The Greatest Showman: Reimagined), confirmado por Spotify/Wikipedia
+- **Lenny Kravitz × Jay-Z** — “Guns and Roses” [song, 2001] (#5760) — _não existe música 'Guns and Roses' entre Kravitz e Jay-Z_  
+    ↳ web: 'Guns & Roses (feat. Lenny Kravitz)' de Jay-Z, álbum The Blueprint 2 (2002) (spotify.com, apple.com)
+- **Polo G × Lil Baby** — “Pop Out” [song, 2019] (#5780) — _'Pop Out' é de Polo G com Lil Tjay, não Lil Baby_  
+    ↳ web: 'Pop Out Again (feat. Lil Baby & Gunna)' de Polo G, sequência de 'Pop Out' no álbum Die a Legend (2019), credita ambos (spotify.com, wikipedia.org)
 - **Camilo × Shakira** — “Tutu” [song, 2019] (#5939) — _Tutu é Camilo e Pedro Capó, não Shakira_  
     ↳ web: Spotify/Discogs: 'Tutu (Remix)' 2019 credita Camilo, Shakira e Pedro Capó juntos
+- **Big Thief × Adrianne Lenker** — “Two Hands” [album, 2019] (#6224) — _Adrianne Lenker é membro do Big Thief, não colaboração entre pares_  
+    ↳ web: Two Hands (2019) e album do Big Thief com Adrianne Lenker como vocalista e autora de todas as faixas (en.wikipedia.org)
+- **Eagles of Death Metal × Josh Homme** — “Peace Love Death Metal” [album, 2004] (#6230) — _Josh Homme é membro do Eagles of Death Metal, não colab entre pares_  
+    ↳ web: Josh Homme tocou bateria na maioria das faixas e produziu Peace, Love, Death Metal (2004) do Eagles of Death Metal (en.wikipedia.org)
+- **Paramore × Zac Farro** — “After Laughter” [album, 2017] (#6236) — _Zac Farro é baterista do Paramore, não colab entre pares_  
+    ↳ web: Zac Farro voltou ao Paramore e tocou bateria, percussao e vocais em After Laughter (2017) (en.wikipedia.org)
+- **Panic! at the Disco × Brendon Urie** — “Vices & Virtues” [album, 2011] (#6239) — _Brendon Urie é o Panic! at the Disco, não colab entre pares_  
+    ↳ web: Brendon Urie gravou Vices & Virtues (2011) como vocalista e multi-instrumentista do Panic! at the Disco (en.wikipedia.org)
+- **My Chemical Romance × Gerard Way** — “The Black Parade” [album, 2006] (#6240) — _Gerard Way é vocalista do MCR, não colab entre pares_  
+    ↳ web: Gerard Way e o vocalista principal de The Black Parade (2006) do My Chemical Romance (en.wikipedia.org)
+- **Tom Morello × Rage Against the Machine** — “Evil Empire” [album, 1996] (#6248) — _Tom Morello é membro do RATM; Evil Empire é álbum da banda_  
+    ↳ web: Tom Morello e o guitarrista do RATM em Evil Empire (1996), formacao Morello/De la Rocha/Commerford/Wilk (en.wikipedia.org, equipboard.com)
+- **Tom Morello × Audioslave** — “Revelations” [album, 2006] (#6249) — _Tom Morello é membro do Audioslave; Revelations é álbum da banda_  
+    ↳ web: Tom Morello tocou guitarra em Revelations (2006) do Audioslave (en.wikipedia.org, discogs.com)
+- **Oasis × Noel Gallagher** — “(What's the Story) Morning Glory?” [album, 1995] (#6253) — _Noel Gallagher é membro do Oasis; álbum da própria banda_  
+    ↳ web: Album real do Oasis (1995); Noel Gallagher e creditado como compositor unico, guitarrista e coprodutor do disco (en.wikipedia.org)
+- **Waxahatchee × Katie Crutchfield** — “Saint Cloud” [album, 2020] (#6257) — _Katie Crutchfield é a Waxahatchee; Saint Cloud é álbum dela_  
+    ↳ web: Saint Cloud (2020, Merge) e album real de Waxahatchee, projeto de Katie Crutchfield — mesma artista nos creditos (en.wikipedia.org, forbes.com)
+- **Hand Habits × Meg Duffy** — “Fun House” [album, 2019] (#6258) — _Meg Duffy é a Hand Habits; álbum do mesmo projeto_  
+    ↳ web: Fun House e album real de Hand Habits, projeto de Meg Duffy (lancado em 2021, nao 2019) (handhabits.bandcamp.com, thefader.com)
+- **Cat Power × Chan Marshall** — “You Are Free” [album, 2003] (#6259) — _Chan Marshall é a Cat Power; You Are Free é álbum dela_  
+    ↳ web: You Are Free (2003, Matador) e album real de Cat Power, nome artistico de Chan Marshall (en.wikipedia.org, discogs.com)
 - **Sauti Sol × Bien Aime** — “Midnight Train” [song, 2022] (#7408) — _Bien Aime é membro do Sauti Sol, não feature separado; Midnight Train é solo do grupo_  
     ↳ web: Wikipedia: Bien-Aimé Baraza é o vocalista principal do Sauti Sol, que gravou 'Midnight Train' (2020); ambos performam na faixa
+- **Geraldo Azevedo × Alceu Valença** — “Anunciação” [song, 1997] (#7807) — _Anunciação é hit solo de Alceu Valença, não parceria com Geraldo_  
+    ↳ web: 'Anunciação' aparece nos álbuns ao vivo O Grande Encontro (1996/2016) creditados a Alceu Valença, Elba Ramalho e Geraldo Azevedo juntos (spotify.com, music.apple.com)
+- **Anitta × Pabllo Vittar** — “Sua Cara (feat. J Balvin)” [feature, 2017] (#8127) — _Sua Cara é Major Lazer feat Anitta e Pabllo, não feat J Balvin_  
+    ↳ web: 'Sua Cara' (2017) de Major Lazer credita Anitta e Pabllo Vittar juntas como feats (sem J Balvin) (open.spotify.com, imdb.com)
+- **Cidade Negra × Natiruts** — “Reggae no Brasil” [live, 2002] (#8181) — _título genérico Reggae no Brasil parece fabricado_  
+    ↳ web: Toni Garrido (Cidade Negra) canta 'A Sombra da Maldade' no álbum/DVD ao vivo 'Natiruts Reggae Brasil' (2015) — radiorock.com.br/rollingstone.com.br
 - **Chris Stapleton × Justin Timberlake** — “Tennessee Whiskey” [song, 2015] (#8460) — _Tennessee Whiskey é de Stapleton; gravou ao vivo com JT no CMA mas não é single conjunto creditado_  
     ↳ web: Billboard/Rolling Stone: Stapleton e Justin Timberlake fizeram dueto documentado de 'Tennessee Whiskey' no CMA 2015 (04/11/2015)
 - **Tasha Cobbs Leonard × Nicki Minaj** — “I'm Getting Ready” [song, 2017] (#8705) — _Tasha Cobbs feat. Nicki Minaj inexistente, fabricação_  
@@ -1828,6 +2320,8 @@ O Passe 1 marcou como inválidas, mas a web provou que são reais. **Prova de qu
     ↳ web: Discogs/Wikipedia/IMDb: 'death bed (coffee for your head)' creditada 'Powfu Feat. beabadoobee'
 - **Weyes Blood × Father John Misty** — “God's Favorite Customer Feature” [song, 2018] (#8996) — _'God's Favorite Customer' é álbum do Father John Misty; feature de Weyes Blood inexistente_  
     ↳ web: Under the Radar/Wikipedia: faixa-título 'God's Favorite Customer' de Father John Misty tem feat. Weyes Blood
+- **Oruam × MC Cabelinho** — “Poesia Acústica” [song, 2022] (#9619) — _Poesia Acústica é série do Pineapple, não dessa dupla isolada_  
+    ↳ web: Poesia Acústica #13 (set/2022, Pineapple) credita Oruam E MC Cabelinho juntos na faixa, com Luísa Sonza, Xamã, L7NNON etc. (polifoniaperiferica.com.br, letras.mus.br)
 - **F.HERO × Milli** — “Mirror Mirror” [song, 2022] (#10474) — _'Mirror Mirror' é solo da Milli, não colab com F.HERO_  
     ↳ web: 'Mirror Mirror' credita F.HERO, MILLI e Changbin juntos (open.spotify.com/letras.com)
 - **Chico Buarque × Milton Nascimento** — “Clube da Esquina 2” [album, 1978] (#10847) — _Clube da Esquina 2 (1978) é de Milton; Chico não é co-autor do álbum_  
@@ -1840,10 +2334,26 @@ O Passe 1 marcou como inválidas, mas a web provou que são reais. **Prova de qu
     ↳ web: 'Are You Gonna Go My Way' é cover de Tom Jones com Robbie Williams no álbum Reload 1999 (Wikipedia/WhoSampled)
 - **The Skatalites × Bob Marley** — “Simmer Down” [song, 1964] (#11304) — _Simmer Down é dos Wailers/Bob Marley com Skatalites como backing, não dueto Marley_  
     ↳ web: Simmer Down (1964) creditado como The Skatalites feat. Bob Marley & the Wailers (Wikipedia/theskatalites.bandcamp)
+- **Nirvana × David Bowie** — “The Man Who Sold the World” [song, 1993] (#11462) — _cover do Nirvana de música do Bowie, não colaboração_  
+    ↳ web: gravacao real: Nirvana no MTV Unplugged (nov 1993) interpretou 'The Man Who Sold the World', com David Bowie creditado como compositor (en.wikipedia.org)
+- **The Vandellas × Marvin Gaye** — “Dancing in the Street” [song, 1964] (#11478) — _'Dancing in the Street' é de Martha & the Vandellas, não de Marvin Gaye_  
+    ↳ web: 'Dancing in the Street' (1964) de Martha and the Vandellas foi coescrita por Marvin Gaye, creditado na gravacao (en.wikipedia.org, loc.gov)
+- **Snow Patrol × Gary Lightbody** — “Run (covered by Leona Lewis)” [song, 2008] (#11485) — _Lightbody é o vocalista do Snow Patrol, não colaboração externa_  
+    ↳ web: 'Run' (2004) e do Snow Patrol, escrita e cantada pelo vocalista Gary Lightbody; ambos na gravacao (en.wikipedia.org)
+- **Geri Halliwell × Spice Girls** — “Wannabe” [song, 1996] (#11487) — _Geri Halliwell é membro das Spice Girls, não colaboração_  
+    ↳ web: Geri Halliwell e membro das Spice Girls e canta partes solo em 'Wannabe' (1996) (en.wikipedia.org)
+- **Morrissey × Johnny Marr** — “This Charming Man (The Smiths)” [song, 1983] (#11488) — _Morrissey e Marr são The Smiths, não colaboração externa_  
+    ↳ web: 'This Charming Man' (1983) escrita por Johnny Marr e Morrissey, ambos performam na gravacao dos Smiths (en.wikipedia.org)
 - **Marvin Gaye × Diana Ross** — “You Are Everything” [song, 1974] (#12063) — _'You Are Everything' é dueto Diana Ross & Marvin Gaye, mas não desse ano/forma confiável_  
     ↳ web: Wikipedia/uDiscover: 'You Are Everything' é dueto Diana Ross & Marvin Gaye do álbum 'Diana & Marvin' (single UK #5 abril 1974)
 - **The Four Tops × The Supremes** — “The Magnificent 7” [album, 1970] (#12070) — _'The Magnificent 7' é álbum Supremes & Four Tops mas título/atribuição duvidosa_  
     ↳ web: Wikipedia: 'The Magnificent 7' (1970, Motown) é álbum colaborativo de The Supremes & The Four Tops
+- **Pharrell Williams × Nelly** — “Hot in Herre” [feature, 2002] (#12276) — _'Hot in Herre' é Nelly produzido por Pharrell/Neptunes, não feature de Pharrell_  
+    ↳ web: 'Hot in Herre' foi produzida e coescrita por Pharrell (The Neptunes) para Nelly — colaboração genuína creditada (en.wikipedia.org, songfacts.com)
+- **Pharrell Williams × Gwen Stefani** — “Hollaback Girl” [feature, 2004] (#12277) — _'Hollaback Girl' é Gwen Stefani produzida por Pharrell, não feature dele_  
+    ↳ web: 'Hollaback Girl' foi coescrita por Stefani, Pharrell e Chad Hugo e produzida pelos Neptunes — colaboração genuína (en.wikipedia.org)
+- **Sia × Diplo** — “Elastic Heart” [feature, 2014] (#12301) — _'Elastic Heart' Sia produzida com Diplo/Greg Kurstin, não feature de Diplo_  
+    ↳ web: 'Elastic Heart' (trilha Catching Fire, 2013) creditada como Sia feat. The Weeknd & Diplo (wikipedia.org, open.spotify.com)
 - **Maren Morris × Hozier** — “The Bones” [song, 2019] (#12510) — _The Bones é de Maren Morris sozinha; Hozier não participa_  
     ↳ web: Rolling Stone/Spotify: existe versão oficial 'The Bones (with Hozier)' lançada em out/2019 creditando ambos
 - **Pharrell × Kanye West** — “Number One” [song, 2005] (#12720) — _Number One é Pharrell com Kanye? título não confere_  
@@ -1874,6 +2384,16 @@ O Passe 1 marcou como inválidas, mas a web provou que são reais. **Prova de qu
     ↳ web: 'SG' (2021) credita DJ Snake e LISA de Blackpink juntos (en.wikipedia.org)
 - **LiSA × Ozuna** — “SG” [song, 2021] (#14437) — _'SG' é single Lisa Blackpink; título ultracurto e LiSA errada_  
     ↳ web: 'SG' (2021) de DJ Snake credita Ozuna e LISA juntos na mesma faixa (en.wikipedia.org/Spotify)
+- **Beyoncé × Andre 3000** — “Back to Black” [song, 2007] (#14490) — _'Back to Black' é da Amy Winehouse; não é feat Beyoncé/Andre 3000 em 2007_  
+    ↳ web: Beyoncé & André 3000 gravaram cover de 'Back to Black' para trilha de The Great Gatsby (2013) (rollingstone.com, music.apple.com)
+- **Avicii × Coldplay** — “A Sky Full of Stars” [song, 2014] (#14560) — _'A Sky Full of Stars' é do Coldplay, produzido por Avicii mas não feat_  
+    ↳ web: Avicii co-escreveu, co-produziu e tocou piano em 'A Sky Full of Stars' do Coldplay (2014) (en.wikipedia.org)
+- **J-Hope × BTS** — “Dynamite” [song, 2020] (#14781) — _'Dynamite' é do BTS inteiro, não feat de J-Hope_  
+    ↳ web: Dynamite (2020) e do BTS e J-Hope, membro do grupo, canta na gravacao junto aos outros seis (en.wikipedia.org, variety.com)
+- **The Weeknd × SZA** — “Die for You (Remix)” [song, 2023] (#14829) — _remix de 'Die for You' é com Ariana Grande, não SZA_  
+    ↳ web: Remix de 'Die For You' com SZA existe e estreou no programa Memento Mori do The Weeknd em 2021 (nao lancado oficialmente; o remix oficial de 2023 e com Ariana Grande) (wikipedia.org)
+- **Sia × LSD** — “Audio” [song, 2019] (#14844) — _título 'Audio' genérico; LSD é grupo da própria Sia_  
+    ↳ web: 'Audio' (2018) e do LSD com credito 'feat. Sia, Diplo & Labrinth'; Sia e integrante e vocalista do grupo (music.apple.com, grammy.com)
 - **Taylor Swift × Paula Fernandes** — “Long Live” [song, 2012] (#15407) — _par improvável Taylor Swift/Paula Fernandes; 'Long Live' é solo de Taylor_  
     ↳ web: Wikipedia/Apple Music: versao 2012 de 'Long Live' feat. Paula Fernandes com versos em portugues
 - **LiSA × Rosalía** — “New Woman” [song, 2024] (#15705) — _New Woman é de Lisa BLACKPINK com Rosalía, não LiSA J-Pop_  
@@ -1904,274 +2424,6 @@ O Passe 1 marcou como inválidas, mas a web provou que são reais. **Prova de qu
     ↳ web: 'Hot in Herre' de Nelly foi produzida e co-escrita por Pharrell (The Neptunes) (Wikipedia/uDiscover)
 - **Tyler, The Creator × Slow Thai** — “WHAT'S GOOD” [song, 2019] (#18046) — _'WHAT'S GOOD' é solo do IGOR_  
     ↳ web: crackmagazine/YouTube: 'WHAT'S GOOD (feat. slowthai & Jerrod Carmichael)', slowthai nos backing vocals
-
-## ⚠️ INVÁLIDAS pendentes de verificação web — 263 (NÃO remover ainda)
-
-Suspeita forte do Passe 1, mas o Passe 2 (web) não rodou nelas por causa do limite semanal. Quando o limite resetar, completo a verificação e movo cada uma para *confirmada* ou *resgatada*.
-
-- **Wizkid × Davido** — “Ondo State Vice President” [song, 2013] (#924) — _título absurdo, fabricação provável_
-- **Burna Boy × Coldplay** — “Moon Music” [song, 2024] (#927) — _Moon Music é álbum Coldplay, não feat com Burna_
-- **Davido × Future** — “Risky” [song, 2018] (#956) — _Risky é com Popcaan, não Future_
-- **Yemi Alade × Funke Akindele** — “Oga Oh” [song, 2021] (#978) — _Funke Akindele é atriz, não cantora; provável fabricação_
-- **Ivete Sangalo × David Guetta** — “Mad Love” [song, 2018] (#1713) — _par improvável Axé x EDM; 'Mad Love' não é dela_
-- **Claudia Leitte × Pitbull** — “We Are One (Ole Ola)” [song, 2014] (#1714) — _'We Are One' é Pitbull/J.Lo/Claudia Leitte; não esse par bilateral assim_
-- **Pabllo Vittar × Gloria Groove** — “Que Tiro Foi Esse?” [song, 2018] (#1719) — _'Que Tiro Foi Esse?' é Jojo Maronttinni, não Pabllo x Gloria_
-- **Ivete Sangalo × Claudia Leitte** — “Largadinho” [song, 2014] (#1759) — _'Largadinho' é só da Claudia Leitte, não dueto com Ivete_
-- **Ivete Sangalo × Léo Santana** — “Galinha Pintadinha” [song, 2019] (#1761) — _'Galinha Pintadinha' não é colaboração Ivete x Léo Santana_
-- **Chico Buarque × Elis Regina** — “Elis & Tom” [album, 1974] (#2304) — _Elis & Tom é com Tom Jobim, não Chico Buarque_
-- **Ivete Sangalo × Anitta** — “Esse Cara Sou Eu” [song, 2014] (#2308) — _Esse Cara Sou Eu é de Roberto Carlos, não dessa dupla_
-- **Anitta × Bad Bunny** — “Ojitos Lindos” [song, 2022] (#2313) — _Ojitos Lindos é Bad Bunny com Bomba Estéreo, não Anitta_
-- **Froid × Criolo** — “Convoque Seu Buda” [album, 2014] (#2333) — _Convoque Seu Buda é álbum de Criolo, não parceria com Froid_
-- **Marisa Monte × Anitta** — “Ao Vivo” [live, 2019] (#2784) — _título genérico; Marisa Monte x Anitta improvável ao vivo_
-- **Gzuz × Haftbefehl** — “Stress ohne Grund” [song, 2017] (#3963) — _'Stress ohne Grund' é de Shindy/Bushido, não Gzuz×Haftbefehl_
-- **Apache 207 × RAF Camora** — “Komet” [song, 2022] (#3972) — _'Komet' é Apache 207 com Udo Lindenberg, não RAF Camora_
-- **Casper × Marteria** — “Mosaik” [album, 2017] (#3987) — _'Mosaik' é álbum solo de Marteria, não dueto com Casper_
-- **Haftbefehl × Kollegah** — “Nur ein Wort” [song, 2009] (#3992) — _'Nur ein Wort' é de Wir sind Helden, não Haftbefehl×Kollegah_
-- **Aurora × Guns N' Roses** — “Sweet Child of Mine” [song, 2016] (#4171) — _cover/cross improvável Aurora x Guns N' Roses_
-- **Lenny Kravitz × Jay-Z** — “Guns and Roses” [song, 2001] (#5760) — _não existe música 'Guns and Roses' entre Kravitz e Jay-Z_
-- **Polo G × Lil Baby** — “Pop Out” [song, 2019] (#5780) — _'Pop Out' é de Polo G com Lil Tjay, não Lil Baby_
-- **Surfaces × Kid Cudi** — “Learn to Fly” [song, 2020] (#5781) — _'Learn to Fly' é dos Foo Fighters, não Surfaces/Kid Cudi_
-- **George Ezra × Dua Lipa** — “Hold My Girl (Live)” [live, 2019] (#5786) — _'Hold My Girl' é solo de George Ezra, sem Dua Lipa_
-- **Bad Bunny × The Weeknd** — “Caro” [song, 2020] (#5795) — _'Caro' não é colaboração com The Weeknd_
-- **Bad Bunny × Myke Towers** — “Si Veo a Tu Mamá” [song, 2020] (#5800) — _'Si Veo a Tu Mamá' é solo de Bad Bunny, sem Myke Towers_
-- **Daddy Yankee × Don Omar** — “Conteo” [song, 2004] (#5820) — _'Conteo' é solo de Don Omar, sem Daddy Yankee_
-- **Daddy Yankee × Psy** — “Gangnam Style (remix)” [remix, 2012] (#5825) — _'Gangnam Style Remix' não existe com Daddy Yankee_
-- **Maluma × Nicki Minaj** — “Pitbull” [song, 2018] (#5846) — _'Pitbull' não é música de Maluma com Nicki Minaj_
-- **Maluma × Marc Anthony** — “El Perdedor” [song, 2021] (#5847) — _'El Perdedor' é solo de Maluma, sem Marc Anthony_
-- **Big Thief × Adrianne Lenker** — “Two Hands” [album, 2019] (#6224) — _Adrianne Lenker é membro do Big Thief, não colaboração entre pares_
-- **The Mars Volta × At the Drive-In** — “Acrobatic Tenement (predecessor band)” [album, 1996] (#6228) — _Acrobatic Tenement é álbum do At the Drive-In, não colab entre bandas_
-- **Eagles of Death Metal × Josh Homme** — “Peace Love Death Metal” [album, 2004] (#6230) — _Josh Homme é membro do Eagles of Death Metal, não colab entre pares_
-- **La Femme × Gorillaz** — “Saturnz Barz (shared tourline Europe)” [live, 2017] (#6233) — _par improvável; Saturnz Barz é faixa do Gorillaz, não colab com La Femme_
-- **Paramore × Zac Farro** — “After Laughter” [album, 2017] (#6236) — _Zac Farro é baterista do Paramore, não colab entre pares_
-- **Twenty One Pilots × Stressed Out collab with Kygo** — “Never Let You Go” [song, 2015] (#6237) — _colaboração Twenty One Pilots com Kygo inexistente; título fabricado_
-- **Fall Out Boy × Courtney Love** — “Beat It (Mike Shinoda remix) era connection” [feature, 2008] (#6238) — _conexão fabricada entre Fall Out Boy e Courtney Love_
-- **Panic! at the Disco × Brendon Urie** — “Vices & Virtues” [album, 2011] (#6239) — _Brendon Urie é o Panic! at the Disco, não colab entre pares_
-- **My Chemical Romance × Gerard Way** — “The Black Parade” [album, 2006] (#6240) — _Gerard Way é vocalista do MCR, não colab entre pares_
-- **Tom Morello × Rage Against the Machine** — “Evil Empire” [album, 1996] (#6248) — _Tom Morello é membro do RATM; Evil Empire é álbum da banda_
-- **Tom Morello × Audioslave** — “Revelations” [album, 2006] (#6249) — _Tom Morello é membro do Audioslave; Revelations é álbum da banda_
-- **Oasis × Noel Gallagher** — “(What's the Story) Morning Glory?” [album, 1995] (#6253) — _Noel Gallagher é membro do Oasis; álbum da própria banda_
-- **Radiohead × Portishead** — “Atoms for Peace co-inspiration / Glastonbury shared bill” [live, 2013] (#6255) — _rótulo fabricado; Atoms for Peace é projeto de Thom Yorke, não colab Radiohead/Portishead_
-- **Waxahatchee × Katie Crutchfield** — “Saint Cloud” [album, 2020] (#6257) — _Katie Crutchfield é a Waxahatchee; Saint Cloud é álbum dela_
-- **Hand Habits × Meg Duffy** — “Fun House” [album, 2019] (#6258) — _Meg Duffy é a Hand Habits; álbum do mesmo projeto_
-- **Cat Power × Chan Marshall** — “You Are Free” [album, 2003] (#6259) — _Chan Marshall é a Cat Power; You Are Free é álbum dela_
-- **Led Zeppelin × The Black Crowes** — “No Quarter: Jimmy Page and Robert Plant Unledded” [album, 1994] (#6267) — _Unledded é projeto de Page e Plant, não colab com The Black Crowes_
-- **Carlos Santana × Evander Grillo** — “Maria Maria” [song, 2000] (#6295) — _Maria Maria foi com The Product G&B/Wyclef, não Evander Grillo (nome fabricado)_
-- **Barry White × Quincy Jones** — “Soul Bossa Nova” [feature, 1969] (#6534) — _Soul Bossa Nova é de Quincy Jones, Barry White não participa_
-- **Curtis Mayfield × Wyclef Jean** — “Ghetto Superstar” [feature, 1998] (#6536) — _Ghetto Superstar é de Pras/ODB/Mýa; Mayfield não participa_
-- **Oséias de Paula × Ozéias de Paula** — “Glória e Louvor” [album, 2001] (#7750) — _Oséias e Ozéias de Paula são a mesma pessoa, duplicação artificial_
-- **Solange Almeida × Aviões do Forró** — “Largado às Traças” [song, 2012] (#7805) — _Largado às Traças é de Zé Neto & Cristiano, não dessa parceria_
-- **Geraldo Azevedo × Alceu Valença** — “Anunciação” [song, 1997] (#7807) — _Anunciação é hit solo de Alceu Valença, não parceria com Geraldo_
-- **Geraldo Azevedo × Dominguinhos** — “Asa Branca” [live, 2000] (#7808) — _Asa Branca é de Luiz Gonzaga; live atribuído indevidamente_
-- **Alceu Valença × Dominguinhos** — “Xote das Meninas” [live, 1998] (#7810) — _Xote das Meninas é de Luiz Gonzaga, não parceria Alceu/Dominguinhos_
-- **Calcinha Preta × Xand Avião** — “Show das Poderosas” [live, 2017] (#7824) — _Show das Poderosas é da Anitta, não parceria Calcinha Preta/Xand_
-- **Emicida × Gloria Groove** — “Libre Soy (feat. Gloria Groove)” [feature, 2020] (#8121) — _Libre Soy é versão Frozen de Gloria Groove, sem Emicida_
-- **Anitta × Pabllo Vittar** — “Sua Cara (feat. J Balvin)” [feature, 2017] (#8127) — _Sua Cara é Major Lazer feat Anitta e Pabllo, não feat J Balvin_
-- **Mahmundi × Letrux** — “Vaporwave Tropical” [song, 2018] (#8138) — _título Vaporwave Tropical com Letrux parece fabricado_
-- **Nação Zumbi × Raimundos** — “Manguebeat Ao Vivo” [live, 1999] (#8155) — _live Manguebeat de Nação Zumbi com Raimundos parece fabricada_
-- **Jota Quest × Capital Inicial** — “Rock Brasileiro Hoje” [live, 2008] (#8159) — _título genérico Rock Brasileiro Hoje parece fabricado_
-- **Paralamas do Sucesso × Engenheiros do Hawaii** — “Rock Clássico Brasileiro” [live, 2009] (#8162) — _título genérico Rock Clássico Brasileiro parece fabricado_
-- **Engenheiros do Hawaii × Capital Inicial** — “Anos 80 Ao Vivo” [live, 2005] (#8164) — _título genérico Anos 80 Ao Vivo parece fabricado_
-- **Barão Vermelho × Titãs** — “Rock Brasileiro Anos 80” [live, 1997] (#8165) — _título genérico Rock Brasileiro Anos 80 parece fabricado_
-- **Titãs × Engenheiros do Hawaii** — “Titãs e Engenheiros” [live, 1999] (#8166) — _título genérico Titãs e Engenheiros parece fabricado_
-- **Zeca Baleiro × Lenine** — “Nordeste Ao Vivo” [live, 2007] (#8176) — _título genérico Nordeste Ao Vivo parece fabricado_
-- **Cássia Eller × Paralamas do Sucesso** — “Ao Vivo Cássia” [live, 1997] (#8178) — _título genérico Ao Vivo Cássia parece fabricado_
-- **Cidade Negra × Natiruts** — “Reggae no Brasil” [live, 2002] (#8181) — _título genérico Reggae no Brasil parece fabricado_
-- **Natiruts × Ponto de Equilíbrio** — “Natiruts e Ponto” [live, 2006] (#8182) — _título genérico Natiruts e Ponto parece fabricado_
-- **Ponto de Equilíbrio × Planta e Raiz** — “Reggae Roots Brasil” [song, 2008] (#8183) — _título genérico Reggae Roots Brasil parece fabricado_
-- **Marcelo Falcão × Charlie Brown Jr.** — “CBJ e Marcelo” [live, 2013] (#8186) — _título genérico CBJ e Marcelo parece fabricado_
-- **William Onyeabor × Sufjan Stevens** — “African Festival Feature” [live, 2013] (#9201) — _Onyeabor não tocava ao vivo; par implausível com Sufjan_
-- **Bizarrap × WOS** — “WOS: Bzrp Music Sessions, Vol. 98” [song, 2018] (#9246) — _WOS Vol. 98 não existe (real é Vol. 12); ano errado_
-- **Linn da Quebrada × Luísa Sonza** — “Corpo Sensual” [song, 2022] (#9554) — _Corpo Sensual é de Pabllo Vittar, não dessa dupla_
-- **Juanes × Carlos Rivera** — “Tu Falta de Querer” [song, 2020] (#9567) — _Tu Falta de Querer é de Mon Laferte, não dessa dupla_
-- **Ricky Martin × Maluma** — “No Me Conoce” [song, 2018] (#9571) — _No Me Conoce é de Jhay Cortez/Bad Bunny, não Ricky Martin_
-- **Oruam × MC Cabelinho** — “Poesia Acústica” [song, 2022] (#9619) — _Poesia Acústica é série do Pineapple, não dessa dupla isolada_
-- **Peso Pluma × Bad Bunny** — “La Comunidad” [song, 2023] (#9629) — _não existe colaboração documentada Peso Pluma com Bad Bunny_
-- **Basshunter × Alan Walker** — “Scandinavia Bass” [song, 2019] (#10080) — _título genérico, sem colaboração documentada Basshunter/Alan Walker_
-- **Basshunter × Kygo** — “Bass Drive” [song, 2018] (#10081) — _sem música real Basshunter/Kygo, título genérico_
-- **Basshunter × Swedish House Mafia** — “Nordic Rave” [live, 2010] (#10082) — _show fabricado, título genérico_
-- **Avicii × Kygo** — “Norwegian Forest” [song, 2015] (#10084) — _sem música real Avicii/Kygo_
-- **Ace of Base × Roxette** — “Swedish Pop Legends Tour” [live, 2002] (#10085) — _turnê fabricada com título genérico_
-- **Ace of Base × ABBA** — “Swedish Pop History” [live, 2000] (#10086) — _ABBA inativa em 2000, show fabricado_
-- **ABBA × Roxette** — “Scandinavian Pop Icons” [live, 1998] (#10087) — _ABBA inativa em 1998, evento fabricado_
-- **ABBA × Robyn** — “Swedish Generations” [live, 2010] (#10088) — _colaboração ao vivo fabricada_
-- **Roxette × Robyn** — “Swedish Divas” [live, 2008] (#10089) — _título genérico, show inexistente_
-- **Roxette × Ace of Base** — “Retro Sweden Night” [live, 2005] (#10090) — _evento fabricado, título genérico_
-- **Björk × Of Monsters and Men** — “Iceland Together” [live, 2015] (#10091) — _show ao vivo fabricado, título genérico_
-- **Björk × First Aid Kit** — “Scandinavian Women Unite” [live, 2017] (#10092) — _evento fabricado, título temático genérico_
-- **Björk × Sigrid** — “Nordic Women Music” [live, 2019] (#10093) — _colaboração ao vivo fabricada_
-- **Röyksopp × Kygo** — “Northern Drift” [song, 2016] (#10100) — _sem música real Röyksopp/Kygo_
-- **Ghost × Ariya** — “Metal Connection Europe” [live, 2018] (#10143) — _'Ariya' não é ato reconhecido, colaboração fabricada_
-- **Natalia Szroeder × Natalia Kills** — “Natalia Duet” [song, 2020] (#10168) — _Natalia Kills não é polonesa, par improvável fabricado_
-- **t.A.T.u. × Serebro** — “Russian Girl Groups” [live, 2010] (#10260) — _título descritivo genérico, show conjunto improvável_
-- **Glukoza × Serebro** — “Russian Pop” [live, 2011] (#10261) — _título genérico fabricado, sem registro real_
-- **Nyusha × Artik & Asti** — “Russian Divas” [live, 2018] (#10263) — _título descritivo genérico, live fabricada_
-- **Nyusha × Polina Gagarina** — “Rossiyskiye Pevitsy” [live, 2017] (#10264) — _título genérico fabricado_
-- **Polina Gagarina × Alsou** — “Russia Beautiful Voices” [live, 2017] (#10266) — _título descritivo genérico fabricado_
-- **Dimash Kudaibergen × Alina Zagitova** — “Kazakhstan Russia Stars” [live, 2020] (#10267) — _patinadora x cantor, título genérico, improvável_
-- **Dimash Kudaibergen × Valentina Monetta** — “International Connection” [live, 2021] (#10268) — _par improvável, título genérico fabricado_
-- **Gjon's Tears × Tamta** — “Mediterranean Voices” [live, 2021] (#10269) — _título genérico fabricado, live improvável_
-- **Gjon's Tears × Valentina Monetta** — “Eurovision Voices” [live, 2021] (#10270) — _título genérico fabricado_
-- **Gjon's Tears × Eleni Foureira** — “Eurovision Stars” [live, 2022] (#10271) — _título genérico fabricado_
-- **Valentina Monetta × Naviband** — “Eurovision Connections” [live, 2017] (#10272) — _título genérico fabricado_
-- **Valentina Monetta × Efendi** — “Small Countries Eurovision” [live, 2021] (#10273) — _título genérico fabricado_
-- **Efendi × Tamta** — “Balkan Pop Stars” [song, 2022] (#10275) — _título genérico fabricado_
-- **Naviband × ZENA** — “Belarus Eurovision” [live, 2019] (#10276) — _título genérico fabricado_
-- **Andrei Lenitsky × Naviband** — “Belarus Together” [live, 2019] (#10279) — _título genérico fabricado_
-- **Ivi Adamou × Helena Paparizou** — “Greek Cypriot Connection” [live, 2012] (#10280) — _título descritivo genérico fabricado_
-- **Ivi Adamou × Tamta** — “Cypriot Stars” [song, 2020] (#10282) — _título genérico fabricado_
-- **Ivi Adamou × Paola** — “Cyprus Sisters” [song, 2015] (#10283) — _título genérico fabricado_
-- **Despina Vandi × Notis Sfakianakis** — “Laïká Night” [live, 2010] (#10285) — _título genérico fabricado_
-- **Despina Vandi × Stavros Flatley** — “Hellenic Dance” [live, 2010] (#10287) — _Stavros Flatley é dupla cômica de dança, colaboração fabricada_
-- **Sakis Rouvas × Kostas Martakis** — “Greek Boys Pop” [live, 2010] (#10291) — _título genérico fabricado_
-- **Sakis Rouvas × Demy** — “Greek Celebrities” [live, 2018] (#10292) — _título genérico fabricado_
-- **Eleni Foureira × Tamta** — “Balkan Party” [song, 2019] (#10293) — _título genérico fabricado_
-- **Eleni Foureira × Ivi Adamou** — “Balkan Festival” [live, 2021] (#10294) — _título genérico fabricado_
-- **Antique × Despina Vandi** — “Greek Night” [live, 2006] (#10295) — _título genérico fabricado_
-- **Nikos Vertis × Despina Vandi** — “Greek Love Songs” [live, 2012] (#10296) — _título genérico fabricado_
-- **Nikos Vertis × Giorgos Mazonakis** — “Laïká Duet” [song, 2011] (#10297) — _título genérico fabricado_
-- **Giorgos Mazonakis × Notis Sfakianakis** — “Greek Night” [live, 2009] (#10298) — _título genérico fabricado_
-- **Giorgos Mazonakis × Despina Vandi** — “Greek Summer” [song, 2012] (#10299) — _título genérico fabricado_
-- **Paola × Helena Paparizou** — “Cypriot Greek Night” [live, 2013] (#10300) — _título genérico fabricado_
-- **Kostas Martakis × Sarbel** — “Greek Boys Eurovision” [live, 2012] (#10301) — _título genérico fabricado_
-- **Stereo Mike × Sarbel** — “Greek Boys” [live, 2012] (#10302) — _título genérico fabricado, par improvável_
-- **Alexandra Stan × Edward Maya** — “Romanian Night” [song, 2012] (#10304) — _título genérico fabricado_
-- **Alexandra Stan × Akcent** — “Romanian Dance Pop” [song, 2013] (#10305) — _título genérico fabricado_
-- **Edward Maya × Inna** — “Romanian Vibes” [song, 2010] (#10306) — _título genérico fabricado_
-- **Edward Maya × Akcent** — “Romanian Beats” [song, 2011] (#10307) — _título genérico fabricado_
-- **Costi × Connect-R** — “Romanian Production” [song, 2013] (#10308) — _título genérico fabricado_
-- **Akcent × Inna** — “Balkan Night” [song, 2011] (#10309) — _título genérico fabricado_
-- **Smiley × Alex Velea** — “Romanian Pop” [song, 2015] (#10311) — _título genérico fabricado_
-- **Lora × Irina Rimes** — “Pop Feminin Romania” [song, 2019] (#10314) — _título genérico fabricado_
-- **Lora × What's Up** — “Romanian Pop Duet” [song, 2016] (#10315) — _título genérico fabricado_
-- **Alex Velea × Costi** — “Production Collab” [song, 2017] (#10316) — _título genérico fabricado_
-- **Vanotek × Carla's Dreams** — “Romanian Electronic” [song, 2018] (#10319) — _título genérico fabricado_
-- **Carla's Dreams × Smiley** — “Moldovan Romanian Night” [song, 2018] (#10320) — _título genérico fabricado_
-- **Delia × Loredana** — “Romanian Pop Legends” [live, 2018] (#10321) — _título genérico fabricado, gênero bg incoerente_
-- **Delia × Costi** — “Romanian Diva Production” [song, 2016] (#10322) — _título genérico fabricado_
-- **Loredana × Alex Velea** — “Romania Stage” [live, 2017] (#10323) — _título genérico fabricado_
-- **Speak × Smiley** — “Romanian Rap Pop” [song, 2017] (#10324) — _título genérico fabricado_
-- **Ioana Ignat × Carla's Dreams** — “Romanian Voices” [song, 2019] (#10325) — _título genérico fabricado_
-- **Ioana Ignat × Vanotek** — “Romanian Pop Electronic” [song, 2020] (#10326) — _título genérico fabricado_
-- **Ioana Ignat × Smiley** — “Romanian Young Star” [song, 2021] (#10327) — _título genérico fabricado_
-- **Jain × -M-** — “European Pop Ladies” [live, 2018] (#10330) — _título genérico fabricado_
-- **Jain × Zara Larsson** — “Pop Ladies Europe” [live, 2019] (#10331) — _título genérico fabricado, live improvável_
-- **Monika Lewczuk × Dawid Podsiadło** — “Polish Music Scene” [live, 2018] (#10332) — _título genérico fabricado_
-- **Stavros Flatley × Antique** — “Greek Heritage Night” [live, 2011] (#10337) — _Stavros Flatley dupla cômica, colaboração fabricada_
-- **John Newman × Zara Larsson** — “Pop Night Europe” [live, 2017] (#10339) — _título genérico fabricado_
-- **Dua Lipa × Zara Larsson** — “Pop Queens” [live, 2018] (#10342) — _título genérico fabricado, live improvável_
-- **Dua Lipa × Sigrid** — “Pop Ladies Tour” [live, 2019] (#10343) — _título genérico fabricado, live improvável_
-- **Coldplay × Kygo** — “Festival Stage Collab” [live, 2022] (#10344) — _título genérico fabricado_
-- **Alina Zagitova × Polina Gagarina** — “Russian Ice Show” [live, 2019] (#10346) — _patinadora x cantora, título genérico fabricado_
-- **Alina Zagitova × Dima Bilan** — “Russian Stars on Ice” [live, 2020] (#10347) — _patinadora x cantor, título genérico fabricado_
-- **Ozark Henry × Alan Walker** — “Scandinavian Electronic Link” [song, 2020] (#10348) — _título genérico fabricado, par improvável_
-- **Ozark Henry × Kygo** — “Chill Electronic Collab” [song, 2021] (#10349) — _título genérico fabricado, par improvável_
-- **Avicii × Sigrid** — “Nordic EDM Pop” [song, 2017] (#10350) — _título genérico inventado, sem colaboração documentada Avicii x Sigrid_
-- **Avicii × Alan Walker** — “Scandi Drop” [song, 2016] (#10351) — _título 'Scandi Drop' fabricado, sem música Avicii x Alan Walker_
-- **Agnez Mo × BTS** — “Not A Single Word” [feature, 2021] (#10359) — _colaboração Agnez Mo x BTS não existe, título fabricado_
-- **Warren Hue × BTS** — “Yet to Come” [feature, 2022] (#10364) — _'Yet to Come' é do BTS sozinho, sem Warren Hue_
-- **NIKI × Warren Hue** — “Buzzcut” [song, 2021] (#10366) — _'Buzzcut' é Rich Brian, não NIKI x Warren Hue_
-- **Juan Karlos × Moira Dela Torre** — “Buwan” [song, 2020] (#10390) — _'Buwan' é do Juan Karlos sozinho, sem Moira Dela Torre_
-- **Gloc-9 × Flow G** — “Upuan” [song, 2010] (#10396) — _'Upuan' é do Gloc-9 feat. Jeazell Grutas, não Flow G_
-- **Abra × Gloc-9** — “Magbalik” [song, 2015] (#10400) — _'Magbalik' é do Callalily, não Abra x Gloc-9_
-- **BINI × SB19** — “Pantropiko” [feature, 2023] (#10407) — _'Pantropiko' é do BINI sozinho, sem SB19_
-- **SunKissed Lola × Ben&Ben** — “Pagtingin” [song, 2022] (#10408) — _'Pagtingin' é do Ben&Ben, não SunKissed Lola_
-- **Ebe Dancel × Bamboo** — “Noypi” [song, 2019] (#10411) — _'Noypi' é do Bamboo, não Ebe Dancel_
-- **Rizky Febian × Mahalini** — “Adu Rayu” [song, 2023] (#10438) — _'Adu Rayu' é Yovie/Tulus/Glenn, não Rizky Febian x Mahalini_
-- **Peter Bjorn and John × Cœur de Pirate** — “Young Folks” [song, 2007] (#11115) — _Young Folks é com Victoria Bergsman, não Cœur de Pirate_
-- **dawn_golden × ODESZA** — “Say My Name” [song, 2014] (#11121) — _Say My Name da ODESZA é com Zyra, não dawn golden_
-- **Dimmu Borgir × Cradle of Filth** — “Heartwork” [song, 2003] (#11135) — _Heartwork é álbum do Carcass, não desses_
-- **The Who × The Rolling Stones** — “The Kids Are Alright” [song, 1965] (#11147) — _The Kids Are Alright é só do The Who_
-- **Claptone × Seal** — “No Eyes” [song, 2016] (#11152) — _No Eyes do Claptone é feat Jaw, não Seal_
-- **Breakbot × Ed Sheeran** — “Break of Dawn” [song, 2012] (#11157) — _Ed Sheeran em faixa de Breakbot é fabricação cross-genre_
-- **Aurora Aksnes × Billie Eilish** — “No Time to Die (AURORA cover, released by Billie Eilish)” [song, 2020] (#11442) — _'No Time to Die' é da Billie Eilish, não colaboração com AURORA_
-- **Alanis Morissette × Dave Coulier** — “You Oughta Know (written about)” [song, 1995] (#11458) — _Coulier é inspiração da letra, não colaboração musical_
-- **Nirvana × David Bowie** — “The Man Who Sold the World” [song, 1993] (#11462) — _cover do Nirvana de música do Bowie, não colaboração_
-- **Tower of Power × Santana** — “Africa Speaks, America Responds” [album, 1972] (#11477) — _título fabricado; não há álbum conjunto Tower of Power x Santana_
-- **The Vandellas × Marvin Gaye** — “Dancing in the Street” [song, 1964] (#11478) — _'Dancing in the Street' é de Martha & the Vandellas, não de Marvin Gaye_
-- **Snow Patrol × Gary Lightbody** — “Run (covered by Leona Lewis)” [song, 2008] (#11485) — _Lightbody é o vocalista do Snow Patrol, não colaboração externa_
-- **Geri Halliwell × Spice Girls** — “Wannabe” [song, 1996] (#11487) — _Geri Halliwell é membro das Spice Girls, não colaboração_
-- **Morrissey × Johnny Marr** — “This Charming Man (The Smiths)” [song, 1983] (#11488) — _Morrissey e Marr são The Smiths, não colaboração externa_
-- **Post Malone × Travis Scott** — “No Bystanders” [feature, 2018] (#12244) — _'No Bystanders' (Astroworld) tem Juice WRLD e Sheck Wes, não Post Malone_
-- **Billie Eilish × Gorillaz** — “The Valley of The Pagans” [feature, 2020] (#12250) — _'The Valley of the Pagans' do Gorillaz é com Beck, não Billie Eilish_
-- **Doja Cat × Young Thug** — “The Real Slim Shady” [feature, 2020] (#12256) — _'The Real Slim Shady' é do Eminem, não colaboração Doja x Young Thug_
-- **Pharrell Williams × Nelly** — “Hot in Herre” [feature, 2002] (#12276) — _'Hot in Herre' é Nelly produzido por Pharrell/Neptunes, não feature de Pharrell_
-- **Pharrell Williams × Gwen Stefani** — “Hollaback Girl” [feature, 2004] (#12277) — _'Hollaback Girl' é Gwen Stefani produzida por Pharrell, não feature dele_
-- **50 Cent × Young Buck** — “Wanksta” [feature, 2003] (#12282) — _'Wanksta' é solo de 50 Cent (8 Mile OST), sem Young Buck_
-- **DJ Khaled × Beyoncé** — “Hold You Down” [feature, 2015] (#12285) — _'Hold You Down' tem Chris Brown/Alsina/Future/Jeremih, não Beyoncé_
-- **Sia × Diplo** — “Elastic Heart” [feature, 2014] (#12301) — _'Elastic Heart' Sia produzida com Diplo/Greg Kurstin, não feature de Diplo_
-- **Adele × Beyoncé** — “No Angel” [feature, 2013] (#12314) — _'No Angel' é da Beyoncé (2013) sem Adele; feature fabricado_
-- **Metro Boomin × Future** — “Super Slimey” [album, 2017] (#12323) — _'Super Slimey' é mixtape Future x Young Thug, não Metro Boomin_
-- **Metro Boomin × Post Malone** — “No Complaints” [song, 2017] (#12324) — _'No Complaints' Metro Boomin tem Offset e Drake, não Post Malone_
-- **Waka Flocka Flame × Drake** — “Grove St. Party” [song, 2010] (#13152) — _'Grove St. Party' é Waka Flocka feat. Kebo Gotti, não Drake_
-- **Christine and the Queens × Madonna** — “Runway” [song, 2015] (#13205) — _'Runway' Christine and the Queens com Madonna não existe; fabricação_
-- **Pulp × Common People** — “Common People” [song, 1995] (#13493) — _Common People não é artista, é a própria música_
-- **Beyoncé × Andre 3000** — “Back to Black” [song, 2007] (#14490) — _'Back to Black' é da Amy Winehouse; não é feat Beyoncé/Andre 3000 em 2007_
-- **Halsey × Travis Scott** — “11 Minutes” [song, 2019] (#14511) — _'11 Minutes' é com Travis Barker, não Travis Scott_
-- **Meghan Trainor × Psy** — “Cheer Up” [song, 2016] (#14517) — _'Cheer Up' é da TWICE; não é feat Meghan Trainor x Psy_
-- **Normani × Ty Dolla $ign** — “Nicki & Normani” [song, 2018] (#14530) — _título 'Nicki & Normani' fabricado; não é faixa real deles_
-- **H.E.R. × Juice WRLD** — “Juice WRLD & H.E.R.” [feature, 2019] (#14533) — _título 'Juice WRLD & H.E.R.' fabricado; não é faixa real_
-- **Lana Del Rey × Sublime with Rome** — “Ride” [song, 2012] (#14558) — _'Ride' é música solo de Lana Del Rey; não feat Sublime with Rome_
-- **Avicii × Coldplay** — “A Sky Full of Stars” [song, 2014] (#14560) — _'A Sky Full of Stars' é do Coldplay, produzido por Avicii mas não feat_
-- **Skrillex × Porter Robinson** — “Shelter” [song, 2016] (#14571) — _'Shelter' é Porter Robinson & Madeon, não envolve Skrillex_
-- **Gunna × Roddy Ricch** — “Dollaz on My Head” [song, 2020] (#14613) — _Dollaz on My Head é Gunna/Young Thug, não Roddy Ricch_
-- **Offset × Drake** — “No Heart” [song, 2016] (#14623) — _No Heart é 21 Savage/Metro, não Offset/Drake_
-- **Timbaland × Ludacris** — “Do It Like a Dude” [song, 2010] (#14633) — _Do It Like a Dude é da Jessie J, não Timbaland/Ludacris_
-- **Timbaland × SZA** — “I Ain't Worried (Remix)” [song, 2022] (#14634) — _I Ain't Worried é OneRepublic; remix Timbaland/SZA fabricado_
-- **Big Sean × Chris Brown** — “Beware” [song, 2013] (#14642) — _Beware é Big Sean/Lil Wayne/Jhené, não Chris Brown_
-- **Jack Harlow × Lil Wayne** — “Way Out” [song, 2020] (#14652) — _Way Out de Jack Harlow é com Big Sean, não Lil Wayne_
-- **Jack Harlow × Lil Baby** — “Drip Hard” [song, 2020] (#14657) — _Drip Hard é Lil Baby/Gunna, não Jack Harlow_
-- **Nas × Kelis** — “21 Questions” [song, 2003] (#14668) — _21 Questions é de 50 Cent/Nate Dogg, não Nas/Kelis_
-- **BLACKPINK × Sia** — “The Album” [feature, 2020] (#14768) — _'The Album' é álbum, não feature único; título errado_
-- **BLACKPINK × Tyga** — “Happy New Year” [song, 2018] (#14769) — _BLACKPINK e Tyga não têm essa música juntos_
-- **Jennie × Vince Staples** — “90s Rap (Collab)” [feature, 2023] (#14770) — _título genérico fabricado, colab inexistente_
-- **Jennie × Zico** — “Any Song (Remix)” [song, 2020] (#14773) — _'Any Song' é do Zico; remix com Jennie inexistente_
-- **J-Hope × BTS** — “Dynamite” [song, 2020] (#14781) — _'Dynamite' é do BTS inteiro, não feat de J-Hope_
-- **Red Hot Chili Peppers × Wu-Tang Clan** — “Pure Imagination (Live)” [live, 2022] (#14790) — _RHCP com Wu-Tang ao vivo é fabricação improvável_
-- **Red Hot Chili Peppers × Elton John** — “True Blue” [song, 2022] (#14791) — _RHCP com Elton John 'True Blue' inexistente_
-- **Panic! at the Disco × Lil Wayne** — “I Write Sins Not Tragedies (Remix)” [song, 2006] (#14793) — _remix de Lil Wayne com Panic! inexistente_
-- **Panic! at the Disco × Hayley Williams** — “Victorious (feature)” [feature, 2016] (#14794) — _'Victorious' não tem Hayley Williams_
-- **The 1975 × Taylor Swift** — “The 1975 (song)” [feature, 2020] (#14796) — _The 1975 com Taylor Swift feature inexistente_
-- **Burna Boy × J. Balvin** — “Tu No Metes Cabra” [song, 2019] (#14805) — _'Tu No Metes Cabra' é de Bad Bunny, não Burna/Balvin_
-- **Kacey Musgraves × León Larregui** — “Intercultural (feature)” [feature, 2019] (#14816) — _título genérico 'Intercultural' fabricado_
-- **The Weeknd × J. Balvin** — “Miracle” [song, 2023] (#14828) — _'Miracle' é Calvin Harris/Ellie Goulding, não Weeknd/Balvin_
-- **The Weeknd × SZA** — “Die for You (Remix)” [song, 2023] (#14829) — _remix de 'Die for You' é com Ariana Grande, não SZA_
-- **The Weeknd × Republic Records** — “Moth to a Flame” [song, 2021] (#14834) — _'Republic Records' é gravadora, não artista_
-- **Sia × Kylie Minogue** — “A Sky Full of Stars” [song, 2013] (#14839) — _'A Sky Full of Stars' é do Coldplay, não Sia/Kylie_
-- **Sia × LSD** — “Audio” [song, 2019] (#14844) — _título 'Audio' genérico; LSD é grupo da própria Sia_
-- **Tate McRae × Jeremy Zucker** — “we fell in love in october” [song, 2022] (#14849) — _'october' é de Jeremy Zucker/BENÉE, não Tate McRae_
-- **Zedd × Alessia Cara** — “Stay the Night” [song, 2014] (#14872) — _'Stay the Night' é com Hailee/Hayley, não Alessia Cara_
-- **Martin Garrix × Usher** — “Tremor” [song, 2014] (#14883) — _'Tremor' é instrumental, sem Usher_
-- **Roddy Ricch × Luke Combs** — “Forever After All” [song, 2021] (#15573) — _Forever After All é solo de Luke Combs, sem Roddy Ricch_
-- **Bizarrap × J. Balvin** — “Outro (Collab)” [song, 2023] (#15653) — _título genérico Outro Collab não é faixa real_
-- **Marc Anthony × Will Smith** — “Gettin' Jiggy Wit It (Latin Remix)” [song, 1998] (#15656) — _remix latino de Will Smith com Marc Anthony inexistente_
-- **Marc Anthony × Alejandro Fernández** — “Vivir Mi Vida (Remix)” [song, 2014] (#15657) — _Vivir Mi Vida remix com Alejandro Fernández inexistente_
-- **Bad Bunny × Becky G** — “Volví” [song, 2021] (#16341) — _'Volví' é Aventura, não Becky G_
-- **Rauw Alejandro × Rosalía** — “Vampire (Remix)” [song, 2021] (#16353) — _'Vampire' é Olivia Rodrigo, Rauw/Rosalía fizeram 'Beso'_
-- **Myke Towers × Bad Bunny** — “Gata Only (Remix)” [song, 2023] (#16374) — _'Gata Only' é FloyyMenor/Cris Mj, não estes_
-- **Green Day × Norah Jones** — “Love Is for Losers” [song, 2023] (#16472) — _Norah Jones colaborou com Billie Joe (Foreverly), não Green Day_
-- **Hozier × Alicia Keys** — “In a Week (feat. Alicia Keys)” [song, 2019] (#16476) — _original tem Karen Cowley, não Alicia Keys_
-- **Wizkid × Starboy** — “Manya” [song, 2017] (#16486) — _Starboy é o próprio alias/selo de Wizkid_
-- **Ayra Starr × Seyi Vibez** — “Last Heartbreak Song” [song, 2023] (#16489) — _Last Heartbreak Song é com Giveon, não Seyi Vibez_
-- **Morgan Wallen × Jason Aldean** — “Long Live Cowgirls (Duet)” [song, 2022] (#16497) — _Long Live Cowgirls é com Ernest, não Aldean_
-- **Morgan Wallen × Nelly** — “Wasted on You (Remix)” [song, 2021] (#16498) — _remix com Nelly não existe_
-- **J. Balvin × Khalid** — “Ecuador” [song, 2023] (#16500) — _faixa Ecuador com Khalid não existe_
-- **Ariana Grande × Childish Gambino** — “Just Look Up” [song, 2021] (#16504) — _Just Look Up é da Ariana com Kid Cudi, não Gambino_
-- **Justin Bieber × Blake Shelton** — “10,000 Hours” [song, 2019] (#16517) — _10,000 Hours é do Dan + Shay, não Blake Shelton_
-- **Shawn Mendes × Macklemore** — “Growing Pains” [song, 2017] (#16518) — _colaboração inexistente_
-- **Demi Lovato × Anitta** — “Mal Acostumbrado” [song, 2022] (#16520) — _provável fabricação cross-cultural_
-- **Demi Lovato × Iggy Pop** — “California Sober” [song, 2021] (#16523) — _California Sober é solo da Demi, sem Iggy Pop_
-- **Demi Lovato × Sirah** — “Ain't Your Mama” [song, 2013] (#16524) — _colaboração inexistente_
-- **Demi Lovato × Kehlani** — “No Promises” [song, 2017] (#16526) — _No Promises é do Cheat Codes, não Kehlani_
-- **Adele × Rick Rubin** — “30 (production)” [album, 2021] (#16528) — _Rick Rubin produziu 21, não 30_
-- **Doja Cat × Roddy Ricch** — “Streets” [song, 2021] (#16537) — _Streets é solo da Doja Cat_
-- **Doja Cat × Maluma** — “El Beso del Final” [song, 2022] (#16539) — _colaboração inexistente_
-- **Daniel Caesar × Raphael Saadiq** — “Get You” [song, 2017] (#16548) — _Get You tem Kali Uchis, não Raphael Saadiq_
-- **Frank Ocean × John Mayer** — “Slide” [song, 2017] (#16552) — _Slide é do Calvin Harris com Frank e Migos, não Mayer_
-- **Gunna × SZA** — “Fortnite” [song, 2023] (#18119) — _título Fortnite improvável entre Gunna e SZA_
-- **Wisin & Yandel × Maluma** — “Cuatro Babys (Yandel solo)” [song, 2016] (#18384) — _Cuatro Babys é de Maluma sem Yandel/Wisin_
-- **Peso Pluma × Nicki Minaj** — “BZRP x Peso Pluma (remix feature)” [song, 2023] (#18439) — _título confuso BZRP, feature Nicki Minaj inexistente_
-- **Peso Pluma × Marshmello** — “El Hombre Que Perdio” [song, 2023] (#18447) — _colaboração com Marshmello, título fabricado_
-- **Peso Pluma × El Alfa** — “La Jumpa” [song, 2023] (#18448) — _La Jumpa é Anuel/Bad Bunny, não Peso Pluma/El Alfa_
 
 ## ♻️ Duplicatas exatas — 632 cópias redundantes
 
@@ -2220,7 +2472,7 @@ Mesmo par + mesmo título (normalizado). A primeira ocorrência fica; estas são
 
 ## ❓ SUSPEITAS e ✅ CONFIRMADAS
 
-São 12,564 suspeitas e 4,698 confirmadas — grandes demais para listar aqui. Listas completas em:
+São 12,567 suspeitas e 4,698 confirmadas — grandes demais para listar aqui. Listas completas em:
 
 - `audit_data/suspeitas.csv` — revisar manualmente (mantidas por padrão)
 - `audit_data/audit_full.csv` — **tudo** com status final, motivo e evidência
@@ -2228,8 +2480,7 @@ São 12,564 suspeitas e 4,698 confirmadas — grandes demais para listar aqui. L
 
 ## Recomendação para a FASE 3 (após sua aprovação)
 
-1. Remover as **867** `INVÁLIDA_CONFIRMADA` (fabricações confirmadas 2×).
+1. Remover as **1096** `INVÁLIDA_CONFIRMADA` (fabricações confirmadas 2×).
 2. Remover as **632** duplicatas exatas (mantendo 1 de cada).
-3. **Não** tocar nas **263** pendentes até completar a verificação web (limite semanal).
-4. Manter todas as **12,564** suspeitas sinalizadas para revisão; **manter** as 68 resgatadas.
+4. Manter todas as **12,567** suspeitas sinalizadas para revisão; **manter** as 99 resgatadas.
 5. Revalidar conectividade do grafo após remoções (componente único) antes de rebuildar `dataset.js`.

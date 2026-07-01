@@ -5073,7 +5073,9 @@ i,a,b,title,type,year,final,motivo,evidencia,flags
 7803,Xand Avião,Márcia Fellipe,Sem Mim,song,2019,SUSPEITA,"par forró plausível, não confirmo a parceria específica",,
 7804,Xand Avião,Tierry,Dono da Razão,song,2020,SUSPEITA,"par forró/sertanejo plausível, não confirmo a parceria",,
 7806,Solange Almeida,Felipe Amorim,Me Usa,song,2018,SUSPEITA,"par forró plausível, não confirmo a parceria",,
+7808,Geraldo Azevedo,Dominguinhos,Asa Branca,live,2000,SUSPEITA,"1ºpasse=inválida, web=incerto → rebaixada p/ suspeita: Asa Branca é de Luiz Gonzaga; live atribuído indevidamente","Geraldo e Dominguinhos colaboraram (Canta Luiz 1997, Salve São Francisco 2011), mas nenhuma gravação conjunta de 'Asa Branca' documentada (discografia.discosdobrasil.com.br)",
 7809,Alceu Valença,Elba Ramalho,La Belle de Jour,song,1995,SUSPEITA,possível duplicata (dup_of_2114),,dup_of_2114
+7810,Alceu Valença,Dominguinhos,Xote das Meninas,live,1998,SUSPEITA,"1ºpasse=inválida, web=incerto → rebaixada p/ suspeita: Xote das Meninas é de Luiz Gonzaga, não parceria Alceu/Dominguinhos","Dominguinhos gravou 'O Xote das Meninas' com João Bosco e Alceu gravou solo; nenhum dueto Alceu×Dominguinhos encontrado, mas ambos do mesmo circuito (discografia.discosdobrasil.com.br)",
 7811,Dominguinhos,Luiz Gonzaga,Forró Pé de Serra,album,1995,SUSPEITA,"título genérico, parceria não verificável",,
 7812,Luiz Gonzaga,Elba Ramalho,Baião de Dois,song,1996,SUSPEITA,"título genérico, parceria não verificável",,
 7813,Elba Ramalho,Mastruz com Leite,Forró Total,live,2001,SUSPEITA,"live forró, título genérico, parceria não verificável",,
@@ -6985,6 +6987,7 @@ i,a,b,title,type,year,final,motivo,evidencia,flags
 10078,Helena Paparizou,Manolis Famellos,Composition Duo,song,2016,SUSPEITA,"título genérico, não confirmo",,
 10079,Helena Paparizou,Stavros Flatley,Greek Night UK,live,2009,SUSPEITA,"1ºpasse=inválida, web=incerto → rebaixada p/ suspeita: par improvável (Stavros Flatley) e show fabricado",Sem qualquer registro de show ou gravação 'Greek Night UK' entre Paparizou e Stavros Flatley (busca sem resultados),
 10083,Swedish House Mafia,Tiësto,EDM Summit,live,2013,SUSPEITA,"título genérico de evento, não confirmado",,
+10091,Björk,Of Monsters and Men,Iceland Together,live,2015,SUSPEITA,"1ºpasse=inválida, web=incerto → rebaixada p/ suspeita: show ao vivo fabricado, título genérico","Bjork e Of Monsters and Men tocaram juntas no 'Stopp - Let's Protect the Park' (Harpa, 2014), mas nenhum evento 'Iceland Together' 2015 encontrado (savingiceland.org, newsoficeland.com)",
 10094,Of Monsters and Men,Kaleo,Iceland Rocks,live,2016,SUSPEITA,"show islandês não confirmado, título genérico",,
 10095,Of Monsters and Men,Ásgeir,Nordic Indie Summit,live,2015,SUSPEITA,evento nórdico não confirmado,,
 10096,Kaleo,Ásgeir,Reykjavik Sessions,song,2017,SUSPEITA,música Kaleo/Ásgeir não confirmada,,
