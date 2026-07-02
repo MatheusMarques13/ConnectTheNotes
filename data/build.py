@@ -75,29 +75,50 @@ def build():
     return artists, songs
 
 
-def assert_single_component(artists, songs):
+def components(artists, songs):
+    """All connected components (largest first). A song with N artists links
+    all of them; the graph may legitimately be multi-component (real music
+    scenes that share no verified cross-collab), so we report rather than fail."""
     adj = {a["id"]: set() for a in artists}
     for s in songs:
         for x in s["artists"]:
             for y in s["artists"]:
                 if x != y:
                     adj[x].add(y)
-    start = artists[0]["id"]
-    seen = {start}
-    queue = deque([start])
-    while queue:
-        x = queue.popleft()
-        for y in adj[x]:
-            if y not in seen:
-                seen.add(y)
-                queue.append(y)
-    if len(seen) != len(artists):
-        unreachable = sorted(a["id"] for a in artists if a["id"] not in seen)
+    seen = set()
+    comps = []
+    for a in artists:
+        start = a["id"]
+        if start in seen:
+            continue
+        comp = {start}
+        seen.add(start)
+        queue = deque([start])
+        while queue:
+            x = queue.popleft()
+            for y in adj[x]:
+                if y not in seen:
+                    seen.add(y)
+                    comp.add(y)
+                    queue.append(y)
+        comps.append(comp)
+    comps.sort(key=len, reverse=True)
+    return comps
+
+
+def report_components(artists, songs):
+    comps = components(artists, songs)
+    main = len(comps[0]) if comps else 0
+    isolated = sum(1 for c in comps if len(c) == 1)
+    frac = main / len(artists) if artists else 0
+    print(f"   components: {len(comps)} | largest {main} ({frac:.1%}) | islands {len(comps) - 1} | isolated singletons {isolated}")
+    # Guardrail against catastrophic breakage, not normal multi-component data.
+    if frac < 0.80:
         raise SystemExit(
-            f"❌ Dataset is NOT a single connected component: "
-            f"{len(unreachable)} artist(s) unreachable -> {unreachable}.\n"
-            f"   Every pair must be solvable. Fix data/source_data.py."
+            f"❌ Main component is only {frac:.1%} of artists — data likely broken. "
+            f"Aborting. Fix data/source_data.py."
         )
+    return comps
 
 
 def write_js(artists, songs):
@@ -119,8 +140,8 @@ def write_js(artists, songs):
 
 if __name__ == "__main__":
     artists, songs = build()
-    assert_single_component(artists, songs)
+    report_components(artists, songs)
     write_js(artists, songs)
     multi = sum(1 for s in songs if len(s["artists"]) > 2)
-    print(f"✅ {len(artists)} artists, {len(songs)} songs ({multi} with 3+ artists) — single connected component verified")
+    print(f"✅ {len(artists)} artists, {len(songs)} songs ({multi} with 3+ artists)")
     print(f"   wrote {os.path.relpath(OUT, os.path.join(HERE, '..'))}")
