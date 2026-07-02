@@ -22640,4 +22640,8 @@ COLLABORATIONS = [
     (229, 223, 'Cayó La Noche (Remix prod)', 'song', 2022),
     (229, 16, 'Otro Atardecer (prod)', 'song', 2022),
     (229, 802, 'Setenta (prod)', 'song', 2023),
+    (6255, 403, 'Crazy Crazy', 'feature', 2017),
+    (6254, 403, 'Crazy Crazy', 'feature', 2017),
+    (6254, 1509, 'Get Outta My Way (Yasutaka Nakata Remix)', 'remix', 2010),
+    (6256, 1697, 'Take What You Want', 'feature', 2017),
 ]
