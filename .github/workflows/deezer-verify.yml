@@ -3,9 +3,12 @@ name: Deezer catalog verification
 # Verifies every collaboration edge in data/source_data.py against the public
 # Deezer API (are both artists really credited on the track?). Results are
 # pushed to the 'deezer-results' branch as audit_data/deezer/songs_done.jsonl.
-# Manual trigger only.
+# Trigger: manual dispatch, or a push touching the kick file (.github/deezer-kick).
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/deezer-kick']
 
 permissions:
   contents: write
