@@ -1,0 +1,49 @@
+name: Deezer catalog verification
+
+# Verifies every collaboration edge in data/source_data.py against the public
+# Deezer API (are both artists really credited on the track?). Results are
+# pushed to the 'deezer-results' branch as audit_data/deezer/songs_done.jsonl.
+# Manual trigger only.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Smoke-test Deezer API reachability
+        run: |
+          curl -sS --max-time 15 "https://api.deezer.com/infos" | head -c 300
+          echo
+          curl -sS --max-time 15 'https://api.deezer.com/search?q=track:"Work"%20artist:"Rihanna"&limit=1' | head -c 300
+
+      - name: Restore previous progress (resume support)
+        run: |
+          git fetch origin deezer-results:deezer-results || true
+          if git cat-file -e deezer-results:audit_data/deezer/songs_done.jsonl 2>/dev/null; then
+            mkdir -p audit_data/deezer
+            git show deezer-results:audit_data/deezer/songs_done.jsonl > audit_data/deezer/songs_done.jsonl
+            wc -l audit_data/deezer/songs_done.jsonl
+          fi
+
+      - name: Run verification sweep
+        env:
+          DEEZER_OUT: audit_data/deezer
+        run: python3 tools/deezer_verify.py
+
+      - name: Publish results to deezer-results branch
+        if: always()
+        run: |
+          if [ ! -s audit_data/deezer/songs_done.jsonl ]; then echo "no results"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B deezer-results
+          git add -f audit_data/deezer/songs_done.jsonl
+          git commit -m "Deezer verification results ($(wc -l < audit_data/deezer/songs_done.jsonl) songs)"
+          git push -f origin deezer-results
