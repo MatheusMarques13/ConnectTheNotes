@@ -1,8 +1,9 @@
 name: Deezer catalog verification
 
 # Verifies every collaboration edge in data/source_data.py against the public
-# Deezer API (are both artists really credited on the track?). Results are
-# pushed to the 'deezer-results' branch as audit_data/deezer/songs_done.jsonl.
+# Deezer API (are both artists really credited on the track?). v2: 18 parallel
+# shard jobs (distinct runner IPs -> distinct Deezer quotas) + a merge job that
+# publishes the combined results to the 'deezer-results' branch.
 # Trigger: manual dispatch, or a push touching the kick file (.github/deezer-kick).
 on:
   workflow_dispatch:
@@ -14,34 +15,68 @@ permissions:
   contents: write
 
 jobs:
-  verify:
+  shard:
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    timeout-minutes: 110
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
     steps:
       - uses: actions/checkout@v4
 
-      - name: Smoke-test Deezer API reachability
-        run: |
-          curl -sS --max-time 15 "https://api.deezer.com/infos" | head -c 300
-          echo
-          curl -sS --max-time 15 'https://api.deezer.com/search?q=track:"Work"%20artist:"Rihanna"&limit=1' | head -c 300
-
-      - name: Restore previous progress (resume support)
+      - name: Restore prior combined results
         run: |
           git fetch origin deezer-results:deezer-results || true
+          mkdir -p prior
           if git cat-file -e deezer-results:audit_data/deezer/songs_done.jsonl 2>/dev/null; then
-            mkdir -p audit_data/deezer
-            git show deezer-results:audit_data/deezer/songs_done.jsonl > audit_data/deezer/songs_done.jsonl
-            wc -l audit_data/deezer/songs_done.jsonl
+            git show deezer-results:audit_data/deezer/songs_done.jsonl > prior/songs_done.jsonl
+            wc -l prior/songs_done.jsonl
           fi
 
-      - name: Run verification sweep
+      - name: Run verification shard
         env:
-          DEEZER_OUT: audit_data/deezer
+          DEEZER_OUT: out
+          DEEZER_PRIOR: prior/songs_done.jsonl
+          SHARD_INDEX: ${{ matrix.shard }}
+          SHARD_TOTAL: '18'
         run: python3 tools/deezer_verify.py
 
-      - name: Publish results to deezer-results branch
+      - name: Upload shard results
         if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.shard }}
+          path: out/songs_done.jsonl
+          if-no-files-found: ignore
+
+  merge:
+    runs-on: ubuntu-latest
+    needs: shard
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore prior combined results
+        run: |
+          git fetch origin deezer-results:deezer-results || true
+          mkdir -p prior
+          if git cat-file -e deezer-results:audit_data/deezer/songs_done.jsonl 2>/dev/null; then
+            git show deezer-results:audit_data/deezer/songs_done.jsonl > prior/songs_done.jsonl
+          fi
+
+      - name: Download shard results
+        uses: actions/download-artifact@v4
+        with:
+          path: shards
+
+      - name: Merge
+        run: |
+          mkdir -p audit_data/deezer
+          python3 tools/deezer_merge.py audit_data/deezer/songs_done.jsonl \
+            prior/songs_done.jsonl shards/shard-*/songs_done.jsonl
+
+      - name: Publish combined results to deezer-results branch
         run: |
           if [ ! -s audit_data/deezer/songs_done.jsonl ]; then echo "no results"; exit 0; fi
           git config user.name "github-actions[bot]"

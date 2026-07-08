@@ -1,25 +1,40 @@
-"""Deterministic Deezer-catalog verification of every collaboration edge.
+"""Deterministic Deezer-catalog verification of every collaboration edge (v2).
 
 For each unique song (title,type,year) in data/source_data.py, queries the
 public Deezer API and collects the set of credited artist names for the best
 matching track/album (main artist + contributors + names parsed from
 "feat."-style title suffixes). Every edge (A,B) on that song then gets:
-  BOTH   - both artists found among the credited names   -> catalog-verified
-  ONE    - track found, but only one of the two credited -> suspicious
-  NONE   - no matching track/album found on Deezer       -> unknown (not proof of fake)
+  BOTH          - both artists credited on the found recording -> catalog-verified
+  ONE           - recording found, only one of the two credited -> suspicious
+  NONE_CREDITED - recording found, neither credited              -> suspicious
+  NOT_FOUND     - no matching recording (all searches completed) -> unknown
 
-Fully resumable: every song verdict is appended to songs_done.jsonl and skipped
-on rerun. Rate-limited to ~8 req/s (Deezer allows 50/5s). Run from repo root:
-  python3 deezer_verify.py
+v2 changes:
+- Sharding: SHARD_INDEX/SHARD_TOTAL env vars split songs by stable hash, so
+  N CI runners (distinct IPs -> distinct Deezer quotas) work in parallel.
+- Adaptive pacing: starts polite, backs off hard on quota errors, speeds up
+  again after sustained success. Quota failures are retried patiently; if a
+  song still can't complete, it is SKIPPED (not written) so a rerun retries
+  it - a throttled run can never pollute results with fake NOT_FOUNDs.
+- Fewer requests: max 2 search anchors + 1 plain fallback per song, and the
+  per-track credits fetch is skipped when search-level credits already cover
+  every edge artist.
+- Resume: rows already in the prior results with a non-null link are kept;
+  null-link rows from v1 (possibly quota-polluted) are requeued.
+
+Run: DEEZER_OUT=dir [SHARD_INDEX=k SHARD_TOTAL=n] python3 tools/deezer_verify.py
 """
-import sys, os, re, json, time, unicodedata, urllib.request, urllib.parse
+import sys, os, re, json, time, hashlib, unicodedata, urllib.request, urllib.parse
 
-sys.path.insert(0, "data")
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data"))
 import source_data as sd
 
 OUT_DIR = os.environ.get("DEEZER_OUT") or os.path.dirname(os.path.abspath(__file__))
 os.makedirs(OUT_DIR, exist_ok=True)
 DONE = os.path.join(OUT_DIR, "songs_done.jsonl")
+PRIOR = os.environ.get("DEEZER_PRIOR", DONE)   # combined prior results (read-only)
+SHARD_INDEX = int(os.environ.get("SHARD_INDEX", "0"))
+SHARD_TOTAL = int(os.environ.get("SHARD_TOTAL", "1"))
 API = "https://api.deezer.com"
 
 # ── name/title normalization ────────────────────────────────────────────────
@@ -45,74 +60,64 @@ def base_title(t):
     return t
 
 def feat_names(t):
-    """Artist names hidden in the raw title: 'Work (feat. Drake)' -> ['drake']"""
     out = []
     for m in re.finditer(r"[\(\[\-]\s*(?:feat\.?|featuring|with|com|part\.?)\s+([^\)\]\-]+)", t or "", re.I):
-        chunk = m.group(1)
-        for nm in re.split(r",|&| e | y | and |feat\.?|featuring", chunk, flags=re.I):
+        for nm in re.split(r",|&| e | y | and |feat\.?|featuring", m.group(1), flags=re.I):
             nm = nm.strip()
             if nm:
                 out.append(norm_name(nm))
     return out
 
-# ── rate-limited GET with retry ─────────────────────────────────────────────
-_last = [0.0]
-def get(url, tries=4):
-    for k in range(tries):
-        wait = 0.125 - (time.time() - _last[0])   # ~8 req/s
-        if wait > 0:
-            time.sleep(wait)
-        _last[0] = time.time()
+# ── adaptive-paced GET ──────────────────────────────────────────────────────
+class Pacer:
+    def __init__(self):
+        self.interval = 0.6          # start polite
+        self.last = 0.0
+        self.streak = 0
+    def wait(self):
+        d = self.interval - (time.time() - self.last)
+        if d > 0:
+            time.sleep(d)
+        self.last = time.time()
+    def ok(self):
+        self.streak += 1
+        if self.streak >= 25:
+            self.streak = 0
+            self.interval = max(0.25, self.interval * 0.85)
+    def throttled(self):
+        self.streak = 0
+        self.interval = min(20.0, self.interval * 1.6)
+
+PACER = Pacer()
+GAVE_UP = object()
+
+def get(url):
+    """Returns parsed JSON, None on non-quota API error, GAVE_UP if quota
+    could not be cleared after many patient retries."""
+    for k in range(12):
+        PACER.wait()
         try:
             with urllib.request.urlopen(urllib.request.Request(
-                    url, headers={"User-Agent": "ConnectTheNotes-verify/1.0"}), timeout=20) as r:
+                    url, headers={"User-Agent": "ConnectTheNotes-verify/2.0"}), timeout=20) as r:
                 d = json.loads(r.read().decode("utf-8"))
-            if isinstance(d, dict) and d.get("error"):
-                code = d["error"].get("code")
-                if code == 4:            # quota exceeded — back off hard
-                    time.sleep(5 + 5 * k)
-                    continue
-                return None              # other API error: treat as no result
-            return d
         except Exception:
-            time.sleep(1 + 2 * k)
-    return None
+            PACER.throttled()
+            time.sleep(min(30, 2 ** k))
+            continue
+        if isinstance(d, dict) and d.get("error"):
+            if d["error"].get("code") == 4:      # quota
+                PACER.throttled()
+                time.sleep(min(60, 3 * (k + 1)))
+                continue
+            return None
+        PACER.ok()
+        return d
+    return GAVE_UP
 
 def q(s):
     return urllib.parse.quote((s or "").replace('"', ""))
 
-# ── credited-name harvesting ────────────────────────────────────────────────
-def track_credits(tr):
-    names = set()
-    a = (tr.get("artist") or {}).get("name")
-    if a:
-        names.add(norm_name(a))
-    for nm in feat_names(tr.get("title") or ""):
-        names.add(nm)
-    return names
-
-def full_track_credits(tid):
-    d = get(f"{API}/track/{tid}")
-    names = set()
-    if d:
-        for c in d.get("contributors") or []:
-            names.add(norm_name(c.get("name", "")))
-        a = (d.get("artist") or {}).get("name")
-        if a:
-            names.add(norm_name(a))
-        for nm in feat_names(d.get("title") or ""):
-            names.add(nm)
-    return names
-
-def candidates_for(title, artist, is_album):
-    kind = "album" if is_album else "track"
-    d = get(f'{API}/search/{kind}?q={kind}:"{q(title)}" artist:"{q(artist)}"&limit=25')
-    res = (d or {}).get("data") or []
-    if not res:
-        d = get(f"{API}/search/{kind}?q={q(title + ' ' + artist)}&limit=25")
-        res = (d or {}).get("data") or []
-    return res
-
+# ── matching ────────────────────────────────────────────────────────────────
 def title_matches(ours, theirs):
     a, b = base_title(ours), base_title(theirs)
     if not a or not b:
@@ -121,63 +126,99 @@ def title_matches(ours, theirs):
         return True
     return (a in b or b in a) and abs(len(a) - len(b)) <= 15
 
-def verify_song(title, ctype, names_by_id, edge_ids):
-    """Returns (credited_names:set, deezer_link or None)."""
+def search_credits(item):
+    names = set()
+    a = (item.get("artist") or {}).get("name")
+    if a:
+        names.add(norm_name(a))
+    for nm in feat_names(item.get("title") or ""):
+        names.add(nm)
+    return names
+
+def verify_song(title, ctype, anchors, needed):
+    """anchors: artist display names to search with. needed: set of normalized
+    edge-artist names. Returns (credited:set, link, complete:bool)."""
     is_album = ctype in ("album", "ep", "mixtape")
-    # try search anchored on up to 3 distinct artists of this song
-    seen_anchor = []
-    for aid in edge_ids:
-        nm = names_by_id[aid]
-        if nm in seen_anchor:
-            continue
-        seen_anchor.append(nm)
-        if len(seen_anchor) > 3:
-            break
-        variants = [title]
-        if ctype in ("live", "dvd") and "ao vivo" not in title.lower():
-            variants.append(title + " (Ao Vivo)")
+    kind = "album" if is_album else "track"
+    gave_up = False
+    variants = [title]
+    if ctype in ("live", "dvd") and "ao vivo" not in title.lower():
+        variants.append(title + " (Ao Vivo)")
+
+    searches = []
+    for nm in anchors[:2]:
         for tv in variants:
-            for cand in candidates_for(tv, nm, is_album):
-                if not title_matches(title, cand.get("title", "")):
-                    continue
-                credited = track_credits(cand)
-                if is_album:
-                    d = get(f"{API}/album/{cand['id']}")
-                    for c in (d or {}).get("contributors") or []:
-                        credited.add(norm_name(c.get("name", "")))
-                else:
-                    credited |= full_track_credits(cand["id"])
-                link = cand.get("link") or f"https://www.deezer.com/{'album' if is_album else 'track'}/{cand['id']}"
-                return credited, link
-    return set(), None
+            searches.append(f'{API}/search/{kind}?q={kind}:"{q(tv)}" artist:"{q(nm)}"&limit=25')
+    if anchors:
+        searches.append(f"{API}/search/{kind}?q={q(title + ' ' + anchors[0])}&limit=25")
+
+    for url in searches:
+        d = get(url)
+        if d is GAVE_UP:
+            gave_up = True
+            continue
+        for cand in (d or {}).get("data") or []:
+            if not title_matches(title, cand.get("title", "")):
+                continue
+            credited = search_credits(cand)
+            link = cand.get("link") or f"https://www.deezer.com/{kind}/{cand['id']}"
+            if needed <= credited:
+                return credited, link, True       # search-level credits suffice
+            det = get(f"{API}/{kind}/{cand['id']}")
+            if det is GAVE_UP:
+                return credited, link, False      # found it but credits incomplete
+            if det:
+                for c in det.get("contributors") or []:
+                    credited.add(norm_name(c.get("name", "")))
+                aa = (det.get("artist") or {}).get("name")
+                if aa:
+                    credited.add(norm_name(aa))
+                for nm in feat_names(det.get("title") or ""):
+                    credited.add(nm)
+            return credited, link, True
+    return set(), None, not gave_up
 
 def main():
     byid = {i: n for i, n, g in sd.ARTISTS}
-    # group edges by song key (same normalization as build.py)
     def songkey(t): return re.sub(r"\s+", " ", (t or "").strip()).lower()
     groups = {}
     for idx, (a, b, t, ty, y) in enumerate(sd.COLLABORATIONS):
         groups.setdefault((songkey(t), ty, y), {"title": t, "type": ty, "year": y,
                                                 "edges": []})["edges"].append((idx, a, b))
+    def shard_of(key):
+        h = hashlib.md5(json.dumps(list(key), ensure_ascii=False).encode()).hexdigest()
+        return int(h[:8], 16) % SHARD_TOTAL
+
     done = set()
-    if os.path.exists(DONE):
-        with open(DONE) as fh:
+    if os.path.exists(PRIOR):
+        with open(PRIOR) as fh:
             for line in fh:
                 try:
-                    done.add(tuple(json.loads(line)["key"]))
+                    r = json.loads(line)
+                    if r.get("link"):              # requeue null-link rows
+                        done.add(tuple(r["key"]))
                 except Exception:
                     pass
-    todo = [(k, v) for k, v in groups.items() if k not in done]
-    print(f"songs total={len(groups)} done={len(done)} todo={len(todo)}", flush=True)
+    todo = [(k, v) for k, v in groups.items()
+            if k not in done and shard_of(k) == SHARD_INDEX]
+    print(f"shard {SHARD_INDEX}/{SHARD_TOTAL}: songs total={len(groups)} "
+          f"prior-done={len(done)} todo(this shard)={len(todo)}", flush=True)
+
     out = open(DONE, "a", buffering=1)
     t0 = time.time()
+    written = skipped = 0
     for n, (key, g) in enumerate(todo):
-        ids = []
+        ids, anchors = [], []
         for _, a, b in g["edges"]:
             for x in (a, b):
                 if x not in ids:
                     ids.append(x)
-        credited, link = verify_song(g["title"], g["type"], byid, ids)
+                    anchors.append(byid[x])
+        needed = {norm_name(byid[x]) for x in ids}
+        credited, link, complete = verify_song(g["title"], g["type"], anchors, needed)
+        if not link and not complete:
+            skipped += 1                            # quota-ambiguous: retry next run
+            continue
         edges = []
         for idx, a, b in g["edges"]:
             if credited:
@@ -189,13 +230,15 @@ def main():
                 v = "NOT_FOUND"
             edges.append({"i": idx, "a": byid[a], "b": byid[b], "v": v})
         out.write(json.dumps({"key": list(key), "title": g["title"], "type": g["type"],
-                              "year": g["year"], "link": link,
+                              "year": g["year"], "link": link, "complete": complete,
                               "credited": sorted(credited), "edges": edges},
                              ensure_ascii=False) + "\n")
-        if (n + 1) % 200 == 0:
+        written += 1
+        if (n + 1) % 100 == 0:
             rate = (n + 1) / (time.time() - t0)
-            print(f"{n+1}/{len(todo)} songs  ({rate:.1f}/s, eta {int((len(todo)-n-1)/rate/60)}min)", flush=True)
-    print("DONE", flush=True)
+            print(f"{n+1}/{len(todo)}  ({rate:.2f} songs/s, interval {PACER.interval:.2f}s, "
+                  f"written {written}, skipped {skipped}, eta {int((len(todo)-n-1)/max(rate,0.01)/60)}min)", flush=True)
+    print(f"SHARD DONE written={written} skipped={skipped}", flush=True)
 
 if __name__ == "__main__":
     main()
