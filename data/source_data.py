@@ -20722,4 +20722,7 @@ COLLABORATIONS = [
     (6702, 129, 'U + Ur Hand (Bimbo Jones Remix)', 'remix', 2007),
     (6702, 129, 'Who Knew (Bimbo Jones Remix)', 'remix', 2006),
     (6460, 31, 'Supernatural', 'song', 2024),
+    (698, 380, 'Beijinho no Ombro', 'song', 2013),
+    (742, 268, 'Olha a Explosão', 'song', 2016),
+    (740, 1523, 'Favela', 'song', 2017),
 ]
