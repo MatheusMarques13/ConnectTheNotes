@@ -1,7 +1,7 @@
 // Client-side game engine. The game is a small static graph, so there is no
 // backend at runtime — everything is computed locally from the embedded dataset.
 // A SONG links artists: a track with N collaborators connects all of them.
-import { ARTISTS, SONGS } from '../data/dataset';
+import { ARTISTS, SONGS, FAMOUS_IDS } from '../data/dataset';
 import { ARTIST_IMAGES, SONG_COVERS, SONG_PREVIEWS } from '../data/images.generated';
 
 // ── Indexes ─────────────────────────────────────────────
@@ -111,18 +111,46 @@ const seededRng = (str) => mulberry32(xmur3(str)());
 
 const choice = (rng, arr) => arr[Math.floor(rng() * arr.length)];
 
+// ── Fame-weighted picking ───────────────────────────────
+// Uniform sampling over 5,600 artists lands on a name nobody knows almost every
+// time — the long tail dwarfs the stars. So every *random* pick (surprise pair,
+// daily puzzle, shuffle button) draws from FAMOUS_IDS, weighted by the fame
+// score baked in at build time (Deezer fan count + collaboration degree).
+// Search and manual selection are untouched: the whole roster stays playable.
+const fameOf = (id) => (ARTISTS_BY_ID[id]?.fame ?? 1) || 1;
+
+// Weight ∝ fame², which favours the household names without ever locking out
+// the rest of the pool.
+function weightedChoice(rng, ids) {
+  if (!ids.length) return null;
+  let total = 0;
+  for (const id of ids) { const f = fameOf(id); total += f * f; }
+  let r = rng() * total;
+  for (const id of ids) { const f = fameOf(id); r -= f * f; if (r <= 0) return id; }
+  return ids[ids.length - 1];
+}
+
 function pickPairInBand(rng, lo, hi) {
   for (let i = 0; i < 60; i++) {
-    const start = choice(rng, ARTIST_IDS);
+    const start = weightedChoice(rng, FAMOUS_IDS);
     const dist = bfsDistances(start);
-    const candidates = Object.keys(dist).filter((id) => dist[id] >= lo && dist[id] <= hi);
+    // Both ends must be recognisable, so the far end is drawn from the famous
+    // pool too — that is where the old picker leaked unknown artists, since a
+    // BFS 3 hops out reaches thousands of long-tail names.
+    const candidates = FAMOUS_IDS.filter((id) => dist[id] >= lo && dist[id] <= hi);
     if (candidates.length) {
-      const end = choice(rng, candidates);
+      const end = weightedChoice(rng, candidates);
       return { start, end, dist: dist[end] };
     }
   }
-  const start = choice(rng, ARTIST_IDS);
+  // Fallbacks: keep a solvable puzzle even if the band is impossible to fill.
+  const start = weightedChoice(rng, FAMOUS_IDS) || choice(rng, ARTIST_IDS);
   const dist = bfsDistances(start);
+  const farFamous = FAMOUS_IDS.filter((id) => dist[id] >= 2);
+  if (farFamous.length) {
+    const end = weightedChoice(rng, farFamous);
+    return { start, end, dist: dist[end] };
+  }
   const far = Object.keys(dist).filter((id) => dist[id] >= 2);
   if (far.length) { const end = choice(rng, far); return { start, end, dist: dist[end] }; }
   return null;
@@ -135,8 +163,13 @@ export async function searchArtists(query, limit = 8) {
   return ARTISTS.filter((a) => a.name.toLowerCase().includes(q)).slice(0, limit);
 }
 
+// "Choose for me" / shuffle: same rule as the random puzzle — give the player a
+// name they know, not a random row from the long tail.
 export async function getRandomArtist(excludeIds = []) {
   const ex = new Set(excludeIds);
+  const famous = FAMOUS_IDS.filter((id) => !ex.has(id));
+  const picked = weightedChoice(Math.random, famous);
+  if (picked) return ARTISTS_BY_ID[picked];
   const pool = ARTISTS.filter((a) => !ex.has(a.id));
   return pool.length ? pool[Math.floor(Math.random() * pool.length)] : null;
 }

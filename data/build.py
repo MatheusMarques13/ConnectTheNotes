@@ -11,6 +11,7 @@ a single connected component (every puzzle solvable) and fails loudly otherwise.
 Run:  python data/build.py
 """
 import json
+import math
 import os
 import re
 import sys
@@ -21,6 +22,10 @@ sys.path.insert(0, HERE)
 from source_data import ARTISTS, COLLABORATIONS  # noqa: E402
 
 OUT = os.path.join(HERE, "..", "frontend", "src", "data", "dataset.js")
+FAME_FILE = os.path.join(HERE, "artist_fame.json")
+# How many artists the random pickers may draw from. Small enough that a random
+# puzzle lands on a name players know; large enough that puzzles stay varied.
+POOL_SIZE = 900
 
 
 def slug(n):
@@ -75,6 +80,64 @@ def build():
     return artists, songs
 
 
+def fame_scores(artists, songs):
+    """Score every artist 0..1000 for "would a player recognise this name?".
+
+    Two signals, because neither works alone:
+      * Deezer fan count (data/artist_fame.json, fetched by tools/artist_fame.py)
+        is real audience size — the only thing that knows Linkin Park is famous
+        despite barely doing features.
+      * Collaboration degree is what makes an artist a good puzzle node, and is
+        the only signal we have for artists Deezer could not match by name.
+
+    Both are compressed with a log (fan counts are power-law: the top act has
+    ~1000x the tail's followers, and a raw blend would make every puzzle Drake).
+    """
+    deg = {a["id"]: 0 for a in artists}
+    adj = {a["id"]: set() for a in artists}
+    for s in songs:
+        for x in s["artists"]:
+            for y in s["artists"]:
+                if x != y:
+                    adj[x].add(y)
+    for k, v in adj.items():
+        deg[k] = len(v)
+
+    fans = {}
+    if os.path.exists(FAME_FILE):
+        with open(FAME_FILE, encoding="utf-8") as fh:
+            raw = json.load(fh)
+        fans = {slug(int(k)): v for k, v in raw.items() if v is not None}
+
+    max_fan_l = max([math.log10(1 + v) for v in fans.values()], default=1.0) or 1.0
+    max_deg_l = max([math.log(1 + d) for d in deg.values()], default=1.0) or 1.0
+
+    scores = {}
+    for a in artists:
+        i = a["id"]
+        d_l = math.log(1 + deg[i]) / max_deg_l
+        if i in fans:
+            f_l = math.log10(1 + fans[i]) / max_fan_l
+            s = 0.72 * f_l + 0.28 * d_l
+        else:
+            # No confident Deezer match: fall back to graph prominence only, at a
+            # discount so an unmatched name never outranks a verified star.
+            s = 0.55 * d_l
+        scores[i] = int(round(1000 * max(0.0, min(1.0, s))))
+    return scores, deg, fans
+
+
+def famous_pool(artists, scores, deg):
+    """The ids the random pickers are allowed to draw from.
+
+    Everything else stays fully playable (search, chains, solutions) — this only
+    governs what a *random* puzzle or the shuffle button may land on.
+    """
+    eligible = [a["id"] for a in artists if deg.get(a["id"], 0) >= 2]
+    eligible.sort(key=lambda i: -scores[i])
+    return eligible[:POOL_SIZE]
+
+
 def components(artists, songs):
     """All connected components (largest first). A song with N artists links
     all of them; the graph may legitimately be multi-component (real music
@@ -121,7 +184,7 @@ def report_components(artists, songs):
     return comps
 
 
-def write_js(artists, songs):
+def write_js(artists, songs, pool):
     sep = (",", ": ")
     lines = [
         "// AUTO-GENERATED from data/source_data.py via data/build.py",
@@ -133,6 +196,10 @@ def write_js(artists, songs):
         "",
         "export const SONGS = " + json.dumps(songs, ensure_ascii=False, separators=sep) + ";",
         "",
+        "// Ids the random puzzle / shuffle may pick, best-known first. Every other",
+        "// artist stays searchable and playable — this only steers randomness.",
+        "export const FAMOUS_IDS = " + json.dumps(pool, ensure_ascii=False, separators=sep) + ";",
+        "",
     ]
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
@@ -141,7 +208,15 @@ def write_js(artists, songs):
 if __name__ == "__main__":
     artists, songs = build()
     report_components(artists, songs)
-    write_js(artists, songs)
+    scores, deg, fans = fame_scores(artists, songs)
+    for a in artists:
+        a["fame"] = scores[a["id"]]
+    pool = famous_pool(artists, scores, deg)
+    write_js(artists, songs, pool)
+    by_id = {a["id"]: a for a in artists}
+    print(f"   fame: {len(fans)} artists with Deezer fan counts, "
+          f"{len(artists) - len(fans)} graph-only | random pool {len(pool)}")
+    print("   pool top 15: " + ", ".join(by_id[i]["name"] for i in pool[:15]))
     multi = sum(1 for s in songs if len(s["artists"]) > 2)
     print(f"✅ {len(artists)} artists, {len(songs)} songs ({multi} with 3+ artists)")
     print(f"   wrote {os.path.relpath(OUT, os.path.join(HERE, '..'))}")

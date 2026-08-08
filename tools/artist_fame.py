@@ -32,15 +32,104 @@ OUT_DIR = os.environ.get("FAME_OUT", "out")
 PRIOR = os.environ.get("FAME_PRIOR", "")
 
 
+# Roster names Deezer files under a different string. Without these, genuinely
+# famous acts fall back to the graph-only score and drop out of random puzzles.
+# A wrong guess here costs nothing: matching stays exact, so it just won't match.
+ALIASES = {
+    "The Black Eyed Peas": "Black Eyed Peas",
+    "Bob Marley": "Bob Marley & The Wailers",
+    "Carlos Santana": "Santana",
+    "The Fugees": "Fugees",
+    "Smashing Pumpkins": "The Smashing Pumpkins",
+    "Goo Goo Dolls": "The Goo Goo Dolls",
+    "Doobie Brothers": "The Doobie Brothers",
+    "Isley Brothers": "The Isley Brothers",
+    "The Four Tops": "Four Tops",
+    "The Jackson 5": "Jackson 5",
+    "The Grateful Dead": "Grateful Dead",
+    "War on Drugs": "The War On Drugs",
+    "Dixie Chicks": "The Chicks",
+    "Noel Gallagher": "Noel Gallagher's High Flying Birds",
+    "Machine Gun Kelly": "mgk",
+    "Ty Dolla Sign": "Ty Dolla $ign",
+    "ASAP Rocky": "A$AP Rocky",
+    "ASAP Ferg": "A$AP Ferg",
+    "Travi$ Scott": "Travis Scott",
+    "Charlie XCX": "Charli XCX",
+    "Puff Daddy": "Diddy",
+    "Maître Gims": "GIMS",
+    "Aurora Aksnes": "AURORA",
+    "Emma Marrone": "Emma",
+    "Lay Zhang": "LAY",
+    "Enrique Bunbury": "Bunbury",
+    "Cheb Khaled": "Khaled",
+    "Years & Years": "Olly Alexander (Years & Years)",
+    "Tinie Tempah": "Tinie Tempah",
+    # Brazil
+    "DJ Alok": "Alok",
+    "Dennis DJ": "Dennis",
+    "Safadão": "Wesley Safadão",
+    "Bethânia": "Maria Bethânia",
+    "MC Anitta": "Anitta",
+    "Tom Jobim": "Antônio Carlos Jobim",
+    "Paralamas do Sucesso": "Os Paralamas Do Sucesso",
+    "Detonautas Roque Clube": "Detonautas",
+    "Barões da Pisadinha": "Os Barões Da Pisadinha",
+    "Fundo de Quintal": "Grupo Fundo De Quintal",
+    "Jammil e Uma Cerveja": "Jammil e Uma Noites",
+    "Grupo Molejo": "Molejo",
+    "Felipe Ret": "Filipe Ret",
+    "Murillo Huff": "Murilo Huff",
+    "Banda MS": "Banda MS de Sergio Lizárraga",
+    "Nicki Jam": "Nicky Jam",
+    "Bieber": "Justin Bieber",
+    # Non-Latin scripts
+    "Zemfira": "Земфира",
+    "Dima Bilan": "Дима Билан",
+    "Egor Kreed": "Егор Крид",
+    "Polina Gagarina": "Полина Гагарина",
+    "Glukoza": "Глюкоза",
+    "Ibrahim Tatlises": "İbrahim Tatlıses",
+    "Kadim Al Saher": "كاظم الساهر",
+    "Fayrouz": "فيروز",
+}
+
+# NFKD leaves "œ" and "$" alone, which breaks Cœur de Pirate / A$AP-style names.
+EXTRA = str.maketrans({"œ": "oe", "Œ": "oe", "$": "s", "€": "e"})
+
+
+def nkey(s):
+    return norm_name((s or "").translate(EXTRA))
+
+
+def candidates(name):
+    """Our name plus safe spelling variants, all matched exactly."""
+    base = ALIASES.get(name, name)
+    out = [base, name]
+    for art in ("the ", "os ", "as "):
+        for n in (base, name):
+            if n.lower().startswith(art):
+                out.append(n[len(art):])
+            else:
+                out.append(art.title() + n)
+    seen, uniq = set(), []
+    for v in out:
+        if v and v.lower() not in seen:
+            seen.add(v.lower())
+            uniq.append(v)
+    return uniq
+
+
 def lookup(name):
     """-> (dz_id, dz_name, fans, match) ; match in exact|none|error."""
-    d = get(f"{API}/search/artist?q={q(name)}&limit=10")
+    wanted = {nkey(v) for v in candidates(name)}
+    query = ALIASES.get(name, name)
+    d = get(f"{API}/search/artist?q={q(query)}&limit=10")
     if d is GAVE_UP:
         return None, None, None, "error"
     if not d or not d.get("data"):
         return None, None, None, "none"
-    target = norm_name(name)
-    exact = [a for a in d["data"] if norm_name(a.get("name")) == target]
+    exact = [a for a in d["data"] if nkey(a.get("name")) in wanted]
     if not exact:
         return None, None, None, "none"
     best = max(exact, key=lambda a: a.get("nb_fan") or 0)
@@ -56,9 +145,10 @@ def main():
                     r = json.loads(line)
                 except Exception:
                     continue
-                # Only treat a row as settled if it actually resolved; transient
-                # errors get retried on the next run.
-                if r.get("match") in ("exact", "none"):
+                # Only a real fan count is settled. Unmatched names are retried
+                # on every run, so improving ALIASES rescues them without
+                # re-querying the 5,000+ artists already resolved.
+                if r.get("match") == "exact":
                     done.add(r["id"])
 
     mine = [(i, n) for (i, n, _g) in ARTISTS
