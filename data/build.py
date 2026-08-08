@@ -103,11 +103,19 @@ def fame_scores(artists, songs):
     for k, v in adj.items():
         deg[k] = len(v)
 
-    fans = {}
+    fans, dz = {}, {}
     if os.path.exists(FAME_FILE):
         with open(FAME_FILE, encoding="utf-8") as fh:
             raw = json.load(fh)
-        fans = {slug(int(k)): v for k, v in raw.items() if v is not None}
+        for k, v in raw.items():
+            i = slug(int(k))
+            if isinstance(v, dict):
+                if v.get("fans") is not None:
+                    fans[i] = v["fans"]
+                if v.get("dz") is not None:
+                    dz[i] = v["dz"]
+            elif v is not None:
+                fans[i] = v
 
     max_fan_l = max([math.log10(1 + v) for v in fans.values()], default=1.0) or 1.0
     max_deg_l = max([math.log(1 + d) for d in deg.values()], default=1.0) or 1.0
@@ -128,7 +136,7 @@ def fame_scores(artists, songs):
             # discount so an unmatched name never outranks a verified star.
             s = 0.55 * d_l
         scores[i] = int(round(1000 * max(0.0, min(1.0, s))))
-    return scores, deg, fans, adj
+    return scores, deg, fans, adj, dz
 
 
 # Lowercase/underscore handles ("kendji_girac") are leftovers from an earlier
@@ -137,7 +145,7 @@ def fame_scores(artists, songs):
 HANDLE_RE = re.compile(r"^[a-z0-9_]+$")
 
 
-def famous_pool(artists, scores, deg, adj):
+def famous_pool(artists, scores, deg, adj, dz):
     """The ids the random pickers are allowed to draw from.
 
     Everything else stays fully playable (search, chains, solutions) — this only
@@ -149,6 +157,20 @@ def famous_pool(artists, scores, deg, adj):
     player has no chance of guessing.
     """
     ok = {a["id"] for a in artists if not HANDLE_RE.match(a["name"])}
+    # Several roster entries are the same act under a second spelling ("Bieber"
+    # vs "Justin Bieber", "MC Anitta" vs "Anitta"). They resolve to one Deezer
+    # artist, so they'd inherit the same huge fan count and the picker could
+    # serve the misspelled twin. Keep only the best-scoring node of each pair.
+    best_of = {}
+    for a in artists:
+        d = dz.get(a["id"])
+        if d is None:
+            continue
+        cur = best_of.get(d)
+        if cur is None or scores[a["id"]] > scores[cur]:
+            best_of[d] = a["id"]
+    ok -= {a["id"] for a in artists
+           if dz.get(a["id"]) is not None and best_of[dz[a["id"]]] != a["id"]}
     core = sorted((i for i in ok if deg.get(i, 0) >= 2), key=lambda i: -scores[i])
     core_set = set(core[:POOL_SIZE])
     bridged = [i for i in ok
@@ -227,10 +249,10 @@ def write_js(artists, songs, pool):
 if __name__ == "__main__":
     artists, songs = build()
     report_components(artists, songs)
-    scores, deg, fans, adj = fame_scores(artists, songs)
+    scores, deg, fans, adj, dz = fame_scores(artists, songs)
     for a in artists:
         a["fame"] = scores[a["id"]]
-    pool = famous_pool(artists, scores, deg, adj)
+    pool = famous_pool(artists, scores, deg, adj, dz)
     write_js(artists, songs, pool)
     by_id = {a["id"]: a for a in artists}
     print(f"   fame: {len(fans)} artists with Deezer fan counts, "
