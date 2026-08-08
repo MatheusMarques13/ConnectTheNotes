@@ -361,7 +361,7 @@
 {"id": 377, "name": "MC Ryan SP", "dz_id": 49259572, "dz_name": "MC Ryan SP", "fans": 1248644, "match": "exact"}
 {"id": 378, "name": "Kevin O Chris", "dz_id": 13889325, "dz_name": "Kevin o Chris", "fans": 2868, "match": "exact"}
 {"id": 379, "name": "DJ GBR", "dz_id": 72531372, "dz_name": "Dj GBR", "fans": 169308, "match": "exact"}
-{"id": 380, "name": "Dennis DJ", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 380, "name": "Dennis DJ", "dz_id": 4448284, "dz_name": "DENNIS", "fans": 1512508, "match": "exact"}
 {"id": 381, "name": "Felipe Original", "dz_id": 66660652, "dz_name": "Felipe Original", "fans": 208728, "match": "exact"}
 {"id": 382, "name": "Manu Gavassi", "dz_id": 1048967, "dz_name": "Manu Gavassi", "fans": 631882, "match": "exact"}
 {"id": 383, "name": "Urias", "dz_id": 7892860, "dz_name": "Urias", "fans": 100199, "match": "exact"}
@@ -679,7 +679,7 @@
 {"id": 735, "name": "MC Fioti", "dz_id": 10833242, "dz_name": "MC Fioti", "fans": 115559, "match": "exact"}
 {"id": 736, "name": "MC K9", "dz_id": 1373378, "dz_name": "Mc K9", "fans": 7714, "match": "exact"}
 {"id": 737, "name": "MC Lon", "dz_id": 4811156, "dz_name": "Mc Lon", "fans": 143831, "match": "exact"}
-{"id": 740, "name": "DJ Alok", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 740, "name": "DJ Alok", "dz_id": 1429841, "dz_name": "Alok", "fans": 4527568, "match": "exact"}
 {"id": 741, "name": "Alok", "dz_id": 1429841, "dz_name": "Alok", "fans": 4527566, "match": "exact"}
 {"id": 742, "name": "Kondzilla", "dz_id": 4698478, "dz_name": "Kondzilla", "fans": 14225, "match": "exact"}
 {"id": 743, "name": "MC Menor MR", "dz_id": 13392565, "dz_name": "MC Menor MR", "fans": 216331, "match": "exact"}
@@ -711,12 +711,12 @@
 {"id": 789, "name": "MC Kadinho", "dz_id": 11657549, "dz_name": "MC Kadinho", "fans": 794, "match": "exact"}
 {"id": 790, "name": "Gaab", "dz_id": 364582, "dz_name": "Gaab", "fans": 642876, "match": "exact"}
 {"id": 791, "name": "MC Mr. Catra", "dz_id": 303097941, "dz_name": "MC MR CATRA", "fans": 0, "match": "exact"}
-{"id": 792, "name": "Safadão", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 792, "name": "Safadão", "dz_id": 4611283, "dz_name": "Wesley Safadão", "fans": 5001915, "match": "exact"}
 {"id": 793, "name": "Mateus Carrilho", "dz_id": 5822078, "dz_name": "Mateus Carrilho", "fans": 81801, "match": "exact"}
 {"id": 794, "name": "MC Ruanzinho", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
 {"id": 796, "name": "MC Biel", "dz_id": 5895819, "dz_name": "Mc Biel", "fans": 8050, "match": "exact"}
 {"id": 799, "name": "MC Orelha", "dz_id": 5061093, "dz_name": "Mc Orelha", "fans": 5609, "match": "exact"}
-{"id": 800, "name": "The Black Eyed Peas", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 800, "name": "The Black Eyed Peas", "dz_id": 1020109, "dz_name": "Black Eyed Peas", "fans": 6091538, "match": "exact"}
 {"id": 801, "name": "CNCO", "dz_id": 9759672, "dz_name": "CNCO", "fans": 1212095, "match": "exact"}
 {"id": 802, "name": "Jhay Cortez", "dz_id": 13098657, "dz_name": "Jhay Cortez", "fans": 674138, "match": "exact"}
 {"id": 804, "name": "MC Gynno", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
@@ -734,7 +734,7 @@
 {"id": 817, "name": "Mc Denny", "dz_id": 11821447, "dz_name": "MC Denny", "fans": 9859, "match": "exact"}
 {"id": 819, "name": "MC Poze", "dz_id": 63912482, "dz_name": "Mc Poze", "fans": 3895, "match": "exact"}
 {"id": 825, "name": "Lucas Beat", "dz_id": 84711362, "dz_name": "Lucas Beat", "fans": 15, "match": "exact"}
-{"id": 826, "name": "Murillo Huff", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 826, "name": "Murillo Huff", "dz_id": 7810466, "dz_name": "Murilo Huff", "fans": 1292040, "match": "exact"}
 {"id": 829, "name": "Flay", "dz_id": 4450323, "dz_name": "Flay", "fans": 18765, "match": "exact"}
 {"id": 831, "name": "Cacau Oliver", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
 {"id": 832, "name": "Gabily", "dz_id": 8700894, "dz_name": "Gabily", "fans": 46848, "match": "exact"}
@@ -773,12 +773,12 @@
 {"id": 873, "name": "Banda Eva", "dz_id": 14531, "dz_name": "Banda Eva", "fans": 278700, "match": "exact"}
 {"id": 874, "name": "Durval Lelys", "dz_id": 3431371, "dz_name": "Durval Lelys", "fans": 74419, "match": "exact"}
 {"id": 875, "name": "Chiclete com Banana", "dz_id": 298143, "dz_name": "Chiclete Com Banana", "fans": 246607, "match": "exact"}
-{"id": 876, "name": "Jammil e Uma Cerveja", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 876, "name": "Jammil e Uma Cerveja", "dz_id": 362606, "dz_name": "Jammil E Uma Noites", "fans": 67557, "match": "exact"}
 {"id": 877, "name": "Natiruts", "dz_id": 16124, "dz_name": "Natiruts", "fans": 3121363, "match": "exact"}
 {"id": 878, "name": "Teresa Cristina", "dz_id": 12441, "dz_name": "Teresa Cristina", "fans": 83555, "match": "exact"}
 {"id": 879, "name": "Gaby Amarantos", "dz_id": 1233002, "dz_name": "Gaby Amarantos", "fans": 180063, "match": "exact"}
 {"id": 880, "name": "Joelma", "dz_id": 266598, "dz_name": "Joelma", "fans": 197236, "match": "exact"}
-{"id": 881, "name": "Barões da Pisadinha", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 881, "name": "Barões da Pisadinha", "dz_id": 61474832, "dz_name": "Os Barões Da Pisadinha", "fans": 4111669, "match": "exact"}
 {"id": 882, "name": "Zé Felipe", "dz_id": 5576810, "dz_name": "Zé Felipe", "fans": 2643905, "match": "exact"}
 {"id": 883, "name": "Vitor Fernandes", "dz_id": 7317188, "dz_name": "Vitor Fernandes", "fans": 741980, "match": "exact"}
 {"id": 884, "name": "Tarcísio do Acordeon", "dz_id": 84292982, "dz_name": "Tarcísio do Acordeon", "fans": 1802379, "match": "exact"}
@@ -849,7 +849,7 @@
 {"id": 949, "name": "Art Popular", "dz_id": 242505, "dz_name": "Art Popular", "fans": 415562, "match": "exact"}
 {"id": 950, "name": "Exaltasamba", "dz_id": 243657, "dz_name": "Exaltasamba", "fans": 1311944, "match": "exact"}
 {"id": 951, "name": "Raça Negra", "dz_id": 315082, "dz_name": "Raça Negra", "fans": 2067506, "match": "exact"}
-{"id": 952, "name": "Fundo de Quintal", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 952, "name": "Fundo de Quintal", "dz_id": 144342, "dz_name": "Grupo Fundo De Quintal", "fans": 551786, "match": "exact"}
 {"id": 953, "name": "Sebastián Yatra", "dz_id": 5266156, "dz_name": "Sebastian Yatra", "fans": 2375525, "match": "exact"}
 {"id": 954, "name": "Elba Ramalho", "dz_id": 15853, "dz_name": "Elba Ramalho", "fans": 484961, "match": "exact"}
 {"id": 955, "name": "Luiz Gonzaga", "dz_id": 54185, "dz_name": "Luiz Gonzaga", "fans": 418267, "match": "exact"}
@@ -896,7 +896,7 @@
 {"id": 1001, "name": "Arlindo Cruz", "dz_id": 494525, "dz_name": "Arlindo Cruz", "fans": 856248, "match": "exact"}
 {"id": 1002, "name": "Gilsons", "dz_id": 52942802, "dz_name": "Gilsons", "fans": 117276, "match": "exact"}
 {"id": 1003, "name": "Elis Regina", "dz_id": 15827, "dz_name": "Elis Regina", "fans": 915765, "match": "exact"}
-{"id": 1004, "name": "Tom Jobim", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 1004, "name": "Tom Jobim", "dz_id": 4085, "dz_name": "Antônio Carlos Jobim", "fans": 569124, "match": "exact"}
 {"id": 1005, "name": "João Gilberto", "dz_id": 5168, "dz_name": "João Gilberto", "fans": 334143, "match": "exact"}
 {"id": 1006, "name": "Vinicius de Moraes", "dz_id": 1968, "dz_name": "Vinicius de Moraes", "fans": 277104, "match": "exact"}
 {"id": 1007, "name": "Clara Nunes", "dz_id": 12524, "dz_name": "Clara Nunes", "fans": 164625, "match": "exact"}
@@ -1008,8 +1008,8 @@
 {"id": 1136, "name": "Jammil e Uma Gata", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
 {"id": 1137, "name": "Hariel", "dz_id": 6866755, "dz_name": "Hariel", "fans": 13785, "match": "exact"}
 {"id": 1138, "name": "Hungria Hip Hop", "dz_id": 264640232, "dz_name": "Hungria Hip Hop", "fans": 1350, "match": "exact"}
-{"id": 1139, "name": "Felipe Ret", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
-{"id": 1141, "name": "Bethânia", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 1139, "name": "Felipe Ret", "dz_id": 5049074, "dz_name": "Filipe Ret", "fans": 2109931, "match": "exact"}
+{"id": 1141, "name": "Bethânia", "dz_id": 15588, "dz_name": "Maria Bethânia", "fans": 638177, "match": "exact"}
 {"id": 1142, "name": "Ricky Martin", "dz_id": 2789, "dz_name": "Ricky Martin", "fans": 2214065, "match": "exact"}
 {"id": 1143, "name": "Neymar", "dz_id": 5595723, "dz_name": "Neymar", "fans": 1562, "match": "exact"}
 {"id": 1144, "name": "Matheus Fernandes", "dz_id": 5566782, "dz_name": "Matheus Fernandes", "fans": 599097, "match": "exact"}
@@ -1033,7 +1033,7 @@
 {"id": 1166, "name": "Luan Pereira", "dz_id": 122123672, "dz_name": "Luan Pereira", "fans": 496126, "match": "exact"}
 {"id": 1167, "name": "Belo & Vizinho", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
 {"id": 1168, "name": "Péricles & Dilsinho", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
-{"id": 1169, "name": "MC Anitta", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 1169, "name": "MC Anitta", "dz_id": 4390053, "dz_name": "Anitta", "fans": 7391137, "match": "exact"}
 {"id": 1170, "name": "Pocah", "dz_id": 66952022, "dz_name": "POCAH", "fans": 1144412, "match": "exact"}
 {"id": 1171, "name": "Tiago Iorc", "dz_id": 1294975, "dz_name": "TIAGO IORC", "fans": 938507, "match": "exact"}
 {"id": 1172, "name": "Melim", "dz_id": 9708982, "dz_name": "Melim", "fans": 1843105, "match": "exact"}
@@ -1156,7 +1156,7 @@
 {"id": 1305, "name": "Big Kenny", "dz_id": 392463, "dz_name": "Big Kenny", "fans": 670, "match": "exact"}
 {"id": 1306, "name": "Big & Rich", "dz_id": 7739, "dz_name": "Big & Rich", "fans": 31563, "match": "exact"}
 {"id": 1308, "name": "Rascal Flatts", "dz_id": 315, "dz_name": "Rascal Flatts", "fans": 234623, "match": "exact"}
-{"id": 1309, "name": "Dixie Chicks", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 1309, "name": "Dixie Chicks", "dz_id": 281865, "dz_name": "The Chicks", "fans": 113679, "match": "exact"}
 {"id": 1310, "name": "Zac Brown Band", "dz_id": 210016, "dz_name": "Zac Brown Band", "fans": 324475, "match": "exact"}
 {"id": 1311, "name": "Sturgill Simpson", "dz_id": 4044591, "dz_name": "Sturgill Simpson", "fans": 18980, "match": "exact"}
 {"id": 1312, "name": "Tyler Childers", "dz_id": 5801503, "dz_name": "Tyler Childers", "fans": 40980, "match": "exact"}
@@ -1187,7 +1187,7 @@
 {"id": 1342, "name": "Callista Clark", "dz_id": 122446612, "dz_name": "Callista Clark", "fans": 415, "match": "exact"}
 {"id": 1343, "name": "Priscilla Block", "dz_id": 12595463, "dz_name": "Priscilla Block", "fans": 2131, "match": "exact"}
 {"id": 1344, "name": "Lily Rose", "dz_id": 3617801, "dz_name": "Lily Rose", "fans": 1564, "match": "exact"}
-{"id": 1345, "name": "Bob Marley", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 1345, "name": "Bob Marley", "dz_id": 719, "dz_name": "Bob Marley & The Wailers", "fans": 12281462, "match": "exact"}
 {"id": 1346, "name": "Shaggy", "dz_id": 461, "dz_name": "Shaggy", "fans": 872137, "match": "exact"}
 {"id": 1347, "name": "Beenie Man", "dz_id": 512, "dz_name": "Beenie Man", "fans": 400457, "match": "exact"}
 {"id": 1348, "name": "Bounty Killer", "dz_id": 10762, "dz_name": "Bounty Killer", "fans": 67289, "match": "exact"}
@@ -1428,7 +1428,7 @@
 {"id": 1643, "name": "JVKE", "dz_id": 14486481, "dz_name": "Jvke", "fans": 141419, "match": "exact"}
 {"id": 1644, "name": "Bipolar Sunshine", "dz_id": 4726410, "dz_name": "Bipolar Sunshine", "fans": 16803, "match": "exact"}
 {"id": 1645, "name": "K-391", "dz_id": 1722651, "dz_name": "K-391", "fans": 250897, "match": "exact"}
-{"id": 1646, "name": "Lay Zhang", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 1646, "name": "Lay Zhang", "dz_id": 1644588, "dz_name": "LAY", "fans": 89371, "match": "exact"}
 {"id": 1647, "name": "Throttle", "dz_id": 1235717, "dz_name": "Throttle", "fans": 14287, "match": "exact"}
 {"id": 1648, "name": "Lights", "dz_id": 81444, "dz_name": "LIGHTS", "fans": 70842, "match": "exact"}
 {"id": 1649, "name": "Craig David", "dz_id": 110, "dz_name": "Craig David", "fans": 320525, "match": "exact"}
@@ -1439,7 +1439,7 @@
 {"id": 1655, "name": "Mercer", "dz_id": 335085, "dz_name": "Mercer", "fans": 22358, "match": "exact"}
 {"id": 1656, "name": "Aminé", "dz_id": 10792606, "dz_name": "Aminé", "fans": 102766, "match": "exact"}
 {"id": 1657, "name": "Grabbitz", "dz_id": 4372468, "dz_name": "Grabbitz", "fans": 8019, "match": "exact"}
-{"id": 1658, "name": "Travi$ Scott", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 1658, "name": "Travi$ Scott", "dz_id": 4495513, "dz_name": "Travis Scott", "fans": 3123121, "match": "exact"}
 {"id": 1659, "name": "Zyra", "dz_id": 6229902, "dz_name": "Zyra", "fans": 576, "match": "exact"}
 {"id": 1660, "name": "Thomas Wesley", "dz_id": 8709232, "dz_name": "Thomas Wesley", "fans": 0, "match": "exact"}
 {"id": 1661, "name": "BullySongs", "dz_id": 6356948, "dz_name": "BullySongs", "fans": 195, "match": "exact"}
@@ -1531,7 +1531,7 @@
 {"id": 1755, "name": "Koba LaD", "dz_id": 14621667, "dz_name": "Koba LaD", "fans": 2670952, "match": "exact"}
 {"id": 1756, "name": "Kalash", "dz_id": 73018, "dz_name": "Kalash", "fans": 773832, "match": "exact"}
 {"id": 1757, "name": "Dadju", "dz_id": 4803754, "dz_name": "Dadju", "fans": 3254464, "match": "exact"}
-{"id": 1758, "name": "Maître Gims", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 1758, "name": "Maître Gims", "dz_id": 4429712, "dz_name": "GIMS", "fans": 6797638, "match": "exact"}
 {"id": 1759, "name": "Aya Nakamura", "dz_id": 8909272, "dz_name": "Aya Nakamura", "fans": 2667974, "match": "exact"}
 {"id": 1760, "name": "Wejdene", "dz_id": 80681022, "dz_name": "Wejdene", "fans": 522080, "match": "exact"}
 {"id": 1761, "name": "Vegedream", "dz_id": 9134324, "dz_name": "Vegedream", "fans": 937854, "match": "exact"}
@@ -1621,7 +1621,7 @@
 {"id": 1877, "name": "Camille", "dz_id": 646, "dz_name": "Camille", "fans": 142160, "match": "exact"}
 {"id": 1878, "name": "Zaz", "dz_id": 71069, "dz_name": "ZAZ", "fans": 870214, "match": "exact"}
 {"id": 1879, "name": "Carla Bruni", "dz_id": 1038, "dz_name": "Carla Bruni", "fans": 138355, "match": "exact"}
-{"id": 1881, "name": "Cœur de Pirate", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 1881, "name": "Cœur de Pirate", "dz_id": 174351, "dz_name": "Coeur De Pirate", "fans": 939893, "match": "exact"}
 {"id": 1882, "name": "Calogero", "dz_id": 29, "dz_name": "Calogero", "fans": 1162740, "match": "exact"}
 {"id": 1883, "name": "Patrick Fiori", "dz_id": 755, "dz_name": "Patrick Fiori", "fans": 576177, "match": "exact"}
 {"id": 1885, "name": "Garou", "dz_id": 754, "dz_name": "Garou", "fans": 585452, "match": "exact"}
@@ -1776,7 +1776,7 @@
 {"id": 2126, "name": "Icona Pop", "dz_id": 961592, "dz_name": "Icona Pop", "fans": 619857, "match": "exact"}
 {"id": 2127, "name": "Seinabo Sey", "dz_id": 4336474, "dz_name": "Seinabo Sey", "fans": 44102, "match": "exact"}
 {"id": 2128, "name": "Veronica Maggio", "dz_id": 74439, "dz_name": "Veronica Maggio", "fans": 20312, "match": "exact"}
-{"id": 2130, "name": "Aurora Aksnes", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 2130, "name": "Aurora Aksnes", "dz_id": 7699874, "dz_name": "AURORA", "fans": 552438, "match": "exact"}
 {"id": 2131, "name": "Dagny", "dz_id": 4086636, "dz_name": "Dagny", "fans": 9101, "match": "exact"}
 {"id": 2132, "name": "Astrid S", "dz_id": 7841120, "dz_name": "Astrid S", "fans": 54587, "match": "exact"}
 {"id": 2133, "name": "Marcus & Martinus", "dz_id": 3697701, "dz_name": "Marcus & Martinus", "fans": 85942, "match": "exact"}
@@ -2040,7 +2040,7 @@
 {"id": 2471, "name": "Tananai", "dz_id": 52115362, "dz_name": "Tananai", "fans": 21891, "match": "exact"}
 {"id": 2472, "name": "Coma_Cose", "dz_id": 12509056, "dz_name": "Coma_Cose", "fans": 5652, "match": "exact"}
 {"id": 2475, "name": "Noemi", "dz_id": 171625, "dz_name": "Noemi", "fans": 32554, "match": "exact"}
-{"id": 2476, "name": "Emma Marrone", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 2476, "name": "Emma Marrone", "dz_id": 317143881, "dz_name": "EMMA", "fans": 20845, "match": "exact"}
 {"id": 2477, "name": "Alessandra Amoroso", "dz_id": 195383, "dz_name": "Alessandra Amoroso", "fans": 210654, "match": "exact"}
 {"id": 2478, "name": "Marco Mengoni", "dz_id": 390032, "dz_name": "Marco Mengoni", "fans": 276246, "match": "exact"}
 {"id": 2483, "name": "Biagio Antonacci", "dz_id": 7304, "dz_name": "Biagio Antonacci", "fans": 137727, "match": "exact"}
@@ -2167,7 +2167,7 @@
 {"id": 2665, "name": "Babymetal", "dz_id": 7805012, "dz_name": "BABYMETAL", "fans": 177707, "match": "exact"}
 {"id": 2666, "name": "ONE OK ROCK", "dz_id": 469713, "dz_name": "ONE OK ROCK", "fans": 131331, "match": "exact"}
 {"id": 2667, "name": "Perfume", "dz_id": 515029, "dz_name": "Perfume", "fans": 17908, "match": "exact"}
-{"id": 2668, "name": "Ty Dolla Sign", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 2668, "name": "Ty Dolla Sign", "dz_id": 4438587, "dz_name": "Ty Dolla $ign", "fans": 940127, "match": "exact"}
 {"id": 2669, "name": "Lauv", "dz_id": 4677655, "dz_name": "Lauv", "fans": 416867, "match": "exact"}
 {"id": 2670, "name": "Benny Blanco", "dz_id": 1547598, "dz_name": "Benny Blanco", "fans": 252765, "match": "exact"}
 {"id": 2671, "name": "Swizz Beatz", "dz_id": 15383, "dz_name": "Swizz Beatz", "fans": 23458, "match": "exact"}
@@ -2345,7 +2345,7 @@
 {"id": 2858, "name": "Eslabon Armado", "dz_id": 85874042, "dz_name": "Eslabon Armado", "fans": 320282, "match": "exact"}
 {"id": 2859, "name": "Carin León", "dz_id": 14539467, "dz_name": "Carin Leon", "fans": 1060555, "match": "exact"}
 {"id": 2860, "name": "Christian Nodal", "dz_id": 9763952, "dz_name": "Christian Nodal", "fans": 2510680, "match": "exact"}
-{"id": 2861, "name": "Banda MS", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 2861, "name": "Banda MS", "dz_id": 50683152, "dz_name": "Banda MS de Sergio Lizárraga", "fans": 2803126, "match": "exact"}
 {"id": 2862, "name": "Calibre 50", "dz_id": 1530946, "dz_name": "Calibre 50", "fans": 2013155, "match": "exact"}
 {"id": 2863, "name": "Grupo Firme", "dz_id": 9896010, "dz_name": "Grupo Firme", "fans": 1450368, "match": "exact"}
 {"id": 2864, "name": "Los Dos Carnales", "dz_id": 14858167, "dz_name": "Los Dos Carnales", "fans": 488667, "match": "exact"}
@@ -2498,7 +2498,7 @@
 {"id": 3083, "name": "Foxy Brown", "dz_id": 2650, "dz_name": "Foxy Brown", "fans": 38029, "match": "exact"}
 {"id": 3084, "name": "Mary Mary", "dz_id": 11174, "dz_name": "Mary Mary", "fans": 92887, "match": "exact"}
 {"id": 3085, "name": "Kirk Franklin", "dz_id": 295, "dz_name": "Kirk Franklin", "fans": 285842, "match": "exact"}
-{"id": 3086, "name": "The Fugees", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3086, "name": "The Fugees", "dz_id": 629, "dz_name": "Fugees", "fans": 448045, "match": "exact"}
 {"id": 3087, "name": "Pras", "dz_id": 2536, "dz_name": "Pras", "fans": 11618, "match": "exact"}
 {"id": 3088, "name": "Bradley Cooper", "dz_id": 7735426, "dz_name": "Bradley Cooper", "fans": 367441, "match": "exact"}
 {"id": 3089, "name": "Hozier", "dz_id": 5062414, "dz_name": "Hozier", "fans": 1405018, "match": "exact"}
@@ -2540,7 +2540,7 @@
 {"id": 3127, "name": "Tom Walker", "dz_id": 5276754, "dz_name": "Tom Walker", "fans": 452767, "match": "exact"}
 {"id": 3128, "name": "Lewis Capaldi", "dz_id": 12088868, "dz_name": "Lewis Capaldi", "fans": 1194580, "match": "exact"}
 {"id": 3129, "name": "Rudimental", "dz_id": 174348, "dz_name": "Rudimental", "fans": 585341, "match": "exact"}
-{"id": 3130, "name": "Years & Years", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3130, "name": "Years & Years", "dz_id": 4023815, "dz_name": "Olly Alexander (Years & Years)", "fans": 945600, "match": "exact"}
 {"id": 3131, "name": "George Ezra", "dz_id": 5241932, "dz_name": "George Ezra", "fans": 1287245, "match": "exact"}
 {"id": 3132, "name": "Zayn", "dz_id": 9761322, "dz_name": "ZAYN", "fans": 2701360, "match": "exact"}
 {"id": 3134, "name": "Little Mix", "dz_id": 1538640, "dz_name": "Little Mix", "fans": 3744734, "match": "exact"}
@@ -2660,7 +2660,7 @@
 {"id": 3255, "name": "Mumford & Sons", "dz_id": 288092, "dz_name": "Mumford & Sons", "fans": 1058787, "match": "exact"}
 {"id": 3256, "name": "The Black Keys", "dz_id": 2483, "dz_name": "The Black Keys", "fans": 1093839, "match": "exact"}
 {"id": 3257, "name": "Santana", "dz_id": 553, "dz_name": "Santana", "fans": 1323282, "match": "exact"}
-{"id": 3258, "name": "Carlos Santana", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3258, "name": "Carlos Santana", "dz_id": 553, "dz_name": "Santana", "fans": 1323284, "match": "exact"}
 {"id": 3259, "name": "Rob Thomas", "dz_id": 1761, "dz_name": "Rob Thomas", "fans": 52616, "match": "exact"}
 {"id": 3260, "name": "Run-DMC", "dz_id": 79236, "dz_name": "Run-DMC", "fans": 290908, "match": "exact"}
 {"id": 3261, "name": "Black Sabbath", "dz_id": 647, "dz_name": "Black Sabbath", "fans": 3022445, "match": "exact"}
@@ -2677,7 +2677,7 @@
 {"id": 3274, "name": "Eddie Vedder", "dz_id": 17030, "dz_name": "Eddie Vedder", "fans": 446508, "match": "exact"}
 {"id": 3275, "name": "Stone Temple Pilots", "dz_id": 4435, "dz_name": "Stone Temple Pilots", "fans": 603464, "match": "exact"}
 {"id": 3276, "name": "Alice in Chains", "dz_id": 691, "dz_name": "Alice in Chains", "fans": 1291348, "match": "exact"}
-{"id": 3277, "name": "Smashing Pumpkins", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3277, "name": "Smashing Pumpkins", "dz_id": 193331, "dz_name": "The Smashing Pumpkins", "fans": 1761996, "match": "exact"}
 {"id": 3278, "name": "Weezer", "dz_id": 418, "dz_name": "Weezer", "fans": 725939, "match": "exact"}
 {"id": 3281, "name": "Blink-182", "dz_id": 409, "dz_name": "blink-182", "fans": 2325524, "match": "exact"}
 {"id": 3282, "name": "Sum 41", "dz_id": 459, "dz_name": "Sum 41", "fans": 1355809, "match": "exact"}
@@ -2731,7 +2731,7 @@
 {"id": 3347, "name": "Ryan Adams", "dz_id": 1225, "dz_name": "Ryan Adams", "fans": 60876, "match": "exact"}
 {"id": 3348, "name": "Counting Crows", "dz_id": 321, "dz_name": "Counting Crows", "fans": 422866, "match": "exact"}
 {"id": 3350, "name": "Matchbox Twenty", "dz_id": 2133, "dz_name": "Matchbox Twenty", "fans": 198475, "match": "exact"}
-{"id": 3351, "name": "Goo Goo Dolls", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3351, "name": "Goo Goo Dolls", "dz_id": 65791, "dz_name": "The Goo Goo Dolls", "fans": 456408, "match": "exact"}
 {"id": 3357, "name": "PJ Harvey", "dz_id": 1544, "dz_name": "PJ Harvey", "fans": 362185, "match": "exact"}
 {"id": 3358, "name": "Cat Power", "dz_id": 1039, "dz_name": "Cat Power", "fans": 168899, "match": "exact"}
 {"id": 3359, "name": "Feist", "dz_id": 644, "dz_name": "Feist", "fans": 200957, "match": "exact"}
@@ -2761,7 +2761,7 @@
 {"id": 3394, "name": "Katie Crutchfield", "dz_id": 9147326, "dz_name": "Katie Crutchfield", "fans": 10, "match": "exact"}
 {"id": 3395, "name": "Courtney Barnett", "dz_id": 1701387, "dz_name": "Courtney Barnett", "fans": 55855, "match": "exact"}
 {"id": 3396, "name": "Kurt Vile", "dz_id": 294912, "dz_name": "Kurt Vile", "fans": 53978, "match": "exact"}
-{"id": 3397, "name": "War on Drugs", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3397, "name": "War on Drugs", "dz_id": 73424, "dz_name": "The War On Drugs", "fans": 191997, "match": "exact"}
 {"id": 3398, "name": "Kevin Morby", "dz_id": 5326126, "dz_name": "Kevin Morby", "fans": 37904, "match": "exact"}
 {"id": 3399, "name": "Ty Segall", "dz_id": 406900, "dz_name": "Ty Segall", "fans": 31770, "match": "exact"}
 {"id": 3401, "name": "Osees", "dz_id": 80652472, "dz_name": "Osees", "fans": 6468, "match": "exact"}
@@ -2779,7 +2779,7 @@
 {"id": 3416, "name": "Kool & the Gang", "dz_id": 305, "dz_name": "Kool & The Gang", "fans": 923608, "match": "exact"}
 {"id": 3417, "name": "Chic", "dz_id": 2640, "dz_name": "Chic", "fans": 390453, "match": "exact"}
 {"id": 3418, "name": "Quincy Jones", "dz_id": 978, "dz_name": "Quincy Jones", "fans": 290126, "match": "exact"}
-{"id": 3419, "name": "The Jackson 5", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3419, "name": "The Jackson 5", "dz_id": 75332, "dz_name": "Jackson 5", "fans": 1588561, "match": "exact"}
 {"id": 3420, "name": "Luther Vandross", "dz_id": 521, "dz_name": "Luther Vandross", "fans": 574598, "match": "exact"}
 {"id": 3421, "name": "Barry White", "dz_id": 34, "dz_name": "Barry White", "fans": 1131416, "match": "exact"}
 {"id": 3422, "name": "Al Green", "dz_id": 2369, "dz_name": "Al Green", "fans": 442848, "match": "exact"}
@@ -2851,9 +2851,9 @@
 {"id": 3500, "name": "Maceo Parker", "dz_id": 5218, "dz_name": "Maceo Parker", "fans": 34190, "match": "exact"}
 {"id": 3501, "name": "Fred Wesley", "dz_id": 93393, "dz_name": "Fred Wesley", "fans": 23220, "match": "exact"}
 {"id": 3502, "name": "Tower of Power", "dz_id": 247, "dz_name": "Tower of Power", "fans": 26114, "match": "exact"}
-{"id": 3504, "name": "Isley Brothers", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3504, "name": "Isley Brothers", "dz_id": 732, "dz_name": "The Isley Brothers", "fans": 454833, "match": "exact"}
 {"id": 3506, "name": "Spinners", "dz_id": 64766, "dz_name": "Spinners", "fans": 10708, "match": "exact"}
-{"id": 3507, "name": "The Four Tops", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3507, "name": "The Four Tops", "dz_id": 2938, "dz_name": "Four Tops", "fans": 152997, "match": "exact"}
 {"id": 3508, "name": "Marvin Gaye & Tammi Terrell", "dz_id": 3247, "dz_name": "Marvin Gaye & Tammi Terrell", "fans": 5470, "match": "exact"}
 {"id": 3509, "name": "Nick Ashford", "dz_id": 4128556, "dz_name": "Nick Ashford", "fans": 8, "match": "exact"}
 {"id": 3510, "name": "Valerie Simpson", "dz_id": 152086, "dz_name": "Valerie Simpson", "fans": 246, "match": "exact"}
@@ -2879,7 +2879,7 @@
 {"id": 3551, "name": "Marvin Gaye & Kim Weston", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
 {"id": 3552, "name": "Stevie Wonder & Syreeta", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
 {"id": 3553, "name": "Michael McDonald", "dz_id": 3877, "dz_name": "Michael McDonald", "fans": 46349, "match": "exact"}
-{"id": 3554, "name": "Doobie Brothers", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3554, "name": "Doobie Brothers", "dz_id": 1144, "dz_name": "The Doobie Brothers", "fans": 135133, "match": "exact"}
 {"id": 3555, "name": "Phoebe Snow", "dz_id": 14117, "dz_name": "Phoebe Snow", "fans": 751, "match": "exact"}
 {"id": 3556, "name": "Grover Washington Jr.", "dz_id": 4123, "dz_name": "Grover Washington, Jr.", "fans": 80408, "match": "exact"}
 {"id": 3557, "name": "Bob James", "dz_id": 4757, "dz_name": "Bob James", "fans": 29989, "match": "exact"}
@@ -3085,7 +3085,7 @@
 {"id": 3805, "name": "Big K.R.I.T.", "dz_id": 493082, "dz_name": "Big K.R.I.T.", "fans": 47068, "match": "exact"}
 {"id": 3806, "name": "Curren$y", "dz_id": 402158, "dz_name": "Curren$y", "fans": 76508, "match": "exact"}
 {"id": 3807, "name": "E-40", "dz_id": 5056, "dz_name": "E-40", "fans": 210642, "match": "exact"}
-{"id": 3808, "name": "Too $hort", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3808, "name": "Too $hort", "dz_id": 504125, "dz_name": "Too Short", "fans": 150311, "match": "exact"}
 {"id": 3809, "name": "Styles P", "dz_id": 81070, "dz_name": "Styles P", "fans": 43656, "match": "exact"}
 {"id": 3810, "name": "Sheek Louch", "dz_id": 95697, "dz_name": "Sheek Louch", "fans": 5822, "match": "exact"}
 {"id": 3811, "name": "D-Block", "dz_id": 300218, "dz_name": "D-Block", "fans": 674, "match": "exact"}
@@ -3158,7 +3158,7 @@
 {"id": 3879, "name": "Jah Prayzah", "dz_id": 4445100, "dz_name": "Jah Prayzah", "fans": 12455, "match": "exact"}
 {"id": 3880, "name": "Mukudzeyi Mukombe", "dz_id": 12767259, "dz_name": "Mukudzeyi Mukombe", "fans": 3, "match": "exact"}
 {"id": 3881, "name": "ExQ", "dz_id": 5746296, "dz_name": "ExQ", "fans": 6099, "match": "exact"}
-{"id": 3882, "name": "Bombshell Grenade", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 3882, "name": "Bombshell Grenade", "dz_id": 53097452, "dz_name": "Bomb$hell Grenade", "fans": 28, "match": "exact"}
 {"id": 3883, "name": "Edith Weah", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
 {"id": 3884, "name": "Salif Keita", "dz_id": 1399, "dz_name": "Salif Keita", "fans": 104752, "match": "exact"}
 {"id": 3885, "name": "Lokua Kanza", "dz_id": 15967, "dz_name": "Lokua Kanza", "fans": 23895, "match": "exact"}
@@ -3331,10 +3331,10 @@
 {"id": 4052, "name": "Nação Zumbi", "dz_id": 99156, "dz_name": "Nação Zumbi", "fans": 162840, "match": "exact"}
 {"id": 4053, "name": "Raimundos", "dz_id": 66479, "dz_name": "Raimundos", "fans": 954964, "match": "exact"}
 {"id": 4054, "name": "Jota Quest", "dz_id": 13521, "dz_name": "Jota Quest", "fans": 1380613, "match": "exact"}
-{"id": 4055, "name": "Paralamas do Sucesso", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4055, "name": "Paralamas do Sucesso", "dz_id": 16230, "dz_name": "Os Paralamas do Sucesso", "fans": 1556769, "match": "exact"}
 {"id": 4056, "name": "Sepultura", "dz_id": 632, "dz_name": "Sepultura", "fans": 910525, "match": "exact"}
 {"id": 4057, "name": "Angra", "dz_id": 639, "dz_name": "Angra", "fans": 271078, "match": "exact"}
-{"id": 4058, "name": "Detonautas Roque Clube", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4058, "name": "Detonautas Roque Clube", "dz_id": 16256, "dz_name": "Detonautas", "fans": 564094, "match": "exact"}
 {"id": 4059, "name": "Supercombo", "dz_id": 469774, "dz_name": "Supercombo", "fans": 221932, "match": "exact"}
 {"id": 4060, "name": "Bsb", "dz_id": 607145, "dz_name": "Bsb", "fans": 163, "match": "exact"}
 {"id": 4061, "name": "Maskavo", "dz_id": 16318, "dz_name": "Maskavo", "fans": 290224, "match": "exact"}
@@ -3753,7 +3753,7 @@
 {"id": 4505, "name": "Ragheb Alama", "dz_id": 240998, "dz_name": "Ragheb Alama", "fans": 293690, "match": "exact"}
 {"id": 4506, "name": "Nawal El Zoghbi", "dz_id": 407332, "dz_name": "Nawal El Zoghbi", "fans": 245329, "match": "exact"}
 {"id": 4507, "name": "Kathem Al Saher", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
-{"id": 4508, "name": "Fayrouz", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4508, "name": "Fayrouz", "dz_id": 11258876, "dz_name": "موسى فيروز", "fans": 303, "match": "exact"}
 {"id": 4509, "name": "Marcel Khalife", "dz_id": 289629, "dz_name": "Marcel Khalife", "fans": 34753, "match": "exact"}
 {"id": 4510, "name": "Fairuz", "dz_id": 211187, "dz_name": "Fairuz", "fans": 518329, "match": "exact"}
 {"id": 4511, "name": "Myriam Fares", "dz_id": 477349, "dz_name": "Myriam Fares", "fans": 286562, "match": "exact"}
@@ -3774,7 +3774,7 @@
 {"id": 4526, "name": "Samira Said", "dz_id": 16450, "dz_name": "Samira Said", "fans": 391380, "match": "exact"}
 {"id": 4527, "name": "Latifa", "dz_id": 103051, "dz_name": "Latifa", "fans": 59275, "match": "exact"}
 {"id": 4528, "name": "Saber El Robaai", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
-{"id": 4529, "name": "Cheb Khaled", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4529, "name": "Cheb Khaled", "dz_id": 75354, "dz_name": "Khaled", "fans": 710121, "match": "exact"}
 {"id": 4530, "name": "Cheb Akil", "dz_id": 92777, "dz_name": "Cheb Akil", "fans": 112385, "match": "exact"}
 {"id": 4531, "name": "Intoxicated", "dz_id": 1330703, "dz_name": "Intoxicated", "fans": 667, "match": "exact"}
 {"id": 4532, "name": "El General", "dz_id": 185881, "dz_name": "El General", "fans": 86719, "match": "exact"}
@@ -3847,7 +3847,7 @@
 {"id": 4600, "name": "Gulsen", "dz_id": 124797, "dz_name": "Gülşen", "fans": 503175, "match": "exact"}
 {"id": 4601, "name": "Burak Kut", "dz_id": 91600, "dz_name": "Burak Kut", "fans": 3759, "match": "exact"}
 {"id": 4602, "name": "Cem Adrian", "dz_id": 295413, "dz_name": "Cem Adrian", "fans": 385564, "match": "exact"}
-{"id": 4603, "name": "Ibrahim Tatlises", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4603, "name": "Ibrahim Tatlises", "dz_id": 254617, "dz_name": "İbrahim Tatlıses", "fans": 377110, "match": "exact"}
 {"id": 4604, "name": "Ebru Gundes", "dz_id": 98036, "dz_name": "Ebru Gündes", "fans": 477049, "match": "exact"}
 {"id": 4605, "name": "Sibel Can", "dz_id": 4308, "dz_name": "Sibel Can", "fans": 208981, "match": "exact"}
 {"id": 4606, "name": "Orhan Gencebay", "dz_id": 113766, "dz_name": "Orhan Gencebay", "fans": 79198, "match": "exact"}
@@ -3977,24 +3977,24 @@
 {"id": 4731, "name": "Ruslana", "dz_id": 135221, "dz_name": "Ruslana", "fans": 4472, "match": "exact"}
 {"id": 4732, "name": "Alekseev", "dz_id": 6951931, "dz_name": "Alekseev", "fans": 12518, "match": "exact"}
 {"id": 4733, "name": "Loboda", "dz_id": 819827, "dz_name": "Loboda", "fans": 164575, "match": "exact"}
-{"id": 4734, "name": "Dima Bilan", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4734, "name": "Dima Bilan", "dz_id": 808834, "dz_name": "Дима Билан", "fans": 71238, "match": "exact"}
 {"id": 4735, "name": "Philipp Kirkorov", "dz_id": 6594954, "dz_name": "Philipp Kirkorov", "fans": 104, "match": "exact"}
 {"id": 4736, "name": "Alsou", "dz_id": 75629, "dz_name": "Alsou", "fans": 2330, "match": "exact"}
 {"id": 4737, "name": "Artik & Asti", "dz_id": 4315121, "dz_name": "Artik & Asti", "fans": 250447, "match": "exact"}
 {"id": 4738, "name": "Jony", "dz_id": 5569223, "dz_name": "JONY", "fans": 201494, "match": "exact"}
 {"id": 4739, "name": "Skryptonite", "dz_id": 159019692, "dz_name": "Skryptonite", "fans": 155, "match": "exact"}
 {"id": 4740, "name": "Mot", "dz_id": 1024301, "dz_name": "Mot", "fans": 1872, "match": "exact"}
-{"id": 4741, "name": "Egor Kreed", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4741, "name": "Egor Kreed", "dz_id": 5532315, "dz_name": "Егор Крид", "fans": 233539, "match": "exact"}
 {"id": 4742, "name": "NILETTO", "dz_id": 11967397, "dz_name": "NILETTO", "fans": 163642, "match": "exact"}
 {"id": 4743, "name": "Monetochka", "dz_id": 11546979, "dz_name": "monetochka", "fans": 5583, "match": "exact"}
-{"id": 4744, "name": "Zemfira", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4744, "name": "Zemfira", "dz_id": 4913467, "dz_name": "Земфира", "fans": 174811, "match": "exact"}
 {"id": 4745, "name": "Bi-2", "dz_id": 1366620, "dz_name": "Bi-2", "fans": 9571, "match": "exact"}
 {"id": 4747, "name": "Ariya", "dz_id": 452178, "dz_name": "Ariya", "fans": 147, "match": "exact"}
 {"id": 4748, "name": "t.A.T.u.", "dz_id": 37, "dz_name": "t.A.T.u.", "fans": 203930, "match": "exact"}
-{"id": 4749, "name": "Glukoza", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4749, "name": "Glukoza", "dz_id": 10639167, "dz_name": "Клуб Кавалера Глюка", "fans": 20, "match": "exact"}
 {"id": 4750, "name": "Serebro", "dz_id": 1658933, "dz_name": "Serebro", "fans": 77572, "match": "exact"}
 {"id": 4751, "name": "Nyusha", "dz_id": 4153481, "dz_name": "NYUSHA", "fans": 52577, "match": "exact"}
-{"id": 4752, "name": "Polina Gagarina", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4752, "name": "Polina Gagarina", "dz_id": 231374465, "dz_name": "Полина Гагарина", "fans": 545, "match": "exact"}
 {"id": 4753, "name": "Dimash Kudaibergen", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
 {"id": 4754, "name": "Gjon's Tears", "dz_id": 87185832, "dz_name": "Gjon's Tears", "fans": 8320, "match": "exact"}
 {"id": 4755, "name": "Valentina Monetta", "dz_id": 1669905, "dz_name": "Valentina Monetta", "fans": 1748, "match": "exact"}
@@ -4220,7 +4220,7 @@
 {"id": 4979, "name": "Maria Rita", "dz_id": 4334, "dz_name": "Maria Rita", "fans": 564124, "match": "exact"}
 {"id": 4980, "name": "Luiz Caldas", "dz_id": 200190, "dz_name": "Luiz Caldas", "fans": 59854, "match": "exact"}
 {"id": 4981, "name": "Jammil e Uma Gente", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
-{"id": 4982, "name": "Grupo Molejo", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 4982, "name": "Grupo Molejo", "dz_id": 281161, "dz_name": "Molejo", "fans": 263460, "match": "exact"}
 {"id": 4983, "name": "João Nogueira", "dz_id": 188610, "dz_name": "João Nogueira", "fans": 35683, "match": "exact"}
 {"id": 4984, "name": "Almir Guineto", "dz_id": 192616, "dz_name": "Almir Guineto", "fans": 215911, "match": "exact"}
 {"id": 4985, "name": "Sombrinha", "dz_id": 1403519, "dz_name": "Sombrinha", "fans": 77104, "match": "exact"}
@@ -4350,7 +4350,7 @@
 {"id": 5112, "name": "Barbados All Stars", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
 {"id": 5113, "name": "Ding Dong", "dz_id": 290890, "dz_name": "Ding Dong", "fans": 27702, "match": "exact"}
 {"id": 5114, "name": "Gaby Moreno", "dz_id": 401475, "dz_name": "Gaby Moreno", "fans": 65086, "match": "exact"}
-{"id": 5115, "name": "Nicki Jam", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 5115, "name": "Nicki Jam", "dz_id": 15691, "dz_name": "Nicky Jam", "fans": 6424480, "match": "exact"}
 {"id": 5116, "name": "The Beach Boys", "dz_id": 2179, "dz_name": "The Beach Boys", "fans": 719416, "match": "exact"}
 {"id": 5117, "name": "Brian Wilson", "dz_id": 10696, "dz_name": "Brian Wilson", "fans": 14046, "match": "exact"}
 {"id": 5118, "name": "Carl Wilson", "dz_id": 363204, "dz_name": "Carl Wilson", "fans": 552, "match": "exact"}
@@ -4453,7 +4453,7 @@
 {"id": 5218, "name": "Tom Hamilton", "dz_id": 325200, "dz_name": "Tom Hamilton", "fans": 988, "match": "exact"}
 {"id": 5223, "name": "Creedence Clearwater Revival", "dz_id": 2468, "dz_name": "Creedence Clearwater Revival", "fans": 1587036, "match": "exact"}
 {"id": 5224, "name": "Tom Fogerty", "dz_id": 4474831, "dz_name": "Tom Fogerty", "fans": 309, "match": "exact"}
-{"id": 5225, "name": "The Grateful Dead", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 5225, "name": "The Grateful Dead", "dz_id": 1785, "dz_name": "Grateful Dead", "fans": 135063, "match": "exact"}
 {"id": 5226, "name": "Jerry Garcia", "dz_id": 144331, "dz_name": "Jerry Garcia", "fans": 7459, "match": "exact"}
 {"id": 5227, "name": "Bob Weir", "dz_id": 192036, "dz_name": "Bob Weir", "fans": 4134, "match": "exact"}
 {"id": 5228, "name": "Phil Lesh", "dz_id": 71775, "dz_name": "Phil Lesh", "fans": 1497, "match": "exact"}
@@ -4733,7 +4733,7 @@
 {"id": 5530, "name": "Zac Farro", "dz_id": 5841427, "dz_name": "Zac Farro", "fans": 189, "match": "exact"}
 {"id": 5532, "name": "Gerard Way", "dz_id": 4408508, "dz_name": "Gerard Way", "fans": 63070, "match": "exact"}
 {"id": 5533, "name": "Editors", "dz_id": 1181, "dz_name": "Editors", "fans": 238618, "match": "exact"}
-{"id": 5534, "name": "Noel Gallagher", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 5534, "name": "Noel Gallagher", "dz_id": 1412054, "dz_name": "Noel Gallagher's High Flying Birds", "fans": 234913, "match": "exact"}
 {"id": 5535, "name": "Meg Duffy", "dz_id": 5290560, "dz_name": "Meg Duffy", "fans": 7, "match": "exact"}
 {"id": 5536, "name": "Chan Marshall", "dz_id": 4508672, "dz_name": "Chan Marshall", "fans": 832, "match": "exact"}
 {"id": 5537, "name": "Jon Hopkins", "dz_id": 258846, "dz_name": "Jon Hopkins", "fans": 98734, "match": "exact"}
@@ -4802,7 +4802,7 @@
 {"id": 5610, "name": "DJ Fresh", "dz_id": 490454, "dz_name": "DJ FRESH", "fans": 193036, "match": "exact"}
 {"id": 5611, "name": "KSI", "dz_id": 5472150, "dz_name": "KSI", "fans": 134470, "match": "exact"}
 {"id": 5612, "name": "Bootie Brown", "dz_id": 807633, "dz_name": "Bootie Brown", "fans": 254, "match": "exact"}
-{"id": 5613, "name": "ASAP Rocky", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 5613, "name": "ASAP Rocky", "dz_id": 1518490, "dz_name": "A$AP Rocky", "fans": 2098417, "match": "exact"}
 {"id": 5614, "name": "Lady Leshurr", "dz_id": 869538, "dz_name": "Lady Leshurr", "fans": 67588, "match": "exact"}
 {"id": 5615, "name": "Sampha", "dz_id": 525619, "dz_name": "SAMPHA", "fans": 85198, "match": "exact"}
 {"id": 5616, "name": "Tasha Tah", "dz_id": 617252, "dz_name": "Tasha Tah", "fans": 700, "match": "exact"}
@@ -4822,7 +4822,7 @@
 {"id": 5631, "name": "young_dolph", "dz_id": 4099751, "dz_name": "Young Dolph", "fans": 185436, "match": "exact"}
 {"id": 5632, "name": "NBA YoungBoy", "dz_id": 11940185, "dz_name": "NBA Young Boy", "fans": 3378, "match": "exact"}
 {"id": 5634, "name": "ski_mask", "dz_id": 824093, "dz_name": "Skimask", "fans": 60, "match": "exact"}
-{"id": 5635, "name": "Machine Gun Kelly", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 5635, "name": "Machine Gun Kelly", "dz_id": 428675, "dz_name": "mgk", "fans": 598490, "match": "exact"}
 {"id": 5637, "name": "j_rock", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
 {"id": 5638, "name": "Colbie Caillat", "dz_id": 14894, "dz_name": "Colbie Caillat", "fans": 665832, "match": "exact"}
 {"id": 5639, "name": "Gary Lightbody", "dz_id": 198661, "dz_name": "Gary Lightbody", "fans": 1763, "match": "exact"}
@@ -5038,14 +5038,14 @@
 {"id": 5984, "name": "Sofia Carson", "dz_id": 8425170, "dz_name": "Sofia Carson", "fans": 444245, "match": "exact"}
 {"id": 5985, "name": "Thomas Day", "dz_id": 5306800, "dz_name": "Thomas Day", "fans": 5295, "match": "exact"}
 {"id": 5986, "name": "Betty Who", "dz_id": 4059062, "dz_name": "Betty Who", "fans": 33161, "match": "exact"}
-{"id": 5988, "name": "Charlie XCX", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 5988, "name": "Charlie XCX", "dz_id": 1462230, "dz_name": "Charli xcx", "fans": 1879213, "match": "exact"}
 {"id": 5989, "name": "Kelli-Leigh", "dz_id": 442784, "dz_name": "Kelli-Leigh", "fans": 1495, "match": "exact"}
 {"id": 5990, "name": "Ashe", "dz_id": 1267252, "dz_name": "Ashe", "fans": 164332, "match": "exact"}
 {"id": 5991, "name": "Marley Marl", "dz_id": 371203, "dz_name": "Marley Marl", "fans": 3482, "match": "exact"}
 {"id": 5992, "name": "Scarface", "dz_id": 1951, "dz_name": "Scarface", "fans": 99011, "match": "exact"}
 {"id": 5993, "name": "Nate Dogg", "dz_id": 359, "dz_name": "Nate Dogg", "fans": 990912, "match": "exact"}
 {"id": 5994, "name": "KC and JoJo", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
-{"id": 5995, "name": "Puff Daddy", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 5995, "name": "Puff Daddy", "dz_id": 173581, "dz_name": "Diddy", "fans": 605489, "match": "exact"}
 {"id": 5996, "name": "Total", "dz_id": 14790, "dz_name": "Total", "fans": 9143, "match": "exact"}
 {"id": 5997, "name": "112", "dz_id": 272, "dz_name": "112", "fans": 146768, "match": "exact"}
 {"id": 5998, "name": "Redman", "dz_id": 7541, "dz_name": "Redman", "fans": 310562, "match": "exact"}
@@ -5320,8 +5320,8 @@
 {"id": 6306, "name": "Joyner Lucas", "dz_id": 5942214, "dz_name": "Joyner Lucas", "fans": 324359, "match": "exact"}
 {"id": 6308, "name": "Sean Ono Lennon", "dz_id": 4494367, "dz_name": "Sean Ono Lennon", "fans": 2507, "match": "exact"}
 {"id": 6309, "name": "Zella Day", "dz_id": 501825, "dz_name": "Zella Day", "fans": 31208, "match": "exact"}
-{"id": 6310, "name": "ASAP Ferg", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
-{"id": 6311, "name": "Bieber", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 6310, "name": "ASAP Ferg", "dz_id": 4341930, "dz_name": "A$AP Ferg", "fans": 330106, "match": "exact"}
+{"id": 6311, "name": "Bieber", "dz_id": 288166, "dz_name": "Justin Bieber", "fans": 11125209, "match": "exact"}
 {"id": 6312, "name": "CORSAK", "dz_id": 49003211, "dz_name": "CORSAK", "fans": 1790, "match": "exact"}
 {"id": 6313, "name": "Flying Lotus", "dz_id": 15933, "dz_name": "Flying Lotus", "fans": 87284, "match": "exact"}
 {"id": 6314, "name": "Baby Keem", "dz_id": 48947681, "dz_name": "Baby Keem", "fans": 152915, "match": "exact"}
@@ -5630,7 +5630,7 @@
 {"id": 6696, "name": "Mikey Dread", "dz_id": 11023, "dz_name": "Mikey Dread", "fans": 10518, "match": "exact"}
 {"id": 6697, "name": "Sophia Loren", "dz_id": 99654, "dz_name": "Sophia Loren", "fans": 823, "match": "exact"}
 {"id": 6698, "name": "Sharry Maan", "dz_id": 1191771, "dz_name": "Sharry Maan", "fans": 560, "match": "exact"}
-{"id": 6699, "name": "Enrique Bunbury", "dz_id": null, "dz_name": null, "fans": null, "match": "none"}
+{"id": 6699, "name": "Enrique Bunbury", "dz_id": 242817, "dz_name": "Bunbury", "fans": 964488, "match": "exact"}
 {"id": 6700, "name": "Desmond Child", "dz_id": 188223, "dz_name": "Desmond Child", "fans": 635, "match": "exact"}
 {"id": 6701, "name": "DJ Mental Theo's Bazzheadz", "dz_id": 4997700, "dz_name": "DJ Mental Theo's Bazzheadz", "fans": 34, "match": "exact"}
 {"id": 6702, "name": "Bimbo Jones", "dz_id": 202378, "dz_name": "Bimbo Jones", "fans": 1229, "match": "exact"}
