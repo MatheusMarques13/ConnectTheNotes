@@ -55,7 +55,11 @@ jobs:
     needs: shard
     if: always()
     steps:
+      # Full history: the publish step commits onto deezer-results, and pushing
+      # from a shallow clone is rejected.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Restore prior results
         run: |
@@ -98,10 +102,15 @@ jobs:
       - name: Publish to deezer-results branch
         run: |
           if [ ! -s audit_data/deezer/artist_fame.jsonl ]; then echo "no results"; exit 0; fi
+          # Commit ON TOP of the real branch tip, never force: deezer-results also
+          # carries the song verdicts and the multi-source audit data, and a
+          # force-push from this checkout would wipe them.
+          cp audit_data/deezer/artist_fame.jsonl /tmp/artist_fame.jsonl
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin deezer-results || true
-          git checkout -B deezer-results origin/deezer-results || git checkout -B deezer-results
+          git checkout deezer-results || git checkout -B deezer-results
+          mkdir -p audit_data/deezer
+          cp /tmp/artist_fame.jsonl audit_data/deezer/artist_fame.jsonl
           git add -f audit_data/deezer/artist_fame.jsonl
           git commit -m "Artist fame: Deezer fan counts ($(wc -l < audit_data/deezer/artist_fame.jsonl) artists)" || exit 0
           git push origin deezer-results

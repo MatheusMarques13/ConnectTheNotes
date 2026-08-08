@@ -25,7 +25,7 @@ OUT = os.path.join(HERE, "..", "frontend", "src", "data", "dataset.js")
 FAME_FILE = os.path.join(HERE, "artist_fame.json")
 # How many artists the random pickers may draw from. Small enough that a random
 # puzzle lands on a name players know; large enough that puzzles stay varied.
-POOL_SIZE = 900
+POOL_SIZE = 1000
 
 
 def slug(n):
@@ -118,23 +118,42 @@ def fame_scores(artists, songs):
         d_l = math.log(1 + deg[i]) / max_deg_l
         if i in fans:
             f_l = math.log10(1 + fans[i]) / max_fan_l
-            s = 0.72 * f_l + 0.28 * d_l
+            # Audience dominates. Degree only breaks ties and rewards collab-heavy
+            # artists — weight it any higher and legacy acts who simply don't do
+            # features (Nirvana, Queen, Ozzy) fall out of the pool again, which is
+            # the exact bias this score exists to correct.
+            s = 0.80 * f_l + 0.20 * d_l
         else:
             # No confident Deezer match: fall back to graph prominence only, at a
             # discount so an unmatched name never outranks a verified star.
             s = 0.55 * d_l
         scores[i] = int(round(1000 * max(0.0, min(1.0, s))))
-    return scores, deg, fans
+    return scores, deg, fans, adj
 
 
-def famous_pool(artists, scores, deg):
+# Lowercase/underscore handles ("kendji_girac") are leftovers from an earlier
+# generation pass. They are real artists but the label looks broken, so they are
+# never served as a random prompt.
+HANDLE_RE = re.compile(r"^[a-z0-9_]+$")
+
+
+def famous_pool(artists, scores, deg, adj):
     """The ids the random pickers are allowed to draw from.
 
     Everything else stays fully playable (search, chains, solutions) — this only
     governs what a *random* puzzle or the shuffle button may land on.
+
+    Degree-1 artists are admitted only when their single collaborator is itself
+    well known: that keeps Nirvana (-> David Bowie) and Destiny's Child
+    (-> Beyoncé) in play while leaving out acts whose only link is a name the
+    player has no chance of guessing.
     """
-    eligible = [a["id"] for a in artists if deg.get(a["id"], 0) >= 2]
-    eligible.sort(key=lambda i: -scores[i])
+    ok = {a["id"] for a in artists if not HANDLE_RE.match(a["name"])}
+    core = sorted((i for i in ok if deg.get(i, 0) >= 2), key=lambda i: -scores[i])
+    core_set = set(core[:POOL_SIZE])
+    bridged = [i for i in ok
+               if deg.get(i, 0) == 1 and next(iter(adj[i])) in core_set]
+    eligible = sorted(set(core) | set(bridged), key=lambda i: -scores[i])
     return eligible[:POOL_SIZE]
 
 
@@ -208,10 +227,10 @@ def write_js(artists, songs, pool):
 if __name__ == "__main__":
     artists, songs = build()
     report_components(artists, songs)
-    scores, deg, fans = fame_scores(artists, songs)
+    scores, deg, fans, adj = fame_scores(artists, songs)
     for a in artists:
         a["fame"] = scores[a["id"]]
-    pool = famous_pool(artists, scores, deg)
+    pool = famous_pool(artists, scores, deg, adj)
     write_js(artists, songs, pool)
     by_id = {a["id"]: a for a in artists}
     print(f"   fame: {len(fans)} artists with Deezer fan counts, "
