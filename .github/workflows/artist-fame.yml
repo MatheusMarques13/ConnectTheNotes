@@ -1,0 +1,107 @@
+name: Artist fame (Deezer fan counts)
+
+# Fetches a real popularity number (Deezer nb_fan) for every artist in
+# data/source_data.py so the random-puzzle picker can favour artists players
+# actually recognise. One request per artist, sharded across runners (distinct
+# IPs -> distinct Deezer quotas). Results are published to the
+# 'deezer-results' branch as audit_data/deezer/artist_fame.jsonl.
+# Trigger: manual dispatch, or a push touching .github/fame-kick.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/fame-kick']
+
+permissions:
+  contents: write
+
+jobs:
+  shard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore prior results
+        run: |
+          git fetch origin deezer-results:deezer-results || true
+          mkdir -p prior
+          if git cat-file -e deezer-results:audit_data/deezer/artist_fame.jsonl 2>/dev/null; then
+            git show deezer-results:audit_data/deezer/artist_fame.jsonl > prior/artist_fame.jsonl
+            wc -l prior/artist_fame.jsonl
+          fi
+
+      - name: Run fame shard
+        env:
+          FAME_OUT: out
+          FAME_PRIOR: prior/artist_fame.jsonl
+          SHARD_INDEX: ${{ matrix.shard }}
+          SHARD_TOTAL: '12'
+        run: python3 tools/artist_fame.py
+
+      - name: Upload shard results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fame-${{ matrix.shard }}
+          path: out/artist_fame.jsonl
+          if-no-files-found: ignore
+
+  merge:
+    runs-on: ubuntu-latest
+    needs: shard
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore prior results
+        run: |
+          git fetch origin deezer-results:deezer-results || true
+          mkdir -p prior
+          if git cat-file -e deezer-results:audit_data/deezer/artist_fame.jsonl 2>/dev/null; then
+            git show deezer-results:audit_data/deezer/artist_fame.jsonl > prior/artist_fame.jsonl
+          fi
+
+      - name: Download shard results
+        uses: actions/download-artifact@v4
+        with:
+          path: shards
+
+      - name: Merge (one row per artist; later rows win)
+        run: |
+          mkdir -p audit_data/deezer
+          python3 - <<'PY'
+          import glob, json, os
+          rows = {}
+          files = []
+          if os.path.exists('prior/artist_fame.jsonl'):
+              files.append('prior/artist_fame.jsonl')
+          files += sorted(glob.glob('shards/fame-*/artist_fame.jsonl'))
+          for f in files:
+              for line in open(f, encoding='utf-8'):
+                  try:
+                      r = json.loads(line)
+                  except Exception:
+                      continue
+                  if 'id' in r:
+                      rows[r['id']] = r
+          with open('audit_data/deezer/artist_fame.jsonl', 'w', encoding='utf-8') as out:
+              for k in sorted(rows):
+                  out.write(json.dumps(rows[k], ensure_ascii=False) + '\n')
+          matched = sum(1 for r in rows.values() if r.get('match') == 'exact')
+          print(f'merged={len(rows)} matched={matched}')
+          PY
+
+      - name: Publish to deezer-results branch
+        run: |
+          if [ ! -s audit_data/deezer/artist_fame.jsonl ]; then echo "no results"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin deezer-results || true
+          git checkout -B deezer-results origin/deezer-results || git checkout -B deezer-results
+          git add -f audit_data/deezer/artist_fame.jsonl
+          git commit -m "Artist fame: Deezer fan counts ($(wc -l < audit_data/deezer/artist_fame.jsonl) artists)" || exit 0
+          git push origin deezer-results
