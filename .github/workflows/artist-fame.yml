@@ -108,7 +108,12 @@ jobs:
           cp audit_data/deezer/artist_fame.jsonl /tmp/artist_fame.jsonl
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout deezer-results || git checkout -B deezer-results
+          # The merged file is untracked here but tracked on deezer-results, so
+          # checkout refuses to overwrite it — drop it first (it is safe in /tmp).
+          rm -f audit_data/deezer/artist_fame.jsonl
+          # No '-B' fallback: that resets the branch to this checkout's tree and
+          # would drop the song verdicts and multi-source data it also carries.
+          git checkout deezer-results
           mkdir -p audit_data/deezer
           cp /tmp/artist_fame.jsonl audit_data/deezer/artist_fame.jsonl
           git add -f audit_data/deezer/artist_fame.jsonl
