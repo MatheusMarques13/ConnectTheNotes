@@ -30,3 +30,51 @@
 {"a": "Post Malone", "b": "Lainey Wilson", "title": "Nosedive", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/2945220571", "credited": ["laineywilson", "postmalone"]}
 {"a": "The Weeknd", "b": "Anitta", "title": "São Paulo", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/3557222091", "credited": ["anitta", "theweeknd"]}
 {"a": "Drake", "b": "PARTYNEXTDOOR", "title": "Somebody Loves Me", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3232025651", "credited": ["drake", "partynextdoor"]}
+{"a": "Drake", "b": "Central Cee", "title": "Which One", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3476500411", "credited": ["centralcee", "drake"]}
+{"a": "Coldplay", "b": "Ayra Starr", "title": "Good Feelings", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/3024257771", "credited": ["ayrastarr", "coldplay"]}
+{"a": "Shakira", "b": "Cardi B", "title": "Puntería", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/2710730362", "credited": ["cardib", "shakira"]}
+{"a": "Ayra Starr", "b": "Wizkid", "title": "Gimme Dat", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/3329774051", "credited": ["ayrastarr", "wizkid"]}
+{"a": "Eminem", "b": "Big Sean", "title": "Tobey", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/2874501602", "credited": ["babytron", "bigsean", "eminem"]}
+{"a": "Ed Sheeran", "b": "Arijit Singh", "title": "Sapphire", "type": "song", "year": 2025, "verdict": "partial", "link": "https://www.deezer.com/track/3395410481", "credited": ["edsheeran"]}
+{"a": "Shakira", "b": "Grupo Frontera", "title": "(Entre Paréntesis)", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/2710730402", "credited": ["grupofrontera", "shakira"]}
+{"a": "Asake", "b": "Travis Scott", "title": "Active", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/2891753412", "credited": ["asake", "travisscott"]}
+{"a": "Cardi B", "b": "Megan Thee Stallion", "title": "Bongos", "type": "song", "year": 2023, "verdict": "ok", "link": "https://www.deezer.com/track/2443928265", "credited": ["cardib", "megantheestallion"]}
+{"a": "JENNIE", "b": "Childish Gambino", "title": "Damn Right", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3262816671", "credited": ["childishgambino", "jennie", "kaliuchis"]}
+{"a": "Tems", "b": "Asake", "title": "Get It Right", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/2832495622", "credited": ["asake", "tems"]}
+{"a": "Jorge & Mateus", "b": "Ana Castela", "title": "Nosso Quadro", "type": "song", "year": 2024, "verdict": "unknown", "link": null, "credited": []}
+{"a": "Chris Brown", "b": "Bryson Tiller", "title": "Sensational", "type": "song", "year": 2024, "verdict": "partial", "link": "https://www.deezer.com/track/2504834531", "credited": ["chrisbrown", "davido", "lojay"]}
+{"a": "JENNIE", "b": "Kali Uchis", "title": "Damn Right", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3262816671", "credited": ["childishgambino", "jennie", "kaliuchis"]}
+{"a": "Rema", "b": "Shallipopi", "title": "BENIN BOYS", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/2846357952", "credited": ["rema", "shallipopi"]}
+{"a": "Matuê", "b": "Teto", "title": "Daqui Pra Sempre", "type": "song", "year": 2024, "verdict": "partial", "link": "https://www.deezer.com/track/2451113965", "credited": ["manu", "simonemendes"]}
+{"a": "Eminem", "b": "JID", "title": "Fuel", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/2886719592", "credited": ["eminem", "jid"]}
+{"a": "Justin Bieber", "b": "Gunna", "title": "WAY IT IS", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3454558711", "credited": ["gunna", "justinbieber"]}
+{"a": "Karol G", "b": "Tiësto", "title": "Contigo", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/2655316752", "credited": ["karolg", "tiesto"]}
+{"a": "Anitta", "b": "Pedro Sampaio", "title": "Cria da Bahia", "type": "song", "year": 2024, "verdict": "unknown", "link": null, "credited": []}
+{"a": "Tyler, The Creator", "b": "Doechii", "title": "Balloon", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/3064010411", "credited": ["doechii", "tylerthecreator"]}
+{"a": "Justin Bieber", "b": "Sexyy Red", "title": "SWEET SPOT", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3454558791", "credited": ["justinbieber", "sexyyred"]}
+{"a": "Bad Bunny", "b": "RaiNao", "title": "PERFuMITO NUEVO", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3171003011", "credited": ["badbunny", "rainao"]}
+{"a": "Ludmilla", "b": "Ana Castela", "title": "Vontade de Morder", "type": "song", "year": 2024, "verdict": "unknown", "link": null, "credited": []}
+{"a": "Tyler, The Creator", "b": "Daniel Caesar", "title": "Like Him", "type": "song", "year": 2024, "verdict": "partial", "link": "https://www.deezer.com/track/3064010401", "credited": ["lolayoung", "tylerthecreator"]}
+{"a": "Justin Bieber", "b": "Cash Cobain", "title": "SWEET SPOT", "type": "song", "year": 2025, "verdict": "partial", "link": "https://www.deezer.com/track/3454558791", "credited": ["justinbieber", "sexyyred"]}
+{"a": "Rauw Alejandro", "b": "Bad Bunny", "title": "QUÉ PASARÍA...", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/3086954731", "credited": ["badbunny", "rauwalejandro"]}
+{"a": "Luan Santana", "b": "Ana Castela", "title": "Meu Pedaço de Pecado", "type": "song", "year": 2024, "verdict": "unknown", "link": null, "credited": []}
+{"a": "Tyler, The Creator", "b": "Playboi Carti", "title": "Sticky", "type": "song", "year": 2024, "verdict": "partial", "link": "https://www.deezer.com/track/3064010361", "credited": ["glorilla", "lilwayne", "sexyyred", "tylerthecreator"]}
+{"a": "Justin Bieber", "b": "Dijon", "title": "DEVOTION", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3454558761", "credited": ["dijon", "justinbieber"]}
+{"a": "Peso Pluma", "b": "Rich The Kid", "title": "Rich Vagabundo", "type": "song", "year": 2024, "verdict": "unknown", "link": null, "credited": []}
+{"a": "Gusttavo Lima", "b": "Ana Castela", "title": "Baby Me Atende", "type": "song", "year": 2024, "verdict": "unknown", "link": null, "credited": []}
+{"a": "Tyler, The Creator", "b": "GloRilla", "title": "Sticky", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/3064010361", "credited": ["glorilla", "lilwayne", "sexyyred", "tylerthecreator"]}
+{"a": "LISA", "b": "Doja Cat", "title": "Born Again", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3215956841", "credited": ["dojacat", "lisa", "raye"]}
+{"a": "Feid", "b": "Yandel", "title": "Yandel 150", "type": "song", "year": 2023, "verdict": "ok", "link": "https://www.deezer.com/track/2074439067", "credited": ["feid", "yandel"]}
+{"a": "Henrique & Juliano", "b": "Simone Mendes", "title": "Erro Gostoso", "type": "song", "year": 2024, "verdict": "unknown", "link": null, "credited": []}
+{"a": "Tyler, The Creator", "b": "Sexyy Red", "title": "Sticky", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/3064010361", "credited": ["glorilla", "lilwayne", "sexyyred", "tylerthecreator"]}
+{"a": "LISA", "b": "RAYE", "title": "Born Again", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3215956841", "credited": ["dojacat", "lisa", "raye"]}
+{"a": "Maluma", "b": "Marc Anthony", "title": "La Fórmula", "type": "song", "year": 2023, "verdict": "ok", "link": "https://www.deezer.com/track/2124708237", "credited": ["maluma", "marcanthony"]}
+{"a": "Alok", "b": "Ana Castela", "title": "Tem Café", "type": "song", "year": 2024, "verdict": "partial", "link": "https://www.deezer.com/track/2643822742", "credited": ["lorimvaqueiro"]}
+{"a": "Tyler, The Creator", "b": "Lil Wayne", "title": "Darling, I", "type": "song", "year": 2024, "verdict": "partial", "link": "https://www.deezer.com/track/3064010321", "credited": ["teezotouchdown", "tylerthecreator"]}
+{"a": "JENNIE", "b": "Doechii", "title": "ExtraL", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3241971481", "credited": ["doechii", "jennie"]}
+{"a": "Burna Boy", "b": "Travis Scott", "title": "TaTaTa", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/3376713091", "credited": ["burnaboy", "travisscott"]}
+{"a": "Luísa Sonza", "b": "Ludmilla", "title": "Chico", "type": "song", "year": 2023, "verdict": "partial", "link": "https://www.deezer.com/track/2428168345", "credited": ["luisasonza"]}
+{"a": "Doechii", "b": "JT", "title": "Alter Ego", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/2723587702", "credited": ["doechii", "jt"]}
+{"a": "JENNIE", "b": "Dominic Fike", "title": "Love Hangover", "type": "song", "year": 2025, "verdict": "ok", "link": "https://www.deezer.com/track/3208895561", "credited": ["dominicfike", "jennie"]}
+{"a": "Wizkid", "b": "Brent Faiyaz", "title": "Piece of My Heart", "type": "song", "year": 2024, "verdict": "ok", "link": "https://www.deezer.com/track/3048394281", "credited": ["brentfaiyaz", "wizkid"]}
+{"a": "Zé Neto & Cristiano", "b": "Gusttavo Lima", "title": "Bombonzinho", "type": "song", "year": 2023, "verdict": "unknown", "link": null, "credited": []}
