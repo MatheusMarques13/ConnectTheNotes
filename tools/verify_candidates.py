@@ -22,6 +22,7 @@ sys.path.insert(0, HERE)
 from deezer_verify import norm_name, verify_song  # noqa: E402
 
 CAND_IN = os.environ.get("CAND_IN", "audit_data/candidates.json")
+PRIOR = os.environ.get("CAND_PRIOR", "")
 OUT_DIR = os.environ.get("CAND_OUT", "out")
 SHARD_INDEX = int(os.environ.get("SHARD_INDEX", "0"))
 SHARD_TOTAL = int(os.environ.get("SHARD_TOTAL", "1"))
@@ -30,6 +31,20 @@ SHARD_TOTAL = int(os.environ.get("SHARD_TOTAL", "1"))
 def main():
     with open(CAND_IN, encoding="utf-8") as fh:
         rows = json.load(fh)
+    # A shard that runs out of time uploads what it has; resuming from the
+    # published verdicts means the next run only checks what is still undecided
+    # instead of redoing the whole list and timing out at the same place.
+    decided = set()
+    if PRIOR and os.path.exists(PRIOR):
+        with open(PRIOR, encoding="utf-8") as fh:
+            for line in fh:
+                try:
+                    r = json.loads(line)
+                except Exception:
+                    continue
+                if r.get("verdict") in ("ok", "partial", "notfound"):
+                    decided.add((r["a"], r["b"], r["title"]))
+    rows = [r for r in rows if (r[0], r[1], r[2]) not in decided]
     mine = [r for k, r in enumerate(rows) if k % SHARD_TOTAL == SHARD_INDEX]
     os.makedirs(OUT_DIR, exist_ok=True)
     path = os.path.join(OUT_DIR, "candidates_done.jsonl")

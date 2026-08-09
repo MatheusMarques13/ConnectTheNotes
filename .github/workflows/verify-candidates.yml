@@ -18,16 +18,26 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     steps:
       - uses: actions/checkout@v4
 
+      - name: Restore prior verdicts
+        run: |
+          git fetch origin deezer-results:deezer-results || true
+          mkdir -p prior
+          if git cat-file -e deezer-results:audit_data/deezer/candidates_done.jsonl 2>/dev/null; then
+            git show deezer-results:audit_data/deezer/candidates_done.jsonl > prior/candidates_done.jsonl
+            wc -l prior/candidates_done.jsonl
+          fi
+
       - name: Run candidate shard
         env:
+          CAND_PRIOR: prior/candidates_done.jsonl
           CAND_IN: audit_data/candidates.json
           CAND_OUT: out
           SHARD_INDEX: ${{ matrix.shard }}
-          SHARD_TOTAL: '8'
+          SHARD_TOTAL: '12'
         run: python3 tools/verify_candidates.py
 
       - name: Upload shard results
@@ -59,7 +69,11 @@ jobs:
       - name: Merge
         run: |
           mkdir -p audit_data/deezer
-          cat shards/cand-*/candidates_done.jsonl > /tmp/candidates_done.jsonl || true
+          : > /tmp/candidates_done.jsonl
+          if git cat-file -e deezer-results:audit_data/deezer/candidates_done.jsonl 2>/dev/null; then
+            git show deezer-results:audit_data/deezer/candidates_done.jsonl >> /tmp/candidates_done.jsonl
+          fi
+          cat shards/cand-*/candidates_done.jsonl >> /tmp/candidates_done.jsonl || true
           wc -l /tmp/candidates_done.jsonl
 
       - name: Publish to deezer-results branch
