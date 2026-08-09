@@ -119,14 +119,18 @@ const choice = (rng, arr) => arr[Math.floor(rng() * arr.length)];
 // Search and manual selection are untouched: the whole roster stays playable.
 const fameOf = (id) => (ARTISTS_BY_ID[id]?.fame ?? 1) || 1;
 
-// Weight ∝ fame², which favours the household names without ever locking out
-// the rest of the pool.
+// Weight ∝ fame³. The cube (rather than a square) concentrates picks on the
+// genuinely household names at the top of the pool while still letting the rest
+// of it come up.
+const FAME_EXP = 3;
+const w = (id) => Math.pow(fameOf(id), FAME_EXP);
+
 function weightedChoice(rng, ids) {
   if (!ids.length) return null;
   let total = 0;
-  for (const id of ids) { const f = fameOf(id); total += f * f; }
+  for (const id of ids) total += w(id);
   let r = rng() * total;
-  for (const id of ids) { const f = fameOf(id); r -= f * f; if (r <= 0) return id; }
+  for (const id of ids) { r -= w(id); if (r <= 0) return id; }
   return ids[ids.length - 1];
 }
 

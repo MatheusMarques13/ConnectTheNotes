@@ -50,11 +50,14 @@ def bfs(adj, start):
     return dist
 
 
+EXP = 3  # keep in sync with FAME_EXP in frontend/src/services/api.js
+
+
 def weighted(rng, ids, fame):
-    tot = sum((fame.get(i, 1) or 1) ** 2 for i in ids)
+    tot = sum((fame.get(i, 1) or 1) ** EXP for i in ids)
     r = rng.random() * tot
     for i in ids:
-        r -= (fame.get(i, 1) or 1) ** 2
+        r -= (fame.get(i, 1) or 1) ** EXP
         if r <= 0:
             return i
     return ids[-1]

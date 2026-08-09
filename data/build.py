@@ -23,9 +23,11 @@ from source_data import ARTISTS, COLLABORATIONS  # noqa: E402
 
 OUT = os.path.join(HERE, "..", "frontend", "src", "data", "dataset.js")
 FAME_FILE = os.path.join(HERE, "artist_fame.json")
-# How many artists the random pickers may draw from. Small enough that a random
-# puzzle lands on a name players know; large enough that puzzles stay varied.
-POOL_SIZE = 1000
+# How many artists the random pickers may draw from. Deliberately small: at 1000
+# the tail of the pool was still full of regionally-big-but-not-famous names, so
+# random puzzles kept serving artists players did not recognise. All four
+# difficulty bands still fill 40/40 at this size (tools/sim_random.py).
+POOL_SIZE = 200
 
 
 def slug(n):
