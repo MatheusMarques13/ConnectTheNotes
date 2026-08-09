@@ -23,11 +23,12 @@ from source_data import ARTISTS, COLLABORATIONS  # noqa: E402
 
 OUT = os.path.join(HERE, "..", "frontend", "src", "data", "dataset.js")
 FAME_FILE = os.path.join(HERE, "artist_fame.json")
-# How many artists the random pickers may draw from. Deliberately small: at 1000
-# the tail of the pool was still full of regionally-big-but-not-famous names, so
-# random puzzles kept serving artists players did not recognise. All four
-# difficulty bands still fill 40/40 at this size (tools/sim_random.py).
-POOL_SIZE = 200
+# How many artists the random pickers may draw from. Small enough that the tail
+# is still household names (at 1000 it was full of regionally-big-but-obscure
+# ones), big enough to hold both today's stars and the era-corrected legends.
+# All four difficulty bands still fill from it without fallbacks
+# (tools/sim_random.py).
+POOL_SIZE = 300
 
 
 def slug(n):
@@ -105,6 +106,35 @@ def fame_scores(artists, songs):
     for k, v in adj.items():
         deg[k] = len(v)
 
+    # An act that started decades ago and STILL has a big audience is a legend;
+    # the raw fan count understates them badly because their peak predates
+    # streaming (The Beatles show 8M followers, Drake 24M). Scaling the audience
+    # by how early the catalogue starts corrects for that era gap. It stays
+    # data-driven — a genuinely obscure old artist has too few fans for the
+    # multiplier to lift them anywhere near the pool.
+    debut = {}
+    for s in songs:
+        y = s.get("year") or 0
+        if not y:
+            continue
+        for i in s["artists"]:
+            if y < debut.get(i, 9999):
+                debut[i] = y
+
+    def era_factor(i):
+        y = debut.get(i)
+        if y is None:
+            return 1.0
+        if y <= 1970:
+            return 6.0
+        if y <= 1985:
+            return 4.0
+        if y <= 1995:
+            return 2.5
+        if y <= 2004:
+            return 1.5
+        return 1.0
+
     fans, dz = {}, {}
     if os.path.exists(FAME_FILE):
         with open(FAME_FILE, encoding="utf-8") as fh:
@@ -119,7 +149,9 @@ def fame_scores(artists, songs):
             elif v is not None:
                 fans[i] = v
 
-    max_fan_l = max([math.log10(1 + v) for v in fans.values()], default=1.0) or 1.0
+    # Audience as the game should weigh it: real followers, era-corrected.
+    weighted_fans = {i: v * era_factor(i) for i, v in fans.items()}
+    max_fan_l = max([math.log10(1 + v) for v in weighted_fans.values()], default=1.0) or 1.0
     max_deg_l = max([math.log(1 + d) for d in deg.values()], default=1.0) or 1.0
 
     scores = {}
@@ -127,12 +159,12 @@ def fame_scores(artists, songs):
         i = a["id"]
         d_l = math.log(1 + deg[i]) / max_deg_l
         if i in fans:
-            f_l = math.log10(1 + fans[i]) / max_fan_l
-            # Audience dominates. Degree only breaks ties and rewards collab-heavy
-            # artists — weight it any higher and legacy acts who simply don't do
-            # features (Nirvana, Queen, Ozzy) fall out of the pool again, which is
-            # the exact bias this score exists to correct.
-            s = 0.80 * f_l + 0.20 * d_l
+            f_l = math.log10(1 + weighted_fans[i]) / max_fan_l
+            # Audience dominates; degree is a light tiebreak that rewards
+            # collab-heavy artists. It stays small on purpose: a legend with one
+            # credited feature (Elvis, Nirvana) must not be pushed under a
+            # working feature artist just for collaborating less.
+            s = 0.88 * f_l + 0.12 * d_l
         else:
             # No confident Deezer match: fall back to graph prominence only, at a
             # discount so an unmatched name never outranks a verified star.
