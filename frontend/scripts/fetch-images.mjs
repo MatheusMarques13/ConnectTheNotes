@@ -8,6 +8,7 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const DATASET = new URL("../src/data/dataset.js", import.meta.url);
 const OUTPUT = new URL("../src/data/images.generated.js", import.meta.url);
+const PRESET = new URL("../../data/artist_images.json", import.meta.url);
 const CONCURRENCY = 5;
 const PACE_MS = 110;
 const TIMEOUT_MS = 8000;
@@ -93,6 +94,26 @@ async function pacedMap(items, fetchOne, deadline) {
   return { results, ok };
 }
 
+// Photos resolved once by exact Deezer artist id (tools/artist_images.py) and
+// committed to the repo. Searching by name here missed a lot of artists — the
+// top hit for a common name is often the wrong act, and every build re-did the
+// whole list under a deadline. Anything in this file needs no lookup at all.
+async function bakedByName(artists) {
+  const out = {};
+  let raw;
+  try {
+    raw = JSON.parse(await readFile(PRESET, "utf8"));
+  } catch {
+    return out;                       // file absent -> fall back to searching
+  }
+  const nameById = new Map(artists.map((a) => [a.id, a.name]));
+  for (const [id, url] of Object.entries(raw)) {
+    const name = nameById.get(`a${id}`);
+    if (name && url) out[name] = url;
+  }
+  return out;
+}
+
 async function run() {
   const text = await readFile(DATASET, "utf8");
   const artists = sliceArray(text, "ARTISTS");
@@ -100,17 +121,26 @@ async function run() {
   // Only artist photos are baked at build time. Song covers + 30s previews are
   // fetched on demand at RUNTIME (Deezer JSONP), so the build no longer does
   // ~12k song lookups — this keeps the production build fast.
-  const artistTasks = artists.map((a) => ({ key: a.name, name: a.name }));
+  const preset = await bakedByName(artists);
+  const missing = artists.filter((a) => !preset[a.name]);
   const deadline = Date.now() + DEADLINE_MS;
-  const images = await pacedMap(artistTasks, (t) => artistImage(t.name), deadline);
+  const images = await pacedMap(
+    missing.map((a) => ({ key: a.name, name: a.name })),
+    (t) => artistImage(t.name),
+    deadline,
+  );
 
+  const merged = { ...preset, ...images.results };
   const body =
     "// AUTO-GENERATED at build time by scripts/fetch-images.mjs — do not edit.\n" +
-    "export const ARTIST_IMAGES = " + JSON.stringify(images.results) + ";\n" +
+    "export const ARTIST_IMAGES = " + JSON.stringify(merged) + ";\n" +
     "export const SONG_COVERS = {};\n" +
     "export const SONG_PREVIEWS = {};\n";
   await writeFile(OUTPUT, body);
-  console.log(`[images] ${images.ok}/${artistTasks.length} artist photos (song media is runtime)`);
+  console.log(
+    `[images] ${Object.keys(merged).length}/${artists.length} artist photos ` +
+    `(${Object.keys(preset).length} preset by id, ${images.ok} searched by name)`,
+  );
 }
 
 run().catch(async (e) => {

@@ -1,0 +1,119 @@
+name: Artist photos (Deezer pictures by id)
+
+# Fetches each artist's photo by their exact Deezer id, so the shipped dataset
+# can carry real image URLs instead of the build guessing them by name under a
+# time limit it cannot meet. Publishes audit_data/deezer/artist_images.jsonl to
+# the 'deezer-results' branch.
+# Trigger: manual dispatch, or a push touching .github/images-kick.
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/images-kick']
+
+permissions:
+  contents: write
+
+jobs:
+  shard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore prior results
+        run: |
+          git fetch origin deezer-results:deezer-results || true
+          mkdir -p prior
+          if git cat-file -e deezer-results:audit_data/deezer/artist_images.jsonl 2>/dev/null; then
+            git show deezer-results:audit_data/deezer/artist_images.jsonl > prior/artist_images.jsonl
+            wc -l prior/artist_images.jsonl
+          fi
+
+      - name: Run photo shard
+        env:
+          IMG_OUT: out
+          IMG_PRIOR: prior/artist_images.jsonl
+          SHARD_INDEX: ${{ matrix.shard }}
+          SHARD_TOTAL: '12'
+        run: python3 tools/artist_images.py
+
+      - name: Upload shard results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: img-${{ matrix.shard }}
+          path: out/artist_images.jsonl
+          if-no-files-found: ignore
+
+  merge:
+    runs-on: ubuntu-latest
+    needs: shard
+    if: always()
+    steps:
+      # Full history: the publish step commits onto deezer-results, and pushing
+      # from a shallow clone is rejected.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore prior results
+        run: |
+          git fetch origin deezer-results:deezer-results || true
+          mkdir -p prior
+          if git cat-file -e deezer-results:audit_data/deezer/artist_images.jsonl 2>/dev/null; then
+            git show deezer-results:audit_data/deezer/artist_images.jsonl > prior/artist_images.jsonl
+          fi
+
+      - name: Download shard results
+        uses: actions/download-artifact@v4
+        with:
+          path: shards
+
+      - name: Merge (one row per artist; later rows win)
+        run: |
+          mkdir -p audit_data/deezer
+          python3 - <<'PY'
+          import glob, json, os
+          rows = {}
+          files = []
+          if os.path.exists('prior/artist_images.jsonl'):
+              files.append('prior/artist_images.jsonl')
+          files += sorted(glob.glob('shards/img-*/artist_images.jsonl'))
+          for f in files:
+              for line in open(f, encoding='utf-8'):
+                  try:
+                      r = json.loads(line)
+                  except Exception:
+                      continue
+                  if 'id' in r:
+                      rows[r['id']] = r
+          with open('audit_data/deezer/artist_images.jsonl', 'w', encoding='utf-8') as out:
+              for k in sorted(rows):
+                  out.write(json.dumps(rows[k], ensure_ascii=False) + '\n')
+          print(f'merged={len(rows)}')
+          PY
+
+      - name: Publish to deezer-results branch
+        run: |
+          if [ ! -s audit_data/deezer/artist_images.jsonl ]; then echo "no results"; exit 0; fi
+          # Commit ON TOP of the real branch tip, never force: deezer-results also
+          # carries the song verdicts and the multi-source audit data, and a
+          # force-push from this checkout would wipe them.
+          cp audit_data/deezer/artist_images.jsonl /tmp/artist_images.jsonl
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # The merged file is untracked here but tracked on deezer-results, so
+          # checkout refuses to overwrite it — drop it first (it is safe in /tmp).
+          rm -f audit_data/deezer/artist_images.jsonl
+          # No '-B' fallback: that resets the branch to this checkout's tree and
+          # would drop the song verdicts and multi-source data it also carries.
+          git checkout deezer-results
+          mkdir -p audit_data/deezer
+          cp /tmp/artist_images.jsonl audit_data/deezer/artist_images.jsonl
+          git add -f audit_data/deezer/artist_images.jsonl
+          git commit -m "Artist photos: Deezer picture URLs ($(wc -l < audit_data/deezer/artist_images.jsonl) artists)" || exit 0
+          git push origin deezer-results
