@@ -5630,6 +5630,7 @@ ARTISTS = [
     (6715, 'BabyTron', 'Hip-Hop'),
     (6716, 'Lola Young', 'Pop/R&B'),
     (6717, 'Cash Cobain', 'Hip-Hop'),
+    (6718, 'RaiNao', 'Pop'),
 ]
 
 # (artist1_id, artist2_id, title, type, year)
@@ -21480,4 +21481,9 @@ COLLABORATIONS = [
     (70, 5748, 'RATATA', 'song', 2024),
     (1099, 741, 'Lua', 'song', 2024),
     (1099, 319, 'Lua', 'song', 2024),
+    (42, 428, 'Good Feelings', 'song', 2024),
+    (6, 3798, 'Fuel', 'song', 2024),
+    (16, 6718, 'PERFuMITO NUEVO', 'song', 2025),
+    (223, 16, 'QUÉ PASARÍA...', 'song', 2024),
+    (224, 231, 'Yandel 150', 'song', 2023),
 ]
