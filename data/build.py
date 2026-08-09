@@ -173,11 +173,17 @@ def famous_pool(artists, scores, deg, adj, dz):
             best_of[d] = a["id"]
     ok -= {a["id"] for a in artists
            if dz.get(a["id"]) is not None and best_of[dz[a["id"]]] != a["id"]}
-    core = sorted((i for i in ok if deg.get(i, 0) >= 2), key=lambda i: -scores[i])
+    # Rank strictly: ties broken by artist id, never by set iteration order.
+    # Python randomises string hashing per process, so without this the pool
+    # membership at the score cutoff changes between builds of identical data.
+    def rank(i):
+        return (-scores[i], int(i[1:]))
+
+    core = sorted((i for i in ok if deg.get(i, 0) >= 2), key=rank)
     core_set = set(core[:POOL_SIZE])
     bridged = [i for i in ok
                if deg.get(i, 0) == 1 and next(iter(adj[i])) in core_set]
-    eligible = sorted(set(core) | set(bridged), key=lambda i: -scores[i])
+    eligible = sorted(set(core) | set(bridged), key=rank)
     return eligible[:POOL_SIZE]
 
 
