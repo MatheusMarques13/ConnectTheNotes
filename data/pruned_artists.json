@@ -1,0 +1,113 @@
+{
+ "removed": [
+  {
+   "id": 617,
+   "name": "Themba",
+   "genre": "Afro House",
+   "line": "(617, 'Themba', 'Afro House'),"
+  },
+  {
+   "id": 1695,
+   "name": "Roy English",
+   "genre": "Pop",
+   "line": "(1695, 'Roy English', 'Pop'),"
+  },
+  {
+   "id": 3651,
+   "name": "Geri Halliwell",
+   "genre": "uk pop",
+   "line": "(3651, 'Geri Halliwell', 'uk pop'),"
+  },
+  {
+   "id": 5405,
+   "name": "fazilpuria",
+   "genre": "Other",
+   "line": "(5405, 'fazilpuria', 'Other'),"
+  },
+  {
+   "id": 5411,
+   "name": "Jacqueline Fernandez",
+   "genre": "Other",
+   "line": "(5411, 'Jacqueline Fernandez', 'Other'),"
+  },
+  {
+   "id": 5449,
+   "name": "Jatin - Lalit",
+   "genre": "Other",
+   "line": "(5449, 'Jatin - Lalit', 'Other'),"
+  },
+  {
+   "id": 5454,
+   "name": "lxandra",
+   "genre": "Other",
+   "line": "(5454, 'lxandra', 'Other'),"
+  },
+  {
+   "id": 5462,
+   "name": "Aadesh Shrivastava",
+   "genre": "Other",
+   "line": "(5462, 'Aadesh Shrivastava', 'Other'),"
+  },
+  {
+   "id": 5471,
+   "name": "Ila Arun",
+   "genre": "Other",
+   "line": "(5471, 'Ila Arun', 'Other'),"
+  },
+  {
+   "id": 5641,
+   "name": "Aluna Francis",
+   "genre": "Other",
+   "line": "(5641, 'Aluna Francis', 'Other'),"
+  },
+  {
+   "id": 5905,
+   "name": "UK Apache",
+   "genre": "Other",
+   "line": "(5905, 'UK Apache', 'Other'),"
+  },
+  {
+   "id": 6078,
+   "name": "Lil Herb",
+   "genre": "Other",
+   "line": "(6078, 'Lil Herb', 'Other'),"
+  },
+  {
+   "id": 6278,
+   "name": "Charlee",
+   "genre": "Other",
+   "line": "(6278, 'Charlee', 'Other'),"
+  },
+  {
+   "id": 6400,
+   "name": "Luke James",
+   "genre": "Other",
+   "line": "(6400, 'Luke James', 'Other'),"
+  },
+  {
+   "id": 6445,
+   "name": "Kidd Kidd",
+   "genre": "Other",
+   "line": "(6445, 'Kidd Kidd', 'Other'),"
+  },
+  {
+   "id": 6460,
+   "name": "Danielle",
+   "genre": "Other",
+   "line": "(6460, 'Danielle', 'Other'),"
+  },
+  {
+   "id": 6494,
+   "name": "Bright Sparks",
+   "genre": "Other",
+   "line": "(6494, 'Bright Sparks', 'Other'),"
+  },
+  {
+   "id": 6597,
+   "name": "MC Nicki",
+   "genre": "Other",
+   "line": "(6597, 'MC Nicki', 'Other'),"
+  }
+ ],
+ "note": "cole a chave 'line' de volta em ARTISTS para restaurar"
+}

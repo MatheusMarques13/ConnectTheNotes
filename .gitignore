@@ -87,3 +87,11 @@ backend/.env
 # Keep tracked build-flag / example files:
 !**/.env.example
 !frontend/.env
+
+# Regenerable audit working state. These rebuild from the tools and change on
+# every run, so they are noise in a diff. The records that must survive —
+# quarantine.json, edge_sources.json, pruned_artists.json — are committed.
+data/edge_audit.json
+data/recent_harvest.json
+.claude/
+data/impossible_edges.json

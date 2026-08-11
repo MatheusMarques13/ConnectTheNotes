@@ -1,0 +1,707 @@
+{
+ "1903": {
+  "mb_name": "Charles Aznavour",
+  "begin": "1924",
+  "end": "2018",
+  "ended": true
+ },
+ "1345": {
+  "mb_name": "Bob Marley & The Wailers",
+  "begin": "1970",
+  "end": "1981",
+  "ended": true
+ },
+ "3409": {
+  "mb_name": "Smokey Robinson",
+  "begin": "1940",
+  "end": "",
+  "ended": false
+ },
+ "3529": {
+  "mb_name": "The Miracles",
+  "begin": "1955",
+  "end": "1978",
+  "ended": true
+ },
+ "276": {
+  "mb_name": "Caetano Veloso",
+  "begin": "1942",
+  "end": "",
+  "ended": false
+ },
+ "255": {
+  "mb_name": "Paul McCartney",
+  "begin": "1942",
+  "end": "",
+  "ended": false
+ },
+ "2225": {
+  "mb_name": "Lata Mangeshkar",
+  "begin": "1929",
+  "end": "2022",
+  "ended": true
+ },
+ "2605": {
+  "mb_name": "Ornella Vanoni",
+  "begin": "1934",
+  "end": "2025",
+  "ended": true
+ },
+ "3455": {
+  "mb_name": "Isaac Hayes",
+  "begin": "1942",
+  "end": "2008",
+  "ended": true
+ },
+ "1447": {
+  "mb_name": "Bob Marley & The Wailers",
+  "begin": "1970",
+  "end": "1981",
+  "ended": true
+ },
+ "2219": {
+  "mb_name": "Mick Jagger",
+  "begin": "1943",
+  "end": "",
+  "ended": false
+ },
+ "3498": {
+  "mb_name": "Bootsy Collins",
+  "begin": "1951",
+  "end": "",
+  "ended": false
+ },
+ "3112": {
+  "mb_name": "Diana Ross",
+  "begin": "1944",
+  "end": "",
+  "ended": false
+ },
+ "1483": {
+  "mb_name": "Mike Love",
+  "begin": "",
+  "end": "",
+  "ended": false
+ },
+ "277": {
+  "mb_name": "Gilberto Gil",
+  "begin": "1942",
+  "end": "",
+  "ended": false
+ },
+ "279": {
+  "mb_name": "Maria Bethânia",
+  "begin": "1946",
+  "end": "",
+  "ended": false
+ },
+ "3440": {
+  "mb_name": "Keith Richards",
+  "begin": "1943",
+  "end": "",
+  "ended": false
+ },
+ "3224": {
+  "mb_name": "The Rolling Stones",
+  "begin": "1962",
+  "end": "",
+  "ended": false
+ },
+ "1244": {
+  "mb_name": "Loretta Lynn",
+  "begin": "1932",
+  "end": "2022",
+  "ended": true
+ },
+ "1650": {
+  "mb_name": "Brian Eno",
+  "begin": "1948",
+  "end": "",
+  "ended": false
+ },
+ "53": {
+  "mb_name": "Elton John",
+  "begin": "1947",
+  "end": "",
+  "ended": false
+ },
+ "253": {
+  "mb_name": "Stevie Nicks",
+  "begin": "1948",
+  "end": "",
+  "ended": false
+ },
+ "54": {
+  "mb_name": "Stevie Wonder",
+  "begin": "1950",
+  "end": "",
+  "ended": false
+ },
+ "248": {
+  "mb_name": "Willie Nelson",
+  "begin": "1933",
+  "end": "",
+  "ended": false
+ },
+ "55": {
+  "mb_name": "Michael Jackson",
+  "begin": "1958",
+  "end": "2009",
+  "ended": true
+ },
+ "3447": {
+  "mb_name": "Barbra Streisand",
+  "begin": "1942",
+  "end": "",
+  "ended": false
+ },
+ "5586": {
+  "mb_name": "Cher",
+  "begin": "1946",
+  "end": "",
+  "ended": false
+ },
+ "2114": {
+  "mb_name": "ABBA",
+  "begin": "1972",
+  "end": "2022",
+  "ended": true
+ },
+ "257": {
+  "mb_name": "Miranda Lambert",
+  "begin": "1983",
+  "end": "",
+  "ended": false
+ },
+ "353": {
+  "mb_name": "Zeca Pagodinho",
+  "begin": "1959",
+  "end": "",
+  "ended": false
+ },
+ "3268": {
+  "mb_name": "Ringo Starr",
+  "begin": "1940",
+  "end": "",
+  "ended": false
+ },
+ "2617": {
+  "mb_name": "Gino Paoli",
+  "begin": "1934",
+  "end": "2026",
+  "ended": true
+ },
+ "1616": {
+  "mb_name": "Nile Rodgers",
+  "begin": "1952",
+  "end": "",
+  "ended": false
+ },
+ "3415": {},
+ "5680": {
+  "mb_name": "James Taylor",
+  "begin": "1948",
+  "end": "",
+  "ended": false
+ },
+ "5189": {
+  "mb_name": "Booker T. Jones",
+  "begin": "1944",
+  "end": "",
+  "ended": false
+ },
+ "247": {
+  "mb_name": "Dolly Parton",
+  "begin": "1946",
+  "end": "",
+  "ended": false
+ },
+ "3433": {
+  "mb_name": "Donna Summer",
+  "begin": "1948",
+  "end": "2012",
+  "ended": true
+ },
+ "3438": {
+  "mb_name": "Rod Stewart",
+  "begin": "1945",
+  "end": "",
+  "ended": false
+ },
+ "3435": {
+  "mb_name": "Gloria Gaynor",
+  "begin": "1943",
+  "end": "",
+  "ended": false
+ },
+ "3439": {
+  "mb_name": "Billy Joel",
+  "begin": "1949",
+  "end": "",
+  "ended": false
+ },
+ "3425": {
+  "mb_name": "Herbie Hancock",
+  "begin": "1940",
+  "end": "",
+  "ended": false
+ },
+ "5577": {
+  "mb_name": "Charlie Wilson",
+  "begin": "1953",
+  "end": "",
+  "ended": false
+ },
+ "3493": {
+  "mb_name": "Roger Troutman",
+  "begin": "1951",
+  "end": "1999",
+  "ended": true
+ },
+ "3150": {
+  "mb_name": "Ozzy Osbourne",
+  "begin": "1948",
+  "end": "2025",
+  "ended": true
+ },
+ "3411": {
+  "mb_name": "Ray Charles",
+  "begin": "1930",
+  "end": "2004",
+  "ended": true
+ },
+ "1045": {
+  "mb_name": "Erasmo Carlos",
+  "begin": "1941",
+  "end": "2022",
+  "ended": true
+ },
+ "348": {
+  "mb_name": "Djavan",
+  "begin": "1949",
+  "end": "",
+  "ended": false
+ },
+ "2226": {
+  "mb_name": "Asha Bhosle",
+  "begin": "1933",
+  "end": "2026",
+  "ended": true
+ },
+ "2993": {
+  "mb_name": "Celia Cruz",
+  "begin": "1925",
+  "end": "2003",
+  "ended": true
+ },
+ "1369": {
+  "mb_name": "Toots & The Maytals",
+  "begin": "1963",
+  "end": "",
+  "ended": false
+ },
+ "1263": {
+  "mb_name": "Eddy Arnold",
+  "begin": "1918",
+  "end": "2008",
+  "ended": true
+ },
+ "892": {
+  "mb_name": "Ivan Lins",
+  "begin": "1945",
+  "end": "",
+  "ended": false
+ },
+ "960": {
+  "mb_name": "Roberto Carlos",
+  "begin": "1941",
+  "end": "",
+  "ended": false
+ },
+ "1027": {
+  "mb_name": "David Bowie",
+  "begin": "1947",
+  "end": "2016",
+  "ended": true
+ },
+ "3265": {
+  "mb_name": "Neil Young",
+  "begin": "1945",
+  "end": "",
+  "ended": false
+ },
+ "3484": {
+  "mb_name": "Sheila E.",
+  "begin": "1957",
+  "end": "",
+  "ended": false
+ },
+ "5723": {
+  "mb_name": "Steve Vai",
+  "begin": "1960",
+  "end": "",
+  "ended": false
+ },
+ "1382": {
+  "mb_name": "Gregory Isaacs",
+  "begin": "1951",
+  "end": "2010",
+  "ended": true
+ },
+ "1337": {
+  "mb_name": "John Fogerty",
+  "begin": "1945",
+  "end": "",
+  "ended": false
+ },
+ "281": {
+  "mb_name": "Jorge Ben Jor",
+  "begin": "1942",
+  "end": "",
+  "ended": false
+ },
+ "952": {
+  "mb_name": "Grupo Fundo de Quintal",
+  "begin": "1978",
+  "end": "",
+  "ended": false
+ },
+ "3233": {
+  "mb_name": "Metallica",
+  "begin": "1981",
+  "end": "",
+  "ended": false
+ },
+ "3469": {
+  "mb_name": "Peabo Bryson",
+  "begin": "1951",
+  "end": "2026",
+  "ended": true
+ },
+ "4999": {
+  "mb_name": "Nina Simone",
+  "begin": "1933",
+  "end": "2003",
+  "ended": true
+ },
+ "5147": {
+  "mb_name": "Agnetha Fältskog",
+  "begin": "1950",
+  "end": "",
+  "ended": false
+ },
+ "5249": {
+  "mb_name": "Philip Bailey",
+  "begin": "1951",
+  "end": "",
+  "ended": false
+ },
+ "278": {
+  "mb_name": "Gal Costa",
+  "begin": "1945",
+  "end": "2022",
+  "ended": true
+ },
+ "1250": {
+  "mb_name": "Hank Williams, Jr.",
+  "begin": "1949",
+  "end": "",
+  "ended": false
+ },
+ "414": {
+  "mb_name": "Whitney Houston",
+  "begin": "1963",
+  "end": "2012",
+  "ended": true
+ },
+ "5279": {
+  "mb_name": "George Jones",
+  "begin": "1931",
+  "end": "2013",
+  "ended": true
+ },
+ "3111": {
+  "mb_name": "Lionel Richie",
+  "begin": "1949",
+  "end": "",
+  "ended": false
+ },
+ "3225": {
+  "mb_name": "Queen",
+  "begin": "1970",
+  "end": "",
+  "ended": true
+ },
+ "3456": {
+  "mb_name": "Bobby Womack",
+  "begin": "1944",
+  "end": "2014",
+  "ended": true
+ },
+ "424": {
+  "mb_name": "George Benson",
+  "begin": "1943",
+  "end": "",
+  "ended": false
+ },
+ "254": {
+  "mb_name": "Madonna",
+  "begin": "1958",
+  "end": "",
+  "ended": false
+ },
+ "954": {
+  "mb_name": "Elba Ramalho",
+  "begin": "1951",
+  "end": "",
+  "ended": false
+ },
+ "1375": {
+  "mb_name": "Sting",
+  "begin": "1951",
+  "end": "",
+  "ended": false
+ },
+ "5490": {
+  "mb_name": "Gianni Morandi",
+  "begin": "1944",
+  "end": "",
+  "ended": false
+ },
+ "3258": {
+  "mb_name": "Santana",
+  "begin": "1966",
+  "end": "",
+  "ended": false
+ },
+ "5526": {
+  "mb_name": "Robert Smith",
+  "begin": "1959",
+  "end": "",
+  "ended": false
+ },
+ "3423": {
+  "mb_name": "Gladys Knight",
+  "begin": "1944",
+  "end": "",
+  "ended": false
+ },
+ "5216": {
+  "mb_name": "Steven Tyler",
+  "begin": "1948",
+  "end": "",
+  "ended": false
+ },
+ "2991": {
+  "mb_name": "Gilberto Santa Rosa",
+  "begin": "1962",
+  "end": "",
+  "ended": false
+ },
+ "360": {
+  "mb_name": "Beth Carvalho",
+  "begin": "1946",
+  "end": "2019",
+  "ended": true
+ },
+ "354": {
+  "mb_name": "Martinho da Vila",
+  "begin": "1938",
+  "end": "",
+  "ended": false
+ },
+ "957": {
+  "mb_name": "Fagner",
+  "begin": "1949",
+  "end": "",
+  "ended": false
+ },
+ "1664": {
+  "mb_name": "Tina Turner",
+  "begin": "1939",
+  "end": "2023",
+  "ended": true
+ },
+ "2420": {
+  "mb_name": "Andrea Bocelli",
+  "begin": "1958",
+  "end": "",
+  "ended": false
+ },
+ "3229": {
+  "mb_name": "Eric Clapton",
+  "begin": "1945",
+  "end": "",
+  "ended": false
+ },
+ "3571": {
+  "mb_name": "Roy Ayers",
+  "begin": "1940",
+  "end": "2025",
+  "ended": true
+ },
+ "3457": {
+  "mb_name": "Bobby Brown",
+  "begin": "1969",
+  "end": "",
+  "ended": false
+ },
+ "3185": {
+  "mb_name": "Juan Luis Guerra 4.40",
+  "begin": "1984",
+  "end": "",
+  "ended": false
+ },
+ "5210": {
+  "mb_name": "Robert Plant",
+  "begin": "1948",
+  "end": "",
+  "ended": false
+ },
+ "1005": {
+  "mb_name": "João Gilberto",
+  "begin": "1931",
+  "end": "2019",
+  "ended": true
+ },
+ "2878": {
+  "mb_name": "Vicente Fernández",
+  "begin": "1940",
+  "end": "2021",
+  "ended": true
+ },
+ "3264": {
+  "mb_name": "Bob Dylan",
+  "begin": "1941",
+  "end": "",
+  "ended": false
+ },
+ "4101": {
+  "mb_name": "CeCe Winans",
+  "begin": "1964",
+  "end": "",
+  "ended": false
+ },
+ "5573": {
+  "mb_name": "Little Feat",
+  "begin": "1969",
+  "end": "",
+  "ended": false
+ },
+ "4109": {
+  "mb_name": "Michael W. Smith",
+  "begin": "1957",
+  "end": "",
+  "ended": false
+ },
+ "4988": {
+  "mb_name": "Ricardo Chaves",
+  "begin": "1963",
+  "end": "",
+  "ended": false
+ },
+ "5676": {
+  "mb_name": "Sparks",
+  "begin": "1970",
+  "end": "",
+  "ended": false
+ },
+ "5650": {
+  "mb_name": "David Byrne",
+  "begin": "1952",
+  "end": "",
+  "ended": false
+ },
+ "32": {
+  "mb_name": "Snoop Dogg",
+  "begin": "1971",
+  "end": "",
+  "ended": false
+ },
+ "349": {
+  "mb_name": "Milton Nascimento",
+  "begin": "1942",
+  "end": "",
+  "ended": false
+ },
+ "355": {
+  "mb_name": "Alcione",
+  "begin": "1947",
+  "end": "",
+  "ended": false
+ },
+ "963": {
+  "mb_name": "Fafá de Belém",
+  "begin": "1956",
+  "end": "",
+  "ended": false
+ },
+ "2313": {
+  "mb_name": "S. P. Balasubrahmanyam",
+  "begin": "1946",
+  "end": "2020",
+  "ended": true
+ },
+ "5472": {
+  "mb_name": "Amitabh Bachchan",
+  "begin": "1942",
+  "end": "",
+  "ended": false
+ },
+ "3426": {
+  "mb_name": "Miles Davis",
+  "begin": "1926",
+  "end": "1991",
+  "ended": true
+ },
+ "3092": {
+  "mb_name": "Céline Dion",
+  "begin": "1968",
+  "end": "",
+  "ended": false
+ },
+ "2526": {
+  "mb_name": "Marc Anthony",
+  "begin": "1968",
+  "end": "",
+  "ended": false
+ },
+ "3476": {},
+ "3430": {
+  "mb_name": "Frank Sinatra",
+  "begin": "1915",
+  "end": "1998",
+  "ended": true
+ },
+ "4108": {
+  "mb_name": "Amy Grant",
+  "begin": "1960",
+  "end": "",
+  "ended": false
+ },
+ "5209": {
+  "mb_name": "Jimmy Page",
+  "begin": "1944",
+  "end": "",
+  "ended": false
+ },
+ "2996": {
+  "mb_name": "Rubén Blades",
+  "begin": "1948",
+  "end": "",
+  "ended": false
+ },
+ "5035": {},
+ "2307": {
+  "mb_name": "Ravi Shankar",
+  "begin": "1920",
+  "end": "2012",
+  "ended": true
+ },
+ "6033": {
+  "mb_name": "The Clash",
+  "begin": "1976",
+  "end": "1986",
+  "ended": true
+ }
+}

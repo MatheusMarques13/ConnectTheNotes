@@ -1,0 +1,5959 @@
+{
+ "331-338": {
+  "a1": 331,
+  "a2": 338,
+  "names": [
+   "Capital Inicial",
+   "Engenheiros do Hawaii"
+  ],
+  "placeholders": [
+   "Rock in Rio"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "366-369": {
+  "a1": 366,
+  "a2": 369,
+  "names": [
+   "Daniela Mercury",
+   "Saulo"
+  ],
+  "placeholders": [
+   "Festival de Verão Salvador"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Saudade do Mar",
+    "album": "Saudade do Mar",
+    "artist": "Daniela Mercury",
+    "contributors": [
+     "Daniela Mercury",
+     "Mayra Andrade"
+    ],
+    "deezer_id": 3663671142
+   },
+   {
+    "title": "Paula e Bebeto",
+    "album": "Daniela Mercury & Cabeça de Nós Todos",
+    "artist": "Daniela Mercury",
+    "contributors": [
+     "Daniela Mercury",
+     "Cabeça De Nós Todos"
+    ],
+    "deezer_id": 2801201882
+   },
+   {
+    "title": "Salve-Se Quem Puder Ao Vivo",
+    "album": "Elétrica",
+    "artist": "Daniela Mercury",
+    "contributors": [
+     "Daniela Mercury"
+    ],
+    "deezer_id": 15800768
+   }
+  ]
+ },
+ "290-294": {
+  "a1": 290,
+  "a2": 294,
+  "names": [
+   "Henrique & Juliano",
+   "Zé Neto & Cristiano"
+  ],
+  "placeholders": [
+   "Ao Vivo em São José do Rio Preto"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Você Não É Ela (Ao Vivo)",
+    "album": "Um Novo Sonho (Deluxe)",
+    "artist": "Zé Neto & Cristiano",
+    "contributors": [
+     "Zé Neto & Cristiano",
+     "Henrique & Juliano"
+    ],
+    "deezer_id": 141045117
+   },
+   {
+    "title": "Estamos Quites (Ao Vivo)",
+    "album": "Ao Vivo em São José do Rio Preto (Deluxe)",
+    "artist": "Zé Neto & Cristiano",
+    "contributors": [
+     "Zé Neto & Cristiano",
+     "Henrique & Juliano"
+    ],
+    "deezer_id": 135609774
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Quase Todo Dia (Ao Vivo)",
+    "album": "Vocês & Deus, Vol. 1 (Ao Vivo no Rio de Janeiro)",
+    "artist": "Zé Neto & Cristiano",
+    "contributors": [
+     "Zé Neto & Cristiano"
+    ],
+    "deezer_id": 3933410311
+   }
+  ]
+ },
+ "367-426": {
+  "a1": 367,
+  "a2": 426,
+  "names": [
+   "Claudia Leitte",
+   "Wyclef Jean"
+  ],
+  "placeholders": [
+   "Carnaval Brasileirão"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "367-873": {
+  "a1": 367,
+  "a2": 873,
+  "names": [
+   "Claudia Leitte",
+   "Banda Eva"
+  ],
+  "placeholders": [
+   "Carnaval Baiano",
+   "Carnaval da Bahia"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "886-961": {
+  "a1": 886,
+  "a2": 961,
+  "names": [
+   "Zezé Di Camargo & Luciano",
+   "Leandro & Leonardo"
+  ],
+  "placeholders": [
+   "Ao Vivo Juntos",
+   "Sertanejo Raiz"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Mano (Ao Vivo | Homenagem Ao Leandro)",
+    "album": "A História Continua (ao Vivo)",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Leonardo",
+     "Zezé Di Camargo & Luciano",
+     "Amigos"
+    ],
+    "deezer_id": 826866452
+   }
+  ]
+ },
+ "362-950": {
+  "a1": 362,
+  "a2": 950,
+  "names": [
+   "Péricles",
+   "Exaltasamba"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Quando Se Perde Um Grande Amor",
+    "album": "Apoteose Ao Samba",
+    "artist": "Mauro Diniz",
+    "contributors": [
+     "Mauro Diniz",
+     "Péricles (Exaltasamba)"
+    ],
+    "deezer_id": 4681870
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Azul Sem Fim (Ao Vivo Na Ilha Da Magia,Brasil/2008)",
+    "album": "Ao Vivo Na Ilha Da Magia",
+    "artist": "Exaltasamba",
+    "contributors": [
+     "Exaltasamba"
+    ],
+    "deezer_id": 3458264
+   },
+   {
+    "title": "A Carta (Ao Vivo)",
+    "album": "Todos Os Sambas Ao Vivo",
+    "artist": "Exaltasamba",
+    "contributors": [
+     "Exaltasamba"
+    ],
+    "deezer_id": 144948844
+   }
+  ]
+ },
+ "1000-1001": {
+  "a1": 1000,
+  "a2": 1001,
+  "names": [
+   "Grupo Revelação",
+   "Arlindo Cruz"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Clube do Samba",
+    "album": "Sambabook João Nogueira, 2",
+    "artist": "Diogo Nogueira",
+    "contributors": [
+     "Diogo Nogueira",
+     "Beth Carvalho",
+     "Djavan",
+     "Mart'nália",
+     "Arlindo Cruz",
+     "Marcelo D2",
+     "Dudu Nobre",
+     "Hamilton De Holanda",
+     "Grupo Fundo De Quintal",
+     "Leny Andrade",
+     "Mariene De Castro",
+     "Teresa Cristina",
+     "Alcione",
+     "Ivan Lins",
+     "Martinho da Vila",
+     "Grupo Revelação",
+     "Seu Jorge",
+     "Lenine",
+     "Gisa Nogueira"
+    ],
+    "deezer_id": 132805918
+   },
+   {
+    "title": "Gesto de Amor",
+    "album": "Gesto de Amor",
+    "artist": "Bom Gosto",
+    "contributors": [
+     "Bom Gosto",
+     "Arlindo Cruz",
+     "Jorge Aragão",
+     "Diogo Nogueira",
+     "Mumuzinho",
+     "Xande De Pilares",
+     "Zeca Pagodinho",
+     "Grupo Fundo De Quintal",
+     "Grupo Revelação",
+     "Anderson Leonardo",
+     "Leandro Sapucahy",
+     "Dudu Nobre",
+     "Bruno Cardoso"
+    ],
+    "deezer_id": 1643178272
+   }
+  ],
+  "evidence": []
+ },
+ "358-361": {
+  "a1": 358,
+  "a2": 361,
+  "names": [
+   "Diogo Nogueira",
+   "Thiaguinho"
+  ],
+  "placeholders": [
+   "Ao Vivo em Família"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "O Som do Povo Ninguém Silencia (Tema de Final de Ano Transcontinental)",
+    "album": "O Som do Povo Ninguém Silencia (Tema de Final de Ano Transcontinental)",
+    "artist": "Leandro Lehart",
+    "contributors": [
+     "Leandro Lehart",
+     "Art Popular",
+     "Arlindinho",
+     "Belo",
+     "Diogo Nogueira",
+     "Bom Gosto",
+     "Eliana de Lima",
+     "Ferrugem",
+     "Leci Brandão",
+     "Lucas Morato",
+     "Marquinhos Sensação",
+     "Marcelinho Freitas",
+     "Molejo",
+     "Mumuzinho",
+     "Marcio Art",
+     "LUDMILLA",
+     "Netinho De Paula",
+     "Os De Paula",
+     "Onze:20",
+     "Pixote",
+     "Pinha Presidente",
+     "Péricles",
+     "Pique Novo",
+     "Reinaldo",
+     "Rodriguinho",
+     "Salgadinho",
+     "Samprazer",
+     "Suel",
+     "Thiaguinho",
+     "Xande De Pilares"
+    ],
+    "deezer_id": 605132572
+   }
+  ],
+  "evidence": []
+ },
+ "951-1000": {
+  "a1": 951,
+  "a2": 1000,
+  "names": [
+   "Raça Negra",
+   "Grupo Revelação"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "949-951": {
+  "a1": 949,
+  "a2": 951,
+  "names": [
+   "Art Popular",
+   "Raça Negra"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "951-1056": {
+  "a1": 951,
+  "a2": 1056,
+  "names": [
+   "Raça Negra",
+   "Só Pra Contrariar"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Essa Tal Liberdade (Ao Vivo)",
+    "album": "Gigantes do Samba (Ao Vivo)",
+    "artist": "Gigantes do Samba",
+    "contributors": [
+     "Gigantes do Samba",
+     "Raça Negra",
+     "Só Pra Contrariar"
+    ],
+    "deezer_id": 87957507
+   },
+   {
+    "title": "Deus Me Livre (Ao Vivo)",
+    "album": "Gigantes do Samba (Ao Vivo)",
+    "artist": "Gigantes do Samba",
+    "contributors": [
+     "Gigantes do Samba",
+     "Raça Negra",
+     "Só Pra Contrariar"
+    ],
+    "deezer_id": 87957493
+   },
+   {
+    "title": "Cheia de Manias (Ao Vivo)",
+    "album": "Gigantes do Samba (Ao Vivo)",
+    "artist": "Gigantes do Samba",
+    "contributors": [
+     "Gigantes do Samba",
+     "Raça Negra",
+     "Só Pra Contrariar"
+    ],
+    "deezer_id": 87957497
+   }
+  ],
+  "evidence": []
+ },
+ "372-1056": {
+  "a1": 372,
+  "a2": 1056,
+  "names": [
+   "Belo",
+   "Só Pra Contrariar"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "No Céu Da Paixão (I Believe I Can Fly)",
+    "album": "Só Pra Contrariar",
+    "artist": "Só Pra Contrariar",
+    "contributors": [
+     "Só Pra Contrariar"
+    ],
+    "deezer_id": 13213060
+   },
+   {
+    "title": "Beleza Que É Você Mulher",
+    "album": "Produto Nacional II",
+    "artist": "Só Pra Contrariar",
+    "contributors": [
+     "Só Pra Contrariar"
+    ],
+    "deezer_id": 13252208
+   },
+   {
+    "title": "Eu Amo Você / Ela Partiu / Que Beleza (Ao Vivo)",
+    "album": "Produto Nacional 3 (Ao Vivo)",
+    "artist": "Só Pra Contrariar",
+    "contributors": [
+     "Só Pra Contrariar"
+    ],
+    "deezer_id": 4072959191
+   }
+  ]
+ },
+ "361-1054": {
+  "a1": 361,
+  "a2": 1054,
+  "names": [
+   "Thiaguinho",
+   "Negritude Jr."
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "363-1054": {
+  "a1": 363,
+  "a2": 1054,
+  "names": [
+   "Sorriso Maroto",
+   "Negritude Jr."
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "363-373": {
+  "a1": 363,
+  "a2": 373,
+  "names": [
+   "Sorriso Maroto",
+   "Pixote"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Assim Você Mata o Papai / Tá Bom Aham (Ao Vivo)",
+    "album": "Assim Você Mata o Papai / Tá Bom Aham (Ao Vivo)",
+    "artist": "Sorriso Maroto",
+    "contributors": [
+     "Sorriso Maroto",
+     "Pixote",
+     "Jeito Moleque"
+    ],
+    "deezer_id": 2517910271
+   },
+   {
+    "title": "Respeita Minha História (Ao Vivo)",
+    "album": "Clube Do Araújo (Ao Vivo)",
+    "artist": "Felipe Araújo",
+    "contributors": [
+     "Felipe Araújo",
+     "Thiaguinho",
+     "Pixote",
+     "Dilsinho",
+     "Turma do Pagode",
+     "Mumuzinho",
+     "Ferrugem",
+     "Sorriso Maroto",
+     "Grupo Menos É Mais",
+     "Alexandre Pires"
+    ],
+    "deezer_id": 1689905307
+   }
+  ],
+  "evidence": []
+ },
+ "373-950": {
+  "a1": 373,
+  "a2": 950,
+  "names": [
+   "Pixote",
+   "Exaltasamba"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "952-4982": {
+  "a1": 952,
+  "a2": 4982,
+  "names": [
+   "Fundo de Quintal",
+   "Molejo"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Nossa Fantasia",
+    "album": "Nossa Fantasia",
+    "artist": "Molejo",
+    "contributors": [
+     "Molejo",
+     "Grupo Fundo De Quintal"
+    ],
+    "deezer_id": 1791768817
+   },
+   {
+    "title": "Não Tem Cor",
+    "album": "Não Tem Cor",
+    "artist": "Molejo",
+    "contributors": [
+     "Molejo",
+     "Grupo Fundo De Quintal"
+    ],
+    "deezer_id": 1791763207
+   }
+  ],
+  "evidence": []
+ },
+ "952-1068": {
+  "a1": 952,
+  "a2": 1068,
+  "names": [
+   "Fundo de Quintal",
+   "Claudinho & Buchecha"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-294": {
+  "a1": 292,
+  "a2": 294,
+  "names": [
+   "Gusttavo Lima",
+   "Zé Neto & Cristiano"
+  ],
+  "placeholders": [
+   "Dueto ao Vivo",
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Assino Com X (Ao Vivo)",
+    "album": "Assino Com X (Ao Vivo)",
+    "artist": "Gilberto E Gilmar",
+    "contributors": [
+     "Gilberto E Gilmar",
+     "Zé Neto & Cristiano"
+    ],
+    "deezer_id": 576488742
+   }
+  ]
+ },
+ "296-886": {
+  "a1": 296,
+  "a2": 886,
+  "names": [
+   "Bruno & Marrone",
+   "Zezé Di Camargo & Luciano"
+  ],
+  "placeholders": [
+   "DVD Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Agora Aguenta Nóis (feat. Chitãozinho & Xororó, Daniel, Bruno & Marrone, Leonardo, Sérgio Reis, Cleiton & Camargo & Chrystian & Ra",
+    "album": "Zezé Di Camargo & Luciano 2005",
+    "artist": "Zezé Di Camargo & Luciano",
+    "contributors": [
+     "Zezé Di Camargo & Luciano",
+     "Chitãozinho & Xororó",
+     "Daniel",
+     "Bruno & Marrone",
+     "Leonardo",
+     "Sergio Reis",
+     "Cleiton & Camargo",
+     "Chrystian & Ralf"
+    ],
+    "deezer_id": 46241531
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Flores em Vida - Homenagem a Zezé Di Camargo e Luciano e Bruno e Marrone",
+    "album": "Clássicos Sertanejos",
+    "artist": "Douglas Rodrigo",
+    "contributors": [
+     "Douglas Rodrigo",
+     "Fabian Carvalho"
+    ],
+    "deezer_id": 2299259875
+   }
+  ]
+ },
+ "298-886": {
+  "a1": 298,
+  "a2": 886,
+  "names": [
+   "Chitãozinho & Xororó",
+   "Zezé Di Camargo & Luciano"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Sinônimos / Pense Em Mim / É o Amor",
+    "album": "Sinônimos / Pense Em Mim / É o Amor",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Leonardo",
+     "Zezé Di Camargo & Luciano",
+     "Amigos",
+     "Amigos"
+    ],
+    "deezer_id": 674363232
+   },
+   {
+    "title": "Pot-Pourri: Sinônimos / Pense Em Mim / É o Amor (Ao Vivo)",
+    "album": "A História Continua (ao Vivo)",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Leonardo",
+     "Zezé Di Camargo & Luciano",
+     "Amigos"
+    ],
+    "deezer_id": 826866162
+   },
+   {
+    "title": "Disparada (Ao Vivo)",
+    "album": "A História Continua (ao Vivo)",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Leonardo",
+     "Zezé Di Camargo & Luciano",
+     "Amigos"
+    ],
+    "deezer_id": 826866152
+   }
+  ],
+  "evidence": []
+ },
+ "886-960": {
+  "a1": 886,
+  "a2": 960,
+  "names": [
+   "Zezé Di Camargo & Luciano",
+   "Roberto Carlos"
+  ],
+  "placeholders": [
+   "Especial de Natal"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "O Portão (feat. Zezé Di Camargo & Luciano) Ao Vivo",
+    "album": "Duetos 2",
+    "artist": "Roberto Carlos",
+    "contributors": [
+     "Roberto Carlos",
+     "Zezé Di Camargo & Luciano"
+    ],
+    "deezer_id": 103342296
+   }
+  ],
+  "evidence": [
+   {
+    "title": "O Portão (Ao Vivo)",
+    "album": "Roberto Carlos - Emoções Sertanejas",
+    "artist": "Zezé Di Camargo & Luciano",
+    "contributors": [
+     "Zezé Di Camargo & Luciano"
+    ],
+    "deezer_id": 72166164
+   },
+   {
+    "title": "Quando (feat. Daniel) (Ao Vivo)",
+    "album": "Roberto Carlos - Emoções Sertanejas",
+    "artist": "Zezé Di Camargo & Luciano",
+    "contributors": [
+     "Zezé Di Camargo & Luciano",
+     "Daniel"
+    ],
+    "deezer_id": 72166165
+   }
+  ]
+ },
+ "292-886": {
+  "a1": 292,
+  "a2": 886,
+  "names": [
+   "Gusttavo Lima",
+   "Zezé Di Camargo & Luciano"
+  ],
+  "placeholders": [
+   "Participação Especial"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Do Outro Lado da Moeda",
+    "album": "Buteco do Gusttavo Lima (Deluxe)",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima",
+     "Zezé Di Camargo & Luciano"
+    ],
+    "deezer_id": 103603990
+   },
+   {
+    "title": "Saudade",
+    "album": "Buteco do Gusttavo Lima (Deluxe)",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima",
+     "Zezé Di Camargo & Luciano"
+    ],
+    "deezer_id": 103603988
+   },
+   {
+    "title": "Do Outro Lado da Moeda (feat. Zezé Di Camargo & Luciano)",
+    "album": "Do Outro Lado da Moeda",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima",
+     "Zezé Di Camargo & Luciano"
+    ],
+    "deezer_id": 767373242
+   }
+  ],
+  "evidence": []
+ },
+ "291-886": {
+  "a1": 291,
+  "a2": 886,
+  "names": [
+   "Jorge & Mateus",
+   "Zezé Di Camargo & Luciano"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Intenso (feat. Jorge & Mateus)",
+    "album": "Dois Tempos",
+    "artist": "Zezé Di Camargo & Luciano",
+    "contributors": [
+     "Zezé Di Camargo & Luciano",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 137205038
+   }
+  ],
+  "evidence": []
+ },
+ "298-960": {
+  "a1": 298,
+  "a2": 960,
+  "names": [
+   "Chitãozinho & Xororó",
+   "Roberto Carlos"
+  ],
+  "placeholders": [
+   "Especial Juntos"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Arrasta uma Cadeira (feat. Chitãozinho & Xororó)",
+    "album": "Roberto Carlos (2005)",
+    "artist": "Roberto Carlos",
+    "contributors": [
+     "Roberto Carlos",
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 103413964
+   },
+   {
+    "title": "Amazônia (feat. Chitãozinho & Xororó)",
+    "album": "Roberto Carlos Duetos",
+    "artist": "Roberto Carlos",
+    "contributors": [
+     "Roberto Carlos",
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 1924629517
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Eu Preciso de Você (Ao Vivo)",
+    "album": "Roberto Carlos - Emoções Sertanejas",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 72166169
+   }
+  ]
+ },
+ "293-298": {
+  "a1": 293,
+  "a2": 298,
+  "names": [
+   "Luan Santana",
+   "Chitãozinho & Xororó"
+  ],
+  "placeholders": [
+   "Ao Vivo Especial"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "HÁBITO Ao Vivo",
+    "album": "LUAN CITY",
+    "artist": "Luan Santana",
+    "contributors": [
+     "Luan Santana",
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 1845012077
+   },
+   {
+    "title": "HÁBITO (Ao Vivo)",
+    "album": "Ao Vivo no Radio City Music Hall Nova Iorque",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Luan Santana"
+    ],
+    "deezer_id": 2256518937
+   },
+   {
+    "title": "FALANDO ÀS PAREDES (Ao Vivo)",
+    "album": "Ao Vivo no Radio City Music Hall Nova Iorque",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Luan Santana"
+    ],
+    "deezer_id": 2256518907
+   }
+  ],
+  "evidence": []
+ },
+ "292-896": {
+  "a1": 292,
+  "a2": 896,
+  "names": [
+   "Gusttavo Lima",
+   "Paula Fernandes"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "O Velhinho",
+    "album": "Presente de Natal - O Especial de Natal da Globo",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima",
+     "Paula Fernandes"
+    ],
+    "deezer_id": 112840326
+   }
+  ],
+  "evidence": []
+ },
+ "292-826": {
+  "a1": 292,
+  "a2": 826,
+  "names": [
+   "Gusttavo Lima",
+   "Murilo Huff"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Cep Novo Ao Vivo",
+    "album": "Cep Novo",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima",
+     "Murilo Huff"
+    ],
+    "deezer_id": 2736465481
+   }
+  ],
+  "evidence": []
+ },
+ "294-826": {
+  "a1": 294,
+  "a2": 826,
+  "names": [
+   "Zé Neto & Cristiano",
+   "Murilo Huff"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Veneno (Ao Vivo)",
+    "album": "Veneno (Ao Vivo)",
+    "artist": "Murilo Huff",
+    "contributors": [
+     "Murilo Huff",
+     "Zé Neto & Cristiano"
+    ],
+    "deezer_id": 3281449141
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Nem Vá",
+    "album": "Nem Vá",
+    "artist": "Matheus Fernandes",
+    "contributors": [
+     "Matheus Fernandes",
+     "Zé Neto & Cristiano"
+    ],
+    "deezer_id": 1092054422
+   }
+  ]
+ },
+ "291-303": {
+  "a1": 291,
+  "a2": 303,
+  "names": [
+   "Jorge & Mateus",
+   "Lauana Prado"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Haverá Sinais (Ao Vivo)",
+    "album": "Haverá Sinais (Ao Vivo)",
+    "artist": "Jorge & Mateus",
+    "contributors": [
+     "Jorge & Mateus",
+     "Lauana Prado"
+    ],
+    "deezer_id": 2652893202
+   },
+   {
+    "title": "Acredite! Vai Passar",
+    "album": "Acredite! Vai Passar",
+    "artist": "Rick & Renner",
+    "contributors": [
+     "Rick & Renner",
+     "Daniel",
+     "Fernando & Sorocaba",
+     "Bruno & Marrone",
+     "Lauana Prado",
+     "Paula Fernandes",
+     "Carol Valentim",
+     "Nayra Days",
+     "Jorge & Mateus",
+     "César Menotti & Fabiano",
+     "Leo & Junior",
+     "Eric Silver",
+     "Guilherme & Benuto",
+     "Rionegro & Solimões",
+     "Edson & Hudson"
+    ],
+    "deezer_id": 1471191282
+   }
+  ],
+  "evidence": []
+ },
+ "292-303": {
+  "a1": 292,
+  "a2": 303,
+  "names": [
+   "Gusttavo Lima",
+   "Lauana Prado"
+  ],
+  "placeholders": [
+   "Ao Vivo em Curitiba"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Meu Coração Não É Hotel",
+    "album": "Meu Coração Não É Hotel",
+    "artist": "Lauana Prado",
+    "contributors": [
+     "Lauana Prado",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 421655912
+   }
+  ],
+  "evidence": []
+ },
+ "292-1144": {
+  "a1": 292,
+  "a2": 1144,
+  "names": [
+   "Gusttavo Lima",
+   "Matheus Fernandes"
+  ],
+  "placeholders": [
+   "Participação Especial"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "288-1144": {
+  "a1": 288,
+  "a2": 1144,
+  "names": [
+   "Marília Mendonça",
+   "Matheus Fernandes"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-888": {
+  "a1": 292,
+  "a2": 888,
+  "names": [
+   "Gusttavo Lima",
+   "Léo Magalhães"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Não Quero Falar Com Ela (Ao Vivo)",
+    "album": "Amado Batista 50 Anos - Lado A (Ao Vivo)",
+    "artist": "Amado Batista",
+    "contributors": [
+     "Amado Batista",
+     "Léo Magalhães"
+    ],
+    "deezer_id": 3912036681
+   }
+  ]
+ },
+ "291-1074": {
+  "a1": 291,
+  "a2": 1074,
+  "names": [
+   "Jorge & Mateus",
+   "Lucas Lucco"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Tô Fazendo Amor (feat. Jorge & Mateus)",
+    "album": "Tô Fazendo Amor (feat. Jorge & Mateus)",
+    "artist": "Lucas Lucco",
+    "contributors": [
+     "Lucas Lucco",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 370618091
+   }
+  ],
+  "evidence": []
+ },
+ "298-1118": {
+  "a1": 298,
+  "a2": 1118,
+  "names": [
+   "Chitãozinho & Xororó",
+   "Roberta Miranda"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Rastros Na Areia (Adapt.: Da Mensagem De José Spera)",
+    "album": "Chitãozinho & Xororó Em Família",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Roberta Miranda"
+    ],
+    "deezer_id": 672204312
+   },
+   {
+    "title": "Majestade O Sabiá (Ao Vivo)",
+    "album": "A Majestade, O Sabia",
+    "artist": "Roberta Miranda",
+    "contributors": [
+     "Roberta Miranda",
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 4681377
+   },
+   {
+    "title": "Brincar de Ser Feliz (Ao Vivo)",
+    "album": "40 Anos: Entre Amigos (Ao Vivo)",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Roberta Miranda"
+    ],
+    "deezer_id": 102521196
+   }
+  ],
+  "evidence": []
+ },
+ "960-1118": {
+  "a1": 960,
+  "a2": 1118,
+  "names": [
+   "Roberto Carlos",
+   "Roberta Miranda"
+  ],
+  "placeholders": [
+   "Especial de Natal"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Eu Disse Adeus (Ao Vivo)",
+    "album": "Roberto Carlos - Emoções Sertanejas",
+    "artist": "Roberta Miranda",
+    "contributors": [
+     "Roberta Miranda"
+    ],
+    "deezer_id": 72166163
+   },
+   {
+    "title": "Mirando Estrellas (Olhando Estrelas)",
+    "album": "Pra Sempre Em Espanhol - Vol. 2",
+    "artist": "Roberto Carlos",
+    "contributors": [
+     "Roberto Carlos"
+    ],
+    "deezer_id": 16977350
+   }
+  ]
+ },
+ "962-1118": {
+  "a1": 962,
+  "a2": 1118,
+  "names": [
+   "Amado Batista",
+   "Roberta Miranda"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Tum Tum De Saudade (Ao Vivo)",
+    "album": "Amado Batista 50 Anos - Lado A (Ao Vivo)",
+    "artist": "Amado Batista",
+    "contributors": [
+     "Amado Batista",
+     "Roberta Miranda"
+    ],
+    "deezer_id": 3912036661
+   }
+  ],
+  "evidence": []
+ },
+ "291-1024": {
+  "a1": 291,
+  "a2": 1024,
+  "names": [
+   "Jorge & Mateus",
+   "Yasmin Santos"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1024": {
+  "a1": 292,
+  "a2": 1024,
+  "names": [
+   "Gusttavo Lima",
+   "Yasmin Santos"
+  ],
+  "placeholders": [
+   "Ao Vivo em Belo Horizonte"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "263-292": {
+  "a1": 263,
+  "a2": 292,
+  "names": [
+   "Luísa Sonza",
+   "Gusttavo Lima"
+  ],
+  "placeholders": [
+   "Participação"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "266-292": {
+  "a1": 266,
+  "a2": 292,
+  "names": [
+   "Léo Santana",
+   "Gusttavo Lima"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "289-293": {
+  "a1": 289,
+  "a2": 293,
+  "names": [
+   "Maiara & Maraisa",
+   "Luan Santana"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Estou Apaixonado (Ao Vivo)",
+    "album": "Daniel 40 Anos: Celebra João Paulo & Daniel (Ao Vivo)",
+    "artist": "Daniel",
+    "contributors": [
+     "Daniel",
+     "Luan Santana",
+     "César Menotti & Fabiano",
+     "Cezar & Paulinho",
+     "Edson & Hudson",
+     "Fernando & Sorocaba",
+     "Gian & Giovani",
+     "Guilherme e Santiago",
+     "Henrique & Juliano",
+     "João Bosco & Vinícius",
+     "Joao Neto & Frederico",
+     "Marcos & Belutti",
+     "Michel Teló",
+     "PARANA",
+     "Rick & Renner",
+     "Rionegro & Solimões",
+     "Althaír & Alexandre",
+     "Maiara & Maraisa",
+     "Chitãozinho & Xororó",
+     "Jorge &"
+    ],
+    "deezer_id": 2806987182
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Que Dure Para Sempre (Ao Vivo)",
+    "album": "Daniel 40 Anos: Celebra João Paulo & Daniel (Ao Vivo)",
+    "artist": "Daniel",
+    "contributors": [
+     "Daniel",
+     "Maiara & Maraisa"
+    ],
+    "deezer_id": 2806987212
+   },
+   {
+    "title": "Te Cuida Coração (Ao Vivo)",
+    "album": "Daniel 40 Anos: Celebra João Paulo & Daniel (Ao Vivo)",
+    "artist": "Daniel",
+    "contributors": [
+     "Daniel",
+     "Maiara & Maraisa"
+    ],
+    "deezer_id": 2806987382
+   }
+  ]
+ },
+ "289-290": {
+  "a1": 289,
+  "a2": 290,
+  "names": [
+   "Maiara & Maraisa",
+   "Henrique & Juliano"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "A Pergunta (Ao Vivo)",
+    "album": "Reflexo (Ao Vivo | Deluxe)",
+    "artist": "Maiara & Maraisa",
+    "contributors": [
+     "Maiara & Maraisa",
+     "Henrique & Juliano"
+    ],
+    "deezer_id": 622707762
+   },
+   {
+    "title": "Simplezim de Tudo (Ao Vivo)",
+    "album": "Reflexo (Ao Vivo | Deluxe)",
+    "artist": "Maiara & Maraisa",
+    "contributors": [
+     "Maiara & Maraisa",
+     "Henrique & Juliano"
+    ],
+    "deezer_id": 622707822
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Que Dure Para Sempre (Ao Vivo)",
+    "album": "Daniel 40 Anos: Celebra João Paulo & Daniel (Ao Vivo)",
+    "artist": "Daniel",
+    "contributors": [
+     "Daniel",
+     "Maiara & Maraisa"
+    ],
+    "deezer_id": 2806987212
+   }
+  ]
+ },
+ "289-292": {
+  "a1": 289,
+  "a2": 292,
+  "names": [
+   "Maiara & Maraisa",
+   "Gusttavo Lima"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Oficializar Ao Vivo",
+    "album": "Oficializar Ao Vivo",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima",
+     "Maiara & Maraisa"
+    ],
+    "deezer_id": 2411012515
+   },
+   {
+    "title": "Oficializar Ao Vivo",
+    "album": "Oficializar Ao Vivo",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima",
+     "Maiara & Maraisa"
+    ],
+    "deezer_id": 2411012515
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Oficializar",
+    "album": "Forró de Vaquejada 2.0",
+    "artist": "Arthur e Allancid",
+    "contributors": [
+     "Arthur e Allancid"
+    ],
+    "deezer_id": 2575307652
+   }
+  ]
+ },
+ "289-291": {
+  "a1": 289,
+  "a2": 291,
+  "names": [
+   "Maiara & Maraisa",
+   "Jorge & Mateus"
+  ],
+  "placeholders": [
+   "Show Ao Vivo Especial"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "É Rolo",
+    "album": "No Dia do Seu Casamento",
+    "artist": "Maiara & Maraisa",
+    "contributors": [
+     "Maiara & Maraisa",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 84266847
+   },
+   {
+    "title": "Bebo Litro (Ao Vivo)",
+    "album": "Reflexo (Ao Vivo | Deluxe)",
+    "artist": "Maiara & Maraisa",
+    "contributors": [
+     "Maiara & Maraisa",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 622707672
+   },
+   {
+    "title": "Fala a Verdade (Ao Vivo)",
+    "album": "Ao Vivo Em Goiânia",
+    "artist": "Maiara & Maraisa",
+    "contributors": [
+     "Maiara & Maraisa",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 119976320
+   }
+  ],
+  "evidence": []
+ },
+ "274-293": {
+  "a1": 274,
+  "a2": 293,
+  "names": [
+   "Simone & Simaria",
+   "Luan Santana"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Machista (Ao Vivo)",
+    "album": "Live-Móvel (Ao Vivo)",
+    "artist": "Luan Santana",
+    "contributors": [
+     "Luan Santana",
+     "Simone & Simaria"
+    ],
+    "deezer_id": 554384862
+   },
+   {
+    "title": "Consciência Suja (Ao Vivo)",
+    "album": "Consciência Suja (Ao Vivo)",
+    "artist": "Simone & Simaria",
+    "contributors": [
+     "Simone & Simaria",
+     "Luan Santana"
+    ],
+    "deezer_id": 653810582
+   },
+   {
+    "title": "Hasta La Vista",
+    "album": "Hasta La Vista",
+    "artist": "Luan Santana",
+    "contributors": [
+     "Luan Santana",
+     "Simone & Simaria",
+     "Pabllo Vittar"
+    ],
+    "deezer_id": 491449762
+   }
+  ],
+  "evidence": []
+ },
+ "274-290": {
+  "a1": 274,
+  "a2": 290,
+  "names": [
+   "Simone & Simaria",
+   "Henrique & Juliano"
+  ],
+  "placeholders": [
+   "Show Ao Vivo Juntos"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "274-291": {
+  "a1": 274,
+  "a2": 291,
+  "names": [
+   "Simone & Simaria",
+   "Jorge & Mateus"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Amor Mal Resolvido (Ao Vivo)",
+    "album": "Simone & Simaria (Ao Vivo)",
+    "artist": "Simone & Simaria",
+    "contributors": [
+     "Simone & Simaria",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 134946812
+   }
+  ],
+  "evidence": []
+ },
+ "293-887": {
+  "a1": 293,
+  "a2": 887,
+  "names": [
+   "Luan Santana",
+   "Victor & Leo"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-887": {
+  "a1": 292,
+  "a2": 887,
+  "names": [
+   "Gusttavo Lima",
+   "Victor & Leo"
+  ],
+  "placeholders": [
+   "Ao Vivo em Goiânia"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Me Segurou (Ao Vivo)",
+    "album": "Me Segurou / Lembranças De Amor (Ao Vivo)",
+    "artist": "Leo Chaves",
+    "contributors": [
+     "Leo Chaves",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 2367674785
+   },
+   {
+    "title": "Lembranças De Amor (Ao Vivo)",
+    "album": "Me Segurou / Lembranças De Amor (Ao Vivo)",
+    "artist": "Leo Chaves",
+    "contributors": [
+     "Leo Chaves",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 2367674795
+   }
+  ]
+ },
+ "291-887": {
+  "a1": 291,
+  "a2": 887,
+  "names": [
+   "Jorge & Mateus",
+   "Victor & Leo"
+  ],
+  "placeholders": [
+   "Show Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Guerreiro (feat. Jorge & Mateus)",
+    "album": "Viva por Mim",
+    "artist": "Victor & Leo",
+    "contributors": [
+     "Victor & Leo",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 71407016
+   }
+  ],
+  "evidence": []
+ },
+ "298-887": {
+  "a1": 298,
+  "a2": 887,
+  "names": [
+   "Chitãozinho & Xororó",
+   "Victor & Leo"
+  ],
+  "placeholders": [
+   "Participação Especial"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Boteco de Esquina / Fio de Cabelo (feat. Chitãozinho & Xororó) Ao vivo",
+    "album": "Victor & Leo Ao Vivo em Floripa",
+    "artist": "Victor & Leo",
+    "contributors": [
+     "Victor & Leo",
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 46240011
+   },
+   {
+    "title": "Ela Não Vai Mais Chorar (Ao Vivo)",
+    "album": "40 Anos: Entre Amigos (Ao Vivo)",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Victor & Leo"
+    ],
+    "deezer_id": 102521214
+   },
+   {
+    "title": "Solidão a Dois (Ao Vivo)",
+    "album": "Solidão a Dois (Ao Vivo)",
+    "artist": "Victor & Leo",
+    "contributors": [
+     "Victor & Leo",
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 511974672
+   }
+  ],
+  "evidence": []
+ },
+ "292-885": {
+  "a1": 292,
+  "a2": 885,
+  "names": [
+   "Gusttavo Lima",
+   "Marcos & Belutti"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "295-885": {
+  "a1": 295,
+  "a2": 885,
+  "names": [
+   "Matheus & Kauan",
+   "Marcos & Belutti"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Siga a Seta (feat. Matheus & Kauan) (Ao Vivo)",
+    "album": "Siga a Seta (feat. Matheus & Kauan) (Ao Vivo)",
+    "artist": "Marcos & Belutti",
+    "contributors": [
+     "Marcos & Belutti",
+     "Matheus & Kauan"
+    ],
+    "deezer_id": 535992122
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Siga A Seta (Made Popular By Marcos & Belutti, Matheus & Kauan) [Karaoke Version]",
+    "album": "Party Tyme 323 (Portuguese Karaoke Versions)",
+    "artist": "Party Tyme Karaoke",
+    "contributors": [
+     "Party Tyme Karaoke"
+    ],
+    "deezer_id": 2227801237
+   }
+  ]
+ },
+ "273-885": {
+  "a1": 273,
+  "a2": 885,
+  "names": [
+   "Wesley Safadão",
+   "Marcos & Belutti"
+  ],
+  "placeholders": [
+   "Show Ao Vivo Juntos"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Aquele 1%",
+    "album": "Aquele 1% - Single",
+    "artist": "Marcos & Belutti",
+    "contributors": [
+     "Marcos & Belutti",
+     "Wesley Safadão"
+    ],
+    "deezer_id": 102345206
+   },
+   {
+    "title": "Aquele 1%",
+    "album": "Arena Pop Remixes",
+    "artist": "Marcos & Belutti",
+    "contributors": [
+     "Marcos & Belutti",
+     "Wesley Safadão"
+    ],
+    "deezer_id": 120974424
+   },
+   {
+    "title": "Aquele 1% (Ao Vivo)",
+    "album": "Hits Acústicos",
+    "artist": "Marcos & Belutti",
+    "contributors": [
+     "Marcos & Belutti",
+     "Wesley Safadão"
+    ],
+    "deezer_id": 447681992
+   }
+  ],
+  "evidence": []
+ },
+ "293-1087": {
+  "a1": 293,
+  "a2": 1087,
+  "names": [
+   "Luan Santana",
+   "Fernando & Sorocaba"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Meu Melhor Lugar (feat. Luan Santana & Jetlag Music) (Ao Vivo)",
+    "album": "Meu Melhor Lugar (feat. Luan Santana & Jetlag Music) (Ao Vivo)",
+    "artist": "Fernando & Sorocaba",
+    "contributors": [
+     "Fernando & Sorocaba",
+     "Luan Santana",
+     "Jetlag Music"
+    ],
+    "deezer_id": 393227852
+   },
+   {
+    "title": "Everest",
+    "album": "As Melhores... Até Aqui",
+    "artist": "Fernando & Sorocaba",
+    "contributors": [
+     "Fernando & Sorocaba",
+     "Luan Santana"
+    ],
+    "deezer_id": 3594284232
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Mil Loucuras de Amor (Ao Vivo)",
+    "album": "Daniel 40 Anos: Celebra João Paulo & Daniel (Ao Vivo)",
+    "artist": "Daniel",
+    "contributors": [
+     "Daniel",
+     "Fernando & Sorocaba"
+    ],
+    "deezer_id": 2806987232
+   }
+  ]
+ },
+ "273-1087": {
+  "a1": 273,
+  "a2": 1087,
+  "names": [
+   "Wesley Safadão",
+   "Fernando & Sorocaba"
+  ],
+  "placeholders": [
+   "Ao Vivo em São Paulo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Sou Ciumento Mesmo",
+    "album": "Sou Ciumento Mesmo",
+    "artist": "Wesley Safadão",
+    "contributors": [
+     "Wesley Safadão",
+     "Fernando & Sorocaba"
+    ],
+    "deezer_id": 2010316137
+   },
+   {
+    "title": "Tá Combinado (Ao Vivo)",
+    "album": "João Neto & Frederico 25 Anos Ao Vivo (Ao Vivo)",
+    "artist": "Joao Neto & Frederico",
+    "contributors": [
+     "Joao Neto & Frederico",
+     "Hugo & Guilherme",
+     "Maiara & Maraisa",
+     "Marcos & Belutti",
+     "Guilherme & Benuto",
+     "Murilo Huff",
+     "Wesley Safadão",
+     "Eduardo Costa",
+     "João Bosco & Vinícius",
+     "Jorge & Mateus",
+     "Fernando & Sorocaba"
+    ],
+    "deezer_id": 3040522341
+   }
+  ],
+  "evidence": []
+ },
+ "292-1087": {
+  "a1": 292,
+  "a2": 1087,
+  "names": [
+   "Gusttavo Lima",
+   "Fernando & Sorocaba"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1102": {
+  "a1": 292,
+  "a2": 1102,
+  "names": [
+   "Gusttavo Lima",
+   "Munhoz & Mariano"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Liga pra minha saudade",
+    "album": "Liga pra minha saudade",
+    "artist": "Munhoz & Mariano",
+    "contributors": [
+     "Munhoz & Mariano",
+     "Gustavo Mioto"
+    ],
+    "deezer_id": 3552376601
+   }
+  ]
+ },
+ "291-1102": {
+  "a1": 291,
+  "a2": 1102,
+  "names": [
+   "Jorge & Mateus",
+   "Munhoz & Mariano"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "288-1102": {
+  "a1": 288,
+  "a2": 1102,
+  "names": [
+   "Marília Mendonça",
+   "Munhoz & Mariano"
+  ],
+  "placeholders": [
+   "Participação no Show"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "700-862": {
+  "a1": 700,
+  "a2": 862,
+  "names": [
+   "Xand Avião",
+   "Solange Almeida"
+  ],
+  "placeholders": [
+   "Ao Vivo em Fortaleza"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "10 Mil Vezes Melhor (feat. Xand Avião) Ao Vivo",
+    "album": "Sentimento de Mulher (Ao Vivo) [Deluxe]",
+    "artist": "Solange Almeida",
+    "contributors": [
+     "Solange Almeida",
+     "Xand Avião"
+    ],
+    "deezer_id": 372696501
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Tontos e Loucos (Ao Vivo)",
+    "album": "Muído de Vaquejada (Ao Vivo)",
+    "artist": "Wesley Safadão",
+    "contributors": [
+     "Wesley Safadão",
+     "Solange Almeida"
+    ],
+    "deezer_id": 3580877761
+   }
+  ]
+ },
+ "700-861": {
+  "a1": 700,
+  "a2": 861,
+  "names": [
+   "Xand Avião",
+   "Aviões do Forró"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Maresia – Forró Viral",
+    "album": "Maresia – Forró Viral",
+    "artist": "Xand Avião",
+    "contributors": [
+     "Xand Avião"
+    ],
+    "deezer_id": 2226874327
+   },
+   {
+    "title": "Recaidas",
+    "album": "Meu São João",
+    "artist": "Xand Avião",
+    "contributors": [
+     "Xand Avião"
+    ],
+    "deezer_id": 4021064181
+   },
+   {
+    "title": "Inquilina (Ao Vivo)",
+    "album": "O Forró É Pop (Ao Vivo)",
+    "artist": "Xand Avião",
+    "contributors": [
+     "Xand Avião"
+    ],
+    "deezer_id": 3382206211
+   }
+  ]
+ },
+ "292-857": {
+  "a1": 292,
+  "a2": 857,
+  "names": [
+   "Gusttavo Lima",
+   "Zé Vaqueiro"
+  ],
+  "placeholders": [
+   "Ao Vivo em Teresina"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "857-1099": {
+  "a1": 857,
+  "a2": 1099,
+  "names": [
+   "Zé Vaqueiro",
+   "Ana Castela"
+  ],
+  "placeholders": [
+   "Participação especial"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "A BOIADEIRA E O VAQUEIRO",
+    "album": "A BOIADEIRA E O VAQUEIRO",
+    "artist": "Zé Felipe",
+    "contributors": [
+     "Zé Felipe",
+     "MC BOCÃOZINHO",
+     "ANA CASTELINHA"
+    ],
+    "deezer_id": 3620946792
+   }
+  ]
+ },
+ "292-1152": {
+  "a1": 292,
+  "a2": 1152,
+  "names": [
+   "Gusttavo Lima",
+   "Gabriel Diniz"
+  ],
+  "placeholders": [
+   "Ao Vivo em Fortaleza"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Hora De Dar Tchau (Made Popular By Gabriel Diniz & Gusttavo Lima) [Karaoke Version]",
+    "album": "Party Tyme 312 (Portuguese Karaoke Versions)",
+    "artist": "Party Tyme Karaoke",
+    "contributors": [
+     "Party Tyme Karaoke"
+    ],
+    "deezer_id": 2218534827
+   }
+  ]
+ },
+ "291-1152": {
+  "a1": 291,
+  "a2": 1152,
+  "names": [
+   "Jorge & Mateus",
+   "Gabriel Diniz"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Paraquedas",
+    "album": "Paraquedas",
+    "artist": "Gabriel Diniz",
+    "contributors": [
+     "Gabriel Diniz",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 145401204
+   }
+  ],
+  "evidence": []
+ },
+ "291-1100": {
+  "a1": 291,
+  "a2": 1100,
+  "names": [
+   "Jorge & Mateus",
+   "Humberto & Ronaldo"
+  ],
+  "placeholders": [
+   "Ao Vivo Especial"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Não Tô Te Alugando",
+    "album": "Não Tô Te Alugando",
+    "artist": "Humberto & Ronaldo",
+    "contributors": [
+     "Humberto & Ronaldo",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 1509898712
+   },
+   {
+    "title": "Carência (Ao Vivo)",
+    "album": "Playlist (Ao Vivo)",
+    "artist": "Humberto & Ronaldo",
+    "contributors": [
+     "Humberto & Ronaldo",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 124113338
+   },
+   {
+    "title": "Romance (Ao Vivo)",
+    "album": "Romance (Ao Vivo)",
+    "artist": "Humberto & Ronaldo",
+    "contributors": [
+     "Humberto & Ronaldo",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 1038758522
+   }
+  ],
+  "evidence": []
+ },
+ "292-1100": {
+  "a1": 292,
+  "a2": 1100,
+  "names": [
+   "Gusttavo Lima",
+   "Humberto & Ronaldo"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Furacão (feat. Humberto & Ronaldo) Ao Vivo",
+    "album": "Inventor dos Amores (Ao Vivo)",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima",
+     "Humberto & Ronaldo"
+    ],
+    "deezer_id": 767117762
+   },
+   {
+    "title": "Chega Mais pra Cá (Ao Vivo)",
+    "album": "Romance (Ao Vivo)",
+    "artist": "Humberto & Ronaldo",
+    "contributors": [
+     "Humberto & Ronaldo",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 1038758482
+   },
+   {
+    "title": "Eu Vou Contar pro Cêis (Ao Vivo)",
+    "album": "Eu Vou Conta Procêis (Ao Vivo)",
+    "artist": "Humberto & Ronaldo",
+    "contributors": [
+     "Humberto & Ronaldo",
+     "Gusttavo Lima",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 1038756842
+   }
+  ],
+  "evidence": []
+ },
+ "288-1100": {
+  "a1": 288,
+  "a2": 1100,
+  "names": [
+   "Marília Mendonça",
+   "Humberto & Ronaldo"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1086": {
+  "a1": 292,
+  "a2": 1086,
+  "names": [
+   "Gusttavo Lima",
+   "João Bosco & Vinícius"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "25 Horas (Ao Vivo)",
+    "album": "25 Horas (Ao Vivo)",
+    "artist": "João Bosco & Vinícius",
+    "contributors": [
+     "João Bosco & Vinícius",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 3937383151
+   },
+   {
+    "title": "Medida Protetiva (Ao Vivo)",
+    "album": "Deixa o Barulho, EP 1 (Ao Vivo)",
+    "artist": "João Bosco & Vinícius",
+    "contributors": [
+     "João Bosco & Vinícius",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 3532777341
+   },
+   {
+    "title": "25 Horas (Ao Vivo)",
+    "album": "25 Horas (Ao Vivo)",
+    "artist": "João Bosco & Vinícius",
+    "contributors": [
+     "João Bosco & Vinícius",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 3937383151
+   }
+  ],
+  "evidence": []
+ },
+ "291-1086": {
+  "a1": 291,
+  "a2": 1086,
+  "names": [
+   "Jorge & Mateus",
+   "João Bosco & Vinícius"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Não Fez por Merecer (feat. Jorge & Mateus) (Ao Vivo)",
+    "album": "Não Fez por Merecer (feat. Jorge & Mateus) (Ao Vivo)",
+    "artist": "João Bosco & Vinícius",
+    "contributors": [
+     "João Bosco & Vinícius",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 2980105491
+   },
+   {
+    "title": "Tá Combinado (Ao Vivo)",
+    "album": "João Neto & Frederico 25 Anos Ao Vivo (Ao Vivo)",
+    "artist": "Joao Neto & Frederico",
+    "contributors": [
+     "Joao Neto & Frederico",
+     "Hugo & Guilherme",
+     "Maiara & Maraisa",
+     "Marcos & Belutti",
+     "Guilherme & Benuto",
+     "Murilo Huff",
+     "Wesley Safadão",
+     "Eduardo Costa",
+     "João Bosco & Vinícius",
+     "Jorge & Mateus",
+     "Fernando & Sorocaba"
+    ],
+    "deezer_id": 3040522341
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Não Fez Por Merecer (Made Popular By João Bosco & Vinícius, Jorge & Mateus) [Karaoke Version]",
+    "album": "Party Tyme 319 (Portuguese Karaoke Versions)",
+    "artist": "Party Tyme Karaoke",
+    "contributors": [
+     "Party Tyme Karaoke"
+    ],
+    "deezer_id": 2227796257
+   }
+  ]
+ },
+ "290-1086": {
+  "a1": 290,
+  "a2": 1086,
+  "names": [
+   "Henrique & Juliano",
+   "João Bosco & Vinícius"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Deixa a Gente Quieto (feat. Henrique & Juliano) (Ao Vivo)",
+    "album": "Céu de São Paulo (Ao Vivo)",
+    "artist": "João Bosco & Vinícius",
+    "contributors": [
+     "João Bosco & Vinícius",
+     "Henrique & Juliano"
+    ],
+    "deezer_id": 2991017651
+   },
+   {
+    "title": "Estou Apaixonado (Ao Vivo)",
+    "album": "Daniel 40 Anos: Celebra João Paulo & Daniel (Ao Vivo)",
+    "artist": "Daniel",
+    "contributors": [
+     "Daniel",
+     "Luan Santana",
+     "César Menotti & Fabiano",
+     "Cezar & Paulinho",
+     "Edson & Hudson",
+     "Fernando & Sorocaba",
+     "Gian & Giovani",
+     "Guilherme e Santiago",
+     "Henrique & Juliano",
+     "João Bosco & Vinícius",
+     "Joao Neto & Frederico",
+     "Marcos & Belutti",
+     "Michel Teló",
+     "PARANA",
+     "Rick & Renner",
+     "Rionegro & Solimões",
+     "Althaír & Alexandre",
+     "Maiara & Maraisa",
+     "Chitãozinho & Xororó",
+     "Jorge &"
+    ],
+    "deezer_id": 2806987182
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Você Só Me Faz Feliz (Ao Vivo)",
+    "album": "Daniel 40 Anos: Celebra João Paulo & Daniel (Ao Vivo)",
+    "artist": "Daniel",
+    "contributors": [
+     "Daniel",
+     "João Bosco & Vinícius"
+    ],
+    "deezer_id": 2806987402
+   }
+  ]
+ },
+ "292-1088": {
+  "a1": 292,
+  "a2": 1088,
+  "names": [
+   "Gusttavo Lima",
+   "Edson & Hudson"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Fui Fiel (Ao Vivo)",
+    "album": "Foi Deus, Vol. 2 (Ao Vivo)",
+    "artist": "Edson & Hudson",
+    "contributors": [
+     "Edson & Hudson",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 3794951462
+   },
+   {
+    "title": "Te Quero pra Mim (Ao Vivo)",
+    "album": "Foi Deus, Vol. 2 (Ao Vivo)",
+    "artist": "Edson & Hudson",
+    "contributors": [
+     "Edson & Hudson",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 3794951472
+   },
+   {
+    "title": "Sacanagem Pura (Ao Vivo)",
+    "album": "Sacanagem Pura (Ao Vivo)",
+    "artist": "Edson & Hudson",
+    "contributors": [
+     "Edson & Hudson",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 2311767215
+   }
+  ],
+  "evidence": []
+ },
+ "296-1088": {
+  "a1": 296,
+  "a2": 1088,
+  "names": [
+   "Bruno & Marrone",
+   "Edson & Hudson"
+  ],
+  "placeholders": [
+   "Ao Vivo Juntos"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Contagem Regressiva",
+    "album": "Escândalo De Amor",
+    "artist": "Edson & Hudson",
+    "contributors": [
+     "Edson & Hudson",
+     "Bruno & Marrone"
+    ],
+    "deezer_id": 107773176
+   },
+   {
+    "title": "Acredite! Vai Passar",
+    "album": "Acredite! Vai Passar",
+    "artist": "Rick & Renner",
+    "contributors": [
+     "Rick & Renner",
+     "Daniel",
+     "Fernando & Sorocaba",
+     "Bruno & Marrone",
+     "Lauana Prado",
+     "Paula Fernandes",
+     "Carol Valentim",
+     "Nayra Days",
+     "Jorge & Mateus",
+     "César Menotti & Fabiano",
+     "Leo & Junior",
+     "Eric Silver",
+     "Guilherme & Benuto",
+     "Rionegro & Solimões",
+     "Edson & Hudson"
+    ],
+    "deezer_id": 1471191282
+   }
+  ],
+  "evidence": []
+ },
+ "296-1062": {
+  "a1": 296,
+  "a2": 1062,
+  "names": [
+   "Bruno & Marrone",
+   "Rick & Renner"
+  ],
+  "placeholders": [
+   "DVD Especial"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Acredite! Vai Passar",
+    "album": "Acredite! Vai Passar",
+    "artist": "Rick & Renner",
+    "contributors": [
+     "Rick & Renner",
+     "Daniel",
+     "Fernando & Sorocaba",
+     "Bruno & Marrone",
+     "Lauana Prado",
+     "Paula Fernandes",
+     "Carol Valentim",
+     "Nayra Days",
+     "Jorge & Mateus",
+     "César Menotti & Fabiano",
+     "Leo & Junior",
+     "Eric Silver",
+     "Guilherme & Benuto",
+     "Rionegro & Solimões",
+     "Edson & Hudson"
+    ],
+    "deezer_id": 1471191282
+   }
+  ],
+  "evidence": []
+ },
+ "298-1062": {
+  "a1": 298,
+  "a2": 1062,
+  "names": [
+   "Chitãozinho & Xororó",
+   "Rick & Renner"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Hino De Reis",
+    "album": "Chitãozinho & Xororó Em Família",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Mauricio & Mauri",
+     "Rick & Renner"
+    ],
+    "deezer_id": 672204362
+   },
+   {
+    "title": "Eu Menti (Ao Vivo)",
+    "album": "40 Anos: Entre Amigos (Ao Vivo)",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Rick & Renner"
+    ],
+    "deezer_id": 102521194
+   },
+   {
+    "title": "Estou Apaixonado (Ao Vivo)",
+    "album": "Daniel 40 Anos: Celebra João Paulo & Daniel (Ao Vivo)",
+    "artist": "Daniel",
+    "contributors": [
+     "Daniel",
+     "Luan Santana",
+     "César Menotti & Fabiano",
+     "Cezar & Paulinho",
+     "Edson & Hudson",
+     "Fernando & Sorocaba",
+     "Gian & Giovani",
+     "Guilherme e Santiago",
+     "Henrique & Juliano",
+     "João Bosco & Vinícius",
+     "Joao Neto & Frederico",
+     "Marcos & Belutti",
+     "Michel Teló",
+     "PARANA",
+     "Rick & Renner",
+     "Rionegro & Solimões",
+     "Althaír & Alexandre",
+     "Maiara & Maraisa",
+     "Chitãozinho & Xororó",
+     "Jorge &"
+    ],
+    "deezer_id": 2806987182
+   }
+  ],
+  "evidence": []
+ },
+ "886-1085": {
+  "a1": 886,
+  "a2": 1085,
+  "names": [
+   "Zezé Di Camargo & Luciano",
+   "César & Paulinho"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "298-1128": {
+  "a1": 298,
+  "a2": 1128,
+  "names": [
+   "Chitãozinho & Xororó",
+   "João Mineiro & Marciano"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Terra Tombada",
+    "album": "Os Melhores Momentos",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 3507987
+   },
+   {
+    "title": "Meu Disfarce",
+    "album": "Os Melhores Momentos",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 3507989
+   },
+   {
+    "title": "Coração Quebrado (1998 Remaster)",
+    "album": "Os Melhores Momentos",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 3507985
+   }
+  ]
+ },
+ "1090-1128": {
+  "a1": 1090,
+  "a2": 1128,
+  "names": [
+   "Milionário & José Rico",
+   "João Mineiro & Marciano"
+  ],
+  "placeholders": [
+   "Sertanejo Raiz"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "886-1129": {
+  "a1": 886,
+  "a2": 1129,
+  "names": [
+   "Zezé Di Camargo & Luciano",
+   "Gian & Giovani"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "298-1130": {
+  "a1": 298,
+  "a2": 1130,
+  "names": [
+   "Chitãozinho & Xororó",
+   "Teodoro & Sampaio"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Vestido de seda (Ao vivo)",
+    "album": "Ao vivo convida (Redux)",
+    "artist": "Teodoro & Sampaio",
+    "contributors": [
+     "Teodoro & Sampaio",
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 684546432
+   }
+  ],
+  "evidence": []
+ },
+ "296-962": {
+  "a1": 296,
+  "a2": 962,
+  "names": [
+   "Bruno & Marrone",
+   "Amado Batista"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-962": {
+  "a1": 292,
+  "a2": 962,
+  "names": [
+   "Gusttavo Lima",
+   "Amado Batista"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Alucinação (Ao Vivo)",
+    "album": "Amado Batista 50 Anos - Lado A (Ao Vivo)",
+    "artist": "Amado Batista",
+    "contributors": [
+     "Amado Batista",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 3912036641
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Desisto (Ao Vivo)",
+    "album": "Amado Batista 50 Anos - Lado A (Ao Vivo)",
+    "artist": "Amado Batista",
+    "contributors": [
+     "Amado Batista"
+    ],
+    "deezer_id": 3912036581
+   },
+   {
+    "title": "Deusa Nua (Ao Vivo)",
+    "album": "Amado Batista 50 Anos - Lado A (Ao Vivo)",
+    "artist": "Amado Batista",
+    "contributors": [
+     "Amado Batista"
+    ],
+    "deezer_id": 3912036591
+   }
+  ]
+ },
+ "886-962": {
+  "a1": 886,
+  "a2": 962,
+  "names": [
+   "Zezé Di Camargo & Luciano",
+   "Amado Batista"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "265-292": {
+  "a1": 265,
+  "a2": 292,
+  "names": [
+   "Pedro Sampaio",
+   "Gusttavo Lima"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "293-741": {
+  "a1": 293,
+  "a2": 741,
+  "names": [
+   "Luan Santana",
+   "Alok"
+  ],
+  "placeholders": [
+   "Ao Vivo Juntos"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Próximo amor",
+    "album": "Próximo amor",
+    "artist": "Alok",
+    "contributors": [
+     "Alok",
+     "Luan Santana"
+    ],
+    "deezer_id": 589694622
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Amor Distante / Inquilina de Violeiro (Ao Vivo)",
+    "album": "Ao Vivo No Rio",
+    "artist": "Luan Santana",
+    "contributors": [
+     "Luan Santana",
+     "Zezé Di Camargo & Luciano"
+    ],
+    "deezer_id": 12673444
+   },
+   {
+    "title": "A Dor Desse Amor",
+    "album": "Confraternização Família Santana 3",
+    "artist": "Luan Santana",
+    "contributors": [
+     "Luan Santana"
+    ],
+    "deezer_id": 1046733852
+   }
+  ]
+ },
+ "273-741": {
+  "a1": 273,
+  "a2": 741,
+  "names": [
+   "Wesley Safadão",
+   "Alok"
+  ],
+  "placeholders": [
+   "Show ao Vivo Juntos"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Amor Transparente (Ao Vivo)",
+    "album": "TBT WS (Ao Vivo)",
+    "artist": "Wesley Safadão",
+    "contributors": [
+     "Wesley Safadão"
+    ],
+    "deezer_id": 2010684147
+   },
+   {
+    "title": "Alô",
+    "album": "O Rey do Nordeste",
+    "artist": "Rey Vaqueiro",
+    "contributors": [
+     "Rey Vaqueiro",
+     "Wesley Safadão"
+    ],
+    "deezer_id": 4175963122
+   },
+   {
+    "title": "Longe de Você / Menino Bicho / Será (Ao Vivo)",
+    "album": "Bem-Vindo ao Meu Mundo - Forró & Vaquejada (Ao Vivo)",
+    "artist": "Wesley Safadão",
+    "contributors": [
+     "Wesley Safadão",
+     "Limão Com Mel"
+    ],
+    "deezer_id": 3252629571
+   }
+  ]
+ },
+ "292-305": {
+  "a1": 292,
+  "a2": 305,
+  "names": [
+   "Gusttavo Lima",
+   "Ferrugem"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "291-305": {
+  "a1": 291,
+  "a2": 305,
+  "names": [
+   "Jorge & Mateus",
+   "Ferrugem"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-304": {
+  "a1": 292,
+  "a2": 304,
+  "names": [
+   "Gusttavo Lima",
+   "Dilsinho"
+  ],
+  "placeholders": [
+   "Ao Vivo Especial"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "291-304": {
+  "a1": 291,
+  "a2": 304,
+  "names": [
+   "Jorge & Mateus",
+   "Dilsinho"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Pódio",
+    "album": "Pódio",
+    "artist": "Dilsinho",
+    "contributors": [
+     "Dilsinho",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 1570449282
+   }
+  ],
+  "evidence": []
+ },
+ "288-361": {
+  "a1": 288,
+  "a2": 361,
+  "names": [
+   "Marília Mendonça",
+   "Thiaguinho"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Ouvindo Marília Mendonça",
+    "album": "Setembro 2017",
+    "artist": "Thiaguinho do Arrocha Oficial",
+    "contributors": [
+     "Thiaguinho do Arrocha Oficial"
+    ],
+    "deezer_id": 1777996657
+   }
+  ]
+ },
+ "292-361": {
+  "a1": 292,
+  "a2": 361,
+  "names": [
+   "Gusttavo Lima",
+   "Thiaguinho"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "363-1122": {
+  "a1": 363,
+  "a2": 1122,
+  "names": [
+   "Sorriso Maroto",
+   "Alexandre Pires"
+  ],
+  "placeholders": [
+   "Ao Vivo Juntos"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Mágica Ao Vivo",
+    "album": "Sorriso Maroto - Pagode, Verão e Churrasco 2026",
+    "artist": "Sorriso Maroto",
+    "contributors": [
+     "Sorriso Maroto",
+     "Alexandre Pires"
+    ],
+    "deezer_id": 3718090992
+   },
+   {
+    "title": "Primeiro Amor / Domingo / Você Virou Saudade Ao Vivo",
+    "album": "Primeiro Amor / Domingo / Você Virou Saudade",
+    "artist": "Sorriso Maroto",
+    "contributors": [
+     "Sorriso Maroto",
+     "Alexandre Pires"
+    ],
+    "deezer_id": 3568131881
+   },
+   {
+    "title": "Quando é Amor / Dói Demais / Depois do Prazer Ao Vivo",
+    "album": "Quando é Amor / Dói Demais / Depois do Prazer",
+    "artist": "Sorriso Maroto",
+    "contributors": [
+     "Sorriso Maroto",
+     "Alexandre Pires"
+    ],
+    "deezer_id": 3568131871
+   }
+  ],
+  "evidence": []
+ },
+ "362-1122": {
+  "a1": 362,
+  "a2": 1122,
+  "names": [
+   "Péricles",
+   "Alexandre Pires"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "304-372": {
+  "a1": 304,
+  "a2": 372,
+  "names": [
+   "Dilsinho",
+   "Belo"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Me Belisca (Ao Vivo)",
+    "album": "Melhores Dilsinho",
+    "artist": "Dilsinho",
+    "contributors": [
+     "Dilsinho"
+    ],
+    "deezer_id": 948010842
+   },
+   {
+    "title": "Me Belisca / Santo Forte Ao Vivo",
+    "album": "Open House (Ao Vivo)",
+    "artist": "Dilsinho",
+    "contributors": [
+     "Dilsinho"
+    ],
+    "deezer_id": 1029946362
+   },
+   {
+    "title": "Coração Apertadin (Ao Vivo)",
+    "album": "Coração Apertadin (Ao Vivo)",
+    "artist": "Di Propósito",
+    "contributors": [
+     "Di Propósito",
+     "Dilsinho"
+    ],
+    "deezer_id": 2019693417
+   }
+  ]
+ },
+ "292-998": {
+  "a1": 292,
+  "a2": 998,
+  "names": [
+   "Gusttavo Lima",
+   "Mumuzinho"
+  ],
+  "placeholders": [
+   "Ao Vivo em São Paulo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "305-1032": {
+  "a1": 305,
+  "a2": 1032,
+  "names": [
+   "Ferrugem",
+   "Rodriguinho"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Igual à Você",
+    "album": "Igual à Você",
+    "artist": "Rodriguinho",
+    "contributors": [
+     "Rodriguinho",
+     "Ferrugem"
+    ],
+    "deezer_id": 622934582
+   },
+   {
+    "title": "Já Deu Pra Notar / Melhor Eu Ir (Ao Vivo)",
+    "album": "Já Deu Pra Notar / Melhor Eu Ir (Ao Vivo)",
+    "artist": "Rodriguinho",
+    "contributors": [
+     "Rodriguinho",
+     "Gaab",
+     "Mr. Dan",
+     "Ferrugem"
+    ],
+    "deezer_id": 586334372
+   },
+   {
+    "title": "O Som do Povo Ninguém Silencia (Tema de Final de Ano Transcontinental)",
+    "album": "O Som do Povo Ninguém Silencia (Tema de Final de Ano Transcontinental)",
+    "artist": "Leandro Lehart",
+    "contributors": [
+     "Leandro Lehart",
+     "Art Popular",
+     "Arlindinho",
+     "Belo",
+     "Diogo Nogueira",
+     "Bom Gosto",
+     "Eliana de Lima",
+     "Ferrugem",
+     "Leci Brandão",
+     "Lucas Morato",
+     "Marquinhos Sensação",
+     "Marcelinho Freitas",
+     "Molejo",
+     "Mumuzinho",
+     "Marcio Art",
+     "LUDMILLA",
+     "Netinho De Paula",
+     "Os De Paula",
+     "Onze:20",
+     "Pixote",
+     "Pinha Presidente",
+     "Péricles",
+     "Pique Novo",
+     "Reinaldo",
+     "Rodriguinho",
+     "Salgadinho",
+     "Samprazer",
+     "Suel",
+     "Thiaguinho",
+     "Xande De Pilares"
+    ],
+    "deezer_id": 605132572
+   }
+  ],
+  "evidence": []
+ },
+ "304-1122": {
+  "a1": 304,
+  "a2": 1122,
+  "names": [
+   "Dilsinho",
+   "Alexandre Pires"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Alívio Passageiro (Ao Vivo)",
+    "album": "Na Balsa (Ao Vivo)",
+    "artist": "Alexandre Pires",
+    "contributors": [
+     "Alexandre Pires",
+     "Dilsinho"
+    ],
+    "deezer_id": 2256429377
+   },
+   {
+    "title": "Trovão / Dói Demais",
+    "album": "Trovão / Dói Demais",
+    "artist": "Grandes Encontros",
+    "contributors": [
+     "Grandes Encontros",
+     "Dilsinho",
+     "Alexandre Pires"
+    ],
+    "deezer_id": 709914252
+   },
+   {
+    "title": "Respeita Minha História (Ao Vivo)",
+    "album": "Clube Do Araújo (Ao Vivo)",
+    "artist": "Felipe Araújo",
+    "contributors": [
+     "Felipe Araújo",
+     "Thiaguinho",
+     "Pixote",
+     "Dilsinho",
+     "Turma do Pagode",
+     "Mumuzinho",
+     "Ferrugem",
+     "Sorriso Maroto",
+     "Grupo Menos É Mais",
+     "Alexandre Pires"
+    ],
+    "deezer_id": 1689905307
+   }
+  ],
+  "evidence": []
+ },
+ "288-371": {
+  "a1": 288,
+  "a2": 371,
+  "names": [
+   "Marília Mendonça",
+   "Iza"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Uma Vida a Mais",
+    "album": "Decretos Reais, Vol. 2",
+    "artist": "Marília Mendonça",
+    "contributors": [
+     "Marília Mendonça"
+    ],
+    "deezer_id": 2056080337
+   },
+   {
+    "title": "Uma Vida a Mais (Listen To Your Heart)",
+    "album": "Festa das Patroas",
+    "artist": "Marília Mendonça",
+    "contributors": [
+     "Marília Mendonça",
+     "Maiara & Maraisa"
+    ],
+    "deezer_id": 1060127672
+   },
+   {
+    "title": "Vira Homem",
+    "album": "Vira Homem",
+    "artist": "Marília Mendonça",
+    "contributors": [
+     "Marília Mendonça"
+    ],
+    "deezer_id": 938976472
+   }
+  ]
+ },
+ "292-371": {
+  "a1": 292,
+  "a2": 371,
+  "names": [
+   "Gusttavo Lima",
+   "Iza"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Calcinha de Renda Ao Vivo",
+    "album": "Fora do Padrão Vol. 01 Ao Vivo",
+    "artist": "Panda",
+    "contributors": [
+     "Panda",
+     "Gusttavo Lima",
+     "Mj Records"
+    ],
+    "deezer_id": 3662196962
+   },
+   {
+    "title": "Bala Alojada",
+    "album": "Bala Alojada",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 4094705011
+   },
+   {
+    "title": "DNA Ao Vivo",
+    "album": "O Embaixador",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 1826941467
+   }
+  ]
+ },
+ "267-273": {
+  "a1": 267,
+  "a2": 273,
+  "names": [
+   "Lexa",
+   "Wesley Safadão"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Pega o Guanabara (Ao Vivo)",
+    "album": "Wesley Safadão Ao Vivo em Fortaleza - EP.01",
+    "artist": "Wesley Safadão",
+    "contributors": [
+     "Wesley Safadão",
+     "Alanzim Coreano"
+    ],
+    "deezer_id": 1935256737
+   },
+   {
+    "title": "Leva Eu Pra Sua Casa (Ao Vivo)",
+    "album": "Ao Vivo Em Brasília",
+    "artist": "Wesley Safadão",
+    "contributors": [
+     "Wesley Safadão"
+    ],
+    "deezer_id": 2022110467
+   },
+   {
+    "title": "Onde Canta o Sabiá (Ao Vivo)",
+    "album": "Bem-Vindo ao Meu Mundo - Forró & Vaquejada (Ao Vivo)",
+    "artist": "Wesley Safadão",
+    "contributors": [
+     "Wesley Safadão",
+     "Raí Saia Rodada"
+    ],
+    "deezer_id": 3252629661
+   }
+  ]
+ },
+ "292-942": {
+  "a1": 292,
+  "a2": 942,
+  "names": [
+   "Gusttavo Lima",
+   "Naldo Benny"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "389-837": {
+  "a1": 389,
+  "a2": 837,
+  "names": [
+   "MC Livinho",
+   "Kevinho"
+  ],
+  "placeholders": [
+   "Ao Vivo Juntos"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Intrigantes Pensamentos",
+    "album": "Intrigantes Pensamentos",
+    "artist": "Dj Caio Vieira",
+    "contributors": [
+     "Dj Caio Vieira",
+     "Mc Kevinho",
+     "Mc Livinho",
+     "DJ Matt D"
+    ],
+    "deezer_id": 3899371051
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Avançada",
+    "album": "Avançada",
+    "artist": "Mc Kevinho",
+    "contributors": [
+     "Mc Kevinho"
+    ],
+    "deezer_id": 1041922102
+   },
+   {
+    "title": "Rabiola",
+    "album": "Rabiola",
+    "artist": "Mc Kevinho",
+    "contributors": [
+     "Mc Kevinho"
+    ],
+    "deezer_id": 902452212
+   }
+  ]
+ },
+ "389-676": {
+  "a1": 389,
+  "a2": 676,
+  "names": [
+   "MC Livinho",
+   "MC Guimê"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Bailarina",
+    "album": "Bailarina",
+    "artist": "Kaique e Felipe",
+    "contributors": [
+     "Kaique e Felipe",
+     "Guilherme & Benuto",
+     "Mc Livinho"
+    ],
+    "deezer_id": 2478252711
+   },
+   {
+    "title": "Cara Fechada",
+    "album": "Cara Fechada",
+    "artist": "MC Guimê",
+    "contributors": [
+     "MC Guimê",
+     "MC Leozinho ZS",
+     "Matheuszin DJ",
+     "DJ JR No Beat"
+    ],
+    "deezer_id": 3328023081
+   },
+   {
+    "title": "Cinto da Gucci",
+    "album": "Cinto da Gucci",
+    "artist": "Pelé MilFlows",
+    "contributors": [
+     "Pelé MilFlows",
+     "MC Leozinho ZS",
+     "Mc Rodolfinho",
+     "Analogic Records",
+     "MC Guimê",
+     "MC Tonzinho",
+     "Mc Rafa Ds"
+    ],
+    "deezer_id": 3268556381
+   }
+  ]
+ },
+ "292-782": {
+  "a1": 292,
+  "a2": 782,
+  "names": [
+   "Gusttavo Lima",
+   "Projota"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "263-382": {
+  "a1": 263,
+  "a2": 382,
+  "names": [
+   "Luísa Sonza",
+   "Manu Gavassi"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "367-368": {
+  "a1": 367,
+  "a2": 368,
+  "names": [
+   "Claudia Leitte",
+   "Bell Marques"
+  ],
+  "placeholders": [
+   "Ao Vivo Juntos",
+   "Carnaval Baiano"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "367-1124": {
+  "a1": 367,
+  "a2": 1124,
+  "names": [
+   "Claudia Leitte",
+   "Saulo Fernandes"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "273-1163": {
+  "a1": 273,
+  "a2": 1163,
+  "names": [
+   "Wesley Safadão",
+   "Grupo Parangolé"
+  ],
+  "placeholders": [
+   "Ao Vivo em Salvador"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "365-1163": {
+  "a1": 365,
+  "a2": 1163,
+  "names": [
+   "Ivete Sangalo",
+   "Grupo Parangolé"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "273-861": {
+  "a1": 273,
+  "a2": 861,
+  "names": [
+   "Wesley Safadão",
+   "Aviões do Forró"
+  ],
+  "placeholders": [
+   "Ao Vivo",
+   "Ao Vivo em Fortaleza"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Eu e a Torcida do Brasil",
+    "album": "Eu e a Torcida do Brasil",
+    "artist": "Aviões do Forró",
+    "contributors": [
+     "Aviões do Forró",
+     "Wesley Safadão"
+    ],
+    "deezer_id": 501915802
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Forrobodó (Ao Vivo)",
+    "album": "Meu Forró É Mundo (Ao Vivo)",
+    "artist": "Wesley Safadão",
+    "contributors": [
+     "Wesley Safadão",
+     "Xand Avião",
+     "Zé Vaqueiro"
+    ],
+    "deezer_id": 3965384621
+   },
+   {
+    "title": "Tontos e Loucos (Ao Vivo)",
+    "album": "Muído de Vaquejada (Ao Vivo)",
+    "artist": "Wesley Safadão",
+    "contributors": [
+     "Wesley Safadão",
+     "Solange Almeida"
+    ],
+    "deezer_id": 3580877761
+   }
+  ]
+ },
+ "292-1070": {
+  "a1": 292,
+  "a2": 1070,
+  "names": [
+   "Gusttavo Lima",
+   "Mano Walter"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "291-1070": {
+  "a1": 291,
+  "a2": 1070,
+  "names": [
+   "Jorge & Mateus",
+   "Mano Walter"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "291-1177": {
+  "a1": 291,
+  "a2": 1177,
+  "names": [
+   "Jorge & Mateus",
+   "Israel Novaes"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Vai Entender (Ao Vivo)",
+    "album": "Festeja 2015 (ao Vivo)",
+    "artist": "Israel Novaes",
+    "contributors": [
+     "Israel Novaes",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 628889982
+   }
+  ],
+  "evidence": []
+ },
+ "292-1166": {
+  "a1": 292,
+  "a2": 1166,
+  "names": [
+   "Gusttavo Lima",
+   "Luan Pereira"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "290-1166": {
+  "a1": 290,
+  "a2": 1166,
+  "names": [
+   "Henrique & Juliano",
+   "Luan Pereira"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "298-1095": {
+  "a1": 298,
+  "a2": 1095,
+  "names": [
+   "Chitãozinho & Xororó",
+   "Sérgio Reis"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Coração Sertanejo (Ao Vivo)",
+    "album": "40 Anos: Entre Amigos (Ao Vivo)",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Sergio Reis"
+    ],
+    "deezer_id": 102521204
+   },
+   {
+    "title": "O Menino Da Porteira",
+    "album": "Sergio Reis e Convidados",
+    "artist": "Sergio Reis",
+    "contributors": [
+     "Sergio Reis",
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 1001109342
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Chitaozinho & Xororo",
+    "album": "Classicos Sertanejos",
+    "artist": "Chitãozinho",
+    "contributors": [
+     "Chitãozinho",
+     "Xororó",
+     "Sergio Reis"
+    ],
+    "deezer_id": 4681767
+   }
+  ]
+ },
+ "1095-1118": {
+  "a1": 1095,
+  "a2": 1118,
+  "names": [
+   "Sérgio Reis",
+   "Roberta Miranda"
+  ],
+  "placeholders": [
+   "Ao Vivo Juntos"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Cabecinha No Ombro / Meu Premeiro Amor (Lejania)",
+    "album": "Sergio Reis e Convidados",
+    "artist": "Sergio Reis",
+    "contributors": [
+     "Sergio Reis",
+     "Roberta Miranda"
+    ],
+    "deezer_id": 1001109382
+   }
+  ],
+  "evidence": []
+ },
+ "1093-1096": {
+  "a1": 1093,
+  "a2": 1096,
+  "names": [
+   "Pena Branca & Xavantinho",
+   "Renato Teixeira"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Romaria (Ao Vivo | Remasterizado)",
+    "album": "Ao Vivo Em Tatuí (Ao Vivo | Remasterizado)",
+    "artist": "Renato Teixeira",
+    "contributors": [
+     "Renato Teixeira",
+     "Pena Branca",
+     "Xavantinho",
+     "Zé Gomes"
+    ],
+    "deezer_id": 1032005282
+   },
+   {
+    "title": "Chalana",
+    "album": "Ao Vivo em Tatuí",
+    "artist": "Renato Teixeira",
+    "contributors": [
+     "Renato Teixeira",
+     "Pena Branca",
+     "Xavantinho"
+    ],
+    "deezer_id": 63775091
+   },
+   {
+    "title": "Raízes",
+    "album": "Ao Vivo em Tatuí",
+    "artist": "Renato Teixeira",
+    "contributors": [
+     "Renato Teixeira",
+     "Pena Branca",
+     "Xavantinho"
+    ],
+    "deezer_id": 63775093
+   }
+  ]
+ },
+ "298-1093": {
+  "a1": 298,
+  "a2": 1093,
+  "names": [
+   "Chitãozinho & Xororó",
+   "Pena Branca & Xavantinho"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "1090-1092": {
+  "a1": 1090,
+  "a2": 1092,
+  "names": [
+   "Milionário & José Rico",
+   "Tião Carreiro & Pardinho"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "1091-1092": {
+  "a1": 1091,
+  "a2": 1092,
+  "names": [
+   "Tonico & Tinoco",
+   "Tião Carreiro & Pardinho"
+  ],
+  "placeholders": [
+   "Dupla de Ouro"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Festança",
+    "album": "Grand Prix do Amor",
+    "artist": "Cezar & Paulinho",
+    "contributors": [
+     "Cezar & Paulinho",
+     "Continental",
+     "Ataíde & Alexandre",
+     "Chrystian & Ralf",
+     "Cleyton e Cristiane",
+     "Craveiro & Cravinho",
+     "Dino Franco e Mouraí",
+     "Durval e Davi",
+     "Irmãs Galvão",
+     "Matogrosso & Mathias",
+     "Tião Carreiro & Pardinho",
+     "Tonico e Tinoco"
+    ],
+    "deezer_id": 2883409542
+   }
+  ]
+ },
+ "298-961": {
+  "a1": 298,
+  "a2": 961,
+  "names": [
+   "Chitãozinho & Xororó",
+   "Leandro & Leonardo"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Mano (Ao Vivo | Homenagem Ao Leandro)",
+    "album": "A História Continua (ao Vivo)",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Leonardo",
+     "Zezé Di Camargo & Luciano",
+     "Amigos"
+    ],
+    "deezer_id": 826866452
+   },
+   {
+    "title": "Colcha De Retalhos",
+    "album": "Classicos Sertanejos",
+    "artist": "Chitãozinho",
+    "contributors": [
+     "Chitãozinho",
+     "Xororó",
+     "Leandro",
+     "Leonardo"
+    ],
+    "deezer_id": 4681764
+   }
+  ]
+ },
+ "961-1089": {
+  "a1": 961,
+  "a2": 1089,
+  "names": [
+   "Leandro & Leonardo",
+   "João Paulo & Daniel"
+  ],
+  "placeholders": [
+   "Ao Vivo Especial"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "886-1089": {
+  "a1": 886,
+  "a2": 1089,
+  "names": [
+   "Zezé Di Camargo & Luciano",
+   "João Paulo & Daniel"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Quando (feat. Daniel) (Ao Vivo)",
+    "album": "Roberto Carlos - Emoções Sertanejas",
+    "artist": "Zezé Di Camargo & Luciano",
+    "contributors": [
+     "Zezé Di Camargo & Luciano",
+     "Daniel"
+    ],
+    "deezer_id": 72166165
+   },
+   {
+    "title": "A ferro e fogo (feat. Zezé di Camargo & Luciano)",
+    "album": "Clássicos do Sertanejo",
+    "artist": "Daniel",
+    "contributors": [
+     "Daniel",
+     "Zezé Di Camargo & Luciano"
+    ],
+    "deezer_id": 868352112
+   },
+   {
+    "title": "Agora Aguenta Nóis (feat. Chitãozinho & Xororó, Daniel, Bruno & Marrone, Leonardo, Sérgio Reis, Cleiton & Camargo & Chrystian & Ra",
+    "album": "Zezé Di Camargo & Luciano 2005",
+    "artist": "Zezé Di Camargo & Luciano",
+    "contributors": [
+     "Zezé Di Camargo & Luciano",
+     "Chitãozinho & Xororó",
+     "Daniel",
+     "Bruno & Marrone",
+     "Leonardo",
+     "Sergio Reis",
+     "Cleiton & Camargo",
+     "Chrystian & Ralf"
+    ],
+    "deezer_id": 46241531
+   }
+  ]
+ },
+ "292-960": {
+  "a1": 292,
+  "a2": 960,
+  "names": [
+   "Gusttavo Lima",
+   "Roberto Carlos"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "962-1158": {
+  "a1": 962,
+  "a2": 1158,
+  "names": [
+   "Amado Batista",
+   "Beto Barbosa"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "367-1066": {
+  "a1": 367,
+  "a2": 1066,
+  "names": [
+   "Claudia Leitte",
+   "Babado Novo"
+  ],
+  "placeholders": [
+   "DVD Especial"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Uau (Ao Vivo)",
+    "album": "Uau! Babado Novo Em Salvador",
+    "artist": "Babado Novo",
+    "contributors": [
+     "Babado Novo",
+     "Claudia Leitte"
+    ],
+    "deezer_id": 4669581
+   },
+   {
+    "title": "Amor Perfeito (Ao Vivo)",
+    "album": "Uau! Babado Novo Em Salvador",
+    "artist": "Babado Novo",
+    "contributors": [
+     "Babado Novo",
+     "Claudia Leitte"
+    ],
+    "deezer_id": 4669566
+   },
+   {
+    "title": "Lirirrixa (Ao Vivo)",
+    "album": "Uau! Babado Novo Em Salvador",
+    "artist": "Babado Novo",
+    "contributors": [
+     "Babado Novo",
+     "Claudia Leitte"
+    ],
+    "deezer_id": 4669567
+   }
+  ],
+  "evidence": []
+ },
+ "365-875": {
+  "a1": 365,
+  "a2": 875,
+  "names": [
+   "Ivete Sangalo",
+   "Chiclete com Banana"
+  ],
+  "placeholders": [
+   "Ao Vivo em Salvador"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "305-951": {
+  "a1": 305,
+  "a2": 951,
+  "names": [
+   "Ferrugem",
+   "Raça Negra"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "353-361": {
+  "a1": 353,
+  "a2": 361,
+  "names": [
+   "Zeca Pagodinho",
+   "Thiaguinho"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Direito de Viver",
+    "album": "Direito de Viver",
+    "artist": "Chitãozinho & Xororó",
+    "contributors": [
+     "Chitãozinho & Xororó",
+     "Alcione",
+     "Caetano Veloso",
+     "Djavan",
+     "Ferrugem",
+     "Gilberto Gil",
+     "Ivete Sangalo",
+     "JUNIOR",
+     "Luan Santana",
+     "LUDMILLA",
+     "Luísa Sonza",
+     "Lulu Santos",
+     "Michel Teló",
+     "Mumuzinho",
+     "Nando Reis",
+     "Péricles",
+     "Roberto Carlos",
+     "Sandy",
+     "Thiaguinho",
+     "Vitor Kley",
+     "Zeca Pagodinho"
+    ],
+    "deezer_id": 2898053691
+   }
+  ],
+  "evidence": []
+ },
+ "305-373": {
+  "a1": 305,
+  "a2": 373,
+  "names": [
+   "Ferrugem",
+   "Pixote"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Respeita Minha História (Ao Vivo)",
+    "album": "Clube Do Araújo (Ao Vivo)",
+    "artist": "Felipe Araújo",
+    "contributors": [
+     "Felipe Araújo",
+     "Thiaguinho",
+     "Pixote",
+     "Dilsinho",
+     "Turma do Pagode",
+     "Mumuzinho",
+     "Ferrugem",
+     "Sorriso Maroto",
+     "Grupo Menos É Mais",
+     "Alexandre Pires"
+    ],
+    "deezer_id": 1689905307
+   },
+   {
+    "title": "O Som do Povo Ninguém Silencia (Tema de Final de Ano Transcontinental)",
+    "album": "O Som do Povo Ninguém Silencia (Tema de Final de Ano Transcontinental)",
+    "artist": "Leandro Lehart",
+    "contributors": [
+     "Leandro Lehart",
+     "Art Popular",
+     "Arlindinho",
+     "Belo",
+     "Diogo Nogueira",
+     "Bom Gosto",
+     "Eliana de Lima",
+     "Ferrugem",
+     "Leci Brandão",
+     "Lucas Morato",
+     "Marquinhos Sensação",
+     "Marcelinho Freitas",
+     "Molejo",
+     "Mumuzinho",
+     "Marcio Art",
+     "LUDMILLA",
+     "Netinho De Paula",
+     "Os De Paula",
+     "Onze:20",
+     "Pixote",
+     "Pinha Presidente",
+     "Péricles",
+     "Pique Novo",
+     "Reinaldo",
+     "Rodriguinho",
+     "Salgadinho",
+     "Samprazer",
+     "Suel",
+     "Thiaguinho",
+     "Xande De Pilares"
+    ],
+    "deezer_id": 605132572
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Tentei Ser Incrível / Pela Vida Inteira",
+    "album": "Tentei Ser Incrível / Pela Vida Inteira",
+    "artist": "Grandes Encontros",
+    "contributors": [
+     "Grandes Encontros",
+     "Ferrugem",
+     "Picolé"
+    ],
+    "deezer_id": 702598432
+   }
+  ]
+ },
+ "349-892": {
+  "a1": 349,
+  "a2": 892,
+  "names": [
+   "Milton Nascimento",
+   "Ivan Lins"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1138": {
+  "a1": 292,
+  "a2": 1138,
+  "names": [
+   "Gusttavo Lima",
+   "Hungria Hip Hop"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Eu Vou Te Buscar (Cha La La La La)",
+    "album": "Eu Vou Te Buscar (Cha La La La La)",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima",
+     "Hungria"
+    ],
+    "deezer_id": 400055132
+   },
+   {
+    "title": "Eu Vou Te Buscar (Cha La La La La) [Made Popular By Gusttavo Lima E Hungria Hip-Hop] [Karaoke Version]",
+    "album": "Party Tyme 172 (Portuguese Karaoke Versions)",
+    "artist": "Party Tyme Karaoke",
+    "contributors": [
+     "Party Tyme Karaoke"
+    ],
+    "deezer_id": 1916210287
+   }
+  ]
+ },
+ "284-1138": {
+  "a1": 284,
+  "a2": 1138,
+  "names": [
+   "Emicida",
+   "Hungria Hip Hop"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "285-351": {
+  "a1": 285,
+  "a2": 351,
+  "names": [
+   "Criolo",
+   "Seu Jorge"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Mi Alma Tiene Sed",
+    "album": "Es Vencedor",
+    "artist": "La Paz De Cristo",
+    "contributors": [
+     "La Paz De Cristo",
+     "Jorge Torres"
+    ],
+    "deezer_id": 1061686562
+   },
+   {
+    "title": "É Isso Aí (The Blower'S Daughter)",
+    "album": "Ana E Jorge Ao Vivo",
+    "artist": "Ana Carolina",
+    "contributors": [
+     "Ana Carolina",
+     "Seu Jorge"
+    ],
+    "deezer_id": 5786006
+   },
+   {
+    "title": "Carolina Ao Vivo",
+    "album": "Ana E Jorge Ao Vivo",
+    "artist": "Seu Jorge",
+    "contributors": [
+     "Seu Jorge"
+    ],
+    "deezer_id": 5786003
+   }
+  ]
+ },
+ "315-316": {
+  "a1": 315,
+  "a2": 316,
+  "names": [
+   "L7nnon",
+   "Orochi"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Meu Passado",
+    "album": "Vida Cara (Deluxe)",
+    "artist": "Orochi",
+    "contributors": [
+     "Orochi",
+     "L7NNON",
+     "Ruxn",
+     "Mainstreet"
+    ],
+    "deezer_id": 2482630501
+   },
+   {
+    "title": "THE BOX MEDLEY 12",
+    "album": "THE BOX MEDLEY 12",
+    "artist": "The Box",
+    "contributors": [
+     "The Box",
+     "L7NNON",
+     "Orochi",
+     "AJULLIACOSTA",
+     "MD Chefe",
+     "DomLaike",
+     "Luiz Filipe do Rosário",
+     "Victor WAO",
+     "Prodbyfp"
+    ],
+    "deezer_id": 3792333192
+   },
+   {
+    "title": "Pixadão",
+    "album": "Pixadão",
+    "artist": "Orochi",
+    "contributors": [
+     "Orochi",
+     "L7NNON",
+     "MC Paulin da Capital",
+     "Mainstreet",
+     "Ruxn"
+    ],
+    "deezer_id": 1819194117
+   }
+  ],
+  "evidence": []
+ },
+ "140-307": {
+  "a1": 140,
+  "a2": 307,
+  "names": [
+   "Anitta",
+   "Matuê"
+  ],
+  "placeholders": [
+   "Participação"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Até o céu",
+    "album": "Até o céu",
+    "artist": "Anitta",
+    "contributors": [
+     "Anitta",
+     "MC Cabelinho"
+    ],
+    "deezer_id": 836881632
+   },
+   {
+    "title": "Make It Hot",
+    "album": "Make It Hot",
+    "artist": "Major Lazer",
+    "contributors": [
+     "Major Lazer",
+     "Anitta",
+     "Diplo"
+    ],
+    "deezer_id": 695110952
+   },
+   {
+    "title": "Macetar",
+    "album": "Macetar",
+    "artist": "Anitta",
+    "contributors": [
+     "Anitta"
+    ],
+    "deezer_id": 2041631017
+   }
+  ]
+ },
+ "284-314": {
+  "a1": 284,
+  "a2": 314,
+  "names": [
+   "Emicida",
+   "Xamã"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Moleque Atrevido",
+    "album": "Sambabook Jorge Aragão, Vol. 3",
+    "artist": "Sambabook",
+    "contributors": [
+     "Sambabook",
+     "Jorge Aragão",
+     "Emicida"
+    ],
+    "deezer_id": 128702381
+   },
+   {
+    "title": "Samba do Fim do Mundo",
+    "album": "O Glorioso Retorno de Quem Nunca Esteve Aqui",
+    "artist": "Emicida",
+    "contributors": [
+     "Emicida",
+     "Fabiana Cozza",
+     "Juçara Marçal"
+    ],
+    "deezer_id": 443118462
+   },
+   {
+    "title": "Ismália",
+    "album": "AmarElo",
+    "artist": "Emicida",
+    "contributors": [
+     "Emicida",
+     "Larissa Luz",
+     "Fernanda Montenegro"
+    ],
+    "deezer_id": 780081402
+   }
+  ]
+ },
+ "263-392": {
+  "a1": 263,
+  "a2": 392,
+  "names": [
+   "Luísa Sonza",
+   "Gloria Groove"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Quem Tem Fome Tem Pressa",
+    "album": "Quem Tem Fome Tem Pressa",
+    "artist": "Ação da Cidadania",
+    "contributors": [
+     "Ação da Cidadania",
+     "Alcione",
+     "Anitta",
+     "Caetano Veloso",
+     "Chico Buarque",
+     "Chitãozinho & Xororó",
+     "Criolo",
+     "Daniela Mercury",
+     "Djavan",
+     "Elza Soares",
+     "Emicida",
+     "Gilberto Gil",
+     "Gloria Groove",
+     "Ivete Sangalo",
+     "Karol Conká",
+     "LUDMILLA",
+     "Luísa Sonza",
+     "Majur",
+     "Maria Bethânia",
+     "Mart'nália",
+     "Milton Nascimento",
+     "Mosquito",
+     "Nando Reis",
+     "Negra Li",
+     "Rogério Flausino",
+     "Teresa Cristina",
+     "Xand Avião",
+     "Xande De Pilares",
+     "Zélia Duncan"
+    ],
+    "deezer_id": 3254613761
+   }
+  ],
+  "evidence": []
+ },
+ "351-384": {
+  "a1": 351,
+  "a2": 384,
+  "names": [
+   "Seu Jorge",
+   "Liniker"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "No Voy a Ser Yo (Vivo en Madrid)",
+    "album": "No Voy a Ser Yo (Vivo en Madrid)",
+    "artist": "Kevin Johansen",
+    "contributors": [
+     "Kevin Johansen",
+     "Liniers",
+     "Jorge Drexler"
+    ],
+    "deezer_id": 3275911991
+   }
+  ]
+ },
+ "292-1149": {
+  "a1": 292,
+  "a2": 1149,
+  "names": [
+   "Gusttavo Lima",
+   "Simaria Mendes"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "1099-1149": {
+  "a1": 1099,
+  "a2": 1149,
+  "names": [
+   "Ana Castela",
+   "Simaria Mendes"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Não Vai Ver Nunca",
+    "album": "Não Vai Ver Nunca (Boiadeira Internacional)",
+    "artist": "Ana Castela",
+    "contributors": [
+     "Ana Castela",
+     "Simone Mendes"
+    ],
+    "deezer_id": 2394156445
+   }
+  ]
+ },
+ "267-292": {
+  "a1": 267,
+  "a2": 292,
+  "names": [
+   "Lexa",
+   "Gusttavo Lima"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Talismã / Temporal de Amor / Solidão (feat. Gusttavo Lima) Ao Vivo",
+    "album": "Leonardo 30 Anos (Ao Vivo)",
+    "artist": "Leonardo",
+    "contributors": [
+     "Leonardo",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 75644356
+   },
+   {
+    "title": "Pot-Pourri: Leva Minha Timidez / É Amor Demais",
+    "album": "Buteco do Gusttavo Lima (Deluxe)",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 103604008
+   },
+   {
+    "title": "Balada do Buteco Ao Vivo",
+    "album": "O Embaixador - The Legacy (Ao Vivo)",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 1222495502
+   }
+  ]
+ },
+ "267-288": {
+  "a1": 267,
+  "a2": 288,
+  "names": [
+   "Lexa",
+   "Marília Mendonça"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Leão",
+    "album": "Decretos Reais, Vol. 2",
+    "artist": "Marília Mendonça",
+    "contributors": [
+     "Marília Mendonça"
+    ],
+    "deezer_id": 2056080287
+   },
+   {
+    "title": "Matriz & Filial",
+    "album": "Grandes Sucessos",
+    "artist": "Fatima Leão",
+    "contributors": [
+     "Fatima Leão",
+     "Marília Mendonça"
+    ],
+    "deezer_id": 380144331
+   },
+   {
+    "title": "Vou Levando a Minha (Ao Vivo)",
+    "album": "Vou Levando a Minha (Ao Vivo)",
+    "artist": "Gustavo Moura & Rafael",
+    "contributors": [
+     "Gustavo Moura & Rafael",
+     "Marília Mendonça"
+    ],
+    "deezer_id": 2609054022
+   }
+  ]
+ },
+ "389-758": {
+  "a1": 389,
+  "a2": 758,
+  "names": [
+   "MC Livinho",
+   "MC Davi"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Pagodeiro, Pt. 2",
+    "album": "Pagodeiro, Pt. 2",
+    "artist": "MC Ryan SP",
+    "contributors": [
+     "MC Ryan SP",
+     "Mc Davi",
+     "Mc Livinho",
+     "Gaab",
+     "dj yuri pedrada",
+     "Turma do Pagode",
+     "MC Kadu",
+     "MC Paulin da Capital",
+     "Mc Kanhoto",
+     "DJ WN"
+    ],
+    "deezer_id": 2699180562
+   },
+   {
+    "title": "Irmã Gostosa",
+    "album": "Irmã Gostosa",
+    "artist": "Mc Livinho",
+    "contributors": [
+     "Mc Livinho",
+     "Mc Davi",
+     "Perera DJ"
+    ],
+    "deezer_id": 1443930142
+   },
+   {
+    "title": "Homenagem Aos Relíquias 6",
+    "album": "Homenagem Aos Relíquias 6",
+    "artist": "DJ Matt D",
+    "contributors": [
+     "DJ Matt D",
+     "Mc Livinho",
+     "Mc Davi",
+     "Mc Menor da Vg",
+     "Mc Menor da Vg",
+     "MC Kadu",
+     "Mc Kanhoto",
+     "MC Dricka",
+     "Mc GP",
+     "MC Marks",
+     "MaríN"
+    ],
+    "deezer_id": 2531118731
+   }
+  ],
+  "evidence": []
+ },
+ "273-758": {
+  "a1": 273,
+  "a2": 758,
+  "names": [
+   "Wesley Safadão",
+   "MC Davi"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1145": {
+  "a1": 292,
+  "a2": 1145,
+  "names": [
+   "Gusttavo Lima",
+   "Léo & Raphael"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "291-1145": {
+  "a1": 291,
+  "a2": 1145,
+  "names": [
+   "Jorge & Mateus",
+   "Léo & Raphael"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "290-1145": {
+  "a1": 290,
+  "a2": 1145,
+  "names": [
+   "Henrique & Juliano",
+   "Léo & Raphael"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "886-1103": {
+  "a1": 886,
+  "a2": 1103,
+  "names": [
+   "Zezé Di Camargo & Luciano",
+   "Cleiton & Camargo"
+  ],
+  "placeholders": [
+   "Especial Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Não Tenha Duvida (Ao Vivo)",
+    "album": "Cleiton & Camargo Cantam Zezé Di Camargo & Luciano, Lado B (Ao Vivo)",
+    "artist": "Cleiton & Camargo",
+    "contributors": [
+     "Cleiton & Camargo"
+    ],
+    "deezer_id": 580394052
+   },
+   {
+    "title": "Brigue Comigo Mas Não Vá (Ao Vivo)",
+    "album": "Cleiton & Camargo Cantam Zezé Di Camargo & Luciano, Lado B (Ao Vivo)",
+    "artist": "Cleiton & Camargo",
+    "contributors": [
+     "Cleiton & Camargo"
+    ],
+    "deezer_id": 580394032
+   },
+   {
+    "title": "Cama de Capim (Ao Vivo)",
+    "album": "Cleiton & Camargo Cantam Zezé Di Camargo & Luciano, Lado B (Ao Vivo)",
+    "artist": "Cleiton & Camargo",
+    "contributors": [
+     "Cleiton & Camargo"
+    ],
+    "deezer_id": 580394002
+   }
+  ]
+ },
+ "296-1103": {
+  "a1": 296,
+  "a2": 1103,
+  "names": [
+   "Bruno & Marrone",
+   "Cleiton & Camargo"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Agora Aguenta Nóis (feat. Chitãozinho & Xororó, Daniel, Bruno & Marrone, Leonardo, Sérgio Reis, Cleiton & Camargo & Chrystian & Ra",
+    "album": "Zezé Di Camargo & Luciano 2005",
+    "artist": "Zezé Di Camargo & Luciano",
+    "contributors": [
+     "Zezé Di Camargo & Luciano",
+     "Chitãozinho & Xororó",
+     "Daniel",
+     "Bruno & Marrone",
+     "Leonardo",
+     "Sergio Reis",
+     "Cleiton & Camargo",
+     "Chrystian & Ralf"
+    ],
+    "deezer_id": 46241531
+   }
+  ],
+  "evidence": []
+ },
+ "292-1101": {
+  "a1": 292,
+  "a2": 1101,
+  "names": [
+   "Gusttavo Lima",
+   "Lucas & Orelha"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "291-1101": {
+  "a1": 291,
+  "a2": 1101,
+  "names": [
+   "Jorge & Mateus",
+   "Lucas & Orelha"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "289-1119": {
+  "a1": 289,
+  "a2": 1119,
+  "names": [
+   "Maiara & Maraisa",
+   "Elisa Rodrigues"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "288-1119": {
+  "a1": 288,
+  "a2": 1119,
+  "names": [
+   "Marília Mendonça",
+   "Elisa Rodrigues"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1120": {
+  "a1": 292,
+  "a2": 1120,
+  "names": [
+   "Gusttavo Lima",
+   "Walkyria Santos"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "294-1120": {
+  "a1": 294,
+  "a2": 1120,
+  "names": [
+   "Zé Neto & Cristiano",
+   "Walkyria Santos"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-862": {
+  "a1": 292,
+  "a2": 862,
+  "names": [
+   "Gusttavo Lima",
+   "Solange Almeida"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Sinceramente (feat. Gusttavo Lima) Ao Vivo",
+    "album": "Sentimento de Mulher (Ao Vivo) [Deluxe]",
+    "artist": "Solange Almeida",
+    "contributors": [
+     "Solange Almeida",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 372696411
+   }
+  ],
+  "evidence": []
+ },
+ "273-966": {
+  "a1": 273,
+  "a2": 966,
+  "names": [
+   "Wesley Safadão",
+   "Banda Magníficos"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "273-1159": {
+  "a1": 273,
+  "a2": 1159,
+  "names": [
+   "Wesley Safadão",
+   "Cavaleiros do Forró"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "O Rei das Vaquejadas / Não Sou Vaqueiro / É o Boi, o Cavalo e o Vaqueiro / Cavaleiro Alado (Ao Vivo)",
+    "album": "Bem-Vindo ao Meu Mundo - Forró & Vaquejada (Ao Vivo)",
+    "artist": "Wesley Safadão",
+    "contributors": [
+     "Wesley Safadão",
+     "Xand Avião"
+    ],
+    "deezer_id": 3252629421
+   }
+  ]
+ },
+ "700-965": {
+  "a1": 700,
+  "a2": 965,
+  "names": [
+   "Xand Avião",
+   "Mastruz com Leite"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Usa Havaianas",
+    "album": "Usa Havaianas",
+    "artist": "Mastruz Com Leite",
+    "contributors": [
+     "Mastruz Com Leite",
+     "Xand Avião"
+    ],
+    "deezer_id": 1747657067
+   }
+  ],
+  "evidence": []
+ },
+ "292-1165": {
+  "a1": 292,
+  "a2": 1165,
+  "names": [
+   "Gusttavo Lima",
+   "Henrique & Diego"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Festa Boa (feat. Gusttavo Lima) Ao Vivo",
+    "album": "Henrique & Diego \"Ao Vivo em Campo Grande\"",
+    "artist": "Henrique & Diego",
+    "contributors": [
+     "Henrique & Diego",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 65371577
+   },
+   {
+    "title": "Vou Me Entregar (feat. Gusttavo Lima) Ao Vivo",
+    "album": "Henrique & Diego \"Ao Vivo em Campo Grande\"",
+    "artist": "Henrique & Diego",
+    "contributors": [
+     "Henrique & Diego",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 65371585
+   }
+  ],
+  "evidence": []
+ },
+ "291-1165": {
+  "a1": 291,
+  "a2": 1165,
+  "names": [
+   "Jorge & Mateus",
+   "Henrique & Diego"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1107": {
+  "a1": 292,
+  "a2": 1107,
+  "names": [
+   "Gusttavo Lima",
+   "João Lucas & Marcelo"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "273-1107": {
+  "a1": 273,
+  "a2": 1107,
+  "names": [
+   "Wesley Safadão",
+   "João Lucas & Marcelo"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Agora É pra Valer (Ao Vivo)",
+    "album": "Agora É pra Valer (Ao Vivo)",
+    "artist": "João Lucas & Marcelo",
+    "contributors": [
+     "João Lucas & Marcelo",
+     "Wesley Safadão"
+    ],
+    "deezer_id": 1610142972
+   }
+  ],
+  "evidence": []
+ },
+ "296-1108": {
+  "a1": 296,
+  "a2": 1108,
+  "names": [
+   "Bruno & Marrone",
+   "Pedro Paulo & Alex"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1108": {
+  "a1": 292,
+  "a2": 1108,
+  "names": [
+   "Gusttavo Lima",
+   "Pedro Paulo & Alex"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "296-1114": {
+  "a1": 296,
+  "a2": 1114,
+  "names": [
+   "Bruno & Marrone",
+   "Guilherme & Santiago"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Amor De Emergência (Ao Vivo)",
+    "album": "Perfume Novo (Ao Vivo / Vol. 1)",
+    "artist": "Guilherme e Santiago",
+    "contributors": [
+     "Guilherme e Santiago",
+     "Bruno & Marrone"
+    ],
+    "deezer_id": 3253078551
+   },
+   {
+    "title": "Amor De Emergência (Ao Vivo)",
+    "album": "Perfume Novo (Ao Vivo / Vol. 1)",
+    "artist": "Guilherme e Santiago",
+    "contributors": [
+     "Guilherme e Santiago",
+     "Bruno & Marrone"
+    ],
+    "deezer_id": 3253078551
+   }
+  ]
+ },
+ "292-1114": {
+  "a1": 292,
+  "a2": 1114,
+  "names": [
+   "Gusttavo Lima",
+   "Guilherme & Santiago"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Seu Juiz (Ao Vivo)",
+    "album": "Perfume Novo (Ao Vivo)",
+    "artist": "Guilherme e Santiago",
+    "contributors": [
+     "Guilherme e Santiago",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 3253081791
+   },
+   {
+    "title": "Seu Juiz (Ao Vivo)",
+    "album": "Seu Juiz (Ao Vivo)",
+    "artist": "Guilherme e Santiago",
+    "contributors": [
+     "Guilherme e Santiago",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 3253077411
+   }
+  ]
+ },
+ "291-1111": {
+  "a1": 291,
+  "a2": 1111,
+  "names": [
+   "Jorge & Mateus",
+   "Luiz & Gustavo"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1111": {
+  "a1": 292,
+  "a2": 1111,
+  "names": [
+   "Gusttavo Lima",
+   "Luiz & Gustavo"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Vagabundo",
+    "album": "Vagabundo",
+    "artist": "Gusttavo Lima",
+    "contributors": [
+     "Gusttavo Lima",
+     "Luis Fonsi"
+    ],
+    "deezer_id": 3564219781
+   },
+   {
+    "title": "Programa de Fim de Semana / Ligação Urbana (Ao Vivo)",
+    "album": "Moda Que Não Sai de Moda",
+    "artist": "Luiz Gustavo",
+    "contributors": [
+     "Luiz Gustavo"
+    ],
+    "deezer_id": 2344618485
+   },
+   {
+    "title": "Da Cor do Pecado / Pode Chorar / Chora, Me Liga (Ao Vivo)",
+    "album": "Ao Vivo em Barretos, Ep. 1",
+    "artist": "Luiz Gustavo e Guilherme",
+    "contributors": [
+     "Luiz Gustavo e Guilherme"
+    ],
+    "deezer_id": 1892856697
+   }
+  ]
+ },
+ "290-1099": {
+  "a1": 290,
+  "a2": 1099,
+  "names": [
+   "Henrique & Juliano",
+   "Ana Castela"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "294-1099": {
+  "a1": 294,
+  "a2": 1099,
+  "names": [
+   "Zé Neto & Cristiano",
+   "Ana Castela"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Foi Intenso (Ao Vivo)",
+    "album": "Foi Intenso (Ao Vivo)",
+    "artist": "Zé Neto & Cristiano",
+    "contributors": [
+     "Zé Neto & Cristiano",
+     "Ana Castela"
+    ],
+    "deezer_id": 2758972861
+   }
+  ],
+  "evidence": []
+ },
+ "295-1099": {
+  "a1": 295,
+  "a2": 1099,
+  "names": [
+   "Matheus & Kauan",
+   "Ana Castela"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Ilusão De Ótica (Ao Vivo)",
+    "album": "Envolvente (Ao Vivo / Vol.1)",
+    "artist": "Matheus & Kauan",
+    "contributors": [
+     "Matheus & Kauan",
+     "Ana Castela"
+    ],
+    "deezer_id": 3189321571
+   },
+   {
+    "title": "Coração Bipolar (Ao Vivo)",
+    "album": "Boiadeira Internacional: Vol. 3 (Ao Vivo)",
+    "artist": "Ana Castela",
+    "contributors": [
+     "Ana Castela",
+     "Matheus & Kauan"
+    ],
+    "deezer_id": 2538689821
+   },
+   {
+    "title": "Coração Bipolar (Ao Vivo)",
+    "album": "Boiadeira Internacional: Vol. 3 (Ao Vivo)",
+    "artist": "Ana Castela",
+    "contributors": [
+     "Ana Castela",
+     "Matheus & Kauan"
+    ],
+    "deezer_id": 2538689821
+   }
+  ],
+  "evidence": []
+ },
+ "290-882": {
+  "a1": 290,
+  "a2": 882,
+  "names": [
+   "Henrique & Juliano",
+   "Zé Felipe"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "295-882": {
+  "a1": 295,
+  "a2": 882,
+  "names": [
+   "Matheus & Kauan",
+   "Zé Felipe"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "288-1098": {
+  "a1": 288,
+  "a2": 1098,
+  "names": [
+   "Marília Mendonça",
+   "Simone Mendes"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "288-290": {
+  "a1": 288,
+  "a2": 290,
+  "names": [
+   "Marília Mendonça",
+   "Henrique & Juliano"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Impasse",
+    "album": "Impasse",
+    "artist": "Marília Mendonça",
+    "contributors": [
+     "Marília Mendonça",
+     "Henrique & Juliano"
+    ],
+    "deezer_id": 104258028
+   },
+   {
+    "title": "Mudou a Estação (Ao Vivo)",
+    "album": "Realidade (Ao Vivo Em Manaus)",
+    "artist": "Marília Mendonça",
+    "contributors": [
+     "Marília Mendonça",
+     "Henrique & Juliano"
+    ],
+    "deezer_id": 142647974
+   },
+   {
+    "title": "Sabiá (Ao Vivo)",
+    "album": "Todos Os Cantos, Vol. 1 (Ao Vivo)",
+    "artist": "Marília Mendonça",
+    "contributors": [
+     "Marília Mendonça",
+     "Henrique & Juliano"
+    ],
+    "deezer_id": 630683802
+   }
+  ],
+  "evidence": []
+ },
+ "291-293": {
+  "a1": 291,
+  "a2": 293,
+  "names": [
+   "Jorge & Mateus",
+   "Luan Santana"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Sofazinho (Ao Vivo)",
+    "album": "Live-Móvel (Ao Vivo)",
+    "artist": "Luan Santana",
+    "contributors": [
+     "Luan Santana",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 554384822
+   },
+   {
+    "title": "Saudade Da Minha Terra",
+    "album": "Bem Sertanejo",
+    "artist": "Michel Teló",
+    "contributors": [
+     "Michel Teló",
+     "Gusttavo Lima",
+     "Luan Santana",
+     "Jorge & Mateus",
+     "Chitãozinho & Xororó"
+    ],
+    "deezer_id": 2556063012
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Alguém (Ao Vivo)",
+    "album": "Daniel 40 Anos: Celebra João Paulo & Daniel (Ao Vivo)",
+    "artist": "Daniel",
+    "contributors": [
+     "Daniel",
+     "Jorge & Mateus"
+    ],
+    "deezer_id": 2806987242
+   }
+  ]
+ },
+ "293-294": {
+  "a1": 293,
+  "a2": 294,
+  "names": [
+   "Luan Santana",
+   "Zé Neto & Cristiano"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Melação (Ao Vivo)",
+    "album": "Melação (Ao Vivo)",
+    "artist": "Zé Neto & Cristiano",
+    "contributors": [
+     "Zé Neto & Cristiano",
+     "Luan Santana"
+    ],
+    "deezer_id": 2871673492
+   }
+  ],
+  "evidence": []
+ },
+ "290-295": {
+  "a1": 290,
+  "a2": 295,
+  "names": [
+   "Henrique & Juliano",
+   "Matheus & Kauan"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Gaivota",
+    "album": "As Melhores do Jorge & Mateus - 2026 (Ao Vivo)",
+    "artist": "Jorge & Mateus",
+    "contributors": [
+     "Jorge & Mateus",
+     "Matheus & Kauan"
+    ],
+    "deezer_id": 3909276931
+   },
+   {
+    "title": "Haverá Sinais (Ao Vivo)",
+    "album": "As Melhores do Jorge & Mateus - 2026 (Ao Vivo)",
+    "artist": "Jorge & Mateus",
+    "contributors": [
+     "Jorge & Mateus",
+     "Lauana Prado"
+    ],
+    "deezer_id": 3909276951
+   }
+  ]
+ },
+ "288-295": {
+  "a1": 288,
+  "a2": 295,
+  "names": [
+   "Marília Mendonça",
+   "Matheus & Kauan"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Vou Ter Que Superar (Ao Vivo)",
+    "album": "Tem Moda Pra Tudo (Ao Vivo)",
+    "artist": "Matheus & Kauan",
+    "contributors": [
+     "Matheus & Kauan",
+     "Marília Mendonça"
+    ],
+    "deezer_id": 650483992
+   }
+  ],
+  "evidence": [
+   {
+    "title": "Vou Ter Que Superar (Made Popular By Matheus & Kauan, Marília Mendonça) [Karaoke Version]",
+    "album": "Party Tyme 324 (Portuguese Karaoke Versions)",
+    "artist": "Party Tyme Karaoke",
+    "contributors": [
+     "Party Tyme Karaoke"
+    ],
+    "deezer_id": 2227803417
+   }
+  ]
+ },
+ "289-301": {
+  "a1": 289,
+  "a2": 301,
+  "names": [
+   "Maiara & Maraisa",
+   "Israel & Rodolffo"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "confirmed",
+  "confirmed": [
+   {
+    "title": "Nem Namorado e Nem Ficante (Ao Vivo | Faixa Bônus)",
+    "album": "Israel & Rodolffo: Ao Vivo Em Brasília (Deluxe)",
+    "artist": "Israel & Rodolffo",
+    "contributors": [
+     "Israel & Rodolffo",
+     "Maiara & Maraisa"
+    ],
+    "deezer_id": 1750239487
+   }
+  ],
+  "evidence": []
+ },
+ "288-301": {
+  "a1": 288,
+  "a2": 301,
+  "names": [
+   "Marília Mendonça",
+   "Israel & Rodolffo"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-881": {
+  "a1": 292,
+  "a2": 881,
+  "names": [
+   "Gusttavo Lima",
+   "Barões da Pisadinha"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1178": {
+  "a1": 292,
+  "a2": 1178,
+  "names": [
+   "Gusttavo Lima",
+   "MC Gustta"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Salvou meu dia (Participação especial de Gusttavo Lima)",
+    "album": "Salvou meu dia (Participação especial de Gusttavo Lima)",
+    "artist": "Mc Kevinho",
+    "contributors": [
+     "Mc Kevinho",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 672041972
+   },
+   {
+    "title": "Lágrima por Lágrima (feat. Gusttavo Lima) Ao Vivo",
+    "album": "Lágrima por Lágrima (feat. Gusttavo Lima)",
+    "artist": "DENNIS",
+    "contributors": [
+     "DENNIS",
+     "Gusttavo Lima"
+    ],
+    "deezer_id": 1445859002
+   },
+   {
+    "title": "A Gente Fez Amor (DENNIS Remix)",
+    "album": "Gusttavo Lima 2023 - As Mais Tocadas",
+    "artist": "DENNIS",
+    "contributors": [
+     "DENNIS",
+     "Gusttavo Lima",
+     "DENNIS"
+    ],
+    "deezer_id": 2030935617
+   }
+  ]
+ },
+ "273-1178": {
+  "a1": 273,
+  "a2": 1178,
+  "names": [
+   "Wesley Safadão",
+   "MC Gustta"
+  ],
+  "placeholders": [
+   "Ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "292-1179": {
+  "a1": 292,
+  "a2": 1179,
+  "names": [
+   "Gusttavo Lima",
+   "Virginia Fonseca"
+  ],
+  "placeholders": [
+   "Participação ao Vivo"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "861-1127": {
+  "a1": 861,
+  "a2": 1127,
+  "names": [
+   "Aviões do Forró",
+   "Garota Safada"
+  ],
+  "placeholders": [
+   "Ao Vivo no Ceará"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Apaixonada",
+    "album": "Forró Das Antigas",
+    "artist": "Banda Garota Safada",
+    "contributors": [
+     "Banda Garota Safada"
+    ],
+    "deezer_id": 1234684312
+   },
+   {
+    "title": "Como Num Filme",
+    "album": "Forró Das Antigas",
+    "artist": "Banda Garota Safada",
+    "contributors": [
+     "Banda Garota Safada"
+    ],
+    "deezer_id": 1234684322
+   }
+  ]
+ },
+ "967-1127": {
+  "a1": 967,
+  "a2": 1127,
+  "names": [
+   "Calcinha Preta",
+   "Garota Safada"
+  ],
+  "placeholders": [
+   "Ao Vivo na Bahia"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "368-873": {
+  "a1": 368,
+  "a2": 873,
+  "names": [
+   "Bell Marques",
+   "Banda Eva"
+  ],
+  "placeholders": [
+   "Ao Vivo no Chiclete"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "873-1064": {
+  "a1": 873,
+  "a2": 1064,
+  "names": [
+   "Banda Eva",
+   "Jammil"
+  ],
+  "placeholders": [
+   "Verão Baiano"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Positiva (Ao Vivo)",
+    "album": "Positiva (Ao Vivo)",
+    "artist": "Triangulo",
+    "contributors": [
+     "Triangulo",
+     "Tomate",
+     "Saulo",
+     "Levi Lima",
+     "Jammil E Uma Noites"
+    ],
+    "deezer_id": 136485598
+   },
+   {
+    "title": "Sophisticated Lady",
+    "album": "Big Bands of the Swing Era",
+    "artist": "Jimmie Lunceford",
+    "contributors": [
+     "Jimmie Lunceford"
+    ],
+    "deezer_id": 519549992
+   },
+   {
+    "title": "Cheatin' on Me",
+    "album": "Big Bands of the Swing Era",
+    "artist": "Jimmie Lunceford",
+    "contributors": [
+     "Jimmie Lunceford"
+    ],
+    "deezer_id": 519550092
+   }
+  ]
+ },
+ "1014-1047": {
+  "a1": 1014,
+  "a2": 1047,
+  "names": [
+   "Kid Abelha",
+   "Roupa Nova"
+  ],
+  "placeholders": [
+   "Pop MPB Anos 80"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "1063-4981": {
+  "a1": 1063,
+  "a2": 4981,
+  "names": [
+   "Tomate",
+   "Jammil e Uma Gente"
+  ],
+  "placeholders": [
+   "Festival do Axé"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "286-1137": {
+  "a1": 286,
+  "a2": 1137,
+  "names": [
+   "Racionais MC's",
+   "Hariel"
+  ],
+  "placeholders": [
+   "Homenagem"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "351-791": {
+  "a1": 351,
+  "a2": 791,
+  "names": [
+   "Seu Jorge",
+   "MC Mr. Catra"
+  ],
+  "placeholders": [
+   "Colaboração"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "875-1160": {
+  "a1": 875,
+  "a2": 1160,
+  "names": [
+   "Chiclete com Banana",
+   "Asa de Águia"
+  ],
+  "placeholders": [
+   "Ao Vivo no Maranhão"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "961-1113": {
+  "a1": 961,
+  "a2": 1113,
+  "names": [
+   "Leandro & Leonardo",
+   "Cézar & Paulinho"
+  ],
+  "placeholders": [
+   "Ao Vivo em Goiânia"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ },
+ "375-1080": {
+  "a1": 375,
+  "a2": 1080,
+  "names": [
+   "MC Hariel",
+   "Menor MC"
+  ],
+  "placeholders": [
+   "Parceria"
+  ],
+  "verdict": "evidence",
+  "confirmed": [],
+  "evidence": [
+   {
+    "title": "Bem Melhor",
+    "album": "Bem Melhor",
+    "artist": "Mc Lipi",
+    "contributors": [
+     "Mc Lipi",
+     "Mc Hariel"
+    ],
+    "deezer_id": 1382958272
+   },
+   {
+    "title": "Futuro Dos Menor",
+    "album": "Futuro Dos Menor",
+    "artist": "MC Magal",
+    "contributors": [
+     "MC Magal",
+     "Mc Hariel"
+    ],
+    "deezer_id": 1439062792
+   },
+   {
+    "title": "Set Menor Prodígio",
+    "album": "Set Menor Prodígio",
+    "artist": "Kotim",
+    "contributors": [
+     "Kotim",
+     "Mc Hariel",
+     "Mc Paiva ZS",
+     "Love Funk",
+     "MC Leozinho ZS",
+     "Mc Vinny",
+     "MC Ryan SP",
+     "MC Kadu",
+     "Mc GP",
+     "Mc Kelvinho",
+     "Mc Romeo"
+    ],
+    "deezer_id": 2034213267
+   }
+  ]
+ },
+ "309-974": {
+  "a1": 309,
+  "a2": 974,
+  "names": [
+   "Filipe Ret",
+   "Rincon Sapiência"
+  ],
+  "placeholders": [
+   "Show"
+  ],
+  "verdict": "none",
+  "confirmed": [],
+  "evidence": []
+ }
+}
