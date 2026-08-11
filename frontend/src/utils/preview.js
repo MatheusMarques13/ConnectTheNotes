@@ -1,7 +1,7 @@
 // One shared <audio> for the whole game so only a single 30s preview ever plays
 // at a time. Components subscribe to know whether a given song is the one
 // playing, so the play/pause button on each card stays in sync.
-import { getSongMedia } from './deezer';
+import { getSongMedia } from './itunes';
 
 let audio = null;
 let currentId = null;

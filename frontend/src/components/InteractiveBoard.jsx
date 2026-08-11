@@ -1,7 +1,7 @@
 import React, { useRef, useReducer, useMemo, useEffect, useLayoutEffect, useCallback } from 'react';
 import { Music2, Disc, Disc3, Radio, Tv, Film, Mic2, Play, Pause } from 'lucide-react';
 import { getSmallAvatarUrl } from '../utils/avatars';
-import { getSongMedia } from '../utils/deezer';
+import { getSongMedia } from '../utils/itunes';
 import { useArtistImage } from '../utils/useArtistImage';
 import * as preview from '../utils/preview';
 import './board.css';
