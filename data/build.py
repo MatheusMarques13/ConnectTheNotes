@@ -5,8 +5,15 @@ dataset at frontend/src/data/dataset.js.
 
 A SONG is the node that links artists: every collaboration row sharing the same
 (title, type, year) is merged into ONE song crediting ALL its artists, so a
-track with 3+ collaborators connects all of them. The build asserts the graph is
-a single connected component (every puzzle solvable) and fails loudly otherwise.
+track with 3+ collaborators connects all of them.
+
+The graph is deliberately NOT a single connected component: real scenes exist
+that share no verified cross-collaboration, and inventing a bridge edge to join
+them is exactly the fabrication this dataset is being cleaned of. What the build
+does guarantee is that every artist the game can DRAW sits in the main
+component, so no puzzle is ever unsolvable — see report_components() and
+famous_pool(). It aborts only if the main component falls below 80% of the
+roster, which means the data broke rather than merely fragmented.
 
 Run:  python data/build.py
 """
@@ -49,6 +56,34 @@ def _better_title(a, b):
     return b if score(b) > score(a) else a
 
 
+def _casts(edges):
+    """Split pairwise rows sharing a (title, type, year) into connected casts.
+
+    Returns a list of artist-id lists, each one a group the rows actually tie
+    together, in first-seen order so the output stays stable across builds.
+    """
+    adj = OrderedDict()
+    for s1, s2 in edges:
+        adj.setdefault(s1, []).append(s2)
+        adj.setdefault(s2, []).append(s1)
+
+    seen, casts = set(), []
+    for start in adj:
+        if start in seen:
+            continue
+        seen.add(start)
+        queue, cast = deque([start]), [start]
+        while queue:
+            node = queue.popleft()
+            for nxt in adj[node]:
+                if nxt not in seen:
+                    seen.add(nxt)
+                    cast.append(nxt)
+                    queue.append(nxt)
+        casts.append(cast)
+    return casts
+
+
 def build():
     artists = [{"id": slug(i), "name": n, "genre": g, "imageUrl": ""} for (i, n, g) in ARTISTS]
     by_id = {a["id"]: a for a in artists}
@@ -69,17 +104,23 @@ def build():
     songs = []
     for key, edges in groups.items():
         ctype, year, title = key[1], key[2], titles[key]
-        ids = list(OrderedDict((s, True) for e in edges for s in e).keys())
-        if len(ids) < 2:
-            continue
-        songs.append({
-            "id": f"s{len(songs)}",
-            "title": title,
-            "type": ctype,
-            "year": year,
-            "coverUrl": "",
-            "artists": ids,
-        })
+        # Two different songs can share a title and a year. Unioning everyone
+        # under that key invents collaborations: "Like That" (2024) is Future,
+        # Metro Boomin and Kendrick Lamar — and, separately, Cardi B with Sam
+        # Smith. Merged, Kendrick ends up credited alongside Sam Smith on a
+        # track neither shares. Split the rows into connected casts and emit one
+        # song per cast, so a clique only ever spans people an actual row links.
+        for ids in _casts(edges):
+            if len(ids) < 2:
+                continue
+            songs.append({
+                "id": f"s{len(songs)}",
+                "title": title,
+                "type": ctype,
+                "year": year,
+                "coverUrl": "",
+                "artists": ids,
+            })
     return artists, songs
 
 
@@ -266,16 +307,47 @@ def report_components(artists, songs):
 
 
 def write_js(artists, songs, pool):
-    sep = (",", ": ")
+    """Emit the dataset as positional rows, rehydrated on import.
+
+    Written as objects this file was 2.0 MB (326 KB gzipped) against a 150 KB
+    budget, and roughly a third of that was the same six keys repeated once per
+    song. Rows drop the keys; the module rebuilds the objects at import, which
+    costs a few milliseconds and keeps every consumer's shape unchanged.
+
+    imageUrl and coverUrl are gone entirely — they were empty strings on all
+    5,625 artists and 14,246 songs. Real media arrives from images.generated.js
+    or the runtime lookup, and every reader already falls back on a missing
+    value.
+    """
+    sep = (",", ":")
+    at = {a["id"]: n for n, a in enumerate(artists)}
+    art_rows = [[int(a["id"][1:]), a["name"], a["genre"], a["fame"]] for a in artists]
+    # Songs reference artists by row index, not by "a1234" string: there are
+    # ~36k of those references and the quoted form was the single heaviest
+    # thing in the file.
+    song_rows = [
+        [s["title"], s["type"], s["year"], [at[x] for x in s["artists"]]]
+        for s in songs
+    ]
+
     lines = [
         "// AUTO-GENERATED from data/source_data.py via data/build.py",
         "// Songs link artists; a track with N collaborators connects all of them.",
-        "// Single connected component -> every artist pair is solvable.",
+        "// Multi-component by design; every artist in FAMOUS_IDS sits in the",
+        "// main component, so every DRAWN pair is solvable.",
         "// Do not edit by hand; regenerate instead.",
         "",
-        "export const ARTISTS = " + json.dumps(artists, ensure_ascii=False, separators=sep) + ";",
+        "// Positional rows to keep the payload small; see write_js in data/build.py.",
+        "// A: [id, name, genre, fame]   S: [title, type, year, [artist row indexes]]",
+        "const A = " + json.dumps(art_rows, ensure_ascii=False, separators=sep) + ";",
+        "const S = " + json.dumps(song_rows, ensure_ascii=False, separators=sep) + ";",
         "",
-        "export const SONGS = " + json.dumps(songs, ensure_ascii=False, separators=sep) + ";",
+        "export const ARTISTS = A.map(([id, name, genre, fame]) => "
+        "({ id: 'a' + id, name, genre, fame }));",
+        "",
+        "// Song ids stay positional, exactly as the build assigned them.",
+        "export const SONGS = S.map(([title, type, year, ix], i) => "
+        "({ id: 's' + i, title, type, year, artists: ix.map((j) => ARTISTS[j].id) }));",
         "",
         "// Ids the random puzzle / shuffle may pick, best-known first. Every other",
         "// artist stays searchable and playable — this only steers randomness.",
@@ -286,13 +358,33 @@ def write_js(artists, songs, pool):
         f.write("\n".join(lines))
 
 
+def assert_pool_solvable(pool, comps):
+    """Every drawable artist must live in the main component.
+
+    This is the invariant the game actually depends on. Islands are fine and
+    expected, but the moment a pool member sits on one, some fraction of drawn
+    puzzles becomes unsolvable with no way for the player to tell — a silent
+    failure worth failing the build over.
+    """
+    main = comps[0] if comps else set()
+    stranded = [i for i in pool if i not in main]
+    if stranded:
+        raise SystemExit(
+            f"❌ {len(stranded)} artist(s) in the random pool are outside the "
+            f"main component, so puzzles drawing them are unsolvable: "
+            f"{', '.join(stranded[:8])}. Fix data/source_data.py."
+        )
+    print(f"   solvability: all {len(pool)} drawable artists in the main component ✓")
+
+
 if __name__ == "__main__":
     artists, songs = build()
-    report_components(artists, songs)
+    comps = report_components(artists, songs)
     scores, deg, fans, adj, dz = fame_scores(artists, songs)
     for a in artists:
         a["fame"] = scores[a["id"]]
     pool = famous_pool(artists, scores, deg, adj, dz)
+    assert_pool_solvable(pool, comps)
     write_js(artists, songs, pool)
     by_id = {a["id"]: a for a in artists}
     print(f"   fame: {len(fans)} artists with Deezer fan counts, "
