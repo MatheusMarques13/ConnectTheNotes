@@ -29,6 +29,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 
 AUDIT = os.path.join(ROOT, "data", "cast_audit.json")
+COVER_RISK = os.path.join(ROOT, "data", "cover_risk.json")
 OUT = os.path.join(ROOT, "data", "artist_groups.json")
 
 BASE = "https://musicbrainz.org/ws/2/artist"
@@ -104,6 +105,14 @@ def main() -> None:
         if v.get("verdict") == "extra-artists":
             wanted.update(v.get("not_credited") or [])
             wanted.update(v.get("cast") or [])
+
+    # The cover-risk list is dominated by band-and-member pairs — Eric Clapton
+    # with Cream, Roger McGuinn with The Byrds — which look exactly like a cover
+    # to an era-gap heuristic and are the one thing that must never be dropped.
+    if os.path.exists(COVER_RISK):
+        with open(COVER_RISK, encoding="utf-8") as fh:
+            for r in json.load(fh):
+                wanted.update(r.get("names") or [])
 
     cache = {}
     if os.path.exists(OUT):

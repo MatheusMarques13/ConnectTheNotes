@@ -16819,6 +16819,306 @@
    ],
    "reason": "artist not credited on this recording",
    "searched": 2
+  },
+  {
+   "row": [
+    344,
+    335,
+    "O Tempo Não Para",
+    "song",
+    1988
+   ],
+   "line": "(344, 335, 'O Tempo Não Para', 'song', 1988),",
+   "artists": [
+    "Ney Matogrosso",
+    "Cazuza"
+   ],
+   "pair": [
+    "Ney Matogrosso",
+    "Cazuza"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    348,
+    279,
+    "Álibi",
+    "song",
+    1978
+   ],
+   "line": "(348, 279, 'Álibi', 'song', 1978),",
+   "artists": [
+    "Djavan",
+    "Maria Bethânia"
+   ],
+   "pair": [
+    "Djavan",
+    "Maria Bethânia"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    5484,
+    2420,
+    "Nessun dorma",
+    "feature",
+    1995
+   ],
+   "line": "(5484, 2420, 'Nessun dorma', 'feature', 1995),",
+   "artists": [
+    "pavarotti",
+    "Andrea Bocelli"
+   ],
+   "pair": [
+    "pavarotti",
+    "Andrea Bocelli"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    55,
+    126,
+    "Scream and Shout",
+    "song",
+    2012
+   ],
+   "line": "(55, 126, 'Scream and Shout', 'song', 2012),",
+   "artists": [
+    "Michael Jackson",
+    "will.i.am"
+   ],
+   "pair": [
+    "Michael Jackson",
+    "will.i.am"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    5795,
+    1402,
+    "Englishman",
+    "album",
+    1979
+   ],
+   "line": "(5795, 1402, 'Englishman', 'album', 1979),",
+   "artists": [
+    "Henry 'Junjo' Lawes",
+    "Barrington Levy"
+   ],
+   "pair": [
+    "Henry 'Junjo' Lawes",
+    "Barrington Levy"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    2456,
+    2606,
+    "Quando finisce un amore",
+    "song",
+    1982
+   ],
+   "line": "(2456, 2606, 'Quando finisce un amore', 'song', 1982),",
+   "artists": [
+    "Riccardo Cocciante",
+    "Mia Martini"
+   ],
+   "pair": [
+    "Riccardo Cocciante",
+    "Mia Martini"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    2619,
+    2605,
+    "Tu sì 'na cosa grande",
+    "song",
+    1964
+   ],
+   "line": "(2619, 2605, \"Tu sì 'na cosa grande\", 'song', 1964),",
+   "artists": [
+    "Domenico Modugno",
+    "Ornella Vanoni"
+   ],
+   "pair": [
+    "Domenico Modugno",
+    "Ornella Vanoni"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    3231,
+    1027,
+    "The Man Who Sold the World",
+    "song",
+    1993
+   ],
+   "line": "(3231, 1027, 'The Man Who Sold the World', 'song', 1993),",
+   "artists": [
+    "Nirvana",
+    "David Bowie"
+   ],
+   "pair": [
+    "Nirvana",
+    "David Bowie"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    53,
+    5196,
+    "Goodbye Yellow Brick Road",
+    "album",
+    1973
+   ],
+   "line": "(53, 5196, 'Goodbye Yellow Brick Road', 'album', 1973),",
+   "artists": [
+    "Elton John",
+    "Bernie Taupin"
+   ],
+   "pair": [
+    "Elton John",
+    "Bernie Taupin"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    1450,
+    6034,
+    "Police and Thieves",
+    "song",
+    1976
+   ],
+   "line": "(1450, 6034, 'Police and Thieves', 'song', 1976),",
+   "artists": [
+    "Lee 'Scratch' Perry",
+    "Junior Murvin"
+   ],
+   "pair": [
+    "Lee 'Scratch' Perry",
+    "Junior Murvin"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    1550,
+    6447,
+    "Treat Me Like Somebody",
+    "song",
+    2014
+   ],
+   "line": "(1550, 6447, 'Treat Me Like Somebody', 'song', 2014),",
+   "artists": [
+    "Timbaland",
+    "Tink"
+   ],
+   "pair": [
+    "Timbaland",
+    "Tink"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    277,
+    1345,
+    "No Woman No Cry (Live)",
+    "live",
+    1980
+   ],
+   "line": "(277, 1345, 'No Woman No Cry (Live)', 'live', 1980),",
+   "artists": [
+    "Gilberto Gil",
+    "Bob Marley"
+   ],
+   "pair": [
+    "Gilberto Gil",
+    "Bob Marley"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    77,
+    1027,
+    "Life on Mars? (live)",
+    "live",
+    2016
+   ],
+   "line": "(77, 1027, 'Life on Mars? (live)', 'live', 2016),",
+   "artists": [
+    "Lorde",
+    "David Bowie"
+   ],
+   "pair": [
+    "Lorde",
+    "David Bowie"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    5149,
+    254,
+    "Hung Up",
+    "song",
+    2005
+   ],
+   "line": "(5149, 254, 'Hung Up', 'song', 2005),",
+   "artists": [
+    "Benny Andersson",
+    "Madonna"
+   ],
+   "pair": [
+    "Benny Andersson",
+    "Madonna"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
+  },
+  {
+   "row": [
+    2113,
+    6700,
+    "You Don't Understand Me",
+    "song",
+    1995
+   ],
+   "line": "(2113, 6700, \"You Don't Understand Me\", 'song', 1995),",
+   "artists": [
+    "Roxette",
+    "Desmond Child"
+   ],
+   "pair": [
+    "Roxette",
+    "Desmond Child"
+   ],
+   "reason": "cover/tribute/composition credit — verified on the web",
+   "searched": 2
   }
  ],
  "note": "cole a chave 'line' de volta em COLLABORATIONS para restaurar qualquer linha"

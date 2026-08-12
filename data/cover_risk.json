@@ -1,0 +1,10818 @@
+[
+ {
+  "a1": 1903,
+  "a2": 6051,
+  "names": [
+   "Charles Aznavour",
+   "Édith Piaf"
+  ],
+  "title": "Plus bleu que tes yeux",
+  "type": "song",
+  "year": 1951,
+  "era_gap": 73.0,
+  "eras": [
+   2024.0,
+   1951
+  ]
+ },
+ {
+  "a1": 2993,
+  "a2": 5069,
+  "names": [
+   "Celia Cruz",
+   "Benny Moré"
+  ],
+  "title": "Son Con Guaguancó (Live)",
+  "type": "live",
+  "year": 1959,
+  "era_gap": 64.0,
+  "eras": [
+   2023.0,
+   1959
+  ]
+ },
+ {
+  "a1": 2227,
+  "a2": 2345,
+  "names": [
+   "Mohammed Rafi",
+   "Shankar-Jaikishan"
+  ],
+  "title": "Dil Ek Mandir",
+  "type": "song",
+  "year": 1963,
+  "era_gap": 60,
+  "eras": [
+   2023,
+   1963
+  ]
+ },
+ {
+  "a1": 5209,
+  "a2": 5213,
+  "names": [
+   "Jimmy Page",
+   "The Yardbirds"
+  ],
+  "title": "Over Under Sideways Down",
+  "type": "song",
+  "year": 1966,
+  "era_gap": 59.5,
+  "eras": [
+   2025.0,
+   1965.5
+  ]
+ },
+ {
+  "a1": 2226,
+  "a2": 5451,
+  "names": [
+   "Asha Bhosle",
+   "Mohd. Rafi"
+  ],
+  "title": "Abhi Na Jao Chhod Kar",
+  "type": "song",
+  "year": 1961,
+  "era_gap": 58.0,
+  "eras": [
+   2023.0,
+   1965
+  ]
+ },
+ {
+  "a1": 5213,
+  "a2": 5214,
+  "names": [
+   "The Yardbirds",
+   "Jeff Beck"
+  ],
+  "title": "Shapes of Things",
+  "type": "song",
+  "year": 1966,
+  "era_gap": 57.5,
+  "eras": [
+   1965.5,
+   2023
+  ]
+ },
+ {
+  "a1": 3229,
+  "a2": 5213,
+  "names": [
+   "Eric Clapton",
+   "The Yardbirds"
+  ],
+  "title": "Five Live Yardbirds",
+  "type": "live",
+  "year": 1964,
+  "era_gap": 57.5,
+  "eras": [
+   2023,
+   1965.5
+  ]
+ },
+ {
+  "a1": 5230,
+  "a2": 5231,
+  "names": [
+   "Jefferson Airplane",
+   "Grace Slick"
+  ],
+  "title": "Somebody to Love",
+  "type": "song",
+  "year": 1967,
+  "era_gap": 56.5,
+  "eras": [
+   2025.0,
+   1968.5
+  ]
+ },
+ {
+  "a1": 5225,
+  "a2": 5230,
+  "names": [
+   "The Grateful Dead",
+   "Jefferson Airplane"
+  ],
+  "title": "Woodstock",
+  "type": "live",
+  "year": 1969,
+  "era_gap": 56.0,
+  "eras": [
+   1969,
+   2025.0
+  ]
+ },
+ {
+  "a1": 5214,
+  "a2": 5215,
+  "names": [
+   "Jeff Beck",
+   "Jim McCarty"
+  ],
+  "title": "Beck-Ola",
+  "type": "album",
+  "year": 1969,
+  "era_gap": 56.0,
+  "eras": [
+   2023,
+   1967.0
+  ]
+ },
+ {
+  "a1": 5230,
+  "a2": 5232,
+  "names": [
+   "Jefferson Airplane",
+   "Marty Balin"
+  ],
+  "title": "Volunteers",
+  "type": "album",
+  "year": 1969,
+  "era_gap": 56.0,
+  "eras": [
+   2025.0,
+   1969
+  ]
+ },
+ {
+  "a1": 5254,
+  "a2": 5255,
+  "names": [
+   "The Byrds",
+   "Roger McGuinn"
+  ],
+  "title": "Mr. Tambourine Man",
+  "type": "song",
+  "year": 1965,
+  "era_gap": 56,
+  "eras": [
+   2023,
+   1967
+  ]
+ },
+ {
+  "a1": 5254,
+  "a2": 5257,
+  "names": [
+   "The Byrds",
+   "Gene Clark"
+  ],
+  "title": "I'll Feel a Whole Lot Better",
+  "type": "song",
+  "year": 1965,
+  "era_gap": 56.0,
+  "eras": [
+   2023,
+   1967.0
+  ]
+ },
+ {
+  "a1": 3406,
+  "a2": 3543,
+  "names": [
+   "Marvin Gaye",
+   "Willie Hutch"
+  ],
+  "title": "The Mack",
+  "type": "album",
+  "year": 1973,
+  "era_gap": 56,
+  "eras": [
+   1968,
+   2024
+  ]
+ },
+ {
+  "a1": 3229,
+  "a2": 5177,
+  "names": [
+   "Eric Clapton",
+   "Ginger Baker"
+  ],
+  "title": "Disraeli Gears",
+  "type": "album",
+  "year": 1967,
+  "era_gap": 55.5,
+  "eras": [
+   2023,
+   1967.5
+  ]
+ },
+ {
+  "a1": 5206,
+  "a2": 5208,
+  "names": [
+   "Steve Marriott",
+   "Peter Frampton"
+  ],
+  "title": "Humble Pie",
+  "type": "album",
+  "year": 1970,
+  "era_gap": 55.5,
+  "eras": [
+   1970,
+   2025.5
+  ]
+ },
+ {
+  "a1": 3229,
+  "a2": 5180,
+  "names": [
+   "Eric Clapton",
+   "Cream"
+  ],
+  "title": "Sunshine of Your Love",
+  "type": "song",
+  "year": 1967,
+  "era_gap": 55,
+  "eras": [
+   2023,
+   1968
+  ]
+ },
+ {
+  "a1": 3229,
+  "a2": 5181,
+  "names": [
+   "Eric Clapton",
+   "Jack Bruce"
+  ],
+  "title": "Crossroads",
+  "type": "song",
+  "year": 1968,
+  "era_gap": 55,
+  "eras": [
+   2023,
+   1968
+  ]
+ },
+ {
+  "a1": 5225,
+  "a2": 5226,
+  "names": [
+   "The Grateful Dead",
+   "Jerry Garcia"
+  ],
+  "title": "American Beauty",
+  "type": "album",
+  "year": 1970,
+  "era_gap": 55.0,
+  "eras": [
+   1969,
+   2024.0
+  ]
+ },
+ {
+  "a1": 5225,
+  "a2": 5228,
+  "names": [
+   "The Grateful Dead",
+   "Phil Lesh"
+  ],
+  "title": "Dark Star",
+  "type": "song",
+  "year": 1969,
+  "era_gap": 55,
+  "eras": [
+   1969,
+   2024
+  ]
+ },
+ {
+  "a1": 5254,
+  "a2": 5256,
+  "names": [
+   "The Byrds",
+   "Chris Hillman"
+  ],
+  "title": "Eight Miles High",
+  "type": "song",
+  "year": 1966,
+  "era_gap": 55.0,
+  "eras": [
+   2023,
+   1968.0
+  ]
+ },
+ {
+  "a1": 5256,
+  "a2": 5259,
+  "names": [
+   "Chris Hillman",
+   "The Flying Burrito Brothers"
+  ],
+  "title": "Burrito Deluxe",
+  "type": "album",
+  "year": 1970,
+  "era_gap": 55.0,
+  "eras": [
+   1968.0,
+   2023.0
+  ]
+ },
+ {
+  "a1": 5209,
+  "a2": 5212,
+  "names": [
+   "Jimmy Page",
+   "John Bonham"
+  ],
+  "title": "When the Levee Breaks",
+  "type": "song",
+  "year": 1971,
+  "era_gap": 55.0,
+  "eras": [
+   2025.0,
+   1970.0
+  ]
+ },
+ {
+  "a1": 5151,
+  "a2": 5154,
+  "names": [
+   "Chicago",
+   "Terry Kath"
+  ],
+  "title": "Make Me Smile",
+  "type": "song",
+  "year": 1970,
+  "era_gap": 54.5,
+  "eras": [
+   2024,
+   1969.5
+  ]
+ },
+ {
+  "a1": 5230,
+  "a2": 5233,
+  "names": [
+   "Jefferson Airplane",
+   "Paul Kantner"
+  ],
+  "title": "Surrealistic Pillow",
+  "type": "album",
+  "year": 1967,
+  "era_gap": 54.5,
+  "eras": [
+   2025.0,
+   1970.5
+  ]
+ },
+ {
+  "a1": 3229,
+  "a2": 5176,
+  "names": [
+   "Eric Clapton",
+   "Blind Faith"
+  ],
+  "title": "Blind Faith",
+  "type": "album",
+  "year": 1969,
+  "era_gap": 54.0,
+  "eras": [
+   2023,
+   1969.0
+  ]
+ },
+ {
+  "a1": 5207,
+  "a2": 5208,
+  "names": [
+   "Humble Pie",
+   "Peter Frampton"
+  ],
+  "title": "Rock On",
+  "type": "album",
+  "year": 1971,
+  "era_gap": 54.0,
+  "eras": [
+   1971.5,
+   2025.5
+  ]
+ },
+ {
+  "a1": 3226,
+  "a2": 5209,
+  "names": [
+   "Led Zeppelin",
+   "Jimmy Page"
+  ],
+  "title": "Led Zeppelin IV",
+  "type": "album",
+  "year": 1971,
+  "era_gap": 54.0,
+  "eras": [
+   1971,
+   2025.0
+  ]
+ },
+ {
+  "a1": 1337,
+  "a2": 5223,
+  "names": [
+   "John Fogerty",
+   "Creedence Clearwater Revival"
+  ],
+  "title": "Proud Mary",
+  "type": "song",
+  "year": 1969,
+  "era_gap": 54.0,
+  "eras": [
+   2023.0,
+   1969.0
+  ]
+ },
+ {
+  "a1": 1337,
+  "a2": 5224,
+  "names": [
+   "John Fogerty",
+   "Tom Fogerty"
+  ],
+  "title": "Bayou Country",
+  "type": "album",
+  "year": 1969,
+  "era_gap": 54.0,
+  "eras": [
+   2023.0,
+   1969.0
+  ]
+ },
+ {
+  "a1": 5254,
+  "a2": 5258,
+  "names": [
+   "The Byrds",
+   "Gram Parsons"
+  ],
+  "title": "Sweetheart of the Rodeo",
+  "type": "album",
+  "year": 1968,
+  "era_gap": 54,
+  "eras": [
+   2023,
+   1969
+  ]
+ },
+ {
+  "a1": 5258,
+  "a2": 5259,
+  "names": [
+   "Gram Parsons",
+   "The Flying Burrito Brothers"
+  ],
+  "title": "The Gilded Palace of Sin",
+  "type": "album",
+  "year": 1969,
+  "era_gap": 54.0,
+  "eras": [
+   1969,
+   2023.0
+  ]
+ },
+ {
+  "a1": 5226,
+  "a2": 5233,
+  "names": [
+   "Jerry Garcia",
+   "Paul Kantner"
+  ],
+  "title": "The Planet Earth Rock and Roll Orchestra",
+  "type": "album",
+  "year": 1983,
+  "era_gap": 53.5,
+  "eras": [
+   2024.0,
+   1970.5
+  ]
+ },
+ {
+  "a1": 3440,
+  "a2": 5198,
+  "names": [
+   "Keith Richards",
+   "Charlie Watts"
+  ],
+  "title": "Sympathy for the Devil",
+  "type": "song",
+  "year": 1968,
+  "era_gap": 53.5,
+  "eras": [
+   2021.5,
+   1968
+  ]
+ },
+ {
+  "a1": 3229,
+  "a2": 3267,
+  "names": [
+   "Eric Clapton",
+   "George Harrison"
+  ],
+  "title": "While My Guitar Gently Weeps",
+  "type": "song",
+  "year": 1968,
+  "era_gap": 53,
+  "eras": [
+   2023,
+   1970
+  ]
+ },
+ {
+  "a1": 5151,
+  "a2": 5153,
+  "names": [
+   "Chicago",
+   "Robert Lamm"
+  ],
+  "title": "25 or 6 to 4",
+  "type": "song",
+  "year": 1970,
+  "era_gap": 53.0,
+  "eras": [
+   2024,
+   1971.0
+  ]
+ },
+ {
+  "a1": 255,
+  "a2": 3267,
+  "names": [
+   "Paul McCartney",
+   "George Harrison"
+  ],
+  "title": "A Hard Day's Night",
+  "type": "album",
+  "year": 1964,
+  "era_gap": 53,
+  "eras": [
+   2023,
+   1970
+  ]
+ },
+ {
+  "a1": 5209,
+  "a2": 5211,
+  "names": [
+   "Jimmy Page",
+   "John Paul Jones"
+  ],
+  "title": "Kashmir",
+  "type": "song",
+  "year": 1975,
+  "era_gap": 53.0,
+  "eras": [
+   2025.0,
+   1972.0
+  ]
+ },
+ {
+  "a1": 5226,
+  "a2": 5227,
+  "names": [
+   "Jerry Garcia",
+   "Bob Weir"
+  ],
+  "title": "Blues for Allah",
+  "type": "album",
+  "year": 1975,
+  "era_gap": 53.0,
+  "eras": [
+   2024.0,
+   1971
+  ]
+ },
+ {
+  "a1": 5227,
+  "a2": 5228,
+  "names": [
+   "Bob Weir",
+   "Phil Lesh"
+  ],
+  "title": "Grateful Dead (Skull & Roses)",
+  "type": "live",
+  "year": 1971,
+  "era_gap": 53,
+  "eras": [
+   1971,
+   2024
+  ]
+ },
+ {
+  "a1": 5163,
+  "a2": 5165,
+  "names": [
+   "Peter Gabriel",
+   "Tony Banks"
+  ],
+  "title": "Supper's Ready",
+  "type": "song",
+  "year": 1972,
+  "era_gap": 51,
+  "eras": [
+   2023,
+   1972
+  ]
+ },
+ {
+  "a1": 2605,
+  "a2": 2619,
+  "names": [
+   "Ornella Vanoni",
+   "Domenico Modugno"
+  ],
+  "title": "Tu sì 'na cosa grande",
+  "type": "song",
+  "year": 1964,
+  "era_gap": 50.5,
+  "eras": [
+   2014.5,
+   1964
+  ]
+ },
+ {
+  "a1": 1266,
+  "a2": 5168,
+  "names": [
+   "Chet Atkins",
+   "Mark Knopfler"
+  ],
+  "title": "Neck and Neck",
+  "type": "album",
+  "year": 1990,
+  "era_gap": 50.0,
+  "eras": [
+   1976,
+   2026.0
+  ]
+ },
+ {
+  "a1": 3268,
+  "a2": 5122,
+  "names": [
+   "Ringo Starr",
+   "Keith Moon"
+  ],
+  "title": "Two Sides of the Moon",
+  "type": "album",
+  "year": 1975,
+  "era_gap": 50.0,
+  "eras": [
+   2023,
+   1973.0
+  ]
+ },
+ {
+  "a1": 5162,
+  "a2": 5163,
+  "names": [
+   "Genesis",
+   "Peter Gabriel"
+  ],
+  "title": "Selling England by the Pound",
+  "type": "album",
+  "year": 1973,
+  "era_gap": 49.5,
+  "eras": [
+   1973.5,
+   2023
+  ]
+ },
+ {
+  "a1": 5163,
+  "a2": 5164,
+  "names": [
+   "Peter Gabriel",
+   "Mike Rutherford"
+  ],
+  "title": "The Knife",
+  "type": "song",
+  "year": 1971,
+  "era_gap": 49.5,
+  "eras": [
+   2023,
+   1973.5
+  ]
+ },
+ {
+  "a1": 255,
+  "a2": 3266,
+  "names": [
+   "Paul McCartney",
+   "John Lennon"
+  ],
+  "title": "Hey Jude",
+  "type": "song",
+  "year": 1968,
+  "era_gap": 49,
+  "eras": [
+   2023,
+   1974
+  ]
+ },
+ {
+  "a1": 1555,
+  "a2": 3488,
+  "names": [
+   "Chaka Khan",
+   "Rufus & Chaka Khan"
+  ],
+  "title": "Tell Me Something Good",
+  "type": "feature",
+  "year": 1974,
+  "era_gap": 49.0,
+  "eras": [
+   2023.0,
+   1974
+  ]
+ },
+ {
+  "a1": 1650,
+  "a2": 5170,
+  "names": [
+   "Brian Eno",
+   "Roxy Music"
+  ],
+  "title": "Virginia Plain",
+  "type": "song",
+  "year": 1972,
+  "era_gap": 48.0,
+  "eras": [
+   2023.0,
+   1975
+  ]
+ },
+ {
+  "a1": 1650,
+  "a2": 5171,
+  "names": [
+   "Brian Eno",
+   "Bryan Ferry"
+  ],
+  "title": "Roxy Music",
+  "type": "album",
+  "year": 1972,
+  "era_gap": 48.0,
+  "eras": [
+   2023.0,
+   1975
+  ]
+ },
+ {
+  "a1": 2219,
+  "a2": 5198,
+  "names": [
+   "Mick Jagger",
+   "Charlie Watts"
+  ],
+  "title": "Let's Spend the Night Together",
+  "type": "song",
+  "year": 1967,
+  "era_gap": 48,
+  "eras": [
+   2016,
+   1968
+  ]
+ },
+ {
+  "a1": 2219,
+  "a2": 5199,
+  "names": [
+   "Mick Jagger",
+   "Bill Wyman"
+  ],
+  "title": "Jumpin' Jack Flash",
+  "type": "song",
+  "year": 1968,
+  "era_gap": 48.0,
+  "eras": [
+   2016,
+   1968.0
+  ]
+ },
+ {
+  "a1": 255,
+  "a2": 5248,
+  "names": [
+   "Paul McCartney",
+   "Billy Preston"
+  ],
+  "title": "Get Back",
+  "type": "feature",
+  "year": 1969,
+  "era_gap": 48,
+  "eras": [
+   2023,
+   1975
+  ]
+ },
+ {
+  "a1": 5723,
+  "a2": 5864,
+  "names": [
+   "Steve Vai",
+   "Frank Zappa"
+  ],
+  "title": "Tinsel Town Rebellion",
+  "type": "album",
+  "year": 1981,
+  "era_gap": 48,
+  "eras": [
+   2022,
+   1974
+  ]
+ },
+ {
+  "a1": 1244,
+  "a2": 1311,
+  "names": [
+   "Loretta Lynn",
+   "Sturgill Simpson"
+  ],
+  "title": "Everything's Changed (Tribute)",
+  "type": "feature",
+  "year": 2016,
+  "era_gap": 47.0,
+  "eras": [
+   1971.0,
+   2018.0
+  ]
+ },
+ {
+  "a1": 3499,
+  "a2": 5925,
+  "names": [
+   "Bernie Worrell",
+   "Parliament-Funkadelic"
+  ],
+  "title": "Flash Light",
+  "type": "song",
+  "year": 1978,
+  "era_gap": 47.0,
+  "eras": [
+   2025.0,
+   1978
+  ]
+ },
+ {
+  "a1": 1450,
+  "a2": 6034,
+  "names": [
+   "Lee 'Scratch' Perry",
+   "Junior Murvin"
+  ],
+  "title": "Police and Thieves",
+  "type": "song",
+  "year": 1976,
+  "era_gap": 47,
+  "eras": [
+   2023,
+   1976
+  ]
+ },
+ {
+  "a1": 1450,
+  "a2": 6035,
+  "names": [
+   "Lee 'Scratch' Perry",
+   "Max Romeo"
+  ],
+  "title": "War ina Babylon",
+  "type": "song",
+  "year": 1976,
+  "era_gap": 47,
+  "eras": [
+   2023,
+   1976
+  ]
+ },
+ {
+  "a1": 253,
+  "a2": 5125,
+  "names": [
+   "Stevie Nicks",
+   "Don Henley"
+  ],
+  "title": "Leather and Lace",
+  "type": "song",
+  "year": 1981,
+  "era_gap": 46.5,
+  "eras": [
+   2023.0,
+   1976.5
+  ]
+ },
+ {
+  "a1": 3495,
+  "a2": 3497,
+  "names": [
+   "Parliament",
+   "George Clinton"
+  ],
+  "title": "Flash Light",
+  "type": "song",
+  "year": 1978,
+  "era_gap": 46.0,
+  "eras": [
+   1977.0,
+   2023.0
+  ]
+ },
+ {
+  "a1": 3417,
+  "a2": 3514,
+  "names": [
+   "Chic",
+   "Sister Sledge"
+  ],
+  "title": "He's the Greatest Dancer",
+  "type": "song",
+  "year": 1979,
+  "era_gap": 46.0,
+  "eras": [
+   2025,
+   1979.0
+  ]
+ },
+ {
+  "a1": 3112,
+  "a2": 3417,
+  "names": [
+   "Diana Ross",
+   "Chic"
+  ],
+  "title": "Diana",
+  "type": "album",
+  "year": 1980,
+  "era_gap": 46.0,
+  "eras": [
+   1979.0,
+   2025
+  ]
+ },
+ {
+  "a1": 253,
+  "a2": 5130,
+  "names": [
+   "Stevie Nicks",
+   "Fleetwood Mac"
+  ],
+  "title": "Rumours",
+  "type": "album",
+  "year": 1977,
+  "era_gap": 46.0,
+  "eras": [
+   2023.0,
+   1977.0
+  ]
+ },
+ {
+  "a1": 53,
+  "a2": 5196,
+  "names": [
+   "Elton John",
+   "Bernie Taupin"
+  ],
+  "title": "Goodbye Yellow Brick Road",
+  "type": "album",
+  "year": 1973,
+  "era_gap": 46.0,
+  "eras": [
+   2019.0,
+   1973
+  ]
+ },
+ {
+  "a1": 1555,
+  "a2": 5178,
+  "names": [
+   "Chaka Khan",
+   "Steve Winwood"
+  ],
+  "title": "Higher Love",
+  "type": "feature",
+  "year": 1986,
+  "era_gap": 45.5,
+  "eras": [
+   2023.0,
+   1977.5
+  ]
+ },
+ {
+  "a1": 3229,
+  "a2": 5178,
+  "names": [
+   "Eric Clapton",
+   "Steve Winwood"
+  ],
+  "title": "Back in the High Life",
+  "type": "feature",
+  "year": 1986,
+  "era_gap": 45.5,
+  "eras": [
+   2023,
+   1977.5
+  ]
+ },
+ {
+  "a1": 1258,
+  "a2": 1261,
+  "names": [
+   "Anne Murray",
+   "Glen Campbell"
+  ],
+  "title": "I Say a Little Prayer / By the Time I Get to Phoenix",
+  "type": "song",
+  "year": 1971,
+  "era_gap": 45.5,
+  "eras": [
+   1977.5,
+   2023.0
+  ]
+ },
+ {
+  "a1": 200,
+  "a2": 1244,
+  "names": [
+   "Jack White",
+   "Loretta Lynn"
+  ],
+  "title": "Portland Oregon",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 45.0,
+  "eras": [
+   2016,
+   1971.0
+  ]
+ },
+ {
+  "a1": 1616,
+  "a2": 3112,
+  "names": [
+   "Nile Rodgers",
+   "Diana Ross"
+  ],
+  "title": "Upside Down",
+  "type": "song",
+  "year": 1980,
+  "era_gap": 45.0,
+  "eras": [
+   2024,
+   1979.0
+  ]
+ },
+ {
+  "a1": 1616,
+  "a2": 3514,
+  "names": [
+   "Nile Rodgers",
+   "Sister Sledge"
+  ],
+  "title": "We Are Family",
+  "type": "song",
+  "year": 1979,
+  "era_gap": 45.0,
+  "eras": [
+   2024,
+   1979.0
+  ]
+ },
+ {
+  "a1": 350,
+  "a2": 4997,
+  "names": [
+   "Chico Buarque",
+   "Toquinho"
+  ],
+  "title": "A Mais Querida",
+  "type": "song",
+  "year": 1980,
+  "era_gap": 45.0,
+  "eras": [
+   1981.0,
+   2026
+  ]
+ },
+ {
+  "a1": 1345,
+  "a2": 1450,
+  "names": [
+   "Bob Marley",
+   "Lee 'Scratch' Perry"
+  ],
+  "title": "Duppy Conqueror",
+  "type": "song",
+  "year": 1971,
+  "era_gap": 45.0,
+  "eras": [
+   1978.0,
+   2023
+  ]
+ },
+ {
+  "a1": 1247,
+  "a2": 1329,
+  "names": [
+   "Waylon Jennings",
+   "Kris Kristofferson"
+  ],
+  "title": "Highwayman",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 45,
+  "eras": [
+   1978,
+   2023
+  ]
+ },
+ {
+  "a1": 3562,
+  "a2": 5214,
+  "names": [
+   "Stanley Clarke",
+   "Jeff Beck"
+  ],
+  "title": "Hello Jeff (Journey to Love)",
+  "type": "feature",
+  "year": 1975,
+  "era_gap": 45.0,
+  "eras": [
+   1978.0,
+   2023
+  ]
+ },
+ {
+  "a1": 257,
+  "a2": 5144,
+  "names": [
+   "Miranda Lambert",
+   "Barry Gibb"
+  ],
+  "title": "Jive Talkin'",
+  "type": "song",
+  "year": 1975,
+  "era_gap": 45.0,
+  "eras": [
+   2021,
+   1976.0
+  ]
+ },
+ {
+  "a1": 5168,
+  "a2": 5169,
+  "names": [
+   "Mark Knopfler",
+   "John Illsley"
+  ],
+  "title": "Money for Nothing",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 44.5,
+  "eras": [
+   2026.0,
+   1981.5
+  ]
+ },
+ {
+  "a1": 3440,
+  "a2": 5200,
+  "names": [
+   "Keith Richards",
+   "Ronnie Wood"
+  ],
+  "title": "Some Girls",
+  "type": "album",
+  "year": 1978,
+  "era_gap": 44.5,
+  "eras": [
+   2021.5,
+   1977
+  ]
+ },
+ {
+  "a1": 349,
+  "a2": 4089,
+  "names": [
+   "Milton Nascimento",
+   "Lô Borges"
+  ],
+  "title": "Clube da Esquina",
+  "type": "album",
+  "year": 1972,
+  "era_gap": 44.0,
+  "eras": [
+   1981,
+   2025.0
+  ]
+ },
+ {
+  "a1": 5930,
+  "a2": 5931,
+  "names": [
+   "The Specials",
+   "Elvis Costello"
+  ],
+  "title": "The Specials (album production by Elvis Costello)",
+  "type": "album",
+  "year": 1979,
+  "era_gap": 44,
+  "eras": [
+   1979,
+   2023
+  ]
+ },
+ {
+  "a1": 3226,
+  "a2": 5210,
+  "names": [
+   "Led Zeppelin",
+   "Robert Plant"
+  ],
+  "title": "Stairway to Heaven",
+  "type": "song",
+  "year": 1971,
+  "era_gap": 44.0,
+  "eras": [
+   1971,
+   2015.0
+  ]
+ },
+ {
+  "a1": 2226,
+  "a2": 2314,
+  "names": [
+   "Asha Bhosle",
+   "K. J. Yesudas"
+  ],
+  "title": "Sunhare Pal",
+  "type": "song",
+  "year": 1978,
+  "era_gap": 44.0,
+  "eras": [
+   2023.0,
+   1979
+  ]
+ },
+ {
+  "a1": 2312,
+  "a2": 2314,
+  "names": [
+   "Ilaiyaraaja",
+   "K. J. Yesudas"
+  ],
+  "title": "Ninaithale Inikkum",
+  "type": "song",
+  "year": 1979,
+  "era_gap": 44.0,
+  "eras": [
+   2023.0,
+   1979
+  ]
+ },
+ {
+  "a1": 3492,
+  "a2": 3493,
+  "names": [
+   "Zapp",
+   "Roger Troutman"
+  ],
+  "title": "More Bounce to the Ounce",
+  "type": "song",
+  "year": 1980,
+  "era_gap": 43.5,
+  "eras": [
+   1980,
+   2023.5
+  ]
+ },
+ {
+  "a1": 2456,
+  "a2": 2606,
+  "names": [
+   "Riccardo Cocciante",
+   "Mia Martini"
+  ],
+  "title": "Quando finisce un amore",
+  "type": "song",
+  "year": 1982,
+  "era_gap": 43.5,
+  "eras": [
+   1980.5,
+   2024
+  ]
+ },
+ {
+  "a1": 1449,
+  "a2": 2219,
+  "names": [
+   "Peter Tosh",
+   "Mick Jagger"
+  ],
+  "title": "Don't Look Back",
+  "type": "song",
+  "year": 1978,
+  "era_gap": 43,
+  "eras": [
+   1973,
+   2016
+  ]
+ },
+ {
+  "a1": 1045,
+  "a2": 1048,
+  "names": [
+   "Erasmo Carlos",
+   "Tim Maia"
+  ],
+  "title": "Feitos Um para o Outro",
+  "type": "song",
+  "year": 1978,
+  "era_gap": 43.0,
+  "eras": [
+   2023.0,
+   1980
+  ]
+ },
+ {
+  "a1": 1452,
+  "a2": 1455,
+  "names": [
+   "Augustus Pablo",
+   "Big Youth"
+  ],
+  "title": "Big Youth Meets Augustus Pablo",
+  "type": "album",
+  "year": 1981,
+  "era_gap": 43.0,
+  "eras": [
+   1981,
+   2024.0
+  ]
+ },
+ {
+  "a1": 3499,
+  "a2": 6071,
+  "names": [
+   "Bernie Worrell",
+   "Talking Heads"
+  ],
+  "title": "The Name of This Band Is Talking Heads",
+  "type": "album",
+  "year": 1982,
+  "era_gap": 43.0,
+  "eras": [
+   2025.0,
+   1982
+  ]
+ },
+ {
+  "a1": 1198,
+  "a2": 1253,
+  "names": [
+   "Johnny Cash",
+   "The Oak Ridge Boys"
+  ],
+  "title": "Elvira (Live)",
+  "type": "live",
+  "year": 1982,
+  "era_gap": 43.0,
+  "eras": [
+   1980.0,
+   2023
+  ]
+ },
+ {
+  "a1": 1345,
+  "a2": 1370,
+  "names": [
+   "Bob Marley",
+   "Skip Marley"
+  ],
+  "title": "Higher Place",
+  "type": "song",
+  "year": 2020,
+  "era_gap": 42.5,
+  "eras": [
+   1978.0,
+   2020.5
+  ]
+ },
+ {
+  "a1": 3491,
+  "a2": 5577,
+  "names": [
+   "Gap Band",
+   "Charlie Wilson"
+  ],
+  "title": "Outstanding",
+  "type": "song",
+  "year": 1982,
+  "era_gap": 42,
+  "eras": [
+   1982,
+   2024
+  ]
+ },
+ {
+  "a1": 3438,
+  "a2": 5586,
+  "names": [
+   "Rod Stewart",
+   "Cher"
+  ],
+  "title": "All I Ever Need Is You",
+  "type": "song",
+  "year": 1976,
+  "era_gap": 42.0,
+  "eras": [
+   1981.0,
+   2023
+  ]
+ },
+ {
+  "a1": 3456,
+  "a2": 5245,
+  "names": [
+   "Bobby Womack",
+   "Sly Stone"
+  ],
+  "title": "Lookin' for a Love Again",
+  "type": "song",
+  "year": 1974,
+  "era_gap": 42.0,
+  "eras": [
+   2011.0,
+   1969.0
+  ]
+ },
+ {
+  "a1": 5188,
+  "a2": 5189,
+  "names": [
+   "Booker T. & the MGs",
+   "Booker T. Jones"
+  ],
+  "title": "Green Onions",
+  "type": "song",
+  "year": 1962,
+  "era_gap": 42,
+  "eras": [
+   1967,
+   2009
+  ]
+ },
+ {
+  "a1": 3413,
+  "a2": 5189,
+  "names": [
+   "Otis Redding",
+   "Booker T. Jones"
+  ],
+  "title": "Otis Blue",
+  "type": "album",
+  "year": 1965,
+  "era_gap": 42.0,
+  "eras": [
+   1967.0,
+   2009
+  ]
+ },
+ {
+  "a1": 3438,
+  "a2": 5214,
+  "names": [
+   "Rod Stewart",
+   "Jeff Beck"
+  ],
+  "title": "People Get Ready",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 42.0,
+  "eras": [
+   1981.0,
+   2023
+  ]
+ },
+ {
+  "a1": 2227,
+  "a2": 2251,
+  "names": [
+   "Mohammed Rafi",
+   "Bappi Lahiri"
+  ],
+  "title": "Chalte Chalte",
+  "type": "song",
+  "year": 1976,
+  "era_gap": 42.0,
+  "eras": [
+   2023,
+   1981.0
+  ]
+ },
+ {
+  "a1": 1233,
+  "a2": 1325,
+  "names": [
+   "John Denver",
+   "Emmylou Harris"
+  ],
+  "title": "Wild Montana Skies",
+  "type": "song",
+  "year": 1983,
+  "era_gap": 42.0,
+  "eras": [
+   1981,
+   2023.0
+  ]
+ },
+ {
+  "a1": 1267,
+  "a2": 1325,
+  "names": [
+   "Don Williams",
+   "Emmylou Harris"
+  ],
+  "title": "If I Needed You",
+  "type": "song",
+  "year": 1981,
+  "era_gap": 42.0,
+  "eras": [
+   1981,
+   2023.0
+  ]
+ },
+ {
+  "a1": 54,
+  "a2": 3488,
+  "names": [
+   "Stevie Wonder",
+   "Rufus & Chaka Khan"
+  ],
+  "title": "Tell Me Something Good",
+  "type": "feature",
+  "year": 1974,
+  "era_gap": 41.5,
+  "eras": [
+   2015.5,
+   1974
+  ]
+ },
+ {
+  "a1": 5167,
+  "a2": 5169,
+  "names": [
+   "Dire Straits",
+   "John Illsley"
+  ],
+  "title": "Sultans of Swing",
+  "type": "song",
+  "year": 1978,
+  "era_gap": 41.5,
+  "eras": [
+   2023.0,
+   1981.5
+  ]
+ },
+ {
+  "a1": 1650,
+  "a2": 5172,
+  "names": [
+   "Brian Eno",
+   "Phil Manzanera"
+  ],
+  "title": "801 Live",
+  "type": "live",
+  "year": 1976,
+  "era_gap": 41.0,
+  "eras": [
+   2023.0,
+   1982
+  ]
+ },
+ {
+  "a1": 3111,
+  "a2": 5552,
+  "names": [
+   "Lionel Richie",
+   "Kenny Loggins"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 41.0,
+  "eras": [
+   1985.0,
+   2026.0
+  ]
+ },
+ {
+  "a1": 1345,
+  "a2": 1357,
+  "names": [
+   "Bob Marley",
+   "Ziggy Marley"
+  ],
+  "title": "Could You Be Loved (Legacy)",
+  "type": "song",
+  "year": 1988,
+  "era_gap": 40.0,
+  "eras": [
+   1978.0,
+   2018.0
+  ]
+ },
+ {
+  "a1": 248,
+  "a2": 1262,
+  "names": [
+   "Willie Nelson",
+   "Roger Miller"
+  ],
+  "title": "Old Friends",
+  "type": "album",
+  "year": 1982,
+  "era_gap": 40.0,
+  "eras": [
+   2022.0,
+   1982
+  ]
+ },
+ {
+  "a1": 335,
+  "a2": 344,
+  "names": [
+   "Cazuza",
+   "Ney Matogrosso"
+  ],
+  "title": "O Tempo Não Para",
+  "type": "song",
+  "year": 1988,
+  "era_gap": 39.5,
+  "eras": [
+   1984.5,
+   2024.0
+  ]
+ },
+ {
+  "a1": 3557,
+  "a2": 3559,
+  "names": [
+   "Bob James",
+   "Lee Ritenour"
+  ],
+  "title": "Foxie",
+  "type": "album",
+  "year": 1983,
+  "era_gap": 39.5,
+  "eras": [
+   1984.5,
+   2024.0
+  ]
+ },
+ {
+  "a1": 5151,
+  "a2": 5152,
+  "names": [
+   "Chicago",
+   "Peter Cetera"
+  ],
+  "title": "Hard Habit to Break",
+  "type": "song",
+  "year": 1984,
+  "era_gap": 39.0,
+  "eras": [
+   2024,
+   1985.0
+  ]
+ },
+ {
+  "a1": 160,
+  "a2": 3415,
+  "names": [
+   "Meghan Trainor",
+   "Earth, Wind & Fire"
+  ],
+  "title": "With You",
+  "type": "song",
+  "year": 2022,
+  "era_gap": 39,
+  "eras": [
+   2018,
+   1979
+  ]
+ },
+ {
+  "a1": 2996,
+  "a2": 6058,
+  "names": [
+   "Rubén Blades",
+   "Seis del Solar"
+  ],
+  "title": "Buscando América",
+  "type": "album",
+  "year": 1984,
+  "era_gap": 39,
+  "eras": [
+   2023,
+   1984
+  ]
+ },
+ {
+  "a1": 3111,
+  "a2": 3484,
+  "names": [
+   "Lionel Richie",
+   "Sheila E."
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 39.0,
+  "eras": [
+   1985.0,
+   2024
+  ]
+ },
+ {
+  "a1": 3229,
+  "a2": 5161,
+  "names": [
+   "Eric Clapton",
+   "Phil Collins"
+  ],
+  "title": "Behind the Sun",
+  "type": "feature",
+  "year": 1985,
+  "era_gap": 38.5,
+  "eras": [
+   2023,
+   1984.5
+  ]
+ },
+ {
+  "a1": 248,
+  "a2": 2589,
+  "names": [
+   "Willie Nelson",
+   "Julio Iglesias"
+  ],
+  "title": "To All the Girls I've Loved Before",
+  "type": "song",
+  "year": 1984,
+  "era_gap": 38.0,
+  "eras": [
+   2022.0,
+   1984.0
+  ]
+ },
+ {
+  "a1": 1402,
+  "a2": 5795,
+  "names": [
+   "Barrington Levy",
+   "Henry 'Junjo' Lawes"
+  ],
+  "title": "Englishman",
+  "type": "album",
+  "year": 1979,
+  "era_gap": 38.0,
+  "eras": [
+   2017.0,
+   1979
+  ]
+ },
+ {
+  "a1": 1226,
+  "a2": 1227,
+  "names": [
+   "Wynonna Judd",
+   "Naomi Judd"
+  ],
+  "title": "Grandpa (Tell Me 'Bout the Good Old Days)",
+  "type": "song",
+  "year": 1986,
+  "era_gap": 38.0,
+  "eras": [
+   2023,
+   1985.0
+  ]
+ },
+ {
+  "a1": 3111,
+  "a2": 3228,
+  "names": [
+   "Lionel Richie",
+   "Bruce Springsteen"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 38.0,
+  "eras": [
+   1985.0,
+   2023.0
+  ]
+ },
+ {
+  "a1": 3111,
+  "a2": 6515,
+  "names": [
+   "Lionel Richie",
+   "Steve Perry"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 38.0,
+  "eras": [
+   1985.0,
+   2023
+  ]
+ },
+ {
+  "a1": 3111,
+  "a2": 6517,
+  "names": [
+   "Lionel Richie",
+   "Cyndi Lauper"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 38.0,
+  "eras": [
+   1985.0,
+   2023
+  ]
+ },
+ {
+  "a1": 3111,
+  "a2": 6520,
+  "names": [
+   "Lionel Richie",
+   "Harry Belafonte"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 38.0,
+  "eras": [
+   1985.0,
+   2023
+  ]
+ },
+ {
+  "a1": 3360,
+  "a2": 3411,
+  "names": [
+   "Norah Jones",
+   "Ray Charles"
+  ],
+  "title": "Here We Go Again",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 37.0,
+  "eras": [
+   2023,
+   1986.0
+  ]
+ },
+ {
+  "a1": 1555,
+  "a2": 3411,
+  "names": [
+   "Chaka Khan",
+   "Ray Charles"
+  ],
+  "title": "I'll Be Good to You",
+  "type": "song",
+  "year": 1989,
+  "era_gap": 37.0,
+  "eras": [
+   2023.0,
+   1986.0
+  ]
+ },
+ {
+  "a1": 413,
+  "a2": 1555,
+  "names": [
+   "Prince",
+   "Chaka Khan"
+  ],
+  "title": "I Feel for You",
+  "type": "song",
+  "year": 1984,
+  "era_gap": 37.0,
+  "eras": [
+   1986.0,
+   2023.0
+  ]
+ },
+ {
+  "a1": 248,
+  "a2": 3111,
+  "names": [
+   "Willie Nelson",
+   "Lionel Richie"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 37.0,
+  "eras": [
+   2022.0,
+   1985.0
+  ]
+ },
+ {
+  "a1": 2166,
+  "a2": 3426,
+  "names": [
+   "Zucchero",
+   "Miles Davis"
+  ],
+  "title": "Dune Mosse",
+  "type": "song",
+  "year": 1991,
+  "era_gap": 36.5,
+  "eras": [
+   2005.5,
+   1969.0
+  ]
+ },
+ {
+  "a1": 4088,
+  "a2": 4089,
+  "names": [
+   "Beto Guedes",
+   "Lô Borges"
+  ],
+  "title": "Clube da Esquina em Dia",
+  "type": "live",
+  "year": 2005,
+  "era_gap": 36.5,
+  "eras": [
+   1988.5,
+   2025.0
+  ]
+ },
+ {
+  "a1": 2250,
+  "a2": 2345,
+  "names": [
+   "Javed Akhtar",
+   "Shankar-Jaikishan"
+  ],
+  "title": "Silsila",
+  "type": "song",
+  "year": 1981,
+  "era_gap": 36,
+  "eras": [
+   1999,
+   1963
+  ]
+ },
+ {
+  "a1": 60,
+  "a2": 3438,
+  "names": [
+   "A$AP Rocky",
+   "Rod Stewart"
+  ],
+  "title": "Everyday",
+  "type": "song",
+  "year": 2015,
+  "era_gap": 36.0,
+  "eras": [
+   2017,
+   1981.0
+  ]
+ },
+ {
+  "a1": 5723,
+  "a2": 6686,
+  "names": [
+   "Steve Vai",
+   "David Lee Roth"
+  ],
+  "title": "Eat 'Em and Smile",
+  "type": "album",
+  "year": 1986,
+  "era_gap": 36,
+  "eras": [
+   2022,
+   1986
+  ]
+ },
+ {
+  "a1": 2994,
+  "a2": 5052,
+  "names": [
+   "Willie Colón",
+   "Roberto Torres"
+  ],
+  "title": "Pachanga y Salsa",
+  "type": "song",
+  "year": 1986,
+  "era_gap": 35.5,
+  "eras": [
+   2023.0,
+   1987.5
+  ]
+ },
+ {
+  "a1": 5052,
+  "a2": 5053,
+  "names": [
+   "Roberto Torres",
+   "Johnny Pacheco"
+  ],
+  "title": "Salsa Stars (Live)",
+  "type": "live",
+  "year": 1989,
+  "era_gap": 35.5,
+  "eras": [
+   1987.5,
+   2023.0
+  ]
+ },
+ {
+  "a1": 13,
+  "a2": 5249,
+  "names": [
+   "Travis Scott",
+   "Philip Bailey"
+  ],
+  "title": "STOP TRYING TO BE GOD",
+  "type": "song",
+  "year": 2018,
+  "era_gap": 35.5,
+  "eras": [
+   2018.0,
+   1982.5
+  ]
+ },
+ {
+  "a1": 3647,
+  "a2": 5147,
+  "names": [
+   "Gary Barlow",
+   "Agnetha Fältskog"
+  ],
+  "title": "I Should've Followed You Home",
+  "type": "feature",
+  "year": 2013,
+  "era_gap": 35.5,
+  "eras": [
+   2013.0,
+   1977.5
+  ]
+ },
+ {
+  "a1": 3228,
+  "a2": 3264,
+  "names": [
+   "Bruce Springsteen",
+   "Bob Dylan"
+  ],
+  "title": "Highway 61 Revisited (live)",
+  "type": "live",
+  "year": 1986,
+  "era_gap": 35.0,
+  "eras": [
+   2023.0,
+   1988
+  ]
+ },
+ {
+  "a1": 3263,
+  "a2": 3264,
+  "names": [
+   "Tom Petty and the Heartbreakers",
+   "Bob Dylan"
+  ],
+  "title": "Traveling Wilburys Vol. 1",
+  "type": "album",
+  "year": 1988,
+  "era_gap": 35,
+  "eras": [
+   2023,
+   1988
+  ]
+ },
+ {
+  "a1": 3264,
+  "a2": 3265,
+  "names": [
+   "Bob Dylan",
+   "Neil Young"
+  ],
+  "title": "Forever Young (live)",
+  "type": "live",
+  "year": 1976,
+  "era_gap": 35,
+  "eras": [
+   1988,
+   2023
+  ]
+ },
+ {
+  "a1": 3422,
+  "a2": 5557,
+  "names": [
+   "Al Green",
+   "Annie Lennox"
+  ],
+  "title": "Put a Little Love in Your Heart",
+  "type": "song",
+  "year": 1988,
+  "era_gap": 35,
+  "eras": [
+   1988,
+   2023
+  ]
+ },
+ {
+  "a1": 3406,
+  "a2": 3409,
+  "names": [
+   "Marvin Gaye",
+   "Smokey Robinson"
+  ],
+  "title": "Tamla Motown revue",
+  "type": "live",
+  "year": 1965,
+  "era_gap": 35.0,
+  "eras": [
+   1968,
+   2003.0
+  ]
+ },
+ {
+  "a1": 1381,
+  "a2": 6022,
+  "names": [
+   "Dennis Brown",
+   "Aswad"
+  ],
+  "title": "Promised Land",
+  "type": "song",
+  "year": 1988,
+  "era_gap": 35,
+  "eras": [
+   2023,
+   1988
+  ]
+ },
+ {
+  "a1": 3654,
+  "a2": 6050,
+  "names": [
+   "Pet Shop Boys",
+   "Liza Minnelli"
+  ],
+  "title": "Losing My Mind",
+  "type": "song",
+  "year": 1989,
+  "era_gap": 35.0,
+  "eras": [
+   1989,
+   2024.0
+  ]
+ },
+ {
+  "a1": 1325,
+  "a2": 1331,
+  "names": [
+   "Emmylou Harris",
+   "Townes Van Zandt"
+  ],
+  "title": "If I Needed You",
+  "type": "song",
+  "year": 1981,
+  "era_gap": 35.0,
+  "eras": [
+   2023.0,
+   1988.0
+  ]
+ },
+ {
+  "a1": 2994,
+  "a2": 5038,
+  "names": [
+   "Willie Colón",
+   "Ismael Miranda"
+  ],
+  "title": "Doble Energía",
+  "type": "album",
+  "year": 1987,
+  "era_gap": 34.5,
+  "eras": [
+   2023.0,
+   1988.5
+  ]
+ },
+ {
+  "a1": 1345,
+  "a2": 1369,
+  "names": [
+   "Bob Marley",
+   "Toots and the Maytals"
+  ],
+  "title": "Peace Concert (Live)",
+  "type": "live",
+  "year": 1978,
+  "era_gap": 34.5,
+  "eras": [
+   1978.0,
+   2012.5
+  ]
+ },
+ {
+  "a1": 2305,
+  "a2": 2307,
+  "names": [
+   "Anoushka Shankar",
+   "Ravi Shankar"
+  ],
+  "title": "Full Circle: Carnegie Hall 2000",
+  "type": "live",
+  "year": 2001,
+  "era_gap": 34.5,
+  "eras": [
+   2024.5,
+   1990
+  ]
+ },
+ {
+  "a1": 3440,
+  "a2": 6064,
+  "names": [
+   "Keith Richards",
+   "Tom Waits"
+  ],
+  "title": "Big Time",
+  "type": "song",
+  "year": 1987,
+  "era_gap": 34.5,
+  "eras": [
+   2021.5,
+   1987
+  ]
+ },
+ {
+  "a1": 3262,
+  "a2": 3263,
+  "names": [
+   "Tom Petty",
+   "Tom Petty and the Heartbreakers"
+  ],
+  "title": "Wildflowers",
+  "type": "album",
+  "year": 1994,
+  "era_gap": 34,
+  "eras": [
+   1989,
+   2023
+  ]
+ },
+ {
+  "a1": 1555,
+  "a2": 3418,
+  "names": [
+   "Chaka Khan",
+   "Quincy Jones"
+  ],
+  "title": "I'll Be Good to You",
+  "type": "song",
+  "year": 1989,
+  "era_gap": 34.0,
+  "eras": [
+   2023.0,
+   1989
+  ]
+ },
+ {
+  "a1": 253,
+  "a2": 3262,
+  "names": [
+   "Stevie Nicks",
+   "Tom Petty"
+  ],
+  "title": "Stop Draggin' My Heart Around",
+  "type": "song",
+  "year": 1981,
+  "era_gap": 34.0,
+  "eras": [
+   2023.0,
+   1989
+  ]
+ },
+ {
+  "a1": 53,
+  "a2": 3451,
+  "names": [
+   "Elton John",
+   "Dionne Warwick"
+  ],
+  "title": "That's What Friends Are For",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 34.0,
+  "eras": [
+   2019.0,
+   1985
+  ]
+ },
+ {
+  "a1": 4984,
+  "a2": 4985,
+  "names": [
+   "Almir Guineto",
+   "Sombrinha"
+  ],
+  "title": "Pagode dos Velhos Tempos",
+  "type": "song",
+  "year": 1990,
+  "era_gap": 34,
+  "eras": [
+   1990,
+   2024
+  ]
+ },
+ {
+  "a1": 4997,
+  "a2": 4998,
+  "names": [
+   "Toquinho",
+   "Leila Pinheiro"
+  ],
+  "title": "Cantando Bossa Nova",
+  "type": "live",
+  "year": 1994,
+  "era_gap": 34.0,
+  "eras": [
+   2026,
+   1992.0
+  ]
+ },
+ {
+  "a1": 1382,
+  "a2": 1404,
+  "names": [
+   "Gregory Isaacs",
+   "Sugar Minott"
+  ],
+  "title": "Double Dose",
+  "type": "album",
+  "year": 1989,
+  "era_gap": 34,
+  "eras": [
+   2023,
+   1989
+  ]
+ },
+ {
+  "a1": 1479,
+  "a2": 1483,
+  "names": [
+   "Stick Figure",
+   "Mike Love"
+  ],
+  "title": "Marijuana",
+  "type": "song",
+  "year": 2017,
+  "era_gap": 34.0,
+  "eras": [
+   2022.0,
+   1988
+  ]
+ },
+ {
+  "a1": 1897,
+  "a2": 5679,
+  "names": [
+   "Les Rita Mitsouko",
+   "Carole King"
+  ],
+  "title": "Marcia Baila (live version)",
+  "type": "live",
+  "year": 1990,
+  "era_gap": 34.0,
+  "eras": [
+   1990.0,
+   2024
+  ]
+ },
+ {
+  "a1": 254,
+  "a2": 5149,
+  "names": [
+   "Madonna",
+   "Benny Andersson"
+  ],
+  "title": "Hung Up",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 34.0,
+  "eras": [
+   2018.0,
+   1984
+  ]
+ },
+ {
+  "a1": 55,
+  "a2": 6714,
+  "names": [
+   "Michael Jackson",
+   "Solomun"
+  ],
+  "title": "Billie Jean (Solomun Remix)",
+  "type": "remix",
+  "year": 2019,
+  "era_gap": 34,
+  "eras": [
+   1991,
+   2025
+  ]
+ },
+ {
+  "a1": 14,
+  "a2": 1250,
+  "names": [
+   "Post Malone",
+   "Hank Williams Jr."
+  ],
+  "title": "Finer Things",
+  "type": "song",
+  "year": 2024,
+  "era_gap": 34,
+  "eras": [
+   2023,
+   1989
+  ]
+ },
+ {
+  "a1": 1260,
+  "a2": 1339,
+  "names": [
+   "Conway Twitty",
+   "Sam Moore"
+  ],
+  "title": "Forget Me Not",
+  "type": "song",
+  "year": 1984,
+  "era_gap": 33.5,
+  "eras": [
+   1971,
+   2004.5
+  ]
+ },
+ {
+  "a1": 892,
+  "a2": 1003,
+  "names": [
+   "Ivan Lins",
+   "Elis Regina"
+  ],
+  "title": "Por Toda Minha Vida",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 33.0,
+  "eras": [
+   2009.5,
+   1976.5
+  ]
+ },
+ {
+  "a1": 4998,
+  "a2": 4999,
+  "names": [
+   "Leila Pinheiro",
+   "Simone"
+  ],
+  "title": "MPB de Vozes",
+  "type": "song",
+  "year": 1990,
+  "era_gap": 33.0,
+  "eras": [
+   1992.0,
+   2025.0
+  ]
+ },
+ {
+  "a1": 55,
+  "a2": 5852,
+  "names": [
+   "Michael Jackson",
+   "Slash"
+  ],
+  "title": "Give In to Me",
+  "type": "song",
+  "year": 1991,
+  "era_gap": 33,
+  "eras": [
+   1991,
+   2024
+  ]
+ },
+ {
+  "a1": 2994,
+  "a2": 5051,
+  "names": [
+   "Willie Colón",
+   "Sonora Ponceña"
+  ],
+  "title": "Seis Pies Arriba",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 33.0,
+  "eras": [
+   2023.0,
+   1990
+  ]
+ },
+ {
+  "a1": 5051,
+  "a2": 5053,
+  "names": [
+   "Sonora Ponceña",
+   "Johnny Pacheco"
+  ],
+  "title": "Night Raider",
+  "type": "song",
+  "year": 1988,
+  "era_gap": 33.0,
+  "eras": [
+   1990,
+   2023.0
+  ]
+ },
+ {
+  "a1": 2452,
+  "a2": 5490,
+  "names": [
+   "Lucio Dalla",
+   "Gianni Morandi"
+  ],
+  "title": "Vita",
+  "type": "album",
+  "year": 1990,
+  "era_gap": 33.0,
+  "eras": [
+   1990,
+   2023.0
+  ]
+ },
+ {
+  "a1": 2225,
+  "a2": 2345,
+  "names": [
+   "Lata Mangeshkar",
+   "Shankar-Jaikishan"
+  ],
+  "title": "Awara Hoon",
+  "type": "song",
+  "year": 1951,
+  "era_gap": 33.0,
+  "eras": [
+   1996.0,
+   1963
+  ]
+ },
+ {
+  "a1": 3425,
+  "a2": 3567,
+  "names": [
+   "Herbie Hancock",
+   "Wayne Shorter"
+  ],
+  "title": "1+1",
+  "type": "album",
+  "year": 1997,
+  "era_gap": 32.5,
+  "eras": [
+   2007.0,
+   1974.5
+  ]
+ },
+ {
+  "a1": 5132,
+  "a2": 5135,
+  "names": [
+   "Mick Fleetwood",
+   "Peter Green"
+  ],
+  "title": "Black Magic Woman",
+  "type": "song",
+  "year": 1968,
+  "era_gap": 32.5,
+  "eras": [
+   2000.5,
+   1968.0
+  ]
+ },
+ {
+  "a1": 175,
+  "a2": 1397,
+  "names": [
+   "The Notorious B.I.G.",
+   "Super Cat"
+  ],
+  "title": "Dolly My Baby",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 32.5,
+  "eras": [
+   2025,
+   1992.5
+  ]
+ },
+ {
+  "a1": 254,
+  "a2": 413,
+  "names": [
+   "Madonna",
+   "Prince"
+  ],
+  "title": "Love Song",
+  "type": "song",
+  "year": 1989,
+  "era_gap": 32.0,
+  "eras": [
+   2018.0,
+   1986.0
+  ]
+ },
+ {
+  "a1": 247,
+  "a2": 5266,
+  "names": [
+   "Dolly Parton",
+   "Ricky Van Shelton"
+  ],
+  "title": "rockin' years",
+  "type": "song",
+  "year": 1991,
+  "era_gap": 32.0,
+  "eras": [
+   2023.0,
+   1991
+  ]
+ },
+ {
+  "a1": 1664,
+  "a2": 2417,
+  "names": [
+   "Tina Turner",
+   "Eros Ramazzotti"
+  ],
+  "title": "Cose della vita",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 32,
+  "eras": [
+   1993,
+   2025
+  ]
+ },
+ {
+  "a1": 1546,
+  "a2": 3430,
+  "names": [
+   "Bono",
+   "Frank Sinatra"
+  ],
+  "title": "I've Got You Under My Skin",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 32.0,
+  "eras": [
+   2025.0,
+   1993
+  ]
+ },
+ {
+  "a1": 53,
+  "a2": 3410,
+  "names": [
+   "Elton John",
+   "Aretha Franklin"
+  ],
+  "title": "Through the Storm",
+  "type": "song",
+  "year": 1989,
+  "era_gap": 32.0,
+  "eras": [
+   2019.0,
+   1987
+  ]
+ },
+ {
+  "a1": 963,
+  "a2": 4999,
+  "names": [
+   "Fafá de Belém",
+   "Simone"
+  ],
+  "title": "Vozes do Norte",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 32.0,
+  "eras": [
+   1993,
+   2025.0
+  ]
+ },
+ {
+  "a1": 3436,
+  "a2": 3469,
+  "names": [
+   "Kenny G",
+   "Peabo Bryson"
+  ],
+  "title": "By the Time This Night Is Over",
+  "type": "song",
+  "year": 1992,
+  "era_gap": 31.5,
+  "eras": [
+   2023.5,
+   1992.0
+  ]
+ },
+ {
+  "a1": 5526,
+  "a2": 5873,
+  "names": [
+   "Robert Smith",
+   "Siouxsie Sioux"
+  ],
+  "title": "Dear Prudence",
+  "type": "song",
+  "year": 1983,
+  "era_gap": 31.5,
+  "eras": [
+   2020,
+   1988.5
+  ]
+ },
+ {
+  "a1": 2883,
+  "a2": 2923,
+  "names": [
+   "Juan Gabriel",
+   "Rocío Dúrcal"
+  ],
+  "title": "Amor Eterno",
+  "type": "song",
+  "year": 1984,
+  "era_gap": 31,
+  "eras": [
+   2015,
+   1984
+  ]
+ },
+ {
+  "a1": 1027,
+  "a2": 3301,
+  "names": [
+   "David Bowie",
+   "Nine Inch Nails"
+  ],
+  "title": "Hurt / Scary Monsters (live)",
+  "type": "live",
+  "year": 1995,
+  "era_gap": 31,
+  "eras": [
+   1995,
+   2026
+  ]
+ },
+ {
+  "a1": 53,
+  "a2": 3264,
+  "names": [
+   "Elton John",
+   "Bob Dylan"
+  ],
+  "title": "Don't Go Breaking My Heart (with Bob Dylan) live",
+  "type": "live",
+  "year": 2000,
+  "era_gap": 31.0,
+  "eras": [
+   2019.0,
+   1988
+  ]
+ },
+ {
+  "a1": 3657,
+  "a2": 5526,
+  "names": [
+   "The Cure",
+   "Robert Smith"
+  ],
+  "title": "Disintegration",
+  "type": "album",
+  "year": 1989,
+  "era_gap": 31,
+  "eras": [
+   1989,
+   2020
+  ]
+ },
+ {
+  "a1": 3414,
+  "a2": 3498,
+  "names": [
+   "James Brown",
+   "Bootsy Collins"
+  ],
+  "title": "Sex Machine",
+  "type": "song",
+  "year": 1970,
+  "era_gap": 31,
+  "eras": [
+   1973,
+   2004
+  ]
+ },
+ {
+  "a1": 3424,
+  "a2": 3553,
+  "names": [
+   "Patti LaBelle",
+   "Michael McDonald"
+  ],
+  "title": "On My Own",
+  "type": "song",
+  "year": 1986,
+  "era_gap": 31,
+  "eras": [
+   1992,
+   2023
+  ]
+ },
+ {
+  "a1": 3452,
+  "a2": 3469,
+  "names": [
+   "Roberta Flack",
+   "Peabo Bryson"
+  ],
+  "title": "Tonight I Celebrate My Love",
+  "type": "song",
+  "year": 1983,
+  "era_gap": 31.0,
+  "eras": [
+   2023,
+   1992.0
+  ]
+ },
+ {
+  "a1": 4985,
+  "a2": 4986,
+  "names": [
+   "Sombrinha",
+   "Beto Sem Braço"
+  ],
+  "title": "No Estilo do Samba",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 31,
+  "eras": [
+   2024,
+   1993
+  ]
+ },
+ {
+  "a1": 957,
+  "a2": 963,
+  "names": [
+   "Fagner",
+   "Fafá de Belém"
+  ],
+  "title": "Nordeste que Canta",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 31.0,
+  "eras": [
+   2024.0,
+   1993
+  ]
+ },
+ {
+  "a1": 11,
+  "a2": 3415,
+  "names": [
+   "Justin Bieber",
+   "Earth, Wind & Fire"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 31.0,
+  "eras": [
+   2010.0,
+   1979
+  ]
+ },
+ {
+  "a1": 175,
+  "a2": 1435,
+  "names": [
+   "The Notorious B.I.G.",
+   "Diana King"
+  ],
+  "title": "Respect",
+  "type": "feature",
+  "year": 1994,
+  "era_gap": 31,
+  "eras": [
+   2025,
+   1994
+  ]
+ },
+ {
+  "a1": 2420,
+  "a2": 5484,
+  "names": [
+   "Andrea Bocelli",
+   "pavarotti"
+  ],
+  "title": "Nessun dorma",
+  "type": "feature",
+  "year": 1995,
+  "era_gap": 30.5,
+  "eras": [
+   2024,
+   1993.5
+  ]
+ },
+ {
+  "a1": 54,
+  "a2": 3451,
+  "names": [
+   "Stevie Wonder",
+   "Dionne Warwick"
+  ],
+  "title": "That's What Friends Are For",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 30.5,
+  "eras": [
+   2015.5,
+   1985
+  ]
+ },
+ {
+  "a1": 54,
+  "a2": 3423,
+  "names": [
+   "Stevie Wonder",
+   "Gladys Knight"
+  ],
+  "title": "That's What Friends Are For",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 30.5,
+  "eras": [
+   2015.5,
+   1985
+  ]
+ },
+ {
+  "a1": 2993,
+  "a2": 5078,
+  "names": [
+   "Celia Cruz",
+   "Los Van Van"
+  ],
+  "title": "Esa la Mía",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 30.5,
+  "eras": [
+   2023.0,
+   1992.5
+  ]
+ },
+ {
+  "a1": 5117,
+  "a2": 5118,
+  "names": [
+   "Brian Wilson",
+   "Carl Wilson"
+  ],
+  "title": "Barbara Ann",
+  "type": "song",
+  "year": 1965,
+  "era_gap": 30.5,
+  "eras": [
+   1994.5,
+   1964.0
+  ]
+ },
+ {
+  "a1": 54,
+  "a2": 3111,
+  "names": [
+   "Stevie Wonder",
+   "Lionel Richie"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 30.5,
+  "eras": [
+   2015.5,
+   1985.0
+  ]
+ },
+ {
+  "a1": 279,
+  "a2": 963,
+  "names": [
+   "Maria Bethânia",
+   "Fafá de Belém"
+  ],
+  "title": "Vozes do Brasil",
+  "type": "song",
+  "year": 2016,
+  "era_gap": 30,
+  "eras": [
+   2023,
+   1993
+  ]
+ },
+ {
+  "a1": 1200,
+  "a2": 5272,
+  "names": [
+   "Reba McEntire",
+   "Linda Davis"
+  ],
+  "title": "Does He Love You",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 30,
+  "eras": [
+   2023,
+   1993
+  ]
+ },
+ {
+  "a1": 1346,
+  "a2": 1388,
+  "names": [
+   "Shaggy",
+   "Maxi Priest"
+  ],
+  "title": "That Girl",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 30.0,
+  "eras": [
+   2023,
+   1993.0
+  ]
+ },
+ {
+  "a1": 1379,
+  "a2": 1388,
+  "names": [
+   "Beres Hammond",
+   "Maxi Priest"
+  ],
+  "title": "How Can We Ease the Pain",
+  "type": "song",
+  "year": 1990,
+  "era_gap": 30.0,
+  "eras": [
+   2023,
+   1993.0
+  ]
+ },
+ {
+  "a1": 3455,
+  "a2": 5587,
+  "names": [
+   "Isaac Hayes",
+   "Sam & Dave"
+  ],
+  "title": "Hold On I'm Comin'",
+  "type": "song",
+  "year": 1966,
+  "era_gap": 30,
+  "eras": [
+   1996,
+   1966
+  ]
+ },
+ {
+  "a1": 1226,
+  "a2": 1243,
+  "names": [
+   "Wynonna Judd",
+   "Clint Black"
+  ],
+  "title": "A Bad Goodbye",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 30,
+  "eras": [
+   2023,
+   1993
+  ]
+ },
+ {
+  "a1": 1027,
+  "a2": 3231,
+  "names": [
+   "David Bowie",
+   "Nirvana"
+  ],
+  "title": "The Man Who Sold the World",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 30,
+  "eras": [
+   1995,
+   2025
+  ]
+ },
+ {
+  "a1": 3273,
+  "a2": 5852,
+  "names": [
+   "Scott Weiland",
+   "Slash"
+  ],
+  "title": "Slither",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 30,
+  "eras": [
+   1994,
+   2024
+  ]
+ },
+ {
+  "a1": 53,
+  "a2": 3654,
+  "names": [
+   "Elton John",
+   "Pet Shop Boys"
+  ],
+  "title": "In Private",
+  "type": "song",
+  "year": 1989,
+  "era_gap": 30.0,
+  "eras": [
+   2019.0,
+   1989
+  ]
+ },
+ {
+  "a1": 1254,
+  "a2": 6162,
+  "names": [
+   "Tanya Tucker",
+   "Delbert McClinton"
+  ],
+  "title": "Tell Me About It",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 30.0,
+  "eras": [
+   2023,
+   1993.0
+  ]
+ },
+ {
+  "a1": 1324,
+  "a2": 6162,
+  "names": [
+   "Bonnie Raitt",
+   "Delbert McClinton"
+  ],
+  "title": "Good Man, Good Woman",
+  "type": "song",
+  "year": 1991,
+  "era_gap": 30.0,
+  "eras": [
+   2023,
+   1993.0
+  ]
+ },
+ {
+  "a1": 54,
+  "a2": 413,
+  "names": [
+   "Stevie Wonder",
+   "Prince"
+  ],
+  "title": "So What the Fuss",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 29.5,
+  "eras": [
+   2015.5,
+   1986.0
+  ]
+ },
+ {
+  "a1": 1093,
+  "a2": 1096,
+  "names": [
+   "Pena Branca & Xavantinho",
+   "Renato Teixeira"
+  ],
+  "title": "Ao Vivo",
+  "type": "live",
+  "year": 1995,
+  "era_gap": 29,
+  "eras": [
+   1995,
+   2024
+  ]
+ },
+ {
+  "a1": 1027,
+  "a2": 1616,
+  "names": [
+   "David Bowie",
+   "Nile Rodgers"
+  ],
+  "title": "Let's Dance",
+  "type": "song",
+  "year": 1983,
+  "era_gap": 29,
+  "eras": [
+   1995,
+   2024
+  ]
+ },
+ {
+  "a1": 276,
+  "a2": 1005,
+  "names": [
+   "Caetano Veloso",
+   "João Gilberto"
+  ],
+  "title": "Brincadeira de Tocar",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 29.0,
+  "eras": [
+   2004.0,
+   1975
+  ]
+ },
+ {
+  "a1": 4108,
+  "a2": 5152,
+  "names": [
+   "Amy Grant",
+   "Peter Cetera"
+  ],
+  "title": "The Next Time I Fall",
+  "type": "song",
+  "year": 1986,
+  "era_gap": 29.0,
+  "eras": [
+   2014,
+   1985.0
+  ]
+ },
+ {
+  "a1": 3258,
+  "a2": 3569,
+  "names": [
+   "Santana",
+   "Mahavishnu Orchestra"
+  ],
+  "title": "Love Devotion Surrender",
+  "type": "album",
+  "year": 1973,
+  "era_gap": 29,
+  "eras": [
+   2002,
+   1973
+  ]
+ },
+ {
+  "a1": 1254,
+  "a2": 6163,
+  "names": [
+   "Tanya Tucker",
+   "Brenda Lee"
+  ],
+  "title": "As Long as I Have You",
+  "type": "song",
+  "year": 1994,
+  "era_gap": 29,
+  "eras": [
+   2023,
+   1994
+  ]
+ },
+ {
+  "a1": 1198,
+  "a2": 3232,
+  "names": [
+   "Johnny Cash",
+   "Red Hot Chili Peppers"
+  ],
+  "title": "Give It Away (Live)",
+  "type": "live",
+  "year": 1994,
+  "era_gap": 29.0,
+  "eras": [
+   1980.0,
+   2009.0
+  ]
+ },
+ {
+  "a1": 1375,
+  "a2": 5665,
+  "names": [
+   "Sting",
+   "Giorgos Dalaras"
+  ],
+  "title": "Mad About You (Trelos gia sena)",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 29.0,
+  "eras": [
+   2023.0,
+   1994.0
+  ]
+ },
+ {
+  "a1": 2223,
+  "a2": 2225,
+  "names": [
+   "Kumar Sanu",
+   "Lata Mangeshkar"
+  ],
+  "title": "Dilwale Dulhania Le Jayenge Title Track",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 28.5,
+  "eras": [
+   2024.5,
+   1996.0
+  ]
+ },
+ {
+  "a1": 349,
+  "a2": 892,
+  "names": [
+   "Milton Nascimento",
+   "Ivan Lins"
+  ],
+  "title": "Clube da Esquina Ao Vivo",
+  "type": "live",
+  "year": 2003,
+  "era_gap": 28.5,
+  "eras": [
+   1981,
+   2009.5
+  ]
+ },
+ {
+  "a1": 964,
+  "a2": 4999,
+  "names": [
+   "Zizi Possi",
+   "Simone"
+  ],
+  "title": "Mulheres da MPB",
+  "type": "live",
+  "year": 1988,
+  "era_gap": 28.5,
+  "eras": [
+   1996.5,
+   2025.0
+  ]
+ },
+ {
+  "a1": 5035,
+  "a2": 5050,
+  "names": [
+   "Tito Puente",
+   "El Gran Combo de Puerto Rico"
+  ],
+  "title": "Fiesta en el Barrio (Live)",
+  "type": "live",
+  "year": 1993,
+  "era_gap": 28.5,
+  "eras": [
+   2023.0,
+   1994.5
+  ]
+ },
+ {
+  "a1": 2996,
+  "a2": 5050,
+  "names": [
+   "Rubén Blades",
+   "El Gran Combo de Puerto Rico"
+  ],
+  "title": "El Gran Combo Vs Rubén Blades",
+  "type": "album",
+  "year": 1996,
+  "era_gap": 28.5,
+  "eras": [
+   2023,
+   1994.5
+  ]
+ },
+ {
+  "a1": 2605,
+  "a2": 2617,
+  "names": [
+   "Ornella Vanoni",
+   "Gino Paoli"
+  ],
+  "title": "Senza Fine",
+  "type": "album",
+  "year": 2010,
+  "era_gap": 28.5,
+  "eras": [
+   2014.5,
+   1986.0
+  ]
+ },
+ {
+  "a1": 2224,
+  "a2": 2225,
+  "names": [
+   "Alka Yagnik",
+   "Lata Mangeshkar"
+  ],
+  "title": "Kabhi Khushi Kabhie Gham",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 28.0,
+  "eras": [
+   2024.0,
+   1996.0
+  ]
+ },
+ {
+  "a1": 55,
+  "a2": 122,
+  "names": [
+   "Michael Jackson",
+   "Akon"
+  ],
+  "title": "Hold My Hand",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 28.0,
+  "eras": [
+   1991,
+   2019.0
+  ]
+ },
+ {
+  "a1": 3559,
+  "a2": 5539,
+  "names": [
+   "Lee Ritenour",
+   "Patti Austin"
+  ],
+  "title": "Is It You",
+  "type": "song",
+  "year": 1982,
+  "era_gap": 28.0,
+  "eras": [
+   2024.0,
+   1996.0
+  ]
+ },
+ {
+  "a1": 3808,
+  "a2": 5640,
+  "names": [
+   "Too Short",
+   "Ice Cube"
+  ],
+  "title": "All About the Money",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 28.0,
+  "eras": [
+   1996.0,
+   2024.0
+  ]
+ },
+ {
+  "a1": 2038,
+  "a2": 6661,
+  "names": [
+   "Die Fantastischen Vier",
+   "Aphex Twin"
+  ],
+  "title": "Krieger (Aphex Twin Baldhu Mix)",
+  "type": "remix",
+  "year": 1995,
+  "era_gap": 28.0,
+  "eras": [
+   2023.0,
+   1995
+  ]
+ },
+ {
+  "a1": 2113,
+  "a2": 6700,
+  "names": [
+   "Roxette",
+   "Desmond Child"
+  ],
+  "title": "You Don't Understand Me",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 28.0,
+  "eras": [
+   1995,
+   2023.0
+  ]
+ },
+ {
+  "a1": 119,
+  "a2": 3112,
+  "names": [
+   "Mariah Carey",
+   "Diana Ross"
+  ],
+  "title": "Endless Love (live tribute)",
+  "type": "live",
+  "year": 2020,
+  "era_gap": 27.5,
+  "eras": [
+   2006.5,
+   1979.0
+  ]
+ },
+ {
+  "a1": 354,
+  "a2": 1050,
+  "names": [
+   "Martinho da Vila",
+   "Neguinho da Beija-Flor"
+  ],
+  "title": "Reis do Samba",
+  "type": "live",
+  "year": 2005,
+  "era_gap": 27.5,
+  "eras": [
+   1997.5,
+   2025.0
+  ]
+ },
+ {
+  "a1": 5130,
+  "a2": 5131,
+  "names": [
+   "Fleetwood Mac",
+   "Lindsey Buckingham"
+  ],
+  "title": "Tusk",
+  "type": "album",
+  "year": 1979,
+  "era_gap": 27.5,
+  "eras": [
+   1977.0,
+   2004.5
+  ]
+ },
+ {
+  "a1": 5131,
+  "a2": 5134,
+  "names": [
+   "Lindsey Buckingham",
+   "Christine McVie"
+  ],
+  "title": "Oh Daddy",
+  "type": "song",
+  "year": 1977,
+  "era_gap": 27.5,
+  "eras": [
+   2004.5,
+   1977.0
+  ]
+ },
+ {
+  "a1": 2245,
+  "a2": 5163,
+  "names": [
+   "Nusrat Fateh Ali Khan",
+   "Peter Gabriel"
+  ],
+  "title": "Taboo",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 27.5,
+  "eras": [
+   1995.5,
+   2023
+  ]
+ },
+ {
+  "a1": 350,
+  "a2": 1010,
+  "names": [
+   "Chico Buarque",
+   "Lenine"
+  ],
+  "title": "Papo de Mãe",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 27.0,
+  "eras": [
+   1981.0,
+   2008
+  ]
+ },
+ {
+  "a1": 53,
+  "a2": 3234,
+  "names": [
+   "Elton John",
+   "Guns N' Roses"
+  ],
+  "title": "November Rain (live)",
+  "type": "live",
+  "year": 1992,
+  "era_gap": 27.0,
+  "eras": [
+   2019.0,
+   1992
+  ]
+ },
+ {
+  "a1": 3495,
+  "a2": 3498,
+  "names": [
+   "Parliament",
+   "Bootsy Collins"
+  ],
+  "title": "Give Up the Funk",
+  "type": "song",
+  "year": 1976,
+  "era_gap": 27.0,
+  "eras": [
+   1977.0,
+   2004
+  ]
+ },
+ {
+  "a1": 2993,
+  "a2": 3186,
+  "names": [
+   "Celia Cruz",
+   "Gloria Estefan"
+  ],
+  "title": "Tres Gotas de Agua Bendita",
+  "type": "song",
+  "year": 1994,
+  "era_gap": 27.0,
+  "eras": [
+   2023.0,
+   1996
+  ]
+ },
+ {
+  "a1": 5028,
+  "a2": 5032,
+  "names": [
+   "Eddy Herrera",
+   "Los Hermanos Rosario"
+  ],
+  "title": "La Recompensa",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 27.0,
+  "eras": [
+   1998,
+   2025.0
+  ]
+ },
+ {
+  "a1": 3186,
+  "a2": 5035,
+  "names": [
+   "Gloria Estefan",
+   "Tito Puente"
+  ],
+  "title": "Hot Summer Nights",
+  "type": "song",
+  "year": 1988,
+  "era_gap": 27.0,
+  "eras": [
+   1996,
+   2023.0
+  ]
+ },
+ {
+  "a1": 174,
+  "a2": 5994,
+  "names": [
+   "2Pac",
+   "KC and JoJo"
+  ],
+  "title": "How Do U Want It",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 27,
+  "eras": [
+   2023,
+   1996
+  ]
+ },
+ {
+  "a1": 2225,
+  "a2": 2312,
+  "names": [
+   "Lata Mangeshkar",
+   "Ilaiyaraaja"
+  ],
+  "title": "Sadma",
+  "type": "song",
+  "year": 1983,
+  "era_gap": 27.0,
+  "eras": [
+   1996.0,
+   2023.0
+  ]
+ },
+ {
+  "a1": 3083,
+  "a2": 6241,
+  "names": [
+   "Foxy Brown",
+   "AZ"
+  ],
+  "title": "Affirmative Action",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 27.0,
+  "eras": [
+   1996,
+   2023.0
+  ]
+ },
+ {
+  "a1": 125,
+  "a2": 3808,
+  "names": [
+   "Lil Jon",
+   "Too Short"
+  ],
+  "title": "Blow the Whistle",
+  "type": "song",
+  "year": 2006,
+  "era_gap": 27.0,
+  "eras": [
+   2023.0,
+   1996.0
+  ]
+ },
+ {
+  "a1": 174,
+  "a2": 3808,
+  "names": [
+   "2Pac",
+   "Too Short"
+  ],
+  "title": "I'm a Mack",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 27.0,
+  "eras": [
+   2023,
+   1996.0
+  ]
+ },
+ {
+  "a1": 1,
+  "a2": 55,
+  "names": [
+   "Drake",
+   "Michael Jackson"
+  ],
+  "title": "Don't Matter to Me",
+  "type": "song",
+  "year": 2018,
+  "era_gap": 27,
+  "eras": [
+   2018,
+   1991
+  ]
+ },
+ {
+  "a1": 879,
+  "a2": 963,
+  "names": [
+   "Gaby Amarantos",
+   "Fafá de Belém"
+  ],
+  "title": "Pará Musical",
+  "type": "song",
+  "year": 2019,
+  "era_gap": 26.5,
+  "eras": [
+   2019.5,
+   1993
+  ]
+ },
+ {
+  "a1": 2420,
+  "a2": 5485,
+  "names": [
+   "Andrea Bocelli",
+   "Sarah Brightman"
+  ],
+  "title": "Time to Say Goodbye",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 26.5,
+  "eras": [
+   2024,
+   1997.5
+  ]
+ },
+ {
+  "a1": 54,
+  "a2": 3418,
+  "names": [
+   "Stevie Wonder",
+   "Quincy Jones"
+  ],
+  "title": "Back on the Block",
+  "type": "feature",
+  "year": 1989,
+  "era_gap": 26.5,
+  "eras": [
+   2015.5,
+   1989
+  ]
+ },
+ {
+  "a1": 339,
+  "a2": 341,
+  "names": [
+   "Nando Reis",
+   "Frejat"
+  ],
+  "title": "Rockeiros Brasileiros",
+  "type": "song",
+  "year": 2008,
+  "era_gap": 26.5,
+  "eras": [
+   2023.0,
+   1996.5
+  ]
+ },
+ {
+  "a1": 5027,
+  "a2": 5032,
+  "names": [
+   "Sergio Vargas",
+   "Los Hermanos Rosario"
+  ],
+  "title": "Los Hombres del Merengue",
+  "type": "song",
+  "year": 2000,
+  "era_gap": 26.5,
+  "eras": [
+   1998.5,
+   2025.0
+  ]
+ },
+ {
+  "a1": 2878,
+  "a2": 2927,
+  "names": [
+   "Vicente Fernández",
+   "Mariachi Vargas de Tecalitlán"
+  ],
+  "title": "El Rey (live)",
+  "type": "live",
+  "year": 1975,
+  "era_gap": 26.5,
+  "eras": [
+   2006,
+   1979.5
+  ]
+ },
+ {
+  "a1": 3184,
+  "a2": 5035,
+  "names": [
+   "La India",
+   "Tito Puente"
+  ],
+  "title": "Llora Tumbao",
+  "type": "song",
+  "year": 1992,
+  "era_gap": 26.5,
+  "eras": [
+   1996.5,
+   2023.0
+  ]
+ },
+ {
+  "a1": 137,
+  "a2": 1664,
+  "names": [
+   "Kygo",
+   "Tina Turner"
+  ],
+  "title": "What's Love Got to Do with It",
+  "type": "song",
+  "year": 2020,
+  "era_gap": 26.0,
+  "eras": [
+   2019.0,
+   1993
+  ]
+ },
+ {
+  "a1": 53,
+  "a2": 1664,
+  "names": [
+   "Elton John",
+   "Tina Turner"
+  ],
+  "title": "The Bitch Is Back",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 26.0,
+  "eras": [
+   2019.0,
+   1993
+  ]
+ },
+ {
+  "a1": 4089,
+  "a2": 4090,
+  "names": [
+   "Lô Borges",
+   "Wagner Tiso"
+  ],
+  "title": "Minas ao Vivo",
+  "type": "live",
+  "year": 2002,
+  "era_gap": 26.0,
+  "eras": [
+   2025.0,
+   1999.0
+  ]
+ },
+ {
+  "a1": 2434,
+  "a2": 2527,
+  "names": [
+   "Alejandro Sanz",
+   "Isabel Pantoja"
+  ],
+  "title": "Por el amor de una mujer",
+  "type": "song",
+  "year": 2007,
+  "era_gap": 26,
+  "eras": [
+   2018,
+   1992
+  ]
+ },
+ {
+  "a1": 5070,
+  "a2": 5072,
+  "names": [
+   "Ibrahim Ferrer",
+   "Omara Portuondo"
+  ],
+  "title": "Quizás Quizás Quizás",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 26.0,
+  "eras": [
+   1997.0,
+   2023.0
+  ]
+ },
+ {
+  "a1": 5072,
+  "a2": 5073,
+  "names": [
+   "Omara Portuondo",
+   "Buena Vista Social Club"
+  ],
+  "title": "Veinte Años",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 26.0,
+  "eras": [
+   2023.0,
+   1997.0
+  ]
+ },
+ {
+  "a1": 5125,
+  "a2": 5129,
+  "names": [
+   "Don Henley",
+   "Timothy B. Schmit"
+  ],
+  "title": "The Long Run",
+  "type": "song",
+  "year": 1979,
+  "era_gap": 26.0,
+  "eras": [
+   1976.5,
+   2002.5
+  ]
+ },
+ {
+  "a1": 1454,
+  "a2": 6037,
+  "names": [
+   "U-Roy",
+   "John Holt"
+  ],
+  "title": "Wear You to the Ball",
+  "type": "song",
+  "year": 1971,
+  "era_gap": 26.0,
+  "eras": [
+   1971.0,
+   1997.0
+  ]
+ },
+ {
+  "a1": 3812,
+  "a2": 5995,
+  "names": [
+   "The LOX",
+   "Diddy"
+  ],
+  "title": "It's All About the Benjamins",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 26,
+  "eras": [
+   1997,
+   2023
+  ]
+ },
+ {
+  "a1": 279,
+  "a2": 354,
+  "names": [
+   "Maria Bethânia",
+   "Martinho da Vila"
+  ],
+  "title": "Brasil com S",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 25.5,
+  "eras": [
+   2023,
+   1997.5
+  ]
+ },
+ {
+  "a1": 55,
+  "a2": 3069,
+  "names": [
+   "Michael Jackson",
+   "Janet Jackson"
+  ],
+  "title": "Scream",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 25.5,
+  "eras": [
+   1991,
+   2016.5
+  ]
+ },
+ {
+  "a1": 37,
+  "a2": 3186,
+  "names": [
+   "Shakira",
+   "Gloria Estefan"
+  ],
+  "title": "Bamboleo (Latin Grammy Live)",
+  "type": "live",
+  "year": 2000,
+  "era_gap": 25.5,
+  "eras": [
+   2021.5,
+   1996
+  ]
+ },
+ {
+  "a1": 2234,
+  "a2": 2287,
+  "names": [
+   "Shaan",
+   "Usha Uthup"
+  ],
+  "title": "Say Shava Shava",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 25.5,
+  "eras": [
+   2023.5,
+   1998
+  ]
+ },
+ {
+  "a1": 1242,
+  "a2": 1249,
+  "names": [
+   "Dwight Yoakam",
+   "Buck Owens"
+  ],
+  "title": "Streets of Bakersfield",
+  "type": "song",
+  "year": 1988,
+  "era_gap": 25.5,
+  "eras": [
+   2000,
+   1974.5
+  ]
+ },
+ {
+  "a1": 2185,
+  "a2": 5472,
+  "names": [
+   "Shreya Ghoshal",
+   "Amitabh Bachchan"
+  ],
+  "title": "Saawariya",
+  "type": "song",
+  "year": 2015,
+  "era_gap": 25.5,
+  "eras": [
+   2023.5,
+   1998.0
+  ]
+ },
+ {
+  "a1": 360,
+  "a2": 1034,
+  "names": [
+   "Beth Carvalho",
+   "Jorge Aragão"
+  ],
+  "title": "Raízes do Samba",
+  "type": "song",
+  "year": 2002,
+  "era_gap": 25,
+  "eras": [
+   1988,
+   2013
+  ]
+ },
+ {
+  "a1": 2420,
+  "a2": 3092,
+  "names": [
+   "Andrea Bocelli",
+   "Celine Dion"
+  ],
+  "title": "The Prayer",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 25.0,
+  "eras": [
+   2024,
+   1999.0
+  ]
+ },
+ {
+  "a1": 3299,
+  "a2": 3301,
+  "names": [
+   "Marilyn Manson",
+   "Nine Inch Nails"
+  ],
+  "title": "Lunchbox / Down in It (live)",
+  "type": "live",
+  "year": 1994,
+  "era_gap": 25,
+  "eras": [
+   2001,
+   2026
+  ]
+ },
+ {
+  "a1": 3243,
+  "a2": 3244,
+  "names": [
+   "Blur",
+   "Oasis"
+  ],
+  "title": "Britpop Rivalry era",
+  "type": "live",
+  "year": 1995,
+  "era_gap": 25,
+  "eras": [
+   2020,
+   1995
+  ]
+ },
+ {
+  "a1": 1045,
+  "a2": 1046,
+  "names": [
+   "Erasmo Carlos",
+   "Wanderlea"
+  ],
+  "title": "Jovem Guarda de Volta",
+  "type": "live",
+  "year": 1997,
+  "era_gap": 25.0,
+  "eras": [
+   2023.0,
+   1998.0
+  ]
+ },
+ {
+  "a1": 1036,
+  "a2": 1050,
+  "names": [
+   "Paulinho da Viola",
+   "Neguinho da Beija-Flor"
+  ],
+  "title": "Escolas de Samba",
+  "type": "song",
+  "year": 1999,
+  "era_gap": 25.0,
+  "eras": [
+   2000,
+   2025.0
+  ]
+ },
+ {
+  "a1": 1897,
+  "a2": 5676,
+  "names": [
+   "Les Rita Mitsouko",
+   "Sparks"
+  ],
+  "title": "Singing in the Shower",
+  "type": "song",
+  "year": 1990,
+  "era_gap": 25.0,
+  "eras": [
+   1990.0,
+   2015.0
+  ]
+ },
+ {
+  "a1": 177,
+  "a2": 3081,
+  "names": [
+   "Method Man",
+   "DMX"
+  ],
+  "title": "The Introduction",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 25.0,
+  "eras": [
+   2023,
+   1998.0
+  ]
+ },
+ {
+  "a1": 1251,
+  "a2": 3439,
+  "names": [
+   "Charlie Daniels",
+   "Billy Joel"
+  ],
+  "title": "Piano Man (Live)",
+  "type": "live",
+  "year": 1977,
+  "era_gap": 25.0,
+  "eras": [
+   1981.0,
+   2006
+  ]
+ },
+ {
+  "a1": 1324,
+  "a2": 6088,
+  "names": [
+   "Bonnie Raitt",
+   "Bryan Adams"
+  ],
+  "title": "Rock Steady",
+  "type": "song",
+  "year": 1991,
+  "era_gap": 25,
+  "eras": [
+   2023,
+   1998
+  ]
+ },
+ {
+  "a1": 2671,
+  "a2": 3081,
+  "names": [
+   "Swizz Beatz",
+   "DMX"
+  ],
+  "title": "Stop Being Greedy",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 25.0,
+  "eras": [
+   2023,
+   1998.0
+  ]
+ },
+ {
+  "a1": 167,
+  "a2": 3083,
+  "names": [
+   "Nas",
+   "Foxy Brown"
+  ],
+  "title": "Affirmative Action",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 25,
+  "eras": [
+   2021,
+   1996
+  ]
+ },
+ {
+  "a1": 11,
+  "a2": 3423,
+  "names": [
+   "Justin Bieber",
+   "Gladys Knight"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 25.0,
+  "eras": [
+   2010.0,
+   1985
+  ]
+ },
+ {
+  "a1": 386,
+  "a2": 4988,
+  "names": [
+   "Jão",
+   "Ricardo Chaves"
+  ],
+  "title": "Carnaval (ao vivo)",
+  "type": "live",
+  "year": 2023,
+  "era_gap": 25.0,
+  "eras": [
+   2022.0,
+   1997.0
+  ]
+ },
+ {
+  "a1": 54,
+  "a2": 55,
+  "names": [
+   "Stevie Wonder",
+   "Michael Jackson"
+  ],
+  "title": "Just Good Friends",
+  "type": "song",
+  "year": 1987,
+  "era_gap": 24.5,
+  "eras": [
+   2015.5,
+   1991
+  ]
+ },
+ {
+  "a1": 3417,
+  "a2": 3435,
+  "names": [
+   "Chic",
+   "Gloria Gaynor"
+  ],
+  "title": "I Will Survive",
+  "type": "feature",
+  "year": 1978,
+  "era_gap": 24.5,
+  "eras": [
+   2025,
+   2000.5
+  ]
+ },
+ {
+  "a1": 1606,
+  "a2": 5024,
+  "names": [
+   "Elvis Crespo",
+   "Johnny Ventura"
+  ],
+  "title": "El Tirabuzón (Live)",
+  "type": "live",
+  "year": 1997,
+  "era_gap": 24.5,
+  "eras": [
+   2018,
+   1993.5
+  ]
+ },
+ {
+  "a1": 1027,
+  "a2": 3225,
+  "names": [
+   "David Bowie",
+   "Queen"
+  ],
+  "title": "Under Pressure",
+  "type": "song",
+  "year": 1981,
+  "era_gap": 24,
+  "eras": [
+   1995,
+   2019
+  ]
+ },
+ {
+  "a1": 3418,
+  "a2": 3428,
+  "names": [
+   "Quincy Jones",
+   "Ella Fitzgerald"
+  ],
+  "title": "Into the Night",
+  "type": "song",
+  "year": 1989,
+  "era_gap": 24,
+  "eras": [
+   1989,
+   1965
+  ]
+ },
+ {
+  "a1": 189,
+  "a2": 5555,
+  "names": [
+   "Erykah Badu",
+   "Guru"
+  ],
+  "title": "Jazzmatazz Vol. II",
+  "type": "feature",
+  "year": 1995,
+  "era_gap": 24.0,
+  "eras": [
+   2018,
+   1994.0
+  ]
+ },
+ {
+  "a1": 1000,
+  "a2": 1068,
+  "names": [
+   "Grupo Revelação",
+   "Claudinho & Buchecha"
+  ],
+  "title": "Pagode e Funk",
+  "type": "song",
+  "year": 1999,
+  "era_gap": 24.0,
+  "eras": [
+   2023,
+   1999.0
+  ]
+ },
+ {
+  "a1": 146,
+  "a2": 3186,
+  "names": [
+   "Jennifer Lopez",
+   "Gloria Estefan"
+  ],
+  "title": "Get On Your Feet (Live)",
+  "type": "live",
+  "year": 2020,
+  "era_gap": 24,
+  "eras": [
+   2020,
+   1996
+  ]
+ },
+ {
+  "a1": 1483,
+  "a2": 5118,
+  "names": [
+   "Mike Love",
+   "Carl Wilson"
+  ],
+  "title": "Surfin' USA",
+  "type": "song",
+  "year": 1963,
+  "era_gap": 24.0,
+  "eras": [
+   1988,
+   1964.0
+  ]
+ },
+ {
+  "a1": 3410,
+  "a2": 3412,
+  "names": [
+   "Aretha Franklin",
+   "Sam Cooke"
+  ],
+  "title": "You Send Me",
+  "type": "feature",
+  "year": 1964,
+  "era_gap": 24.0,
+  "eras": [
+   1987,
+   1963.0
+  ]
+ },
+ {
+  "a1": 175,
+  "a2": 3082,
+  "names": [
+   "The Notorious B.I.G.",
+   "Lil' Kim"
+  ],
+  "title": "Get Money",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 24,
+  "eras": [
+   2025,
+   2001
+  ]
+ },
+ {
+  "a1": 176,
+  "a2": 3474,
+  "names": [
+   "Busta Rhymes",
+   "Q-Tip"
+  ],
+  "title": "Scenario",
+  "type": "song",
+  "year": 1991,
+  "era_gap": 24.0,
+  "eras": [
+   2023.0,
+   1999
+  ]
+ },
+ {
+  "a1": 1245,
+  "a2": 1303,
+  "names": [
+   "Tammy Wynette",
+   "Randy Travis"
+  ],
+  "title": "We're Strangers Again",
+  "type": "song",
+  "year": 1992,
+  "era_gap": 24.0,
+  "eras": [
+   1976,
+   2000.0
+  ]
+ },
+ {
+  "a1": 2038,
+  "a2": 6239,
+  "names": [
+   "Die Fantastischen Vier",
+   "Hausmarke"
+  ],
+  "title": "Zusammen (feat. Hausmarke)",
+  "type": "song",
+  "year": 1999,
+  "era_gap": 24.0,
+  "eras": [
+   2023.0,
+   1999
+  ]
+ },
+ {
+  "a1": 167,
+  "a2": 6321,
+  "names": [
+   "Nas",
+   "The Firm"
+  ],
+  "title": "Phone Tap",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 24,
+  "eras": [
+   2021,
+   1997
+  ]
+ },
+ {
+  "a1": 277,
+  "a2": 344,
+  "names": [
+   "Gilberto Gil",
+   "Ney Matogrosso"
+  ],
+  "title": "A Novidade",
+  "type": "song",
+  "year": 1986,
+  "era_gap": 23.5,
+  "eras": [
+   2000.5,
+   2024.0
+  ]
+ },
+ {
+  "a1": 3430,
+  "a2": 3447,
+  "names": [
+   "Frank Sinatra",
+   "Barbra Streisand"
+  ],
+  "title": "I've Got a Crush on You",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 23.5,
+  "eras": [
+   1993,
+   2016.5
+  ]
+ },
+ {
+  "a1": 4133,
+  "a2": 4134,
+  "names": [
+   "The Clark Sisters",
+   "Tramaine Hawkins"
+  ],
+  "title": "Goin Up Yonder",
+  "type": "live",
+  "year": 1994,
+  "era_gap": 23.5,
+  "eras": [
+   2017.5,
+   1994
+  ]
+ },
+ {
+  "a1": 1003,
+  "a2": 4068,
+  "names": [
+   "Elis Regina",
+   "João Bosco"
+  ],
+  "title": "O Mestre e a Discípula",
+  "type": "live",
+  "year": 1977,
+  "era_gap": 23.5,
+  "eras": [
+   1976.5,
+   2000
+  ]
+ },
+ {
+  "a1": 372,
+  "a2": 5013,
+  "names": [
+   "Belo",
+   "Kassav'"
+  ],
+  "title": "Zouk Festival (Live)",
+  "type": "live",
+  "year": 2003,
+  "era_gap": 23.5,
+  "eras": [
+   2019,
+   1995.5
+  ]
+ },
+ {
+  "a1": 5130,
+  "a2": 5132,
+  "names": [
+   "Fleetwood Mac",
+   "Mick Fleetwood"
+  ],
+  "title": "Fleetwood Mac",
+  "type": "album",
+  "year": 1975,
+  "era_gap": 23.5,
+  "eras": [
+   1977.0,
+   2000.5
+  ]
+ },
+ {
+  "a1": 1453,
+  "a2": 5907,
+  "names": [
+   "Dillinger",
+   "Trinity"
+  ],
+  "title": "Clash",
+  "type": "album",
+  "year": 1977,
+  "era_gap": 23.5,
+  "eras": [
+   2000.5,
+   1977
+  ]
+ },
+ {
+  "a1": 279,
+  "a2": 348,
+  "names": [
+   "Maria Bethânia",
+   "Djavan"
+  ],
+  "title": "Álibi",
+  "type": "song",
+  "year": 1978,
+  "era_gap": 23.0,
+  "eras": [
+   2023,
+   2000.0
+  ]
+ },
+ {
+  "a1": 362,
+  "a2": 952,
+  "names": [
+   "Péricles",
+   "Fundo de Quintal"
+  ],
+  "title": "Cheiro de Saudade",
+  "type": "song",
+  "year": 2018,
+  "era_gap": 23.0,
+  "eras": [
+   2023.0,
+   2000
+  ]
+ },
+ {
+  "a1": 1346,
+  "a2": 5300,
+  "names": [
+   "Shaggy",
+   "rikrok"
+  ],
+  "title": "It Wasn't Me",
+  "type": "song",
+  "year": 2000,
+  "era_gap": 23,
+  "eras": [
+   2023,
+   2000
+  ]
+ },
+ {
+  "a1": 2882,
+  "a2": 2930,
+  "names": [
+   "Marco Antonio Solís",
+   "Los Bukis"
+  ],
+  "title": "Si Me Recuerdas",
+  "type": "song",
+  "year": 1990,
+  "era_gap": 23.0,
+  "eras": [
+   2013.0,
+   1990
+  ]
+ },
+ {
+  "a1": 414,
+  "a2": 3097,
+  "names": [
+   "Whitney Houston",
+   "Babyface"
+  ],
+  "title": "Exhale (Shoop Shoop)",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 23.0,
+  "eras": [
+   2000,
+   2023.0
+  ]
+ },
+ {
+  "a1": 3229,
+  "a2": 5507,
+  "names": [
+   "Eric Clapton",
+   "B.B. King"
+  ],
+  "title": "Riding with the King",
+  "type": "album",
+  "year": 2000,
+  "era_gap": 23,
+  "eras": [
+   2023,
+   2000
+  ]
+ },
+ {
+  "a1": 3150,
+  "a2": 3300,
+  "names": [
+   "Ozzy Osbourne",
+   "Rob Zombie"
+  ],
+  "title": "Iron Man (live)",
+  "type": "live",
+  "year": 1996,
+  "era_gap": 23,
+  "eras": [
+   2019,
+   1996
+  ]
+ },
+ {
+  "a1": 948,
+  "a2": 4982,
+  "names": [
+   "Turma do Pagode",
+   "Molejo"
+  ],
+  "title": "Pagode Total",
+  "type": "live",
+  "year": 2009,
+  "era_gap": 23.0,
+  "eras": [
+   2025.0,
+   2002.0
+  ]
+ },
+ {
+  "a1": 1050,
+  "a2": 4982,
+  "names": [
+   "Neguinho da Beija-Flor",
+   "Molejo"
+  ],
+  "title": "Moleque de Samba",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 23.0,
+  "eras": [
+   2025.0,
+   2002.0
+  ]
+ },
+ {
+  "a1": 355,
+  "a2": 360,
+  "names": [
+   "Alcione",
+   "Beth Carvalho"
+  ],
+  "title": "Duas Rainhas",
+  "type": "live",
+  "year": 2005,
+  "era_gap": 23,
+  "eras": [
+   2011,
+   1988
+  ]
+ },
+ {
+  "a1": 3347,
+  "a2": 5679,
+  "names": [
+   "Ryan Adams",
+   "Carole King"
+  ],
+  "title": "Cry (guest appearance)",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 23.0,
+  "eras": [
+   2001.0,
+   2024
+  ]
+ },
+ {
+  "a1": 3235,
+  "a2": 5216,
+  "names": [
+   "Aerosmith",
+   "Steven Tyler"
+  ],
+  "title": "Toys in the Attic",
+  "type": "album",
+  "year": 1975,
+  "era_gap": 23.0,
+  "eras": [
+   1976,
+   1999.0
+  ]
+ },
+ {
+  "a1": 5216,
+  "a2": 5217,
+  "names": [
+   "Steven Tyler",
+   "Joe Perry"
+  ],
+  "title": "Walk This Way",
+  "type": "song",
+  "year": 1975,
+  "era_gap": 23.0,
+  "eras": [
+   1999.0,
+   1976.0
+  ]
+ },
+ {
+  "a1": 55,
+  "a2": 3109,
+  "names": [
+   "Michael Jackson",
+   "Lenny Kravitz"
+  ],
+  "title": "Another Day",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 23,
+  "eras": [
+   1991,
+   2014
+  ]
+ },
+ {
+  "a1": 175,
+  "a2": 1376,
+  "names": [
+   "The Notorious B.I.G.",
+   "P. Diddy"
+  ],
+  "title": "Victory",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 23,
+  "eras": [
+   2025,
+   2002
+  ]
+ },
+ {
+  "a1": 1466,
+  "a2": 1548,
+  "names": [
+   "Lady Saw",
+   "No Doubt"
+  ],
+  "title": "Underneath It All",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 23,
+  "eras": [
+   2024,
+   2001
+  ]
+ },
+ {
+  "a1": 2307,
+  "a2": 6054,
+  "names": [
+   "Ravi Shankar",
+   "Yehudi Menuhin"
+  ],
+  "title": "West Meets East",
+  "type": "album",
+  "year": 1967,
+  "era_gap": 23,
+  "eras": [
+   1990,
+   1967
+  ]
+ },
+ {
+  "a1": 1263,
+  "a2": 2024,
+  "names": [
+   "Eddy Arnold",
+   "LeAnn Rimes"
+  ],
+  "title": "The Cattle Call",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 23.0,
+  "eras": [
+   1976.0,
+   1999
+  ]
+ },
+ {
+  "a1": 1242,
+  "a2": 1323,
+  "names": [
+   "Dwight Yoakam",
+   "Sheryl Crow"
+  ],
+  "title": "I Ain't Never / Long White Cadillac",
+  "type": "song",
+  "year": 2000,
+  "era_gap": 23,
+  "eras": [
+   2000,
+   2023
+  ]
+ },
+ {
+  "a1": 1263,
+  "a2": 1264,
+  "names": [
+   "Eddy Arnold",
+   "Hank Snow"
+  ],
+  "title": "Cattle Call (reprise)",
+  "type": "song",
+  "year": 1955,
+  "era_gap": 23.0,
+  "eras": [
+   1976.0,
+   1953.0
+  ]
+ },
+ {
+  "a1": 3258,
+  "a2": 6389,
+  "names": [
+   "Santana",
+   "Everlast"
+  ],
+  "title": "Put Your Lights On",
+  "type": "song",
+  "year": 1999,
+  "era_gap": 23,
+  "eras": [
+   2002,
+   2025
+  ]
+ },
+ {
+  "a1": 2631,
+  "a2": 3650,
+  "names": [
+   "ITZY",
+   "Emma Bunton"
+  ],
+  "title": "Wannabe",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 23,
+  "eras": [
+   2019,
+   1996
+  ]
+ },
+ {
+  "a1": 112,
+  "a2": 1376,
+  "names": [
+   "French Montana",
+   "P. Diddy"
+  ],
+  "title": "Shot Caller",
+  "type": "song",
+  "year": 2013,
+  "era_gap": 23,
+  "eras": [
+   2025,
+   2002
+  ]
+ },
+ {
+  "a1": 3286,
+  "a2": 5524,
+  "names": [
+   "Nickelback",
+   "Chad Kroeger"
+  ],
+  "title": "How You Remind Me",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 22.5,
+  "eras": [
+   2024.0,
+   2001.5
+  ]
+ },
+ {
+  "a1": 54,
+  "a2": 3430,
+  "names": [
+   "Stevie Wonder",
+   "Frank Sinatra"
+  ],
+  "title": "For Once in My Life",
+  "type": "song",
+  "year": 1994,
+  "era_gap": 22.5,
+  "eras": [
+   2015.5,
+   1993
+  ]
+ },
+ {
+  "a1": 4109,
+  "a2": 4231,
+  "names": [
+   "Michael W. Smith",
+   "Sandi Patty"
+  ],
+  "title": "Friends",
+  "type": "live",
+  "year": 1991,
+  "era_gap": 22.5,
+  "eras": [
+   2018,
+   1995.5
+  ]
+ },
+ {
+  "a1": 4116,
+  "a2": 4260,
+  "names": [
+   "Matt Redman",
+   "Passion"
+  ],
+  "title": "Your Grace Finds Me",
+  "type": "song",
+  "year": 2013,
+  "era_gap": 22.5,
+  "eras": [
+   2002.5,
+   2025.0
+  ]
+ },
+ {
+  "a1": 960,
+  "a2": 1048,
+  "names": [
+   "Roberto Carlos",
+   "Tim Maia"
+  ],
+  "title": "Boa Noite Brasil",
+  "type": "song",
+  "year": 1980,
+  "era_gap": 22.5,
+  "eras": [
+   2002.5,
+   1980
+  ]
+ },
+ {
+  "a1": 1045,
+  "a2": 1047,
+  "names": [
+   "Erasmo Carlos",
+   "Roupa Nova"
+  ],
+  "title": "Festa da MPB",
+  "type": "live",
+  "year": 2004,
+  "era_gap": 22.5,
+  "eras": [
+   2023.0,
+   2000.5
+  ]
+ },
+ {
+  "a1": 892,
+  "a2": 4095,
+  "names": [
+   "Ivan Lins",
+   "Edu Lobo"
+  ],
+  "title": "MPB dos Anos 80",
+  "type": "live",
+  "year": 1985,
+  "era_gap": 22.5,
+  "eras": [
+   2009.5,
+   1987
+  ]
+ },
+ {
+  "a1": 2993,
+  "a2": 5045,
+  "names": [
+   "Celia Cruz",
+   "Hansel y Raúl"
+  ],
+  "title": "Tú y Yo (Live)",
+  "type": "live",
+  "year": 1999,
+  "era_gap": 22.5,
+  "eras": [
+   2023.0,
+   2000.5
+  ]
+ },
+ {
+  "a1": 1346,
+  "a2": 1387,
+  "names": [
+   "Shaggy",
+   "Inner Circle"
+  ],
+  "title": "Sweat (Caribbean Mix)",
+  "type": "song",
+  "year": 1994,
+  "era_gap": 22.5,
+  "eras": [
+   2023,
+   2000.5
+  ]
+ },
+ {
+  "a1": 3553,
+  "a2": 3554,
+  "names": [
+   "Michael McDonald",
+   "Doobie Brothers"
+  ],
+  "title": "What a Fool Believes",
+  "type": "song",
+  "year": 1978,
+  "era_gap": 22.5,
+  "eras": [
+   2023,
+   2000.5
+  ]
+ },
+ {
+  "a1": 3662,
+  "a2": 6135,
+  "names": [
+   "Seal",
+   "Adamski"
+  ],
+  "title": "Killer",
+  "type": "song",
+  "year": 1990,
+  "era_gap": 22.5,
+  "eras": [
+   2012.5,
+   1990
+  ]
+ },
+ {
+  "a1": 277,
+  "a2": 1345,
+  "names": [
+   "Gilberto Gil",
+   "Bob Marley"
+  ],
+  "title": "No Woman No Cry (Live)",
+  "type": "live",
+  "year": 1980,
+  "era_gap": 22.5,
+  "eras": [
+   2000.5,
+   1978.0
+  ]
+ },
+ {
+  "a1": 277,
+  "a2": 1375,
+  "names": [
+   "Gilberto Gil",
+   "Sting"
+  ],
+  "title": "We'll Be Together (Live)",
+  "type": "live",
+  "year": 1987,
+  "era_gap": 22.5,
+  "eras": [
+   2000.5,
+   2023.0
+  ]
+ },
+ {
+  "a1": 277,
+  "a2": 1045,
+  "names": [
+   "Gilberto Gil",
+   "Erasmo Carlos"
+  ],
+  "title": "Via Sacra",
+  "type": "song",
+  "year": 2018,
+  "era_gap": 22.5,
+  "eras": [
+   2000.5,
+   2023.0
+  ]
+ },
+ {
+  "a1": 278,
+  "a2": 348,
+  "names": [
+   "Gal Costa",
+   "Djavan"
+  ],
+  "title": "Gal Canta Caymmi",
+  "type": "song",
+  "year": 1976,
+  "era_gap": 22.0,
+  "eras": [
+   1978,
+   2000.0
+  ]
+ },
+ {
+  "a1": 330,
+  "a2": 1008,
+  "names": [
+   "Skank",
+   "Lulu Santos"
+  ],
+  "title": "Uma Brasileira",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 22.0,
+  "eras": [
+   2001.0,
+   2023.0
+  ]
+ },
+ {
+  "a1": 1199,
+  "a2": 1203,
+  "names": [
+   "George Strait",
+   "Alan Jackson"
+  ],
+  "title": "Murder on Music Row",
+  "type": "song",
+  "year": 2000,
+  "era_gap": 22,
+  "eras": [
+   2023,
+   2001
+  ]
+ },
+ {
+  "a1": 2224,
+  "a2": 2229,
+  "names": [
+   "Alka Yagnik",
+   "Kavita Krishnamurthy"
+  ],
+  "title": "Kabhi Khushi Kabhie Gham",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 22.0,
+  "eras": [
+   2024.0,
+   2002
+  ]
+ },
+ {
+  "a1": 55,
+  "a2": 126,
+  "names": [
+   "Michael Jackson",
+   "will.i.am"
+  ],
+  "title": "Scream and Shout",
+  "type": "song",
+  "year": 2012,
+  "era_gap": 22.0,
+  "eras": [
+   1991,
+   2013.0
+  ]
+ },
+ {
+  "a1": 3249,
+  "a2": 3251,
+  "names": [
+   "System of a Down",
+   "Korn"
+  ],
+  "title": "Ozzfest co-appearance",
+  "type": "live",
+  "year": 2001,
+  "era_gap": 22,
+  "eras": [
+   2001,
+   2023
+  ]
+ },
+ {
+  "a1": 3418,
+  "a2": 3508,
+  "names": [
+   "Quincy Jones",
+   "Marvin Gaye & Tammi Terrell"
+  ],
+  "title": "United",
+  "type": "album",
+  "year": 1967,
+  "era_gap": 22,
+  "eras": [
+   1989,
+   1967
+  ]
+ },
+ {
+  "a1": 3092,
+  "a2": 3434,
+  "names": [
+   "Celine Dion",
+   "Bee Gees"
+  ],
+  "title": "Immortality",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 22.0,
+  "eras": [
+   1999.0,
+   1977
+  ]
+ },
+ {
+  "a1": 3571,
+  "a2": 5572,
+  "names": [
+   "Roy Ayers",
+   "Wayne Henderson"
+  ],
+  "title": "Step into Our Life",
+  "type": "album",
+  "year": 1978,
+  "era_gap": 22,
+  "eras": [
+   2000,
+   1978
+  ]
+ },
+ {
+  "a1": 1040,
+  "a2": 4069,
+  "names": [
+   "Zeca Baleiro",
+   "Belchior"
+  ],
+  "title": "Nordeste Perdido (Tributo)",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 22.0,
+  "eras": [
+   2024.0,
+   2002.0
+  ]
+ },
+ {
+  "a1": 330,
+  "a2": 339,
+  "names": [
+   "Skank",
+   "Nando Reis"
+  ],
+  "title": "MPB e Rock",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 22.0,
+  "eras": [
+   2001.0,
+   2023.0
+  ]
+ },
+ {
+  "a1": 2887,
+  "a2": 3052,
+  "names": [
+   "Gloria Trevi",
+   "Timbiriche"
+  ],
+  "title": "No es así",
+  "type": "song",
+  "year": 1989,
+  "era_gap": 22,
+  "eras": [
+   2021,
+   1999
+  ]
+ },
+ {
+  "a1": 2993,
+  "a2": 5080,
+  "names": [
+   "Celia Cruz",
+   "Adalberto Álvarez"
+  ],
+  "title": "Lágrimas Negras (Live)",
+  "type": "live",
+  "year": 1999,
+  "era_gap": 22.0,
+  "eras": [
+   2023.0,
+   2001.0
+  ]
+ },
+ {
+  "a1": 37,
+  "a2": 3045,
+  "names": [
+   "Shakira",
+   "Miguel Bosé"
+  ],
+  "title": "Si Tú No Vuelves",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 22.0,
+  "eras": [
+   2021.5,
+   1999.5
+  ]
+ },
+ {
+  "a1": 2671,
+  "a2": 3811,
+  "names": [
+   "Swizz Beatz",
+   "D-Block"
+  ],
+  "title": "Ryde or Die",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 22,
+  "eras": [
+   2023,
+   2001
+  ]
+ },
+ {
+  "a1": 167,
+  "a2": 3474,
+  "names": [
+   "Nas",
+   "Q-Tip"
+  ],
+  "title": "One Love",
+  "type": "song",
+  "year": 1994,
+  "era_gap": 22,
+  "eras": [
+   2021,
+   1999
+  ]
+ },
+ {
+  "a1": 55,
+  "a2": 423,
+  "names": [
+   "Michael Jackson",
+   "Justin Timberlake"
+  ],
+  "title": "Love Never Felt So Good",
+  "type": "song",
+  "year": 2014,
+  "era_gap": 22.0,
+  "eras": [
+   1991,
+   2013.0
+  ]
+ },
+ {
+  "a1": 1027,
+  "a2": 5120,
+  "names": [
+   "David Bowie",
+   "Pete Townshend"
+  ],
+  "title": "Because You're Young",
+  "type": "song",
+  "year": 1980,
+  "era_gap": 22,
+  "eras": [
+   1995,
+   1973
+  ]
+ },
+ {
+  "a1": 71,
+  "a2": 6033,
+  "names": [
+   "Diplo",
+   "The Clash"
+  ],
+  "title": "Hero",
+  "type": "song",
+  "year": 2014,
+  "era_gap": 22.0,
+  "eras": [
+   2019.0,
+   1997.0
+  ]
+ },
+ {
+  "a1": 3409,
+  "a2": 3480,
+  "names": [
+   "Smokey Robinson",
+   "Rick James"
+  ],
+  "title": "Ebony Eyes",
+  "type": "song",
+  "year": 1983,
+  "era_gap": 21.5,
+  "eras": [
+   2003.0,
+   1981.5
+  ]
+ },
+ {
+  "a1": 55,
+  "a2": 3419,
+  "names": [
+   "Michael Jackson",
+   "The Jackson 5"
+  ],
+  "title": "ABC",
+  "type": "song",
+  "year": 1970,
+  "era_gap": 21.5,
+  "eras": [
+   1991,
+   1969.5
+  ]
+ },
+ {
+  "a1": 4051,
+  "a2": 4052,
+  "names": [
+   "Chico Science",
+   "Nação Zumbi"
+  ],
+  "title": "Da Lama ao Caos",
+  "type": "album",
+  "year": 1994,
+  "era_gap": 21.5,
+  "eras": [
+   1995.5,
+   2017
+  ]
+ },
+ {
+  "a1": 4116,
+  "a2": 4224,
+  "names": [
+   "Matt Redman",
+   "Martin Smith"
+  ],
+  "title": "King of Fools",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 21.5,
+  "eras": [
+   2002.5,
+   2024
+  ]
+ },
+ {
+  "a1": 350,
+  "a2": 960,
+  "names": [
+   "Chico Buarque",
+   "Roberto Carlos"
+  ],
+  "title": "Especial Roberto Carlos e Chico",
+  "type": "live",
+  "year": 1984,
+  "era_gap": 21.5,
+  "eras": [
+   1981.0,
+   2002.5
+  ]
+ },
+ {
+  "a1": 339,
+  "a2": 4055,
+  "names": [
+   "Nando Reis",
+   "Os Paralamas do Sucesso"
+  ],
+  "title": "Amigos de Palco",
+  "type": "live",
+  "year": 2007,
+  "era_gap": 21.5,
+  "eras": [
+   2023.0,
+   2001.5
+  ]
+ },
+ {
+  "a1": 957,
+  "a2": 960,
+  "names": [
+   "Fagner",
+   "Roberto Carlos"
+  ],
+  "title": "Amigos Nordestinos",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 21.5,
+  "eras": [
+   2024.0,
+   2002.5
+  ]
+ },
+ {
+  "a1": 1887,
+  "a2": 3111,
+  "names": [
+   "Tina Arena",
+   "Lionel Richie"
+  ],
+  "title": "Say You Say Me (Sa Majesté l'amour)",
+  "type": "song",
+  "year": 2015,
+  "era_gap": 21.5,
+  "eras": [
+   2006.5,
+   1985.0
+  ]
+ },
+ {
+  "a1": 3213,
+  "a2": 4711,
+  "names": [
+   "Residente",
+   "Sokół"
+  ],
+  "title": "Desencuentro",
+  "type": "song",
+  "year": 2017,
+  "era_gap": 21.5,
+  "eras": [
+   2023.5,
+   2002
+  ]
+ },
+ {
+  "a1": 276,
+  "a2": 374,
+  "names": [
+   "Caetano Veloso",
+   "Xande de Pilares"
+  ],
+  "title": "Xande Canta Caetano",
+  "type": "album",
+  "year": 2023,
+  "era_gap": 21.0,
+  "eras": [
+   2004.0,
+   2025
+  ]
+ },
+ {
+  "a1": 1275,
+  "a2": 1308,
+  "names": [
+   "Sara Evans",
+   "Rascal Flatts"
+  ],
+  "title": "Fast Cars and Freedom (Live)",
+  "type": "live",
+  "year": 2004,
+  "era_gap": 21,
+  "eras": [
+   2004,
+   2025
+  ]
+ },
+ {
+  "a1": 3418,
+  "a2": 3432,
+  "names": [
+   "Quincy Jones",
+   "Tony Bennett"
+  ],
+  "title": "Bennett & Basie Strike Up the Band",
+  "type": "album",
+  "year": 2000,
+  "era_gap": 21,
+  "eras": [
+   1989,
+   2010
+  ]
+ },
+ {
+  "a1": 4260,
+  "a2": 4261,
+  "names": [
+   "Passion",
+   "Louie Giglio"
+  ],
+  "title": "Indescribable",
+  "type": "live",
+  "year": 2004,
+  "era_gap": 21.0,
+  "eras": [
+   2025.0,
+   2004
+  ]
+ },
+ {
+  "a1": 1007,
+  "a2": 1036,
+  "names": [
+   "Clara Nunes",
+   "Paulinho da Viola"
+  ],
+  "title": "Encontro de Sambistas",
+  "type": "song",
+  "year": 1977,
+  "era_gap": 21,
+  "eras": [
+   1979,
+   2000
+  ]
+ },
+ {
+  "a1": 957,
+  "a2": 958,
+  "names": [
+   "Fagner",
+   "Geraldo Azevedo"
+  ],
+  "title": "Cantadores do Nordeste",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 21.0,
+  "eras": [
+   2024.0,
+   2003
+  ]
+ },
+ {
+  "a1": 2456,
+  "a2": 5835,
+  "names": [
+   "Riccardo Cocciante",
+   "Mireille Mathieu"
+  ],
+  "title": "Il est mort le soleil",
+  "type": "song",
+  "year": 1979,
+  "era_gap": 21.0,
+  "eras": [
+   1980.5,
+   2001.5
+  ]
+ },
+ {
+  "a1": 253,
+  "a2": 5517,
+  "names": [
+   "Stevie Nicks",
+   "Vanessa Carlton"
+  ],
+  "title": "Ordinary Day (performed together)",
+  "type": "live",
+  "year": 2002,
+  "era_gap": 21.0,
+  "eras": [
+   2023.0,
+   2002.0
+  ]
+ },
+ {
+  "a1": 2991,
+  "a2": 5044,
+  "names": [
+   "Gilberto Santa Rosa",
+   "Luis Enrique"
+  ],
+  "title": "Que Siento",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 21,
+  "eras": [
+   2003,
+   2024
+  ]
+ },
+ {
+  "a1": 1027,
+  "a2": 3266,
+  "names": [
+   "David Bowie",
+   "John Lennon"
+  ],
+  "title": "Fame",
+  "type": "song",
+  "year": 1975,
+  "era_gap": 21,
+  "eras": [
+   1995,
+   1974
+  ]
+ },
+ {
+  "a1": 125,
+  "a2": 5963,
+  "names": [
+   "Lil Jon",
+   "Ying Yang Twins"
+  ],
+  "title": "Get Low",
+  "type": "song",
+  "year": 2002,
+  "era_gap": 21.0,
+  "eras": [
+   2023.0,
+   2002
+  ]
+ },
+ {
+  "a1": 167,
+  "a2": 5991,
+  "names": [
+   "Nas",
+   "Marley Marl"
+  ],
+  "title": "QB's Finest",
+  "type": "album",
+  "year": 2000,
+  "era_gap": 21,
+  "eras": [
+   2021,
+   2000
+  ]
+ },
+ {
+  "a1": 3477,
+  "a2": 6070,
+  "names": [
+   "SWV",
+   "Wu-Tang Clan"
+  ],
+  "title": "Anything",
+  "type": "song",
+  "year": 1994,
+  "era_gap": 21,
+  "eras": [
+   2003,
+   2024
+  ]
+ },
+ {
+  "a1": 1313,
+  "a2": 5279,
+  "names": [
+   "Aaron Lewis",
+   "George Jones"
+  ],
+  "title": "Country Boy",
+  "type": "song",
+  "year": 2011,
+  "era_gap": 21,
+  "eras": [
+   2011,
+   1990
+  ]
+ },
+ {
+  "a1": 1325,
+  "a2": 1330,
+  "names": [
+   "Emmylou Harris",
+   "Guy Clark"
+  ],
+  "title": "Desperados Waiting for a Train",
+  "type": "song",
+  "year": 1975,
+  "era_gap": 21.0,
+  "eras": [
+   2023.0,
+   2002
+  ]
+ },
+ {
+  "a1": 197,
+  "a2": 6418,
+  "names": [
+   "Linkin Park",
+   "Rakim"
+  ],
+  "title": "Collision Course",
+  "type": "album",
+  "year": 2004,
+  "era_gap": 21.0,
+  "eras": [
+   2004.0,
+   2025.0
+  ]
+ },
+ {
+  "a1": 24,
+  "a2": 5562,
+  "names": [
+   "Chris Brown",
+   "Aaliyah"
+  ],
+  "title": "Don't Think They Know",
+  "type": "song",
+  "year": 2014,
+  "era_gap": 21.0,
+  "eras": [
+   2019.0,
+   1998
+  ]
+ },
+ {
+  "a1": 12,
+  "a2": 3083,
+  "names": [
+   "Nicki Minaj",
+   "Foxy Brown"
+  ],
+  "title": "Bada Bing",
+  "type": "song",
+  "year": 2017,
+  "era_gap": 21,
+  "eras": [
+   2017,
+   1996
+  ]
+ },
+ {
+  "a1": 3111,
+  "a2": 3439,
+  "names": [
+   "Lionel Richie",
+   "Billy Joel"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 21.0,
+  "eras": [
+   1985.0,
+   2006
+  ]
+ },
+ {
+  "a1": 1376,
+  "a2": 5995,
+  "names": [
+   "P. Diddy",
+   "Diddy"
+  ],
+  "title": "I Need a Girl (Part 2)",
+  "type": "song",
+  "year": 2002,
+  "era_gap": 21,
+  "eras": [
+   2002,
+   2023
+  ]
+ },
+ {
+  "a1": 1310,
+  "a2": 3272,
+  "names": [
+   "Zac Brown Band",
+   "Chris Cornell"
+  ],
+  "title": "Heavy is the Head (feat. Chris Cornell)",
+  "type": "song",
+  "year": 2015,
+  "era_gap": 20.5,
+  "eras": [
+   2018.5,
+   1998.0
+  ]
+ },
+ {
+  "a1": 3825,
+  "a2": 3826,
+  "names": [
+   "Miriam Makeba",
+   "Hugh Masekela"
+  ],
+  "title": "Stimela",
+  "type": "song",
+  "year": 1988,
+  "era_gap": 20.5,
+  "eras": [
+   2023,
+   2002.5
+  ]
+ },
+ {
+  "a1": 4870,
+  "a2": 4973,
+  "names": [
+   "Rossa",
+   "Nike Ardilla"
+  ],
+  "title": "Selalu Milikmu",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 20.5,
+  "eras": [
+   2015.5,
+   1995
+  ]
+ },
+ {
+  "a1": 277,
+  "a2": 1048,
+  "names": [
+   "Gilberto Gil",
+   "Tim Maia"
+  ],
+  "title": "Soul Tropical",
+  "type": "song",
+  "year": 1979,
+  "era_gap": 20.5,
+  "eras": [
+   2000.5,
+   1980
+  ]
+ },
+ {
+  "a1": 960,
+  "a2": 1407,
+  "names": [
+   "Roberto Carlos",
+   "Luciano"
+  ],
+  "title": "Emoções Sertanejas",
+  "type": "song",
+  "year": 2012,
+  "era_gap": 20.5,
+  "eras": [
+   2002.5,
+   2023.0
+  ]
+ },
+ {
+  "a1": 2993,
+  "a2": 5036,
+  "names": [
+   "Celia Cruz",
+   "Oscar D'León"
+  ],
+  "title": "La Vida Es un Carnaval (Live)",
+  "type": "live",
+  "year": 2000,
+  "era_gap": 20.5,
+  "eras": [
+   2023.0,
+   2002.5
+  ]
+ },
+ {
+  "a1": 1255,
+  "a2": 1335,
+  "names": [
+   "Crystal Gayle",
+   "Eddie Rabbitt"
+  ],
+  "title": "You and I",
+  "type": "song",
+  "year": 1982,
+  "era_gap": 20.5,
+  "eras": [
+   1982,
+   2002.5
+  ]
+ },
+ {
+  "a1": 77,
+  "a2": 1027,
+  "names": [
+   "Lorde",
+   "David Bowie"
+  ],
+  "title": "Life on Mars? (live)",
+  "type": "live",
+  "year": 2016,
+  "era_gap": 20.5,
+  "eras": [
+   2015.5,
+   1995
+  ]
+ },
+ {
+  "a1": 276,
+  "a2": 1040,
+  "names": [
+   "Caetano Veloso",
+   "Zeca Baleiro"
+  ],
+  "title": "Por Onde Andará Stephen Fry?",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 20.0,
+  "eras": [
+   2004.0,
+   2024.0
+  ]
+ },
+ {
+  "a1": 2538,
+  "a2": 2539,
+  "names": [
+   "Bunbury",
+   "Héroes del Silencio"
+  ],
+  "title": "El Pasajero",
+  "type": "album",
+  "year": 1995,
+  "era_gap": 20,
+  "eras": [
+   2015,
+   1995
+  ]
+ },
+ {
+  "a1": 95,
+  "a2": 1788,
+  "names": [
+   "Gorillaz",
+   "Mos Def"
+  ],
+  "title": "November Has Come",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 20.0,
+  "eras": [
+   2020,
+   2000.0
+  ]
+ },
+ {
+  "a1": 5,
+  "a2": 3420,
+  "names": [
+   "Beyoncé",
+   "Luther Vandross"
+  ],
+  "title": "The Closer I Get to You",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 20.0,
+  "eras": [
+   2017,
+   1997.0
+  ]
+ },
+ {
+  "a1": 3474,
+  "a2": 5568,
+  "names": [
+   "Q-Tip",
+   "Raphael Saadiq"
+  ],
+  "title": "Vivrant Thing",
+  "type": "feature",
+  "year": 1999,
+  "era_gap": 20,
+  "eras": [
+   1999,
+   2019
+  ]
+ },
+ {
+  "a1": 372,
+  "a2": 1068,
+  "names": [
+   "Belo",
+   "Claudinho & Buchecha"
+  ],
+  "title": "Funk e Pagode Ao Vivo",
+  "type": "live",
+  "year": 2000,
+  "era_gap": 20.0,
+  "eras": [
+   2019,
+   1999.0
+  ]
+ },
+ {
+  "a1": 361,
+  "a2": 1068,
+  "names": [
+   "Thiaguinho",
+   "Claudinho & Buchecha"
+  ],
+  "title": "Funk e Samba Ao Vivo",
+  "type": "live",
+  "year": 2005,
+  "era_gap": 20.0,
+  "eras": [
+   2019,
+   1999.0
+  ]
+ },
+ {
+  "a1": 4104,
+  "a2": 4192,
+  "names": [
+   "Casting Crowns",
+   "Mark Hall"
+  ],
+  "title": "Voice of Truth",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 20,
+  "eras": [
+   2023,
+   2003
+  ]
+ },
+ {
+  "a1": 4232,
+  "a2": 4233,
+  "names": [
+   "Bill Gaither",
+   "Gloria Gaither"
+  ],
+  "title": "Because He Lives",
+  "type": "album",
+  "year": 1971,
+  "era_gap": 20,
+  "eras": [
+   1991,
+   1971
+  ]
+ },
+ {
+  "a1": 2991,
+  "a2": 2996,
+  "names": [
+   "Gilberto Santa Rosa",
+   "Rubén Blades"
+  ],
+  "title": "Perdido",
+  "type": "song",
+  "year": 2007,
+  "era_gap": 20,
+  "eras": [
+   2003,
+   2023
+  ]
+ },
+ {
+  "a1": 1606,
+  "a2": 5028,
+  "names": [
+   "Elvis Crespo",
+   "Eddy Herrera"
+  ],
+  "title": "Suavemente (Remix)",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 20,
+  "eras": [
+   2018,
+   1998
+  ]
+ },
+ {
+  "a1": 1345,
+  "a2": 1383,
+  "names": [
+   "Bob Marley",
+   "Burning Spear"
+  ],
+  "title": "African Festival (Live)",
+  "type": "live",
+  "year": 1978,
+  "era_gap": 20.0,
+  "eras": [
+   1978.0,
+   1998.0
+  ]
+ },
+ {
+  "a1": 5130,
+  "a2": 5133,
+  "names": [
+   "Fleetwood Mac",
+   "John McVie"
+  ],
+  "title": "The Dance",
+  "type": "live",
+  "year": 1997,
+  "era_gap": 20.0,
+  "eras": [
+   1977.0,
+   1997
+  ]
+ },
+ {
+  "a1": 3264,
+  "a2": 5238,
+  "names": [
+   "Bob Dylan",
+   "Al Kooper"
+  ],
+  "title": "Like a Rolling Stone",
+  "type": "feature",
+  "year": 1965,
+  "era_gap": 20,
+  "eras": [
+   1988,
+   1968
+  ]
+ },
+ {
+  "a1": 2307,
+  "a2": 3267,
+  "names": [
+   "Ravi Shankar",
+   "George Harrison"
+  ],
+  "title": "Concert for Bangladesh",
+  "type": "live",
+  "year": 1971,
+  "era_gap": 20,
+  "eras": [
+   1990,
+   1970
+  ]
+ },
+ {
+  "a1": 3411,
+  "a2": 3439,
+  "names": [
+   "Ray Charles",
+   "Billy Joel"
+  ],
+  "title": "Baby Grand",
+  "type": "song",
+  "year": 1987,
+  "era_gap": 20.0,
+  "eras": [
+   1986.0,
+   2006
+  ]
+ },
+ {
+  "a1": 53,
+  "a2": 2024,
+  "names": [
+   "Elton John",
+   "LeAnn Rimes"
+  ],
+  "title": "Written in the Stars",
+  "type": "song",
+  "year": 1999,
+  "era_gap": 20.0,
+  "eras": [
+   2019.0,
+   1999
+  ]
+ },
+ {
+  "a1": 1008,
+  "a2": 1044,
+  "names": [
+   "Lulu Santos",
+   "Fábio Jr."
+  ],
+  "title": "Tudo Bem",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 20.0,
+  "eras": [
+   2023.0,
+   2003
+  ]
+ },
+ {
+  "a1": 365,
+  "a2": 1065,
+  "names": [
+   "Ivete Sangalo",
+   "Ara Ketu"
+  ],
+  "title": "Faraó Divindade do Egito (Ao Vivo)",
+  "type": "live",
+  "year": 1996,
+  "era_gap": 20.0,
+  "eras": [
+   2018.0,
+   1998
+  ]
+ },
+ {
+  "a1": 1235,
+  "a2": 1375,
+  "names": [
+   "Toby Keith",
+   "Sting"
+  ],
+  "title": "I'm So Happy I Can't Stop Crying",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 20.0,
+  "eras": [
+   2003,
+   2023.0
+  ]
+ },
+ {
+  "a1": 2038,
+  "a2": 5900,
+  "names": [
+   "Die Fantastischen Vier",
+   "Xavier Naidoo"
+  ],
+  "title": "Der längste Tag",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 20.0,
+  "eras": [
+   2023.0,
+   2003
+  ]
+ },
+ {
+  "a1": 11,
+  "a2": 3444,
+  "names": [
+   "Justin Bieber",
+   "Harry Connick Jr."
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 20.0,
+  "eras": [
+   2010.0,
+   1990.0
+  ]
+ },
+ {
+  "a1": 1672,
+  "a2": 5900,
+  "names": [
+   "RZA",
+   "Xavier Naidoo"
+  ],
+  "title": "Ich kenne nichts (das so schön ist wie du)",
+  "type": "feature",
+  "year": 2003,
+  "era_gap": 20.0,
+  "eras": [
+   2023.0,
+   2003
+  ]
+ },
+ {
+  "a1": 277,
+  "a2": 350,
+  "names": [
+   "Gilberto Gil",
+   "Chico Buarque"
+  ],
+  "title": "Cálice",
+  "type": "song",
+  "year": 1978,
+  "era_gap": 19.5,
+  "eras": [
+   2000.5,
+   1981.0
+  ]
+ },
+ {
+  "a1": 262,
+  "a2": 391,
+  "names": [
+   "Ludmilla",
+   "Mc Marcinho"
+  ],
+  "title": "Glamurosa",
+  "type": "song",
+  "year": 2019,
+  "era_gap": 19.5,
+  "eras": [
+   2021,
+   2001.5
+  ]
+ },
+ {
+  "a1": 276,
+  "a2": 1002,
+  "names": [
+   "Caetano Veloso",
+   "Gilsons"
+  ],
+  "title": "É Preciso Perdoar",
+  "type": "song",
+  "year": 2022,
+  "era_gap": 19.5,
+  "eras": [
+   2004.0,
+   2023.5
+  ]
+ },
+ {
+  "a1": 1212,
+  "a2": 1216,
+  "names": [
+   "Nelly",
+   "Kelly Clarkson"
+  ],
+  "title": "I Would Do Anything",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 19.5,
+  "eras": [
+   2004.0,
+   2023.5
+  ]
+ },
+ {
+  "a1": 3069,
+  "a2": 3420,
+  "names": [
+   "Janet Jackson",
+   "Luther Vandross"
+  ],
+  "title": "The Best Things in Life Are Free",
+  "type": "song",
+  "year": 1992,
+  "era_gap": 19.5,
+  "eras": [
+   2016.5,
+   1997.0
+  ]
+ },
+ {
+  "a1": 496,
+  "a2": 3824,
+  "names": [
+   "Angélique Kidjo",
+   "Yvonne Chaka Chaka"
+  ],
+  "title": "African Queens Reunion",
+  "type": "album",
+  "year": 2010,
+  "era_gap": 19.5,
+  "eras": [
+   2026.0,
+   2006.5
+  ]
+ },
+ {
+  "a1": 3085,
+  "a2": 4124,
+  "names": [
+   "Kirk Franklin",
+   "Fred Hammond"
+  ],
+  "title": "Glory",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 19.5,
+  "eras": [
+   2020.5,
+   2001.0
+  ]
+ },
+ {
+  "a1": 140,
+  "a2": 277,
+  "names": [
+   "Anitta",
+   "Gilberto Gil"
+  ],
+  "title": "Não Faz Diferença",
+  "type": "song",
+  "year": 2019,
+  "era_gap": 19.5,
+  "eras": [
+   2020.0,
+   2000.5
+  ]
+ },
+ {
+  "a1": 350,
+  "a2": 1047,
+  "names": [
+   "Chico Buarque",
+   "Roupa Nova"
+  ],
+  "title": "Cantando Clássicos",
+  "type": "song",
+  "year": 1999,
+  "era_gap": 19.5,
+  "eras": [
+   1981.0,
+   2000.5
+  ]
+ },
+ {
+  "a1": 37,
+  "a2": 3258,
+  "names": [
+   "Shakira",
+   "Santana"
+  ],
+  "title": "Illegal",
+  "type": "song",
+  "year": 2006,
+  "era_gap": 19.5,
+  "eras": [
+   2021.5,
+   2002
+  ]
+ },
+ {
+  "a1": 1445,
+  "a2": 6032,
+  "names": [
+   "Ali Campbell",
+   "Bitty McLean"
+  ],
+  "title": "(I Can't Help) Falling in Love with You",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 19.5,
+  "eras": [
+   1993.5,
+   2013
+  ]
+ },
+ {
+  "a1": 3111,
+  "a2": 5131,
+  "names": [
+   "Lionel Richie",
+   "Lindsey Buckingham"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 19.5,
+  "eras": [
+   1985.0,
+   2004.5
+  ]
+ },
+ {
+  "a1": 101,
+  "a2": 3435,
+  "names": [
+   "Sam Smith",
+   "Gloria Gaynor"
+  ],
+  "title": "I Will Survive (live)",
+  "type": "live",
+  "year": 2023,
+  "era_gap": 19.5,
+  "eras": [
+   2020,
+   2000.5
+  ]
+ },
+ {
+  "a1": 197,
+  "a2": 210,
+  "names": [
+   "Linkin Park",
+   "Steve Aoki"
+  ],
+  "title": "A Light That Never Comes",
+  "type": "song",
+  "year": 2013,
+  "era_gap": 19.0,
+  "eras": [
+   2004.0,
+   2023
+  ]
+ },
+ {
+  "a1": 362,
+  "a2": 951,
+  "names": [
+   "Péricles",
+   "Raça Negra"
+  ],
+  "title": "Segura Essa",
+  "type": "song",
+  "year": 2017,
+  "era_gap": 19.0,
+  "eras": [
+   2023.0,
+   2004
+  ]
+ },
+ {
+  "a1": 372,
+  "a2": 1056,
+  "names": [
+   "Belo",
+   "Só Pra Contrariar"
+  ],
+  "title": "Ao Vivo",
+  "type": "live",
+  "year": 2000,
+  "era_gap": 19.0,
+  "eras": [
+   2019,
+   2000.0
+  ]
+ },
+ {
+  "a1": 1199,
+  "a2": 1274,
+  "names": [
+   "George Strait",
+   "Lee Ann Womack"
+  ],
+  "title": "Good News Bad News",
+  "type": "song",
+  "year": 2007,
+  "era_gap": 19.0,
+  "eras": [
+   2023,
+   2004.0
+  ]
+ },
+ {
+  "a1": 1201,
+  "a2": 5285,
+  "names": [
+   "Shania Twain",
+   "Mark McGrath"
+  ],
+  "title": "Party for Two",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 19.0,
+  "eras": [
+   2023.0,
+   2004
+  ]
+ },
+ {
+  "a1": 1201,
+  "a2": 5286,
+  "names": [
+   "Shania Twain",
+   "Billy Currington"
+  ],
+  "title": "Party for Two (Country Version)",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 19.0,
+  "eras": [
+   2023.0,
+   2004
+  ]
+ },
+ {
+  "a1": 1223,
+  "a2": 1240,
+  "names": [
+   "Dierks Bentley",
+   "Travis Tritt"
+  ],
+  "title": "Lot of Leavin' Left to Do (Live)",
+  "type": "live",
+  "year": 2010,
+  "era_gap": 19.0,
+  "eras": [
+   2018,
+   1999.0
+  ]
+ },
+ {
+  "a1": 137,
+  "a2": 414,
+  "names": [
+   "Kygo",
+   "Whitney Houston"
+  ],
+  "title": "Higher Love",
+  "type": "song",
+  "year": 2019,
+  "era_gap": 19.0,
+  "eras": [
+   2019.0,
+   2000
+  ]
+ },
+ {
+  "a1": 1212,
+  "a2": 1507,
+  "names": [
+   "Nelly",
+   "Kelly Rowland"
+  ],
+  "title": "Dilemma",
+  "type": "song",
+  "year": 2002,
+  "era_gap": 19.0,
+  "eras": [
+   2004.0,
+   2023
+  ]
+ },
+ {
+  "a1": 3230,
+  "a2": 3277,
+  "names": [
+   "Foo Fighters",
+   "Smashing Pumpkins"
+  ],
+  "title": "Starla / Everlong (live)",
+  "type": "live",
+  "year": 2011,
+  "era_gap": 19.0,
+  "eras": [
+   2021,
+   2002.0
+  ]
+ },
+ {
+  "a1": 3241,
+  "a2": 5503,
+  "names": [
+   "The Killers",
+   "Lou Reed"
+  ],
+  "title": "Tranquilize",
+  "type": "song",
+  "year": 2006,
+  "era_gap": 19,
+  "eras": [
+   2025,
+   2006
+  ]
+ },
+ {
+  "a1": 1985,
+  "a2": 3504,
+  "names": [
+   "R. Kelly",
+   "Isley Brothers"
+  ],
+  "title": "Contagious",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 19.0,
+  "eras": [
+   2006,
+   2025.0
+  ]
+ },
+ {
+  "a1": 189,
+  "a2": 3474,
+  "names": [
+   "Erykah Badu",
+   "Q-Tip"
+  ],
+  "title": "Bonita Applebum",
+  "type": "feature",
+  "year": 1990,
+  "era_gap": 19,
+  "eras": [
+   2018,
+   1999
+  ]
+ },
+ {
+  "a1": 3497,
+  "a2": 3498,
+  "names": [
+   "George Clinton",
+   "Bootsy Collins"
+  ],
+  "title": "Stretchin' Out in Bootsy's Rubber Band",
+  "type": "album",
+  "year": 1976,
+  "era_gap": 19.0,
+  "eras": [
+   2023.0,
+   2004
+  ]
+ },
+ {
+  "a1": 1048,
+  "a2": 4073,
+  "names": [
+   "Tim Maia",
+   "Wilson Simonal"
+  ],
+  "title": "Soul Ao Vivo",
+  "type": "live",
+  "year": 2000,
+  "era_gap": 19.0,
+  "eras": [
+   1980,
+   1999.0
+  ]
+ },
+ {
+  "a1": 413,
+  "a2": 5653,
+  "names": [
+   "Prince",
+   "Sheena Easton"
+  ],
+  "title": "U Got the Look",
+  "type": "song",
+  "year": 1987,
+  "era_gap": 19.0,
+  "eras": [
+   1986.0,
+   2005.0
+  ]
+ },
+ {
+  "a1": 907,
+  "a2": 4119,
+  "names": [
+   "Darlene Zschech",
+   "Don Moen"
+  ],
+  "title": "Open the Eyes of My Heart",
+  "type": "live",
+  "year": 2000,
+  "era_gap": 19.0,
+  "eras": [
+   2016.0,
+   1997
+  ]
+ },
+ {
+  "a1": 948,
+  "a2": 949,
+  "names": [
+   "Turma do Pagode",
+   "Art Popular"
+  ],
+  "title": "Amor de Escola",
+  "type": "song",
+  "year": 2007,
+  "era_gap": 19.0,
+  "eras": [
+   2025.0,
+   2006
+  ]
+ },
+ {
+  "a1": 276,
+  "a2": 1045,
+  "names": [
+   "Caetano Veloso",
+   "Erasmo Carlos"
+  ],
+  "title": "Tropicália Revisitada",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 19.0,
+  "eras": [
+   2004.0,
+   2023.0
+  ]
+ },
+ {
+  "a1": 946,
+  "a2": 4980,
+  "names": [
+   "Margareth Menezes",
+   "Luiz Caldas"
+  ],
+  "title": "Axé Bahia",
+  "type": "song",
+  "year": 1989,
+  "era_gap": 19,
+  "eras": [
+   2008,
+   1989
+  ]
+ },
+ {
+  "a1": 350,
+  "a2": 1036,
+  "names": [
+   "Chico Buarque",
+   "Paulinho da Viola"
+  ],
+  "title": "Encontro dos Grandes",
+  "type": "live",
+  "year": 1993,
+  "era_gap": 19.0,
+  "eras": [
+   1981.0,
+   2000
+  ]
+ },
+ {
+  "a1": 1034,
+  "a2": 4983,
+  "names": [
+   "Jorge Aragão",
+   "João Nogueira"
+  ],
+  "title": "Samba de Domingo",
+  "type": "song",
+  "year": 1992,
+  "era_gap": 19.0,
+  "eras": [
+   2013,
+   1994.0
+  ]
+ },
+ {
+  "a1": 350,
+  "a2": 4068,
+  "names": [
+   "Chico Buarque",
+   "João Bosco"
+  ],
+  "title": "Construção de Samba",
+  "type": "song",
+  "year": 1992,
+  "era_gap": 19.0,
+  "eras": [
+   1981.0,
+   2000
+  ]
+ },
+ {
+  "a1": 2124,
+  "a2": 4668,
+  "names": [
+   "The Knife",
+   "Röyksopp"
+  ],
+  "title": "What Else Is There",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 19,
+  "eras": [
+   2005,
+   2024
+  ]
+ },
+ {
+  "a1": 1198,
+  "a2": 5858,
+  "names": [
+   "Johnny Cash",
+   "Rick Rubin"
+  ],
+  "title": "American Recordings",
+  "type": "album",
+  "year": 1994,
+  "era_gap": 19.0,
+  "eras": [
+   1980.0,
+   1999
+  ]
+ },
+ {
+  "a1": 2884,
+  "a2": 2989,
+  "names": [
+   "Thalía",
+   "Olga Tañón"
+  ],
+  "title": "No Hay Amor",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 19.0,
+  "eras": [
+   2020,
+   2001.0
+  ]
+ },
+ {
+  "a1": 3267,
+  "a2": 5175,
+  "names": [
+   "George Harrison",
+   "Jeff Lynne"
+  ],
+  "title": "When We Was Fab",
+  "type": "song",
+  "year": 1987,
+  "era_gap": 19.0,
+  "eras": [
+   1970,
+   1989.0
+  ]
+ },
+ {
+  "a1": 3264,
+  "a2": 5182,
+  "names": [
+   "Bob Dylan",
+   "The Band"
+  ],
+  "title": "Planet Waves",
+  "type": "album",
+  "year": 1974,
+  "era_gap": 19,
+  "eras": [
+   1988,
+   1969
+  ]
+ },
+ {
+  "a1": 3264,
+  "a2": 5183,
+  "names": [
+   "Bob Dylan",
+   "Robbie Robertson"
+  ],
+  "title": "The Basement Tapes",
+  "type": "album",
+  "year": 1975,
+  "era_gap": 19,
+  "eras": [
+   1988,
+   1969
+  ]
+ },
+ {
+  "a1": 146,
+  "a2": 3080,
+  "names": [
+   "Jennifer Lopez",
+   "Ja Rule"
+  ],
+  "title": "I'm Real (Remix)",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 19,
+  "eras": [
+   2020,
+   2001
+  ]
+ },
+ {
+  "a1": 174,
+  "a2": 5993,
+  "names": [
+   "2Pac",
+   "Nate Dogg"
+  ],
+  "title": "All Eyez on Me",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 19,
+  "eras": [
+   2023,
+   2004
+  ]
+ },
+ {
+  "a1": 1380,
+  "a2": 1381,
+  "names": [
+   "Freddie McGregor",
+   "Dennis Brown"
+  ],
+  "title": "Reggae Sunsplash",
+  "type": "live",
+  "year": 1985,
+  "era_gap": 19.0,
+  "eras": [
+   2004.0,
+   2023
+  ]
+ },
+ {
+  "a1": 1212,
+  "a2": 3284,
+  "names": [
+   "Nelly",
+   "Simple Plan"
+  ],
+  "title": "Jet Lag",
+  "type": "song",
+  "year": 2011,
+  "era_gap": 19.0,
+  "eras": [
+   2004.0,
+   2023
+  ]
+ },
+ {
+  "a1": 248,
+  "a2": 1235,
+  "names": [
+   "Willie Nelson",
+   "Toby Keith"
+  ],
+  "title": "Beer for My Horses",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 19.0,
+  "eras": [
+   2022.0,
+   2003
+  ]
+ },
+ {
+  "a1": 2095,
+  "a2": 3813,
+  "names": [
+   "LEA",
+   "Lil' Flip"
+  ],
+  "title": "Sunshine",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 19.0,
+  "eras": [
+   2023,
+   2004.0
+  ]
+ },
+ {
+  "a1": 276,
+  "a2": 5650,
+  "names": [
+   "Caetano Veloso",
+   "David Byrne"
+  ],
+  "title": "Nothing But Flowers (Live)",
+  "type": "live",
+  "year": 1989,
+  "era_gap": 19.0,
+  "eras": [
+   2004.0,
+   2023
+  ]
+ },
+ {
+  "a1": 11,
+  "a2": 55,
+  "names": [
+   "Justin Bieber",
+   "Michael Jackson"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 19.0,
+  "eras": [
+   2010.0,
+   1991
+  ]
+ },
+ {
+  "a1": 345,
+  "a2": 359,
+  "names": [
+   "Marisa Monte",
+   "Mart'nália"
+  ],
+  "title": "Mim Por Mim",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 18.5,
+  "eras": [
+   2005.5,
+   2024
+  ]
+ },
+ {
+  "a1": 352,
+  "a2": 354,
+  "names": [
+   "Elza Soares",
+   "Martinho da Vila"
+  ],
+  "title": "Fla-Flu",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 18.5,
+  "eras": [
+   2016,
+   1997.5
+  ]
+ },
+ {
+  "a1": 345,
+  "a2": 1040,
+  "names": [
+   "Marisa Monte",
+   "Zeca Baleiro"
+  ],
+  "title": "Por Onde Andará Stephen Fry?",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 18.5,
+  "eras": [
+   2005.5,
+   2024.0
+  ]
+ },
+ {
+  "a1": 878,
+  "a2": 1036,
+  "names": [
+   "Teresa Cristina",
+   "Paulinho da Viola"
+  ],
+  "title": "Teresa Cristina",
+  "type": "album",
+  "year": 2004,
+  "era_gap": 18.5,
+  "eras": [
+   2018.5,
+   2000
+  ]
+ },
+ {
+  "a1": 2526,
+  "a2": 3186,
+  "names": [
+   "Marc Anthony",
+   "Gloria Estefan"
+  ],
+  "title": "Mi Tierra",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 18.5,
+  "eras": [
+   2014.5,
+   1996
+  ]
+ },
+ {
+  "a1": 3087,
+  "a2": 3107,
+  "names": [
+   "Pras",
+   "Mýa"
+  ],
+  "title": "Ghetto Superstar",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 18.5,
+  "eras": [
+   1998.0,
+   2016.5
+  ]
+ },
+ {
+  "a1": 3293,
+  "a2": 3294,
+  "names": [
+   "Evanescence",
+   "Amy Lee"
+  ],
+  "title": "Fallen",
+  "type": "album",
+  "year": 2003,
+  "era_gap": 18.5,
+  "eras": [
+   2003,
+   2021.5
+  ]
+ },
+ {
+  "a1": 3426,
+  "a2": 3568,
+  "names": [
+   "Miles Davis",
+   "John McLaughlin"
+  ],
+  "title": "Bitches Brew",
+  "type": "album",
+  "year": 1970,
+  "era_gap": 18.5,
+  "eras": [
+   1969.0,
+   1987.5
+  ]
+ },
+ {
+  "a1": 3421,
+  "a2": 5549,
+  "names": [
+   "Barry White",
+   "Love Unlimited Orchestra"
+  ],
+  "title": "Love's Theme",
+  "type": "song",
+  "year": 1974,
+  "era_gap": 18.5,
+  "eras": [
+   1992.5,
+   1974
+  ]
+ },
+ {
+  "a1": 495,
+  "a2": 3877,
+  "names": [
+   "Youssou N'Dour",
+   "Thomas Mapfumo"
+  ],
+  "title": "African Music Icons",
+  "type": "live",
+  "year": 2007,
+  "era_gap": 18.5,
+  "eras": [
+   2023.0,
+   2004.5
+  ]
+ },
+ {
+  "a1": 4108,
+  "a2": 4231,
+  "names": [
+   "Amy Grant",
+   "Sandi Patty"
+  ],
+  "title": "I Believe in You",
+  "type": "song",
+  "year": 2000,
+  "era_gap": 18.5,
+  "eras": [
+   2014,
+   1995.5
+  ]
+ },
+ {
+  "a1": 354,
+  "a2": 1007,
+  "names": [
+   "Martinho da Vila",
+   "Clara Nunes"
+  ],
+  "title": "Samba Brasil",
+  "type": "song",
+  "year": 1979,
+  "era_gap": 18.5,
+  "eras": [
+   1997.5,
+   1979
+  ]
+ },
+ {
+  "a1": 894,
+  "a2": 964,
+  "names": [
+   "Ana Carolina",
+   "Zizi Possi"
+  ],
+  "title": "Encontro de Vozes",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 18.5,
+  "eras": [
+   2015,
+   1996.5
+  ]
+ },
+ {
+  "a1": 189,
+  "a2": 5554,
+  "names": [
+   "Erykah Badu",
+   "Questlove"
+  ],
+  "title": "Didn't Cha Know (Live)",
+  "type": "song",
+  "year": 1999,
+  "era_gap": 18.5,
+  "eras": [
+   2018,
+   1999.5
+  ]
+ },
+ {
+  "a1": 2434,
+  "a2": 3045,
+  "names": [
+   "Alejandro Sanz",
+   "Miguel Bosé"
+  ],
+  "title": "Labios de Seda",
+  "type": "song",
+  "year": 2006,
+  "era_gap": 18.5,
+  "eras": [
+   2018,
+   1999.5
+  ]
+ },
+ {
+  "a1": 2058,
+  "a2": 2059,
+  "names": [
+   "Azad",
+   "Curse"
+  ],
+  "title": "Gottes Werk und Teufels Beitrag",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 18.5,
+  "eras": [
+   2024,
+   2005.5
+  ]
+ },
+ {
+  "a1": 266,
+  "a2": 853,
+  "names": [
+   "Léo Santana",
+   "Timbalada"
+  ],
+  "title": "Leão (ao vivo)",
+  "type": "live",
+  "year": 2020,
+  "era_gap": 18.5,
+  "eras": [
+   2020.0,
+   2001.5
+  ]
+ },
+ {
+  "a1": 276,
+  "a2": 6415,
+  "names": [
+   "Caetano Veloso",
+   "Ryuichi Sakamoto"
+  ],
+  "title": "É Preciso Perdoar",
+  "type": "song",
+  "year": 2022,
+  "era_gap": 18.5,
+  "eras": [
+   2004.0,
+   2022.5
+  ]
+ },
+ {
+  "a1": 189,
+  "a2": 190,
+  "names": [
+   "Erykah Badu",
+   "D'Angelo"
+  ],
+  "title": "Your Precious Love",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 18,
+  "eras": [
+   2018,
+   2000
+  ]
+ },
+ {
+  "a1": 247,
+  "a2": 1202,
+  "names": [
+   "Dolly Parton",
+   "Garth Brooks"
+  ],
+  "title": "I Will Always Love You (CMA)",
+  "type": "live",
+  "year": 2009,
+  "era_gap": 18.0,
+  "eras": [
+   2023.0,
+   2005
+  ]
+ },
+ {
+  "a1": 3245,
+  "a2": 3265,
+  "names": [
+   "Pearl Jam",
+   "Neil Young"
+  ],
+  "title": "Mirror Ball",
+  "type": "album",
+  "year": 1995,
+  "era_gap": 18.0,
+  "eras": [
+   2005.0,
+   2023
+  ]
+ },
+ {
+  "a1": 3239,
+  "a2": 3248,
+  "names": [
+   "Muse",
+   "Rage Against the Machine"
+  ],
+  "title": "Plug In Baby / Killing in the Name (live mashup)",
+  "type": "live",
+  "year": 2019,
+  "era_gap": 18.0,
+  "eras": [
+   2021.0,
+   2003
+  ]
+ },
+ {
+  "a1": 3317,
+  "a2": 3318,
+  "names": [
+   "In Flames",
+   "Arch Enemy"
+  ],
+  "title": "Scandinavian Metal co-tour",
+  "type": "live",
+  "year": 2004,
+  "era_gap": 18.0,
+  "eras": [
+   2011.0,
+   1993
+  ]
+ },
+ {
+  "a1": 2682,
+  "a2": 3248,
+  "names": [
+   "Tom Morello",
+   "Rage Against the Machine"
+  ],
+  "title": "Evil Empire",
+  "type": "album",
+  "year": 1996,
+  "era_gap": 18,
+  "eras": [
+   2021,
+   2003
+  ]
+ },
+ {
+  "a1": 415,
+  "a2": 1345,
+  "names": [
+   "Lauryn Hill",
+   "Bob Marley"
+  ],
+  "title": "Turn Your Lights Down Low",
+  "type": "song",
+  "year": 1999,
+  "era_gap": 18.0,
+  "eras": [
+   1996,
+   1978.0
+  ]
+ },
+ {
+  "a1": 3465,
+  "a2": 5565,
+  "names": [
+   "Anita Baker",
+   "James Ingram"
+  ],
+  "title": "Whenever I Think of You",
+  "type": "song",
+  "year": 1987,
+  "era_gap": 18.0,
+  "eras": [
+   2005.0,
+   1987
+  ]
+ },
+ {
+  "a1": 4062,
+  "a2": 4064,
+  "names": [
+   "Cidade Negra",
+   "Marcelo Falcão"
+  ],
+  "title": "Tay-Me",
+  "type": "song",
+  "year": 2014,
+  "era_gap": 18.0,
+  "eras": [
+   2003,
+   2021.0
+  ]
+ },
+ {
+  "a1": 353,
+  "a2": 354,
+  "names": [
+   "Zeca Pagodinho",
+   "Martinho da Vila"
+  ],
+  "title": "Dois Sambistas",
+  "type": "live",
+  "year": 1997,
+  "era_gap": 18.0,
+  "eras": [
+   2015.5,
+   1997.5
+  ]
+ },
+ {
+  "a1": 355,
+  "a2": 963,
+  "names": [
+   "Alcione",
+   "Fafá de Belém"
+  ],
+  "title": "Mulheres Brasileiras",
+  "type": "live",
+  "year": 1993,
+  "era_gap": 18,
+  "eras": [
+   2011,
+   1993
+  ]
+ },
+ {
+  "a1": 886,
+  "a2": 1407,
+  "names": [
+   "Zezé Di Camargo & Luciano",
+   "Luciano"
+  ],
+  "title": "Pra Sempre ao Lado",
+  "type": "song",
+  "year": 2009,
+  "era_gap": 18.0,
+  "eras": [
+   2005,
+   2023.0
+  ]
+ },
+ {
+  "a1": 3055,
+  "a2": 3056,
+  "names": [
+   "Benny Ibarra",
+   "OV7"
+  ],
+  "title": "Qué Tal",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 18.0,
+  "eras": [
+   1991.0,
+   2009.0
+  ]
+ },
+ {
+  "a1": 1606,
+  "a2": 5030,
+  "names": [
+   "Elvis Crespo",
+   "Millie Quezada"
+  ],
+  "title": "Merengue en la Piel",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 18,
+  "eras": [
+   2018,
+   2000
+  ]
+ },
+ {
+  "a1": 3441,
+  "a2": 5140,
+  "names": [
+   "Paul Simon",
+   "Simon & Garfunkel"
+  ],
+  "title": "The Sound of Silence",
+  "type": "song",
+  "year": 1965,
+  "era_gap": 18.0,
+  "eras": [
+   1985.5,
+   1967.5
+  ]
+ },
+ {
+  "a1": 3267,
+  "a2": 5173,
+  "names": [
+   "George Harrison",
+   "Traveling Wilburys"
+  ],
+  "title": "End of the Line",
+  "type": "song",
+  "year": 1988,
+  "era_gap": 18,
+  "eras": [
+   1970,
+   1988
+  ]
+ },
+ {
+  "a1": 3264,
+  "a2": 3267,
+  "names": [
+   "Bob Dylan",
+   "George Harrison"
+  ],
+  "title": "I'd Have You Anytime",
+  "type": "song",
+  "year": 1970,
+  "era_gap": 18,
+  "eras": [
+   1988,
+   1970
+  ]
+ },
+ {
+  "a1": 3409,
+  "a2": 3423,
+  "names": [
+   "Smokey Robinson",
+   "Gladys Knight"
+  ],
+  "title": "Neither One of Us",
+  "type": "song",
+  "year": 1973,
+  "era_gap": 18.0,
+  "eras": [
+   2003.0,
+   1985
+  ]
+ },
+ {
+  "a1": 1338,
+  "a2": 5262,
+  "names": [
+   "Linda Ronstadt",
+   "J.D. Souther"
+  ],
+  "title": "Prisoner in Disguise",
+  "type": "album",
+  "year": 1975,
+  "era_gap": 18.0,
+  "eras": [
+   1993.0,
+   1975
+  ]
+ },
+ {
+  "a1": 18,
+  "a2": 3409,
+  "names": [
+   "Bruno Mars",
+   "Smokey Robinson"
+  ],
+  "title": "After All",
+  "type": "song",
+  "year": 2021,
+  "era_gap": 18.0,
+  "eras": [
+   2021,
+   2003.0
+  ]
+ },
+ {
+  "a1": 1855,
+  "a2": 1859,
+  "names": [
+   "Tunisiano",
+   "Alibi Montana"
+  ],
+  "title": "Banlieue Nord",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 18.0,
+  "eras": [
+   2024.0,
+   2006
+  ]
+ },
+ {
+  "a1": 2250,
+  "a2": 2251,
+  "names": [
+   "Javed Akhtar",
+   "Bappi Lahiri"
+  ],
+  "title": "Sharabi",
+  "type": "song",
+  "year": 1984,
+  "era_gap": 18.0,
+  "eras": [
+   1999,
+   1981.0
+  ]
+ },
+ {
+  "a1": 3000,
+  "a2": 5843,
+  "names": [
+   "Molotov",
+   "Cypress Hill"
+  ],
+  "title": "Gimme tha Power (remix)",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 18.0,
+  "eras": [
+   2000,
+   2018.0
+  ]
+ },
+ {
+  "a1": 3039,
+  "a2": 5917,
+  "names": [
+   "Fito y Fitipaldis",
+   "Miguel Ríos"
+  ],
+  "title": "Todo Va a Salir Bien",
+  "type": "song",
+  "year": 2008,
+  "era_gap": 18.0,
+  "eras": [
+   2005.0,
+   2023
+  ]
+ },
+ {
+  "a1": 365,
+  "a2": 1160,
+  "names": [
+   "Ivete Sangalo",
+   "Asa de Águia"
+  ],
+  "title": "Saudade do Nordeste",
+  "type": "song",
+  "year": 2000,
+  "era_gap": 18.0,
+  "eras": [
+   2018.0,
+   2000
+  ]
+ },
+ {
+  "a1": 3807,
+  "a2": 3808,
+  "names": [
+   "E-40",
+   "Too Short"
+  ],
+  "title": "Ain't Nothin' But a Word to Me",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 18.0,
+  "eras": [
+   2014,
+   1996.0
+  ]
+ },
+ {
+  "a1": 129,
+  "a2": 5216,
+  "names": [
+   "P!nk",
+   "Steven Tyler"
+  ],
+  "title": "Misery",
+  "type": "song",
+  "year": 2012,
+  "era_gap": 18.0,
+  "eras": [
+   2017.0,
+   1999.0
+  ]
+ },
+ {
+  "a1": 281,
+  "a2": 351,
+  "names": [
+   "Jorge Ben Jor",
+   "Seu Jorge"
+  ],
+  "title": "Fio Maravilha",
+  "type": "song",
+  "year": 2009,
+  "era_gap": 18,
+  "eras": [
+   1994,
+   2012
+  ]
+ },
+ {
+  "a1": 3237,
+  "a2": 3244,
+  "names": [
+   "Green Day",
+   "Oasis"
+  ],
+  "title": "Live Forever",
+  "type": "live",
+  "year": 2005,
+  "era_gap": 18,
+  "eras": [
+   2013,
+   1995
+  ]
+ },
+ {
+  "a1": 3111,
+  "a2": 3409,
+  "names": [
+   "Lionel Richie",
+   "Smokey Robinson"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 18.0,
+  "eras": [
+   1985.0,
+   2003.0
+  ]
+ },
+ {
+  "a1": 1322,
+  "a2": 5277,
+  "names": [
+   "Kid Rock",
+   "Gretchen Wilson"
+  ],
+  "title": "Bad Feeling",
+  "type": "song",
+  "year": 2017,
+  "era_gap": 18.0,
+  "eras": [
+   2003,
+   2021.0
+  ]
+ },
+ {
+  "a1": 254,
+  "a2": 1028,
+  "names": [
+   "Madonna",
+   "Massive Attack"
+  ],
+  "title": "I Want You",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 18.0,
+  "eras": [
+   2018.0,
+   2000.0
+  ]
+ },
+ {
+  "a1": 5694,
+  "a2": 5695,
+  "names": [
+   "Dave Mustaine",
+   "Megadeth"
+  ],
+  "title": "Dance in the Rain",
+  "type": "feature",
+  "year": 2013,
+  "era_gap": 18.0,
+  "eras": [
+   1998.0,
+   2016
+  ]
+ },
+ {
+  "a1": 140,
+  "a2": 390,
+  "names": [
+   "Anitta",
+   "DJ Marlboro"
+  ],
+  "title": "Tá na Mira",
+  "type": "song",
+  "year": 2013,
+  "era_gap": 17.5,
+  "eras": [
+   2020.0,
+   2002.5
+  ]
+ },
+ {
+  "a1": 345,
+  "a2": 1020,
+  "names": [
+   "Marisa Monte",
+   "Rodrigo Amarante"
+  ],
+  "title": "Infinito ao Meu Redor",
+  "type": "song",
+  "year": 2006,
+  "era_gap": 17.5,
+  "eras": [
+   2005.5,
+   2023
+  ]
+ },
+ {
+  "a1": 1203,
+  "a2": 1310,
+  "names": [
+   "Alan Jackson",
+   "Zac Brown Band"
+  ],
+  "title": "As She's Walking Away",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 17.5,
+  "eras": [
+   2001,
+   2018.5
+  ]
+ },
+ {
+  "a1": 2166,
+  "a2": 2168,
+  "names": [
+   "Zucchero",
+   "Jovanotti"
+  ],
+  "title": "Per un amico",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 17.5,
+  "eras": [
+   2005.5,
+   2023
+  ]
+ },
+ {
+  "a1": 413,
+  "a2": 3483,
+  "names": [
+   "Prince",
+   "Morris Day"
+  ],
+  "title": "Jungle Love",
+  "type": "song",
+  "year": 1984,
+  "era_gap": 17.5,
+  "eras": [
+   1986.0,
+   2003.5
+  ]
+ },
+ {
+  "a1": 354,
+  "a2": 1048,
+  "names": [
+   "Martinho da Vila",
+   "Tim Maia"
+  ],
+  "title": "Encontro de Mestres",
+  "type": "live",
+  "year": 1981,
+  "era_gap": 17.5,
+  "eras": [
+   1997.5,
+   1980
+  ]
+ },
+ {
+  "a1": 944,
+  "a2": 1123,
+  "names": [
+   "É o Tchan!",
+   "Netinho"
+  ],
+  "title": "Na Pista com o Tchan",
+  "type": "song",
+  "year": 2000,
+  "era_gap": 17.5,
+  "eras": [
+   2017.5,
+   2000
+  ]
+ },
+ {
+  "a1": 892,
+  "a2": 4998,
+  "names": [
+   "Ivan Lins",
+   "Leila Pinheiro"
+  ],
+  "title": "Harmonia Perfeita",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 17.5,
+  "eras": [
+   2009.5,
+   1992.0
+  ]
+ },
+ {
+  "a1": 3478,
+  "a2": 3479,
+  "names": [
+   "New Edition",
+   "Bell Biv DeVoe"
+  ],
+  "title": "Poison",
+  "type": "album",
+  "year": 1990,
+  "era_gap": 17.5,
+  "eras": [
+   1989.0,
+   2006.5
+  ]
+ },
+ {
+  "a1": 426,
+  "a2": 5935,
+  "names": [
+   "Wyclef Jean",
+   "Corneille"
+  ],
+  "title": "Un Plan Simple (feature)",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 17.5,
+  "eras": [
+   2006.5,
+   2024.0
+  ]
+ },
+ {
+  "a1": 1369,
+  "a2": 1385,
+  "names": [
+   "Toots and the Maytals",
+   "Third World"
+  ],
+  "title": "Pressure Drop (Tribute)",
+  "type": "live",
+  "year": 2001,
+  "era_gap": 17.5,
+  "eras": [
+   2012.5,
+   1995
+  ]
+ },
+ {
+  "a1": 148,
+  "a2": 1387,
+  "names": [
+   "Sean Paul",
+   "Inner Circle"
+  ],
+  "title": "Games People Play (Remix)",
+  "type": "song",
+  "year": 2007,
+  "era_gap": 17.5,
+  "eras": [
+   2018,
+   2000.5
+  ]
+ },
+ {
+  "a1": 3291,
+  "a2": 3294,
+  "names": [
+   "Seether",
+   "Amy Lee"
+  ],
+  "title": "Broken",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 17.5,
+  "eras": [
+   2004,
+   2021.5
+  ]
+ },
+ {
+  "a1": 413,
+  "a2": 3482,
+  "names": [
+   "Prince",
+   "The Time"
+  ],
+  "title": "Jungle Love",
+  "type": "song",
+  "year": 1984,
+  "era_gap": 17.5,
+  "eras": [
+   1986.0,
+   2003.5
+  ]
+ },
+ {
+  "a1": 3094,
+  "a2": 5161,
+  "names": [
+   "NSYNC",
+   "Phil Collins"
+  ],
+  "title": "Trashin' the Camp",
+  "type": "song",
+  "year": 1999,
+  "era_gap": 17.5,
+  "eras": [
+   2002,
+   1984.5
+  ]
+ },
+ {
+  "a1": 3092,
+  "a2": 3447,
+  "names": [
+   "Celine Dion",
+   "Barbra Streisand"
+  ],
+  "title": "Tell Him",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 17.5,
+  "eras": [
+   1999.0,
+   2016.5
+  ]
+ },
+ {
+  "a1": 119,
+  "a2": 6489,
+  "names": [
+   "Mariah Carey",
+   "Bone Thugs-n-Harmony"
+  ],
+  "title": "Breakdown",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 17.5,
+  "eras": [
+   2006.5,
+   2024
+  ]
+ },
+ {
+  "a1": 119,
+  "a2": 6458,
+  "names": [
+   "Mariah Carey",
+   "Twista"
+  ],
+  "title": "One and Only",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 17.5,
+  "eras": [
+   2006.5,
+   2024.0
+  ]
+ },
+ {
+  "a1": 188,
+  "a2": 415,
+  "names": [
+   "Mary J. Blige",
+   "Lauryn Hill"
+  ],
+  "title": "I Used to Love Him",
+  "type": "feature",
+  "year": 1998,
+  "era_gap": 17,
+  "eras": [
+   2013,
+   1996
+  ]
+ },
+ {
+  "a1": 897,
+  "a2": 960,
+  "names": [
+   "Sandy",
+   "Roberto Carlos"
+  ],
+  "title": "Entre Canções",
+  "type": "song",
+  "year": 2016,
+  "era_gap": 17.0,
+  "eras": [
+   2019.5,
+   2002.5
+  ]
+ },
+ {
+  "a1": 70,
+  "a2": 1663,
+  "names": [
+   "Skrillex",
+   "The Doors"
+  ],
+  "title": "Breakn' a Sweat",
+  "type": "song",
+  "year": 2012,
+  "era_gap": 17.0,
+  "eras": [
+   2023,
+   2006.0
+  ]
+ },
+ {
+  "a1": 2184,
+  "a2": 5476,
+  "names": [
+   "A.R. Rahman",
+   "madhushree"
+  ],
+  "title": "Maa",
+  "type": "song",
+  "year": 2009,
+  "era_gap": 17.0,
+  "eras": [
+   2009.0,
+   2026
+  ]
+ },
+ {
+  "a1": 2878,
+  "a2": 2880,
+  "names": [
+   "Vicente Fernández",
+   "Pepe Aguilar"
+  ],
+  "title": "El Corrido de los Javis",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 17,
+  "eras": [
+   2006,
+   2023
+  ]
+ },
+ {
+  "a1": 3157,
+  "a2": 3158,
+  "names": [
+   "Zion",
+   "Lennox"
+  ],
+  "title": "No Te Vayas",
+  "type": "song",
+  "year": 2007,
+  "era_gap": 17.0,
+  "eras": [
+   2024.0,
+   2007
+  ]
+ },
+ {
+  "a1": 2682,
+  "a2": 3247,
+  "names": [
+   "Tom Morello",
+   "Audioslave"
+  ],
+  "title": "Revelations",
+  "type": "album",
+  "year": 2006,
+  "era_gap": 17.0,
+  "eras": [
+   2021,
+   2004.0
+  ]
+ },
+ {
+  "a1": 197,
+  "a2": 3239,
+  "names": [
+   "Linkin Park",
+   "Muse"
+  ],
+  "title": "Rock AM Ring joint headliners",
+  "type": "live",
+  "year": 2015,
+  "era_gap": 17.0,
+  "eras": [
+   2004.0,
+   2021.0
+  ]
+ },
+ {
+  "a1": 3430,
+  "a2": 3432,
+  "names": [
+   "Frank Sinatra",
+   "Tony Bennett"
+  ],
+  "title": "New York, New York",
+  "type": "song",
+  "year": 1994,
+  "era_gap": 17,
+  "eras": [
+   1993,
+   2010
+  ]
+ },
+ {
+  "a1": 3457,
+  "a2": 3478,
+  "names": [
+   "Bobby Brown",
+   "New Edition"
+  ],
+  "title": "If It Isn't Love",
+  "type": "song",
+  "year": 1988,
+  "era_gap": 17.0,
+  "eras": [
+   2006.0,
+   1989.0
+  ]
+ },
+ {
+  "a1": 909,
+  "a2": 4098,
+  "names": [
+   "Hillsong United",
+   "Hillsong Worship"
+  ],
+  "title": "Open Heaven River Wild",
+  "type": "album",
+  "year": 2018,
+  "era_gap": 17,
+  "eras": [
+   2023,
+   2006
+  ]
+ },
+ {
+  "a1": 4112,
+  "a2": 4113,
+  "names": [
+   "dc Talk",
+   "Rebecca St. James"
+  ],
+  "title": "Jesus Freak Tour",
+  "type": "live",
+  "year": 1996,
+  "era_gap": 17.0,
+  "eras": [
+   1996,
+   2013.0
+  ]
+ },
+ {
+  "a1": 949,
+  "a2": 1000,
+  "names": [
+   "Art Popular",
+   "Grupo Revelação"
+  ],
+  "title": "No Embalo do Samba",
+  "type": "song",
+  "year": 2006,
+  "era_gap": 17,
+  "eras": [
+   2006,
+   2023
+  ]
+ },
+ {
+  "a1": 140,
+  "a2": 841,
+  "names": [
+   "Anitta",
+   "Buchecha"
+  ],
+  "title": "Hoje à Noite",
+  "type": "song",
+  "year": 2014,
+  "era_gap": 17.0,
+  "eras": [
+   2020.0,
+   2003
+  ]
+ },
+ {
+  "a1": 1606,
+  "a2": 2989,
+  "names": [
+   "Elvis Crespo",
+   "Olga Tañón"
+  ],
+  "title": "Resistiré",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 17.0,
+  "eras": [
+   2018,
+   2001.0
+  ]
+ },
+ {
+  "a1": 2526,
+  "a2": 5041,
+  "names": [
+   "Marc Anthony",
+   "Jerry Rivera"
+  ],
+  "title": "El Amor de Mi Vida",
+  "type": "song",
+  "year": 1994,
+  "era_gap": 17.0,
+  "eras": [
+   2014.5,
+   1997.5
+  ]
+ },
+ {
+  "a1": 372,
+  "a2": 5084,
+  "names": [
+   "Belo",
+   "Tabou Combo"
+  ],
+  "title": "Haiti Chérie (Live)",
+  "type": "live",
+  "year": 2010,
+  "era_gap": 17,
+  "eras": [
+   2019,
+   2002
+  ]
+ },
+ {
+  "a1": 1345,
+  "a2": 1385,
+  "names": [
+   "Bob Marley",
+   "Third World"
+  ],
+  "title": "Reggae Sunsplash (Live)",
+  "type": "live",
+  "year": 1979,
+  "era_gap": 17.0,
+  "eras": [
+   1978.0,
+   1995
+  ]
+ },
+ {
+  "a1": 3414,
+  "a2": 5243,
+  "names": [
+   "James Brown",
+   "Bobby Byrd"
+  ],
+  "title": "Please Please Please",
+  "type": "song",
+  "year": 1956,
+  "era_gap": 17,
+  "eras": [
+   1973,
+   1956
+  ]
+ },
+ {
+  "a1": 1855,
+  "a2": 1857,
+  "names": [
+   "Tunisiano",
+   "Sinik"
+  ],
+  "title": "La Banlieue s'embrase",
+  "type": "song",
+  "year": 2006,
+  "era_gap": 17.0,
+  "eras": [
+   2024.0,
+   2007.0
+  ]
+ },
+ {
+  "a1": 52,
+  "a2": 1376,
+  "names": [
+   "Usher",
+   "P. Diddy"
+  ],
+  "title": "I Need a Girl (Part 2)",
+  "type": "song",
+  "year": 2002,
+  "era_gap": 17.0,
+  "eras": [
+   2019.0,
+   2002
+  ]
+ },
+ {
+  "a1": 2225,
+  "a2": 2314,
+  "names": [
+   "Lata Mangeshkar",
+   "K. J. Yesudas"
+  ],
+  "title": "Kali Ghata Chhaye",
+  "type": "song",
+  "year": 1982,
+  "era_gap": 17.0,
+  "eras": [
+   1996.0,
+   1979
+  ]
+ },
+ {
+  "a1": 3282,
+  "a2": 5482,
+  "names": [
+   "Sum 41",
+   "Iggy Pop"
+  ],
+  "title": "Little Know It All",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 17,
+  "eras": [
+   2004,
+   2021
+  ]
+ },
+ {
+  "a1": 3675,
+  "a2": 6141,
+  "names": [
+   "D Double E",
+   "Flirta D"
+  ],
+  "title": "Bluku Bluku",
+  "type": "song",
+  "year": 2006,
+  "era_gap": 17.0,
+  "eras": [
+   2023.0,
+   2006
+  ]
+ },
+ {
+  "a1": 2251,
+  "a2": 2287,
+  "names": [
+   "Bappi Lahiri",
+   "Usha Uthup"
+  ],
+  "title": "Chalte Chalte",
+  "type": "song",
+  "year": 1976,
+  "era_gap": 17.0,
+  "eras": [
+   1981.0,
+   1998
+  ]
+ },
+ {
+  "a1": 2313,
+  "a2": 2321,
+  "names": [
+   "S. P. Balasubrahmanyam",
+   "Harris Jayaraj"
+  ],
+  "title": "Maanada Mayilada",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 17.0,
+  "eras": [
+   2024,
+   2007.0
+  ]
+ },
+ {
+  "a1": 197,
+  "a2": 2682,
+  "names": [
+   "Linkin Park",
+   "Tom Morello"
+  ],
+  "title": "Weapon of Choice",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 17.0,
+  "eras": [
+   2004.0,
+   2021
+  ]
+ },
+ {
+  "a1": 18,
+  "a2": 3274,
+  "names": [
+   "Bruno Mars",
+   "Eddie Vedder"
+  ],
+  "title": "Just the Way You Are (Live)",
+  "type": "live",
+  "year": 2013,
+  "era_gap": 17.0,
+  "eras": [
+   2021,
+   2004.0
+  ]
+ },
+ {
+  "a1": 3138,
+  "a2": 3439,
+  "names": [
+   "Olivia Rodrigo",
+   "Billy Joel"
+  ],
+  "title": "Piano Man (Live)",
+  "type": "live",
+  "year": 2022,
+  "era_gap": 17.0,
+  "eras": [
+   2023.0,
+   2006
+  ]
+ },
+ {
+  "a1": 1550,
+  "a2": 6447,
+  "names": [
+   "Timbaland",
+   "Tink"
+  ],
+  "title": "Treat Me Like Somebody",
+  "type": "song",
+  "year": 2014,
+  "era_gap": 17.0,
+  "eras": [
+   2007,
+   2024.0
+  ]
+ },
+ {
+  "a1": 167,
+  "a2": 3475,
+  "names": [
+   "Nas",
+   "A Tribe Called Quest"
+  ],
+  "title": "One Love (Live)",
+  "type": "live",
+  "year": 2017,
+  "era_gap": 17.0,
+  "eras": [
+   2021,
+   2004.0
+  ]
+ },
+ {
+  "a1": 18,
+  "a2": 3498,
+  "names": [
+   "Bruno Mars",
+   "Bootsy Collins"
+  ],
+  "title": "After Last Night",
+  "type": "song",
+  "year": 2021,
+  "era_gap": 17,
+  "eras": [
+   2021,
+   2004
+  ]
+ },
+ {
+  "a1": 2016,
+  "a2": 3628,
+  "names": [
+   "Aurora",
+   "The Chemical Brothers"
+  ],
+  "title": "Eve of Destruction",
+  "type": "feature",
+  "year": 2019,
+  "era_gap": 17.0,
+  "eras": [
+   2019.0,
+   2002
+  ]
+ },
+ {
+  "a1": 5503,
+  "a2": 5764,
+  "names": [
+   "Lou Reed",
+   "John Cale"
+  ],
+  "title": "Songs for Drella",
+  "type": "album",
+  "year": 1990,
+  "era_gap": 17.0,
+  "eras": [
+   2006,
+   2023.0
+  ]
+ },
+ {
+  "a1": 6033,
+  "a2": 6696,
+  "names": [
+   "The Clash",
+   "Mikey Dread"
+  ],
+  "title": "Bankrobber",
+  "type": "song",
+  "year": 1980,
+  "era_gap": 17.0,
+  "eras": [
+   1997.0,
+   1980
+  ]
+ },
+ {
+  "a1": 115,
+  "a2": 119,
+  "names": [
+   "Latto",
+   "Mariah Carey"
+  ],
+  "title": "Big Energy (Remix)",
+  "type": "song",
+  "year": 2022,
+  "era_gap": 16.5,
+  "eras": [
+   2023.0,
+   2006.5
+  ]
+ },
+ {
+  "a1": 119,
+  "a2": 176,
+  "names": [
+   "Mariah Carey",
+   "Busta Rhymes"
+  ],
+  "title": "I Know What You Want",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 16.5,
+  "eras": [
+   2006.5,
+   2023.0
+  ]
+ },
+ {
+  "a1": 333,
+  "a2": 422,
+  "names": [
+   "Charlie Brown Jr.",
+   "Negra Li"
+  ],
+  "title": "Não É Sério (Acústico MTV)",
+  "type": "live",
+  "year": 2003,
+  "era_gap": 16.5,
+  "eras": [
+   2003,
+   2019.5
+  ]
+ },
+ {
+  "a1": 268,
+  "a2": 390,
+  "names": [
+   "MC Kevinho",
+   "DJ Marlboro"
+  ],
+  "title": "Festa do Creu",
+  "type": "song",
+  "year": 2017,
+  "era_gap": 16.5,
+  "eras": [
+   2019,
+   2002.5
+  ]
+ },
+ {
+  "a1": 277,
+  "a2": 997,
+  "names": [
+   "Gilberto Gil",
+   "Baiana System"
+  ],
+  "title": "O Futuro Pertence às Crianças",
+  "type": "song",
+  "year": 2017,
+  "era_gap": 16.5,
+  "eras": [
+   2000.5,
+   2017
+  ]
+ },
+ {
+  "a1": 426,
+  "a2": 1358,
+  "names": [
+   "Wyclef Jean",
+   "Stephen Marley"
+  ],
+  "title": "Made in Africa",
+  "type": "song",
+  "year": 2007,
+  "era_gap": 16.5,
+  "eras": [
+   2006.5,
+   2023.0
+  ]
+ },
+ {
+  "a1": 2165,
+  "a2": 2166,
+  "names": [
+   "Elisa",
+   "Zucchero"
+  ],
+  "title": "Ogni Volta",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 16.5,
+  "eras": [
+   2022,
+   2005.5
+  ]
+ },
+ {
+  "a1": 3824,
+  "a2": 3825,
+  "names": [
+   "Yvonne Chaka Chaka",
+   "Miriam Makeba"
+  ],
+  "title": "African Queens",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 16.5,
+  "eras": [
+   2006.5,
+   2023
+  ]
+ },
+ {
+  "a1": 426,
+  "a2": 1381,
+  "names": [
+   "Wyclef Jean",
+   "Dennis Brown"
+  ],
+  "title": "Two Sounds",
+  "type": "song",
+  "year": 1999,
+  "era_gap": 16.5,
+  "eras": [
+   2006.5,
+   2023
+  ]
+ },
+ {
+  "a1": 2682,
+  "a2": 3630,
+  "names": [
+   "Tom Morello",
+   "The Prodigy"
+  ],
+  "title": "One Man Army",
+  "type": "song",
+  "year": 2015,
+  "era_gap": 16.5,
+  "eras": [
+   2021,
+   2004.5
+  ]
+ },
+ {
+  "a1": 5087,
+  "a2": 5092,
+  "names": [
+   "Jacob Desvarieux",
+   "Gilles Floro"
+  ],
+  "title": "Gwadeloupe Festival (Live)",
+  "type": "live",
+  "year": 2004,
+  "era_gap": 16.5,
+  "eras": [
+   1986.0,
+   2002.5
+  ]
+ },
+ {
+  "a1": 37,
+  "a2": 3185,
+  "names": [
+   "Shakira",
+   "Juan Luis Guerra"
+  ],
+  "title": "La Nina",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 16.5,
+  "eras": [
+   2021.5,
+   2005.0
+  ]
+ },
+ {
+  "a1": 2185,
+  "a2": 2321,
+  "names": [
+   "Shreya Ghoshal",
+   "Harris Jayaraj"
+  ],
+  "title": "Vinnaithaandi Varuvaayaa",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 16.5,
+  "eras": [
+   2023.5,
+   2007.0
+  ]
+ },
+ {
+  "a1": 90,
+  "a2": 119,
+  "names": [
+   "Ty Dolla $ign",
+   "Mariah Carey"
+  ],
+  "title": "With You",
+  "type": "song",
+  "year": 2019,
+  "era_gap": 16.5,
+  "eras": [
+   2023.0,
+   2006.5
+  ]
+ },
+ {
+  "a1": 426,
+  "a2": 2101,
+  "names": [
+   "Wyclef Jean",
+   "Sarah Connor"
+  ],
+  "title": "One Nite Stand (Of Wolves and Sheep)",
+  "type": "feature",
+  "year": 2002,
+  "era_gap": 16.5,
+  "eras": [
+   2006.5,
+   2023
+  ]
+ },
+ {
+  "a1": 2234,
+  "a2": 2241,
+  "names": [
+   "Shaan",
+   "Shankar-Ehsaan-Loy"
+  ],
+  "title": "Koi Kahe Kehta Rahe",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 16.5,
+  "eras": [
+   2023.5,
+   2007
+  ]
+ },
+ {
+  "a1": 119,
+  "a2": 3732,
+  "names": [
+   "Mariah Carey",
+   "Jadakiss"
+  ],
+  "title": "We Belong Together (Remix)",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 16.5,
+  "eras": [
+   2006.5,
+   2023
+  ]
+ },
+ {
+  "a1": 140,
+  "a2": 276,
+  "names": [
+   "Anitta",
+   "Caetano Veloso"
+  ],
+  "title": "Você Mentiu",
+  "type": "song",
+  "year": 2021,
+  "era_gap": 16.0,
+  "eras": [
+   2020.0,
+   2004.0
+  ]
+ },
+ {
+  "a1": 365,
+  "a2": 873,
+  "names": [
+   "Ivete Sangalo",
+   "Banda Eva"
+  ],
+  "title": "Eva ao Vivo",
+  "type": "live",
+  "year": 2016,
+  "era_gap": 16.0,
+  "eras": [
+   2018.0,
+   2002
+  ]
+ },
+ {
+  "a1": 286,
+  "a2": 968,
+  "names": [
+   "Racionais MC's",
+   "Ice Blue"
+  ],
+  "title": "Sobrevivendo no Inferno",
+  "type": "album",
+  "year": 1997,
+  "era_gap": 16,
+  "eras": [
+   2013,
+   1997
+  ]
+ },
+ {
+  "a1": 286,
+  "a2": 969,
+  "names": [
+   "Racionais MC's",
+   "Edi Rock"
+  ],
+  "title": "Sobrevivendo no Inferno",
+  "type": "album",
+  "year": 1997,
+  "era_gap": 16,
+  "eras": [
+   2013,
+   1997
+  ]
+ },
+ {
+  "a1": 286,
+  "a2": 970,
+  "names": [
+   "Racionais MC's",
+   "KL Jay"
+  ],
+  "title": "Sobrevivendo no Inferno",
+  "type": "album",
+  "year": 1997,
+  "era_gap": 16,
+  "eras": [
+   2013,
+   1997
+  ]
+ },
+ {
+  "a1": 374,
+  "a2": 1001,
+  "names": [
+   "Xande de Pilares",
+   "Arlindo Cruz"
+  ],
+  "title": "Sambas de Enredo",
+  "type": "album",
+  "year": 2010,
+  "era_gap": 16.0,
+  "eras": [
+   2025,
+   2009.0
+  ]
+ },
+ {
+  "a1": 279,
+  "a2": 1042,
+  "names": [
+   "Maria Bethânia",
+   "Pedro Mariano"
+  ],
+  "title": "Teatro dos Sonhos",
+  "type": "live",
+  "year": 2007,
+  "era_gap": 16,
+  "eras": [
+   2023,
+   2007
+  ]
+ },
+ {
+  "a1": 973,
+  "a2": 988,
+  "names": [
+   "Sabotage",
+   "MV Bill"
+  ],
+  "title": "Holocausto Urbano",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 16,
+  "eras": [
+   2003,
+   2019
+  ]
+ },
+ {
+  "a1": 207,
+  "a2": 1690,
+  "names": [
+   "Tiësto",
+   "BT"
+  ],
+  "title": "Love Comes Again",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 16.0,
+  "eras": [
+   2020.0,
+   2004
+  ]
+ },
+ {
+  "a1": 3270,
+  "a2": 3330,
+  "names": [
+   "Dave Grohl",
+   "Queens of the Stone Age"
+  ],
+  "title": "Songs for the Deaf",
+  "type": "album",
+  "year": 2002,
+  "era_gap": 16.0,
+  "eras": [
+   2023,
+   2007.0
+  ]
+ },
+ {
+  "a1": 3409,
+  "a2": 3410,
+  "names": [
+   "Smokey Robinson",
+   "Aretha Franklin"
+  ],
+  "title": "Ooo Baby Baby",
+  "type": "song",
+  "year": 1979,
+  "era_gap": 16.0,
+  "eras": [
+   2003.0,
+   1987
+  ]
+ },
+ {
+  "a1": 3360,
+  "a2": 3425,
+  "names": [
+   "Norah Jones",
+   "Herbie Hancock"
+  ],
+  "title": "The River",
+  "type": "song",
+  "year": 2007,
+  "era_gap": 16.0,
+  "eras": [
+   2023,
+   2007.0
+  ]
+ },
+ {
+  "a1": 3425,
+  "a2": 5545,
+  "names": [
+   "Herbie Hancock",
+   "John Mayer"
+  ],
+  "title": "Stitched Up",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 16.0,
+  "eras": [
+   2007.0,
+   2023
+  ]
+ },
+ {
+  "a1": 3414,
+  "a2": 3416,
+  "names": [
+   "James Brown",
+   "Kool & the Gang"
+  ],
+  "title": "Back on the Block",
+  "type": "feature",
+  "year": 1989,
+  "era_gap": 16,
+  "eras": [
+   1973,
+   1989
+  ]
+ },
+ {
+  "a1": 3425,
+  "a2": 5576,
+  "names": [
+   "Herbie Hancock",
+   "Joni Mitchell"
+  ],
+  "title": "River",
+  "type": "song",
+  "year": 2007,
+  "era_gap": 16.0,
+  "eras": [
+   2007.0,
+   2023
+  ]
+ },
+ {
+  "a1": 1010,
+  "a2": 1040,
+  "names": [
+   "Lenine",
+   "Zeca Baleiro"
+  ],
+  "title": "São Luís do Maranhão",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 16.0,
+  "eras": [
+   2008,
+   2024.0
+  ]
+ },
+ {
+  "a1": 997,
+  "a2": 4087,
+  "names": [
+   "Baiana System",
+   "Lazzo Matumbi"
+  ],
+  "title": "Afro Baiano Ao Vivo",
+  "type": "live",
+  "year": 2012,
+  "era_gap": 16.0,
+  "eras": [
+   2017,
+   2001.0
+  ]
+ },
+ {
+  "a1": 2535,
+  "a2": 2976,
+  "names": [
+   "Café Quijano",
+   "Carlos Vives"
+  ],
+  "title": "Pargo con panela",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 16.0,
+  "eras": [
+   2004,
+   2020.0
+  ]
+ },
+ {
+  "a1": 3408,
+  "a2": 3531,
+  "names": [
+   "The Temptations",
+   "David Ruffin"
+  ],
+  "title": "My Girl",
+  "type": "song",
+  "year": 1964,
+  "era_gap": 16.0,
+  "eras": [
+   1968.0,
+   1984.0
+  ]
+ },
+ {
+  "a1": 2976,
+  "a2": 5057,
+  "names": [
+   "Carlos Vives",
+   "Guaco"
+  ],
+  "title": "A Ritmo del Corazón",
+  "type": "song",
+  "year": 2000,
+  "era_gap": 16.0,
+  "eras": [
+   2020.0,
+   2004.0
+  ]
+ },
+ {
+  "a1": 2891,
+  "a2": 2996,
+  "names": [
+   "Maná",
+   "Rubén Blades"
+  ],
+  "title": "El Sol No Regresa",
+  "type": "song",
+  "year": 2011,
+  "era_gap": 16.0,
+  "eras": [
+   2007.0,
+   2023
+  ]
+ },
+ {
+  "a1": 2434,
+  "a2": 5067,
+  "names": [
+   "Alejandro Sanz",
+   "Rosario Flores"
+  ],
+  "title": "De Verdad",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 16,
+  "eras": [
+   2018,
+   2002
+  ]
+ },
+ {
+  "a1": 2184,
+  "a2": 2320,
+  "names": [
+   "A.R. Rahman",
+   "Sid Sriram"
+  ],
+  "title": "Vaa Vaa",
+  "type": "song",
+  "year": 2020,
+  "era_gap": 16.0,
+  "eras": [
+   2009.0,
+   2025.0
+  ]
+ },
+ {
+  "a1": 365,
+  "a2": 1067,
+  "names": [
+   "Ivete Sangalo",
+   "Cheiro de Amor"
+  ],
+  "title": "Sorte Grande",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 16.0,
+  "eras": [
+   2018.0,
+   2002
+  ]
+ },
+ {
+  "a1": 1711,
+  "a2": 3652,
+  "names": [
+   "Missy Elliott",
+   "Mel B"
+  ],
+  "title": "I Want You Back",
+  "type": "song",
+  "year": 1998,
+  "era_gap": 16,
+  "eras": [
+   2014,
+   1998
+  ]
+ },
+ {
+  "a1": 1327,
+  "a2": 6174,
+  "names": [
+   "Mary Chapin Carpenter",
+   "Joan Baez"
+  ],
+  "title": "Stones in the Road (Live)",
+  "type": "live",
+  "year": 1995,
+  "era_gap": 16.0,
+  "eras": [
+   1993.5,
+   2009.5
+  ]
+ },
+ {
+  "a1": 188,
+  "a2": 3812,
+  "names": [
+   "Mary J. Blige",
+   "The LOX"
+  ],
+  "title": "Can't Get You Off My Mind",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 16,
+  "eras": [
+   2013,
+   1997
+  ]
+ },
+ {
+  "a1": 5,
+  "a2": 3082,
+  "names": [
+   "Beyoncé",
+   "Lil' Kim"
+  ],
+  "title": "Lighters Up (Remix)",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 16,
+  "eras": [
+   2017,
+   2001
+  ]
+ },
+ {
+  "a1": 42,
+  "a2": 5534,
+  "names": [
+   "Coldplay",
+   "Noel Gallagher"
+  ],
+  "title": "Talk (Remix)",
+  "type": "song",
+  "year": 2005,
+  "era_gap": 16,
+  "eras": [
+   2021,
+   2005
+  ]
+ },
+ {
+  "a1": 129,
+  "a2": 3082,
+  "names": [
+   "P!nk",
+   "Lil' Kim"
+  ],
+  "title": "Lady Marmalade",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 16.0,
+  "eras": [
+   2017.0,
+   2001
+  ]
+ },
+ {
+  "a1": 11,
+  "a2": 6536,
+  "names": [
+   "Justin Bieber",
+   "Jamie Foxx"
+  ],
+  "title": "We Are the World",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 16.0,
+  "eras": [
+   2010.0,
+   2026
+  ]
+ },
+ {
+  "a1": 1358,
+  "a2": 1361,
+  "names": [
+   "Stephen Marley",
+   "Capleton"
+  ],
+  "title": "Rock Stone",
+  "type": "song",
+  "year": 2011,
+  "era_gap": 16.0,
+  "eras": [
+   2023.0,
+   2007
+  ]
+ },
+ {
+  "a1": 1550,
+  "a2": 6280,
+  "names": [
+   "Timbaland",
+   "UGK"
+  ],
+  "title": "Big Pimpin",
+  "type": "song",
+  "year": 2000,
+  "era_gap": 16.0,
+  "eras": [
+   2007,
+   2023.0
+  ]
+ },
+ {
+  "a1": 1550,
+  "a2": 1561,
+  "names": [
+   "Timbaland",
+   "W&W"
+  ],
+  "title": "Cry Me a River",
+  "type": "song",
+  "year": 2002,
+  "era_gap": 16,
+  "eras": [
+   2007,
+   2023
+  ]
+ },
+ {
+  "a1": 293,
+  "a2": 960,
+  "names": [
+   "Luan Santana",
+   "Roberto Carlos"
+  ],
+  "title": "Emoções",
+  "type": "live",
+  "year": 2016,
+  "era_gap": 15.5,
+  "eras": [
+   2018,
+   2002.5
+  ]
+ },
+ {
+  "a1": 1203,
+  "a2": 1234,
+  "names": [
+   "Alan Jackson",
+   "Jimmy Buffett"
+  ],
+  "title": "It's Five O'Clock Somewhere",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 15.5,
+  "eras": [
+   2001,
+   2016.5
+  ]
+ },
+ {
+  "a1": 3082,
+  "a2": 3107,
+  "names": [
+   "Lil' Kim",
+   "Mýa"
+  ],
+  "title": "Lady Marmalade",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 15.5,
+  "eras": [
+   2001,
+   2016.5
+  ]
+ },
+ {
+  "a1": 54,
+  "a2": 414,
+  "names": [
+   "Stevie Wonder",
+   "Whitney Houston"
+  ],
+  "title": "We Didn't Know",
+  "type": "song",
+  "year": 1987,
+  "era_gap": 15.5,
+  "eras": [
+   2015.5,
+   2000
+  ]
+ },
+ {
+  "a1": 353,
+  "a2": 1036,
+  "names": [
+   "Zeca Pagodinho",
+   "Paulinho da Viola"
+  ],
+  "title": "Samba de Raiz",
+  "type": "live",
+  "year": 2000,
+  "era_gap": 15.5,
+  "eras": [
+   2015.5,
+   2000
+  ]
+ },
+ {
+  "a1": 54,
+  "a2": 348,
+  "names": [
+   "Stevie Wonder",
+   "Djavan"
+  ],
+  "title": "Samurai",
+  "type": "song",
+  "year": 1985,
+  "era_gap": 15.5,
+  "eras": [
+   2015.5,
+   2000.0
+  ]
+ },
+ {
+  "a1": 4116,
+  "a2": 4117,
+  "names": [
+   "Matt Redman",
+   "Tim Hughes"
+  ],
+  "title": "10,000 Reasons",
+  "type": "live",
+  "year": 2012,
+  "era_gap": 15.5,
+  "eras": [
+   2002.5,
+   2018.0
+  ]
+ },
+ {
+  "a1": 327,
+  "a2": 328,
+  "names": [
+   "Legião Urbana",
+   "Titãs"
+  ],
+  "title": "Geração Perdida",
+  "type": "live",
+  "year": 1991,
+  "era_gap": 15.5,
+  "eras": [
+   1988,
+   2003.5
+  ]
+ },
+ {
+  "a1": 1509,
+  "a2": 5818,
+  "names": [
+   "Kylie Minogue",
+   "The Feeling"
+  ],
+  "title": "Sentimental",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 15.5,
+  "eras": [
+   2023.5,
+   2008.0
+  ]
+ },
+ {
+  "a1": 3430,
+  "a2": 5580,
+  "names": [
+   "Frank Sinatra",
+   "Lou Rawls"
+  ],
+  "title": "L-O-V-E (Duets)",
+  "type": "song",
+  "year": 1993,
+  "era_gap": 15.5,
+  "eras": [
+   1993,
+   1977.5
+  ]
+ },
+ {
+  "a1": 3186,
+  "a2": 5034,
+  "names": [
+   "Gloria Estefan",
+   "Miriam Cruz"
+  ],
+  "title": "I'm Not Giving You Up (Spanish)",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 15.5,
+  "eras": [
+   1996,
+   2011.5
+  ]
+ },
+ {
+  "a1": 5013,
+  "a2": 5096,
+  "names": [
+   "Kassav'",
+   "Fanny J"
+  ],
+  "title": "Mwen Sonjé",
+  "type": "song",
+  "year": 2008,
+  "era_gap": 15.5,
+  "eras": [
+   1995.5,
+   2011
+  ]
+ },
+ {
+  "a1": 1359,
+  "a2": 1384,
+  "names": [
+   "Chronixx",
+   "Culture"
+  ],
+  "title": "Roots Rock Tribute (Live)",
+  "type": "live",
+  "year": 2015,
+  "era_gap": 15.5,
+  "eras": [
+   2014.5,
+   1999
+  ]
+ },
+ {
+  "a1": 5152,
+  "a2": 5154,
+  "names": [
+   "Peter Cetera",
+   "Terry Kath"
+  ],
+  "title": "Does Anybody Really Know What Time It Is?",
+  "type": "song",
+  "year": 1969,
+  "era_gap": 15.5,
+  "eras": [
+   1985.0,
+   1969.5
+  ]
+ },
+ {
+  "a1": 128,
+  "a2": 1181,
+  "names": [
+   "Christina Aguilera",
+   "Blake Shelton"
+  ],
+  "title": "Just a Fool",
+  "type": "song",
+  "year": 2012,
+  "era_gap": 15.5,
+  "eras": [
+   2006.5,
+   2022.0
+  ]
+ },
+ {
+  "a1": 175,
+  "a2": 5996,
+  "names": [
+   "The Notorious B.I.G.",
+   "Total"
+  ],
+  "title": "Can't You See",
+  "type": "song",
+  "year": 1995,
+  "era_gap": 15.5,
+  "eras": [
+   2025,
+   2009.5
+  ]
+ },
+ {
+  "a1": 639,
+  "a2": 3672,
+  "names": [
+   "Wiley",
+   "Pay As U Go"
+  ],
+  "title": "Know We",
+  "type": "song",
+  "year": 2002,
+  "era_gap": 15.5,
+  "eras": [
+   2017.5,
+   2002.0
+  ]
+ },
+ {
+  "a1": 277,
+  "a2": 352,
+  "names": [
+   "Gilberto Gil",
+   "Elza Soares"
+  ],
+  "title": "Aquarela do Brasil (Live)",
+  "type": "live",
+  "year": 2018,
+  "era_gap": 15.5,
+  "eras": [
+   2000.5,
+   2016
+  ]
+ },
+ {
+  "a1": 119,
+  "a2": 6340,
+  "names": [
+   "Mariah Carey",
+   "Jennifer Hudson"
+  ],
+  "title": "Save the Day",
+  "type": "song",
+  "year": 2020,
+  "era_gap": 15.5,
+  "eras": [
+   2006.5,
+   2022.0
+  ]
+ },
+ {
+  "a1": 1445,
+  "a2": 6675,
+  "names": [
+   "Ali Campbell",
+   "Pato Banton"
+  ],
+  "title": "Baby Come Back",
+  "type": "feature",
+  "year": 1994,
+  "era_gap": 15.5,
+  "eras": [
+   1993.5,
+   2009.0
+  ]
+ },
+ {
+  "a1": 55,
+  "a2": 6710,
+  "names": [
+   "Michael Jackson",
+   "Jimmie Wilson"
+  ],
+  "title": "Sisterella",
+  "type": "live",
+  "year": 1996,
+  "era_gap": 15.5,
+  "eras": [
+   1991,
+   2006.5
+  ]
+ },
+ {
+  "a1": 368,
+  "a2": 853,
+  "names": [
+   "Bell Marques",
+   "Timbalada"
+  ],
+  "title": "Carnaval",
+  "type": "song",
+  "year": 2019,
+  "era_gap": 15.5,
+  "eras": [
+   2017.0,
+   2001.5
+  ]
+ },
+ {
+  "a1": 390,
+  "a2": 704,
+  "names": [
+   "DJ Marlboro",
+   "MC Bin Laden"
+  ],
+  "title": "Loka",
+  "type": "song",
+  "year": 2018,
+  "era_gap": 15.0,
+  "eras": [
+   2002.5,
+   2017.5
+  ]
+ },
+ {
+  "a1": 361,
+  "a2": 951,
+  "names": [
+   "Thiaguinho",
+   "Raça Negra"
+  ],
+  "title": "Não Precisa Mais de Você",
+  "type": "song",
+  "year": 2015,
+  "era_gap": 15,
+  "eras": [
+   2019,
+   2004
+  ]
+ },
+ {
+  "a1": 258,
+  "a2": 1272,
+  "names": [
+   "Tim McGraw",
+   "Jo Dee Messina"
+  ],
+  "title": "Bring On the Rain",
+  "type": "song",
+  "year": 2001,
+  "era_gap": 15,
+  "eras": [
+   2016,
+   2001
+  ]
+ },
+ {
+  "a1": 148,
+  "a2": 5297,
+  "names": [
+   "Sean Paul",
+   "Blu Cantrell"
+  ],
+  "title": "Breathe",
+  "type": "song",
+  "year": 2003,
+  "era_gap": 15,
+  "eras": [
+   2018,
+   2003
+  ]
+ },
+ {
+  "a1": 1362,
+  "a2": 1408,
+  "names": [
+   "Sizzla",
+   "Anthony B"
+  ],
+  "title": "Fire Pon Rome",
+  "type": "song",
+  "year": 2008,
+  "era_gap": 15.0,
+  "eras": [
+   2008,
+   2023.0
+  ]
+ },
+ {
+  "a1": 2184,
+  "a2": 2313,
+  "names": [
+   "A.R. Rahman",
+   "S. P. Balasubrahmanyam"
+  ],
+  "title": "Roja Jaaneman",
+  "type": "song",
+  "year": 1992,
+  "era_gap": 15.0,
+  "eras": [
+   2009.0,
+   2024
+  ]
+ },
+ {
+  "a1": 2184,
+  "a2": 2224,
+  "names": [
+   "A.R. Rahman",
+   "Alka Yagnik"
+  ],
+  "title": "Aaj Ki Raat",
+  "type": "song",
+  "year": 1997,
+  "era_gap": 15.0,
+  "eras": [
+   2009.0,
+   2024.0
+  ]
+ },
+ {
+  "a1": 2184,
+  "a2": 5396,
+  "names": [
+   "A.R. Rahman",
+   "S P B Junior"
+  ],
+  "title": "Urvasi Urvasi",
+  "type": "song",
+  "year": 1994,
+  "era_gap": 15.0,
+  "eras": [
+   2009.0,
+   1994
+  ]
+ },
+ {
+  "a1": 95,
+  "a2": 5534,
+  "names": [
+   "Gorillaz",
+   "Noel Gallagher"
+  ],
+  "title": "We Got the Power",
+  "type": "song",
+  "year": 2017,
+  "era_gap": 15,
+  "eras": [
+   2020,
+   2005
+  ]
+ },
+ {
+  "a1": 494,
+  "a2": 3898,
+  "names": [
+   "Fally Ipupa",
+   "Maison Mere"
+  ],
+  "title": "Kinshasian Night",
+  "type": "song",
+  "year": 2008,
+  "era_gap": 15.0,
+  "eras": [
+   2024.0,
+   2009.0
+  ]
+ },
+ {
+  "a1": 3825,
+  "a2": 3827,
+  "names": [
+   "Miriam Makeba",
+   "Ladysmith Black Mambazo"
+  ],
+  "title": "Isicathamiya Soul",
+  "type": "song",
+  "year": 2002,
+  "era_gap": 15.0,
+  "eras": [
+   2023,
+   2008.0
+  ]
+ },
+ {
+  "a1": 966,
+  "a2": 3970,
+  "names": [
+   "Banda Magníficos",
+   "Ximbinha"
+  ],
+  "title": "Forró da Bahia",
+  "type": "song",
+  "year": 2011,
+  "era_gap": 15.0,
+  "eras": [
+   2024,
+   2009.0
+  ]
+ },
+ {
+  "a1": 147,
+  "a2": 414,
+  "names": [
+   "Enrique Iglesias",
+   "Whitney Houston"
+  ],
+  "title": "Could I Have This Kiss Forever",
+  "type": "song",
+  "year": 2000,
+  "era_gap": 15,
+  "eras": [
+   2015,
+   2000
+  ]
+ },
+ {
+  "a1": 4129,
+  "a2": 4133,
+  "names": [
+   "Shirley Caesar",
+   "The Clark Sisters"
+  ],
+  "title": "You Brought the Sunshine",
+  "type": "live",
+  "year": 2015,
+  "era_gap": 15.0,
+  "eras": [
+   2002.5,
+   2017.5
+  ]
+ },
+ {
+  "a1": 4130,
+  "a2": 4167,
+  "names": [
+   "BeBe Winans",
+   "Alex Boyé"
+  ],
+  "title": "I Love Him Too Much",
+  "type": "song",
+  "year": 2014,
+  "era_gap": 15.0,
+  "eras": [
+   2002,
+   2017.0
+  ]
+ },
+ {
+  "a1": 1907,
+  "a2": 4493,
+  "names": [
+   "Faudel",
+   "Balti"
+  ],
+  "title": "Maghreb Fusion",
+  "type": "song",
+  "year": 2016,
+  "era_gap": 15.0,
+  "eras": [
+   2001.0,
+   2016
+  ]
+ },
+ {
+  "a1": 367,
+  "a2": 873,
+  "names": [
+   "Claudia Leitte",
+   "Banda Eva"
+  ],
+  "title": "Eva de Todas as Eras",
+  "type": "song",
+  "year": 2007,
+  "era_gap": 15.0,
+  "eras": [
+   2017.0,
+   2002
+  ]
+ },
+ {
+  "a1": 1007,
+  "a2": 4983,
+  "names": [
+   "Clara Nunes",
+   "João Nogueira"
+  ],
+  "title": "Homenagem da Samba",
+  "type": "song",
+  "year": 1980,
+  "era_gap": 15.0,
+  "eras": [
+   1979,
+   1994.0
+  ]
+ },
+ {
+  "a1": 346,
+  "a2": 997,
+  "names": [
+   "Carlinhos Brown",
+   "Baiana System"
+  ],
+  "title": "Baiana Roots",
+  "type": "song",
+  "year": 2016,
+  "era_gap": 15,
+  "eras": [
+   2002,
+   2017
+  ]
+ },
+ {
+  "a1": 70,
+  "a2": 5683,
+  "names": [
+   "Skrillex",
+   "Kaskade"
+  ],
+  "title": "Lick It",
+  "type": "song",
+  "year": 2011,
+  "era_gap": 15,
+  "eras": [
+   2023,
+   2008
+  ]
+ },
+ {
+  "a1": 2976,
+  "a2": 3036,
+  "names": [
+   "Carlos Vives",
+   "Los Amigos Invisibles"
+  ],
+  "title": "Sopa de Caracol Remix",
+  "type": "song",
+  "year": 2004,
+  "era_gap": 15.0,
+  "eras": [
+   2020.0,
+   2005.0
+  ]
+ },
+ {
+  "a1": 2998,
+  "a2": 3036,
+  "names": [
+   "Juanes",
+   "Los Amigos Invisibles"
+  ],
+  "title": "La Logia",
+  "type": "song",
+  "year": 2006,
+  "era_gap": 15.0,
+  "eras": [
+   2020,
+   2005.0
+  ]
+ },
+ {
+  "a1": 5013,
+  "a2": 5095,
+  "names": [
+   "Kassav'",
+   "Dj Assad"
+  ],
+  "title": "Zouk Remix",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 15.0,
+  "eras": [
+   1995.5,
+   2010.5
+  ]
+ },
+ {
+  "a1": 109,
+  "a2": 204,
+  "names": [
+   "2 Chainz",
+   "Pharrell"
+  ],
+  "title": "Feds Watching",
+  "type": "song",
+  "year": 2013,
+  "era_gap": 15.0,
+  "eras": [
+   2023,
+   2008.0
+  ]
+ },
+ {
+  "a1": 1476,
+  "a2": 1477,
+  "names": [
+   "Collie Buddz",
+   "Matisyahu"
+  ],
+  "title": "Go Away",
+  "type": "song",
+  "year": 2012,
+  "era_gap": 15.0,
+  "eras": [
+   2023.0,
+   2008
+  ]
+ },
+ {
+  "a1": 1894,
+  "a2": 5934,
+  "names": [
+   "Mylène Farmer",
+   "Moby"
+  ],
+  "title": "Slipping Away",
+  "type": "song",
+  "year": 2006,
+  "era_gap": 15.0,
+  "eras": [
+   2008.0,
+   2023
+  ]
+ },
+ {
+  "a1": 1375,
+  "a2": 1894,
+  "names": [
+   "Sting",
+   "Mylène Farmer"
+  ],
+  "title": "Stolen Car",
+  "type": "song",
+  "year": 2010,
+  "era_gap": 15.0,
+  "eras": [
+   2023.0,
+   2008.0
+  ]
+ },
+ {
+  "a1": 1549,
+  "a2": 2019,
+  "names": [
+   "Nelly Furtado",
+   "James Morrison"
+  ],
+  "title": "Please Don't Stop the Rain",
+  "type": "song",
+  "year": 2008,
+  "era_gap": 15.0,
+  "eras": [
+   2023.0,
+   2008
+  ]
+ },
+ {
+  "a1": 2231,
+  "a2": 2294,
+  "names": [
+   "Hariharan",
+   "Colonial Cousins"
+  ],
+  "title": "Krishna Nee Begane",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 15,
+  "eras": [
+   2011,
+   1996
+  ]
+ },
+ {
+  "a1": 2882,
+  "a2": 3187,
+  "names": [
+   "Marco Antonio Solís",
+   "Ana Gabriel"
+  ],
+  "title": "Tú Eres Todo",
+  "type": "song",
+  "year": 2002,
+  "era_gap": 15.0,
+  "eras": [
+   2013.0,
+   1998.0
+  ]
+ },
+ {
+  "a1": 4,
+  "a2": 3083,
+  "names": [
+   "Jay-Z",
+   "Foxy Brown"
+  ],
+  "title": "Ain't No Nigga",
+  "type": "song",
+  "year": 1996,
+  "era_gap": 15.0,
+  "eras": [
+   2011.0,
+   1996
+  ]
+ },
+ {
+  "a1": 48,
+  "a2": 3299,
+  "names": [
+   "Miley Cyrus",
+   "Marilyn Manson"
+  ],
+  "title": "The Needle Lies (Live)",
+  "type": "live",
+  "year": 2015,
+  "era_gap": 15.0,
+  "eras": [
+   2016.0,
+   2001
+  ]
+ },
+ {
+  "a1": 55,
+  "a2": 3561,
+  "names": [
+   "Michael Jackson",
+   "George Duke"
+  ],
+  "title": "Off the Wall",
+  "type": "album",
+  "year": 1979,
+  "era_gap": 15,
+  "eras": [
+   1991,
+   1976
+  ]
+ },
+ {
+  "a1": 1358,
+  "a2": 1362,
+  "names": [
+   "Stephen Marley",
+   "Sizzla"
+  ],
+  "title": "Rock Stone",
+  "type": "song",
+  "year": 2011,
+  "era_gap": 15.0,
+  "eras": [
+   2023.0,
+   2008
+  ]
+ }
+]

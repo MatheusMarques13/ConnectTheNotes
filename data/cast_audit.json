@@ -33002,5 +33002,4430 @@
   ],
   "not_credited": [],
   "recordings_matched": 1
+ },
+ "take care|2011": {
+  "verdict": "clean",
+  "title": "Take Care",
+  "year": 2011
+ },
+ "what a time to be alive|2015": {
+  "verdict": "not-found",
+  "title": "What a Time to Be Alive",
+  "year": 2015
+ },
+ "her loss|2022": {
+  "verdict": "not-found",
+  "title": "Her Loss",
+  "year": 2022
+ },
+ "the motto|2011": {
+  "verdict": "clean",
+  "title": "The Motto",
+  "year": 2011
+ },
+ "right here|2012": {
+  "verdict": "clean",
+  "title": "Right Here",
+  "year": 2012
+ },
+ "poetic justice|2012": {
+  "verdict": "clean",
+  "title": "Poetic Justice",
+  "year": 2012
+ },
+ "churchill downs|2022": {
+  "verdict": "clean",
+  "title": "Churchill Downs",
+  "year": 2022
+ },
+ "slime you out|2023": {
+  "verdict": "clean",
+  "title": "Slime You Out",
+  "year": 2023
+ },
+ "crew love|2011": {
+  "verdict": "clean",
+  "title": "Crew Love",
+  "year": 2011
+ },
+ "popstar|2020": {
+  "verdict": "clean",
+  "title": "POPSTAR",
+  "year": 2020
+ },
+ "walk it talk it|2018": {
+  "verdict": "clean",
+  "title": "Walk It Talk It",
+  "year": 2018
+ },
+ "chicago freestyle|2020": {
+  "verdict": "clean",
+  "title": "Chicago Freestyle",
+  "year": 2020
+ },
+ "don t matter to me|2018": {
+  "verdict": "clean",
+  "title": "Don't Matter to Me",
+  "year": 2018
+ },
+ "ain t no nigga|1996": {
+  "verdict": "clean",
+  "title": "Ain't No Nigga",
+  "year": 1996
+ },
+ "the closer i get to you|2003": {
+  "verdict": "clean",
+  "title": "The Closer I Get to You",
+  "year": 2003
+ },
+ "bada bing|2017": {
+  "verdict": "not-found",
+  "title": "Bada Bing",
+  "year": 2017
+ },
+ "finer things|2024": {
+  "verdict": "clean",
+  "title": "Finer Things",
+  "year": 2024
+ },
+ "just the way you are|2013": {
+  "verdict": "not-found",
+  "title": "Just the Way You Are (Live)",
+  "year": 2013
+ },
+ "don t think they know|2014": {
+  "verdict": "clean",
+  "title": "Don't Think They Know",
+  "year": 2014
+ },
+ "bamboleo|2000": {
+  "verdict": "not-found",
+  "title": "Bamboleo (Latin Grammy Live)",
+  "year": 2000
+ },
+ "illegal|2006": {
+  "verdict": "clean",
+  "title": "Illegal",
+  "year": 2006
+ },
+ "la nina|2010": {
+  "verdict": "not-found",
+  "title": "La Nina",
+  "year": 2010
+ },
+ "si tu no vuelves|1993": {
+  "verdict": "clean",
+  "title": "Si Tú No Vuelves",
+  "year": 1993
+ },
+ "talk|2005": {
+  "verdict": "not-found",
+  "title": "Talk (Remix)",
+  "year": 2005
+ },
+ "the needle lies|2015": {
+  "verdict": "not-found",
+  "title": "The Needle Lies (Live)",
+  "year": 2015
+ },
+ "don t go breaking my heart live|2000": {
+  "verdict": "not-found",
+  "title": "Don't Go Breaking My Heart (with Bob Dylan) live",
+  "year": 2000
+ },
+ "november rain|1992": {
+  "verdict": "clean",
+  "title": "November Rain (live)",
+  "year": 1992
+ },
+ "through the storm|1989": {
+  "verdict": "clean",
+  "title": "Through the Storm",
+  "year": 1989
+ },
+ "the bitch is back|1993": {
+  "verdict": "no-joint-recording",
+  "title": "The Bitch Is Back",
+  "year": 1993,
+  "cast": [
+   "Elton John",
+   "Tina Turner"
+  ],
+  "ids": [
+   53,
+   1664
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "goodbye yellow brick road|1973": {
+  "verdict": "no-joint-recording",
+  "title": "Goodbye Yellow Brick Road",
+  "year": 1973,
+  "cast": [
+   "Elton John",
+   "Bernie Taupin"
+  ],
+  "ids": [
+   53,
+   5196
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "written in the stars|1999": {
+  "verdict": "clean",
+  "title": "Written in the Stars",
+  "year": 1999
+ },
+ "in private|1989": {
+  "verdict": "clean",
+  "title": "In Private",
+  "year": 1989
+ },
+ "just good friends|1987": {
+  "verdict": "clean",
+  "title": "Just Good Friends",
+  "year": 1987,
+  "cast": [
+   "Stevie Wonder",
+   "Michael Jackson"
+  ],
+  "ids": [
+   54,
+   55
+  ],
+  "not_credited": [],
+  "recordings_matched": 3,
+  "rechecked": true,
+  "rescued_by": "526c6bf4-7f21-4ea8-9f8d-0f06f0e8517a"
+ },
+ "for once in my life|1994": {
+  "verdict": "no-joint-recording",
+  "title": "For Once in My Life",
+  "year": 1994,
+  "cast": [
+   "Stevie Wonder",
+   "Frank Sinatra"
+  ],
+  "ids": [
+   54,
+   3430
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "we didn t know|1987": {
+  "verdict": "clean",
+  "title": "We Didn't Know",
+  "year": 1987
+ },
+ "so what the fuss|2004": {
+  "verdict": "clean",
+  "title": "So What the Fuss",
+  "year": 2004
+ },
+ "samurai|1985": {
+  "verdict": "clean",
+  "title": "Samurai",
+  "year": 1985
+ },
+ "scream and shout|2012": {
+  "verdict": "no-joint-recording",
+  "title": "Scream and Shout",
+  "year": 2012,
+  "cast": [
+   "Michael Jackson",
+   "will.i.am"
+  ],
+  "ids": [
+   55,
+   126
+  ],
+  "not_credited": [],
+  "recordings_matched": 24,
+  "rechecked": true
+ },
+ "scream|1995": {
+  "verdict": "clean",
+  "title": "Scream",
+  "year": 1995
+ },
+ "give in to me|1991": {
+  "verdict": "clean",
+  "title": "Give In to Me",
+  "year": 1991,
+  "cast": [
+   "Michael Jackson",
+   "Slash"
+  ],
+  "ids": [
+   55,
+   5852
+  ],
+  "not_credited": [],
+  "recordings_matched": 24,
+  "rechecked": true,
+  "rescued_by": "9da81bcf-cc3b-4b8f-b02f-48a962899074"
+ },
+ "another day|2001": {
+  "verdict": "clean",
+  "title": "Another Day",
+  "year": 2001
+ },
+ "hold my hand|2010": {
+  "verdict": "clean",
+  "title": "Hold My Hand",
+  "year": 2010
+ },
+ "love never felt so good|2014": {
+  "verdict": "clean",
+  "title": "Love Never Felt So Good",
+  "year": 2014
+ },
+ "sisterella|1996": {
+  "verdict": "not-found",
+  "title": "Sisterella",
+  "year": 1996
+ },
+ "billie jean|2019": {
+  "verdict": "not-found",
+  "title": "Billie Jean (Solomun Remix)",
+  "year": 2019
+ },
+ "breakn a sweat|2012": {
+  "verdict": "clean",
+  "title": "Breakn' a Sweat",
+  "year": 2012
+ },
+ "lick it|2011": {
+  "verdict": "clean",
+  "title": "Lick It",
+  "year": 2011
+ },
+ "hero|2014": {
+  "verdict": "not-found",
+  "title": "Hero",
+  "year": 2014
+ },
+ "life on mars|2016": {
+  "verdict": "no-joint-recording",
+  "title": "Life on Mars? (live)",
+  "year": 2016,
+  "cast": [
+   "Lorde",
+   "David Bowie"
+  ],
+  "ids": [
+   77,
+   1027
+  ],
+  "not_credited": [],
+  "recordings_matched": 6,
+  "rechecked": true
+ },
+ "november has come|2005": {
+  "verdict": "no-joint-recording",
+  "title": "November Has Come",
+  "year": 2005,
+  "cast": [
+   "Gorillaz",
+   "Mos Def"
+  ],
+  "ids": [
+   95,
+   1788
+  ],
+  "not_credited": [],
+  "recordings_matched": 13,
+  "rechecked": true
+ },
+ "we got the power|2017": {
+  "verdict": "clean",
+  "title": "We Got the Power",
+  "year": 2017,
+  "cast": [
+   "Gorillaz",
+   "Noel Gallagher"
+  ],
+  "ids": [
+   95,
+   5534
+  ],
+  "not_credited": [],
+  "recordings_matched": 4,
+  "rechecked": true,
+  "rescued_by": "10709c0b-9352-4d03-8c90-2b6f825c7072"
+ },
+ "i will survive|2023": {
+  "verdict": "not-found",
+  "title": "I Will Survive (live)",
+  "year": 2023
+ },
+ "feds watching|2013": {
+  "verdict": "no-joint-recording",
+  "title": "Feds Watching",
+  "year": 2013,
+  "cast": [
+   "2 Chainz",
+   "Pharrell"
+  ],
+  "ids": [
+   109,
+   204
+  ],
+  "not_credited": [],
+  "recordings_matched": 4,
+  "rechecked": true
+ },
+ "i know what you want|2003": {
+  "verdict": "clean",
+  "title": "I Know What You Want",
+  "year": 2003
+ },
+ "endless love|2020": {
+  "verdict": "not-found",
+  "title": "Endless Love (live tribute)",
+  "year": 2020
+ },
+ "breakdown|1997": {
+  "verdict": "clean",
+  "title": "Breakdown",
+  "year": 1997
+ },
+ "one and only|2005": {
+  "verdict": "clean",
+  "title": "One and Only",
+  "year": 2005
+ },
+ "get low|2002": {
+  "verdict": "no-joint-recording",
+  "title": "Get Low",
+  "year": 2002,
+  "cast": [
+   "Lil Jon",
+   "Ying Yang Twins"
+  ],
+  "ids": [
+   125,
+   5963
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "blow the whistle|2006": {
+  "verdict": "not-found",
+  "title": "Blow the Whistle",
+  "year": 2006
+ },
+ "just a fool|2012": {
+  "verdict": "clean",
+  "title": "Just a Fool",
+  "year": 2012
+ },
+ "misery|2012": {
+  "verdict": "clean",
+  "title": "Misery",
+  "year": 2012
+ },
+ "higher love|2019": {
+  "verdict": "clean",
+  "title": "Higher Love",
+  "year": 2019
+ },
+ "what s love got to do with it|2020": {
+  "verdict": "clean",
+  "title": "What's Love Got to Do with It",
+  "year": 2020
+ },
+ "voce mentiu|2021": {
+  "verdict": "clean",
+  "title": "Você Mentiu",
+  "year": 2021
+ },
+ "ta na mira|2013": {
+  "verdict": "no-joint-recording",
+  "title": "Tá na Mira",
+  "year": 2013,
+  "cast": [
+   "Anitta",
+   "DJ Marlboro"
+  ],
+  "ids": [
+   140,
+   390
+  ],
+  "not_credited": [],
+  "recordings_matched": 3,
+  "rechecked": true
+ },
+ "nao faz diferenca|2019": {
+  "verdict": "not-found",
+  "title": "Não Faz Diferença",
+  "year": 2019
+ },
+ "hoje a noite|2014": {
+  "verdict": "not-found",
+  "title": "Hoje à Noite",
+  "year": 2014
+ },
+ "get on your feet|2020": {
+  "verdict": "not-found",
+  "title": "Get On Your Feet (Live)",
+  "year": 2020
+ },
+ "i m real|2001": {
+  "verdict": "clean",
+  "title": "I'm Real (Remix)",
+  "year": 2001
+ },
+ "could i have this kiss forever|2000": {
+  "verdict": "clean",
+  "title": "Could I Have This Kiss Forever",
+  "year": 2000
+ },
+ "breathe|2003": {
+  "verdict": "clean",
+  "title": "Breathe",
+  "year": 2003
+ },
+ "games people play|2007": {
+  "verdict": "not-found",
+  "title": "Games People Play (Remix)",
+  "year": 2007
+ },
+ "qb s finest|2000": {
+  "verdict": "not-found",
+  "title": "QB's Finest",
+  "year": 2000
+ },
+ "phone tap|1997": {
+  "verdict": "clean",
+  "title": "Phone Tap",
+  "year": 1997
+ },
+ "one love|1994": {
+  "verdict": "clean",
+  "title": "One Love",
+  "year": 1994,
+  "cast": [
+   "Nas",
+   "Q-Tip"
+  ],
+  "ids": [
+   167,
+   3474
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true,
+  "rescued_by": "b8eab959-42e6-45a5-92cc-ef9f6ef9015c"
+ },
+ "one love|2017": {
+  "verdict": "no-joint-recording",
+  "title": "One Love (Live)",
+  "year": 2017,
+  "cast": [
+   "Nas",
+   "A Tribe Called Quest"
+  ],
+  "ids": [
+   167,
+   3475
+  ],
+  "not_credited": [],
+  "recordings_matched": 2,
+  "rechecked": true
+ },
+ "all eyez on me|1996": {
+  "verdict": "no-joint-recording",
+  "title": "All Eyez on Me",
+  "year": 1996,
+  "cast": [
+   "2Pac",
+   "Nate Dogg"
+  ],
+  "ids": [
+   174,
+   5993
+  ],
+  "not_credited": [],
+  "recordings_matched": 16,
+  "rechecked": true
+ },
+ "how do u want it|1996": {
+  "verdict": "no-joint-recording",
+  "title": "How Do U Want It",
+  "year": 1996,
+  "cast": [
+   "2Pac",
+   "KC and JoJo"
+  ],
+  "ids": [
+   174,
+   5994
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "i m a mack|1996": {
+  "verdict": "not-found",
+  "title": "I'm a Mack",
+  "year": 1996
+ },
+ "get money|1996": {
+  "verdict": "clean",
+  "title": "Get Money",
+  "year": 1996
+ },
+ "can t you see|1995": {
+  "verdict": "clean",
+  "title": "Can't You See",
+  "year": 1995
+ },
+ "victory|1998": {
+  "verdict": "no-joint-recording",
+  "title": "Victory",
+  "year": 1998,
+  "cast": [
+   "The Notorious B.I.G.",
+   "P. Diddy"
+  ],
+  "ids": [
+   175,
+   1376
+  ],
+  "not_credited": [],
+  "recordings_matched": 14,
+  "rechecked": true
+ },
+ "dolly my baby|1993": {
+  "verdict": "clean",
+  "title": "Dolly My Baby",
+  "year": 1993
+ },
+ "respect|1994": {
+  "verdict": "clean",
+  "title": "Respect",
+  "year": 1994,
+  "cast": [
+   "The Notorious B.I.G.",
+   "Diana King"
+  ],
+  "ids": [
+   175,
+   1435
+  ],
+  "not_credited": [],
+  "recordings_matched": 5,
+  "rechecked": true,
+  "rescued_by": "3f0becd5-c548-4c62-8ac1-33bb7db05a2b"
+ },
+ "the introduction|1998": {
+  "verdict": "not-found",
+  "title": "The Introduction",
+  "year": 1998
+ },
+ "i used to love him|1998": {
+  "verdict": "not-found",
+  "title": "I Used to Love Him",
+  "year": 1998
+ },
+ "can t get you off my mind|1997": {
+  "verdict": "not-found",
+  "title": "Can't Get You Off My Mind",
+  "year": 1997
+ },
+ "your precious love|1998": {
+  "verdict": "clean",
+  "title": "Your Precious Love",
+  "year": 1998
+ },
+ "jazzmatazz vol ii|1995": {
+  "verdict": "not-found",
+  "title": "Jazzmatazz Vol. II",
+  "year": 1995
+ },
+ "bonita applebum|1990": {
+  "verdict": "not-found",
+  "title": "Bonita Applebum",
+  "year": 1990
+ },
+ "didn t cha know|1999": {
+  "verdict": "not-found",
+  "title": "Didn't Cha Know (Live)",
+  "year": 1999
+ },
+ "a light that never comes|2013": {
+  "verdict": "clean",
+  "title": "A Light That Never Comes",
+  "year": 2013
+ },
+ "rock am ring joint headliners|2015": {
+  "verdict": "not-found",
+  "title": "Rock AM Ring joint headliners",
+  "year": 2015
+ },
+ "weapon of choice|2010": {
+  "verdict": "not-found",
+  "title": "Weapon of Choice",
+  "year": 2010
+ },
+ "portland oregon|2004": {
+  "verdict": "clean",
+  "title": "Portland Oregon",
+  "year": 2004
+ },
+ "love comes again|2004": {
+  "verdict": "no-joint-recording",
+  "title": "Love Comes Again",
+  "year": 2004,
+  "cast": [
+   "Tiësto",
+   "BT"
+  ],
+  "ids": [
+   207,
+   1690
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "rockin years|1991": {
+  "verdict": "clean",
+  "title": "rockin' years",
+  "year": 1991
+ },
+ "i will always love you|2009": {
+  "verdict": "not-found",
+  "title": "I Will Always Love You (CMA)",
+  "year": 2009
+ },
+ "to all the girls i ve loved before|1984": {
+  "verdict": "clean",
+  "title": "To All the Girls I've Loved Before",
+  "year": 1984
+ },
+ "beer for my horses|2003": {
+  "verdict": "clean",
+  "title": "Beer for My Horses",
+  "year": 2003
+ },
+ "old friends|1982": {
+  "verdict": "clean",
+  "title": "Old Friends",
+  "year": 1982
+ },
+ "stop draggin my heart around|1981": {
+  "verdict": "no-joint-recording",
+  "title": "Stop Draggin' My Heart Around",
+  "year": 1981,
+  "cast": [
+   "Stevie Nicks",
+   "Tom Petty"
+  ],
+  "ids": [
+   253,
+   3262
+  ],
+  "not_credited": [],
+  "recordings_matched": 17,
+  "rechecked": true
+ },
+ "leather and lace|1981": {
+  "verdict": "no-joint-recording",
+  "title": "Leather and Lace",
+  "year": 1981,
+  "cast": [
+   "Stevie Nicks",
+   "Don Henley"
+  ],
+  "ids": [
+   253,
+   5125
+  ],
+  "not_credited": [],
+  "recordings_matched": 23,
+  "rechecked": true
+ },
+ "ordinary day|2002": {
+  "verdict": "not-found",
+  "title": "Ordinary Day (performed together)",
+  "year": 2002
+ },
+ "rumours|1977": {
+  "verdict": "not-found",
+  "title": "Rumours",
+  "year": 1977
+ },
+ "love song|1989": {
+  "verdict": "clean",
+  "title": "Love Song",
+  "year": 1989,
+  "cast": [
+   "Madonna",
+   "Prince"
+  ],
+  "ids": [
+   254,
+   413
+  ],
+  "not_credited": [],
+  "recordings_matched": 2,
+  "rechecked": true,
+  "rescued_by": "4a7e1fa7-658d-48c7-ada0-dc98cf964def"
+ },
+ "hung up|2005": {
+  "verdict": "no-joint-recording",
+  "title": "Hung Up",
+  "year": 2005,
+  "cast": [
+   "Madonna",
+   "Benny Andersson"
+  ],
+  "ids": [
+   254,
+   5149
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "i want you|1995": {
+  "verdict": "clean",
+  "title": "I Want You",
+  "year": 1995
+ },
+ "a hard day s night|1964": {
+  "verdict": "no-joint-recording",
+  "title": "A Hard Day's Night",
+  "year": 1964,
+  "cast": [
+   "Paul McCartney",
+   "George Harrison"
+  ],
+  "ids": [
+   255,
+   3267
+  ],
+  "not_credited": [],
+  "recordings_matched": 4,
+  "rechecked": true
+ },
+ "get back|1969": {
+  "verdict": "no-joint-recording",
+  "title": "Get Back",
+  "year": 1969,
+  "cast": [
+   "Paul McCartney",
+   "Billy Preston"
+  ],
+  "ids": [
+   255,
+   5248
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "hey jude|1968": {
+  "verdict": "no-joint-recording",
+  "title": "Hey Jude",
+  "year": 1968,
+  "cast": [
+   "Paul McCartney",
+   "John Lennon"
+  ],
+  "ids": [
+   255,
+   3266
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "bring on the rain|2001": {
+  "verdict": "clean",
+  "title": "Bring On the Rain",
+  "year": 2001
+ },
+ "glamurosa|2019": {
+  "verdict": "not-found",
+  "title": "Glamurosa",
+  "year": 2019
+ },
+ "festa do creu|2017": {
+  "verdict": "not-found",
+  "title": "Festa do Creu",
+  "year": 2017
+ },
+ "xande canta caetano|2023": {
+  "verdict": "not-found",
+  "title": "Xande Canta Caetano",
+  "year": 2023
+ },
+ "tropicalia revisitada|1997": {
+  "verdict": "not-found",
+  "title": "Tropicália Revisitada",
+  "year": 1997
+ },
+ "brincadeira de tocar|1997": {
+  "verdict": "not-found",
+  "title": "Brincadeira de Tocar",
+  "year": 1997
+ },
+ "nothing but flowers|1989": {
+  "verdict": "not-found",
+  "title": "Nothing But Flowers (Live)",
+  "year": 1989
+ },
+ "a novidade|1986": {
+  "verdict": "no-joint-recording",
+  "title": "A Novidade",
+  "year": 1986,
+  "cast": [
+   "Gilberto Gil",
+   "Ney Matogrosso"
+  ],
+  "ids": [
+   277,
+   344
+  ],
+  "not_credited": [],
+  "recordings_matched": 14,
+  "rechecked": true
+ },
+ "soul tropical|1979": {
+  "verdict": "not-found",
+  "title": "Soul Tropical",
+  "year": 1979
+ },
+ "no woman no cry|1980": {
+  "verdict": "no-joint-recording",
+  "title": "No Woman No Cry (Live)",
+  "year": 1980,
+  "cast": [
+   "Gilberto Gil",
+   "Bob Marley"
+  ],
+  "ids": [
+   277,
+   1345
+  ],
+  "not_credited": [],
+  "recordings_matched": 11,
+  "rechecked": true
+ },
+ "we ll be together|1987": {
+  "verdict": "not-found",
+  "title": "We'll Be Together (Live)",
+  "year": 1987
+ },
+ "aquarela do brasil|2018": {
+  "verdict": "not-found",
+  "title": "Aquarela do Brasil (Live)",
+  "year": 2018
+ },
+ "via sacra|2018": {
+  "verdict": "not-found",
+  "title": "Via Sacra",
+  "year": 2018
+ },
+ "gal canta caymmi|1976": {
+  "verdict": "not-found",
+  "title": "Gal Canta Caymmi",
+  "year": 1976
+ },
+ "alibi|1978": {
+  "verdict": "no-joint-recording",
+  "title": "Álibi",
+  "year": 1978,
+  "cast": [
+   "Maria Bethânia",
+   "Djavan"
+  ],
+  "ids": [
+   279,
+   348
+  ],
+  "not_credited": [],
+  "recordings_matched": 7,
+  "rechecked": true
+ },
+ "brasil com s|1996": {
+  "verdict": "not-found",
+  "title": "Brasil com S",
+  "year": 1996
+ },
+ "vozes do brasil|2016": {
+  "verdict": "not-found",
+  "title": "Vozes do Brasil",
+  "year": 2016
+ },
+ "teatro dos sonhos|2007": {
+  "verdict": "not-found",
+  "title": "Teatro dos Sonhos",
+  "year": 2007
+ },
+ "fio maravilha|2009": {
+  "verdict": "no-joint-recording",
+  "title": "Fio Maravilha",
+  "year": 2009,
+  "cast": [
+   "Jorge Ben Jor",
+   "Seu Jorge"
+  ],
+  "ids": [
+   281,
+   351
+  ],
+  "not_credited": [],
+  "recordings_matched": 3,
+  "rechecked": true
+ },
+ "emocoes|2016": {
+  "verdict": "no-joint-recording",
+  "title": "Emoções",
+  "year": 2016,
+  "cast": [
+   "Luan Santana",
+   "Roberto Carlos"
+  ],
+  "ids": [
+   293,
+   960
+  ],
+  "not_credited": [],
+  "recordings_matched": 12,
+  "rechecked": true
+ },
+ "geracao perdida|1991": {
+  "verdict": "not-found",
+  "title": "Geração Perdida",
+  "year": 1991
+ },
+ "uma brasileira|1995": {
+  "verdict": "not-found",
+  "title": "Uma Brasileira",
+  "year": 1995
+ },
+ "mpb e rock|2004": {
+  "verdict": "not-found",
+  "title": "MPB e Rock",
+  "year": 2004
+ },
+ "nao e serio|2003": {
+  "verdict": "not-found",
+  "title": "Não É Sério (Acústico MTV)",
+  "year": 2003
+ },
+ "o tempo nao para|1988": {
+  "verdict": "no-joint-recording",
+  "title": "O Tempo Não Para",
+  "year": 1988,
+  "cast": [
+   "Cazuza",
+   "Ney Matogrosso"
+  ],
+  "ids": [
+   335,
+   344
+  ],
+  "not_credited": [],
+  "recordings_matched": 16,
+  "rechecked": true
+ },
+ "amigos de palco|2007": {
+  "verdict": "not-found",
+  "title": "Amigos de Palco",
+  "year": 2007
+ },
+ "rockeiros brasileiros|2008": {
+  "verdict": "not-found",
+  "title": "Rockeiros Brasileiros",
+  "year": 2008
+ },
+ "mim por mim|2004": {
+  "verdict": "not-found",
+  "title": "Mim Por Mim",
+  "year": 2004
+ },
+ "baiana roots|2016": {
+  "verdict": "not-found",
+  "title": "Baiana Roots",
+  "year": 2016
+ },
+ "clube da esquina ao vivo|2003": {
+  "verdict": "not-found",
+  "title": "Clube da Esquina Ao Vivo",
+  "year": 2003
+ },
+ "clube da esquina|1972": {
+  "verdict": "clean",
+  "title": "Clube da Esquina",
+  "year": 1972
+ },
+ "papo de mae|2004": {
+  "verdict": "not-found",
+  "title": "Papo de Mãe",
+  "year": 2004
+ },
+ "especial roberto carlos e chico|1984": {
+  "verdict": "not-found",
+  "title": "Especial Roberto Carlos e Chico",
+  "year": 1984
+ },
+ "encontro dos grandes|1993": {
+  "verdict": "not-found",
+  "title": "Encontro dos Grandes",
+  "year": 1993
+ },
+ "a mais querida|1980": {
+  "verdict": "not-found",
+  "title": "A Mais Querida",
+  "year": 1980
+ },
+ "cantando classicos|1999": {
+  "verdict": "not-found",
+  "title": "Cantando Clássicos",
+  "year": 1999
+ },
+ "construcao de samba|1992": {
+  "verdict": "not-found",
+  "title": "Construção de Samba",
+  "year": 1992
+ },
+ "fla flu|1995": {
+  "verdict": "not-found",
+  "title": "Fla-Flu",
+  "year": 1995
+ },
+ "samba de raiz|2000": {
+  "verdict": "not-found",
+  "title": "Samba de Raiz",
+  "year": 2000
+ },
+ "dois sambistas|1997": {
+  "verdict": "not-found",
+  "title": "Dois Sambistas",
+  "year": 1997
+ },
+ "encontro de mestres|1981": {
+  "verdict": "not-found",
+  "title": "Encontro de Mestres",
+  "year": 1981
+ },
+ "reis do samba|2005": {
+  "verdict": "not-found",
+  "title": "Reis do Samba",
+  "year": 2005
+ },
+ "samba brasil|1979": {
+  "verdict": "not-found",
+  "title": "Samba Brasil",
+  "year": 1979
+ },
+ "duas rainhas|2005": {
+  "verdict": "not-found",
+  "title": "Duas Rainhas",
+  "year": 2005
+ },
+ "mulheres brasileiras|1993": {
+  "verdict": "not-found",
+  "title": "Mulheres Brasileiras",
+  "year": 1993
+ },
+ "nao precisa mais de voce|2015": {
+  "verdict": "not-found",
+  "title": "Não Precisa Mais de Você",
+  "year": 2015
+ },
+ "funk e samba ao vivo|2005": {
+  "verdict": "not-found",
+  "title": "Funk e Samba Ao Vivo",
+  "year": 2005
+ },
+ "segura essa|2017": {
+  "verdict": "not-found",
+  "title": "Segura Essa",
+  "year": 2017
+ },
+ "eva ao vivo|2016": {
+  "verdict": "not-found",
+  "title": "Eva ao Vivo",
+  "year": 2016
+ },
+ "farao divindade do egito|1996": {
+  "verdict": "not-found",
+  "title": "Faraó Divindade do Egito (Ao Vivo)",
+  "year": 1996
+ },
+ "sorte grande|1997": {
+  "verdict": "no-joint-recording",
+  "title": "Sorte Grande",
+  "year": 1997,
+  "cast": [
+   "Ivete Sangalo",
+   "Cheiro de Amor"
+  ],
+  "ids": [
+   365,
+   1067
+  ],
+  "not_credited": [],
+  "recordings_matched": 16,
+  "rechecked": true
+ },
+ "saudade do nordeste|2000": {
+  "verdict": "not-found",
+  "title": "Saudade do Nordeste",
+  "year": 2000
+ },
+ "eva de todas as eras|2007": {
+  "verdict": "not-found",
+  "title": "Eva de Todas as Eras",
+  "year": 2007
+ },
+ "ao vivo|2000": {
+  "verdict": "not-found",
+  "title": "Ao Vivo",
+  "year": 2000
+ },
+ "funk e pagode ao vivo|2000": {
+  "verdict": "not-found",
+  "title": "Funk e Pagode Ao Vivo",
+  "year": 2000
+ },
+ "haiti cherie|2010": {
+  "verdict": "not-found",
+  "title": "Haiti Chérie (Live)",
+  "year": 2010
+ },
+ "zouk festival|2003": {
+  "verdict": "not-found",
+  "title": "Zouk Festival (Live)",
+  "year": 2003
+ },
+ "sambas de enredo|2010": {
+  "verdict": "not-found",
+  "title": "Sambas de Enredo",
+  "year": 2010
+ },
+ "i feel for you|1984": {
+  "verdict": "clean",
+  "title": "I Feel for You",
+  "year": 1984
+ },
+ "u got the look|1987": {
+  "verdict": "clean",
+  "title": "U Got the Look",
+  "year": 1987,
+  "cast": [
+   "Prince",
+   "Sheena Easton"
+  ],
+  "ids": [
+   413,
+   5653
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true,
+  "rescued_by": "34c0a798-90af-43f5-921f-839fa3a39013"
+ },
+ "exhale|1995": {
+  "verdict": "clean",
+  "title": "Exhale (Shoop Shoop)",
+  "year": 1995,
+  "cast": [
+   "Whitney Houston",
+   "Babyface"
+  ],
+  "ids": [
+   414,
+   3097
+  ],
+  "not_credited": [],
+  "recordings_matched": 5,
+  "rechecked": true,
+  "rescued_by": "270b6060-36d3-4761-8b4d-ea6e7057409c"
+ },
+ "turn your lights down low|1999": {
+  "verdict": "no-joint-recording",
+  "title": "Turn Your Lights Down Low",
+  "year": 1999,
+  "cast": [
+   "Lauryn Hill",
+   "Bob Marley"
+  ],
+  "ids": [
+   415,
+   1345
+  ],
+  "not_credited": [],
+  "recordings_matched": 7,
+  "rechecked": true
+ },
+ "two sounds|1999": {
+  "verdict": "not-found",
+  "title": "Two Sounds",
+  "year": 1999
+ },
+ "un plan simple|2004": {
+  "verdict": "not-found",
+  "title": "Un Plan Simple (feature)",
+  "year": 2004
+ },
+ "one nite stand|2002": {
+  "verdict": "clean",
+  "title": "One Nite Stand (Of Wolves and Sheep)",
+  "year": 2002
+ },
+ "kinshasian night|2008": {
+  "verdict": "not-found",
+  "title": "Kinshasian Night",
+  "year": 2008
+ },
+ "african music icons|2007": {
+  "verdict": "not-found",
+  "title": "African Music Icons",
+  "year": 2007
+ },
+ "african queens reunion|2010": {
+  "verdict": "not-found",
+  "title": "African Queens Reunion",
+  "year": 2010
+ },
+ "know we|2002": {
+  "verdict": "no-joint-recording",
+  "title": "Know We",
+  "year": 2002,
+  "cast": [
+   "Wiley",
+   "Pay As U Go"
+  ],
+  "ids": [
+   639,
+   3672
+  ],
+  "not_credited": [],
+  "recordings_matched": 4,
+  "rechecked": true
+ },
+ "teresa cristina|2004": {
+  "verdict": "not-found",
+  "title": "Teresa Cristina",
+  "year": 2004
+ },
+ "para musical|2019": {
+  "verdict": "not-found",
+  "title": "Pará Musical",
+  "year": 2019
+ },
+ "pra sempre ao lado|2009": {
+  "verdict": "not-found",
+  "title": "Pra Sempre ao Lado",
+  "year": 2009
+ },
+ "por toda minha vida|1998": {
+  "verdict": "not-found",
+  "title": "Por Toda Minha Vida",
+  "year": 1998
+ },
+ "mpb dos anos 80|1985": {
+  "verdict": "not-found",
+  "title": "MPB dos Anos 80",
+  "year": 1985
+ },
+ "harmonia perfeita|1996": {
+  "verdict": "not-found",
+  "title": "Harmonia Perfeita",
+  "year": 1996
+ },
+ "encontro de vozes|2005": {
+  "verdict": "not-found",
+  "title": "Encontro de Vozes",
+  "year": 2005
+ },
+ "entre cancoes|2016": {
+  "verdict": "not-found",
+  "title": "Entre Canções",
+  "year": 2016
+ },
+ "open the eyes of my heart|2000": {
+  "verdict": "not-found",
+  "title": "Open the Eyes of My Heart",
+  "year": 2000
+ },
+ "open heaven river wild|2018": {
+  "verdict": "not-found",
+  "title": "Open Heaven River Wild",
+  "year": 2018
+ },
+ "na pista com o tchan|2000": {
+  "verdict": "not-found",
+  "title": "Na Pista com o Tchan",
+  "year": 2000
+ },
+ "axe bahia|1989": {
+  "verdict": "not-found",
+  "title": "Axé Bahia",
+  "year": 1989
+ },
+ "amor de escola|2007": {
+  "verdict": "not-found",
+  "title": "Amor de Escola",
+  "year": 2007
+ },
+ "pagode total|2009": {
+  "verdict": "not-found",
+  "title": "Pagode Total",
+  "year": 2009
+ },
+ "no embalo do samba|2006": {
+  "verdict": "not-found",
+  "title": "No Embalo do Samba",
+  "year": 2006
+ },
+ "nordeste que canta|1993": {
+  "verdict": "not-found",
+  "title": "Nordeste que Canta",
+  "year": 1993
+ },
+ "cantadores do nordeste|1985": {
+  "verdict": "not-found",
+  "title": "Cantadores do Nordeste",
+  "year": 1985
+ },
+ "amigos nordestinos|2003": {
+  "verdict": "not-found",
+  "title": "Amigos Nordestinos",
+  "year": 2003
+ },
+ "boa noite brasil|1980": {
+  "verdict": "not-found",
+  "title": "Boa Noite Brasil",
+  "year": 1980
+ },
+ "emocoes sertanejas|2012": {
+  "verdict": "not-found",
+  "title": "Emoções Sertanejas",
+  "year": 2012
+ },
+ "vozes do norte|1985": {
+  "verdict": "not-found",
+  "title": "Vozes do Norte",
+  "year": 1985
+ },
+ "mulheres da mpb|1988": {
+  "verdict": "not-found",
+  "title": "Mulheres da MPB",
+  "year": 1988
+ },
+ "forro da bahia|2011": {
+  "verdict": "not-found",
+  "title": "Forró da Bahia",
+  "year": 2011
+ },
+ "afro baiano ao vivo|2012": {
+  "verdict": "not-found",
+  "title": "Afro Baiano Ao Vivo",
+  "year": 2012
+ },
+ "pagode e funk|1999": {
+  "verdict": "not-found",
+  "title": "Pagode e Funk",
+  "year": 1999
+ },
+ "o mestre e a discipula|1977": {
+  "verdict": "not-found",
+  "title": "O Mestre e a Discípula",
+  "year": 1977
+ },
+ "encontro de sambistas|1977": {
+  "verdict": "not-found",
+  "title": "Encontro de Sambistas",
+  "year": 1977
+ },
+ "homenagem da samba|1980": {
+  "verdict": "not-found",
+  "title": "Homenagem da Samba",
+  "year": 1980
+ },
+ "tudo bem|2003": {
+  "verdict": "no-joint-recording",
+  "title": "Tudo Bem",
+  "year": 2003,
+  "cast": [
+   "Lulu Santos",
+   "Fábio Jr."
+  ],
+  "ids": [
+   1008,
+   1044
+  ],
+  "not_credited": [],
+  "recordings_matched": 10,
+  "rechecked": true
+ },
+ "sao luis do maranhao|2005": {
+  "verdict": "not-found",
+  "title": "São Luís do Maranhão",
+  "year": 2005
+ },
+ "under pressure|1981": {
+  "verdict": "no-joint-recording",
+  "title": "Under Pressure",
+  "year": 1981,
+  "cast": [
+   "David Bowie",
+   "Queen"
+  ],
+  "ids": [
+   1027,
+   3225
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "hurt scary monsters|1995": {
+  "verdict": "not-found",
+  "title": "Hurt / Scary Monsters (live)",
+  "year": 1995
+ },
+ "let s dance|1983": {
+  "verdict": "clean",
+  "title": "Let's Dance",
+  "year": 1983,
+  "cast": [
+   "David Bowie",
+   "Nile Rodgers"
+  ],
+  "ids": [
+   1027,
+   1616
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true,
+  "rescued_by": "666023bd-745f-4b38-bb15-325e61156fd0"
+ },
+ "the man who sold the world|1993": {
+  "verdict": "no-joint-recording",
+  "title": "The Man Who Sold the World",
+  "year": 1993,
+  "cast": [
+   "David Bowie",
+   "Nirvana"
+  ],
+  "ids": [
+   1027,
+   3231
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "fame|1975": {
+  "verdict": "no-joint-recording",
+  "title": "Fame",
+  "year": 1975,
+  "cast": [
+   "David Bowie",
+   "John Lennon"
+  ],
+  "ids": [
+   1027,
+   3266
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "because you re young|1980": {
+  "verdict": "clean",
+  "title": "Because You're Young",
+  "year": 1980,
+  "cast": [
+   "David Bowie",
+   "Pete Townshend"
+  ],
+  "ids": [
+   1027,
+   5120
+  ],
+  "not_credited": [],
+  "recordings_matched": 6,
+  "rechecked": true,
+  "rescued_by": "3fca1203-a1b1-476c-a178-a0fbddf59bae"
+ },
+ "samba de domingo|1992": {
+  "verdict": "not-found",
+  "title": "Samba de Domingo",
+  "year": 1992
+ },
+ "escolas de samba|1999": {
+  "verdict": "not-found",
+  "title": "Escolas de Samba",
+  "year": 1999
+ },
+ "nordeste perdido|2004": {
+  "verdict": "not-found",
+  "title": "Nordeste Perdido (Tributo)",
+  "year": 2004
+ },
+ "jovem guarda de volta|1997": {
+  "verdict": "not-found",
+  "title": "Jovem Guarda de Volta",
+  "year": 1997
+ },
+ "feitos um para o outro|1978": {
+  "verdict": "not-found",
+  "title": "Feitos Um para o Outro",
+  "year": 1978
+ },
+ "festa da mpb|2004": {
+  "verdict": "not-found",
+  "title": "Festa da MPB",
+  "year": 2004
+ },
+ "soul ao vivo|2000": {
+  "verdict": "not-found",
+  "title": "Soul Ao Vivo",
+  "year": 2000
+ },
+ "moleque de samba|2003": {
+  "verdict": "not-found",
+  "title": "Moleque de Samba",
+  "year": 2003
+ },
+ "american recordings|1994": {
+  "verdict": "not-found",
+  "title": "American Recordings",
+  "year": 1994
+ },
+ "elvira|1982": {
+  "verdict": "not-found",
+  "title": "Elvira (Live)",
+  "year": 1982
+ },
+ "give it away|1994": {
+  "verdict": "no-joint-recording",
+  "title": "Give It Away (Live)",
+  "year": 1994,
+  "cast": [
+   "Johnny Cash",
+   "Red Hot Chili Peppers"
+  ],
+  "ids": [
+   1198,
+   3232
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "murder on music row|2000": {
+  "verdict": "clean",
+  "title": "Murder on Music Row",
+  "year": 2000
+ },
+ "good news bad news|2007": {
+  "verdict": "clean",
+  "title": "Good News Bad News",
+  "year": 2007
+ },
+ "does he love you|1993": {
+  "verdict": "clean",
+  "title": "Does He Love You",
+  "year": 1993
+ },
+ "party for two|2004": {
+  "verdict": "clean",
+  "title": "Party for Two (Country Version)",
+  "year": 2004
+ },
+ "it s five o clock somewhere|2003": {
+  "verdict": "clean",
+  "title": "It's Five O'Clock Somewhere",
+  "year": 2003
+ },
+ "as she s walking away|2010": {
+  "verdict": "clean",
+  "title": "As She's Walking Away",
+  "year": 2010
+ },
+ "dilemma|2002": {
+  "verdict": "clean",
+  "title": "Dilemma",
+  "year": 2002
+ },
+ "i would do anything|2004": {
+  "verdict": "not-found",
+  "title": "I Would Do Anything",
+  "year": 2004
+ },
+ "jet lag|2011": {
+  "verdict": "no-joint-recording",
+  "title": "Jet Lag",
+  "year": 2011,
+  "cast": [
+   "Nelly",
+   "Simple Plan"
+  ],
+  "ids": [
+   1212,
+   3284
+  ],
+  "not_credited": [],
+  "recordings_matched": 7,
+  "rechecked": true
+ },
+ "lot of leavin left to do|2010": {
+  "verdict": "not-found",
+  "title": "Lot of Leavin' Left to Do (Live)",
+  "year": 2010
+ },
+ "a bad goodbye|1993": {
+  "verdict": "clean",
+  "title": "A Bad Goodbye",
+  "year": 1993
+ },
+ "grandpa|1986": {
+  "verdict": "not-found",
+  "title": "Grandpa (Tell Me 'Bout the Good Old Days)",
+  "year": 1986
+ },
+ "wild montana skies|1983": {
+  "verdict": "clean",
+  "title": "Wild Montana Skies",
+  "year": 1983
+ },
+ "i m so happy i can t stop crying|1997": {
+  "verdict": "clean",
+  "title": "I'm So Happy I Can't Stop Crying",
+  "year": 1997
+ },
+ "streets of bakersfield|1988": {
+  "verdict": "clean",
+  "title": "Streets of Bakersfield",
+  "year": 1988
+ },
+ "i ain t never long white cadillac|2000": {
+  "verdict": "not-found",
+  "title": "I Ain't Never / Long White Cadillac",
+  "year": 2000
+ },
+ "everything s changed|2016": {
+  "verdict": "not-found",
+  "title": "Everything's Changed (Tribute)",
+  "year": 2016
+ },
+ "we re strangers again|1992": {
+  "verdict": "clean",
+  "title": "We're Strangers Again",
+  "year": 1992
+ },
+ "piano man|1977": {
+  "verdict": "no-joint-recording",
+  "title": "Piano Man (Live)",
+  "year": 1977,
+  "cast": [
+   "Charlie Daniels",
+   "Billy Joel"
+  ],
+  "ids": [
+   1251,
+   3439
+  ],
+  "not_credited": [],
+  "recordings_matched": 8,
+  "rechecked": true
+ },
+ "tell me about it|1995": {
+  "verdict": "clean",
+  "title": "Tell Me About It",
+  "year": 1995
+ },
+ "as long as i have you|1994": {
+  "verdict": "not-found",
+  "title": "As Long as I Have You",
+  "year": 1994
+ },
+ "you and i|1982": {
+  "verdict": "clean",
+  "title": "You and I",
+  "year": 1982
+ },
+ "i say a little prayer by the time i get to phoenix|1971": {
+  "verdict": "not-found",
+  "title": "I Say a Little Prayer / By the Time I Get to Phoenix",
+  "year": 1971
+ },
+ "forget me not|1984": {
+  "verdict": "not-found",
+  "title": "Forget Me Not",
+  "year": 1984
+ },
+ "the cattle call|1997": {
+  "verdict": "no-joint-recording",
+  "title": "The Cattle Call",
+  "year": 1997,
+  "cast": [
+   "Eddy Arnold",
+   "LeAnn Rimes"
+  ],
+  "ids": [
+   1263,
+   2024
+  ],
+  "not_credited": [],
+  "recordings_matched": 11,
+  "rechecked": true
+ },
+ "cattle call|1955": {
+  "verdict": "not-found",
+  "title": "Cattle Call (reprise)",
+  "year": 1955
+ },
+ "neck and neck|1990": {
+  "verdict": "not-found",
+  "title": "Neck and Neck",
+  "year": 1990
+ },
+ "fast cars and freedom|2004": {
+  "verdict": "not-found",
+  "title": "Fast Cars and Freedom (Live)",
+  "year": 2004
+ },
+ "heavy is the head|2015": {
+  "verdict": "not-found",
+  "title": "Heavy is the Head (feat. Chris Cornell)",
+  "year": 2015
+ },
+ "country boy|2011": {
+  "verdict": "clean",
+  "title": "Country Boy",
+  "year": 2011
+ },
+ "bad feeling|2017": {
+  "verdict": "clean",
+  "title": "Bad Feeling",
+  "year": 2017
+ },
+ "good man good woman|1991": {
+  "verdict": "clean",
+  "title": "Good Man, Good Woman",
+  "year": 1991
+ },
+ "rock steady|1991": {
+  "verdict": "clean",
+  "title": "Rock Steady",
+  "year": 1991
+ },
+ "desperados waiting for a train|1975": {
+  "verdict": "no-joint-recording",
+  "title": "Desperados Waiting for a Train",
+  "year": 1975,
+  "cast": [
+   "Emmylou Harris",
+   "Guy Clark"
+  ],
+  "ids": [
+   1325,
+   1330
+  ],
+  "not_credited": [],
+  "recordings_matched": 13,
+  "rechecked": true
+ },
+ "stones in the road|1995": {
+  "verdict": "not-found",
+  "title": "Stones in the Road (Live)",
+  "year": 1995
+ },
+ "proud mary|1969": {
+  "verdict": "no-joint-recording",
+  "title": "Proud Mary",
+  "year": 1969,
+  "cast": [
+   "John Fogerty",
+   "Creedence Clearwater Revival"
+  ],
+  "ids": [
+   1337,
+   5223
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "bayou country|1969": {
+  "verdict": "not-found",
+  "title": "Bayou Country",
+  "year": 1969
+ },
+ "prisoner in disguise|1975": {
+  "verdict": "clean",
+  "title": "Prisoner in Disguise",
+  "year": 1975
+ },
+ "african festival|1978": {
+  "verdict": "not-found",
+  "title": "African Festival (Live)",
+  "year": 1978
+ },
+ "reggae sunsplash|1979": {
+  "verdict": "not-found",
+  "title": "Reggae Sunsplash (Live)",
+  "year": 1979
+ },
+ "peace concert|1978": {
+  "verdict": "not-found",
+  "title": "Peace Concert (Live)",
+  "year": 1978
+ },
+ "could you be loved|1988": {
+  "verdict": "not-found",
+  "title": "Could You Be Loved (Legacy)",
+  "year": 1988
+ },
+ "it wasn t me|2000": {
+  "verdict": "no-joint-recording",
+  "title": "It Wasn't Me",
+  "year": 2000,
+  "cast": [
+   "Shaggy",
+   "rikrok"
+  ],
+  "ids": [
+   1346,
+   5300
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "that girl|1996": {
+  "verdict": "clean",
+  "title": "That Girl",
+  "year": 1996
+ },
+ "sweat|1994": {
+  "verdict": "not-found",
+  "title": "Sweat (Caribbean Mix)",
+  "year": 1994
+ },
+ "roots rock tribute|2015": {
+  "verdict": "not-found",
+  "title": "Roots Rock Tribute (Live)",
+  "year": 2015
+ },
+ "pressure drop|2001": {
+  "verdict": "not-found",
+  "title": "Pressure Drop (Tribute)",
+  "year": 2001
+ },
+ "stolen car|2010": {
+  "verdict": "clean",
+  "title": "Stolen Car",
+  "year": 2010
+ },
+ "mad about you|2001": {
+  "verdict": "not-found",
+  "title": "Mad About You (Trelos gia sena)",
+  "year": 2001
+ },
+ "how can we ease the pain|1990": {
+  "verdict": "clean",
+  "title": "How Can We Ease the Pain",
+  "year": 1990
+ },
+ "reggae sunsplash|1985": {
+  "verdict": "not-found",
+  "title": "Reggae Sunsplash",
+  "year": 1985
+ },
+ "promised land|1988": {
+  "verdict": "clean",
+  "title": "Promised Land",
+  "year": 1988
+ },
+ "double dose|1989": {
+  "verdict": "not-found",
+  "title": "Double Dose",
+  "year": 1989
+ },
+ "englishman|1979": {
+  "verdict": "no-joint-recording",
+  "title": "Englishman",
+  "year": 1979,
+  "cast": [
+   "Barrington Levy",
+   "Henry 'Junjo' Lawes"
+  ],
+  "ids": [
+   1402,
+   5795
+  ],
+  "not_credited": [],
+  "recordings_matched": 3,
+  "rechecked": true
+ },
+ "falling in love with you|1993": {
+  "verdict": "not-found",
+  "title": "(I Can't Help) Falling in Love with You",
+  "year": 1993
+ },
+ "baby come back|1994": {
+  "verdict": "clean",
+  "title": "Baby Come Back",
+  "year": 1994
+ },
+ "don t look back|1978": {
+  "verdict": "no-joint-recording",
+  "title": "Don't Look Back",
+  "year": 1978,
+  "cast": [
+   "Peter Tosh",
+   "Mick Jagger"
+  ],
+  "ids": [
+   1449,
+   2219
+  ],
+  "not_credited": [],
+  "recordings_matched": 24,
+  "rechecked": true
+ },
+ "police and thieves|1976": {
+  "verdict": "no-joint-recording",
+  "title": "Police and Thieves",
+  "year": 1976,
+  "cast": [
+   "Lee 'Scratch' Perry",
+   "Junior Murvin"
+  ],
+  "ids": [
+   1450,
+   6034
+  ],
+  "not_credited": [],
+  "recordings_matched": 3,
+  "rechecked": true
+ },
+ "war ina babylon|1976": {
+  "verdict": "not-found",
+  "title": "War ina Babylon",
+  "year": 1976
+ },
+ "big youth meets augustus pablo|1981": {
+  "verdict": "not-found",
+  "title": "Big Youth Meets Augustus Pablo",
+  "year": 1981
+ },
+ "clash|1977": {
+  "verdict": "not-found",
+  "title": "Clash",
+  "year": 1977
+ },
+ "wear you to the ball|1971": {
+  "verdict": "no-joint-recording",
+  "title": "Wear You to the Ball",
+  "year": 1971,
+  "cast": [
+   "U-Roy",
+   "John Holt"
+  ],
+  "ids": [
+   1454,
+   6037
+  ],
+  "not_credited": [],
+  "recordings_matched": 24,
+  "rechecked": true
+ },
+ "go away|2012": {
+  "verdict": "not-found",
+  "title": "Go Away",
+  "year": 2012
+ },
+ "marijuana|2017": {
+  "verdict": "not-found",
+  "title": "Marijuana",
+  "year": 2017
+ },
+ "surfin usa|1963": {
+  "verdict": "not-found",
+  "title": "Surfin' USA",
+  "year": 1963
+ },
+ "sentimental|2010": {
+  "verdict": "not-found",
+  "title": "Sentimental",
+  "year": 2010
+ },
+ "i ve got you under my skin|1993": {
+  "verdict": "clean",
+  "title": "I've Got You Under My Skin",
+  "year": 1993
+ },
+ "please don t stop the rain|2008": {
+  "verdict": "no-joint-recording",
+  "title": "Please Don't Stop the Rain",
+  "year": 2008,
+  "cast": [
+   "Nelly Furtado",
+   "James Morrison"
+  ],
+  "ids": [
+   1549,
+   2019
+  ],
+  "not_credited": [],
+  "recordings_matched": 6,
+  "rechecked": true
+ },
+ "treat me like somebody|2014": {
+  "verdict": "no-joint-recording",
+  "title": "Treat Me Like Somebody",
+  "year": 2014,
+  "cast": [
+   "Timbaland",
+   "Tink"
+  ],
+  "ids": [
+   1550,
+   6447
+  ],
+  "not_credited": [],
+  "recordings_matched": 2,
+  "rechecked": true
+ },
+ "higher love|1986": {
+  "verdict": "no-joint-recording",
+  "title": "Higher Love",
+  "year": 1986,
+  "cast": [
+   "Chaka Khan",
+   "Steve Winwood"
+  ],
+  "ids": [
+   1555,
+   5178
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "resistire|2001": {
+  "verdict": "not-found",
+  "title": "Resistiré",
+  "year": 2001
+ },
+ "suavemente|1998": {
+  "verdict": "not-found",
+  "title": "Suavemente (Remix)",
+  "year": 1998
+ },
+ "el tirabuzon|1997": {
+  "verdict": "not-found",
+  "title": "El Tirabuzón (Live)",
+  "year": 1997
+ },
+ "merengue en la piel|2003": {
+  "verdict": "not-found",
+  "title": "Merengue en la Piel",
+  "year": 2003
+ },
+ "upside down|1980": {
+  "verdict": "no-joint-recording",
+  "title": "Upside Down",
+  "year": 1980,
+  "cast": [
+   "Nile Rodgers",
+   "Diana Ross"
+  ],
+  "ids": [
+   1616,
+   3112
+  ],
+  "not_credited": [],
+  "recordings_matched": 4,
+  "rechecked": true
+ },
+ "we are family|1979": {
+  "verdict": "no-joint-recording",
+  "title": "We Are Family",
+  "year": 1979,
+  "cast": [
+   "Nile Rodgers",
+   "Sister Sledge"
+  ],
+  "ids": [
+   1616,
+   3514
+  ],
+  "not_credited": [],
+  "recordings_matched": 7,
+  "rechecked": true
+ },
+ "virginia plain|1972": {
+  "verdict": "clean",
+  "title": "Virginia Plain",
+  "year": 1972,
+  "cast": [
+   "Brian Eno",
+   "Roxy Music"
+  ],
+  "ids": [
+   1650,
+   5170
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true,
+  "rescued_by": "5b78e3f9-ae36-489e-b921-3652b04987c0"
+ },
+ "roxy music|1972": {
+  "verdict": "not-found",
+  "title": "Roxy Music",
+  "year": 1972
+ },
+ "801 live|1976": {
+  "verdict": "not-found",
+  "title": "801 Live",
+  "year": 1976
+ },
+ "cose della vita|1997": {
+  "verdict": "clean",
+  "title": "Cose della vita",
+  "year": 1997
+ },
+ "ich kenne nichts|2003": {
+  "verdict": "clean",
+  "title": "Ich kenne nichts (das so schön ist wie du)",
+  "year": 2003
+ },
+ "i want you back|1998": {
+  "verdict": "no-joint-recording",
+  "title": "I Want You Back",
+  "year": 1998,
+  "cast": [
+   "Missy Elliott",
+   "Mel B"
+  ],
+  "ids": [
+   1711,
+   3652
+  ],
+  "not_credited": [],
+  "recordings_matched": 2,
+  "rechecked": true
+ },
+ "la banlieue s embrase|2006": {
+  "verdict": "not-found",
+  "title": "La Banlieue s'embrase",
+  "year": 2006
+ },
+ "banlieue nord|2005": {
+  "verdict": "not-found",
+  "title": "Banlieue Nord",
+  "year": 2005
+ },
+ "say you say me|2015": {
+  "verdict": "not-found",
+  "title": "Say You Say Me (Sa Majesté l'amour)",
+  "year": 2015
+ },
+ "slipping away|2006": {
+  "verdict": "clean",
+  "title": "Slipping Away",
+  "year": 2006
+ },
+ "singing in the shower|1990": {
+  "verdict": "clean",
+  "title": "Singing in the Shower",
+  "year": 1990
+ },
+ "marcia baila|1990": {
+  "verdict": "not-found",
+  "title": "Marcia Baila (live version)",
+  "year": 1990
+ },
+ "plus bleu que tes yeux|1951": {
+  "verdict": "clean",
+  "title": "Plus bleu que tes yeux",
+  "year": 1951
+ },
+ "maghreb fusion|2016": {
+  "verdict": "not-found",
+  "title": "Maghreb Fusion",
+  "year": 2016
+ },
+ "contagious|2001": {
+  "verdict": "no-joint-recording",
+  "title": "Contagious",
+  "year": 2001,
+  "cast": [
+   "R. Kelly",
+   "Isley Brothers"
+  ],
+  "ids": [
+   1985,
+   3504
+  ],
+  "not_credited": [],
+  "recordings_matched": 3,
+  "rechecked": true
+ },
+ "eve of destruction|2019": {
+  "verdict": "clean",
+  "title": "Eve of Destruction",
+  "year": 2019,
+  "cast": [
+   "Aurora",
+   "The Chemical Brothers"
+  ],
+  "ids": [
+   2016,
+   3628
+  ],
+  "not_credited": [],
+  "recordings_matched": 5,
+  "rechecked": true,
+  "rescued_by": "6467e588-eccd-4db2-8f14-f25536f210e7"
+ },
+ "zusammen|1999": {
+  "verdict": "not-found",
+  "title": "Zusammen (feat. Hausmarke)",
+  "year": 1999
+ },
+ "der langste tag|2003": {
+  "verdict": "not-found",
+  "title": "Der längste Tag",
+  "year": 2003
+ },
+ "krieger|1995": {
+  "verdict": "not-found",
+  "title": "Krieger (Aphex Twin Baldhu Mix)",
+  "year": 1995
+ },
+ "gottes werk und teufels beitrag|2004": {
+  "verdict": "not-found",
+  "title": "Gottes Werk und Teufels Beitrag",
+  "year": 2004
+ },
+ "sunshine|2004": {
+  "verdict": "clean",
+  "title": "Sunshine",
+  "year": 2004
+ },
+ "you don t understand me|1995": {
+  "verdict": "no-joint-recording",
+  "title": "You Don't Understand Me",
+  "year": 1995,
+  "cast": [
+   "Roxette",
+   "Desmond Child"
+  ],
+  "ids": [
+   2113,
+   6700
+  ],
+  "not_credited": [],
+  "recordings_matched": 12,
+  "rechecked": true
+ },
+ "what else is there|2005": {
+  "verdict": "no-joint-recording",
+  "title": "What Else Is There",
+  "year": 2005,
+  "cast": [
+   "The Knife",
+   "Röyksopp"
+  ],
+  "ids": [
+   2124,
+   4668
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "ogni volta|2010": {
+  "verdict": "not-found",
+  "title": "Ogni Volta",
+  "year": 2010
+ },
+ "dune mosse|1991": {
+  "verdict": "clean",
+  "title": "Dune Mosse",
+  "year": 1991
+ },
+ "per un amico|2010": {
+  "verdict": "not-found",
+  "title": "Per un amico",
+  "year": 2010
+ },
+ "roja jaaneman|1992": {
+  "verdict": "clean",
+  "title": "Roja Jaaneman",
+  "year": 1992
+ },
+ "vaa vaa|2020": {
+  "verdict": "not-found",
+  "title": "Vaa Vaa",
+  "year": 2020
+ },
+ "vinnaithaandi varuvaayaa|2010": {
+  "verdict": "not-found",
+  "title": "Vinnaithaandi Varuvaayaa",
+  "year": 2010
+ },
+ "let s spend the night together|1967": {
+  "verdict": "no-joint-recording",
+  "title": "Let's Spend the Night Together",
+  "year": 1967,
+  "cast": [
+   "Mick Jagger",
+   "Charlie Watts"
+  ],
+  "ids": [
+   2219,
+   5198
+  ],
+  "not_credited": [],
+  "recordings_matched": 2,
+  "rechecked": true
+ },
+ "jumpin jack flash|1968": {
+  "verdict": "no-joint-recording",
+  "title": "Jumpin' Jack Flash",
+  "year": 1968,
+  "cast": [
+   "Mick Jagger",
+   "Bill Wyman"
+  ],
+  "ids": [
+   2219,
+   5199
+  ],
+  "not_credited": [],
+  "recordings_matched": 7,
+  "rechecked": true
+ },
+ "dilwale dulhania le jayenge title track|1995": {
+  "verdict": "not-found",
+  "title": "Dilwale Dulhania Le Jayenge Title Track",
+  "year": 1995
+ },
+ "kali ghata chhaye|1982": {
+  "verdict": "not-found",
+  "title": "Kali Ghata Chhaye",
+  "year": 1982
+ },
+ "sadma|1983": {
+  "verdict": "not-found",
+  "title": "Sadma",
+  "year": 1983
+ },
+ "awara hoon|1951": {
+  "verdict": "not-found",
+  "title": "Awara Hoon",
+  "year": 1951
+ },
+ "sunhare pal|1978": {
+  "verdict": "not-found",
+  "title": "Sunhare Pal",
+  "year": 1978
+ },
+ "dil ek mandir|1963": {
+  "verdict": "not-found",
+  "title": "Dil Ek Mandir",
+  "year": 1963
+ },
+ "krishna nee begane|1996": {
+  "verdict": "not-found",
+  "title": "Krishna Nee Begane",
+  "year": 1996
+ },
+ "say shava shava|2001": {
+  "verdict": "not-found",
+  "title": "Say Shava Shava",
+  "year": 2001
+ },
+ "taboo|1993": {
+  "verdict": "clean",
+  "title": "Taboo",
+  "year": 1993
+ },
+ "silsila|1981": {
+  "verdict": "not-found",
+  "title": "Silsila",
+  "year": 1981
+ },
+ "sharabi|1984": {
+  "verdict": "not-found",
+  "title": "Sharabi",
+  "year": 1984
+ },
+ "full circle carnegie hall 2000|2001": {
+  "verdict": "not-found",
+  "title": "Full Circle: Carnegie Hall 2000",
+  "year": 2001
+ },
+ "concert for bangladesh|1971": {
+  "verdict": "not-found",
+  "title": "Concert for Bangladesh",
+  "year": 1971
+ },
+ "west meets east|1967": {
+  "verdict": "not-found",
+  "title": "West Meets East",
+  "year": 1967
+ },
+ "ninaithale inikkum|1979": {
+  "verdict": "not-found",
+  "title": "Ninaithale Inikkum",
+  "year": 1979
+ },
+ "maanada mayilada|2004": {
+  "verdict": "not-found",
+  "title": "Maanada Mayilada",
+  "year": 2004
+ },
+ "time to say goodbye|1996": {
+  "verdict": "clean",
+  "title": "Time to Say Goodbye",
+  "year": 1996
+ },
+ "the prayer|1998": {
+  "verdict": "clean",
+  "title": "The Prayer",
+  "year": 1998
+ },
+ "nessun dorma|1995": {
+  "verdict": "no-joint-recording",
+  "title": "Nessun dorma",
+  "year": 1995,
+  "cast": [
+   "Andrea Bocelli",
+   "pavarotti"
+  ],
+  "ids": [
+   2420,
+   5484
+  ],
+  "not_credited": [],
+  "recordings_matched": 11,
+  "rechecked": true
+ },
+ "por el amor de una mujer|2007": {
+  "verdict": "not-found",
+  "title": "Por el amor de una mujer",
+  "year": 2007
+ },
+ "de verdad|2001": {
+  "verdict": "not-found",
+  "title": "De Verdad",
+  "year": 2001
+ },
+ "labios de seda|2006": {
+  "verdict": "not-found",
+  "title": "Labios de Seda",
+  "year": 2006
+ },
+ "vita|1990": {
+  "verdict": "clean",
+  "title": "Vita",
+  "year": 1990
+ },
+ "quando finisce un amore|1982": {
+  "verdict": "no-joint-recording",
+  "title": "Quando finisce un amore",
+  "year": 1982,
+  "cast": [
+   "Riccardo Cocciante",
+   "Mia Martini"
+  ],
+  "ids": [
+   2456,
+   2606
+  ],
+  "not_credited": [],
+  "recordings_matched": 12,
+  "rechecked": true
+ },
+ "il est mort le soleil|1979": {
+  "verdict": "not-found",
+  "title": "Il est mort le soleil",
+  "year": 1979
+ },
+ "mi tierra|2001": {
+  "verdict": "no-joint-recording",
+  "title": "Mi Tierra",
+  "year": 2001,
+  "cast": [
+   "Marc Anthony",
+   "Gloria Estefan"
+  ],
+  "ids": [
+   2526,
+   3186
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "el amor de mi vida|1994": {
+  "verdict": "not-found",
+  "title": "El Amor de Mi Vida",
+  "year": 1994
+ },
+ "pargo con panela|2004": {
+  "verdict": "not-found",
+  "title": "Pargo con panela",
+  "year": 2004
+ },
+ "el pasajero|1995": {
+  "verdict": "not-found",
+  "title": "El Pasajero",
+  "year": 1995
+ },
+ "tu si na cosa grande|1964": {
+  "verdict": "no-joint-recording",
+  "title": "Tu sì 'na cosa grande",
+  "year": 1964,
+  "cast": [
+   "Ornella Vanoni",
+   "Domenico Modugno"
+  ],
+  "ids": [
+   2605,
+   2619
+  ],
+  "not_credited": [],
+  "recordings_matched": 14,
+  "rechecked": true
+ },
+ "senza fine|2010": {
+  "verdict": "clean",
+  "title": "Senza Fine",
+  "year": 2010
+ },
+ "stop being greedy|1998": {
+  "verdict": "no-joint-recording",
+  "title": "Stop Being Greedy",
+  "year": 1998,
+  "cast": [
+   "Swizz Beatz",
+   "DMX"
+  ],
+  "ids": [
+   2671,
+   3081
+  ],
+  "not_credited": [],
+  "recordings_matched": 14,
+  "rechecked": true
+ },
+ "ryde or die|2001": {
+  "verdict": "not-found",
+  "title": "Ryde or Die",
+  "year": 2001
+ },
+ "evil empire|1996": {
+  "verdict": "not-found",
+  "title": "Evil Empire",
+  "year": 1996
+ },
+ "revelations|2006": {
+  "verdict": "no-joint-recording",
+  "title": "Revelations",
+  "year": 2006,
+  "cast": [
+   "Tom Morello",
+   "Audioslave"
+  ],
+  "ids": [
+   2682,
+   3247
+  ],
+  "not_credited": [],
+  "recordings_matched": 3,
+  "rechecked": true
+ },
+ "one man army|2015": {
+  "verdict": "clean",
+  "title": "One Man Army",
+  "year": 2015
+ },
+ "el corrido de los javis|2010": {
+  "verdict": "not-found",
+  "title": "El Corrido de los Javis",
+  "year": 2010
+ },
+ "el rey|1975": {
+  "verdict": "not-found",
+  "title": "El Rey (live)",
+  "year": 1975
+ },
+ "si me recuerdas|1990": {
+  "verdict": "clean",
+  "title": "Si Me Recuerdas",
+  "year": 1990
+ },
+ "tu eres todo|2002": {
+  "verdict": "not-found",
+  "title": "Tú Eres Todo",
+  "year": 2002
+ },
+ "amor eterno|1984": {
+  "verdict": "clean",
+  "title": "Amor Eterno",
+  "year": 1984
+ },
+ "no hay amor|2001": {
+  "verdict": "not-found",
+  "title": "No Hay Amor",
+  "year": 2001
+ },
+ "no es asi|1989": {
+  "verdict": "not-found",
+  "title": "No es así",
+  "year": 1989
+ },
+ "el sol no regresa|2011": {
+  "verdict": "not-found",
+  "title": "El Sol No Regresa",
+  "year": 2011
+ },
+ "sopa de caracol remix|2004": {
+  "verdict": "not-found",
+  "title": "Sopa de Caracol Remix",
+  "year": 2004
+ },
+ "a ritmo del corazon|2000": {
+  "verdict": "not-found",
+  "title": "A Ritmo del Corazón",
+  "year": 2000
+ },
+ "perdido|2007": {
+  "verdict": "not-found",
+  "title": "Perdido",
+  "year": 2007
+ },
+ "que siento|2001": {
+  "verdict": "not-found",
+  "title": "Que Siento",
+  "year": 2001
+ },
+ "tres gotas de agua bendita|1994": {
+  "verdict": "clean",
+  "title": "Tres Gotas de Agua Bendita",
+  "year": 1994
+ },
+ "esa la mia|1985": {
+  "verdict": "not-found",
+  "title": "Esa la Mía",
+  "year": 1985
+ },
+ "lagrimas negras|1999": {
+  "verdict": "not-found",
+  "title": "Lágrimas Negras (Live)",
+  "year": 1999
+ },
+ "tu y yo|1999": {
+  "verdict": "not-found",
+  "title": "Tú y Yo (Live)",
+  "year": 1999
+ },
+ "son con guaguanco|1959": {
+  "verdict": "not-found",
+  "title": "Son Con Guaguancó (Live)",
+  "year": 1959
+ },
+ "doble energia|1987": {
+  "verdict": "not-found",
+  "title": "Doble Energía",
+  "year": 1987
+ },
+ "pachanga y salsa|1986": {
+  "verdict": "not-found",
+  "title": "Pachanga y Salsa",
+  "year": 1986
+ },
+ "seis pies arriba|1985": {
+  "verdict": "not-found",
+  "title": "Seis Pies Arriba",
+  "year": 1985
+ },
+ "el gran combo vs ruben blades|1996": {
+  "verdict": "not-found",
+  "title": "El Gran Combo Vs Rubén Blades",
+  "year": 1996
+ },
+ "buscando america|1984": {
+  "verdict": "no-joint-recording",
+  "title": "Buscando América",
+  "year": 1984,
+  "cast": [
+   "Rubén Blades",
+   "Seis del Solar"
+  ],
+  "ids": [
+   2996,
+   6058
+  ],
+  "not_credited": [],
+  "recordings_matched": 4,
+  "rechecked": true
+ },
+ "la logia|2006": {
+  "verdict": "not-found",
+  "title": "La Logia",
+  "year": 2006
+ },
+ "todo va a salir bien|2008": {
+  "verdict": "not-found",
+  "title": "Todo Va a Salir Bien",
+  "year": 2008
+ },
+ "que tal|1995": {
+  "verdict": "not-found",
+  "title": "Qué Tal",
+  "year": 1995
+ },
+ "the best things in life are free|1992": {
+  "verdict": "clean",
+  "title": "The Best Things in Life Are Free",
+  "year": 1992
+ },
+ "glory|1998": {
+  "verdict": "not-found",
+  "title": "Glory",
+  "year": 1998
+ },
+ "immortality|1997": {
+  "verdict": "clean",
+  "title": "Immortality",
+  "year": 1997
+ },
+ "tell him|1997": {
+  "verdict": "clean",
+  "title": "Tell Him",
+  "year": 1997
+ },
+ "trashin the camp|1999": {
+  "verdict": "clean",
+  "title": "Trashin' the Camp",
+  "year": 1999
+ },
+ "diana|1980": {
+  "verdict": "not-found",
+  "title": "Diana",
+  "year": 1980
+ },
+ "piano man|2022": {
+  "verdict": "no-joint-recording",
+  "title": "Piano Man (Live)",
+  "year": 2022,
+  "cast": [
+   "Olivia Rodrigo",
+   "Billy Joel"
+  ],
+  "ids": [
+   3138,
+   3439
+  ],
+  "not_credited": [],
+  "recordings_matched": 8,
+  "rechecked": true
+ },
+ "iron man|1996": {
+  "verdict": "not-found",
+  "title": "Iron Man (live)",
+  "year": 1996
+ },
+ "no te vayas|2007": {
+  "verdict": "not-found",
+  "title": "No Te Vayas",
+  "year": 2007
+ },
+ "llora tumbao|1992": {
+  "verdict": "not-found",
+  "title": "Llora Tumbao",
+  "year": 1992
+ },
+ "i m not giving you up|1996": {
+  "verdict": "not-found",
+  "title": "I'm Not Giving You Up (Spanish)",
+  "year": 1996
+ },
+ "hot summer nights|1988": {
+  "verdict": "not-found",
+  "title": "Hot Summer Nights",
+  "year": 1988
+ },
+ "led zeppelin iv|1971": {
+  "verdict": "not-found",
+  "title": "Led Zeppelin IV",
+  "year": 1971
+ },
+ "stairway to heaven|1971": {
+  "verdict": "no-joint-recording",
+  "title": "Stairway to Heaven",
+  "year": 1971,
+  "cast": [
+   "Led Zeppelin",
+   "Robert Plant"
+  ],
+  "ids": [
+   3226,
+   5210
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "highway 61 revisited|1986": {
+  "verdict": "no-joint-recording",
+  "title": "Highway 61 Revisited (live)",
+  "year": 1986,
+  "cast": [
+   "Bruce Springsteen",
+   "Bob Dylan"
+  ],
+  "ids": [
+   3228,
+   3264
+  ],
+  "not_credited": [],
+  "recordings_matched": 8,
+  "rechecked": true
+ },
+ "riding with the king|2000": {
+  "verdict": "clean",
+  "title": "Riding with the King",
+  "year": 2000
+ },
+ "while my guitar gently weeps|1968": {
+  "verdict": "clean",
+  "title": "While My Guitar Gently Weeps",
+  "year": 1968
+ },
+ "behind the sun|1985": {
+  "verdict": "clean",
+  "title": "Behind the Sun",
+  "year": 1985,
+  "cast": [
+   "Eric Clapton",
+   "Phil Collins"
+  ],
+  "ids": [
+   3229,
+   5161
+  ],
+  "not_credited": [],
+  "recordings_matched": 10,
+  "rechecked": true,
+  "rescued_by": "e602ffd4-ea58-48a0-ad2c-8c62fdce4473"
+ },
+ "blind faith|1969": {
+  "verdict": "not-found",
+  "title": "Blind Faith",
+  "year": 1969
+ },
+ "sunshine of your love|1967": {
+  "verdict": "no-joint-recording",
+  "title": "Sunshine of Your Love",
+  "year": 1967,
+  "cast": [
+   "Eric Clapton",
+   "Cream"
+  ],
+  "ids": [
+   3229,
+   5180
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "crossroads|1968": {
+  "verdict": "no-joint-recording",
+  "title": "Crossroads",
+  "year": 1968,
+  "cast": [
+   "Eric Clapton",
+   "Jack Bruce"
+  ],
+  "ids": [
+   3229,
+   5181
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "disraeli gears|1967": {
+  "verdict": "not-found",
+  "title": "Disraeli Gears",
+  "year": 1967
+ },
+ "five live yardbirds|1964": {
+  "verdict": "not-found",
+  "title": "Five Live Yardbirds",
+  "year": 1964
+ },
+ "back in the high life|1986": {
+  "verdict": "clean",
+  "title": "Back in the High Life",
+  "year": 1986
+ },
+ "starla everlong|2011": {
+  "verdict": "not-found",
+  "title": "Starla / Everlong (live)",
+  "year": 2011
+ },
+ "live forever|2005": {
+  "verdict": "no-joint-recording",
+  "title": "Live Forever",
+  "year": 2005,
+  "cast": [
+   "Green Day",
+   "Oasis"
+  ],
+  "ids": [
+   3237,
+   3244
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "plug in baby killing in the name|2019": {
+  "verdict": "not-found",
+  "title": "Plug In Baby / Killing in the Name (live mashup)",
+  "year": 2019
+ },
+ "tranquilize|2006": {
+  "verdict": "clean",
+  "title": "Tranquilize",
+  "year": 2006
+ },
+ "britpop rivalry era|1995": {
+  "verdict": "not-found",
+  "title": "Britpop Rivalry era",
+  "year": 1995
+ },
+ "mirror ball|1995": {
+  "verdict": "not-found",
+  "title": "Mirror Ball",
+  "year": 1995
+ },
+ "ozzfest co appearance|2001": {
+  "verdict": "not-found",
+  "title": "Ozzfest co-appearance",
+  "year": 2001
+ },
+ "love devotion surrender|1973": {
+  "verdict": "not-found",
+  "title": "Love Devotion Surrender",
+  "year": 1973
+ },
+ "put your lights on|1999": {
+  "verdict": "clean",
+  "title": "Put Your Lights On",
+  "year": 1999
+ },
+ "wildflowers|1994": {
+  "verdict": "clean",
+  "title": "Wildflowers",
+  "year": 1994,
+  "cast": [
+   "Tom Petty",
+   "Tom Petty and the Heartbreakers"
+  ],
+  "ids": [
+   3262,
+   3263
+  ],
+  "not_credited": [],
+  "recordings_matched": 9,
+  "rechecked": true,
+  "rescued_by": "36fd3e83-9e39-4926-a0a6-e1d70741a6af"
+ },
+ "forever young|1976": {
+  "verdict": "no-joint-recording",
+  "title": "Forever Young (live)",
+  "year": 1976,
+  "cast": [
+   "Bob Dylan",
+   "Neil Young"
+  ],
+  "ids": [
+   3264,
+   3265
+  ],
+  "not_credited": [],
+  "recordings_matched": 2,
+  "rechecked": true
+ },
+ "i d have you anytime|1970": {
+  "verdict": "clean",
+  "title": "I'd Have You Anytime",
+  "year": 1970
+ },
+ "planet waves|1974": {
+  "verdict": "not-found",
+  "title": "Planet Waves",
+  "year": 1974
+ },
+ "the basement tapes|1975": {
+  "verdict": "not-found",
+  "title": "The Basement Tapes",
+  "year": 1975
+ },
+ "like a rolling stone|1965": {
+  "verdict": "no-joint-recording",
+  "title": "Like a Rolling Stone",
+  "year": 1965,
+  "cast": [
+   "Bob Dylan",
+   "Al Kooper"
+  ],
+  "ids": [
+   3264,
+   5238
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "end of the line|1988": {
+  "verdict": "no-joint-recording",
+  "title": "End of the Line",
+  "year": 1988,
+  "cast": [
+   "George Harrison",
+   "Traveling Wilburys"
+  ],
+  "ids": [
+   3267,
+   5173
+  ],
+  "not_credited": [],
+  "recordings_matched": 4,
+  "rechecked": true
+ },
+ "when we was fab|1987": {
+  "verdict": "clean",
+  "title": "When We Was Fab",
+  "year": 1987,
+  "cast": [
+   "George Harrison",
+   "Jeff Lynne"
+  ],
+  "ids": [
+   3267,
+   5175
+  ],
+  "not_credited": [],
+  "recordings_matched": 16,
+  "rechecked": true,
+  "rescued_by": "c4e4a74d-ba87-4a43-a8c2-f4bd305f4602"
+ },
+ "songs for the deaf|2002": {
+  "verdict": "not-found",
+  "title": "Songs for the Deaf",
+  "year": 2002
+ },
+ "slither|2010": {
+  "verdict": "no-joint-recording",
+  "title": "Slither",
+  "year": 2010,
+  "cast": [
+   "Scott Weiland",
+   "Slash"
+  ],
+  "ids": [
+   3273,
+   5852
+  ],
+  "not_credited": [],
+  "recordings_matched": 11,
+  "rechecked": true
+ },
+ "little know it all|2004": {
+  "verdict": "clean",
+  "title": "Little Know It All",
+  "year": 2004
+ },
+ "how you remind me|2001": {
+  "verdict": "no-joint-recording",
+  "title": "How You Remind Me",
+  "year": 2001,
+  "cast": [
+   "Nickelback",
+   "Chad Kroeger"
+  ],
+  "ids": [
+   3286,
+   5524
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "broken|2004": {
+  "verdict": "clean",
+  "title": "Broken",
+  "year": 2004
+ },
+ "fallen|2003": {
+  "verdict": "not-found",
+  "title": "Fallen",
+  "year": 2003
+ },
+ "lunchbox down in it|1994": {
+  "verdict": "not-found",
+  "title": "Lunchbox / Down in It (live)",
+  "year": 1994
+ },
+ "scandinavian metal co tour|2004": {
+  "verdict": "not-found",
+  "title": "Scandinavian Metal co-tour",
+  "year": 2004
+ },
+ "cry|2001": {
+  "verdict": "not-found",
+  "title": "Cry (guest appearance)",
+  "year": 2001
+ },
+ "here we go again|2004": {
+  "verdict": "clean",
+  "title": "Here We Go Again",
+  "year": 2004
+ },
+ "the river|2007": {
+  "verdict": "not-found",
+  "title": "The River",
+  "year": 2007
+ },
+ "tamla motown revue|1965": {
+  "verdict": "not-found",
+  "title": "Tamla Motown revue",
+  "year": 1965
+ },
+ "the mack|1973": {
+  "verdict": "not-found",
+  "title": "The Mack",
+  "year": 1973
+ },
+ "my girl|1964": {
+  "verdict": "no-joint-recording",
+  "title": "My Girl",
+  "year": 1964,
+  "cast": [
+   "The Temptations",
+   "David Ruffin"
+  ],
+  "ids": [
+   3408,
+   3531
+  ],
+  "not_credited": [],
+  "recordings_matched": 24,
+  "rechecked": true
+ },
+ "ooo baby baby|1979": {
+  "verdict": "no-joint-recording",
+  "title": "Ooo Baby Baby",
+  "year": 1979,
+  "cast": [
+   "Smokey Robinson",
+   "Aretha Franklin"
+  ],
+  "ids": [
+   3409,
+   3410
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "ebony eyes|1983": {
+  "verdict": "clean",
+  "title": "Ebony Eyes",
+  "year": 1983
+ },
+ "neither one of us|1973": {
+  "verdict": "no-joint-recording",
+  "title": "Neither One of Us",
+  "year": 1973,
+  "cast": [
+   "Smokey Robinson",
+   "Gladys Knight"
+  ],
+  "ids": [
+   3409,
+   3423
+  ],
+  "not_credited": [],
+  "recordings_matched": 24,
+  "rechecked": true
+ },
+ "you send me|1964": {
+  "verdict": "no-joint-recording",
+  "title": "You Send Me",
+  "year": 1964,
+  "cast": [
+   "Aretha Franklin",
+   "Sam Cooke"
+  ],
+  "ids": [
+   3410,
+   3412
+  ],
+  "not_credited": [],
+  "recordings_matched": 9,
+  "rechecked": true
+ },
+ "baby grand|1987": {
+  "verdict": "clean",
+  "title": "Baby Grand",
+  "year": 1987
+ },
+ "otis blue|1965": {
+  "verdict": "not-found",
+  "title": "Otis Blue",
+  "year": 1965
+ },
+ "please please please|1956": {
+  "verdict": "no-joint-recording",
+  "title": "Please Please Please",
+  "year": 1956,
+  "cast": [
+   "James Brown",
+   "Bobby Byrd"
+  ],
+  "ids": [
+   3414,
+   5243
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "i will survive|1978": {
+  "verdict": "no-joint-recording",
+  "title": "I Will Survive",
+  "year": 1978,
+  "cast": [
+   "Chic",
+   "Gloria Gaynor"
+  ],
+  "ids": [
+   3417,
+   3435
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "he s the greatest dancer|1979": {
+  "verdict": "clean",
+  "title": "He's the Greatest Dancer",
+  "year": 1979,
+  "cast": [
+   "Chic",
+   "Sister Sledge"
+  ],
+  "ids": [
+   3417,
+   3514
+  ],
+  "not_credited": [],
+  "recordings_matched": 9,
+  "rechecked": true,
+  "rescued_by": "ba971f16-501b-4099-955b-a616a50301b9"
+ },
+ "into the night|1989": {
+  "verdict": "not-found",
+  "title": "Into the Night",
+  "year": 1989
+ },
+ "united|1967": {
+  "verdict": "not-found",
+  "title": "United",
+  "year": 1967
+ },
+ "bennett and basie strike up the band|2000": {
+  "verdict": "not-found",
+  "title": "Bennett & Basie Strike Up the Band",
+  "year": 2000
+ },
+ "love s theme|1974": {
+  "verdict": "clean",
+  "title": "Love's Theme",
+  "year": 1974
+ },
+ "put a little love in your heart|1988": {
+  "verdict": "clean",
+  "title": "Put a Little Love in Your Heart",
+  "year": 1988
+ },
+ "on my own|1986": {
+  "verdict": "clean",
+  "title": "On My Own",
+  "year": 1986
+ },
+ "1 1|1997": {
+  "verdict": "not-found",
+  "title": "1+1",
+  "year": 1997
+ },
+ "stitched up|2005": {
+  "verdict": "clean",
+  "title": "Stitched Up",
+  "year": 2005
+ },
+ "i ve got a crush on you|1993": {
+  "verdict": "no-joint-recording",
+  "title": "I've Got a Crush on You",
+  "year": 1993,
+  "cast": [
+   "Frank Sinatra",
+   "Barbra Streisand"
+  ],
+  "ids": [
+   3430,
+   3447
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "new york new york|1994": {
+  "verdict": "no-joint-recording",
+  "title": "New York, New York",
+  "year": 1994,
+  "cast": [
+   "Frank Sinatra",
+   "Tony Bennett"
+  ],
+  "ids": [
+   3430,
+   3432
+  ],
+  "not_credited": [],
+  "recordings_matched": 20,
+  "rechecked": true
+ },
+ "l o v e|1993": {
+  "verdict": "not-found",
+  "title": "L-O-V-E (Duets)",
+  "year": 1993
+ },
+ "by the time this night is over|1992": {
+  "verdict": "clean",
+  "title": "By the Time This Night Is Over",
+  "year": 1992
+ },
+ "all i ever need is you|1976": {
+  "verdict": "no-joint-recording",
+  "title": "All I Ever Need Is You",
+  "year": 1976,
+  "cast": [
+   "Rod Stewart",
+   "Cher"
+  ],
+  "ids": [
+   3438,
+   5586
+  ],
+  "not_credited": [],
+  "recordings_matched": 6,
+  "rechecked": true
+ },
+ "people get ready|1985": {
+  "verdict": "clean",
+  "title": "People Get Ready",
+  "year": 1985
+ },
+ "some girls|1978": {
+  "verdict": "not-found",
+  "title": "Some Girls",
+  "year": 1978
+ },
+ "sympathy for the devil|1968": {
+  "verdict": "not-found",
+  "title": "Sympathy for the Devil",
+  "year": 1968
+ },
+ "big time|1987": {
+  "verdict": "not-found",
+  "title": "Big Time",
+  "year": 1987
+ },
+ "the sound of silence|1965": {
+  "verdict": "no-joint-recording",
+  "title": "The Sound of Silence",
+  "year": 1965,
+  "cast": [
+   "Paul Simon",
+   "Simon & Garfunkel"
+  ],
+  "ids": [
+   3441,
+   5140
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "tonight i celebrate my love|1983": {
+  "verdict": "clean",
+  "title": "Tonight I Celebrate My Love",
+  "year": 1983
+ },
+ "hold on i m comin|1966": {
+  "verdict": "not-found",
+  "title": "Hold On I'm Comin'",
+  "year": 1966
+ },
+ "lookin for a love again|1974": {
+  "verdict": "not-found",
+  "title": "Lookin' for a Love Again",
+  "year": 1974
+ },
+ "if it isn t love|1988": {
+  "verdict": "no-joint-recording",
+  "title": "If It Isn't Love",
+  "year": 1988,
+  "cast": [
+   "Bobby Brown",
+   "New Edition"
+  ],
+  "ids": [
+   3457,
+   3478
+  ],
+  "not_credited": [],
+  "recordings_matched": 13,
+  "rechecked": true
+ },
+ "whenever i think of you|1987": {
+  "verdict": "not-found",
+  "title": "Whenever I Think of You",
+  "year": 1987
+ },
+ "vivrant thing|1999": {
+  "verdict": "no-joint-recording",
+  "title": "Vivrant Thing",
+  "year": 1999,
+  "cast": [
+   "Q-Tip",
+   "Raphael Saadiq"
+  ],
+  "ids": [
+   3474,
+   5568
+  ],
+  "not_credited": [],
+  "recordings_matched": 17,
+  "rechecked": true
+ },
+ "anything|1994": {
+  "verdict": "clean",
+  "title": "Anything",
+  "year": 1994
+ },
+ "poison|1990": {
+  "verdict": "no-joint-recording",
+  "title": "Poison",
+  "year": 1990,
+  "cast": [
+   "New Edition",
+   "Bell Biv DeVoe"
+  ],
+  "ids": [
+   3478,
+   3479
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "outstanding|1982": {
+  "verdict": "no-joint-recording",
+  "title": "Outstanding",
+  "year": 1982,
+  "cast": [
+   "Gap Band",
+   "Charlie Wilson"
+  ],
+  "ids": [
+   3491,
+   5577
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "more bounce to the ounce|1980": {
+  "verdict": "clean",
+  "title": "More Bounce to the Ounce",
+  "year": 1980
+ },
+ "give up the funk|1976": {
+  "verdict": "no-joint-recording",
+  "title": "Give Up the Funk",
+  "year": 1976,
+  "cast": [
+   "Parliament",
+   "Bootsy Collins"
+  ],
+  "ids": [
+   3495,
+   3498
+  ],
+  "not_credited": [],
+  "recordings_matched": 18,
+  "rechecked": true
+ },
+ "stretchin out in bootsy s rubber band|1976": {
+  "verdict": "not-found",
+  "title": "Stretchin' Out in Bootsy's Rubber Band",
+  "year": 1976
+ },
+ "the name of this band is talking heads|1982": {
+  "verdict": "not-found",
+  "title": "The Name of This Band Is Talking Heads",
+  "year": 1982
+ },
+ "what a fool believes|1978": {
+  "verdict": "no-joint-recording",
+  "title": "What a Fool Believes",
+  "year": 1978,
+  "cast": [
+   "Michael McDonald",
+   "Doobie Brothers"
+  ],
+  "ids": [
+   3553,
+   3554
+  ],
+  "not_credited": [],
+  "recordings_matched": 7,
+  "rechecked": true
+ },
+ "foxie|1983": {
+  "verdict": "not-found",
+  "title": "Foxie",
+  "year": 1983
+ },
+ "is it you|1982": {
+  "verdict": "no-joint-recording",
+  "title": "Is It You",
+  "year": 1982,
+  "cast": [
+   "Lee Ritenour",
+   "Patti Austin"
+  ],
+  "ids": [
+   3559,
+   5539
+  ],
+  "not_credited": [],
+  "recordings_matched": 7,
+  "rechecked": true
+ },
+ "hello jeff|1975": {
+  "verdict": "not-found",
+  "title": "Hello Jeff (Journey to Love)",
+  "year": 1975
+ },
+ "step into our life|1978": {
+  "verdict": "clean",
+  "title": "Step into Our Life",
+  "year": 1978
+ },
+ "i should ve followed you home|2013": {
+  "verdict": "clean",
+  "title": "I Should've Followed You Home",
+  "year": 2013
+ },
+ "losing my mind|1989": {
+  "verdict": "clean",
+  "title": "Losing My Mind",
+  "year": 1989
+ },
+ "disintegration|1989": {
+  "verdict": "clean",
+  "title": "Disintegration",
+  "year": 1989,
+  "cast": [
+   "The Cure",
+   "Robert Smith"
+  ],
+  "ids": [
+   3657,
+   5526
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true,
+  "rescued_by": "20cd01a0-08fb-42a6-8f29-31ccfb2e00cd"
+ },
+ "killer|1990": {
+  "verdict": "clean",
+  "title": "Killer",
+  "year": 1990
+ },
+ "bluku bluku|2006": {
+  "verdict": "no-joint-recording",
+  "title": "Bluku Bluku",
+  "year": 2006,
+  "cast": [
+   "D Double E",
+   "Flirta D"
+  ],
+  "ids": [
+   3675,
+   6141
+  ],
+  "not_credited": [],
+  "recordings_matched": 4,
+  "rechecked": true
+ },
+ "ain t nothin but a word to me|1995": {
+  "verdict": "not-found",
+  "title": "Ain't Nothin' But a Word to Me",
+  "year": 1995
+ },
+ "all about the money|1996": {
+  "verdict": "not-found",
+  "title": "All About the Money",
+  "year": 1996
+ },
+ "african queens|2003": {
+  "verdict": "not-found",
+  "title": "African Queens",
+  "year": 2003
+ },
+ "stimela|1988": {
+  "verdict": "no-joint-recording",
+  "title": "Stimela",
+  "year": 1988,
+  "cast": [
+   "Miriam Makeba",
+   "Hugh Masekela"
+  ],
+  "ids": [
+   3825,
+   3826
+  ],
+  "not_credited": [],
+  "recordings_matched": 21,
+  "rechecked": true
+ },
+ "isicathamiya soul|2002": {
+  "verdict": "not-found",
+  "title": "Isicathamiya Soul",
+  "year": 2002
+ },
+ "da lama ao caos|1994": {
+  "verdict": "not-found",
+  "title": "Da Lama ao Caos",
+  "year": 1994
+ },
+ "tay me|2014": {
+  "verdict": "not-found",
+  "title": "Tay-Me",
+  "year": 2014
+ },
+ "clube da esquina em dia|2005": {
+  "verdict": "not-found",
+  "title": "Clube da Esquina em Dia",
+  "year": 2005
+ },
+ "minas ao vivo|2002": {
+  "verdict": "not-found",
+  "title": "Minas ao Vivo",
+  "year": 2002
+ },
+ "voice of truth|2003": {
+  "verdict": "no-joint-recording",
+  "title": "Voice of Truth",
+  "year": 2003,
+  "cast": [
+   "Casting Crowns",
+   "Mark Hall"
+  ],
+  "ids": [
+   4104,
+   4192
+  ],
+  "not_credited": [],
+  "recordings_matched": 10,
+  "rechecked": true
+ },
+ "i believe in you|2000": {
+  "verdict": "not-found",
+  "title": "I Believe in You",
+  "year": 2000
+ },
+ "the next time i fall|1986": {
+  "verdict": "clean",
+  "title": "The Next Time I Fall",
+  "year": 1986
+ },
+ "friends|1991": {
+  "verdict": "no-joint-recording",
+  "title": "Friends",
+  "year": 1991,
+  "cast": [
+   "Michael W. Smith",
+   "Sandi Patty"
+  ],
+  "ids": [
+   4109,
+   4231
+  ],
+  "not_credited": [],
+  "recordings_matched": 12,
+  "rechecked": true
+ },
+ "jesus freak tour|1996": {
+  "verdict": "not-found",
+  "title": "Jesus Freak Tour",
+  "year": 1996
+ },
+ "10 000 reasons|2012": {
+  "verdict": "no-joint-recording",
+  "title": "10,000 Reasons",
+  "year": 2012,
+  "cast": [
+   "Matt Redman",
+   "Tim Hughes"
+  ],
+  "ids": [
+   4116,
+   4117
+  ],
+  "not_credited": [],
+  "recordings_matched": 10,
+  "rechecked": true
+ },
+ "your grace finds me|2013": {
+  "verdict": "no-joint-recording",
+  "title": "Your Grace Finds Me",
+  "year": 2013,
+  "cast": [
+   "Matt Redman",
+   "Passion"
+  ],
+  "ids": [
+   4116,
+   4260
+  ],
+  "not_credited": [],
+  "recordings_matched": 4,
+  "rechecked": true
+ },
+ "king of fools|1998": {
+  "verdict": "not-found",
+  "title": "King of Fools",
+  "year": 1998
+ },
+ "you brought the sunshine|2015": {
+  "verdict": "no-joint-recording",
+  "title": "You Brought the Sunshine",
+  "year": 2015,
+  "cast": [
+   "Shirley Caesar",
+   "The Clark Sisters"
+  ],
+  "ids": [
+   4129,
+   4133
+  ],
+  "not_credited": [],
+  "recordings_matched": 18,
+  "rechecked": true
+ },
+ "i love him too much|2014": {
+  "verdict": "not-found",
+  "title": "I Love Him Too Much",
+  "year": 2014
+ },
+ "goin up yonder|1994": {
+  "verdict": "no-joint-recording",
+  "title": "Goin Up Yonder",
+  "year": 1994,
+  "cast": [
+   "The Clark Sisters",
+   "Tramaine Hawkins"
+  ],
+  "ids": [
+   4133,
+   4134
+  ],
+  "not_credited": [],
+  "recordings_matched": 4,
+  "rechecked": true
+ },
+ "because he lives|1971": {
+  "verdict": "no-joint-recording",
+  "title": "Because He Lives",
+  "year": 1971,
+  "cast": [
+   "Bill Gaither",
+   "Gloria Gaither"
+  ],
+  "ids": [
+   4232,
+   4233
+  ],
+  "not_credited": [],
+  "recordings_matched": 7,
+  "rechecked": true
+ },
+ "indescribable|2004": {
+  "verdict": "not-found",
+  "title": "Indescribable",
+  "year": 2004
+ },
+ "selalu milikmu|1995": {
+  "verdict": "not-found",
+  "title": "Selalu Milikmu",
+  "year": 1995
+ },
+ "pagode dos velhos tempos|1990": {
+  "verdict": "not-found",
+  "title": "Pagode dos Velhos Tempos",
+  "year": 1990
+ },
+ "no estilo do samba|1993": {
+  "verdict": "not-found",
+  "title": "No Estilo do Samba",
+  "year": 1993
+ },
+ "cantando bossa nova|1994": {
+  "verdict": "not-found",
+  "title": "Cantando Bossa Nova",
+  "year": 1994
+ },
+ "mpb de vozes|1990": {
+  "verdict": "not-found",
+  "title": "MPB de Vozes",
+  "year": 1990
+ },
+ "zouk remix|2010": {
+  "verdict": "not-found",
+  "title": "Zouk Remix",
+  "year": 2010
+ },
+ "mwen sonje|2008": {
+  "verdict": "not-found",
+  "title": "Mwen Sonjé",
+  "year": 2008
+ },
+ "los hombres del merengue|2000": {
+  "verdict": "not-found",
+  "title": "Los Hombres del Merengue",
+  "year": 2000
+ },
+ "la recompensa|1997": {
+  "verdict": "not-found",
+  "title": "La Recompensa",
+  "year": 1997
+ },
+ "fiesta en el barrio|1993": {
+  "verdict": "not-found",
+  "title": "Fiesta en el Barrio (Live)",
+  "year": 1993
+ },
+ "night raider|1988": {
+  "verdict": "not-found",
+  "title": "Night Raider",
+  "year": 1988
+ },
+ "salsa stars|1989": {
+  "verdict": "not-found",
+  "title": "Salsa Stars (Live)",
+  "year": 1989
+ },
+ "quizas quizas quizas|1997": {
+  "verdict": "not-found",
+  "title": "Quizás Quizás Quizás",
+  "year": 1997
+ },
+ "veinte anos|1997": {
+  "verdict": "no-joint-recording",
+  "title": "Veinte Años",
+  "year": 1997,
+  "cast": [
+   "Omara Portuondo",
+   "Buena Vista Social Club"
+  ],
+  "ids": [
+   5072,
+   5073
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "gwadeloupe festival|2004": {
+  "verdict": "not-found",
+  "title": "Gwadeloupe Festival (Live)",
+  "year": 2004
+ },
+ "barbara ann|1965": {
+  "verdict": "no-joint-recording",
+  "title": "Barbara Ann",
+  "year": 1965,
+  "cast": [
+   "Brian Wilson",
+   "Carl Wilson"
+  ],
+  "ids": [
+   5117,
+   5118
+  ],
+  "not_credited": [],
+  "recordings_matched": 3,
+  "rechecked": true
+ },
+ "the long run|1979": {
+  "verdict": "no-joint-recording",
+  "title": "The Long Run",
+  "year": 1979,
+  "cast": [
+   "Don Henley",
+   "Timothy B. Schmit"
+  ],
+  "ids": [
+   5125,
+   5129
+  ],
+  "not_credited": [],
+  "recordings_matched": 3,
+  "rechecked": true
+ },
+ "tusk|1979": {
+  "verdict": "no-joint-recording",
+  "title": "Tusk",
+  "year": 1979,
+  "cast": [
+   "Fleetwood Mac",
+   "Lindsey Buckingham"
+  ],
+  "ids": [
+   5130,
+   5131
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "fleetwood mac|1975": {
+  "verdict": "no-joint-recording",
+  "title": "Fleetwood Mac",
+  "year": 1975,
+  "cast": [
+   "Fleetwood Mac",
+   "Mick Fleetwood"
+  ],
+  "ids": [
+   5130,
+   5132
+  ],
+  "not_credited": [],
+  "recordings_matched": 5,
+  "rechecked": true
+ },
+ "the dance|1997": {
+  "verdict": "not-found",
+  "title": "The Dance",
+  "year": 1997
+ },
+ "oh daddy|1977": {
+  "verdict": "not-found",
+  "title": "Oh Daddy",
+  "year": 1977
+ },
+ "black magic woman|1968": {
+  "verdict": "no-joint-recording",
+  "title": "Black Magic Woman",
+  "year": 1968,
+  "cast": [
+   "Mick Fleetwood",
+   "Peter Green"
+  ],
+  "ids": [
+   5132,
+   5135
+  ],
+  "not_credited": [],
+  "recordings_matched": 6,
+  "rechecked": true
+ },
+ "hard habit to break|1984": {
+  "verdict": "no-joint-recording",
+  "title": "Hard Habit to Break",
+  "year": 1984,
+  "cast": [
+   "Chicago",
+   "Peter Cetera"
+  ],
+  "ids": [
+   5151,
+   5152
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "25 or 6 to 4|1970": {
+  "verdict": "no-joint-recording",
+  "title": "25 or 6 to 4",
+  "year": 1970,
+  "cast": [
+   "Chicago",
+   "Robert Lamm"
+  ],
+  "ids": [
+   5151,
+   5153
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "make me smile|1970": {
+  "verdict": "no-joint-recording",
+  "title": "Make Me Smile",
+  "year": 1970,
+  "cast": [
+   "Chicago",
+   "Terry Kath"
+  ],
+  "ids": [
+   5151,
+   5154
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "does anybody really know what time it is|1969": {
+  "verdict": "not-found",
+  "title": "Does Anybody Really Know What Time It Is?",
+  "year": 1969
+ },
+ "selling england by the pound|1973": {
+  "verdict": "not-found",
+  "title": "Selling England by the Pound",
+  "year": 1973
+ },
+ "the knife|1971": {
+  "verdict": "not-found",
+  "title": "The Knife",
+  "year": 1971
+ },
+ "supper s ready|1972": {
+  "verdict": "not-found",
+  "title": "Supper's Ready",
+  "year": 1972
+ },
+ "sultans of swing|1978": {
+  "verdict": "no-joint-recording",
+  "title": "Sultans of Swing",
+  "year": 1978,
+  "cast": [
+   "Dire Straits",
+   "John Illsley"
+  ],
+  "ids": [
+   5167,
+   5169
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "money for nothing|1985": {
+  "verdict": "no-joint-recording",
+  "title": "Money for Nothing",
+  "year": 1985,
+  "cast": [
+   "Mark Knopfler",
+   "John Illsley"
+  ],
+  "ids": [
+   5168,
+   5169
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "green onions|1962": {
+  "verdict": "not-found",
+  "title": "Green Onions",
+  "year": 1962
+ },
+ "humble pie|1970": {
+  "verdict": "not-found",
+  "title": "Humble Pie",
+  "year": 1970
+ },
+ "rock on|1971": {
+  "verdict": "not-found",
+  "title": "Rock On",
+  "year": 1971
+ },
+ "over under sideways down|1966": {
+  "verdict": "no-joint-recording",
+  "title": "Over Under Sideways Down",
+  "year": 1966,
+  "cast": [
+   "Jimmy Page",
+   "The Yardbirds"
+  ],
+  "ids": [
+   5209,
+   5213
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "when the levee breaks|1971": {
+  "verdict": "no-joint-recording",
+  "title": "When the Levee Breaks",
+  "year": 1971,
+  "cast": [
+   "Jimmy Page",
+   "John Bonham"
+  ],
+  "ids": [
+   5209,
+   5212
+  ],
+  "not_credited": [],
+  "recordings_matched": 7,
+  "rechecked": true
+ },
+ "shapes of things|1966": {
+  "verdict": "clean",
+  "title": "Shapes of Things",
+  "year": 1966,
+  "cast": [
+   "The Yardbirds",
+   "Jeff Beck"
+  ],
+  "ids": [
+   5213,
+   5214
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true,
+  "rescued_by": "7e7f526f-3748-4430-9a21-93fdacf93bdb"
+ },
+ "beck ola|1969": {
+  "verdict": "not-found",
+  "title": "Beck-Ola",
+  "year": 1969
+ },
+ "walk this way|1975": {
+  "verdict": "clean",
+  "title": "Walk This Way",
+  "year": 1975
+ },
+ "woodstock|1969": {
+  "verdict": "not-found",
+  "title": "Woodstock",
+  "year": 1969
+ },
+ "american beauty|1970": {
+  "verdict": "not-found",
+  "title": "American Beauty",
+  "year": 1970
+ },
+ "dark star|1969": {
+  "verdict": "not-found",
+  "title": "Dark Star",
+  "year": 1969
+ },
+ "the planet earth rock and roll orchestra|1983": {
+  "verdict": "not-found",
+  "title": "The Planet Earth Rock and Roll Orchestra",
+  "year": 1983
+ },
+ "blues for allah|1975": {
+  "verdict": "not-found",
+  "title": "Blues for Allah",
+  "year": 1975
+ },
+ "grateful dead|1971": {
+  "verdict": "not-found",
+  "title": "Grateful Dead (Skull & Roses)",
+  "year": 1971
+ },
+ "somebody to love|1967": {
+  "verdict": "no-joint-recording",
+  "title": "Somebody to Love",
+  "year": 1967,
+  "cast": [
+   "Jefferson Airplane",
+   "Grace Slick"
+  ],
+  "ids": [
+   5230,
+   5231
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "volunteers|1969": {
+  "verdict": "no-joint-recording",
+  "title": "Volunteers",
+  "year": 1969,
+  "cast": [
+   "Jefferson Airplane",
+   "Marty Balin"
+  ],
+  "ids": [
+   5230,
+   5232
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "surrealistic pillow|1967": {
+  "verdict": "not-found",
+  "title": "Surrealistic Pillow",
+  "year": 1967
+ },
+ "mr tambourine man|1965": {
+  "verdict": "no-joint-recording",
+  "title": "Mr. Tambourine Man",
+  "year": 1965,
+  "cast": [
+   "The Byrds",
+   "Roger McGuinn"
+  ],
+  "ids": [
+   5254,
+   5255
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "eight miles high|1966": {
+  "verdict": "no-joint-recording",
+  "title": "Eight Miles High",
+  "year": 1966,
+  "cast": [
+   "The Byrds",
+   "Chris Hillman"
+  ],
+  "ids": [
+   5254,
+   5256
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
+ },
+ "i ll feel a whole lot better|1965": {
+  "verdict": "clean",
+  "title": "I'll Feel a Whole Lot Better",
+  "year": 1965
+ },
+ "sweetheart of the rodeo|1968": {
+  "verdict": "not-found",
+  "title": "Sweetheart of the Rodeo",
+  "year": 1968
+ },
+ "burrito deluxe|1970": {
+  "verdict": "not-found",
+  "title": "Burrito Deluxe",
+  "year": 1970
+ },
+ "the gilded palace of sin|1969": {
+  "verdict": "not-found",
+  "title": "The Gilded Palace of Sin",
+  "year": 1969
+ },
+ "songs for drella|1990": {
+  "verdict": "not-found",
+  "title": "Songs for Drella",
+  "year": 1990
+ },
+ "dear prudence|1983": {
+  "verdict": "not-found",
+  "title": "Dear Prudence",
+  "year": 1983
+ },
+ "eat em and smile|1986": {
+  "verdict": "not-found",
+  "title": "Eat 'Em and Smile",
+  "year": 1986
+ },
+ "tinsel town rebellion|1981": {
+  "verdict": "clean",
+  "title": "Tinsel Town Rebellion",
+  "year": 1981,
+  "cast": [
+   "Steve Vai",
+   "Frank Zappa"
+  ],
+  "ids": [
+   5723,
+   5864
+  ],
+  "not_credited": [],
+  "recordings_matched": 10,
+  "rechecked": true,
+  "rescued_by": "e32c4614-a339-480d-911e-f5a0141a3363"
+ },
+ "the specials|1979": {
+  "verdict": "not-found",
+  "title": "The Specials (album production by Elvis Costello)",
+  "year": 1979
+ },
+ "bankrobber|1980": {
+  "verdict": "no-joint-recording",
+  "title": "Bankrobber",
+  "year": 1980,
+  "cast": [
+   "The Clash",
+   "Mikey Dread"
+  ],
+  "ids": [
+   6033,
+   6696
+  ],
+  "not_credited": [],
+  "recordings_matched": 25,
+  "rechecked": true
  }
 }

@@ -141,12 +141,35 @@ def main() -> None:
             continue
         strip[(fold(v["title"]), v["year"])] = drop
 
+    # Duos judged by tools/verify_casts.py --duos: the catalogue has the song,
+    # more than once, and no single recording credits both. That is a cover or a
+    # tribute, not a collaboration — Seu Jorge recording "Life on Mars" for The
+    # Life Aquatic, Lorde singing Bowie at the Brits. The whole row goes.
+    #
+    # Unless they are bandmates. A catalogue credits "Cream", never "Cream and
+    # Eric Clapton", so every band-and-member pair looks identical to a cover
+    # here and would be deleted on the same evidence.
+    cover_rows, bandmates = set(), 0
+    for v in audit.values():
+        if v.get("verdict") != "no-joint-recording":
+            continue
+        cast = v.get("cast") or []
+        if len(cast) != 2:
+            continue
+        if in_band_with(cast[0], [cast[1]]):
+            bandmates += 1
+            held.append((v["title"], v["year"], f"{cast[0]} e {cast[1]} sao a mesma banda"))
+            continue
+        cover_rows.add((fold(v["title"]), v["year"], frozenset(v["ids"])))
+
     # Rows to delete: any pair where at least one side is stripped from that song.
     victims = []
     for idx, (a1, a2, title, ctype, year) in enumerate(COLLABORATIONS):
         drop = strip.get((fold(title), year))
         if drop and (a1 in drop or a2 in drop):
             victims.append((idx, a1, a2, title, ctype, year, drop))
+        elif (fold(title), year, frozenset((a1, a2))) in cover_rows:
+            victims.append((idx, a1, a2, title, ctype, year, {a1, a2}))
 
     print("=" * 70)
     print("CORRECAO DE ELENCO")
@@ -156,6 +179,8 @@ def main() -> None:
     print(f"  seguradas (franquia/versao)           : {series}")
     print(f"  seguradas (esvaziaria o elenco)       : {tiny}")
     print(f"  poupados (membro de grupo creditado)  : {bands}")
+    print(f"  duplas sem gravacao conjunta (cover)  : {len(cover_rows)}")
+    print(f"  poupadas (sao a mesma banda)          : {bandmates}")
     print(f"  linhas a remover           : {len(victims):,}")
     for _i, a1, a2, title, _c, year in [(v[0], v[1], v[2], v[3], v[4], v[5]) for v in victims[:12]]:
         print(f"    {title!r} ({year}) — {name.get(a1)} × {name.get(a2)}")
@@ -191,7 +216,11 @@ def main() -> None:
                     "row": list(row), "line": raw.strip(),
                     "artists": [name.get(a1, ""), name.get(a2, "")],
                     "pair": [name.get(a1, ""), name.get(a2, "")],
-                    "reason": "artist not credited on this recording",
+                    "reason": (
+                        "cover/tribute: no recording credits both"
+                        if (fold(title), year, frozenset((a1, a2))) in cover_rows
+                        else "artist not credited on this recording"
+                    ),
                     "searched": audit.get(
                         f"{fold(title)}|{year}", {}
                     ).get("recordings_matched", 0),

@@ -36,6 +36,7 @@ sys.path.insert(0, os.path.join(ROOT, "data"))
 from source_data import ARTISTS, COLLABORATIONS  # noqa: E402
 
 STATE = os.path.join(ROOT, "data", "cast_audit.json")
+COVER_RISK = os.path.join(ROOT, "data", "cover_risk.json")
 
 BASE = "https://musicbrainz.org/ws/2/recording"
 UA = "ConnectTheNotes/0.1 ( matheusbmarques13@gmail.com )"
@@ -101,8 +102,15 @@ def credited(rec: dict) -> list[str]:
     return [n.strip() for n in names if n and n.strip()]
 
 
-def songs_from_source() -> list[dict]:
-    """Rebuild the merged songs exactly as data/build.py does."""
+def songs_from_source(min_cast: int = 3) -> list[dict]:
+    """Rebuild the merged songs exactly as data/build.py does.
+
+    min_cast=2 includes plain duos. That is where cover and tribute rows hide:
+    Seu Jorge recorded "Life on Mars" alone for The Life Aquatic and Lorde sang
+    Bowie at the Brits, and both arrived as a Bowie collaboration. On a duo an
+    uncredited artist does not mean a wrong cast, it means the whole edge is
+    false — so those go to tools/apply_cast_fixes.py as row removals.
+    """
     name = {i: n for (i, n, _g) in ARTISTS}
     groups = {}
     for a1, a2, title, ctype, year in COLLABORATIONS:
@@ -114,7 +122,7 @@ def songs_from_source() -> list[dict]:
         g["ids"].update((a1, a2))
     out = []
     for g in groups.values():
-        if len(g["ids"]) >= 3:                          # contamination shows here
+        if len(g["ids"]) >= min_cast:
             out.append(
                 {
                     "title": g["title"], "type": g["type"], "year": g["year"],
@@ -122,14 +130,29 @@ def songs_from_source() -> list[dict]:
                     "names": [name.get(i, "") for i in sorted(g["ids"])],
                 }
             )
-    out.sort(key=lambda s: -len(s["ids"]))
+    # Fame-first: ids run roughly best-known first, so a song touching a low id
+    # matters more to the game than one between two deep-catalogue artists.
+    out.sort(key=lambda s: (min(s["ids"]), -len(s["ids"])))
     return out
 
 
 def main() -> None:
-    budget = int(sys.argv[1]) if len(sys.argv) > 1 else 0
+    numeric = [a for a in sys.argv[1:] if a.isdigit()]
+    budget = int(numeric[0]) if numeric else 0
+    min_cast = 2 if "--duos" in sys.argv else 3
 
-    songs = songs_from_source()
+    songs = songs_from_source(min_cast)
+
+    # --from-risk narrows to the duos tools/rank_cover_risk.py flagged. Checking
+    # all 18k pairs costs ~22h at MusicBrainz's 1 req/s; the ranked slice is
+    # under an hour and holds the rows most likely to be a cover.
+    if "--from-risk" in sys.argv and os.path.exists(COVER_RISK):
+        with open(COVER_RISK, encoding="utf-8") as fh:
+            risky = {(r["a1"], r["a2"]) for r in json.load(fh)}
+        songs = [
+            s for s in songs
+            if len(s["ids"]) == 2 and tuple(s["ids"]) in risky
+        ]
     state = {}
     if os.path.exists(STATE):
         with open(STATE, encoding="utf-8") as fh:
@@ -174,13 +197,49 @@ def main() -> None:
         ours = {fold(x): x for x in s["names"]}
         seen_names: set[str] = set()
         matched = 0
+        joint = 0            # recordings crediting EVERY artist we claim
+        titled = 0           # recordings that are this song at all
         for rec in data.get("recordings") or []:
             if title_key(rec.get("title") or "") != want:
                 continue
+            titled += 1
             names = {fold(x) for x in credited(rec)}
+            if set(ours) <= names:
+                joint += 1
             if len(names & set(ours)) >= MIN_ANCHOR:
                 matched += 1
                 seen_names |= names
+
+        # A duo needs a different question. Unioning casts across recordings
+        # hides a cover: "Life on Mars" exists as Bowie's original and as Seu
+        # Jorge's solo version, and together they credit both men without either
+        # ever recording with the other. So for a pair, ask whether ONE
+        # recording credits both — nothing else counts.
+        if len(s["names"]) == 2:
+            if joint:
+                state[key] = {"verdict": "clean", "title": s["title"],
+                              "year": s["year"]}
+            elif titled >= 2:
+                state[key] = {
+                    "verdict": "no-joint-recording",
+                    "title": s["title"], "year": s["year"],
+                    "cast": s["names"], "ids": s["ids"],
+                    "not_credited": [], "recordings_matched": titled,
+                }
+                print(f"  x {s['title']!r} ({s['year']}): "
+                      f"{' x '.join(s['names'])} nunca gravaram juntos "
+                      f"({titled} gravacoes)", flush=True)
+            else:
+                state[key] = {"verdict": "not-found", "title": s["title"],
+                              "year": s["year"]}
+            if n % 20 == 0 or n == len(todo):
+                el = time.time() - started
+                with open(STATE, "w", encoding="utf-8") as fh:
+                    json.dump(state, fh, ensure_ascii=False, indent=1)
+                print(f"  [{n}/{len(todo)}  {n / max(1e-9, el) * 60:.0f}/min  "
+                      f"faltam ~{(len(todo) - n) * el / max(1, n) / 60:.0f} min]",
+                      flush=True)
+            continue
 
         if not matched:
             state[key] = {"verdict": "not-found", "title": s["title"],

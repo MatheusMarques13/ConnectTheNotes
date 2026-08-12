@@ -61,9 +61,18 @@ Cada uma dessas custou dado real ou quase custou:
   partes 1, 2 e 3 — ano errado na linha faz a correção remover o artista certo.
 - **Lançamento póstumo é normal.** Kygo × Whitney Houston é real. Detector de
   anacronismo não funciona para música (ver `find_impossible.py`).
-- **Ainda não resolvido:** cover e tributo entram como colaboração. Seu Jorge
-  regravando Bowie e Lorde no tributo do Brits viraram arestas. Estão nas ~8,6k
-  arestas antigas sem fonte.
+- **Cover e tributo entram como colaboração**, e o detector automático disso
+  (`verify_casts.py --duos`) **não pode rodar sozinho**: medido contra
+  verificação na web, tem **24% de precisão**. Ele marcou *Under Pressure*
+  (Bowie × Queen), *Hey Jude* (McCartney × Lennon) e *It Wasn't Me*
+  (Shaggy × RikRok) como cover. Serve só como fila de revisão humana.
+  A causa: o MusicBrainz tem 135 gravações de *Under Pressure* e as do topo
+  creditam só o Queen — o detector não distingue "não existe gravação conjunta"
+  de "os 10 primeiros resultados creditam só um".
+- **Crédito de composição não é colaboração.** Bernie Taupin escreveu para o
+  Elton John, Djavan compôs *Álibi* para a Bethânia, Benny Andersson é do
+  sample de *Hung Up*. Nenhum tocou na gravação. Classe própria, ainda sem
+  ferramenta.
 
 - `data/artist_fame.json` — fãs do Deezer + id do artista por nó, usado pelo
   build para calcular o score de fama (0..1000) e o pool `FAMOUS_IDS`, de onde
