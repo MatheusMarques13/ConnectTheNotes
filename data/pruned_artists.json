@@ -1,28 +1,10 @@
 {
  "removed": [
   {
-   "id": 2113,
-   "name": "Roxette",
-   "genre": "pop",
-   "line": "(2113, 'Roxette', 'pop'),"
-  },
-  {
-   "id": 2619,
-   "name": "Domenico Modugno",
-   "genre": "pop",
-   "line": "(2619, 'Domenico Modugno', 'pop'),"
-  },
-  {
-   "id": 5196,
-   "name": "Bernie Taupin",
-   "genre": "Rock",
-   "line": "(5196, 'Bernie Taupin', 'Rock'),"
-  },
-  {
-   "id": 6034,
-   "name": "Junior Murvin",
+   "id": 5587,
+   "name": "Sam & Dave",
    "genre": "Other",
-   "line": "(6034, 'Junior Murvin', 'Other'),"
+   "line": "(5587, 'Sam & Dave', 'Other'),"
   }
  ],
  "note": "cole a chave 'line' de volta em ARTISTS para restaurar"

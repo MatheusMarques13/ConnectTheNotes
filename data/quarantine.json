@@ -17119,6 +17119,86 @@
    ],
    "reason": "cover/tribute/composition credit — verified on the web",
    "searched": 2
+  },
+  {
+   "row": [
+    3097,
+    414,
+    "Exhale (Shoop Shoop)",
+    "song",
+    1995
+   ],
+   "line": "(3097, 414, 'Exhale (Shoop Shoop)', 'song', 1995),",
+   "artists": [
+    "Babyface",
+    "Whitney Houston"
+   ],
+   "pair": [
+    "Babyface",
+    "Whitney Houston"
+   ],
+   "reason": "cover/composition — settled via MusicBrainz work",
+   "searched": 2
+  },
+  {
+   "row": [
+    3264,
+    3265,
+    "Forever Young (live)",
+    "live",
+    1976
+   ],
+   "line": "(3264, 3265, 'Forever Young (live)', 'live', 1976),",
+   "artists": [
+    "Bob Dylan",
+    "Neil Young"
+   ],
+   "pair": [
+    "Bob Dylan",
+    "Neil Young"
+   ],
+   "reason": "cover/composition — settled via MusicBrainz work",
+   "searched": 2
+  },
+  {
+   "row": [
+    3455,
+    5587,
+    "Hold On I'm Comin'",
+    "song",
+    1966
+   ],
+   "line": "(3455, 5587, \"Hold On I'm Comin'\", 'song', 1966),",
+   "artists": [
+    "Isaac Hayes",
+    "Sam & Dave"
+   ],
+   "pair": [
+    "Isaac Hayes",
+    "Sam & Dave"
+   ],
+   "reason": "cover/composition — settled via MusicBrainz work",
+   "searched": 2
+  },
+  {
+   "row": [
+    3410,
+    3412,
+    "You Send Me",
+    "feature",
+    1964
+   ],
+   "line": "(3410, 3412, 'You Send Me', 'feature', 1964),",
+   "artists": [
+    "Aretha Franklin",
+    "Sam Cooke"
+   ],
+   "pair": [
+    "Aretha Franklin",
+    "Sam Cooke"
+   ],
+   "reason": "cover/composition — settled via MusicBrainz work",
+   "searched": 2
   }
  ],
  "note": "cole a chave 'line' de volta em COLLABORATIONS para restaurar qualquer linha"

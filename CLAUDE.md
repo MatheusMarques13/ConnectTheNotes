@@ -71,8 +71,29 @@ Cada uma dessas custou dado real ou quase custou:
   de "os 10 primeiros resultados creditam só um".
 - **Crédito de composição não é colaboração.** Bernie Taupin escreveu para o
   Elton John, Djavan compôs *Álibi* para a Bethânia, Benny Andersson é do
-  sample de *Hung Up*. Nenhum tocou na gravação. Classe própria, ainda sem
-  ferramenta.
+  sample de *Hung Up*. Nenhum tocou na gravação.
+
+### Como distinguir cover de colaboração (`verify_via_works.py`)
+
+A pergunta certa não é *"existe gravação creditando os dois?"* — o crédito de
+gravação é incompleto e o MusicBrainz tem 135 gravações de *Under Pressure*
+creditadas só ao Queen. A pergunta é sobre a **obra**:
+
+1. Percorra **todas** as gravações da obra (`?work=<id>`), não os primeiros
+   resultados da busca por título. É aí que aparece a versão "Queen + Bowie".
+2. Alguma gravação credita os dois → colaboração.
+3. Cada um gravou separado e nunca juntos → **cover**.
+4. Um só assina a obra e não aparece em nenhuma gravação → **composição**,
+   mas só se tiver poucas gravações próprias: Bernie Taupin tem 45, Desmond
+   Child 84, John Lennon 8.630. Quem tem milhares está creditado como banda,
+   não ausente — foi isso que salvou *Hey Jude*.
+5. Qualquer outra coisa → inconclusivo, **mantém a aresta**.
+
+Trava obrigatória antes de tudo: **grupo em comum**, não link direto. Clapton
+aponta para "Cream" e Jack Bruce também, mas nenhum aponta para o outro.
+
+Produtor que também toca (Nile Rodgers em *We Are Family*, Lee Perry no Marley)
+é zona cinzenta e fica — a regra para remover é *na dúvida, não remove*.
 
 - `data/artist_fame.json` — fãs do Deezer + id do artista por nó, usado pelo
   build para calcular o score de fama (0..1000) e o pool `FAMOUS_IDS`, de onde
