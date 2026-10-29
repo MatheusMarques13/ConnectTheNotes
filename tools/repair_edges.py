@@ -123,7 +123,7 @@ def query_pair(n1: str, n2: str) -> dict | None:
         {
             "query": f'artist:"{t1}" AND artist:"{t2}"',
             "fmt": "json",
-            "limit": 8,
+            "limit": 100,         # the most one page holds: the song is looked up in it
         }
     )
     return get(f"{BASE}?{qs}")
@@ -152,6 +152,9 @@ def fold(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
 
 
+ROSTER = {fold(n) for (_i, n, _g) in ARTISTS}
+
+
 def credits_both(rec: dict, n1: str, n2: str) -> bool:
     """Does this recording actually credit BOTH artists?
 
@@ -160,12 +163,19 @@ def credits_both(rec: dict, n1: str, n2: str) -> bool:
     tool would swap a fabricated title for an unrelated real one, which is
     worse than leaving the placeholder in place.
     """
-    names = [fold(a) for a in credited(rec)]
-    joined = " | ".join(names)
-    return all(
-        any(f == fold(n) for f in names) or fold(n) in joined
-        for n in (n1, n2)
-    )
+    from prune_lives import contains_act       # one name rule for both catalogues; it imports us
+
+    # Both the name on the credit and the artist's current name: MusicBrainz
+    # renamed Kanye West to "Ye", while his old records still credit "Kanye West".
+    raw = [x for a in rec.get("artist-credit") or [] if isinstance(a, dict)
+           for x in (a.get("name"), (a.get("artist") or {}).get("name")) if x]
+    names = [fold(x) for x in raw]
+
+    def credited(n: str) -> bool:
+        f = fold(n)                           # "MØ" folds to "m": whole words only
+        return f in names or any(contains_act(f, x, ROSTER, fold) for x in raw)
+
+    return credited(n1) and credited(n2)
 
 
 def main() -> None:

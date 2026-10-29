@@ -73,22 +73,33 @@ def get(url: str, tries: int = 4) -> dict | None:
     return None
 
 
-def related(name: str) -> list[str]:
-    """Groups this artist belongs to, and people who belong to it."""
+def related(name: str) -> list[str] | None:
+    """Groups this artist belongs to, and people who belong to it.
+
+    None when MusicBrainz did not answer, so the caller can retry instead of
+    recording "no band". The top hit must be this artist: a loose search sent
+    "-M-" to Boney M. and gave him their members.
+    """
     term = LUCENE.sub(" ", name).strip()
     if not term:
         return []
     qs = urllib.parse.urlencode({"query": f'artist:"{term}"', "fmt": "json", "limit": 1})
     found = get(f"{BASE}?{qs}")
-    hits = (found or {}).get("artists") or []
+    if found is None:
+        return None
+    hits = found.get("artists") or []
     if not hits:
         return []
-    mbid = hits[0]["id"]
+    top = hits[0]
+    if fold(name) not in {fold(top.get("name", ""))} | {fold(a.get("name", "")) for a in top.get("aliases") or []}:
+        return []
     time.sleep(INTERVAL)
 
-    detail = get(f"{BASE}/{mbid}?inc=artist-rels&fmt=json")
+    detail = get(f"{BASE}/{top['id']}?inc=artist-rels&fmt=json")
+    if detail is None:
+        return None
     names = []
-    for rel in (detail or {}).get("relations") or []:
+    for rel in detail.get("relations") or []:
         if rel.get("type") in ("member of band", "collaboration", "is person"):
             other = (rel.get("artist") or {}).get("name")
             if other:
@@ -124,8 +135,10 @@ def main() -> None:
 
     started = time.time()
     for n, name in enumerate(todo, 1):
-        cache[name] = related(name)
+        found = related(name)
         time.sleep(INTERVAL)
+        if found is not None:                       # not answered: retried on the next run
+            cache[name] = found
         if n % 20 == 0 or n == len(todo):
             el = time.time() - started
             with open(OUT, "w", encoding="utf-8") as fh:

@@ -67,7 +67,7 @@ def is_br(genre: str) -> bool:
 # Luciano) Ao Vivo"). The game already shows who is on the song, so the credit
 # is noise in a puzzle board — strip it, keep the live marker.
 FEAT_SUFFIX = re.compile(
-    r"\s*[\(\[]\s*(?:feat|ft|com|with|participa[çc][ãa]o)\.?\s[^)\]]*[\)\]]", re.I
+    r"\s*[\(\[]\s*(?:feat|ft|com|with|participa[çc][ãa]o)\.?\s[^)\]]*(?:[\)\]]|$)", re.I
 )
 
 

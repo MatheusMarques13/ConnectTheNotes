@@ -192,6 +192,11 @@ def work_recordings(work_id: str, pages: int = 3) -> tuple[list[set[str]], int]:
 _LINKED = None
 
 
+def band_key(s: str) -> str:
+    """fold() without a leading "the": the roster has "The Faces", the band file "Faces"."""
+    return re.sub(r"^the ", "", fold(s))
+
+
 def bandmates(a: str, b: str) -> bool:
     """Are these two the same act named at different levels?
 
@@ -206,8 +211,8 @@ def bandmates(a: str, b: str) -> bool:
         if os.path.exists(GROUPS):
             with open(GROUPS, encoding="utf-8") as fh:
                 raw = json.load(fh)
-        _LINKED = {fold(k): {fold(x) for x in v} for k, v in raw.items()}
-    fa, fb = fold(a), fold(b)
+        _LINKED = {band_key(k): {band_key(x) for x in v} for k, v in raw.items()}
+    fa, fb = band_key(a), band_key(b)
     if fb in _LINKED.get(fa, set()) or fa in _LINKED.get(fb, set()):
         return True
     # A shared group, not a direct link. Eric Clapton points at "Cream" and so
@@ -216,8 +221,10 @@ def bandmates(a: str, b: str) -> bool:
     if _LINKED.get(fa, set()) & _LINKED.get(fb, set()):
         return True
     # One name inside the other: "Tom Petty" and "Tom Petty and the
-    # Heartbreakers" are the same act.
-    return bool(fa and fb and (fa in fb or fb in fa))
+    # Heartbreakers" are the same act. Whole words, 3+ letters: "-M-" folds to
+    # "m", which sits inside "Major Lazer" without being Major Lazer.
+    short, long_ = sorted((fa, fb), key=len)
+    return len(short) >= 3 and f" {short} " in f" {long_} "
 
 
 def judge(a: str, b: str, title: str) -> dict:

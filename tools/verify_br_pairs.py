@@ -64,13 +64,25 @@ def fold(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
 
 
-def get(url: str, tries: int = 4) -> dict | None:
+def get(url: str, tries: int = 5) -> dict | None:
+    """None means the lookup failed — never "nothing found".
+
+    Deezer reports quota and server trouble inside a 200 response as
+    {"error": {...}}. Read as an empty result, that is how a real collaboration
+    gets deleted. Code 800 ("no data") is the one error that means "not there".
+    """
     delay = 1.0
     for attempt in range(tries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "ConnectTheNotes/0.1"})
             with urllib.request.urlopen(req, timeout=25, context=SSL_CTX) as fh:
-                return json.load(fh)
+                data = json.load(fh)
+            err = data.get("error") if isinstance(data, dict) else None
+            if not err:
+                return data
+            if err.get("code") == 800:
+                return {}
+            raise RuntimeError(f"deezer {err.get('code')}: {err.get('message')}")
         except Exception as exc:                        # noqa: BLE001
             if attempt == tries - 1:
                 print(f"    ! {exc}", flush=True)
@@ -80,15 +92,15 @@ def get(url: str, tries: int = 4) -> dict | None:
     return None
 
 
-def search(n1: str, n2: str) -> list[dict]:
+def search(n1: str, n2: str) -> list[dict] | None:
     qs = urllib.parse.urlencode({"q": f"{n1} {n2}", "limit": 8})
-    data = get(f"{SEARCH}?{qs}") or {}
-    return data.get("data") or []
+    data = get(f"{SEARCH}?{qs}")
+    return None if data is None else (data.get("data") or [])
 
 
-def contributors(track_id: int) -> list[str]:
-    data = get(f"{TRACK}{track_id}") or {}
-    return [c.get("name", "") for c in data.get("contributors") or []]
+def contributors(track_id: int) -> list[str] | None:
+    data = get(f"{TRACK}{track_id}")
+    return None if data is None else [c.get("name", "") for c in data.get("contributors") or []]
 
 
 def is_br(genre: str) -> bool:
@@ -125,10 +137,12 @@ def main() -> None:
         n1, n2 = v["names"]
         hits = search(n1, n2)
         time.sleep(INTERVAL)
+        if hits is None:
+            continue                                    # lookup failed: retry next run
 
         found, evidence = [], []
         for t in hits[:TOP_TRACKS]:
-            names = contributors(t["id"])
+            names = contributors(t["id"]) or []
             time.sleep(INTERVAL)
             folded = " | ".join(fold(x) for x in names)
             both = all(fold(x) in folded for x in (n1, n2))

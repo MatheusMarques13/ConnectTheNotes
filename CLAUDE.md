@@ -45,6 +45,16 @@ ser rodadas de novo sempre que os dados crescerem:
 - `prune_lives.py` — live sem fonte em catálogo: internacional sai; brasileira é
   conferida no Deezer e no MusicBrainz e fica se existir (ou ganha o título da
   gravação real da dupla, se o título estava inventado).
+- `verify_old_rows.py` — confere cada linha sem fonte (as do seed): música
+  exata no Deezer **e** no MusicBrainz antes de qualquer troca de título (o
+  Deezer credita *SICKO MODE* só ao Travis Scott; sozinho, trocaria por *Fair
+  Trade*). Par real com título inventado → título da gravação real; par sem
+  gravação conjunta em nenhum dos dois → sai, salvo se for da mesma banda
+  (filiações do Wikidata e do MusicBrainz). Membro creditado pelo grupo conta,
+  só com a música exata: *RITMO* é do Black Eyed Peas e vale para will.i.am,
+  *Walk It Talk It* é dos Migos e vale para Offset. Consulta que falhou fica. Dupla
+  famosa que nenhum catálogo confirma passa por busca na web com segunda
+  checagem independente (`data/web_check.json`); `--restore` devolve as achadas.
 - `prune_orphans.py` — tira do roster quem ficou sem nenhuma colaboração.
 
 Tudo é reversível: linha removida vai para `data/quarantine.json` com o texto
@@ -75,6 +85,21 @@ Cada uma dessas custou dado real ou quase custou:
 - **Crédito de composição não é colaboração.** Bernie Taupin escreveu para o
   Elton John, Djavan compôs *Álibi* para a Bethânia, Benny Andersson é do
   sample de *Hung Up*. Nenhum tocou na gravação.
+- **Nome dentro de outro nome não é crédito.** "MØ" vira "m", que está em
+  quase todo crédito; "TINI" está em "Tinie Tempah", "Mora" em "Morad". A
+  conferência aceita nome igual, o código do Deezer, ou o nome como palavra
+  inteira dentro de um maior — e, se o maior for outro artista do elenco, só
+  como parte de dupla ou grupo ("Wisin & Yandel" vale para Wisin; "Camila
+  Cabello" não vale para a banda Camila).
+- **Mesma pessoa em dois nós.** "Pharrell" e "Pharrell Williams", "Kevinho" e
+  "MC Kevinho" são nós separados, e o código do Deezer do nome curto aponta
+  para uma página errada (3 fãs). Uma regra de nome estrita demais apagaria
+  *Get Lucky*. `verify_old_rows.py --recheck` reconfere provas antigas; as
+  rejeições dele se revisam à mão antes de aplicar.
+- **Lista de músicas no título é emenda de DJ**, a não ser que seja pot-pourri
+  ao vivo ou session (*Bad Blood / Royals / Hold Up* é mashup; *Pot-Pourri:
+  Miudinho / Casa de Bamba (Ao Vivo)* é DVD de pagode). *Hitmix*, *Chart Mix* e
+  *Intro* solto também não servem como título trocado.
 
 ### Como distinguir cover de colaboração (`verify_via_works.py`)
 

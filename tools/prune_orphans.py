@@ -76,10 +76,14 @@ def main() -> None:
     with open(SOURCE, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines))
 
+    earlier = []
+    if os.path.exists(PRUNED):                      # keep earlier runs' records
+        with open(PRUNED, encoding="utf-8") as fh:
+            earlier = json.load(fh).get("removed", [])
     with open(PRUNED, "w", encoding="utf-8") as fh:
         json.dump(
             {
-                "removed": removed,
+                "removed": earlier + removed,
                 "note": "cole a chave 'line' de volta em ARTISTS para restaurar",
             },
             fh, ensure_ascii=False, indent=1,

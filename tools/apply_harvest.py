@@ -34,6 +34,7 @@ from source_data import ARTISTS, COLLABORATIONS  # noqa: E402
 
 SOURCE = os.path.join(ROOT, "data", "source_data.py")
 HARVEST = os.path.join(ROOT, "data", "recent_harvest.json")
+PRUNED = os.path.join(ROOT, "data", "pruned_artists.json")
 SOURCES = os.path.join(ROOT, "data", "edge_sources.json")
 
 DJ_EDIT = re.compile(
@@ -129,6 +130,21 @@ def main() -> None:
         seen.add(key)
         accepted.append(c)
 
+    # The crawl saw these artists on the roster; a cleanup may have pruned them
+    # since. Their rows are real, so the artist comes back. Seven were left
+    # dangling once (Sylvan Esso, King Princess), and the build skipped their rows.
+    roster = {i for i, _n, _g in ARTISTS}
+    pruned = {"removed": []}
+    if os.path.exists(PRUNED):
+        with open(PRUNED, encoding="utf-8") as fh:
+            pruned = json.load(fh)
+    parked = {a["id"]: a for a in pruned["removed"]}
+    revive = [parked[x] for x in sorted({x for c in accepted for x in (c["a1"], c["a2"])} - roster)
+              if x in parked]
+    back = roster | {a["id"] for a in revive}
+    why["artista fora do elenco"] += sum(1 for c in accepted if not {c["a1"], c["a2"]} <= back)
+    accepted = [c for c in accepted if {c["a1"], c["a2"]} <= back]
+
     print("=" * 68)
     print("TRIAGEM DA COLHEITA")
     print("=" * 68)
@@ -162,8 +178,16 @@ def main() -> None:
         for c in accepted
     ]
     lines[close:close] = rows
+    a_start = next(i for i, l in enumerate(lines) if l.startswith("ARTISTS"))
+    a_close = next(i for i, l in enumerate(lines[a_start:], a_start) if l.strip() == "]")
+    lines[a_close:a_close] = ["    " + a["line"] for a in revive]
     with open(SOURCE, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines))
+    if revive:
+        pruned["removed"] = [a for a in pruned["removed"] if a["id"] not in back]
+        with open(PRUNED, "w", encoding="utf-8") as fh:
+            json.dump(pruned, fh, ensure_ascii=False, indent=1)
+        print(f"✅ {len(revive)} artistas de volta ao elenco: {', '.join(a['name'] for a in revive)}")
 
     prov = {}
     if os.path.exists(SOURCES):
