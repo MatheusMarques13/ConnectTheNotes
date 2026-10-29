@@ -423,7 +423,7 @@ def group_credit(n1: str, n2: str, title: str, taken: set[str]) -> dict:
 # "SICKO MODE" for "Fair Trade" because it leaves Drake off the credit.
 LOOKUPS = {
     "deezer-exact": deezer_exact,
-    "musicbrainz-exact": musicbrainz_exact,
+    "musicbrainz-exact": musicbrainz_song,  # one pair query serves all of the pair's rows
     "deezer-pair-v2": deezer_pair,       # v2: prefers the row's own song, skips mashups
     "musicbrainz-pair": musicbrainz_pair,
     "rescue": rescue,

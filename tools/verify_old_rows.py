@@ -21,7 +21,8 @@ in parallel. A phase only picks up rows the previous one has answered, so it can
 be rerun while that one is still going.
 
     --exact      Deezer, exact song
-    --mb-exact   MusicBrainz, exact song, where Deezer has it under one name
+    --mb-exact   MusicBrainz, exact song, for every row: gated on Deezer having
+                 it under one name, "Garota de Ipanema" became "Overture"
     --pair       Deezer, any joint recording of the pair
     --mb-pair    MusicBrainz, any joint recording of the pair
     --rescue     last look before dropping: title-first Deezer, MusicBrainz again
@@ -411,11 +412,6 @@ def main() -> None:
     for i in rows:
         e = cache.get(row_key(i)) or {}
         if e.get("id") or not needs <= set(e.get("tried", [])) or src in e.get("tried", []):
-            continue
-        if src == "musicbrainz-exact" and not e.get("title_by_one"):
-            # Deezer has the song under neither name: no credit gap for
-            # MusicBrainz to settle, so the row goes straight to the pair search.
-            cache[row_key(i)] = {**e, "tried": e["tried"] + [src]}
             continue
         todo.append(i)
     fame = json.load(open(FAME, encoding="utf-8"))
