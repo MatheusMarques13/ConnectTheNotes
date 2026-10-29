@@ -1,10 +1,916 @@
 {
  "removed": [
   {
-   "id": 5587,
-   "name": "Sam & Dave",
+   "id": 64,
+   "name": "Harry Styles",
+   "genre": "Pop/Rock",
+   "line": "(64, 'Harry Styles', 'Pop/Rock'),"
+  },
+  {
+   "id": 331,
+   "name": "Capital Inicial",
+   "genre": "Brazilian rock",
+   "line": "(331, 'Capital Inicial', 'Brazilian rock'),"
+  },
+  {
+   "id": 817,
+   "name": "Mc Denny",
+   "genre": "Funk Carioca",
+   "line": "(817, 'Mc Denny', 'Funk Carioca'),"
+  },
+  {
+   "id": 1011,
+   "name": "Biquini Cavadão",
+   "genre": "Rock",
+   "line": "(1011, 'Biquini Cavadão', 'Rock'),"
+  },
+  {
+   "id": 1012,
+   "name": "Renato Russo",
+   "genre": "Rock",
+   "line": "(1012, 'Renato Russo', 'Rock'),"
+  },
+  {
+   "id": 1014,
+   "name": "Kid Abelha",
+   "genre": "Pop/Rock",
+   "line": "(1014, 'Kid Abelha', 'Pop/Rock'),"
+  },
+  {
+   "id": 1042,
+   "name": "Pedro Mariano",
+   "genre": "MPB/Samba",
+   "line": "(1042, 'Pedro Mariano', 'MPB/Samba'),"
+  },
+  {
+   "id": 1064,
+   "name": "Jammil",
+   "genre": "Axé",
+   "line": "(1064, 'Jammil', 'Axé'),"
+  },
+  {
+   "id": 1085,
+   "name": "César & Paulinho",
+   "genre": "Sertanejo",
+   "line": "(1085, 'César & Paulinho', 'Sertanejo'),"
+  },
+  {
+   "id": 1102,
+   "name": "Munhoz & Mariano",
+   "genre": "Sertanejo",
+   "line": "(1102, 'Munhoz & Mariano', 'Sertanejo'),"
+  },
+  {
+   "id": 1111,
+   "name": "Luiz & Gustavo",
+   "genre": "Sertanejo",
+   "line": "(1111, 'Luiz & Gustavo', 'Sertanejo'),"
+  },
+  {
+   "id": 1128,
+   "name": "João Mineiro & Marciano",
+   "genre": "Sertanejo",
+   "line": "(1128, 'João Mineiro & Marciano', 'Sertanejo'),"
+  },
+  {
+   "id": 1148,
+   "name": "Cleo",
+   "genre": "Pop",
+   "line": "(1148, 'Cleo', 'Pop'),"
+  },
+  {
+   "id": 1149,
+   "name": "Simaria Mendes",
+   "genre": "Sertanejo",
+   "line": "(1149, 'Simaria Mendes', 'Sertanejo'),"
+  },
+  {
+   "id": 1159,
+   "name": "Cavaleiros do Forró",
+   "genre": "Forró",
+   "line": "(1159, 'Cavaleiros do Forró', 'Forró'),"
+  },
+  {
+   "id": 1178,
+   "name": "MC Gustta",
+   "genre": "Funk",
+   "line": "(1178, 'MC Gustta', 'Funk'),"
+  },
+  {
+   "id": 1179,
+   "name": "Virginia Fonseca",
+   "genre": "Celebrity",
+   "line": "(1179, 'Virginia Fonseca', 'Celebrity'),"
+  },
+  {
+   "id": 1231,
+   "name": "Joe Nichols",
+   "genre": "country",
+   "line": "(1231, 'Joe Nichols', 'country'),"
+  },
+  {
+   "id": 1251,
+   "name": "Charlie Daniels",
+   "genre": "country",
+   "line": "(1251, 'Charlie Daniels', 'country'),"
+  },
+  {
+   "id": 1275,
+   "name": "Sara Evans",
+   "genre": "country",
+   "line": "(1275, 'Sara Evans', 'country'),"
+  },
+  {
+   "id": 1281,
+   "name": "Yola",
+   "genre": "country soul",
+   "line": "(1281, 'Yola', 'country soul'),"
+  },
+  {
+   "id": 1312,
+   "name": "Tyler Childers",
+   "genre": "country",
+   "line": "(1312, 'Tyler Childers', 'country'),"
+  },
+  {
+   "id": 1343,
+   "name": "Priscilla Block",
+   "genre": "country",
+   "line": "(1343, 'Priscilla Block', 'country'),"
+  },
+  {
+   "id": 1383,
+   "name": "Burning Spear",
+   "genre": "Unknown",
+   "line": "(1383, 'Burning Spear', 'Unknown'),"
+  },
+  {
+   "id": 1384,
+   "name": "Culture",
+   "genre": "Unknown",
+   "line": "(1384, 'Culture', 'Unknown'),"
+  },
+  {
+   "id": 2012,
+   "name": "Rammstein",
+   "genre": "metal",
+   "line": "(2012, 'Rammstein', 'metal'),"
+  },
+  {
+   "id": 2111,
+   "name": "Kent",
+   "genre": "rock",
+   "line": "(2111, 'Kent', 'rock'),"
+  },
+  {
+   "id": 2134,
+   "name": "Ylvis",
+   "genre": "comedy-pop",
+   "line": "(2134, 'Ylvis', 'comedy-pop'),"
+  },
+  {
+   "id": 2145,
+   "name": "Of Monsters and Men",
+   "genre": "indie",
+   "line": "(2145, 'Of Monsters and Men', 'indie'),"
+  },
+  {
+   "id": 2147,
+   "name": "Sigur Rós",
+   "genre": "post-rock",
+   "line": "(2147, 'Sigur Rós', 'post-rock'),"
+  },
+  {
+   "id": 2179,
+   "name": "Highasakite",
+   "genre": "indie",
+   "line": "(2179, 'Highasakite', 'indie'),"
+  },
+  {
+   "id": 2694,
+   "name": "Onew",
+   "genre": "K-Pop",
+   "line": "(2694, 'Onew', 'K-Pop'),"
+  },
+  {
+   "id": 2761,
+   "name": "Miss A",
+   "genre": "K-Pop",
+   "line": "(2761, 'Miss A', 'K-Pop'),"
+  },
+  {
+   "id": 2777,
+   "name": "Oh My Girl",
+   "genre": "K-Pop",
+   "line": "(2777, 'Oh My Girl', 'K-Pop'),"
+  },
+  {
+   "id": 3128,
+   "name": "Lewis Capaldi",
+   "genre": "Pop/Soul",
+   "line": "(3128, 'Lewis Capaldi', 'Pop/Soul'),"
+  },
+  {
+   "id": 3252,
+   "name": "Disturbed",
+   "genre": "Unknown",
+   "line": "(3252, 'Disturbed', 'Unknown'),"
+  },
+  {
+   "id": 3253,
+   "name": "Avenged Sevenfold",
+   "genre": "Unknown",
+   "line": "(3253, 'Avenged Sevenfold', 'Unknown'),"
+  },
+  {
+   "id": 3297,
+   "name": "Nightwish",
+   "genre": "Unknown",
+   "line": "(3297, 'Nightwish', 'Unknown'),"
+  },
+  {
+   "id": 3299,
+   "name": "Marilyn Manson",
+   "genre": "Unknown",
+   "line": "(3299, 'Marilyn Manson', 'Unknown'),"
+  },
+  {
+   "id": 3300,
+   "name": "Rob Zombie",
+   "genre": "Unknown",
+   "line": "(3300, 'Rob Zombie', 'Unknown'),"
+  },
+  {
+   "id": 3303,
+   "name": "A Perfect Circle",
+   "genre": "Unknown",
+   "line": "(3303, 'A Perfect Circle', 'Unknown'),"
+  },
+  {
+   "id": 3304,
+   "name": "Deftones",
+   "genre": "Unknown",
+   "line": "(3304, 'Deftones', 'Unknown'),"
+  },
+  {
+   "id": 3305,
+   "name": "Incubus",
+   "genre": "Unknown",
+   "line": "(3305, 'Incubus', 'Unknown'),"
+  },
+  {
+   "id": 3312,
+   "name": "Trivium",
+   "genre": "Unknown",
+   "line": "(3312, 'Trivium', 'Unknown'),"
+  },
+  {
+   "id": 3313,
+   "name": "Killswitch Engage",
+   "genre": "Unknown",
+   "line": "(3313, 'Killswitch Engage', 'Unknown'),"
+  },
+  {
+   "id": 3315,
+   "name": "Bullet for My Valentine",
+   "genre": "Unknown",
+   "line": "(3315, 'Bullet for My Valentine', 'Unknown'),"
+  },
+  {
+   "id": 3317,
+   "name": "In Flames",
+   "genre": "Unknown",
+   "line": "(3317, 'In Flames', 'Unknown'),"
+  },
+  {
+   "id": 3320,
+   "name": "Dimmu Borgir",
+   "genre": "Unknown",
+   "line": "(3320, 'Dimmu Borgir', 'Unknown'),"
+  },
+  {
+   "id": 3321,
+   "name": "Cradle of Filth",
+   "genre": "Unknown",
+   "line": "(3321, 'Cradle of Filth', 'Unknown'),"
+  },
+  {
+   "id": 3326,
+   "name": "Gojira",
+   "genre": "Unknown",
+   "line": "(3326, 'Gojira', 'Unknown'),"
+  },
+  {
+   "id": 3327,
+   "name": "Baroness",
+   "genre": "Unknown",
+   "line": "(3327, 'Baroness', 'Unknown'),"
+  },
+  {
+   "id": 3335,
+   "name": "Phish",
+   "genre": "Unknown",
+   "line": "(3335, 'Phish', 'Unknown'),"
+  },
+  {
+   "id": 3339,
+   "name": "LCD Soundsystem",
+   "genre": "Unknown",
+   "line": "(3339, 'LCD Soundsystem', 'Unknown'),"
+  },
+  {
+   "id": 3340,
+   "name": "Interpol",
+   "genre": "Unknown",
+   "line": "(3340, 'Interpol', 'Unknown'),"
+  },
+  {
+   "id": 3367,
+   "name": "Sleater-Kinney",
+   "genre": "Unknown",
+   "line": "(3367, 'Sleater-Kinney', 'Unknown'),"
+  },
+  {
+   "id": 3369,
+   "name": "Wolf Alice",
+   "genre": "Unknown",
+   "line": "(3369, 'Wolf Alice', 'Unknown'),"
+  },
+  {
+   "id": 3370,
+   "name": "Wet Leg",
+   "genre": "Unknown",
+   "line": "(3370, 'Wet Leg', 'Unknown'),"
+  },
+  {
+   "id": 3381,
+   "name": "Snail Mail",
+   "genre": "Unknown",
+   "line": "(3381, 'Snail Mail', 'Unknown'),"
+  },
+  {
+   "id": 3388,
+   "name": "Mitski",
+   "genre": "Unknown",
+   "line": "(3388, 'Mitski', 'Unknown'),"
+  },
+  {
+   "id": 3404,
+   "name": "Portishead",
+   "genre": "Unknown",
+   "line": "(3404, 'Portishead', 'Unknown'),"
+  },
+  {
+   "id": 3632,
+   "name": "Pulp",
+   "genre": "uk indie",
+   "line": "(3632, 'Pulp', 'uk indie'),"
+  },
+  {
+   "id": 3644,
+   "name": "Kaiser Chiefs",
+   "genre": "uk indie rock",
+   "line": "(3644, 'Kaiser Chiefs', 'uk indie rock'),"
+  },
+  {
+   "id": 3646,
+   "name": "Jake Bugg",
+   "genre": "uk indie",
+   "line": "(3646, 'Jake Bugg', 'uk indie'),"
+  },
+  {
+   "id": 3656,
+   "name": "New Order",
+   "genre": "uk synth pop",
+   "line": "(3656, 'New Order', 'uk synth pop'),"
+  },
+  {
+   "id": 3877,
+   "name": "Thomas Mapfumo",
+   "genre": "Chimurenga",
+   "line": "(3877, 'Thomas Mapfumo', 'Chimurenga'),"
+  },
+  {
+   "id": 3920,
+   "name": "D.O. Misiani",
+   "genre": "Benga",
+   "line": "(3920, 'D.O. Misiani', 'Benga'),"
+  },
+  {
+   "id": 3959,
+   "name": "Adelmário Coelho",
+   "genre": "Forró",
+   "line": "(3959, 'Adelmário Coelho', 'Forró'),"
+  },
+  {
+   "id": 4031,
+   "name": "Wanderley Cardoso",
+   "genre": "Brega",
+   "line": "(4031, 'Wanderley Cardoso', 'Brega'),"
+  },
+  {
+   "id": 4056,
+   "name": "Sepultura",
+   "genre": "Metal",
+   "line": "(4056, 'Sepultura', 'Metal'),"
+  },
+  {
+   "id": 4069,
+   "name": "Belchior",
+   "genre": "MPB",
+   "line": "(4069, 'Belchior', 'MPB'),"
+  },
+  {
+   "id": 4073,
+   "name": "Wilson Simonal",
+   "genre": "Soul-MPB",
+   "line": "(4073, 'Wilson Simonal', 'Soul-MPB'),"
+  },
+  {
+   "id": 4112,
+   "name": "dc Talk",
+   "genre": "CCM",
+   "line": "(4112, 'dc Talk', 'CCM'),"
+  },
+  {
+   "id": 4120,
+   "name": "Ron Kenoly",
+   "genre": "Worship",
+   "line": "(4120, 'Ron Kenoly', 'Worship'),"
+  },
+  {
+   "id": 4128,
+   "name": "John P. Kee",
+   "genre": "Gospel",
+   "line": "(4128, 'John P. Kee', 'Gospel'),"
+  },
+  {
+   "id": 4129,
+   "name": "Shirley Caesar",
+   "genre": "Gospel",
+   "line": "(4129, 'Shirley Caesar', 'Gospel'),"
+  },
+  {
+   "id": 4134,
+   "name": "Tramaine Hawkins",
+   "genre": "Gospel",
+   "line": "(4134, 'Tramaine Hawkins', 'Gospel'),"
+  },
+  {
+   "id": 4176,
+   "name": "William McDowell",
+   "genre": "Gospel",
+   "line": "(4176, 'William McDowell', 'Gospel'),"
+  },
+  {
+   "id": 4219,
+   "name": "Chris Rice",
+   "genre": "CCM",
+   "line": "(4219, 'Chris Rice', 'CCM'),"
+  },
+  {
+   "id": 4221,
+   "name": "Scott Stapp",
+   "genre": "Christian Rock",
+   "line": "(4221, 'Scott Stapp', 'Christian Rock'),"
+  },
+  {
+   "id": 4223,
+   "name": "Delirious?",
+   "genre": "Worship",
+   "line": "(4223, 'Delirious?', 'Worship'),"
+  },
+  {
+   "id": 4226,
+   "name": "Graham Kendrick",
+   "genre": "Worship",
+   "line": "(4226, 'Graham Kendrick', 'Worship'),"
+  },
+  {
+   "id": 4227,
+   "name": "Robin Mark",
+   "genre": "Worship",
+   "line": "(4227, 'Robin Mark', 'Worship'),"
+  },
+  {
+   "id": 4240,
+   "name": "Gold City",
+   "genre": "Gospel",
+   "line": "(4240, 'Gold City', 'Gospel'),"
+  },
+  {
+   "id": 4242,
+   "name": "Ernie Haase & Signature Sound",
+   "genre": "Gospel",
+   "line": "(4242, 'Ernie Haase & Signature Sound', 'Gospel'),"
+  },
+  {
+   "id": 4243,
+   "name": "Ivan Parker",
+   "genre": "Gospel",
+   "line": "(4243, 'Ivan Parker', 'Gospel'),"
+  },
+  {
+   "id": 4254,
+   "name": "Hosanna! Music",
+   "genre": "Worship",
+   "line": "(4254, 'Hosanna! Music', 'Worship'),"
+  },
+  {
+   "id": 4258,
+   "name": "North Point Worship",
+   "genre": "Worship",
+   "line": "(4258, 'North Point Worship', 'Worship'),"
+  },
+  {
+   "id": 4363,
+   "name": "Hiatus Kaiyote",
+   "genre": "Neo-Soul",
+   "line": "(4363, 'Hiatus Kaiyote', 'Neo-Soul'),"
+  },
+  {
+   "id": 4375,
+   "name": "Sudan Archives",
+   "genre": "Alt R&B",
+   "line": "(4375, 'Sudan Archives', 'Alt R&B'),"
+  },
+  {
+   "id": 4384,
+   "name": "Julia Holter",
+   "genre": "Art Pop",
+   "line": "(4384, 'Julia Holter', 'Art Pop'),"
+  },
+  {
+   "id": 4447,
+   "name": "Chuty",
+   "genre": "Freestyle",
+   "line": "(4447, 'Chuty', 'Freestyle'),"
+  },
+  {
+   "id": 4448,
+   "name": "Replik",
+   "genre": "Freestyle",
+   "line": "(4448, 'Replik', 'Freestyle'),"
+  },
+  {
+   "id": 4449,
+   "name": "Skone",
+   "genre": "Freestyle",
+   "line": "(4449, 'Skone', 'Freestyle'),"
+  },
+  {
+   "id": 4450,
+   "name": "Bnet",
+   "genre": "Freestyle",
+   "line": "(4450, 'Bnet', 'Freestyle'),"
+  },
+  {
+   "id": 4452,
+   "name": "MKS",
+   "genre": "Freestyle",
+   "line": "(4452, 'MKS', 'Freestyle'),"
+  },
+  {
+   "id": 4455,
+   "name": "Jay Mammon",
+   "genre": "Trap",
+   "line": "(4455, 'Jay Mammon', 'Trap'),"
+  },
+  {
+   "id": 4664,
+   "name": "Lordi",
+   "genre": "Hard Rock",
+   "line": "(4664, 'Lordi', 'Hard Rock'),"
+  },
+  {
+   "id": 4669,
+   "name": "Kings of Convenience",
+   "genre": "Indie Folk",
+   "line": "(4669, 'Kings of Convenience', 'Indie Folk'),"
+  },
+  {
+   "id": 4675,
+   "name": "Sunrise Avenue",
+   "genre": "Rock",
+   "line": "(4675, 'Sunrise Avenue', 'Rock'),"
+  },
+  {
+   "id": 4676,
+   "name": "Poets of the Fall",
+   "genre": "Rock",
+   "line": "(4676, 'Poets of the Fall', 'Rock'),"
+  },
+  {
+   "id": 4683,
+   "name": "Håkan Hellström",
+   "genre": "Pop",
+   "line": "(4683, 'Håkan Hellström', 'Pop'),"
+  },
+  {
+   "id": 4684,
+   "name": "Sabaton",
+   "genre": "Heavy Metal",
+   "line": "(4684, 'Sabaton', 'Heavy Metal'),"
+  },
+  {
+   "id": 4696,
+   "name": "Organek",
+   "genre": "Rock",
+   "line": "(4696, 'Organek', 'Rock'),"
+  },
+  {
+   "id": 4706,
+   "name": "Doda",
+   "genre": "Pop Rock",
+   "line": "(4706, 'Doda', 'Pop Rock'),"
+  },
+  {
+   "id": 4731,
+   "name": "Ruslana",
+   "genre": "Pop",
+   "line": "(4731, 'Ruslana', 'Pop'),"
+  },
+  {
+   "id": 4743,
+   "name": "Monetochka",
+   "genre": "Indie Pop",
+   "line": "(4743, 'Monetochka', 'Indie Pop'),"
+  },
+  {
+   "id": 4747,
+   "name": "Ariya",
+   "genre": "Heavy Metal",
+   "line": "(4747, 'Ariya', 'Heavy Metal'),"
+  },
+  {
+   "id": 4763,
+   "name": "Sakis Rouvas",
+   "genre": "Pop",
+   "line": "(4763, 'Sakis Rouvas', 'Pop'),"
+  },
+  {
+   "id": 4766,
+   "name": "Nikos Vertis",
+   "genre": "Pop",
+   "line": "(4766, 'Nikos Vertis', 'Pop'),"
+  },
+  {
+   "id": 4769,
+   "name": "Paola",
+   "genre": "Pop",
+   "line": "(4769, 'Paola', 'Pop'),"
+  },
+  {
+   "id": 4770,
+   "name": "Kostas Martakis",
+   "genre": "Pop",
+   "line": "(4770, 'Kostas Martakis', 'Pop'),"
+  },
+  {
+   "id": 4772,
+   "name": "Tamta",
+   "genre": "Pop",
+   "line": "(4772, 'Tamta', 'Pop'),"
+  },
+  {
+   "id": 4783,
+   "name": "Lora",
+   "genre": "Pop",
+   "line": "(4783, 'Lora', 'Pop'),"
+  },
+  {
+   "id": 4798,
+   "name": "Stavros Flatley",
+   "genre": "Dance",
+   "line": "(4798, 'Stavros Flatley', 'Dance'),"
+  },
+  {
+   "id": 4814,
+   "name": "IV of Spades",
+   "genre": "OPM",
+   "line": "(4814, 'IV of Spades', 'OPM'),"
+  },
+  {
+   "id": 4843,
+   "name": "Ebe Dancel",
+   "genre": "OPM",
+   "line": "(4843, 'Ebe Dancel', 'OPM'),"
+  },
+  {
+   "id": 4849,
+   "name": "Urbandub",
+   "genre": "OPM Rock",
+   "line": "(4849, 'Urbandub', 'OPM Rock'),"
+  },
+  {
+   "id": 4850,
+   "name": "Hale",
+   "genre": "OPM Rock",
+   "line": "(4850, 'Hale', 'OPM Rock'),"
+  },
+  {
+   "id": 4851,
+   "name": "Itchyworms",
+   "genre": "OPM Rock",
+   "line": "(4851, 'Itchyworms', 'OPM Rock'),"
+  },
+  {
+   "id": 4862,
+   "name": "Sheila on 7",
+   "genre": "Indonesian Pop",
+   "line": "(4862, 'Sheila on 7', 'Indonesian Pop'),"
+  },
+  {
+   "id": 4901,
+   "name": "Burgerkill",
+   "genre": "Indonesian Metal",
+   "line": "(4901, 'Burgerkill', 'Indonesian Metal'),"
+  },
+  {
+   "id": 5045,
+   "name": "Hansel y Raúl",
+   "genre": "Salsa",
+   "line": "(5045, 'Hansel y Raúl', 'Salsa'),"
+  },
+  {
+   "id": 5069,
+   "name": "Benny Moré",
+   "genre": "Cuban/Son",
+   "line": "(5069, 'Benny Moré', 'Cuban/Son'),"
+  },
+  {
+   "id": 5085,
+   "name": "Boukman Eksperyans",
+   "genre": "Vodou jazz",
+   "line": "(5085, 'Boukman Eksperyans', 'Vodou jazz'),"
+  },
+  {
+   "id": 5093,
+   "name": "Zouk Machine",
+   "genre": "Zouk",
+   "line": "(5093, 'Zouk Machine', 'Zouk'),"
+  },
+  {
+   "id": 5104,
+   "name": "Superblue",
+   "genre": "Soca",
+   "line": "(5104, 'Superblue', 'Soca'),"
+  },
+  {
+   "id": 5105,
+   "name": "Shadow",
+   "genre": "Calypso/Soca",
+   "line": "(5105, 'Shadow', 'Calypso/Soca'),"
+  },
+  {
+   "id": 5106,
+   "name": "Sparrow",
+   "genre": "Calypso",
+   "line": "(5106, 'Sparrow', 'Calypso'),"
+  },
+  {
+   "id": 5107,
+   "name": "Lord Kitchener",
+   "genre": "Calypso",
+   "line": "(5107, 'Lord Kitchener', 'Calypso'),"
+  },
+  {
+   "id": 5108,
+   "name": "David Rudder",
+   "genre": "Calypso/Soca",
+   "line": "(5108, 'David Rudder', 'Calypso/Soca'),"
+  },
+  {
+   "id": 5133,
+   "name": "John McVie",
+   "genre": "Rock",
+   "line": "(5133, 'John McVie', 'Rock'),"
+  },
+  {
+   "id": 5229,
+   "name": "Bill Graham",
+   "genre": "Rock",
+   "line": "(5229, 'Bill Graham', 'Rock'),"
+  },
+  {
+   "id": 5247,
+   "name": "King Curtis",
+   "genre": "Soul",
+   "line": "(5247, 'King Curtis', 'Soul'),"
+  },
+  {
+   "id": 5502,
+   "name": "Axl Rose",
    "genre": "Other",
-   "line": "(5587, 'Sam & Dave', 'Other'),"
+   "line": "(5502, 'Axl Rose', 'Other'),"
+  },
+  {
+   "id": 5533,
+   "name": "Editors",
+   "genre": "Other",
+   "line": "(5533, 'Editors', 'Other'),"
+  },
+  {
+   "id": 5669,
+   "name": "Diversity",
+   "genre": "Other",
+   "line": "(5669, 'Diversity', 'Other'),"
+  },
+  {
+   "id": 6099,
+   "name": "Marjorie Estiano",
+   "genre": "Other",
+   "line": "(6099, 'Marjorie Estiano', 'Other'),"
+  },
+  {
+   "id": 6192,
+   "name": "G.NA",
+   "genre": "Other",
+   "line": "(6192, 'G.NA', 'Other'),"
+  },
+  {
+   "id": 6194,
+   "name": "Changmin",
+   "genre": "Other",
+   "line": "(6194, 'Changmin', 'Other'),"
+  },
+  {
+   "id": 6202,
+   "name": "FNC artists",
+   "genre": "Other",
+   "line": "(6202, 'FNC artists', 'Other'),"
+  },
+  {
+   "id": 6222,
+   "name": "Rocky",
+   "genre": "Other",
+   "line": "(6222, 'Rocky', 'Other'),"
+  },
+  {
+   "id": 6229,
+   "name": "Björn Dixgård",
+   "genre": "Other",
+   "line": "(6229, 'Björn Dixgård', 'Other'),"
+  },
+  {
+   "id": 6252,
+   "name": "fun.",
+   "genre": "Other",
+   "line": "(6252, 'fun.', 'Other'),"
+  },
+  {
+   "id": 6266,
+   "name": "Lollipop",
+   "genre": "Other",
+   "line": "(6266, 'Lollipop', 'Other'),"
+  },
+  {
+   "id": 6384,
+   "name": "New Found Glory",
+   "genre": "Other",
+   "line": "(6384, 'New Found Glory', 'Other'),"
+  },
+  {
+   "id": 6419,
+   "name": "Zeynep Arslan",
+   "genre": "Other",
+   "line": "(6419, 'Zeynep Arslan', 'Other'),"
+  },
+  {
+   "id": 6427,
+   "name": "Wayne Coyne",
+   "genre": "Other",
+   "line": "(6427, 'Wayne Coyne', 'Other'),"
+  },
+  {
+   "id": 6454,
+   "name": "Greta Van Fleet",
+   "genre": "Other",
+   "line": "(6454, 'Greta Van Fleet', 'Other'),"
+  },
+  {
+   "id": 6455,
+   "name": "Zooey Deschanel",
+   "genre": "Other",
+   "line": "(6455, 'Zooey Deschanel', 'Other'),"
+  },
+  {
+   "id": 6481,
+   "name": "Emma Langford",
+   "genre": "Other",
+   "line": "(6481, 'Emma Langford', 'Other'),"
+  },
+  {
+   "id": 6612,
+   "name": "Kauan & Matheus",
+   "genre": "Other",
+   "line": "(6612, 'Kauan & Matheus', 'Other'),"
+  },
+  {
+   "id": 6649,
+   "name": "Walk the Moon",
+   "genre": "Other",
+   "line": "(6649, 'Walk the Moon', 'Other'),"
   }
  ],
  "note": "cole a chave 'line' de volta em ARTISTS para restaurar"

@@ -42,6 +42,9 @@ ser rodadas de novo sempre que os dados crescerem:
   no roster; nunca inventa artista.
 - `verify_casts.py` → `apply_cast_fixes.py` — acha artista creditado em música
   onde não está (era o caso da Shakira em *I Like It*).
+- `prune_lives.py` — live sem fonte em catálogo: internacional sai; brasileira é
+  conferida no Deezer e no MusicBrainz e fica se existir (ou ganha o título da
+  gravação real da dupla, se o título estava inventado).
 - `prune_orphans.py` — tira do roster quem ficou sem nenhuma colaboração.
 
 Tudo é reversível: linha removida vai para `data/quarantine.json` com o texto

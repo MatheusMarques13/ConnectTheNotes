@@ -35,7 +35,9 @@ STATE = os.path.join(ROOT, "data", "recent_harvest.json")
 BASE = "https://musicbrainz.org/ws/2/recording"
 UA = "ConnectTheNotes/0.1 ( matheusbmarques13@gmail.com )"
 INTERVAL = 1.15
-FROM_YEAR = 2023
+# HARVEST_FROM narrows a re-run to new releases: with limit=100 per artist, a
+# 2023+ window can push this month's releases out of a prolific artist's results.
+FROM_YEAR = int(os.environ.get("HARVEST_FROM", 2023))
 PAGE = 100
 
 LUCENE = re.compile(r'[+\-&|!(){}\[\]^"~*?:\\/]')

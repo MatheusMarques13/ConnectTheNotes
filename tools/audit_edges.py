@@ -119,6 +119,8 @@ HANDLE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)+$|_official$")
 
 
 def classify_title(title: str) -> str | None:
+    if not any(ch.isalnum() for ch in title or ""):
+        return "no-title"                      # '...', '$$$'
     n = norm(title)
     if n in ALLOWLIST:
         return None

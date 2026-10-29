@@ -62,6 +62,20 @@ def fold(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
 
 
+# Parentheses that name a different recording; anything else ("(lyric video)",
+# "(feat. X)", "(wheel of misfortune)") is the same song for the same pair.
+DISTINCT = re.compile(
+    r"\b(?:part|pt|vol|remix|live|ao vivo|en vivo|ac[uú]stic|unplugged|version|vers[ãa]o)\b", re.I
+)
+
+
+def song_key(title: str) -> str:
+    m = re.match(r"^(.*?)\s*[\(\[]([^)\]]*)[\)\]]\s*$", title or "")
+    if m and m.group(1).strip() and not DISTINCT.search(m.group(2)):
+        return fold(m.group(1))
+    return fold(title)
+
+
 def rejected(title: str) -> str | None:
     if DJ_EDIT.search(title) or MIXED_TAG.search(title):
         return "dj-edit"
@@ -92,11 +106,12 @@ def main() -> None:
         sys.exit("❌ nao consegui ler data/recent_harvest.json (colheita escrevendo?)")
 
     known = {
-        (min(a1, a2), max(a1, a2), fold(t))
+        (min(a1, a2), max(a1, a2), song_key(t))
         for a1, a2, t, _c, _y in COLLABORATIONS
     }
     known_pairs = {(min(a1, a2), max(a1, a2)) for a1, a2, *_ in COLLABORATIONS}
 
+    found.sort(key=lambda c: "(" in c["title"])   # plain title wins over its variants
     accepted, why = [], Counter()
     seen = set()
     for c in found:
@@ -107,7 +122,7 @@ def main() -> None:
         if c["type"] == "remix" and not with_remixes:
             why["remix"] += 1
             continue
-        key = (min(c["a1"], c["a2"]), max(c["a1"], c["a2"]), fold(c["title"]))
+        key = (min(c["a1"], c["a2"]), max(c["a1"], c["a2"]), song_key(c["title"]))
         if key in known or key in seen:
             why["duplicate"] += 1
             continue
