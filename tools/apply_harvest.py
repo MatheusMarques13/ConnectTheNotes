@@ -31,6 +31,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 sys.path.insert(0, os.path.join(ROOT, "data"))
 from source_data import ARTISTS, COLLABORATIONS  # noqa: E402
+sys.path.insert(0, HERE)
+from prune_lives import junk_title  # noqa: E402
 
 SOURCE = os.path.join(ROOT, "data", "source_data.py")
 HARVEST = os.path.join(ROOT, "data", "recent_harvest.json")
@@ -117,6 +119,10 @@ def main() -> None:
     seen = set()
     for c in found:
         reason = rejected(c["title"])
+        # The verification's own test: DJ splices ("Tears / I Just Might / bye"),
+        # a bare "Intro", symbol-only titles. A live pot-pourri stays.
+        if not reason and junk_title(c["title"] + (" (Ao Vivo)" if c["type"] == "live" else "")):
+            reason = "junk-title"
         if reason:
             why[reason] += 1
             continue

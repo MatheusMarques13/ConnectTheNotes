@@ -187,12 +187,6 @@
    "line": "(2179, 'Highasakite', 'indie'),"
   },
   {
-   "id": 2694,
-   "name": "Onew",
-   "genre": "K-Pop",
-   "line": "(2694, 'Onew', 'K-Pop'),"
-  },
-  {
    "id": 2761,
    "name": "Miss A",
    "genre": "K-Pop",
@@ -443,12 +437,6 @@
    "name": "John P. Kee",
    "genre": "Gospel",
    "line": "(4128, 'John P. Kee', 'Gospel'),"
-  },
-  {
-   "id": 4129,
-   "name": "Shirley Caesar",
-   "genre": "Gospel",
-   "line": "(4129, 'Shirley Caesar', 'Gospel'),"
   },
   {
    "id": 4134,
@@ -1679,12 +1667,6 @@
    "name": "Martina McBride",
    "genre": "country",
    "line": "(1273, 'Martina McBride', 'country'),"
-  },
-  {
-   "id": 1276,
-   "name": "Jessica Simpson",
-   "genre": "pop",
-   "line": "(1276, 'Jessica Simpson', 'pop'),"
   },
   {
    "id": 1296,
