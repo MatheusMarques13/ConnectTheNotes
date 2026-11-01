@@ -7115,6 +7115,90 @@
    "name": "Sonny Sandoval (P.O.D.)",
    "genre": "Other",
    "line": "(6705, 'Sonny Sandoval (P.O.D.)', 'Other'),"
+  },
+  {
+   "id": 2890,
+   "name": "Sin Bandera",
+   "genre": "pop",
+   "line": "(2890, 'Sin Bandera', 'pop'),"
+  },
+  {
+   "id": 3231,
+   "name": "Nirvana",
+   "genre": "Unknown",
+   "line": "(3231, 'Nirvana', 'Unknown'),"
+  },
+  {
+   "id": 3240,
+   "name": "Arctic Monkeys",
+   "genre": "Unknown",
+   "line": "(3240, 'Arctic Monkeys', 'Unknown'),"
+  },
+  {
+   "id": 3338,
+   "name": "Arcade Fire",
+   "genre": "Unknown",
+   "line": "(3338, 'Arcade Fire', 'Unknown'),"
+  },
+  {
+   "id": 3502,
+   "name": "Tower of Power",
+   "genre": "Unknown",
+   "line": "(3502, 'Tower of Power', 'Unknown'),"
+  },
+  {
+   "id": 4762,
+   "name": "Anna Vissi",
+   "genre": "Pop",
+   "line": "(4762, 'Anna Vissi', 'Pop'),"
+  },
+  {
+   "id": 4773,
+   "name": "Demy",
+   "genre": "Pop",
+   "line": "(4773, 'Demy', 'Pop'),"
+  },
+  {
+   "id": 5291,
+   "name": "Jake Owen",
+   "genre": "Other",
+   "line": "(5291, 'Jake Owen', 'Other'),"
+  },
+  {
+   "id": 5512,
+   "name": "Miles Kane",
+   "genre": "Other",
+   "line": "(5512, 'Miles Kane', 'Other'),"
+  },
+  {
+   "id": 5771,
+   "name": "PFM",
+   "genre": "Other",
+   "line": "(5771, 'PFM', 'Other'),"
+  },
+  {
+   "id": 5897,
+   "name": "FTIsland",
+   "genre": "Other",
+   "line": "(5897, 'FTIsland', 'Other'),"
+  },
+  {
+   "id": 6382,
+   "name": "We Are KING",
+   "genre": "Other",
+   "line": "(6382, 'We Are KING', 'Other'),"
+  },
+  {
+   "id": 6480,
+   "name": "Nandi Bushell",
+   "genre": "Other",
+   "line": "(6480, 'Nandi Bushell', 'Other'),"
+  },
+  {
+   "id": 6555,
+   "name": "Orianthi",
+   "genre": "Other",
+   "line": "(6555, 'Orianthi', 'Other'),"
   }
  ],
  "note": "cole a chave 'line' de volta em ARTISTS para restaurar"

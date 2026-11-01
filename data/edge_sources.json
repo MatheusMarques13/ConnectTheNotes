@@ -1,9 +1,4 @@
 {
- "200-202-Cold Brains": {
-  "source": "musicbrainz",
-  "id": "f44079b7-3472-426d-b226-0b0f1d4dc970",
-  "was": "Jack White produced sessions"
- },
  "367-266-Dragão chinês (Ao vivo)": {
   "source": "musicbrainz",
   "id": "6ad79e7b-8766-4778-bcb4-f451e73b0b81",
@@ -1005,13 +1000,13 @@
   "was": "Rap Feature"
  },
  "4361-59-Darling I": {
-  "source": "musicbrainz",
-  "id": "2d6e2d7a-7b5a-417c-9a92-13f59fc8fa80",
+  "source": "deezer",
+  "id": "3064010321",
   "was": "Chromakopia Feature"
  },
  "4352-417-Blue Jeans (Smims & Belle remix)": {
-  "source": "musicbrainz",
-  "id": "495a2646-814c-4498-a740-fc0a265b8be6",
+  "source": "deezer",
+  "id": "24277311",
   "was": "Alt Pop Scene Feature"
  },
  "4395-4393-I Would Love You": {
@@ -1051,7 +1046,7 @@
  },
  "4263-3711-tinkerbell is overrated": {
   "source": "musicbrainz",
-  "id": "752ac1bb-c57d-43cc-b0b1-306f1bd2cfeb",
+  "id": "a519857a-ff9a-49ca-b5fc-1fa2fd1084e2",
   "was": "UK Scene Feature"
  },
  "171-76-Atlanta House Freestyle": {
@@ -1065,8 +1060,8 @@
   "was": "(colhido 2023+)"
  },
  "69-2155-Live Without Love": {
-  "source": "musicbrainz",
-  "id": "94c9e27f-4631-495f-94ec-8cdff8fff52d",
+  "source": "deezer",
+  "id": "4006015941",
   "was": "(colhido 2023+)"
  },
  "69-100-Vocation": {
@@ -1084,19 +1079,14 @@
   "id": "085a4f13-3d34-449b-b8a2-d29db6f70a7d",
   "was": "(colhido 2023+)"
  },
- "42-104-Let Somebody Go (Live at River Plate)": {
-  "source": "musicbrainz",
-  "id": "6b04836b-eee8-4384-a600-0ed0d80e66cd",
-  "was": "(colhido 2023+)"
- },
  "42-421-ALL MY LOVE": {
   "source": "musicbrainz",
   "id": "ce0001a8-6846-4825-ab3b-2ef3a117d772",
   "was": "(colhido 2023+)"
  },
  "42-44-My Universe (Live at River Plate)": {
-  "source": "musicbrainz",
-  "id": "d601534d-4251-41f4-8d2a-518379fa6bb4",
+  "source": "deezer",
+  "id": "1498546032",
   "was": "(colhido 2023+)"
  },
  "42-5537-AETERNA": {
@@ -1305,18 +1295,18 @@
   "was": "(colhido 2023+)"
  },
  "7-37-Hips Don’t Lie": {
-  "source": "musicbrainz",
-  "id": "126a4da7-7c47-4dba-9092-10608b6449b7",
+  "source": "deezer",
+  "id": "3663852612",
   "was": "(colhido 2023+)"
  },
  "7-4436-Hips Don’t Lie": {
-  "source": "musicbrainz",
-  "id": "126a4da7-7c47-4dba-9092-10608b6449b7",
+  "source": "deezer",
+  "id": "3663852612",
   "was": "(colhido 2023+)"
  },
  "37-4436-Hips Don’t Lie": {
-  "source": "musicbrainz",
-  "id": "126a4da7-7c47-4dba-9092-10608b6449b7",
+  "source": "deezer",
+  "id": "3663852612",
   "was": "(colhido 2023+)"
  },
  "37-266-Dai dai": {
@@ -1385,13 +1375,13 @@
   "was": "(colhido 2023+)"
  },
  "11-238-ESSENCE": {
-  "source": "musicbrainz",
-  "id": "a985ead6-ad71-411b-9be1-5951ba3431a8",
+  "source": "deezer",
+  "id": "1463057142",
   "was": "(colhido 2023+)"
  },
  "11-241-ESSENCE": {
-  "source": "musicbrainz",
-  "id": "a985ead6-ad71-411b-9be1-5951ba3431a8",
+  "source": "deezer",
+  "id": "1463057142",
   "was": "(colhido 2023+)"
  },
  "11-12-Strobe / Beauty and a Beat": {
@@ -3315,8 +3305,8 @@
   "was": "(colhido 2023+)"
  },
  "46-2670-How Does It Feel to Be Forgotten (live from Vevo)": {
-  "source": "musicbrainz",
-  "id": "9b2efcc4-d4ab-4ded-9527-6f1eea681807",
+  "source": "deezer",
+  "id": "3285871911",
   "was": "(colhido 2023+)"
  },
  "46-2670-How Does It Feel To Be Forgotten": {
@@ -4119,16 +4109,6 @@
   "id": "4c1c5c36-aac3-4a23-afb5-ade631a2271a",
   "was": "(colhido 2023+)"
  },
- "20-33-Still D.R.E.": {
-  "source": "musicbrainz",
-  "id": "9b76af5c-774f-42e0-9850-b970266d3143",
-  "was": "(colhido 2023+)"
- },
- "20-33-California Love": {
-  "source": "musicbrainz",
-  "id": "34484f0e-fef8-4b2d-827c-9b7acef1de72",
-  "was": "(colhido 2023+)"
- },
  "32-33-Another Part Of Me": {
   "source": "musicbrainz",
   "id": "865dbf8d-163a-49ae-b187-f2abd1c2249c",
@@ -4157,36 +4137,6 @@
  "33-107-Gorgeous": {
   "source": "musicbrainz",
   "id": "49bfebdc-e450-46d9-bca3-8ab18febdd1d",
-  "was": "(colhido 2023+)"
- },
- "33-74-California Love": {
-  "source": "musicbrainz",
-  "id": "ef5e72be-5e5c-49f5-a3e8-ed80c21813eb",
-  "was": "(colhido 2023+)"
- },
- "33-3484-California Love": {
-  "source": "musicbrainz",
-  "id": "ef5e72be-5e5c-49f5-a3e8-ed80c21813eb",
-  "was": "(colhido 2023+)"
- },
- "74-3484-California Love": {
-  "source": "musicbrainz",
-  "id": "ef5e72be-5e5c-49f5-a3e8-ed80c21813eb",
-  "was": "(colhido 2023+)"
- },
- "33-74-Still D.R.E.": {
-  "source": "musicbrainz",
-  "id": "a534e43d-45ea-4032-9c8d-bd460b4df169",
-  "was": "(colhido 2023+)"
- },
- "33-3484-Still D.R.E.": {
-  "source": "musicbrainz",
-  "id": "a534e43d-45ea-4032-9c8d-bd460b4df169",
-  "was": "(colhido 2023+)"
- },
- "74-3484-Still D.R.E.": {
-  "source": "musicbrainz",
-  "id": "a534e43d-45ea-4032-9c8d-bd460b4df169",
   "was": "(colhido 2023+)"
  },
  "32-33-Der Picknicker / Still D.R.E.": {
@@ -4564,11 +4514,6 @@
   "id": "6081fc1b-48c1-41d6-bb3f-8e73cf6773c0",
   "was": "(colhido 2023+)"
  },
- "414-4101-Bridge Over Troubled Water": {
-  "source": "musicbrainz",
-  "id": "fb66364d-fb1c-42b7-bb47-b550aa12b88a",
-  "was": "(colhido 2023+)"
- },
  "414-1495-It's Not Right But It's Okay": {
   "source": "musicbrainz",
   "id": "4d31bda7-0779-4351-8198-4bc32c74bfda",
@@ -4592,11 +4537,6 @@
  "128-156-What a Girl Wants": {
   "source": "musicbrainz",
   "id": "b98f8fca-6c26-4e14-936a-51d4dcee0112",
-  "was": "(colhido 2023+)"
- },
- "128-3484-Little Drummer Girl (live From the Eiffel Tower)": {
-  "source": "musicbrainz",
-  "id": "eba8bd92-73c4-4a12-83ae-e342d0d96bf0",
   "was": "(colhido 2023+)"
  },
  "418-2884-No, no, no": {
@@ -4739,11 +4679,6 @@
   "id": "6e9b2113-b186-4ea8-9139-464dd36917f4",
   "was": "(colhido 2023+)"
  },
- "630-3437-Can’t Play Myself (A Tribute to Amy)": {
-  "source": "musicbrainz",
-  "id": "753034d7-e33f-423a-b79c-cb25dd7e547f",
-  "was": "(colhido 2023+)"
- },
  "8-3437-Shake It Off / Rehab": {
   "source": "musicbrainz",
   "id": "3bd45dc8-d7af-4396-9fb7-d3df3a503c7e",
@@ -4800,13 +4735,8 @@
   "was": "(colhido 2023+)"
  },
  "70-4273-Torture Me": {
-  "source": "musicbrainz",
-  "id": "96cc9c73-ef09-4ed8-a7fb-79db28afe2e9",
-  "was": "(colhido 2023+)"
- },
- "70-1501-Glow - Four Tet Duskus": {
-  "source": "musicbrainz",
-  "id": "407c1d1c-bc19-4059-abf3-d96f0f88ec9c",
+  "source": "deezer",
+  "id": "2043080687",
   "was": "(colhido 2023+)"
  },
  "361-363-Como Nunca Amei Ninguém / Por Tão Pouco (Ao Vivo)": {
@@ -5149,11 +5079,6 @@
   "id": "94f70d93-b239-4584-9b85-6fadca4e21cf",
   "was": "(colhido 2023+)"
  },
- "50-1277-Talk": {
-  "source": "musicbrainz",
-  "id": "96535b73-3abc-460c-a9ac-72220cc6440c",
-  "was": "(colhido 2023+)"
- },
  "50-3360-Summertime Blue": {
   "source": "musicbrainz",
   "id": "6b8aa6fd-dc4f-4710-935e-656942c4eeb2",
@@ -5164,11 +5089,6 @@
   "id": "e4e2b24c-1012-48df-9083-fcdc8179d159",
   "was": "(colhido 2023+)"
  },
- "50-5982-I Believe": {
-  "source": "musicbrainz",
-  "id": "663924be-41ab-48d1-932e-f7135d19a811",
-  "was": "(colhido 2023+)"
- },
  "50-54-Mercy Mercy Me (The Ecology)": {
   "source": "musicbrainz",
   "id": "ddab4c2d-fe2b-41b1-af87-a88704ee6c5a",
@@ -5177,11 +5097,6 @@
  "50-54-The Way You Make Me Feel": {
   "source": "musicbrainz",
   "id": "e65f7ef8-77b7-4d14-ab67-6f516b078a1b",
-  "was": "(colhido 2023+)"
- },
- "50-1277-God Only Knows": {
-  "source": "musicbrainz",
-  "id": "c320903c-8d5f-498e-b297-0a9d55f4d39f",
   "was": "(colhido 2023+)"
  },
  "10-50-fuckin' with you": {
@@ -5235,18 +5150,18 @@
   "was": "(colhido 2023+)"
  },
  "50-3070-Bridge Over Troubled Water (live at The Greek Theatre)": {
-  "source": "musicbrainz",
-  "id": "a8df64b7-f4c6-473c-a528-a9a3b98f9a86",
+  "source": "deezer",
+  "id": "2674885042",
   "was": "(colhido 2023+)"
  },
  "50-6365-Bridge Over Troubled Water (live at The Greek Theatre)": {
-  "source": "musicbrainz",
-  "id": "a8df64b7-f4c6-473c-a528-a9a3b98f9a86",
+  "source": "deezer",
+  "id": "2674885042",
   "was": "(colhido 2023+)"
  },
  "3070-6365-Bridge Over Troubled Water (live at The Greek Theatre)": {
-  "source": "musicbrainz",
-  "id": "a8df64b7-f4c6-473c-a528-a9a3b98f9a86",
+  "source": "deezer",
+  "id": "2674885042",
   "was": "(colhido 2023+)"
  },
  "111-3154-Choose Up": {
@@ -5625,8 +5540,8 @@
   "was": "(colhido 2023+)"
  },
  "1173-1530-Jíbaro": {
-  "source": "musicbrainz",
-  "id": "7221e7ee-72e8-4ac3-9073-087c7810f79a",
+  "source": "deezer",
+  "id": "1508223192",
   "was": "(colhido 2023+)"
  },
  "1173-3194-MAZACOTE": {
@@ -5635,8 +5550,8 @@
   "was": "(colhido 2023+)"
  },
  "1173-1530-Borinquen Bella": {
-  "source": "musicbrainz",
-  "id": "d1722eb7-2203-4ee3-bc5b-290b1c4c3cd9",
+  "source": "deezer",
+  "id": "668529042",
   "was": "(colhido 2023+)"
  },
  "1173-3166-Río de Janeiro": {
@@ -5650,8 +5565,8 @@
   "was": "(colhido 2023+)"
  },
  "1173-1530-Calma": {
-  "source": "musicbrainz",
-  "id": "ef4a50ab-3a03-4264-a64e-b0cfa1e88ab3",
+  "source": "deezer",
+  "id": "562886212",
   "was": "(colhido 2023+)"
  },
  "210-1173-YAPAQUE": {
@@ -5975,8 +5890,8 @@
   "was": "(colhido 2023+)"
  },
  "31-6592-So Far Ahead (live from Apple Music Studios)": {
-  "source": "musicbrainz",
-  "id": "e726234d-5dfd-4d20-aaa3-ba38f8ee43f6",
+  "source": "deezer",
+  "id": "3453936871",
   "was": "(colhido 2023+)"
  },
  "31-223-Committed": {
@@ -6040,8 +5955,8 @@
   "was": "(colhido 2023+)"
  },
  "31-1616-Get Lucky": {
-  "source": "musicbrainz",
-  "id": "91c1ce46-5b54-4716-92e7-9ef02d704d27",
+  "source": "deezer",
+  "id": "66609426",
   "was": "(colhido 2023+)"
  },
  "31-91-Airplane Tickets": {
@@ -6197,21 +6112,6 @@
  "90-3152-Bae": {
   "source": "musicbrainz",
   "id": "fd846578-cc28-46e9-aec2-25daaff622e8",
-  "was": "(colhido 2023+)"
- },
- "1315-3286-Flower Shops": {
-  "source": "musicbrainz",
-  "id": "98d509db-91ff-4fbd-89be-da9d44bed1fc",
-  "was": "(colhido 2023+)"
- },
- "1189-3286-SOLD OUT": {
-  "source": "musicbrainz",
-  "id": "a9a48de1-a1d6-405a-bcc1-9eec66dd45f3",
-  "was": "(colhido 2023+)"
- },
- "1190-3286-Rockstar": {
-  "source": "musicbrainz",
-  "id": "14a87fba-f37e-4bd8-97b2-7f7613383e81",
   "was": "(colhido 2023+)"
  },
  "48-2114-End of the World / Mamma Mia (Mixed)": {
@@ -6482,11 +6382,6 @@
  "2888-5062-Te acuerdas": {
   "source": "musicbrainz",
   "id": "2d0b08d3-91fb-4923-80c6-83d1eea61ff1",
-  "was": "(colhido 2023+)"
- },
- "2888-2890-Que lloro (en vivo)": {
-  "source": "musicbrainz",
-  "id": "4fb24272-3e3c-4501-9782-80bff7756b65",
   "was": "(colhido 2023+)"
  },
  "2859-2888-El correcto": {
@@ -7215,8 +7110,8 @@
   "was": "(colhido 2023+)"
  },
  "2860-3215-La siguiente": {
-  "source": "musicbrainz",
-  "id": "5ee3f051-9391-4483-bab4-5f878b4acac3",
+  "source": "deezer",
+  "id": "1902684537",
   "was": "(colhido 2023+)"
  },
  "1142-2860-Fuego de noche, nieve de día": {
@@ -7232,11 +7127,6 @@
  "2860-3211-Llórame un río": {
   "source": "musicbrainz",
   "id": "42b742b7-ac8e-4abc-b189-e811aae68c65",
-  "was": "(colhido 2023+)"
- },
- "4326-5655-Tiny Moves": {
-  "source": "musicbrainz",
-  "id": "033b5cc6-8067-47b0-be39-6a9cfd9cd2af",
   "was": "(colhido 2023+)"
  },
  "80-92-Celebrate": {
@@ -7474,11 +7364,6 @@
   "id": "c7b1ea15-00e1-49f3-b217-5e3a286961e9",
   "was": "(colhido 2023+)"
  },
- "5842-5982-I'm Yours": {
-  "source": "musicbrainz",
-  "id": "dab0d6ba-b907-4321-ad21-1ff88dca2e9d",
-  "was": "(colhido 2023+)"
- },
  "1508-1509-Higher": {
   "source": "musicbrainz",
   "id": "5c68b865-0b6a-4aaf-bf6b-55416bcdbafe",
@@ -7675,8 +7560,8 @@
   "was": "(colhido 2023+)"
  },
  "137-1680-Fade Away": {
-  "source": "musicbrainz",
-  "id": "fae37346-3184-4d80-ad24-706673dc42f0",
+  "source": "deezer",
+  "id": "2851196652",
   "was": "(colhido 2023+)"
  },
  "137-1680-Hold on Me": {
@@ -7949,29 +7834,14 @@
   "id": "3bc06321-2fb6-4204-a380-548344e1ad3a",
   "was": "(colhido 2023+)"
  },
- "3229-5167-I Think I Love You Too Much": {
-  "source": "musicbrainz",
-  "id": "d3e86253-b2dc-4b12-a223-8f08741a0bc9",
-  "was": "(colhido 2023+)"
- },
  "3229-5167-Money for Nothing": {
   "source": "musicbrainz",
-  "id": "ad474cc0-c6e9-4485-80ab-50e1ee7801e3",
-  "was": "(colhido 2023+)"
- },
- "3229-5167-Talk": {
-  "source": "musicbrainz",
-  "id": "6f4a3530-20af-4c40-8398-6265dcb8bd82",
+  "id": "bb4ce970-a15c-4ca1-8aab-837c44a0e01c",
   "was": "(colhido 2023+)"
  },
  "3229-5167-Solid Rock": {
   "source": "musicbrainz",
-  "id": "d21776f4-0685-4e62-8ef9-4ad0c4954dda",
-  "was": "(colhido 2023+)"
- },
- "1519-5597-Shut Off The Lights – Ally Pally 2023": {
-  "source": "musicbrainz",
-  "id": "94626c74-662a-4eb7-aea6-92f96029ee36",
+  "id": "9f5a0ac1-6219-49c7-822f-db5572272c5e",
   "was": "(colhido 2023+)"
  },
  "1519-1557-Head Down": {
@@ -8104,19 +7974,9 @@
   "id": "f0466b85-9a34-4053-bee7-7bbda134da52",
   "was": "(colhido 2023+)"
  },
- "3228-3241-Badlands": {
-  "source": "musicbrainz",
-  "id": "d5056750-7430-4969-945e-a89e9648c10d",
-  "was": "(colhido 2023+)"
- },
- "3228-3241-Born to Run": {
-  "source": "musicbrainz",
-  "id": "39354adf-5dda-41a8-a676-a013a864612b",
-  "was": "(colhido 2023+)"
- },
  "3228-3241-Dustland": {
-  "source": "musicbrainz",
-  "id": "cc6a2664-a586-4e0e-8e0a-83ad06606423",
+  "source": "deezer",
+  "id": "1398838112",
   "was": "(colhido 2023+)"
  },
  "858-947-Pela Última Vez (Ao Vivo)": {
@@ -8202,11 +8062,6 @@
  "1142-2859-A medio vivir": {
   "source": "musicbrainz",
   "id": "1a3df595-ac53-4844-94d8-50d991e823af",
-  "was": "(colhido 2023+)"
- },
- "16-1142-LO QUE LE PASÓ A HAWAii": {
-  "source": "musicbrainz",
-  "id": "d2926314-d2db-4260-9378-b0fd3b88ee4b",
   "was": "(colhido 2023+)"
  },
  "1142-2966-Vuelve": {
@@ -9445,8 +9300,8 @@
   "was": "(colhido 2023+)"
  },
  "44-79-Boy With Luv - Live": {
-  "source": "musicbrainz",
-  "id": "68c0457a-b0b1-4f7f-a4ce-84f8275b915b",
+  "source": "deezer",
+  "id": "1580983462",
   "was": "(colhido 2023+)"
  },
  "79-1187-Take a Bow": {
@@ -9510,23 +9365,23 @@
   "was": "(colhido 2023+)"
  },
  "125-1492-Live the Night": {
-  "source": "musicbrainz",
-  "id": "3c349cc8-6ffb-46e5-af3f-d202e9899450",
+  "source": "deezer",
+  "id": "127878315",
   "was": "(colhido 2023+)"
  },
  "125-1561-Live the Night": {
-  "source": "musicbrainz",
-  "id": "3c349cc8-6ffb-46e5-af3f-d202e9899450",
+  "source": "deezer",
+  "id": "127878315",
   "was": "(colhido 2023+)"
  },
  "1492-1561-Live the Night": {
-  "source": "musicbrainz",
-  "id": "3c349cc8-6ffb-46e5-af3f-d202e9899450",
+  "source": "deezer",
+  "id": "127878315",
   "was": "(colhido 2023+)"
  },
  "125-3735-Head Bussa": {
-  "source": "musicbrainz",
-  "id": "b13ff2c1-acd0-41c3-9300-a176dee3a0e5",
+  "source": "deezer",
+  "id": "670682",
   "was": "(colhido 2023+)"
  },
  "125-210-Get Lower": {
@@ -9660,18 +9515,13 @@
   "was": "(colhido 2023+)"
  },
  "135-1538-Spectrum": {
-  "source": "musicbrainz",
-  "id": "d8ebcca0-8bf8-45de-ba51-63c0f2bee39c",
+  "source": "deezer",
+  "id": "60904698",
   "was": "(colhido 2023+)"
  },
  "213-1697-Lighter": {
   "source": "musicbrainz",
   "id": "02a36cb1-6b14-450a-9969-3ad96d3580db",
-  "was": "(colhido 2023+)"
- },
- "1697-5982-She Looks So Perfect": {
-  "source": "musicbrainz",
-  "id": "99f4e110-6c31-4a03-90f9-6abc4e339d68",
   "was": "(colhido 2023+)"
  },
  "900-1166-Body Splash - Ao Vivo": {
@@ -10240,8 +10090,8 @@
   "was": "(colhido 2023+)"
  },
  "2429-2965-PERREITO PA LLORAR - Live": {
-  "source": "musicbrainz",
-  "id": "ab9ad4da-588e-417b-bcc0-27f277a6e59e",
+  "source": "deezer",
+  "id": "3105192241",
   "was": "(colhido 2023+)"
  },
  "2429-2965-PERREITO PA LLORAR": {
@@ -10804,11 +10654,6 @@
   "id": "4335c86a-9da7-4739-8cc1-10636344e3c6",
   "was": "(colhido 2023+)"
  },
- "35-5982-Young Dumb & Broke": {
-  "source": "musicbrainz",
-  "id": "41fcae37-8e15-443a-a814-f5e9f5f5b070",
-  "was": "(colhido 2023+)"
- },
  "35-440-Come Back To Me": {
   "source": "musicbrainz",
   "id": "f48f70c8-5e83-4cf8-9e3b-3b129f9f6d76",
@@ -11041,7 +10886,7 @@
  },
  "2166-5507-Hey Man (live)": {
   "source": "musicbrainz",
-  "id": "a183eb09-8275-4791-944a-648a7e1e607e",
+  "id": "4cdd9457-5d71-4af7-b2d3-b3a5bd438401",
   "was": "(colhido 2023+)"
  },
  "232-4436-Por Vos": {
@@ -11107,11 +10952,6 @@
  "232-2979-QNP": {
   "source": "musicbrainz",
   "id": "03a5a520-6a62-4b3e-858f-91a59eff630f",
-  "was": "(colhido 2023+)"
- },
- "3284-5982-I'm Just a Kid": {
-  "source": "musicbrainz",
-  "id": "be78b21d-2e96-4af2-ae67-fe68a1c589e0",
   "was": "(colhido 2023+)"
  },
  "4106-5982-The Beautiful Letdown": {
@@ -13185,8 +13025,8 @@
   "was": "(colhido 2023+)"
  },
  "134-1549-Shapeshifter": {
-  "source": "musicbrainz",
-  "id": "106ce202-ba78-401b-b8fb-3dc49c0591b5",
+  "source": "deezer",
+  "id": "3898198811",
   "was": "(colhido 2023+)"
  },
  "1549-3219-Corazón": {
@@ -13775,8 +13615,8 @@
   "was": "(colhido 2023+)"
  },
  "1324-5687-I'm in the Mood (Live)": {
-  "source": "musicbrainz",
-  "id": "192caff8-8712-4df3-8d38-0d30eca9cd81",
+  "source": "deezer",
+  "id": "768658052",
   "was": "(colhido 2023+)"
  },
  "71-1099-Tropa do Chapelão 🤠": {
@@ -13882,11 +13722,6 @@
  "674-859-Love Absurdo": {
   "source": "musicbrainz",
   "id": "3d68056a-5b84-4eaf-933e-9f4d23ec4a3f",
-  "was": "(colhido 2023+)"
- },
- "2866-2871-El coach (en vivo)": {
-  "source": "musicbrainz",
-  "id": "b5dd78f2-fa91-402d-8b87-dfa450202cc5",
   "was": "(colhido 2023+)"
  },
  "2871-2872-En el pedir está el dar": {
@@ -15879,11 +15714,6 @@
   "id": "0913cef9-b051-48a5-962c-d66819837202",
   "was": "(colhido 2023+)"
  },
- "1201-3093-From This Moment On (live from Miami/1999)": {
-  "source": "musicbrainz",
-  "id": "2c846e73-001a-4348-8b70-33dcd5421f1f",
-  "was": "(colhido 2023+)"
- },
  "1308-3093-What Hurts the Most": {
   "source": "musicbrainz",
   "id": "e0373fb5-851b-4635-bf76-391b14250cd2",
@@ -15974,14 +15804,9 @@
   "id": "6ade243f-dbce-4a8c-8b6b-849fdc34756f",
   "was": "(colhido 2023+)"
  },
- "3160-4416-Hoy me voy al sol (live)": {
-  "source": "musicbrainz",
-  "id": "d868fd04-f076-45a4-80b4-879f0808b6cb",
-  "was": "(colhido 2023+)"
- },
  "3160-4416-Fruto": {
-  "source": "musicbrainz",
-  "id": "18a401e6-4074-4685-93d0-1e8eee414e8b",
+  "source": "deezer",
+  "id": "2484352111",
   "was": "(colhido 2023+)"
  },
  "3160-4416-No soy Eterno": {
@@ -16040,8 +15865,8 @@
   "was": "(colhido 2023+)"
  },
  "1490-1705-My Heart Has Teeth": {
-  "source": "musicbrainz",
-  "id": "e44a7cd4-b4c0-40b8-80f5-6546d12d2103",
+  "source": "deezer",
+  "id": "1814245907",
   "was": "(colhido 2023+)"
  },
  "1490-5527-A Seed": {
@@ -16176,7 +16001,7 @@
  },
  "3224-3256-Who Do You Love?": {
   "source": "musicbrainz",
-  "id": "1c3434ee-0a98-4f31-a6f8-a194996cae61",
+  "id": "201e0030-8861-4c3f-aa63-21a55bbd026d",
   "was": "(colhido 2023+)"
  },
  "202-1517-Paper Crown": {
@@ -16806,12 +16631,7 @@
  },
  "1900-1903-Paris au mois d’août (live à l’Opéra Garnier, Paris / 2007)": {
   "source": "musicbrainz",
-  "id": "f274ecaa-5f85-4db0-b7b3-645cba070ac2",
-  "was": "(colhido 2023+)"
- },
- "1900-4538-Savoir aimer": {
-  "source": "musicbrainz",
-  "id": "2b50fd9f-9046-4a98-be7a-083b6a319bff",
+  "id": "a235b9e6-0b06-4572-a9cb-7683da0778e3",
   "was": "(colhido 2023+)"
  },
  "1883-1900-Caruso": {
@@ -17060,38 +16880,13 @@
   "was": "(colhido 2023+)"
  },
  "1186-5545-Better Days (live from Los Angeles)": {
-  "source": "musicbrainz",
-  "id": "8992f00d-31d9-473d-a3e8-d1f44a76d2a3",
-  "was": "(colhido 2023+)"
- },
- "1323-5545-My Favorite Mistake": {
-  "source": "musicbrainz",
-  "id": "6b5b23ca-a016-4e4c-bd9e-eab255afe6f1",
+  "source": "deezer",
+  "id": "3421343401",
   "was": "(colhido 2023+)"
  },
  "1196-5545-Guitar Man": {
   "source": "musicbrainz",
   "id": "749bcc70-845e-4e59-9b34-a15b462c3dfa",
-  "was": "(colhido 2023+)"
- },
- "1310-5545-Neon (live at Southern Ground Music & Food Festival, Nashville, TN, 09.22.2012)": {
-  "source": "musicbrainz",
-  "id": "8d6b428f-a1d5-43aa-8f52-9f43b895a522",
-  "was": "(colhido 2023+)"
- },
- "3224-5545-I’m Going Down": {
-  "source": "musicbrainz",
-  "id": "cdd45fc1-4830-41d5-b23c-e084991eeac5",
-  "was": "(colhido 2023+)"
- },
- "3224-6430-I’m Going Down": {
-  "source": "musicbrainz",
-  "id": "cdd45fc1-4830-41d5-b23c-e084991eeac5",
-  "was": "(colhido 2023+)"
- },
- "5545-6430-I’m Going Down": {
-  "source": "musicbrainz",
-  "id": "cdd45fc1-4830-41d5-b23c-e084991eeac5",
   "was": "(colhido 2023+)"
  },
  "3413-3476-Eye Know": {
@@ -17660,8 +17455,8 @@
   "was": "(colhido 2023+)"
  },
  "211-1587-In2minds": {
-  "source": "musicbrainz",
-  "id": "9edd6b41-40cd-466e-ba72-89ef0d07df9c",
+  "source": "deezer",
+  "id": "2992649421",
   "was": "(colhido 2023+)"
  },
  "211-3707-King Steps": {
@@ -17757,16 +17552,6 @@
  "1346-3072-Looking Lovely": {
   "source": "musicbrainz",
   "id": "c7006ad9-db03-4d4f-be22-b0e4c3ffc572",
-  "was": "(colhido 2023+)"
- },
- "3072-5151-Call on Me": {
-  "source": "musicbrainz",
-  "id": "2af1ca99-6416-4b8c-880e-2b924c2ea269",
-  "was": "(colhido 2023+)"
- },
- "3072-5151-Saturday in the Park": {
-  "source": "musicbrainz",
-  "id": "1af8edb4-3a53-42c0-9234-3fd51f0fecd6",
   "was": "(colhido 2023+)"
  },
  "1557-5379-Leave You in the Past": {
@@ -18504,11 +18289,6 @@
   "id": "6fc303cc-2750-4caa-8922-bd66783c5c58",
   "was": "(colhido 2023+)"
  },
- "2859-2870-Fuerza - en vivo": {
-  "source": "musicbrainz",
-  "id": "321ac23e-1100-42ea-8e50-1e4b40ae4f64",
-  "was": "(colhido 2023+)"
- },
  "2856-2870-GDL": {
   "source": "musicbrainz",
   "id": "800e1731-13be-4d01-b105-6ca4414a7be7",
@@ -18780,8 +18560,8 @@
   "was": "(colhido 2023+)"
  },
  "909-4151-Up in Arms (live at Team Night, 2013)": {
-  "source": "musicbrainz",
-  "id": "0044819a-0f1f-4e1c-b5da-3f99dc1c9a5c",
+  "source": "deezer",
+  "id": "3801648322",
   "was": "(colhido 2023+)"
  },
  "909-4151-Chariot": {
@@ -18790,8 +18570,8 @@
   "was": "(colhido 2023+)"
  },
  "909-4151-Up in Arms (live at Red Rocks 2013)": {
-  "source": "musicbrainz",
-  "id": "440c0ded-b841-41dc-a610-5609cdd6c9c6",
+  "source": "deezer",
+  "id": "3801648322",
   "was": "(colhido 2023+)"
  },
  "909-4151-Stay and Wait (redux)": {
@@ -18805,13 +18585,13 @@
   "was": "(colhido 2023+)"
  },
  "909-4151-Stay and Wait (live at Red Rocks 2013)": {
-  "source": "musicbrainz",
-  "id": "1845aaa5-3c85-431e-b324-696ef4e58abf",
+  "source": "deezer",
+  "id": "3801647182",
   "was": "(colhido 2023+)"
  },
  "909-4151-Stay and Wait (live at Team Night 2013)": {
-  "source": "musicbrainz",
-  "id": "bc3bb6a7-f757-4e32-b890-c1f7007c8006",
+  "source": "deezer",
+  "id": "3801647182",
   "was": "(colhido 2023+)"
  },
  "1486-4496-Royal Throne": {
@@ -18932,11 +18712,6 @@
  "2584-3107-Legendaria": {
   "source": "musicbrainz",
   "id": "8ff17596-bcf8-4478-b3ee-cb5cfc4192cb",
-  "was": "(colhido 2023+)"
- },
- "2429-2584-YO TE ESPERARÉ - Live": {
-  "source": "musicbrainz",
-  "id": "63fa08df-0356-474a-b936-15ed13767c8f",
   "was": "(colhido 2023+)"
  },
  "468-3591-November": {
@@ -19147,56 +18922,6 @@
  "1711-6490-Heartbreaker": {
   "source": "musicbrainz",
   "id": "3cdc862d-abfc-4426-8628-0b1be1885a07",
-  "was": "(colhido 2023+)"
- },
- "70-650-Delilah (pull me out of this) / RATATA": {
-  "source": "musicbrainz",
-  "id": "59a4be53-9796-4f68-8bbc-d5dd97eedc2c",
-  "was": "(colhido 2023+)"
- },
- "70-1501-Delilah (pull me out of this) / RATATA": {
-  "source": "musicbrainz",
-  "id": "59a4be53-9796-4f68-8bbc-d5dd97eedc2c",
-  "was": "(colhido 2023+)"
- },
- "70-1711-Delilah (pull me out of this) / RATATA": {
-  "source": "musicbrainz",
-  "id": "59a4be53-9796-4f68-8bbc-d5dd97eedc2c",
-  "was": "(colhido 2023+)"
- },
- "70-5748-Delilah (pull me out of this) / RATATA": {
-  "source": "musicbrainz",
-  "id": "59a4be53-9796-4f68-8bbc-d5dd97eedc2c",
-  "was": "(colhido 2023+)"
- },
- "650-1501-Delilah (pull me out of this) / RATATA": {
-  "source": "musicbrainz",
-  "id": "59a4be53-9796-4f68-8bbc-d5dd97eedc2c",
-  "was": "(colhido 2023+)"
- },
- "650-1711-Delilah (pull me out of this) / RATATA": {
-  "source": "musicbrainz",
-  "id": "59a4be53-9796-4f68-8bbc-d5dd97eedc2c",
-  "was": "(colhido 2023+)"
- },
- "650-5748-Delilah (pull me out of this) / RATATA": {
-  "source": "musicbrainz",
-  "id": "59a4be53-9796-4f68-8bbc-d5dd97eedc2c",
-  "was": "(colhido 2023+)"
- },
- "1501-1711-Delilah (pull me out of this) / RATATA": {
-  "source": "musicbrainz",
-  "id": "59a4be53-9796-4f68-8bbc-d5dd97eedc2c",
-  "was": "(colhido 2023+)"
- },
- "1501-5748-Delilah (pull me out of this) / RATATA": {
-  "source": "musicbrainz",
-  "id": "59a4be53-9796-4f68-8bbc-d5dd97eedc2c",
-  "was": "(colhido 2023+)"
- },
- "1711-5748-Delilah (pull me out of this) / RATATA": {
-  "source": "musicbrainz",
-  "id": "59a4be53-9796-4f68-8bbc-d5dd97eedc2c",
   "was": "(colhido 2023+)"
  },
  "238-469-Alive": {
@@ -20032,11 +19757,6 @@
  "3159-5056-DÓNDE ESTÁS": {
   "source": "musicbrainz",
   "id": "e545d712-8a9c-4677-a8d0-6f5a34a8f7f3",
-  "was": "(colhido 2023+)"
- },
- "1842-6684-Où va la vie": {
-  "source": "musicbrainz",
-  "id": "815f8b9b-25b9-4a14-a5ed-18f26bdebff2",
   "was": "(colhido 2023+)"
  },
  "93-1544-Dope Boy Phone": {
@@ -20984,16 +20704,6 @@
   "id": "9537aeae-4843-4535-9d8a-a13815161ee1",
   "was": "(colhido 2023+)"
  },
- "3138-3278-Buddy Holly": {
-  "source": "musicbrainz",
-  "id": "5a036ed2-891b-4dcd-8946-93f06ac858ac",
-  "was": "(colhido 2023+)"
- },
- "3138-3278-Say It Ain’t So": {
-  "source": "musicbrainz",
-  "id": "50caa707-5df2-4616-b184-afb5212f272e",
-  "was": "(colhido 2023+)"
- },
  "1606-5041-Nuestra canción": {
   "source": "musicbrainz",
   "id": "a95ab929-8acf-4f87-88b0-28551430cbeb",
@@ -21089,11 +20799,6 @@
   "id": "3ec6b3a7-9e13-4bef-9ab9-c3d94a1ed3a7",
   "was": "(colhido 2023+)"
  },
- "1027-3338-Five Years": {
-  "source": "musicbrainz",
-  "id": "ac416601-37eb-4ce4-ab2d-9d5743abdf29",
-  "was": "(colhido 2023+)"
- },
  "1027-3338-Wake Up": {
   "source": "musicbrainz",
   "id": "61b80103-816c-44ac-b0e0-03f82c945f32",
@@ -21116,7 +20821,7 @@
  },
  "2932-3044-Adoro": {
   "source": "musicbrainz",
-  "id": "744023a6-0d71-4292-898b-f800d13da250",
+  "id": "18166e29-58e5-4562-9140-0e9165bf8b0d",
   "was": "(colhido 2023+)"
  },
  "846-3165-MARTILLANDO": {
@@ -21509,19 +21214,14 @@
   "id": "6ffcd101-efc7-4036-80fa-e66a54ea0033",
   "was": "(colhido 2023+)"
  },
- "134-5982-Scars to Your Beautiful": {
-  "source": "musicbrainz",
-  "id": "f0070a70-cb07-4255-a3b6-9f198dc95f01",
-  "was": "(colhido 2023+)"
- },
  "134-1662-Nighttime Thing": {
   "source": "musicbrainz",
   "id": "5b236146-eaed-42f3-9003-052fa94acfcd",
   "was": "(colhido 2023+)"
  },
  "134-3360-I’m in Trouble": {
-  "source": "musicbrainz",
-  "id": "8abdc414-6acc-4bb1-ba0e-c9ce89afd9ed",
+  "source": "deezer",
+  "id": "3898198871",
   "was": "(colhido 2023+)"
  },
  "254-1783-Lick the light out": {
@@ -21634,114 +21334,84 @@
   "id": "a23e8764-9af2-4153-892f-a3da4d61a3ee",
   "was": "(colhido 2023+)"
  },
- "5163-5268-Don’t Give Up": {
-  "source": "musicbrainz",
-  "id": "f4e935be-4041-4d59-a158-b6868e830e8c",
-  "was": "(colhido 2023+)"
- },
- "495-1375-Get Up, Stand Up": {
-  "source": "musicbrainz",
-  "id": "32b4b49d-4d98-41f8-bd22-7aaf174dd1bd",
-  "was": "(colhido 2023+)"
- },
  "495-3228-Get Up, Stand Up": {
   "source": "musicbrainz",
-  "id": "32b4b49d-4d98-41f8-bd22-7aaf174dd1bd",
+  "id": "521d4c28-c79b-48d5-977a-ce78f007c8c0",
   "was": "(colhido 2023+)"
  },
  "495-5163-Get Up, Stand Up": {
   "source": "musicbrainz",
-  "id": "32b4b49d-4d98-41f8-bd22-7aaf174dd1bd",
+  "id": "521d4c28-c79b-48d5-977a-ce78f007c8c0",
   "was": "(colhido 2023+)"
  },
  "495-5268-Get Up, Stand Up": {
   "source": "musicbrainz",
-  "id": "32b4b49d-4d98-41f8-bd22-7aaf174dd1bd",
-  "was": "(colhido 2023+)"
- },
- "1375-3228-Get Up, Stand Up": {
-  "source": "musicbrainz",
-  "id": "32b4b49d-4d98-41f8-bd22-7aaf174dd1bd",
-  "was": "(colhido 2023+)"
- },
- "1375-5163-Get Up, Stand Up": {
-  "source": "musicbrainz",
-  "id": "32b4b49d-4d98-41f8-bd22-7aaf174dd1bd",
-  "was": "(colhido 2023+)"
- },
- "1375-5268-Get Up, Stand Up": {
-  "source": "musicbrainz",
-  "id": "32b4b49d-4d98-41f8-bd22-7aaf174dd1bd",
+  "id": "521d4c28-c79b-48d5-977a-ce78f007c8c0",
   "was": "(colhido 2023+)"
  },
  "3228-5163-Get Up, Stand Up": {
   "source": "musicbrainz",
-  "id": "32b4b49d-4d98-41f8-bd22-7aaf174dd1bd",
+  "id": "521d4c28-c79b-48d5-977a-ce78f007c8c0",
   "was": "(colhido 2023+)"
  },
  "3228-5268-Get Up, Stand Up": {
   "source": "musicbrainz",
-  "id": "32b4b49d-4d98-41f8-bd22-7aaf174dd1bd",
+  "id": "521d4c28-c79b-48d5-977a-ce78f007c8c0",
   "was": "(colhido 2023+)"
  },
  "5163-5268-Get Up, Stand Up": {
   "source": "musicbrainz",
-  "id": "32b4b49d-4d98-41f8-bd22-7aaf174dd1bd",
+  "id": "521d4c28-c79b-48d5-977a-ce78f007c8c0",
   "was": "(colhido 2023+)"
  },
  "495-1375-Chimes of Freedom": {
   "source": "musicbrainz",
-  "id": "0d46544e-6f2b-4da8-aebd-f86eb7552f3b",
+  "id": "64614b55-73ea-42c3-8323-c8deb321c5cc",
   "was": "(colhido 2023+)"
  },
  "495-3228-Chimes of Freedom": {
   "source": "musicbrainz",
-  "id": "0d46544e-6f2b-4da8-aebd-f86eb7552f3b",
+  "id": "64614b55-73ea-42c3-8323-c8deb321c5cc",
   "was": "(colhido 2023+)"
  },
  "495-5163-Chimes of Freedom": {
   "source": "musicbrainz",
-  "id": "0d46544e-6f2b-4da8-aebd-f86eb7552f3b",
+  "id": "64614b55-73ea-42c3-8323-c8deb321c5cc",
   "was": "(colhido 2023+)"
  },
  "495-5268-Chimes of Freedom": {
   "source": "musicbrainz",
-  "id": "0d46544e-6f2b-4da8-aebd-f86eb7552f3b",
+  "id": "64614b55-73ea-42c3-8323-c8deb321c5cc",
   "was": "(colhido 2023+)"
  },
  "1375-3228-Chimes of Freedom": {
   "source": "musicbrainz",
-  "id": "0d46544e-6f2b-4da8-aebd-f86eb7552f3b",
+  "id": "64614b55-73ea-42c3-8323-c8deb321c5cc",
   "was": "(colhido 2023+)"
  },
  "1375-5163-Chimes of Freedom": {
   "source": "musicbrainz",
-  "id": "0d46544e-6f2b-4da8-aebd-f86eb7552f3b",
+  "id": "64614b55-73ea-42c3-8323-c8deb321c5cc",
   "was": "(colhido 2023+)"
  },
  "1375-5268-Chimes of Freedom": {
   "source": "musicbrainz",
-  "id": "0d46544e-6f2b-4da8-aebd-f86eb7552f3b",
+  "id": "64614b55-73ea-42c3-8323-c8deb321c5cc",
   "was": "(colhido 2023+)"
  },
  "3228-5163-Chimes of Freedom": {
   "source": "musicbrainz",
-  "id": "0d46544e-6f2b-4da8-aebd-f86eb7552f3b",
+  "id": "64614b55-73ea-42c3-8323-c8deb321c5cc",
   "was": "(colhido 2023+)"
  },
  "3228-5268-Chimes of Freedom": {
   "source": "musicbrainz",
-  "id": "0d46544e-6f2b-4da8-aebd-f86eb7552f3b",
+  "id": "64614b55-73ea-42c3-8323-c8deb321c5cc",
   "was": "(colhido 2023+)"
  },
  "5163-5268-Chimes of Freedom": {
   "source": "musicbrainz",
-  "id": "0d46544e-6f2b-4da8-aebd-f86eb7552f3b",
-  "was": "(colhido 2023+)"
- },
- "5638-5982-Bubbly": {
-  "source": "musicbrainz",
-  "id": "244ac3eb-891e-4b42-af7f-233ee125aeec",
+  "id": "64614b55-73ea-42c3-8323-c8deb321c5cc",
   "was": "(colhido 2023+)"
  },
  "1630-5638-Let It Snow": {
@@ -21912,11 +21582,6 @@
  "179-3711-Nice to meet you": {
   "source": "musicbrainz",
   "id": "5d0c278b-cdb4-4f81-8b2f-3bb1e8f81e04",
-  "was": "(colhido 2023+)"
- },
- "179-6422-Laho": {
-  "source": "musicbrainz",
-  "id": "9f75b8e4-626d-417a-aadb-a5010d4445df",
   "was": "(colhido 2023+)"
  },
  "30-179-GBP": {
@@ -22545,8 +22210,8 @@
   "was": "(colhido 2023+)"
  },
  "2583-4416-Dispara": {
-  "source": "musicbrainz",
-  "id": "c89de2f9-6f8d-4e8d-b180-dba28cf57e78",
+  "source": "deezer",
+  "id": "2276765987",
   "was": "(colhido 2023+)"
  },
  "679-735-Bum Grave Vs Bunda Balançando": {
@@ -22724,19 +22389,9 @@
   "id": "400b7e41-8e69-40e5-ba80-2eda7c7f8019",
   "was": "(colhido 2023+)"
  },
- "51-2893-Underdog": {
-  "source": "musicbrainz",
-  "id": "0b5b7d8c-7d49-4a0f-8646-6de0cdd438f2",
-  "was": "(colhido 2023+)"
- },
  "2893-4418-Glock": {
   "source": "musicbrainz",
   "id": "a4ca11cf-4278-442c-ab70-fc4bf12ae8a8",
-  "was": "(colhido 2023+)"
- },
- "51-2893-Nada": {
-  "source": "musicbrainz",
-  "id": "dc0af6d6-79cd-4b72-b26a-98a4c5e470fc",
   "was": "(colhido 2023+)"
  },
  "302-1144-Quartos Usados (Ao Vivo)": {
@@ -23065,8 +22720,8 @@
   "was": "(colhido 2023+)"
  },
  "2912-5072-Soledad y el mar": {
-  "source": "musicbrainz",
-  "id": "20a290e6-f0e9-450c-a844-77e94b54dbd8",
+  "source": "deezer",
+  "id": "3088339581",
   "was": "(colhido 2023+)"
  },
  "2912-5072-Gracias a la vida": {
@@ -23075,8 +22730,8 @@
   "was": "(colhido 2023+)"
  },
  "2912-5650-Muerte": {
-  "source": "musicbrainz",
-  "id": "5da508b1-5732-4c2c-9477-c09eeac68b08",
+  "source": "deezer",
+  "id": "3088339521",
   "was": "(colhido 2023+)"
  },
  "2912-5650-Muerte (intro)": {
@@ -23085,8 +22740,8 @@
   "was": "(colhido 2023+)"
  },
  "2912-5072-Tú me acostumbraste": {
-  "source": "musicbrainz",
-  "id": "8ec36bf8-58dd-4bc0-a54c-19f87aec8346",
+  "source": "deezer",
+  "id": "345347591",
   "was": "(colhido 2023+)"
  },
  "1407-1813-Haaland": {
@@ -23324,16 +22979,6 @@
   "id": "27fd1c1f-1c79-490a-aa24-79229ad77386",
   "was": "(colhido 2023+)"
  },
- "1357-1370-Could You Be Loved (live)": {
-  "source": "musicbrainz",
-  "id": "27fd1c1f-1c79-490a-aa24-79229ad77386",
-  "was": "(colhido 2023+)"
- },
- "1358-1370-Could You Be Loved (live)": {
-  "source": "musicbrainz",
-  "id": "27fd1c1f-1c79-490a-aa24-79229ad77386",
-  "was": "(colhido 2023+)"
- },
  "1029-1355-Gyal Time Again": {
   "source": "musicbrainz",
   "id": "810eefd6-738f-4be8-9406-68ec2289eedb",
@@ -23485,8 +23130,8 @@
   "was": "(colhido 2023+)"
  },
  "59-3786-THOUGHT I WAS DEAD (live)": {
-  "source": "musicbrainz",
-  "id": "a2196da9-3896-476f-bd71-dc3aff750b20",
+  "source": "deezer",
+  "id": "3064010391",
   "was": "(colhido 2023+)"
  },
  "407-3149-Pressured Up": {
@@ -23505,18 +23150,18 @@
   "was": "(colhido 2023+)"
  },
  "59-3786-Thought I Was Dead": {
-  "source": "musicbrainz",
-  "id": "04caf40c-39f7-4f8d-bb79-f45c304805d3",
+  "source": "deezer",
+  "id": "3064010391",
   "was": "(colhido 2023+)"
  },
  "59-6647-Thought I Was Dead": {
-  "source": "musicbrainz",
-  "id": "04caf40c-39f7-4f8d-bb79-f45c304805d3",
+  "source": "deezer",
+  "id": "3064010391",
   "was": "(colhido 2023+)"
  },
  "3786-6647-Thought I Was Dead": {
-  "source": "musicbrainz",
-  "id": "04caf40c-39f7-4f8d-bb79-f45c304805d3",
+  "source": "deezer",
+  "id": "3064010391",
   "was": "(colhido 2023+)"
  },
  "1865-3786-Flight Confirmation": {
@@ -23765,8 +23410,8 @@
   "was": "(colhido 2023+)"
  },
  "416-3114-10%": {
-  "source": "musicbrainz",
-  "id": "e85748a9-8c75-4889-94ea-40ff700c363e",
+  "source": "deezer",
+  "id": "829306232",
   "was": "(colhido 2023+)"
  },
  "416-4266-Worth the Wait": {
@@ -24172,11 +23817,6 @@
  "1145-1166-Olhares imprecisos": {
   "source": "musicbrainz",
   "id": "89ef3f5d-01af-4f20-9add-b489335a6300",
-  "was": "(colhido 2023+)"
- },
- "3298-4673-Rivers": {
-  "source": "musicbrainz",
-  "id": "0dfcb313-80f9-4a95-aa1a-ddec7669acaf",
   "was": "(colhido 2023+)"
  },
  "846-1588-El Mas Chingon": {
@@ -25150,13 +24790,8 @@
   "was": "(colhido 2023+)"
  },
  "158-1708-In My Dreams": {
-  "source": "musicbrainz",
-  "id": "a957e3fb-9d41-4e90-bd73-26637402bc7f",
-  "was": "(colhido 2023+)"
- },
- "1501-1708-2009 / Bleu (better with time)": {
-  "source": "musicbrainz",
-  "id": "9579d147-373b-420f-a379-77c41198e828",
+  "source": "deezer",
+  "id": "2957844631",
   "was": "(colhido 2023+)"
  },
  "70-1501-Baby Again (Kwikmix By Stacy Mier) 127": {
@@ -25190,8 +24825,8 @@
   "was": "(colhido 2023+)"
  },
  "3228-3274-Highway to Hell": {
-  "source": "musicbrainz",
-  "id": "c448625e-d1da-458f-9c85-f55eef0ef329",
+  "source": "deezer",
+  "id": "3484512631",
   "was": "(colhido 2023+)"
  },
  "1349-1486-Over My Shoulders": {
@@ -25415,8 +25050,8 @@
   "was": "(colhido 2023+)"
  },
  "1506-1893-La Seine": {
-  "source": "musicbrainz",
-  "id": "31ae3f78-eb77-419c-b8a6-e8feafe0babd",
+  "source": "deezer",
+  "id": "794969812",
   "was": "(colhido 2023+)"
  },
  "1839-1893-La hauteur de la lune": {
@@ -25899,21 +25534,6 @@
   "id": "68fc03e0-fe7c-4a78-884b-d4c3d34336ba",
   "was": "(colhido 2023+)"
  },
- "1277-5557-I’m Still Standing": {
-  "source": "musicbrainz",
-  "id": "a04b14fc-04cc-4826-be88-c9197a3314b7",
-  "was": "(colhido 2023+)"
- },
- "1277-5576-I’m Still Standing": {
-  "source": "musicbrainz",
-  "id": "a04b14fc-04cc-4826-be88-c9197a3314b7",
-  "was": "(colhido 2023+)"
- },
- "5557-5576-I’m Still Standing": {
-  "source": "musicbrainz",
-  "id": "a04b14fc-04cc-4826-be88-c9197a3314b7",
-  "was": "(colhido 2023+)"
- },
  "6-5289-Murdergram Deux": {
   "source": "musicbrainz",
   "id": "486ff31f-3ebb-407f-924a-69be2886bd20",
@@ -25972,11 +25592,6 @@
  "20-189-Didn’t Cha Know / DNA.": {
   "source": "musicbrainz",
   "id": "75ca756f-0350-4517-a50a-a86a0f37ac73",
-  "was": "(colhido 2023+)"
- },
- "189-1865-Echos 19": {
-  "source": "musicbrainz",
-  "id": "106868a4-20bb-495d-a0ed-56a1a9e18b9e",
   "was": "(colhido 2023+)"
  },
  "311-2973-Aqui se vino a perrear": {
@@ -26150,8 +25765,8 @@
   "was": "(colhido 2023+)"
  },
  "1184-6364-Somethin' 'Bout a Woman (live From Fenway Park)": {
-  "source": "musicbrainz",
-  "id": "491b2c45-ebec-4dad-a2e1-8b22cf9315c8",
+  "source": "deezer",
+  "id": "3080915821",
   "was": "(colhido 2023+)"
  },
  "1184-6364-Somethin’ ’Bout a Woman": {
@@ -26500,8 +26115,8 @@
   "was": "(colhido 2023+)"
  },
  "129-1196-One Too Many (live From the HIGH AND ALIVE WORLD TOUR)": {
-  "source": "musicbrainz",
-  "id": "75692b04-eae8-4774-917d-1d777eb7b2a5",
+  "source": "deezer",
+  "id": "1074811752",
   "was": "(colhido 2023+)"
  },
  "1187-1196-Don’t Want To": {
@@ -26522,11 +26137,6 @@
  "49-1555-Immortal Queen": {
   "source": "musicbrainz",
   "id": "a378b59f-e9f1-4c5a-bed5-02461fe99bf2",
-  "was": "(colhido 2023+)"
- },
- "1555-1616-I Feel for You": {
-  "source": "musicbrainz",
-  "id": "4be6ce8e-9a27-4d13-930e-ebafb3255ce8",
   "was": "(colhido 2023+)"
  },
  "1555-6628-Cotton Eyed Joe": {
@@ -26595,8 +26205,8 @@
   "was": "(colhido 2023+)"
  },
  "427-2913-Por primera vez (en vivo desde la Puerta de Alcalá)": {
-  "source": "musicbrainz",
-  "id": "dd48b377-d5b6-46c7-9da6-d8fc14eff74b",
+  "source": "deezer",
+  "id": "895529112",
   "was": "(colhido 2023+)"
  },
  "427-2913-PLIS": {
@@ -27165,8 +26775,8 @@
   "was": "(colhido 2023+)"
  },
  "427-3215-Titanic": {
-  "source": "musicbrainz",
-  "id": "70930724-ee65-43b2-9ae2-0ab07165a0f6",
+  "source": "deezer",
+  "id": "971315062",
   "was": "(colhido 2023+)"
  },
  "2872-3215-Llorar por ella": {
@@ -27180,13 +26790,13 @@
   "was": "(colhido 2023+)"
  },
  "2859-3215-Te lo agradezco": {
-  "source": "musicbrainz",
-  "id": "703476c8-b4ef-4f89-8e73-1947cbf7b717",
+  "source": "deezer",
+  "id": "2364164485",
   "was": "(colhido 2023+)"
  },
  "3215-3216-Quédate": {
-  "source": "musicbrainz",
-  "id": "75b95f6b-86f7-41d0-ba9b-23be8de5cd8a",
+  "source": "deezer",
+  "id": "679333242",
   "was": "(colhido 2023+)"
  },
  "3172-3215-En esta boca": {
@@ -27260,8 +26870,8 @@
   "was": "(colhido 2023+)"
  },
  "6334-6684-The Pope": {
-  "source": "musicbrainz",
-  "id": "905bc09a-a121-461c-9777-8668691cb339",
+  "source": "deezer",
+  "id": "1897303587",
   "was": "(colhido 2023+)"
  },
  "4538-6684-Bhebak la akher yom (La Chanson des vieux amants)": {
@@ -27284,39 +26894,19 @@
   "id": "c514b514-0736-4340-bd35-483c65dc0031",
   "was": "(colhido 2023+)"
  },
- "4538-6684-Balad el tanaod": {
-  "source": "musicbrainz",
-  "id": "38f32b27-cc13-4c33-8e30-d7fb366f4904",
-  "was": "(colhido 2023+)"
- },
  "1506-4538-Mappemonde": {
-  "source": "musicbrainz",
-  "id": "cf293187-060f-44df-9f23-470ee5fb8870",
+  "source": "deezer",
+  "id": "1093732032",
   "was": "(colhido 2023+)"
  },
  "1506-6684-Mappemonde": {
-  "source": "musicbrainz",
-  "id": "cf293187-060f-44df-9f23-470ee5fb8870",
+  "source": "deezer",
+  "id": "1093732032",
   "was": "(colhido 2023+)"
  },
  "4538-6684-Mappemonde": {
-  "source": "musicbrainz",
-  "id": "cf293187-060f-44df-9f23-470ee5fb8870",
-  "was": "(colhido 2023+)"
- },
- "1506-4538-Le Radeau": {
-  "source": "musicbrainz",
-  "id": "de5f20f2-8cbf-4e8a-96d0-12fbda3fe5f9",
-  "was": "(colhido 2023+)"
- },
- "1506-6684-Le Radeau": {
-  "source": "musicbrainz",
-  "id": "de5f20f2-8cbf-4e8a-96d0-12fbda3fe5f9",
-  "was": "(colhido 2023+)"
- },
- "4538-6684-Le Radeau": {
-  "source": "musicbrainz",
-  "id": "de5f20f2-8cbf-4e8a-96d0-12fbda3fe5f9",
+  "source": "deezer",
+  "id": "1093732032",
   "was": "(colhido 2023+)"
  },
  "229-2581-FANTASMA | AVC": {
@@ -27427,16 +27017,6 @@
  "251-1190-Backup Plan": {
   "source": "musicbrainz",
   "id": "f030e2bf-7e49-470c-a3e4-1553ff620dd5",
-  "was": "(colhido 2023+)"
- },
- "2859-2958-Piensa en mi - en vivo": {
-  "source": "musicbrainz",
-  "id": "69767fa1-4243-4a90-ae13-e038ff06cdba",
-  "was": "(colhido 2023+)"
- },
- "2859-2958-Irrelevante - en vivo": {
-  "source": "musicbrainz",
-  "id": "6d18924a-b962-4e99-8fb8-3ed7565e90d6",
   "was": "(colhido 2023+)"
  },
  "1499-1604-THE REASON": {
@@ -28110,8 +27690,8 @@
   "was": "(colhido 2023+)"
  },
  "233-2632-WDA (Whole Different Animal) (performance video)": {
-  "source": "musicbrainz",
-  "id": "c200d2c9-6790-44a6-9eb6-d7db5d8c2ba8",
+  "source": "deezer",
+  "id": "3973347911",
   "was": "(colhido 2023+)"
  },
  "74-233-TOO BAD": {
@@ -28152,11 +27732,6 @@
  "451-5976-No Cry": {
   "source": "musicbrainz",
   "id": "fc6edcd9-b963-487b-91f0-27895bd39995",
-  "was": "(colhido 2023+)"
- },
- "5976-5982-No Air": {
-  "source": "musicbrainz",
-  "id": "850ffddb-783a-4b19-ab38-49fa915db1db",
   "was": "(colhido 2023+)"
  },
  "4103-5976-Love Me Like I am": {
@@ -28316,7 +27891,7 @@
  },
  "15-249-Think I’m in Love With You": {
   "source": "musicbrainz",
-  "id": "6205e325-9ff8-4a05-aa41-79e0f9348c88",
+  "id": "052df45f-0a20-45c9-85af-7c6ab453c5e0",
   "was": "(colhido 2023+)"
  },
  "249-1199-Honky Tonk Hall of Fame": {
@@ -28347,11 +27922,6 @@
  "249-3255-Here": {
   "source": "musicbrainz",
   "id": "67c8918c-93df-47d6-a4f2-396a37359ce2",
-  "was": "(colhido 2023+)"
- },
- "1310-5216-Sweet Emotion (live at Fenway Park, Boston, MA, 08.09.2015)": {
-  "source": "musicbrainz",
-  "id": "4957c728-56ca-4ad3-839d-cb487a12ad31",
   "was": "(colhido 2023+)"
  },
  "247-1310-Butterfly": {
@@ -28530,13 +28100,13 @@
   "was": "(colhido 2023+)"
  },
  "24-4143-Alleluia": {
-  "source": "musicbrainz",
-  "id": "e55ef473-d7f0-4fb0-8408-fba45b23c0e5",
+  "source": "deezer",
+  "id": "3720112822",
   "was": "(colhido 2023+)"
  },
  "910-4143-Alleluia": {
-  "source": "musicbrainz",
-  "id": "e55ef473-d7f0-4fb0-8408-fba45b23c0e5",
+  "source": "deezer",
+  "id": "3720111922",
   "was": "(colhido 2023+)"
  },
  "24-910-Call God": {
@@ -28545,13 +28115,13 @@
   "was": "(colhido 2023+)"
  },
  "24-4143-Call God": {
-  "source": "musicbrainz",
-  "id": "96e3c010-82eb-4f7c-b601-c2bdb2ac3bf4",
+  "source": "deezer",
+  "id": "3720112872",
   "was": "(colhido 2023+)"
  },
  "910-4143-Call God": {
-  "source": "musicbrainz",
-  "id": "96e3c010-82eb-4f7c-b601-c2bdb2ac3bf4",
+  "source": "deezer",
+  "id": "3720112872",
   "was": "(colhido 2023+)"
  },
  "24-910-I Know A Name": {
@@ -28560,28 +28130,13 @@
   "was": "(colhido 2023+)"
  },
  "24-4146-I Know A Name": {
-  "source": "musicbrainz",
-  "id": "cf9b50f8-726c-4640-8686-b9fb6989adee",
+  "source": "deezer",
+  "id": "3209843811",
   "was": "(colhido 2023+)"
  },
  "910-4146-I Know A Name": {
-  "source": "musicbrainz",
-  "id": "cf9b50f8-726c-4640-8686-b9fb6989adee",
-  "was": "(colhido 2023+)"
- },
- "910-4146-So So Good (live)": {
-  "source": "musicbrainz",
-  "id": "87db7ac8-4f0e-4b32-96e4-fae3b95f2de9",
-  "was": "(colhido 2023+)"
- },
- "910-4189-So So Good (live)": {
-  "source": "musicbrainz",
-  "id": "87db7ac8-4f0e-4b32-96e4-fae3b95f2de9",
-  "was": "(colhido 2023+)"
- },
- "4146-4189-So So Good (live)": {
-  "source": "musicbrainz",
-  "id": "87db7ac8-4f0e-4b32-96e4-fae3b95f2de9",
+  "source": "deezer",
+  "id": "3209843811",
   "was": "(colhido 2023+)"
  },
  "24-910-What a Miracle": {
@@ -29339,21 +28894,6 @@
   "id": "84ac6329-175f-46ba-8218-57486051c3c7",
   "was": "(colhido 2023+)"
  },
- "908-4189-Song Of The Saints (Live)": {
-  "source": "musicbrainz",
-  "id": "ada08b40-b2bf-4a6b-8437-72206c51f5d1",
-  "was": "(colhido 2023+)"
- },
- "908-4181-Holy Forever (live from Good Friday)": {
-  "source": "musicbrainz",
-  "id": "99f392be-a8a9-4d73-a63f-98dbba2f6154",
-  "was": "(colhido 2023+)"
- },
- "908-4182-Holy Forever (live from Good Friday)": {
-  "source": "musicbrainz",
-  "id": "99f392be-a8a9-4d73-a63f-98dbba2f6154",
-  "was": "(colhido 2023+)"
- },
  "4181-4182-Holy Forever (live from Good Friday)": {
   "source": "musicbrainz",
   "id": "99f392be-a8a9-4d73-a63f-98dbba2f6154",
@@ -29385,28 +28925,18 @@
   "was": "(colhido 2023+)"
  },
  "248-1199-Sing One With Willie (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)": {
-  "source": "musicbrainz",
-  "id": "230161cb-a6f1-40e7-9f5b-c0c44240dd48",
+  "source": "deezer",
+  "id": "653785622",
   "was": "(colhido 2023+)"
  },
  "248-1199-Sing One With Willie": {
-  "source": "musicbrainz",
-  "id": "da22dbf5-1ab9-4362-a655-94a857d19a3f",
-  "was": "(colhido 2023+)"
- },
- "248-1199-Pancho & Lefty": {
-  "source": "musicbrainz",
-  "id": "8e3e2e36-0f0a-40e0-95d6-86c24c4935aa",
-  "was": "(colhido 2023+)"
- },
- "248-1199-Pancho & Lefty (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)": {
-  "source": "musicbrainz",
-  "id": "8c5436d5-abec-4c71-9654-150329227ccd",
+  "source": "deezer",
+  "id": "653785622",
   "was": "(colhido 2023+)"
  },
  "1554-1587-Beggin’": {
-  "source": "musicbrainz",
-  "id": "c98255c4-a0cc-4189-9e8a-aea134e07bd3",
+  "source": "deezer",
+  "id": "2238000797",
   "was": "(colhido 2023+)"
  },
  "1587-5742-Memories": {
@@ -29420,8 +28950,8 @@
   "was": "(colhido 2023+)"
  },
  "1587-6029-Dubai Dublin": {
-  "source": "musicbrainz",
-  "id": "c5236c2a-d987-4082-9104-a733e0b0ad28",
+  "source": "deezer",
+  "id": "1165071772",
   "was": "(colhido 2023+)"
  },
  "3749-6344-Gangland": {
@@ -29580,8 +29110,8 @@
   "was": "(colhido 2023+)"
  },
  "2428-2429-EL TONTO - Live": {
-  "source": "musicbrainz",
-  "id": "65126d57-b5ff-44b0-875f-028f2ab14be4",
+  "source": "deezer",
+  "id": "2233549207",
   "was": "(colhido 2023+)"
  },
  "2428-4486-LA 125": {
@@ -29776,7 +29306,7 @@
  },
  "939-4149-Holy Song (live)": {
   "source": "musicbrainz",
-  "id": "6ba732d8-ed7a-4dda-a250-ccc16f6ca888",
+  "id": "2c903b82-0fea-411b-b972-a668895302ab",
   "was": "(colhido 2023+)"
  },
  "939-4182-The Church (acoustic)": {
@@ -29787,11 +29317,6 @@
  "939-4185-Time And Time Again": {
   "source": "musicbrainz",
   "id": "20f2fa2a-db1b-44a9-9701-e4650c618a71",
-  "was": "(colhido 2023+)"
- },
- "939-4149-One (live at Church)": {
-  "source": "musicbrainz",
-  "id": "664a0cd8-7d19-4dd8-b402-4dac8ad687dc",
   "was": "(colhido 2023+)"
  },
  "939-4181-He Has Done Great Things (live)": {
@@ -30054,16 +29579,6 @@
   "id": "de015c33-e7ce-40ef-bb0b-c3610b275920",
   "was": "(colhido 2023+)"
  },
- "5151-5723-Poem 58": {
-  "source": "musicbrainz",
-  "id": "24d4a21a-af3b-4904-953e-ccd32c172f8d",
-  "was": "(colhido 2023+)"
- },
- "5151-5723-South California Purples": {
-  "source": "musicbrainz",
-  "id": "0089783e-0f5c-423f-94b8-58bea8abdc33",
-  "was": "(colhido 2023+)"
- },
  "3726-6592-What Happened to That Boy": {
   "source": "musicbrainz",
   "id": "719a6775-358d-4b1e-99c2-fdbd58d8dcb7",
@@ -30300,18 +29815,18 @@
   "was": "(colhido 2023+)"
  },
  "68-1602-Dance Wiv Me (live at the iTunes Festival / 2013)": {
-  "source": "musicbrainz",
-  "id": "53201a05-4c69-4440-b7cc-1f198c8ee448",
+  "source": "deezer",
+  "id": "15640853",
   "was": "(colhido 2023+)"
  },
  "68-5311-Dance Wiv Me (live at the iTunes Festival / 2013)": {
-  "source": "musicbrainz",
-  "id": "53201a05-4c69-4440-b7cc-1f198c8ee448",
+  "source": "deezer",
+  "id": "15640853",
   "was": "(colhido 2023+)"
  },
  "1602-5311-Dance Wiv Me (live at the iTunes Festival / 2013)": {
-  "source": "musicbrainz",
-  "id": "53201a05-4c69-4440-b7cc-1f198c8ee448",
+  "source": "deezer",
+  "id": "15640853",
   "was": "(colhido 2023+)"
  },
  "1602-3689-Keep That Same Energy": {
@@ -30355,8 +29870,8 @@
   "was": "(colhido 2023+)"
  },
  "3121-4413-Sex & Love": {
-  "source": "musicbrainz",
-  "id": "cdf1e645-835a-42d7-b486-b584a9df9d00",
+  "source": "deezer",
+  "id": "1810941077",
   "was": "(colhido 2023+)"
  },
  "2431-4413-Ella tiene": {
@@ -30780,8 +30295,8 @@
   "was": "(colhido 2023+)"
  },
  "1208-1221-My Truck (live)": {
-  "source": "musicbrainz",
-  "id": "5cfd398f-41b8-47f7-ae42-881f445a5570",
+  "source": "deezer",
+  "id": "937040232",
   "was": "(colhido 2023+)"
  },
  "28-1208-BODY LIKE A BACK ROAD (SAM HUNT x MEGAN THEE STALLION)": {
@@ -31005,8 +30520,8 @@
   "was": "(colhido 2023+)"
  },
  "1183-5282-Thank God - Live from Fenway": {
-  "source": "musicbrainz",
-  "id": "a16acad2-339c-4629-867d-9119e7413986",
+  "source": "deezer",
+  "id": "1896167007",
   "was": "(colhido 2023+)"
  },
  "1183-5282-Do Us Apart": {
@@ -31060,8 +30575,8 @@
   "was": "(colhido 2023+)"
  },
  "1784-6683-Mon Everest": {
-  "source": "musicbrainz",
-  "id": "aa2783cd-7e70-463a-b584-653c45e339cc",
+  "source": "deezer",
+  "id": "576857872",
   "was": "(colhido 2023+)"
  },
  "2162-2409-Tik Tak": {
@@ -31189,16 +30704,6 @@
   "id": "2179b38f-20ec-4139-869a-9e298cc9a3d3",
   "was": "(colhido 2023+)"
  },
- "74-3484-Put Me Thru": {
-  "source": "musicbrainz",
-  "id": "0489287c-ac1e-4ee3-b0a0-2f7975cec2f4",
-  "was": "(colhido 2023+)"
- },
- "74-3484-Come Down": {
-  "source": "musicbrainz",
-  "id": "39086e72-0dfa-4e65-bc74-99261b217c24",
-  "was": "(colhido 2023+)"
- },
  "74-119-Play This Song": {
   "source": "musicbrainz",
   "id": "ef6be3ce-f4f6-432a-aa2f-29d26eb207db",
@@ -31262,11 +30767,6 @@
  "4917-6404-Bender": {
   "source": "musicbrainz",
   "id": "ff887181-9311-4f0f-9ce0-39b7576f8caa",
-  "was": "(colhido 2023+)"
- },
- "1187-6404-Hollywood Nights": {
-  "source": "musicbrainz",
-  "id": "55987c5f-6f05-4f26-8dfc-3a70d9eceb6b",
   "was": "(colhido 2023+)"
  },
  "1746-1795-Oh qu’elle est belle": {
@@ -31344,14 +30844,9 @@
   "id": "5b7c8896-b7b8-4449-95e5-bb24eb32251d",
   "was": "(colhido 2023+)"
  },
- "3441-3827-Diamonds on the Soles of Her Shoes - Drums": {
-  "source": "musicbrainz",
-  "id": "01ce55a1-c057-4186-b597-b49c04f518e3",
-  "was": "(colhido 2023+)"
- },
  "3441-3827-Homeless": {
-  "source": "musicbrainz",
-  "id": "da139d48-ad32-4870-8a6e-74e8c48b1ef7",
+  "source": "deezer",
+  "id": "32140211",
   "was": "(colhido 2023+)"
  },
  "3228-3439-Glory Days": {
@@ -31519,21 +31014,6 @@
   "id": "f9f0b253-8bf7-4aab-bdb5-9ddc23ceef54",
   "was": "(colhido 2023+)"
  },
- "17-6267-[talk]": {
-  "source": "musicbrainz",
-  "id": "6e391b3d-f5be-4cd9-80f3-f799b92728d4",
-  "was": "(colhido 2023+)"
- },
- "17-6267-WILDFLOWER": {
-  "source": "musicbrainz",
-  "id": "deac1e39-6d05-4fe0-b954-a93046b8b49e",
-  "was": "(colhido 2023+)"
- },
- "17-6267-THE GREATEST": {
-  "source": "musicbrainz",
-  "id": "0c158e08-0337-4f99-a150-e7fe8949035a",
-  "was": "(colhido 2023+)"
- },
  "17-6267-Billie Eilish and FINNEAS on THE DINER": {
   "source": "musicbrainz",
   "id": "eab22d03-ce19-4044-8e09-9f4cbdfd444a",
@@ -31541,7 +31021,7 @@
  },
  "250-6267-Giver / Taker": {
   "source": "musicbrainz",
-  "id": "cbd5887e-bb99-4562-ac62-910d3fc30ea2",
+  "id": "252c531a-809a-4ffe-9b2f-07082fa917df",
   "was": "(colhido 2023+)"
  },
  "17-6267-Billie Eilish and FINNEAS on L’AMOUR DE MA VIE": {
@@ -31552,11 +31032,6 @@
  "17-6267-Billie Eilish and FINNEAS on LUNCH": {
   "source": "musicbrainz",
   "id": "c523569e-4214-4f96-a6a2-3f205bd0f25b",
-  "was": "(colhido 2023+)"
- },
- "17-6267-BIRDS OF A FEATHER": {
-  "source": "musicbrainz",
-  "id": "62d082f8-3119-45cd-8d10-b4d07e96941b",
   "was": "(colhido 2023+)"
  },
  "17-6267-Billie Eilish and FINNEAS on CHIHIRO": {
@@ -31589,29 +31064,9 @@
   "id": "4cd01034-8e0b-4684-b285-1477941c4264",
   "was": "(colhido 2023+)"
  },
- "4099-4260-Center (live From Passion 2026)": {
-  "source": "musicbrainz",
-  "id": "9c7a2075-0689-4f59-9813-762bb073b2fc",
-  "was": "(colhido 2023+)"
- },
- "4099-4260-Holy Forever (live From Passion 2024)": {
-  "source": "musicbrainz",
-  "id": "33a8e5cb-9bd5-4849-a25c-0691f3400eef",
-  "was": "(colhido 2023+)"
- },
  "4099-4148-Daily Bread": {
   "source": "musicbrainz",
   "id": "6b93fbae-25e5-45d2-a0b7-4937b63048cd",
-  "was": "(colhido 2023+)"
- },
- "4099-4147-Firm Foundation (He Won't) / Great Are You Lord (Live From Europe)": {
-  "source": "musicbrainz",
-  "id": "a60c7158-867b-470b-8a9d-663d193379cb",
-  "was": "(colhido 2023+)"
- },
- "4099-4224-Obsession / Worthy Of It All (Live From Europe)": {
-  "source": "musicbrainz",
-  "id": "3be1822c-2037-43ce-9abe-e57775c7f42b",
   "was": "(colhido 2023+)"
  },
  "4099-4147-Psalm 63": {
@@ -31619,29 +31074,14 @@
   "id": "c3efc016-aff2-4456-90d1-f7c707435482",
   "was": "(colhido 2023+)"
  },
- "4099-4147-Praise (Live From Europe)": {
-  "source": "musicbrainz",
-  "id": "185d38c4-3f9b-45bc-aab9-1d0de1275e94",
-  "was": "(colhido 2023+)"
- },
- "4099-4147-Run To The Father / Good Good Father (Live From Europe)": {
-  "source": "musicbrainz",
-  "id": "1841e00b-1e79-4706-a54e-508e4409996e",
-  "was": "(colhido 2023+)"
- },
  "4099-4182-Love Of Christ": {
   "source": "musicbrainz",
   "id": "883f7379-4f0d-4824-8734-d4ca074a9a17",
   "was": "(colhido 2023+)"
  },
- "4099-4224-Holy - Live": {
-  "source": "musicbrainz",
-  "id": "072937b2-0e5e-4798-947c-0f15bb69524e",
-  "was": "(colhido 2023+)"
- },
  "4099-4147-The Blessing (Live From Europe)": {
-  "source": "musicbrainz",
-  "id": "99cbb88d-6e56-499c-996f-471b1d2742bb",
+  "source": "deezer",
+  "id": "963608802",
   "was": "(colhido 2023+)"
  },
  "2420-4099-The Blessing": {
@@ -32079,11 +31519,6 @@
   "id": "7bb7412f-a3eb-46f3-ac71-584a2bc1137c",
   "was": "(colhido 2023+)"
  },
- "3361-3473-Let Me Roll It": {
-  "source": "musicbrainz",
-  "id": "b6811835-0f6b-4f32-acd6-3f22bd396805",
-  "was": "(colhido 2023+)"
- },
  "5967-6449-Bitch You Want": {
   "source": "musicbrainz",
   "id": "341e33f4-b829-4919-9d79-a189891fb55f",
@@ -32235,13 +31670,13 @@
   "was": "(colhido 2023+)"
  },
  "457-458-Adiwele": {
-  "source": "musicbrainz",
-  "id": "95c6a50c-2014-49fc-9181-89ba8ae3848a",
+  "source": "deezer",
+  "id": "1524918852",
   "was": "(colhido 2023+)"
  },
  "458-534-Adiwele": {
-  "source": "musicbrainz",
-  "id": "95c6a50c-2014-49fc-9181-89ba8ae3848a",
+  "source": "deezer",
+  "id": "1524918852",
   "was": "(colhido 2023+)"
  },
  "458-569-Chukela": {
@@ -32450,18 +31885,18 @@
   "was": "(colhido 2023+)"
  },
  "457-532-Woza": {
-  "source": "musicbrainz",
-  "id": "621c3c44-aa8e-478b-b768-8ad3ef59e944",
+  "source": "deezer",
+  "id": "1276742802",
   "was": "(colhido 2023+)"
  },
  "457-542-Woza": {
-  "source": "musicbrainz",
-  "id": "621c3c44-aa8e-478b-b768-8ad3ef59e944",
+  "source": "deezer",
+  "id": "1276742802",
   "was": "(colhido 2023+)"
  },
  "532-542-Woza": {
-  "source": "musicbrainz",
-  "id": "621c3c44-aa8e-478b-b768-8ad3ef59e944",
+  "source": "deezer",
+  "id": "1276742802",
   "was": "(colhido 2023+)"
  },
  "907-4109-I Am Yours": {
@@ -32579,19 +32014,14 @@
   "id": "56c48336-2c26-42bd-95c0-b0f1746ce7f0",
   "was": "(colhido 2023+)"
  },
- "417-1187-Save Me": {
-  "source": "musicbrainz",
-  "id": "4ae2565f-13e9-4c57-a49d-34edf032e881",
-  "was": "(colhido 2023+)"
- },
  "1187-5654-Hard Fought Hallelujah": {
-  "source": "musicbrainz",
-  "id": "436d37f9-8243-49f5-8b4f-f342c9ca61c2",
+  "source": "deezer",
+  "id": "3613901092",
   "was": "(colhido 2023+)"
  },
  "4146-5654-Hard Fought Hallelujah": {
-  "source": "musicbrainz",
-  "id": "436d37f9-8243-49f5-8b4f-f342c9ca61c2",
+  "source": "deezer",
+  "id": "3613901092",
   "was": "(colhido 2023+)"
  },
  "1187-5271-Believe": {
@@ -32650,8 +32080,8 @@
   "was": "(colhido 2023+)"
  },
  "115-117-Gyatt": {
-  "source": "musicbrainz",
-  "id": "34177f4f-c7ad-400c-b35e-c5e60acc37a0",
+  "source": "deezer",
+  "id": "3539829191",
   "was": "(colhido 2023+)"
  },
  "117-4473-Thootie": {
@@ -32681,7 +32111,7 @@
  },
  "1528-2219-Stuck in a Moment You Can't Get Out Of": {
   "source": "musicbrainz",
-  "id": "cf1cd3d3-5931-447d-83d2-9ca0080979a7",
+  "id": "fe531950-737e-42a9-bc90-695b96f55a20",
   "was": "(colhido 2023+)"
  },
  "2219-3440-The Last Time": {
@@ -32702,16 +32132,6 @@
  "1375-5214-People Get Ready": {
   "source": "musicbrainz",
   "id": "18178cba-11eb-4e58-afd6-7a44b27d9a7b",
-  "was": "(colhido 2023+)"
- },
- "1027-5214-Medley: The Jean Genie / Love Me Do / The Jean Genie": {
-  "source": "musicbrainz",
-  "id": "00b5144a-319b-4266-ad15-15f17f1fdd87",
-  "was": "(colhido 2023+)"
- },
- "1027-5214-Round and Round": {
-  "source": "musicbrainz",
-  "id": "ba5924c4-5792-44bb-82d0-3845e0002ed3",
   "was": "(colhido 2023+)"
  },
  "3229-5214-Moon River": {
@@ -32794,164 +32214,14 @@
   "id": "b3feda59-8f7d-42e7-bb87-595a2b6e1b7f",
   "was": "(colhido 2023+)"
  },
- "5230-5235-Parchman Farm (Live)": {
-  "source": "musicbrainz",
-  "id": "cbca7515-dc34-476c-a44d-f6415d2d69e0",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Embryonic Journey (Live)": {
-  "source": "musicbrainz",
-  "id": "4d4658e6-da9d-4757-97be-1aa309e62e70",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-I'll Be Alright (Live)": {
-  "source": "musicbrainz",
-  "id": "2182ef11-44c3-4b34-b0d9-5bc9c4b19ba6",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Martha (Live)": {
-  "source": "musicbrainz",
-  "id": "1a90c981-e963-4763-832e-1548bd4ec8e1",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-99 Year Blues (Live)": {
-  "source": "musicbrainz",
-  "id": "8971466a-1ea6-42fd-baf6-d078d993cb9e",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Carlos Fonseca (Live)": {
-  "source": "musicbrainz",
-  "id": "f82045de-2f0c-4589-bb7d-1c65c4306a40",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Let Us Get Together Right Down Her (Live)": {
-  "source": "musicbrainz",
-  "id": "5e14f394-51b2-4409-b366-58fda28fb0a0",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Third Week In The Chelsea (Live)": {
-  "source": "musicbrainz",
-  "id": "b27b24cf-a1cc-4121-8309-2747f03c46bb",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Walkin' Blues (Live)": {
-  "source": "musicbrainz",
-  "id": "a9d3cead-9d15-414b-b2e0-c92f286b8239",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Genesis (Live)": {
-  "source": "musicbrainz",
-  "id": "d2493805-d298-42b2-84e8-7ba02e2f693a",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-I Know You Rider (Live)": {
-  "source": "musicbrainz",
-  "id": "a9b87fea-b573-4f44-bcd2-10f8208bf9a4",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Mariel (Live)": {
-  "source": "musicbrainz",
-  "id": "4deb09ac-7439-4d28-9ab2-74f9844eebfa",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Candy Man (Live)": {
-  "source": "musicbrainz",
-  "id": "abf9b78e-ddab-4787-a710-361ad6d2edc6",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Ice Age (Live)": {
-  "source": "musicbrainz",
-  "id": "a3d95d77-e3fd-42df-ac8b-a752b9035749",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Keep On Truckin' (Live)": {
-  "source": "musicbrainz",
-  "id": "978e2ec1-6051-45fe-9719-434572dc5f83",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Papa John's Down Home Blues (Live)": {
-  "source": "musicbrainz",
-  "id": "5e781098-5038-4556-8530-330d7b74d639",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-The Other Side Of This Life (Live)": {
-  "source": "musicbrainz",
-  "id": "671cecac-b46e-4423-b7e2-b4f77732d580",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Wooden Ships (Live)": {
-  "source": "musicbrainz",
-  "id": "bba00a2c-17b6-4e28-875d-5b5276a2150f",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Hesitation Blues (Live)": {
-  "source": "musicbrainz",
-  "id": "95b13615-53fb-4f00-b2eb-7ac04a39d5ca",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-I See The Light (Live)": {
-  "source": "musicbrainz",
-  "id": "b32d303d-7c49-4624-a303-70865689766d",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Good Shepherd (Live)": {
-  "source": "musicbrainz",
-  "id": "bce61e50-1fed-4cfc-b411-2667c372ebbf",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-That's the Bag I'm In (Live)": {
-  "source": "musicbrainz",
-  "id": "90871222-4b4e-4c53-800d-2c74cb74d9f8",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-San Francisco Bay Blues (Live)": {
-  "source": "musicbrainz",
-  "id": "aa986bfe-3501-4505-989f-c14b65661efc",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Keep Your Lamps Trimmed And Burning (Live)": {
-  "source": "musicbrainz",
-  "id": "fb68aed1-26c6-414d-916a-065370a2a2cb",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-John's Other (Live)": {
-  "source": "musicbrainz",
-  "id": "2f3ec871-22ce-4e63-8118-7de3cc9bb996",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Vampire Women - Live": {
-  "source": "musicbrainz",
-  "id": "811cec90-1f1d-47df-8ae7-19d9aa2e325b",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Put It In My Hands - Live": {
-  "source": "musicbrainz",
-  "id": "e0f0d630-28c3-4ef1-a3d3-b9e0d7b7bb71",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Water Song - Live": {
-  "source": "musicbrainz",
-  "id": "dbcc4ae7-6f0a-40eb-a14a-0608184b0cb9",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Mann’s Fate - Live": {
-  "source": "musicbrainz",
-  "id": "065a4dd0-daf0-4763-80de-2be3ac8ffeb7",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Killing Time In The Crystal City - Live": {
-  "source": "musicbrainz",
-  "id": "14e2f379-e281-465a-a8e5-ee9b68a80dc6",
-  "was": "(colhido 2023+)"
- },
  "1581-4265-Closer": {
   "source": "musicbrainz",
   "id": "196f7001-ac8a-4c7f-8a5f-4660329c55d4",
   "was": "(colhido 2023+)"
  },
  "248-1323-Far Away Places (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)": {
-  "source": "musicbrainz",
-  "id": "15db4abd-43c3-4231-87e5-790cacb1f5c6",
+  "source": "deezer",
+  "id": "69427242",
   "was": "(colhido 2023+)"
  },
  "1323-5163-Digging in the Dirt": {
@@ -32960,13 +32230,8 @@
   "was": "(colhido 2023+)"
  },
  "248-1323-Far Away Places": {
-  "source": "musicbrainz",
-  "id": "7ce3a4a5-8181-4160-9a45-e8e17a21b106",
-  "was": "(colhido 2023+)"
- },
- "1277-1323-Rocket Man (I Think It’s Going to Be a Long, Long Time) (live)": {
-  "source": "musicbrainz",
-  "id": "8ff62cab-10f3-4ca2-ba84-38f81cfb7053",
+  "source": "deezer",
+  "id": "69427242",
   "was": "(colhido 2023+)"
  },
  "1277-1323-Every Day Is a Winding Road": {
@@ -32981,7 +32246,7 @@
  },
  "1323-3224-Honky Tonk Women": {
   "source": "musicbrainz",
-  "id": "83163f14-6256-44ed-9803-618600c1141b",
+  "id": "d3df3ebe-ddfd-4327-8755-619602a34b1d",
   "was": "(colhido 2023+)"
  },
  "1323-5137-Mexico": {
@@ -33051,7 +32316,7 @@
  },
  "495-5163-In Your Eyes (live)": {
   "source": "musicbrainz",
-  "id": "f17d1950-9fbb-4e09-bb74-b90292b21f3c",
+  "id": "77ef041c-75cf-49c5-91cf-e3af51aab157",
   "was": "(colhido 2023+)"
  },
  "495-5163-In Your Eyes": {
@@ -33225,18 +32490,18 @@
   "was": "(colhido 2023+)"
  },
  "4663-6700-Jezebel": {
-  "source": "musicbrainz",
-  "id": "6f24cb52-78b9-4f65-96d0-705e8ac58445",
+  "source": "deezer",
+  "id": "4107011711",
   "was": "(colhido 2023+)"
  },
  "4663-6700-Love Will Keep Us Alive": {
-  "source": "musicbrainz",
-  "id": "8bed16b5-14e9-4ce2-a495-0fffbe451e21",
+  "source": "deezer",
+  "id": "4107011911",
   "was": "(colhido 2023+)"
  },
  "4663-6700-Livin’ in a World Without You": {
-  "source": "musicbrainz",
-  "id": "aafef935-16b2-4be3-95b9-64631303104b",
+  "source": "deezer",
+  "id": "4107011701",
   "was": "(colhido 2023+)"
  },
  "440-441-Look What You Made Me Do": {
@@ -33267,11 +32532,6 @@
  "440-1473-Different Sides": {
   "source": "musicbrainz",
   "id": "db79683d-b056-45aa-b1a9-f956ca4439ec",
-  "was": "(colhido 2023+)"
- },
- "77-199-Stoned at the Nail Salon": {
-  "source": "musicbrainz",
-  "id": "b1189bb7-3867-44bd-9427-18ea5cbfc015",
   "was": "(colhido 2023+)"
  },
  "199-3590-Pegasus": {
@@ -33330,8 +32590,8 @@
   "was": "(colhido 2023+)"
  },
  "1221-1223-Beers on Me (live)": {
-  "source": "musicbrainz",
-  "id": "b4160c37-2f71-4207-8558-9aa7845ce0b9",
+  "source": "deezer",
+  "id": "1445776782",
   "was": "(colhido 2023+)"
  },
  "1218-1223-Cowboy Boots": {
@@ -33641,12 +32901,7 @@
  },
  "5209-5538-Celebration Day": {
   "source": "musicbrainz",
-  "id": "67c59c25-0200-44ad-bd23-e726b80f6265",
-  "was": "(colhido 2023+)"
- },
- "5209-5538-Wanton Song": {
-  "source": "musicbrainz",
-  "id": "bea6fd12-2086-4fab-8fda-f0a88a892394",
+  "id": "25c8bd53-967d-4ce7-9ecb-d1fbd95deffd",
   "was": "(colhido 2023+)"
  },
  "5209-5538-The Lemon Song (soundcheck)": {
@@ -33656,22 +32911,17 @@
  },
  "5209-5538-Your Time Is Gonna Come": {
   "source": "musicbrainz",
-  "id": "2ac97b12-fbe4-422f-a29d-f79be64a304c",
+  "id": "aa65ef7e-8fd7-4921-b36c-b2b490aaedb7",
   "was": "(colhido 2023+)"
  },
  "5209-5538-No Speak No Slave": {
   "source": "musicbrainz",
-  "id": "dd8809d5-e331-49ab-9a79-31e2f3daadd1",
+  "id": "51d3cee2-d379-4a11-9c79-6a28d78e02d3",
   "was": "(colhido 2023+)"
  },
  "5209-5538-Nobody’s Fault but Mine": {
   "source": "musicbrainz",
-  "id": "46ceb5ac-7c56-41bd-b171-77bae58afc07",
-  "was": "(colhido 2023+)"
- },
- "5209-5538-Jam (soundcheck)": {
-  "source": "musicbrainz",
-  "id": "ea31be12-6cd0-44fe-af70-5dc1f131bbfb",
+  "id": "776cdd09-e719-4df9-a74a-6d3c14bd3978",
   "was": "(colhido 2023+)"
  },
  "5209-5538-In My Time of Dying": {
@@ -33681,12 +32931,7 @@
  },
  "5209-5538-The Lemon Song": {
   "source": "musicbrainz",
-  "id": "1a51682b-6139-423b-b9c2-8407a63cf759",
-  "was": "(colhido 2023+)"
- },
- "5209-5538-Hard to Handle": {
-  "source": "musicbrainz",
-  "id": "b05eae56-c6d3-493a-920d-262f9b0b3f52",
+  "id": "30826516-9ae6-457a-8275-ba5dad664352",
   "was": "(colhido 2023+)"
  },
  "5209-5538-You Shook Me": {
@@ -33696,12 +32941,7 @@
  },
  "5209-5538-Custard Pie": {
   "source": "musicbrainz",
-  "id": "8db9b302-1d22-4184-b69c-ccc999f4b8ee",
-  "was": "(colhido 2023+)"
- },
- "5209-5538-Bring It On Home": {
-  "source": "musicbrainz",
-  "id": "aa4e858f-f586-4bf7-94c8-6e43a2d33c78",
+  "id": "d6f5cd07-1925-4f70-9141-610387d5e730",
   "was": "(colhido 2023+)"
  },
  "5209-5538-You Shook Me (soundcheck)": {
@@ -33711,22 +32951,17 @@
  },
  "5209-5538-Hey Hey What Can I Do": {
   "source": "musicbrainz",
-  "id": "e48277d8-8d1d-4276-b162-93947fe68bf2",
+  "id": "97e11669-520e-46af-9348-0c7e44cc30fa",
   "was": "(colhido 2023+)"
  },
  "5209-5538-Ten Years Gone": {
   "source": "musicbrainz",
-  "id": "29464f49-d3b8-4941-b6c0-0fa4adedc414",
+  "id": "93838a4b-9114-4a0c-9fc5-9fe18959da79",
   "was": "(colhido 2023+)"
  },
  "5209-5538-Custard Pie (soundcheck)": {
   "source": "musicbrainz",
   "id": "67368290-55f2-4585-bd1b-34c9e3869dd2",
-  "was": "(colhido 2023+)"
- },
- "5209-5538-Wiser Time": {
-  "source": "musicbrainz",
-  "id": "1fe3ea06-5394-4de6-8e03-a910db9c008d",
   "was": "(colhido 2023+)"
  },
  "5209-5538-Hots On for Nowhere": {
@@ -33741,7 +32976,7 @@
  },
  "5209-5538-In the Light": {
   "source": "musicbrainz",
-  "id": "9dcdba12-8143-4f26-90ed-b59bf26113fc",
+  "id": "7f175590-3bde-48c2-a6e8-68d064a79ff1",
   "was": "(colhido 2023+)"
  },
  "5209-5538-Shapes of Things": {
@@ -33766,7 +33001,7 @@
  },
  "5209-5538-Heartbreaker": {
   "source": "musicbrainz",
-  "id": "faa00a18-9263-4767-b695-e34c3295d432",
+  "id": "93d82f9b-6d59-4637-a673-2a4b515d6555",
   "was": "(colhido 2023+)"
  },
  "5209-5538-Oh Well": {
@@ -33776,37 +33011,27 @@
  },
  "5209-5538-Misty Mountain Hop": {
   "source": "musicbrainz",
-  "id": "3a91af44-360d-4399-9419-b98215ce0a2c",
+  "id": "eb58b6bf-c636-4ca3-8add-748e6a22787f",
   "was": "(colhido 2023+)"
  },
  "5209-5538-She Talks to Angels": {
   "source": "musicbrainz",
-  "id": "bacb1e05-7968-4f43-a8c4-ee36047e18f4",
-  "was": "(colhido 2023+)"
- },
- "5209-5538-Band Intros": {
-  "source": "musicbrainz",
-  "id": "543a8a14-2281-4e3c-aad0-a5d5586d0eb3",
+  "id": "dee5a2b4-5920-4496-8ecb-e4c6a55efa9a",
   "was": "(colhido 2023+)"
  },
  "5209-5538-Out on the Tiles": {
   "source": "musicbrainz",
-  "id": "d29bd55f-9aa5-4e36-b809-a92ace4ab979",
+  "id": "16afa4a0-b150-4c88-ab94-daba65a58092",
   "was": "(colhido 2023+)"
  },
  "5209-5538-What Is and What Should Never Be": {
   "source": "musicbrainz",
-  "id": "fb5ac46e-a617-4cbc-bb26-f05225106ebc",
-  "was": "(colhido 2023+)"
- },
- "5209-5538-Mellow Down Easy": {
-  "source": "musicbrainz",
-  "id": "156b7c7d-7f55-4cf0-83c4-fa34e1718454",
+  "id": "f60393f1-3b16-45ab-816e-60e324b00672",
   "was": "(colhido 2023+)"
  },
  "5209-5538-Sick Again": {
   "source": "musicbrainz",
-  "id": "dc1eff23-4ea4-45a2-b1a4-efb092ae10c9",
+  "id": "105da55c-7329-4b1c-bb15-3bc793ce1e96",
   "was": "(colhido 2023+)"
  },
  "5209-5538-Ten Years Gone (soundcheck)": {
@@ -33816,7 +33041,7 @@
  },
  "5209-5538-Whole Lotta Love": {
   "source": "musicbrainz",
-  "id": "2dfe5df2-addd-49c5-b3a4-eb7fc37f9fd4",
+  "id": "ca14b106-bacf-4fd8-bfff-c238f36876d7",
   "was": "(colhido 2023+)"
  },
  "5032-5043-Siento": {
@@ -33855,8 +33080,8 @@
   "was": "(colhido 2023+)"
  },
  "2818-3103-1 Thing": {
-  "source": "musicbrainz",
-  "id": "aa1a3678-5864-4c79-90fa-7c765096fe94",
+  "source": "deezer",
+  "id": "559481",
   "was": "(colhido 2023+)"
  },
  "2038-3103-1 Thing / Endzeitstimmung": {
@@ -33971,12 +33196,12 @@
  },
  "3264-6174-I Shall Be Released": {
   "source": "musicbrainz",
-  "id": "25c87add-1c16-4be2-81d8-d9f1f62570a8",
+  "id": "d4f04061-6da9-4df4-b902-77cfd2e1724f",
   "was": "(colhido 2023+)"
  },
  "3264-6174-I Pity the Poor Immigrant": {
-  "source": "musicbrainz",
-  "id": "eb6850ae-30d3-43f1-b4e9-1c486ca624ea",
+  "source": "deezer",
+  "id": "472954372",
   "was": "(colhido 2023+)"
  },
  "2580-3167-Intenciones": {
@@ -34005,8 +33230,8 @@
   "was": "(colhido 2023+)"
  },
  "1626-3137-Everywhere, Everything (live from Fenway Park)": {
-  "source": "musicbrainz",
-  "id": "539134a1-1470-4620-affd-43780ea2a416",
+  "source": "deezer",
+  "id": "2556370602",
   "was": "(colhido 2023+)"
  },
  "1186-1626-Sarah’s Place": {
@@ -34315,8 +33540,8 @@
   "was": "(colhido 2023+)"
  },
  "1184-1221-Praise the Lord (live)": {
-  "source": "musicbrainz",
-  "id": "c4a2ee93-2141-42b6-925f-c460c9af62ab",
+  "source": "deezer",
+  "id": "1672830197",
   "was": "(colhido 2023+)"
  },
  "1184-1221-Praise the Lord": {
@@ -34329,19 +33554,9 @@
   "id": "27efe7fd-a129-4b99-a30e-aa3f21e1eda5",
   "was": "(colhido 2023+)"
  },
- "1184-4146-Talking to Jesus (Live from The Ryman)": {
-  "source": "musicbrainz",
-  "id": "ad45ec49-9f0f-45ad-9a76-7ee67ce298d7",
-  "was": "(colhido 2023+)"
- },
  "1184-5292-Half Of Me (Acoustic)": {
   "source": "musicbrainz",
   "id": "09cb7847-5fc2-4695-9f2a-d72d18120c5c",
-  "was": "(colhido 2023+)"
- },
- "1184-4146-Intro + Talking to Jesus (Live From The Ryman)": {
-  "source": "musicbrainz",
-  "id": "78eef742-88cd-406e-ad6a-26463310d90b",
   "was": "(colhido 2023+)"
  },
  "3099-3787-Ode to Nikki": {
@@ -34370,18 +33585,18 @@
   "was": "(colhido 2023+)"
  },
  "191-1599-Meditation": {
-  "source": "musicbrainz",
-  "id": "0968e532-82ed-4a8e-9e45-c81d0f6a0e90",
+  "source": "deezer",
+  "id": "144944628",
   "was": "(colhido 2023+)"
  },
  "191-3114-Meditation": {
-  "source": "musicbrainz",
-  "id": "0968e532-82ed-4a8e-9e45-c81d0f6a0e90",
+  "source": "deezer",
+  "id": "144944628",
   "was": "(colhido 2023+)"
  },
  "1599-3114-Meditation": {
-  "source": "musicbrainz",
-  "id": "0968e532-82ed-4a8e-9e45-c81d0f6a0e90",
+  "source": "deezer",
+  "id": "144944628",
   "was": "(colhido 2023+)"
  },
  "76-191-Speed of Love": {
@@ -34449,21 +33664,6 @@
   "id": "eca02301-de20-43c5-b726-5540aa818b2a",
   "was": "(colhido 2023+)"
  },
- "870-1501-ICEY.. / Flat Beat": {
-  "source": "musicbrainz",
-  "id": "d809076c-e638-438a-a57f-cf2e1312c08a",
-  "was": "(colhido 2023+)"
- },
- "870-5748-ICEY.. / Flat Beat": {
-  "source": "musicbrainz",
-  "id": "d809076c-e638-438a-a57f-cf2e1312c08a",
-  "was": "(colhido 2023+)"
- },
- "1501-5748-ICEY.. / Flat Beat": {
-  "source": "musicbrainz",
-  "id": "d809076c-e638-438a-a57f-cf2e1312c08a",
-  "was": "(colhido 2023+)"
- },
  "2149-5814-Sleepyhead 2025": {
   "source": "musicbrainz",
   "id": "0a8613b8-e1b1-453c-b3f7-4a800f808cd2",
@@ -34477,11 +33677,6 @@
  "234-2808-슝!": {
   "source": "musicbrainz",
   "id": "24f6cdaa-0f8d-4d1a-aabd-e42d99ee0728",
-  "was": "(colhido 2023+)"
- },
- "1501-5382-For Island Fires and Family / Lost / Dermot (See Yourself in My Eyes)": {
-  "source": "musicbrainz",
-  "id": "81308d43-ce6b-48ef-94d7-f9a21ca94092",
   "was": "(colhido 2023+)"
  },
  "1501-5382-Berwyn (kennington tube)": {
@@ -34550,8 +33745,8 @@
   "was": "(colhido 2023+)"
  },
  "1712-4106-Meant to Live": {
-  "source": "musicbrainz",
-  "id": "ff52cf6d-ce6a-4065-81fa-b97e965b03f8",
+  "source": "deezer",
+  "id": "2357972455",
   "was": "(colhido 2023+)"
  },
  "1285-4106-Dare You to Move": {
@@ -34615,23 +33810,23 @@
   "was": "(colhido 2023+)"
  },
  "2136-5813-Polygon Dust": {
-  "source": "musicbrainz",
-  "id": "221724bb-3c78-4379-b93f-29dce5a3edf0",
+  "source": "deezer",
+  "id": "81836828",
   "was": "(colhido 2023+)"
  },
  "3114-5924-Need It": {
-  "source": "musicbrainz",
-  "id": "70a1751f-7e90-4d4d-bf42-4961065c514d",
+  "source": "deezer",
+  "id": "829306242",
   "was": "(colhido 2023+)"
  },
  "104-3114-Intimidated": {
-  "source": "musicbrainz",
-  "id": "77565e5d-73b0-4d55-9119-015898ea1b63",
+  "source": "deezer",
+  "id": "1547805662",
   "was": "(colhido 2023+)"
  },
  "3114-4350-YOU'RE THE ONE": {
-  "source": "musicbrainz",
-  "id": "c6ba6821-38be-43ba-995e-1ecc63a6321d",
+  "source": "deezer",
+  "id": "138540041",
   "was": "(colhido 2023+)"
  },
  "3114-4374-Hold On": {
@@ -34655,8 +33850,8 @@
   "was": "(colhido 2023+)"
  },
  "3114-6488-What You Need": {
-  "source": "musicbrainz",
-  "id": "7ac7a460-eb84-43c7-910b-67db386e650b",
+  "source": "deezer",
+  "id": "829306272",
   "was": "(colhido 2023+)"
  },
  "3358-5482-Working Class Hero": {
@@ -34665,8 +33860,8 @@
   "was": "(colhido 2023+)"
  },
  "1728-5895-Trip": {
-  "source": "musicbrainz",
-  "id": "b688e73b-302e-4bd1-8a43-4a64e4a3be8f",
+  "source": "deezer",
+  "id": "1904038227",
   "was": "(colhido 2023+)"
  },
  "1728-3770-Arintintin": {
@@ -34680,23 +33875,23 @@
   "was": "(colhido 2023+)"
  },
  "1728-3301-She’s Gone Away": {
-  "source": "musicbrainz",
-  "id": "17488b9e-7e19-470f-836c-84a5a30443de",
+  "source": "deezer",
+  "id": "3958674431",
   "was": "(colhido 2023+)"
  },
  "1728-3301-Came Back Haunted": {
-  "source": "musicbrainz",
-  "id": "1793305d-ffc1-4a9a-9b10-8253fe576877",
+  "source": "deezer",
+  "id": "3958674521",
   "was": "(colhido 2023+)"
  },
  "1728-3301-Copy of A": {
-  "source": "musicbrainz",
-  "id": "c33ff96d-fa41-48c4-8c0f-67fe8925a486",
+  "source": "deezer",
+  "id": "3958674461",
   "was": "(colhido 2023+)"
  },
  "1728-3301-Memorabilia": {
-  "source": "musicbrainz",
-  "id": "4626b700-a3f5-4769-a921-15d64cf4bd3e",
+  "source": "deezer",
+  "id": "3958674501",
   "was": "(colhido 2023+)"
  },
  "1728-3301-Branches/Bones": {
@@ -34705,53 +33900,38 @@
   "was": "(colhido 2023+)"
  },
  "1728-3301-Vessel": {
-  "source": "musicbrainz",
-  "id": "5ff11d2e-1ef0-47da-915e-8dd4935f0c36",
+  "source": "deezer",
+  "id": "3958674421",
   "was": "(colhido 2023+)"
  },
  "1728-3301-As Alive As You Need Me to Be": {
-  "source": "musicbrainz",
-  "id": "5fa909ea-cca3-4f97-a545-86d56d6d2824",
+  "source": "deezer",
+  "id": "3958674531",
   "was": "(colhido 2023+)"
  },
  "1728-3301-Parasite": {
-  "source": "musicbrainz",
-  "id": "ce262094-efad-4e11-ad63-0ee50cfc5144",
+  "source": "deezer",
+  "id": "3958674451",
   "was": "(colhido 2023+)"
  },
  "1728-3301-Heresy": {
-  "source": "musicbrainz",
-  "id": "86d21cbf-20d2-4119-920b-14f5e5568432",
+  "source": "deezer",
+  "id": "3958674441",
   "was": "(colhido 2023+)"
  },
  "1728-3301-Intro": {
-  "source": "musicbrainz",
-  "id": "db5f5493-3cd3-4c0b-aa8b-7f19fcf72e69",
-  "was": "(colhido 2023+)"
- },
- "70-1728-Autobahn / Fine Day Anthem": {
-  "source": "musicbrainz",
-  "id": "31219477-9708-42f1-9ad2-18b945678bac",
-  "was": "(colhido 2023+)"
- },
- "70-1748-Autobahn / Fine Day Anthem": {
-  "source": "musicbrainz",
-  "id": "31219477-9708-42f1-9ad2-18b945678bac",
-  "was": "(colhido 2023+)"
- },
- "1728-1748-Autobahn / Fine Day Anthem": {
-  "source": "musicbrainz",
-  "id": "31219477-9708-42f1-9ad2-18b945678bac",
+  "source": "deezer",
+  "id": "3958674411",
   "was": "(colhido 2023+)"
  },
  "1728-3301-Me, I’m Not": {
-  "source": "musicbrainz",
-  "id": "5204a7c9-d3b2-4955-93e3-905f9def2201",
+  "source": "deezer",
+  "id": "3958674471",
   "was": "(colhido 2023+)"
  },
  "1728-3301-The Warning": {
-  "source": "musicbrainz",
-  "id": "33c9a673-bc5f-435d-b070-cd6c08b30b51",
+  "source": "deezer",
+  "id": "3958674491",
   "was": "(colhido 2023+)"
  },
  "5040-6718-cántaro": {
@@ -35805,8 +34985,8 @@
   "was": "(colhido 2023+)"
  },
  "1500-1609-Higher Ground": {
-  "source": "musicbrainz",
-  "id": "a8b98c53-d3e7-459c-81d4-39c3fc2d324f",
+  "source": "deezer",
+  "id": "403915282",
   "was": "(colhido 2023+)"
  },
  "185-3799-Greater": {
@@ -35829,14 +35009,9 @@
   "id": "6074d84e-411d-4916-bfca-9bb8bccd3d96",
   "was": "(colhido 2023+)"
  },
- "1220-1660-Without You": {
-  "source": "musicbrainz",
-  "id": "f2cefb3b-ad6e-43be-8b85-d7983600a8df",
-  "was": "(colhido 2023+)"
- },
  "3361-5931-Shabby Doll (Live)": {
   "source": "musicbrainz",
-  "id": "35ea8345-fc12-442d-9110-14e1fedd3b50",
+  "id": "276b4e54-6edc-49c5-830a-cb6155bddedb",
   "was": "(colhido 2023+)"
  },
  "3361-4331-All in Good Time": {
@@ -36139,21 +35314,6 @@
   "id": "91f706a2-764e-449b-90af-793dfab06a7a",
   "was": "(colhido 2023+)"
  },
- "1206-1270-Life In A Northern Town - Live": {
-  "source": "musicbrainz",
-  "id": "cd20dd5c-c58d-4f4f-b0fd-85e4ec08357e",
-  "was": "(colhido 2023+)"
- },
- "1206-5291-Life In A Northern Town - Live": {
-  "source": "musicbrainz",
-  "id": "cd20dd5c-c58d-4f4f-b0fd-85e4ec08357e",
-  "was": "(colhido 2023+)"
- },
- "1270-5291-Life In A Northern Town - Live": {
-  "source": "musicbrainz",
-  "id": "cd20dd5c-c58d-4f4f-b0fd-85e4ec08357e",
-  "was": "(colhido 2023+)"
- },
  "1380-1408-Save Humanity": {
   "source": "musicbrainz",
   "id": "74ee5e23-b689-486a-bf29-73491024d296",
@@ -36420,8 +35580,8 @@
   "was": "(colhido 2023+)"
  },
  "938-4143-Wait On You (Acoustic Set)": {
-  "source": "musicbrainz",
-  "id": "0ebb1634-a58a-4740-a0e8-d01473c0e8fe",
+  "source": "deezer",
+  "id": "1263601082",
   "was": "(colhido 2023+)"
  },
  "938-4143-Omemma": {
@@ -36445,13 +35605,13 @@
   "was": "(colhido 2023+)"
  },
  "938-4144-God Will Work It Out (Acoustic Set)": {
-  "source": "musicbrainz",
-  "id": "4640f87e-e39a-466d-8e46-c04549f099dc",
+  "source": "deezer",
+  "id": "1406427342",
   "was": "(colhido 2023+)"
  },
  "938-4143-No Longer Bound": {
-  "source": "musicbrainz",
-  "id": "d903e5ec-715e-4fb2-86a2-1ff842562f1e",
+  "source": "deezer",
+  "id": "2363817285",
   "was": "(colhido 2023+)"
  },
  "938-4144-The Story I'll Tell / One Name": {
@@ -36461,17 +35621,17 @@
  },
  "938-4143-Praise (live)": {
   "source": "musicbrainz",
-  "id": "31f7aaff-db8b-4258-a480-3f4c0773bba8",
+  "id": "e85cb88a-babc-4a73-951e-eb989c788e55",
   "was": "(colhido 2023+)"
  },
  "938-4143-Omemma (live)": {
   "source": "musicbrainz",
-  "id": "2d41bbe8-619f-4bb3-b0a7-d71bf868bf82",
+  "id": "5afaf5f8-9220-404d-8014-26fcf6c5cd20",
   "was": "(colhido 2023+)"
  },
  "938-4144-Promises (live)": {
-  "source": "musicbrainz",
-  "id": "a50355a2-4ea7-45a0-87ab-3b597d543db8",
+  "source": "deezer",
+  "id": "1480051472",
   "was": "(colhido 2023+)"
  },
  "938-4143-Praise": {
@@ -36545,18 +35705,18 @@
   "was": "(colhido 2023+)"
  },
  "938-4143-Jireh (live)": {
-  "source": "musicbrainz",
-  "id": "f6b56182-2a1f-4e6f-88ad-93940edf1922",
+  "source": "deezer",
+  "id": "1263641422",
   "was": "(colhido 2023+)"
  },
  "938-4144-Jireh (live)": {
-  "source": "musicbrainz",
-  "id": "f6b56182-2a1f-4e6f-88ad-93940edf1922",
+  "source": "deezer",
+  "id": "1263641422",
   "was": "(colhido 2023+)"
  },
  "4143-4144-Jireh (live)": {
-  "source": "musicbrainz",
-  "id": "f6b56182-2a1f-4e6f-88ad-93940edf1922",
+  "source": "deezer",
+  "id": "1263641422",
   "was": "(colhido 2023+)"
  },
  "1564-1629-Right Here": {
@@ -37069,34 +36229,24 @@
   "id": "af5c9226-0c11-4ffa-b2d3-87ea9fa9d096",
   "was": "(colhido 2023+)"
  },
- "1501-3705-adore u / Bleu (better with time)": {
-  "source": "musicbrainz",
-  "id": "0a0580e1-41cd-4a30-888a-b656d3064c59",
-  "was": "(colhido 2023+)"
- },
- "650-1501-Delilah (pull me out of this) / Billie (Loving Arms)": {
-  "source": "musicbrainz",
-  "id": "b1fdd86d-7e33-48d6-b2d1-6412822c6fbb",
-  "was": "(colhido 2023+)"
- },
  "1501-2407-solo": {
   "source": "musicbrainz",
   "id": "7c285b42-6462-410d-8e3b-89f1d783287d",
   "was": "(colhido 2023+)"
  },
  "1501-5615-Fear Less": {
-  "source": "musicbrainz",
-  "id": "fb5a3f66-9bae-4c47-9f03-aa29af321bf4",
+  "source": "deezer",
+  "id": "2966976431",
   "was": "(colhido 2023+)"
  },
  "870-1501-..FEISTY": {
-  "source": "musicbrainz",
-  "id": "bcea795d-9def-410b-82fc-c00e91e0ba3e",
+  "source": "deezer",
+  "id": "3893300751",
   "was": "(colhido 2023+)"
  },
  "870-1501-ICEY..": {
-  "source": "musicbrainz",
-  "id": "d1f3860d-9000-432e-b103-5469465e7a43",
+  "source": "deezer",
+  "id": "3893300741",
   "was": "(colhido 2023+)"
  },
  "1501-3705-adore u": {
@@ -37289,11 +36439,6 @@
   "id": "d13ab4fe-dced-42bd-aabf-cbc690283627",
   "was": "(colhido 2023+)"
  },
- "54-5546-Everybody Is a Star": {
-  "source": "musicbrainz",
-  "id": "9cee9ac7-e0e3-440a-a325-cf50af282d89",
-  "was": "(colhido 2023+)"
- },
  "1002-2149-Várias queixas": {
   "source": "musicbrainz",
   "id": "71fd8e89-a859-45e1-8a95-367c6ff2baf4",
@@ -37344,44 +36489,19 @@
   "id": "bfe28bdf-53df-476d-9f06-fa3f21f6f3d3",
   "was": "(colhido 2023+)"
  },
- "3440-5201-I’d Rather Go Blind": {
-  "source": "musicbrainz",
-  "id": "8beecc5f-27e5-4315-94f1-8988b32a71cf",
-  "was": "(colhido 2023+)"
- },
  "3440-5201-[talk]": {
   "source": "musicbrainz",
   "id": "2c436c30-fc42-451d-ae1d-34991ac7b0e0",
   "was": "(colhido 2023+)"
  },
- "3440-5201-Sweet Little Rock and Roller": {
-  "source": "musicbrainz",
-  "id": "84d1e786-31b8-4882-9b75-bf43c7d6d2f2",
-  "was": "(colhido 2023+)"
- },
- "3440-5201-Twistin’ the Night Away": {
-  "source": "musicbrainz",
-  "id": "39d78ad1-7efb-4d43-94a2-bc9e51215a9f",
-  "was": "(colhido 2023+)"
- },
- "248-3440-Live Forever": {
-  "source": "musicbrainz",
-  "id": "b9d9a80f-d101-46fb-a76a-370b3046eb36",
-  "was": "(colhido 2023+)"
- },
  "248-3440-We Had It All (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)": {
   "source": "musicbrainz",
-  "id": "f3bdba13-8001-497f-85c5-223765a59a2c",
-  "was": "(colhido 2023+)"
- },
- "248-3440-Live Forever (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)": {
-  "source": "musicbrainz",
-  "id": "5657736f-1e67-4b8c-85ad-b798baf242c9",
+  "id": "693e1b71-046f-49af-aac5-fb5e0f1c1a32",
   "was": "(colhido 2023+)"
  },
  "248-3440-We Had It All": {
   "source": "musicbrainz",
-  "id": "bf635a60-486b-4f5c-975b-f18160c2b1d9",
+  "id": "63958345-7e99-40e7-9f4b-f3ec7b9bf8b8",
   "was": "(colhido 2023+)"
  },
  "4910-4923-AI": {
@@ -37692,51 +36812,6 @@
  "3270-5126-Golden Slumbers / Carry That Weight / The End": {
   "source": "musicbrainz",
   "id": "4f046c87-cbf7-4080-9fac-7947f411a3f7",
-  "was": "(colhido 2023+)"
- },
- "202-5521-The Collector (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]": {
-  "source": "musicbrainz",
-  "id": "1717754d-ca40-4628-93a4-6c21537706d8",
-  "was": "(colhido 2023+)"
- },
- "202-5521-Dandelion": {
-  "source": "musicbrainz",
-  "id": "2983f2fd-01dd-4eaf-974f-3c75b772667a",
-  "was": "(colhido 2023+)"
- },
- "202-5521-Masters Hands (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]": {
-  "source": "musicbrainz",
-  "id": "d7ff55dd-d819-43f7-b3de-252d36a29b5a",
-  "was": "(colhido 2023+)"
- },
- "202-5521-Me and Jane Doe (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]": {
-  "source": "musicbrainz",
-  "id": "a25207d0-3b1f-42bd-89bb-a955ddad0dbd",
-  "was": "(colhido 2023+)"
- },
- "202-5521-Time of the Assassins (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]": {
-  "source": "musicbrainz",
-  "id": "1d22f42f-5581-4189-9983-924c3b57fd5b",
-  "was": "(colhido 2023+)"
- },
- "202-5521-Trick Pony": {
-  "source": "musicbrainz",
-  "id": "9103d220-1165-4b2a-9b54-ca974e5117ec",
-  "was": "(colhido 2023+)"
- },
- "202-5521-In the End": {
-  "source": "musicbrainz",
-  "id": "68adef47-1d5c-417c-a034-e8314d5576fe",
-  "was": "(colhido 2023+)"
- },
- "202-5521-Songs That We Sing": {
-  "source": "musicbrainz",
-  "id": "2a5fdf86-58a9-4f32-80b9-0e36afbfbf57",
-  "was": "(colhido 2023+)"
- },
- "202-5521-Vanities (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]": {
-  "source": "musicbrainz",
-  "id": "e9138667-676b-4ffb-9a4f-c6c99f223636",
   "was": "(colhido 2023+)"
  },
  "227-2867-Asquerosamente Rico": {
@@ -38209,24 +37284,9 @@
   "id": "56c334c2-333c-4155-a02b-b792f6fd247c",
   "was": "(colhido 2023+)"
  },
- "104-6430-Let’s Go Crazy": {
-  "source": "musicbrainz",
-  "id": "b8558d3c-00de-40d4-ab8b-ec265421d908",
-  "was": "(colhido 2023+)"
- },
  "3497-6430-Funk Witch U": {
   "source": "musicbrainz",
   "id": "549797cf-f1e5-4428-b92f-563d4867b650",
-  "was": "(colhido 2023+)"
- },
- "1686-6430-Night Life (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)": {
-  "source": "musicbrainz",
-  "id": "a7b49d39-5e9a-438a-bc51-d5c99a008808",
-  "was": "(colhido 2023+)"
- },
- "1686-6430-Night Life": {
-  "source": "musicbrainz",
-  "id": "feaa22fc-275e-4dc0-b062-4e8f9e15dd4a",
   "was": "(colhido 2023+)"
  },
  "54-6430-What About the Children": {
@@ -38434,91 +37494,6 @@
   "id": "6172d49e-b596-48a5-94fd-9bef23d315c3",
   "was": "(colhido 2023+)"
  },
- "1325-3553-That Lovin' You Feelin' Again": {
-  "source": "musicbrainz",
-  "id": "fa86a19d-8da8-46d7-894f-74f8da13e42b",
-  "was": "(colhido 2023+)"
- },
- "1325-6390-Oh, Pretty Woman": {
-  "source": "musicbrainz",
-  "id": "bba59892-f10e-4ebf-bc0a-ccb4eeaeffa2",
-  "was": "(colhido 2023+)"
- },
- "1324-1325-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1324-1337-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1324-3264-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1324-5254-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1324-6390-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1325-1337-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1325-3264-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1325-5254-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1325-6390-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1337-3264-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1337-5254-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "1337-6390-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "3264-5254-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "3264-6390-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
- "5254-6390-Only the Lonely": {
-  "source": "musicbrainz",
-  "id": "d372dd72-845b-498b-9f42-073a2c4d1432",
-  "was": "(colhido 2023+)"
- },
  "2165-2167-Together (live San Siro 2025)": {
   "source": "musicbrainz",
   "id": "5f001b35-d0f4-4006-86c0-a54f0f949572",
@@ -38600,13 +37575,13 @@
   "was": "(colhido 2023+)"
  },
  "2017-6004-Life": {
-  "source": "musicbrainz",
-  "id": "4308bcb7-c564-4b9a-99ad-8f0798e2466e",
+  "source": "deezer",
+  "id": "2969580371",
   "was": "(colhido 2023+)"
  },
  "1591-6004-Baddy on the Floor": {
-  "source": "musicbrainz",
-  "id": "e9b59100-9c4a-4770-88ea-d8e6ed143c91",
+  "source": "deezer",
+  "id": "2720190122",
   "was": "(colhido 2023+)"
  },
  "2061-2065-Träume sind frei": {
@@ -38755,8 +37730,8 @@
   "was": "(colhido 2023+)"
  },
  "2429-2966-LA NIÑA DE LA ESCUELA - Live": {
-  "source": "musicbrainz",
-  "id": "65178116-eb14-4625-b08d-e52ab7b9f23d",
+  "source": "deezer",
+  "id": "1415274362",
   "was": "(colhido 2023+)"
  },
  "2429-4485-MALA SUERTE": {
@@ -38960,8 +37935,8 @@
   "was": "(colhido 2023+)"
  },
  "2431-4415-JET_Set.mp3 (Tour En Vivo)": {
-  "source": "musicbrainz",
-  "id": "ed70fcfa-4eb1-4111-8180-cbde1b894b03",
+  "source": "deezer",
+  "id": "2498034011",
   "was": "(colhido 2023+)"
  },
  "2431-5072-Quizás, quizás, quizás": {
@@ -39020,13 +37995,8 @@
   "was": "(colhido 2023+)"
  },
  "2665-2682-Metali!!": {
-  "source": "musicbrainz",
-  "id": "8a9e6ea1-3ebb-435d-8183-50c53efb0e5c",
-  "was": "(colhido 2023+)"
- },
- "2665-2682-METALI!! - 43 ver.": {
-  "source": "musicbrainz",
-  "id": "7bc524c1-3147-4b32-a562-31951eae0fb8",
+  "source": "deezer",
+  "id": "3465963201",
   "was": "(colhido 2023+)"
  },
  "2665-2682-メタり！！": {
@@ -39112,11 +38082,6 @@
  "6344-6399-Perfect Match": {
   "source": "musicbrainz",
   "id": "8d15b4d5-defc-40a1-b410-87adf92d19c5",
-  "was": "(colhido 2023+)"
- },
- "203-3231-Breed": {
-  "source": "musicbrainz",
-  "id": "e2863876-b489-4c59-952e-a3acffd57031",
   "was": "(colhido 2023+)"
  },
  "2982-4404-TRAJECITO": {
@@ -39232,26 +38197,6 @@
  "552-583-Come Closer": {
   "source": "musicbrainz",
   "id": "177e3d8b-1e44-4da8-9e1f-d50c5c4a87f9",
-  "was": "(colhido 2023+)"
- },
- "1329-3360-Help Me Make It Through the Night": {
-  "source": "musicbrainz",
-  "id": "462be5d1-e823-4cb4-a29b-b9b2b89544b9",
-  "was": "(colhido 2023+)"
- },
- "1326-1329-Loving Her Was Easier (Than Anything I’ll Ever Do Again) (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)": {
-  "source": "musicbrainz",
-  "id": "b41563bc-890a-400d-9ebe-26a138d324bd",
-  "was": "(colhido 2023+)"
- },
- "1329-3360-Help Me Make It Through the Night (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)": {
-  "source": "musicbrainz",
-  "id": "2e334e25-57a7-49d0-8757-4c8bcb28637c",
-  "was": "(colhido 2023+)"
- },
- "1326-1329-Loving Her Was Easier (Than Anything I’ll Ever Do Again)": {
-  "source": "musicbrainz",
-  "id": "5d1e7c44-a683-459d-a117-8c2732c63446",
   "was": "(colhido 2023+)"
  },
  "1326-1329-April 5th": {
@@ -39664,11 +38609,6 @@
   "id": "51c65dca-5e92-422c-a202-07bc063333e2",
   "was": "(colhido 2023+)"
  },
- "4116-4217-Unconditional - Live": {
-  "source": "musicbrainz",
-  "id": "6eca445c-4510-4931-81c9-c7148830c58f",
-  "was": "(colhido 2023+)"
- },
  "2979-4425-Rápido": {
   "source": "musicbrainz",
   "id": "b2506a89-a43e-4a08-8863-a98f9aafd4ec",
@@ -39795,13 +38735,13 @@
   "was": "(colhido 2023+)"
  },
  "3702-5615-Desoleil (Brilliant Corners)": {
-  "source": "musicbrainz",
-  "id": "f8700852-9708-472f-9d9a-307b94941782",
+  "source": "deezer",
+  "id": "665397422",
   "was": "(colhido 2023+)"
  },
  "2043-2055-Deine Mutter [Red Bull Symphonic]": {
-  "source": "musicbrainz",
-  "id": "f859cf20-b223-4a64-b4ba-a019722a1c10",
+  "source": "deezer",
+  "id": "2470731681",
   "was": "(colhido 2023+)"
  },
  "4346-4378-BUZZCUT": {
@@ -39919,11 +38859,6 @@
   "id": "3fa8c429-65b1-4488-bee3-e1d98cd7fb79",
   "was": "(colhido 2023+)"
  },
- "4125-5248-Imagine (Live)": {
-  "source": "musicbrainz",
-  "id": "d54efedf-12ea-418f-98b3-d46d3c04e1ec",
-  "was": "(colhido 2023+)"
- },
  "2860-2896-EBVSY": {
   "source": "musicbrainz",
   "id": "a7ec93cc-6625-4f4f-8649-b0918a1c64d7",
@@ -39942,11 +38877,6 @@
  "2432-4415-Carita triste": {
   "source": "musicbrainz",
   "id": "e69db8c5-d0a9-4f96-816f-358d48c7b4ac",
-  "was": "(colhido 2023+)"
- },
- "136-5982-The Middle": {
-  "source": "musicbrainz",
-  "id": "ce09f67a-66d2-42d9-a024-2e2c67876769",
   "was": "(colhido 2023+)"
  },
  "136-1280-Empty Cups": {
@@ -40009,19 +38939,9 @@
   "id": "fec02ef5-302b-4fd2-ab75-097a725dc5aa",
   "was": "(colhido 2023+)"
  },
- "4102-4143-Great I Am (live)": {
-  "source": "musicbrainz",
-  "id": "d5cef81f-acd5-4acd-a097-8a443b130824",
-  "was": "(colhido 2023+)"
- },
  "12-4102-Blessings": {
   "source": "musicbrainz",
   "id": "f94ea236-4335-42a7-ac78-4b5c2ec04ae3",
-  "was": "(colhido 2023+)"
- },
- "4102-4146-This Is a Move (live From Greensboro)": {
-  "source": "musicbrainz",
-  "id": "c0580c6f-382a-4793-8400-98b9774d8c72",
   "was": "(colhido 2023+)"
  },
  "4102-4143-I Want More": {
@@ -40035,58 +38955,58 @@
   "was": "(colhido 2023+)"
  },
  "938-4102-In the Room (live)": {
-  "source": "musicbrainz",
-  "id": "d1344100-b7c5-438b-b79a-76580279ac1c",
+  "source": "deezer",
+  "id": "2464520865",
   "was": "(colhido 2023+)"
  },
  "938-4144-In the Room (live)": {
-  "source": "musicbrainz",
-  "id": "d1344100-b7c5-438b-b79a-76580279ac1c",
+  "source": "deezer",
+  "id": "2464520865",
   "was": "(colhido 2023+)"
  },
  "4102-4144-In the Room (live)": {
-  "source": "musicbrainz",
-  "id": "d1344100-b7c5-438b-b79a-76580279ac1c",
+  "source": "deezer",
+  "id": "2464520865",
   "was": "(colhido 2023+)"
  },
  "938-4102-More Than Able (live)": {
-  "source": "musicbrainz",
-  "id": "4a2f4169-32e3-4aaa-8dc4-88af72b65179",
+  "source": "deezer",
+  "id": "2464808075",
   "was": "(colhido 2023+)"
  },
  "938-4143-More Than Able (live)": {
-  "source": "musicbrainz",
-  "id": "4a2f4169-32e3-4aaa-8dc4-88af72b65179",
+  "source": "deezer",
+  "id": "2464808075",
   "was": "(colhido 2023+)"
  },
  "4102-4143-More Than Able (live)": {
-  "source": "musicbrainz",
-  "id": "4a2f4169-32e3-4aaa-8dc4-88af72b65179",
+  "source": "deezer",
+  "id": "2464808075",
   "was": "(colhido 2023+)"
  },
  "938-4102-In The Room": {
-  "source": "musicbrainz",
-  "id": "4f0d9ad9-db58-425d-8dd7-006a604b9e64",
+  "source": "deezer",
+  "id": "2464520865",
   "was": "(colhido 2023+)"
  },
  "938-4144-In The Room": {
-  "source": "musicbrainz",
-  "id": "4f0d9ad9-db58-425d-8dd7-006a604b9e64",
+  "source": "deezer",
+  "id": "2464520865",
   "was": "(colhido 2023+)"
  },
  "4102-4144-In The Room": {
-  "source": "musicbrainz",
-  "id": "4f0d9ad9-db58-425d-8dd7-006a604b9e64",
+  "source": "deezer",
+  "id": "2464520865",
   "was": "(colhido 2023+)"
  },
  "938-4143-More Than Able": {
-  "source": "musicbrainz",
-  "id": "809e4c0d-9c62-4644-a1aa-efb95e5440a6",
+  "source": "deezer",
+  "id": "2464808075",
   "was": "(colhido 2023+)"
  },
  "4102-4143-More Than Able": {
-  "source": "musicbrainz",
-  "id": "809e4c0d-9c62-4644-a1aa-efb95e5440a6",
+  "source": "deezer",
+  "id": "2464808075",
   "was": "(colhido 2023+)"
  },
  "938-4102-Man Of Your Word": {
@@ -40262,11 +39182,6 @@
  "2554-2573-Sin-Ceros": {
   "source": "musicbrainz",
   "id": "db96e434-d3e9-4792-89b9-37be3fbef621",
-  "was": "(colhido 2023+)"
- },
- "3231-6300-Territorial Pissings": {
-  "source": "musicbrainz",
-  "id": "7165b852-7413-45ea-9c2c-7e1a94fd290a",
   "was": "(colhido 2023+)"
  },
  "14-1242-I Don't Know How to Say Goodbye (Bang Bang Boom Boom)": {
@@ -40850,18 +39765,13 @@
   "was": "(colhido 2023+)"
  },
  "1503-2149-Sun Came Up": {
-  "source": "musicbrainz",
-  "id": "f5e52607-9036-4103-a59d-20f64ea554c5",
+  "source": "deezer",
+  "id": "1665611132",
   "was": "(colhido 2023+)"
  },
  "2665-5722-Sunset Kiss": {
-  "source": "musicbrainz",
-  "id": "dabcad56-0cb2-4c46-9dab-83193796c0ca",
-  "was": "(colhido 2023+)"
- },
- "5028-5034-A DORMIR JUNTITOS": {
-  "source": "musicbrainz",
-  "id": "081c1240-bb22-476e-aba6-077d11a19be8",
+  "source": "deezer",
+  "id": "3491789031",
   "was": "(colhido 2023+)"
  },
  "5023-5028-MEDLEY WILFRIDO VARGAS": {
@@ -41300,13 +40210,13 @@
   "was": "(colhido 2023+)"
  },
  "3409-3529-Mickey's Monkey": {
-  "source": "musicbrainz",
-  "id": "e3387608-4c04-417c-b577-08722d656271",
+  "source": "deezer",
+  "id": "7377391",
   "was": "(colhido 2023+)"
  },
  "3409-3529-You've Really Got a Hold on Me": {
-  "source": "musicbrainz",
-  "id": "9d1d54b7-dc5e-4b91-b527-02e34199e6b3",
+  "source": "deezer",
+  "id": "3051160",
   "was": "(colhido 2023+)"
  },
  "1026-3409-THE AGONY & ECSTASY (intro)": {
@@ -41325,8 +40235,8 @@
   "was": "(colhido 2023+)"
  },
  "3409-3529-That's What Love Is Made Of": {
-  "source": "musicbrainz",
-  "id": "599e6904-37a1-432e-acb8-f8e11be5fd54",
+  "source": "deezer",
+  "id": "549306552",
   "was": "(colhido 2023+)"
  },
  "1450-1452-Vibrate On": {
@@ -41599,11 +40509,6 @@
   "id": "9c384e0e-2902-4168-9abc-0a593a1a4fbb",
   "was": "(colhido 2023+)"
  },
- "1959-4364-The End / [silence] / Incognito": {
-  "source": "musicbrainz",
-  "id": "ea6316f0-16ca-4bd7-bb22-3f469bcc6732",
-  "was": "(colhido 2023+)"
- },
  "20-3497-Wesley’s Theory": {
   "source": "musicbrainz",
   "id": "62c01d91-82dd-4bc1-b94c-a9c4d6d8ffbb",
@@ -41625,8 +40530,8 @@
   "was": "(colhido 2023+)"
  },
  "3360-3392-Seventeen": {
-  "source": "musicbrainz",
-  "id": "d595dff1-9b68-486f-95a6-3e43352e6896",
+  "source": "deezer",
+  "id": "898230012",
   "was": "(colhido 2023+)"
  },
  "3406-5194-AINT NO MOUNTAIN": {
@@ -41637,11 +40542,6 @@
  "3406-5194-If This World Were Mine": {
   "source": "musicbrainz",
   "id": "994b4e08-bf31-4b71-ab98-2e1d9f1252e6",
-  "was": "(colhido 2023+)"
- },
- "17-3385-when the party’s over": {
-  "source": "musicbrainz",
-  "id": "e1397a4f-1845-4f57-80d9-c41a92c801fb",
   "was": "(colhido 2023+)"
  },
  "339-343-Sutilmente": {
@@ -41715,8 +40615,8 @@
   "was": "(colhido 2023+)"
  },
  "1188-5271-Long Live Country Music": {
-  "source": "musicbrainz",
-  "id": "f78a3ab8-2f59-4601-997c-f3017f0d4ff9",
+  "source": "deezer",
+  "id": "2502011021",
   "was": "(colhido 2023+)"
  },
  "4369-4473-Chama": {
@@ -41729,49 +40629,14 @@
   "id": "a437beca-fea5-4eca-a928-02e758f9c431",
   "was": "(colhido 2023+)"
  },
- "4193-4260-Grave Robber (live From Passion 2024)": {
-  "source": "musicbrainz",
-  "id": "eb56a84d-eaaa-4f19-9eb7-0a0cf771e978",
-  "was": "(colhido 2023+)"
- },
- "4193-4260-It Really Is Amazing Grace (live From Passion 2026)": {
-  "source": "musicbrainz",
-  "id": "b2569e5a-5e0a-4a61-861c-06347a5c3aec",
-  "was": "(colhido 2023+)"
- },
  "4260-5661-Just That Good (Acoustic)": {
   "source": "musicbrainz",
   "id": "2fbf368c-259e-49e5-bbc3-1e5b16e1a72a",
   "was": "(colhido 2023+)"
  },
- "4260-5661-Come, Lord Jesus (live From Passion 2024)": {
-  "source": "musicbrainz",
-  "id": "d78973e1-be76-4c74-9868-0cbf7ef1c9ef",
-  "was": "(colhido 2023+)"
- },
- "4260-5661-Come to Jesus (live From Passion 2025)": {
-  "source": "musicbrainz",
-  "id": "7e2ba317-f354-4d9d-aa2c-eb4a5cdcf59b",
-  "was": "(colhido 2023+)"
- },
  "4260-5661-He Who Is to Come (live From Passion 2024)": {
-  "source": "musicbrainz",
-  "id": "392467cf-696a-4d36-b219-b0ada829531f",
-  "was": "(colhido 2023+)"
- },
- "4260-5661-Salvation Belongs to You (live From Passion 2024)": {
-  "source": "musicbrainz",
-  "id": "02a49d0f-ccbe-418f-a889-45f72021f664",
-  "was": "(colhido 2023+)"
- },
- "4260-5661-Praise Yahweh (live From Passion 2025)": {
-  "source": "musicbrainz",
-  "id": "0177f2e7-ff7d-497d-b6f4-ae3225faea4f",
-  "was": "(colhido 2023+)"
- },
- "4147-4260-Firm Foundation (He Won't) [live From Passion 2024]": {
-  "source": "musicbrainz",
-  "id": "6457d92c-6225-446c-b10a-6a1937ca732b",
+  "source": "deezer",
+  "id": "2556247992",
   "was": "(colhido 2023+)"
  },
  "4260-5661-Just That Good": {
@@ -41780,18 +40645,13 @@
   "was": "(colhido 2023+)"
  },
  "4260-5661-Just That Good (live From Passion 2026)": {
-  "source": "musicbrainz",
-  "id": "579f5313-1080-4390-b5ae-dffc2ed50a5a",
+  "source": "deezer",
+  "id": "4323333762",
   "was": "(colhido 2023+)"
  },
  "1581-6108-Overdrive": {
   "source": "musicbrainz",
   "id": "5eaff545-6267-4599-a9bf-6bd70063f6c2",
-  "was": "(colhido 2023+)"
- },
- "4801-4860-Nyawa dan Harapan": {
-  "source": "musicbrainz",
-  "id": "b5fdbd25-7ed3-4720-a174-6ac804dfed17",
   "was": "(colhido 2023+)"
  },
  "3154-3782-YG (interlude)": {
@@ -41924,11 +40784,6 @@
   "id": "ea4be72b-b27e-4d9f-8cce-223b57fa1dcd",
   "was": "(colhido 2023+)"
  },
- "2420-5511-Who Wants to Live Forever (live at “Teatro Del Silenzio” 2024, Tuscany)": {
-  "source": "musicbrainz",
-  "id": "9e31c62f-3d98-448b-85e0-776ad0c090d7",
-  "was": "(colhido 2023+)"
- },
  "1324-1338-Blowin’ Away": {
   "source": "musicbrainz",
   "id": "cd5e38b8-3580-4532-acc6-6635639925bd",
@@ -42050,8 +40905,8 @@
   "was": "(colhido 2023+)"
  },
  "1186-3136-Dawns (live from Brooklyn)": {
-  "source": "musicbrainz",
-  "id": "8bb4435c-6710-4efa-b59e-1dfb5d5a27f6",
+  "source": "deezer",
+  "id": "2118224167",
   "was": "(colhido 2023+)"
  },
  "1186-3136-Dawns": {
@@ -42070,8 +40925,8 @@
   "was": "(colhido 2023+)"
  },
  "2540-5917-El río": {
-  "source": "musicbrainz",
-  "id": "5320b675-4b70-4f6e-9cf8-02c45a33be91",
+  "source": "deezer",
+  "id": "3258915831",
   "was": "(colhido 2023+)"
  },
  "210-1738-Won’t Forget This Time": {
@@ -42440,18 +41295,18 @@
   "was": "(colhido 2023+)"
  },
  "1-84-Solid": {
-  "source": "musicbrainz",
-  "id": "8df81120-67fe-4800-ad6d-449f217fdf96",
+  "source": "deezer",
+  "id": "1345531532",
   "was": "(colhido 2023+)"
  },
  "1-85-Solid": {
-  "source": "musicbrainz",
-  "id": "8df81120-67fe-4800-ad6d-449f217fdf96",
+  "source": "deezer",
+  "id": "1345531532",
   "was": "(colhido 2023+)"
  },
  "1-6446-Solid": {
-  "source": "musicbrainz",
-  "id": "8df81120-67fe-4800-ad6d-449f217fdf96",
+  "source": "deezer",
+  "id": "1345531532",
   "was": "(colhido 2023+)"
  },
  "84-85-Solid": {
@@ -42475,13 +41330,13 @@
   "was": "(colhido 2023+)"
  },
  "1190-4146-Just Believe - Live": {
-  "source": "musicbrainz",
-  "id": "2d992cf8-bea5-4e25-b2ed-ceb7fd3a865b",
+  "source": "deezer",
+  "id": "3892791561",
   "was": "(colhido 2023+)"
  },
  "1190-4146-Just Believe": {
-  "source": "musicbrainz",
-  "id": "7b82b015-27e9-4b4d-90c3-8aed2cfd61d5",
+  "source": "deezer",
+  "id": "3892791561",
   "was": "(colhido 2023+)"
  },
  "1190-5982-Strong Enough": {
@@ -42654,24 +41509,9 @@
   "id": "dbf96005-8b5f-4a3b-8e24-ca7a4e263560",
   "was": "(colhido 2023+)"
  },
- "1337-5538-Have You Ever Seen the Rain": {
-  "source": "musicbrainz",
-  "id": "c0e35272-57ab-46ad-9d8e-a798bd2f0a97",
-  "was": "(colhido 2023+)"
- },
- "3639-6628-Try Again (live at Wireless Festival 2005 / rehearsal & performance)": {
-  "source": "musicbrainz",
-  "id": "e400d62d-f022-43a0-b259-2eea7239b251",
-  "was": "(colhido 2023+)"
- },
  "1277-6628-Down in the Willow Garden": {
   "source": "musicbrainz",
   "id": "695bb60c-efeb-46c9-8b29-f89a88a5ff99",
-  "was": "(colhido 2023+)"
- },
- "1277-6628-Who Know Where the Time Goes (live)": {
-  "source": "musicbrainz",
-  "id": "f1e37815-3e68-4dd9-b1f9-f88571033230",
   "was": "(colhido 2023+)"
  },
  "5650-6628-High on a Rocky Ledge": {
@@ -42679,19 +41519,9 @@
   "id": "979681cc-8534-464e-88e5-c12df3fcea59",
   "was": "(colhido 2023+)"
  },
- "5934-6308-Across the Universe": {
-  "source": "musicbrainz",
-  "id": "e29cb870-9c40-49d4-905a-bb639a6b8591",
-  "was": "(colhido 2023+)"
- },
  "5934-6628-Across the Universe": {
   "source": "musicbrainz",
-  "id": "e29cb870-9c40-49d4-905a-bb639a6b8591",
-  "was": "(colhido 2023+)"
- },
- "6308-6628-Across the Universe": {
-  "source": "musicbrainz",
-  "id": "e29cb870-9c40-49d4-905a-bb639a6b8591",
+  "id": "41a8ef3f-6b13-4634-b99b-02bb78e72b19",
   "was": "(colhido 2023+)"
  },
  "3553-5565-Yah Mo B There": {
@@ -42779,11 +41609,6 @@
   "id": "a5414350-cc10-4ae5-bc2f-5ed0f48b94fc",
   "was": "(colhido 2023+)"
  },
- "129-1277-Nothing Compares 2 U (live)": {
-  "source": "musicbrainz",
-  "id": "48f65a08-75f0-47a9-be0f-a371e0e0d09b",
-  "was": "(colhido 2023+)"
- },
  "53-1277-Who Believes in Angels?": {
   "source": "musicbrainz",
   "id": "305a63fd-768b-4b16-b563-2729f509a344",
@@ -42802,31 +41627,6 @@
  "53-1277-Swing for the Fences": {
   "source": "musicbrainz",
   "id": "975ef632-66f9-44dc-ae80-dc0cdac2c676",
-  "was": "(colhido 2023+)"
- },
- "53-1277-The Joke": {
-  "source": "musicbrainz",
-  "id": "664ecb45-e777-401a-a7b6-a470b6122031",
-  "was": "(colhido 2023+)"
- },
- "53-1277-Tiny Dancer": {
-  "source": "musicbrainz",
-  "id": "412fdb49-766c-4887-8e4a-26c888ed4b86",
-  "was": "(colhido 2023+)"
- },
- "53-1277-I’m Still Standing": {
-  "source": "musicbrainz",
-  "id": "a289dfea-6765-4bb8-9fc4-21d8db67aaca",
-  "was": "(colhido 2023+)"
- },
- "53-1277-Bennie and the Jets": {
-  "source": "musicbrainz",
-  "id": "e8d404a4-e8f7-4ed9-a512-ad8aa24cf437",
-  "was": "(colhido 2023+)"
- },
- "53-1277-Don’t Let the Sun Go Down on Me": {
-  "source": "musicbrainz",
-  "id": "831aa223-8ef1-49e0-83ca-8364058057f6",
   "was": "(colhido 2023+)"
  },
  "48-1277-Thousand Miles": {
@@ -42872,21 +41672,6 @@
  "129-1277-Coat of Many Colors": {
   "source": "musicbrainz",
   "id": "e7385320-c52c-4f11-9250-a7da51449ee0",
-  "was": "(colhido 2023+)"
- },
- "53-1277-You Without Me": {
-  "source": "musicbrainz",
-  "id": "c46453f6-b79e-4906-a8bc-d4039ab044f9",
-  "was": "(colhido 2023+)"
- },
- "4121-4143-Joy (live)": {
-  "source": "musicbrainz",
-  "id": "17a8d940-b20e-4b52-8ee7-b1c2a652cdf5",
-  "was": "(colhido 2023+)"
- },
- "3333-6555-Somethin’ Stupid": {
-  "source": "musicbrainz",
-  "id": "8dddc409-4100-4696-bb15-830f4ac9380f",
   "was": "(colhido 2023+)"
  },
  "3018-3057-Antídoto de Amor": {
@@ -42951,7 +41736,7 @@
  },
  "1903-2606-Dopo l’amore (live à l’Olympia, Paris / 1978)": {
   "source": "musicbrainz",
-  "id": "346b59e2-a6b2-44c3-bb1d-220f8f99f6bb",
+  "id": "d2f5914c-1f7d-4218-a758-17766229bd74",
   "was": "(colhido 2023+)"
  },
  "1903-2606-Dopo l'amore": {
@@ -43560,13 +42345,13 @@
   "was": "(colhido 2023+)"
  },
  "1371-3625-Weed & Rum (VIP)": {
-  "source": "musicbrainz",
-  "id": "78fcff42-2666-4b16-ae1c-1812882f4ece",
+  "source": "deezer",
+  "id": "685689622",
   "was": "(colhido 2023+)"
  },
  "3258-3568-A Love Supreme": {
-  "source": "musicbrainz",
-  "id": "5831bf8b-0fcd-49ce-a924-b1efbb9416ee",
+  "source": "deezer",
+  "id": "8164856",
   "was": "(colhido 2023+)"
  },
  "2191-5429-Nain Matakka": {
@@ -43719,39 +42504,9 @@
   "id": "90fa9493-53fc-4ecc-8f48-d596842baa72",
   "was": "(colhido 2023+)"
  },
- "3138-5526-Just Like Heaven": {
-  "source": "musicbrainz",
-  "id": "2a36e7c2-c946-4845-9dc8-95729a326737",
-  "was": "(colhido 2023+)"
- },
- "3138-5526-Friday I'm in Love": {
-  "source": "musicbrainz",
-  "id": "ce41ced8-a595-4a2e-9ce9-6c85de12eb7a",
-  "was": "(colhido 2023+)"
- },
  "3138-5526-what’s wrong with me": {
   "source": "musicbrainz",
   "id": "43ccb577-9b57-4bb1-817c-21b35001f054",
-  "was": "(colhido 2023+)"
- },
- "4249-4250-Abba - Live": {
-  "source": "musicbrainz",
-  "id": "04bd3c41-af5a-4998-892d-71b48f69cb26",
-  "was": "(colhido 2023+)"
- },
- "4185-4250-Crowns Down - Live": {
-  "source": "musicbrainz",
-  "id": "0a2508bc-1b41-42ef-a9ef-de44395551cc",
-  "was": "(colhido 2023+)"
- },
- "4185-4250-My Help - Live": {
-  "source": "musicbrainz",
-  "id": "4becda7f-deba-4822-8a7b-2a16087286b8",
-  "was": "(colhido 2023+)"
- },
- "4224-4250-Joy (What The World Calls Foolish) - Live": {
-  "source": "musicbrainz",
-  "id": "2a53e22b-9b9d-4b5a-b761-16665239a715",
   "was": "(colhido 2023+)"
  },
  "4146-4158-Graves": {
@@ -43759,19 +42514,9 @@
   "id": "99962d37-112b-47ea-bb8f-958c9a001c00",
   "was": "(colhido 2023+)"
  },
- "4158-4260-Glorious Day (live From Passion 2026)": {
-  "source": "musicbrainz",
-  "id": "ebdfb749-9510-4e80-b511-0c96a520be5c",
-  "was": "(colhido 2023+)"
- },
- "4158-5661-Glorious Day (live From Passion 2026)": {
-  "source": "musicbrainz",
-  "id": "ebdfb749-9510-4e80-b511-0c96a520be5c",
-  "was": "(colhido 2023+)"
- },
  "4260-5661-Glorious Day (live From Passion 2026)": {
-  "source": "musicbrainz",
-  "id": "ebdfb749-9510-4e80-b511-0c96a520be5c",
+  "source": "deezer",
+  "id": "144943336",
   "was": "(colhido 2023+)"
  },
  "1903-5835-Une vie d'amour": {
@@ -43905,8 +42650,8 @@
   "was": "(colhido 2023+)"
  },
  "59-6592-P.O.V. (live from Apple Music Studios)": {
-  "source": "musicbrainz",
-  "id": "85acad23-51bb-450a-991c-3c7240219e6e",
+  "source": "deezer",
+  "id": "3453936791",
   "was": "(colhido 2023+)"
  },
  "1698-6106-Chains": {
@@ -43926,7 +42671,7 @@
  },
  "647-1201-You're Still The One (Live From Las Vegas/2022)": {
   "source": "musicbrainz",
-  "id": "0ca81e08-f522-40db-b913-f8a4fc1be3e2",
+  "id": "2c8ec915-9730-449d-8dfc-bc86b7ce7237",
   "was": "(colhido 2023+)"
  },
  "2561-4485-electric bby": {
@@ -44269,11 +43014,6 @@
   "id": "76139154-c884-4022-9374-6f8cdc012d2c",
   "was": "(colhido 2023+)"
  },
- "4147-4249-Taste And See (Live)": {
-  "source": "musicbrainz",
-  "id": "d10667df-e041-4952-9f95-4b8b2f5eeb92",
-  "was": "(colhido 2023+)"
- },
  "1656-3794-Passenger Princess": {
   "source": "musicbrainz",
   "id": "a5e11621-a43a-4501-9402-87bed6b662f0",
@@ -44474,11 +43214,6 @@
   "id": "69e8a2a8-6880-4423-b75a-cebfb465ed1f",
   "was": "(colhido 2023+)"
  },
- "10-6569-What Is This Feeling? / Dear Old Shiz": {
-  "source": "musicbrainz",
-  "id": "dbe91d02-107c-44c4-8f5e-08496531d261",
-  "was": "(colhido 2023+)"
- },
  "10-6569-A Wicked Good Finale": {
   "source": "musicbrainz",
   "id": "b5a80038-6717-48fb-9fbf-0be8f1f73ea1",
@@ -44487,11 +43222,6 @@
  "10-6569-What Is This Feeling?": {
   "source": "musicbrainz",
   "id": "3b5a6fa8-ff25-4757-a676-28176732ff34",
-  "was": "(colhido 2023+)"
- },
- "10-6569-Get Happy / Happy Days Are Here Again": {
-  "source": "musicbrainz",
-  "id": "ed3f0400-c5f8-4be7-8974-0ddafa161420",
   "was": "(colhido 2023+)"
  },
  "10-6569-Defying Gravity": {
@@ -44510,8 +43240,8 @@
   "was": "(colhido 2023+)"
  },
  "4179-4214-The Purest Place": {
-  "source": "musicbrainz",
-  "id": "9b962d23-576e-41f5-b7b8-2d2370c06157",
+  "source": "deezer",
+  "id": "2762182841",
   "was": "(colhido 2023+)"
  },
  "4148-4179-Knowing You": {
@@ -44547,11 +43277,6 @@
  "2806-4806-Umaaligid": {
   "source": "musicbrainz",
   "id": "b4423620-7550-44a4-b574-b2db00d3f1f3",
-  "was": "(colhido 2023+)"
- },
- "5513-5872-Getting Away With It": {
-  "source": "musicbrainz",
-  "id": "9a82516d-067b-4422-b029-16baa389d4a2",
   "was": "(colhido 2023+)"
  },
  "4037-6675-Secret": {
@@ -44711,7 +43436,7 @@
  },
  "4182-4185-Made for More (live)": {
   "source": "musicbrainz",
-  "id": "11052f5c-8b4c-4076-bc82-d40acacb6bae",
+  "id": "4eb1e379-5dd6-4ac0-8b80-5f3d33bdee6c",
   "was": "(colhido 2023+)"
  },
  "2194-2198-Tareefan": {
@@ -44779,11 +43504,6 @@
   "id": "e406354d-dca3-4cf6-97af-82d49b690554",
   "was": "(colhido 2023+)"
  },
- "3138-5650-burning down the house": {
-  "source": "musicbrainz",
-  "id": "f048e389-6963-40c4-ae92-5ca1e206b98e",
-  "was": "(colhido 2023+)"
- },
  "1650-5650-Regiment": {
   "source": "musicbrainz",
   "id": "c17b8c82-4d49-4de1-9092-5653337d5181",
@@ -44800,8 +43520,8 @@
   "was": "(colhido 2023+)"
  },
  "1650-5650-The Jezebel Spirit": {
-  "source": "musicbrainz",
-  "id": "01d31be9-6807-4690-8788-b3178c9ffe9b",
+  "source": "deezer",
+  "id": "3121645",
   "was": "(colhido 2023+)"
  },
  "1317-5271-Brand New Man": {
@@ -44865,13 +43585,13 @@
   "was": "(colhido 2023+)"
  },
  "417-6309-For Free": {
-  "source": "musicbrainz",
-  "id": "06ed6de9-219b-49b4-a407-9aff6cae6647",
+  "source": "deezer",
+  "id": "1280158462",
   "was": "(colhido 2023+)"
  },
  "3391-6309-For Free": {
-  "source": "musicbrainz",
-  "id": "06ed6de9-219b-49b4-a407-9aff6cae6647",
+  "source": "deezer",
+  "id": "1280158462",
   "was": "(colhido 2023+)"
  },
  "1579-5620-Pour Your Heart Out": {
@@ -44965,8 +43685,8 @@
   "was": "(colhido 2023+)"
  },
  "4146-4147-Too Good to Not Believe (live From Pittsburgh)": {
-  "source": "musicbrainz",
-  "id": "c93461f9-d5e9-45b3-b642-31a377b46f4e",
+  "source": "deezer",
+  "id": "1379047042",
   "was": "(colhido 2023+)"
  },
  "938-4143-Firm Foundation (He Won't)": {
@@ -45915,13 +44635,13 @@
   "was": "(colhido 2023+)"
  },
  "2586-5917-El blues del autobús": {
-  "source": "musicbrainz",
-  "id": "6c4598a3-2065-453b-8a18-5c08183f1a82",
+  "source": "deezer",
+  "id": "3258915821",
   "was": "(colhido 2023+)"
  },
  "2562-5917-Nueva ola": {
-  "source": "musicbrainz",
-  "id": "ed657a90-e3d3-475f-99a3-fb850d3c0600",
+  "source": "deezer",
+  "id": "3273186131",
   "was": "(colhido 2023+)"
  },
  "1591-3706-I Like It Hot": {
@@ -45974,11 +44694,6 @@
   "id": "545c9aad-2d6b-404c-8c9c-90549fe30487",
   "was": "(colhido 2023+)"
  },
- "179-3693-Overseas": {
-  "source": "musicbrainz",
-  "id": "dc3657b5-f90f-4182-9d34-c7b563a89103",
-  "was": "(colhido 2023+)"
- },
  "4181-5852-Killing Floor": {
   "source": "musicbrainz",
   "id": "c1366b79-c568-4135-a309-27ccb3f270bd",
@@ -45986,7 +44701,7 @@
  },
  "939-4149-Holy Song (acoustic)": {
   "source": "musicbrainz",
-  "id": "68a16fed-6ba4-4319-ac5c-472511e8df81",
+  "id": "2c903b82-0fea-411b-b972-a668895302ab",
   "was": "(colhido 2023+)"
  },
  "939-4181-Holy Song (acoustic)": {
@@ -46102,11 +44817,6 @@
  "2319-2339-Not Ramaiya Vastavaiya (From \"Jawan\")": {
   "source": "musicbrainz",
   "id": "1ab98186-fd0f-431e-a899-4d325f3b8ede",
-  "was": "(colhido 2023+)"
- },
- "3258-3502-Maria Caracoles": {
-  "source": "musicbrainz",
-  "id": "da1c75cf-c173-4636-8046-af7d7d45ec1f",
   "was": "(colhido 2023+)"
  },
  "1517-6276-PIMP DADDY": {
@@ -46435,8 +45145,8 @@
   "was": "(colhido 2023+)"
  },
  "4820-4838-Pahinga - Live at the farm": {
-  "source": "musicbrainz",
-  "id": "7f3a6ef0-d475-4466-801b-f0e8bfd4b1de",
+  "source": "deezer",
+  "id": "3408248331",
   "was": "(colhido 2023+)"
  },
  "4821-4838-Palagi": {
@@ -46604,11 +45314,6 @@
   "id": "85056d16-aaae-4a16-ad5c-9ca371adeea8",
   "was": "(colhido 2023+)"
  },
- "4143-4144-All (live)": {
-  "source": "musicbrainz",
-  "id": "d9bf2051-c788-4912-b047-bc2812ec0eca",
-  "was": "(colhido 2023+)"
- },
  "938-4143-Fall on Me": {
   "source": "musicbrainz",
   "id": "0f7b7b17-9222-4ef8-8c26-9b4d2171d9f2",
@@ -46640,23 +45345,23 @@
   "was": "(colhido 2023+)"
  },
  "938-4143-Good News": {
-  "source": "musicbrainz",
-  "id": "b6137fd5-87c2-44ac-89dc-bd25bac4af57",
+  "source": "deezer",
+  "id": "2471615551",
   "was": "(colhido 2023+)"
  },
  "938-4144-Good News": {
-  "source": "musicbrainz",
-  "id": "b6137fd5-87c2-44ac-89dc-bd25bac4af57",
+  "source": "deezer",
+  "id": "2463521975",
   "was": "(colhido 2023+)"
  },
  "4143-4144-Good News": {
-  "source": "musicbrainz",
-  "id": "b6137fd5-87c2-44ac-89dc-bd25bac4af57",
+  "source": "deezer",
+  "id": "2463521975",
   "was": "(colhido 2023+)"
  },
  "4143-4144-Jireh": {
-  "source": "musicbrainz",
-  "id": "afebbd80-b1f5-482b-8217-2b050c11a35e",
+  "source": "deezer",
+  "id": "1263641422",
   "was": "(colhido 2023+)"
  },
  "938-4143-Be Praised (Acoustic Set)": {
@@ -47069,11 +45774,6 @@
   "id": "42f79154-2273-4112-8e44-30312105f19f",
   "was": "(colhido 2023+)"
  },
- "1650-5764-By This River (live at the Acropolis)": {
-  "source": "musicbrainz",
-  "id": "a14db463-6c01-48f8-b5de-081840e9784d",
-  "was": "(colhido 2023+)"
- },
  "403-5764-House": {
   "source": "musicbrainz",
   "id": "c0c742fc-4b23-445f-9ff0-090d069331ca",
@@ -47304,21 +46004,6 @@
   "id": "a0e3a6bf-2d43-4303-bcdc-1f01d0fc7964",
   "was": "(colhido 2023+)"
  },
- "5230-5235-Have You Seen The Stars Tonite - Live": {
-  "source": "musicbrainz",
-  "id": "892e338e-2bb3-4e7e-b8ab-1a8edceeae41",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-America - Live": {
-  "source": "musicbrainz",
-  "id": "47fefbcb-1a29-4c89-8c7b-b1e9d65e2870",
-  "was": "(colhido 2023+)"
- },
- "5230-5235-Volunteers - Live": {
-  "source": "musicbrainz",
-  "id": "44b5a9ad-38f6-4693-9859-6b9f8a1d2360",
-  "was": "(colhido 2023+)"
- },
  "4046-4995-Desmotivacional": {
   "source": "musicbrainz",
   "id": "628285da-2b7b-4f3c-8067-b76d715229f9",
@@ -47480,18 +46165,18 @@
   "was": "(colhido 2023+)"
  },
  "4186-4188-I Thank God": {
-  "source": "musicbrainz",
-  "id": "ace4ba66-6614-4c44-b67f-95d144f78f91",
+  "source": "deezer",
+  "id": "2216992267",
   "was": "(colhido 2023+)"
  },
  "4186-4188-Steadfast Flow": {
-  "source": "musicbrainz",
-  "id": "bf708a40-7179-4ce9-ae88-2cf06f4ca808",
+  "source": "deezer",
+  "id": "2238217417",
   "was": "(colhido 2023+)"
  },
  "4186-4188-Worthy": {
-  "source": "musicbrainz",
-  "id": "1471371c-08a2-4201-a8a5-a2f8101d2534",
+  "source": "deezer",
+  "id": "2516398391",
   "was": "(colhido 2023+)"
  },
  "202-6456-Death Valley High": {
@@ -47525,8 +46210,8 @@
   "was": "(colhido 2023+)"
  },
  "2184-5428-Oh Raaya (Unplugged)": {
-  "source": "musicbrainz",
-  "id": "daae08e6-73f2-404a-ba2b-0658756ede54",
+  "source": "deezer",
+  "id": "2879096672",
   "was": "(colhido 2023+)"
  },
  "2557-4481-RAPIÑA | Barracudas #3": {
@@ -47545,13 +46230,8 @@
   "was": "(colhido 2023+)"
  },
  "248-3265-Are There Any More Real Cowboys?": {
-  "source": "musicbrainz",
-  "id": "4bab3edd-dcc2-4d29-8f35-de7e313270f6",
-  "was": "(colhido 2023+)"
- },
- "248-5138-Are There Any More Real Cowboys?": {
-  "source": "musicbrainz",
-  "id": "4bab3edd-dcc2-4d29-8f35-de7e313270f6",
+  "source": "deezer",
+  "id": "1129247",
   "was": "(colhido 2023+)"
  },
  "3265-5138-Are There Any More Real Cowboys?": {
@@ -47580,16 +46260,6 @@
   "was": "(colhido 2023+)"
  },
  "939-4183-Cathedral (Live At Church)": {
-  "source": "musicbrainz",
-  "id": "dc6b205f-66c1-41ca-be41-c132a963c461",
-  "was": "(colhido 2023+)"
- },
- "939-4184-Cathedral (Live At Church)": {
-  "source": "musicbrainz",
-  "id": "dc6b205f-66c1-41ca-be41-c132a963c461",
-  "was": "(colhido 2023+)"
- },
- "4183-4184-Cathedral (Live At Church)": {
   "source": "musicbrainz",
   "id": "dc6b205f-66c1-41ca-be41-c132a963c461",
   "was": "(colhido 2023+)"
@@ -47912,11 +46582,6 @@
  "4302-5967-Let Me See Ya": {
   "source": "musicbrainz",
   "id": "36c097a2-c4b6-40c2-9550-90e7926ee765",
-  "was": "(colhido 2023+)"
- },
- "1025-3484-Sign o’ the Times": {
-  "source": "musicbrainz",
-  "id": "3aced80e-235d-4982-baee-5a3977ef46d5",
   "was": "(colhido 2023+)"
  },
  "3484-5042-Mi rumba y tambor": {
@@ -48250,8 +46915,8 @@
   "was": "(colhido 2023+)"
  },
  "1554-1615-Misbehave": {
-  "source": "musicbrainz",
-  "id": "8a8b4f30-b408-485c-93db-522d7f522767",
+  "source": "deezer",
+  "id": "3702217912",
   "was": "(colhido 2023+)"
  },
  "92-4361-Prada Myself": {
@@ -48674,11 +47339,6 @@
   "id": "dd527e8e-6a68-49bd-bc76-dc2195971893",
   "was": "(colhido 2023+)"
  },
- "5284-5982-American Dreaming": {
-  "source": "musicbrainz",
-  "id": "5d2f6362-8519-4afe-ac98-6aeac87a122d",
-  "was": "(colhido 2023+)"
- },
  "14-5284-Never Love You Again": {
   "source": "musicbrainz",
   "id": "4c3226df-85ca-4910-91bb-0b4fc370ea30",
@@ -48940,13 +47600,13 @@
   "was": "(colhido 2023+)"
  },
  "4626-4627-Montazer": {
-  "source": "musicbrainz",
-  "id": "4638b5f3-baf4-48a1-a315-b59a357f012e",
+  "source": "deezer",
+  "id": "79042707",
   "was": "(colhido 2023+)"
  },
  "4817-4839-Tingin - Live": {
-  "source": "musicbrainz",
-  "id": "c686d599-d5e4-4d31-ac3c-14080608502f",
+  "source": "deezer",
+  "id": "2334860465",
   "was": "(colhido 2023+)"
  },
  "4817-4839-Tingin": {
@@ -48987,11 +47647,6 @@
  "2401-2502-Gazzelle": {
   "source": "musicbrainz",
   "id": "f3431037-3416-4abc-b44c-509c7b77509c",
-  "was": "(colhido 2023+)"
- },
- "5576-6392-A Case of You": {
-  "source": "musicbrainz",
-  "id": "a4380275-3c67-4739-9373-c401fa7429ea",
   "was": "(colhido 2023+)"
  },
  "3137-6392-What If It’s Right?": {
@@ -49116,7 +47771,7 @@
  },
  "3264-5255-Knockin' on Heaven's Door": {
   "source": "musicbrainz",
-  "id": "c977f26a-5167-42b6-9854-c22a9f3151fc",
+  "id": "205e07a9-416b-4746-a952-4e2d81b3d519",
   "was": "(colhido 2023+)"
  },
  "4354-5934-On Air (House Remix1)": {
@@ -49220,13 +47875,8 @@
   "was": "(colhido 2023+)"
  },
  "2665-4925-PA PA YA!!": {
-  "source": "musicbrainz",
-  "id": "14ab0d5d-481a-43b3-ad70-8a4e0cf7b241",
-  "was": "(colhido 2023+)"
- },
- "417-6283-Blue Over You": {
-  "source": "musicbrainz",
-  "id": "35e090d8-ebc7-47b2-915e-5e928e75998f",
+  "source": "deezer",
+  "id": "3465953911",
   "was": "(colhido 2023+)"
  },
  "1367-5102-All My Love": {
@@ -49450,8 +48100,8 @@
   "was": "(colhido 2023+)"
  },
  "4148-4189-Praise the Lord Forever (live)": {
-  "source": "musicbrainz",
-  "id": "e991c1f5-712f-4148-87aa-d7ac2bf8cf5f",
+  "source": "deezer",
+  "id": "4105387881",
   "was": "(colhido 2023+)"
  },
  "1221-1282-Cross Country": {
@@ -49465,8 +48115,8 @@
   "was": "(colhido 2023+)"
  },
  "1212-1221-High Horse (live)": {
-  "source": "musicbrainz",
-  "id": "8a9e8328-ec26-4ac7-bd34-7ba532bfb0aa",
+  "source": "deezer",
+  "id": "1452677152",
   "was": "(colhido 2023+)"
  },
  "1201-1221-Inhale/Exhale AIR": {
@@ -49484,19 +48134,9 @@
   "id": "fe093212-2e38-4eef-8e48-83556e926c3e",
   "was": "(colhido 2023+)"
  },
- "1221-1288-Told You I Could Drink (live)": {
-  "source": "musicbrainz",
-  "id": "ce618abb-95f5-48c5-9354-2617a8353ceb",
-  "was": "(colhido 2023+)"
- },
  "1221-6363-Loving Someone Like That": {
   "source": "musicbrainz",
   "id": "ef4a5d02-4657-4661-829d-7d50afa40767",
-  "was": "(colhido 2023+)"
- },
- "1226-1277-The Rose (Live)": {
-  "source": "musicbrainz",
-  "id": "e517e1ed-4c77-40cd-a1da-0e842c69b338",
   "was": "(colhido 2023+)"
  },
  "2215-2239-Woh Pehla Akshar": {
@@ -49522,16 +48162,6 @@
  "6142-6144-10 Dread Commandments (Neekeetone refootwork)": {
   "source": "musicbrainz",
   "id": "9581539a-eec0-4fc9-b04e-7cb055b012db",
-  "was": "(colhido 2023+)"
- },
- "248-5189-Stardust (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)": {
-  "source": "musicbrainz",
-  "id": "9855e97d-61fa-4b19-87c3-68ea186dbc12",
-  "was": "(colhido 2023+)"
- },
- "248-5189-Stardust": {
-  "source": "musicbrainz",
-  "id": "e7015602-eaff-4c27-b25b-fad07dcccc6a",
   "was": "(colhido 2023+)"
  },
  "3587-5617-Pull Up (feat. Backroad Gee)": {
@@ -49749,11 +48379,6 @@
   "id": "24996160-bcbb-46aa-92f6-a774a361930f",
   "was": "(colhido 2023+)"
  },
- "650-1501-Delilah (pull me out of this) / solo": {
-  "source": "musicbrainz",
-  "id": "c82cb310-44fb-41eb-836d-11097f5b68e6",
-  "was": "(colhido 2023+)"
- },
  "5793-5794-Boops (Here to Go)": {
   "source": "musicbrainz",
   "id": "95ef3074-c39a-4041-a1e2-a28c47da9055",
@@ -49867,11 +48492,6 @@
  "2383-2391-Fan/Stan": {
   "source": "musicbrainz",
   "id": "20e37895-2388-4e9f-baef-8e37367eab90",
-  "was": "(colhido 2023+)"
- },
- "417-5953-hope is a dangerous thing for a woman like me to have – but I have it": {
-  "source": "musicbrainz",
-  "id": "2b8242e6-2d46-4e8c-b7bb-f0d00494d3fe",
   "was": "(colhido 2023+)"
  },
  "2215-2380-F*CK WHAT THEY SAY": {
@@ -50799,11 +49419,6 @@
   "id": "2022080117",
   "was": "Camarote (ao vivo)"
  },
- "2526-2993-R.M.M. Ritmo Mundo Musical": {
-  "source": "deezer",
-  "id": "25016501",
-  "was": "La Vida Es Un Carnaval (Live)"
- },
  "292-291-Olha Amor": {
   "source": "deezer",
   "id": "103603978",
@@ -51149,11 +49764,6 @@
   "id": "cb03991c-0b39-4007-9efe-c5e0eeebf67b",
   "was": "(colhido 2023+)"
  },
- "16-19-Die With a Smile": {
-  "source": "musicbrainz",
-  "id": "345dd7a7-9af2-43a8-9030-32b198abae46",
-  "was": "(colhido 2023+)"
- },
  "10-19-Into You / Enigma": {
   "source": "musicbrainz",
   "id": "de288e9a-9c01-4301-bbe5-df4f70a1eaa2",
@@ -51319,11 +49929,6 @@
   "id": "e6b4294d-0788-49de-80f6-56ed2117e5c6",
   "was": "(colhido 2023+)"
  },
- "150-5982-Wouldn’t Change a Thing": {
-  "source": "musicbrainz",
-  "id": "2600ad80-d73c-4654-b871-c3df7ff5f071",
-  "was": "(colhido 2023+)"
- },
  "40-3806-2Easy 2Ounces": {
   "source": "musicbrainz",
   "id": "e070d6a2-9ddd-45ae-be43-de3cd5255e76",
@@ -51340,8 +49945,8 @@
   "was": "(colhido 2023+)"
  },
  "40-3806-Live Fast Burn Slow": {
-  "source": "musicbrainz",
-  "id": "db15e6b0-82e7-4021-a7a5-12b8e1026559",
+  "source": "deezer",
+  "id": "3935495971",
   "was": "(colhido 2023+)"
  },
  "40-3806-The Same One": {
@@ -51460,8 +50065,8 @@
   "was": "(colhido 2023+)"
  },
  "209-432-WORSHIP (Live in London)": {
-  "source": "musicbrainz",
-  "id": "4b31136c-b1e8-43cc-9577-d3a177e3eb48",
+  "source": "deezer",
+  "id": "3879800031",
   "was": "(colhido 2023+)"
  },
  "209-1894-Combien por la nuit": {
@@ -51535,8 +50140,8 @@
   "was": "(colhido 2023+)"
  },
  "1501-3676-Rumble": {
-  "source": "musicbrainz",
-  "id": "8e07a864-ab67-424b-9057-13dd747a3fb9",
+  "source": "deezer",
+  "id": "2077255967",
   "was": "(colhido 2023+)"
  },
  "1769-1787-Trop tard": {
@@ -51735,8 +50340,8 @@
   "was": "(colhido 2023+)"
  },
  "3092-3434-Immortality (live at the MGM Grand)": {
-  "source": "musicbrainz",
-  "id": "ce3ba463-edde-4b8f-a8ac-cf27ed026434",
+  "source": "deezer",
+  "id": "14552295",
   "was": "(colhido 2023+)"
  },
  "25-184-Pocket": {
@@ -52080,8 +50685,8 @@
   "was": "(colhido 2023+)"
  },
  "432-640-BADMAN GANGSTA (Live in London)": {
-  "source": "musicbrainz",
-  "id": "3b10eebd-cc9c-4e3a-92b1-db6b1dd332a4",
+  "source": "deezer",
+  "id": "3434983391",
   "was": "(colhido 2023+)"
  },
  "469-640-Jet Lag": {
@@ -52091,12 +50696,12 @@
  },
  "2418-3445-You’ll Never Find Another Love Like Mine (with Laura Pausini) [Live]": {
   "source": "musicbrainz",
-  "id": "5c2dc026-4684-4ddc-b358-90e20558889d",
+  "id": "3d35be48-dd17-4196-8bae-2a22b8480ebd",
   "was": "(colhido 2023+)"
  },
  "2418-3445-You’ll Never Find Another Love Like Mine (live)": {
   "source": "musicbrainz",
-  "id": "191e8ea4-3f31-4e8f-b1e0-bed95e54df7d",
+  "id": "3d35be48-dd17-4196-8bae-2a22b8480ebd",
   "was": "(colhido 2023+)"
  },
  "345-347-Volte Para O Seu Lar (Ao Vivo)": {
@@ -52431,7 +51036,7 @@
  },
  "1196-5545-Don't Let Me Down": {
   "source": "musicbrainz",
-  "id": "02ec0bcb-6a95-4afd-bec7-ff2c227c866f",
+  "id": "86bd27e8-a0ba-4529-ae81-beb8e0603cca",
   "was": "(colhido 2023+)"
  },
  "4360-5545-Moon So High": {
@@ -52890,8 +51495,8 @@
   "was": "(colhido 2023+)"
  },
  "1728-3301-Closer": {
-  "source": "musicbrainz",
-  "id": "c7ca4cdc-b551-4f4d-b9a3-da62a59f00e8",
+  "source": "deezer",
+  "id": "3958674481",
   "was": "(colhido 2023+)"
  },
  "2990-2991-Ya Se Ven las Bombillitas - Versión 2026": {
@@ -52955,8 +51560,8 @@
   "was": "(colhido 2023+)"
  },
  "1199-1203-Designated Drinker": {
-  "source": "musicbrainz",
-  "id": "75a53180-ac53-4297-87a4-f4f6f3298188",
+  "source": "deezer",
+  "id": "629417",
   "was": "(colhido 2023+)"
  },
  "117-171-Out My Face (My Baby)": {
@@ -54336,7 +52941,7 @@
  },
  "128-43-Moves Like Jagger": {
   "source": "deezer",
-  "id": "12724819",
+  "id": "13986043",
   "was": "Moves Like Jagger"
  },
  "128-129-Lady Marmalade": {
@@ -54531,7 +53136,7 @@
  },
  "90-9-Or Nah": {
   "source": "deezer",
-  "id": "2166259287",
+  "id": "79036873",
   "was": "Or Nah"
  },
  "90-40-Or Nah": {
@@ -55510,8 +54115,8 @@
   "was": "Without a Fight"
  },
  "248-32-Roll Me Up and Smoke Me When I Die": {
-  "source": "deezer",
-  "id": "2749475131",
+  "source": "musicbrainz",
+  "id": "e05a1d49-66b0-4f8f-9282-73a11a07397f",
   "was": "Roll Me Up and Smoke Me When I Die"
  },
  "259-258-The Rest of Our Life": {
@@ -57405,8 +56010,8 @@
   "was": "Dalie"
  },
  "534-457-Adiwele": {
-  "source": "musicbrainz",
-  "id": "95c6a50c-2014-49fc-9181-89ba8ae3848a",
+  "source": "deezer",
+  "id": "1524918852",
   "was": "Adiwele"
  },
  "534-458-Imali": {
@@ -57720,13 +56325,13 @@
   "was": "Nguwe"
  },
  "550-458-eMcimbini (Live)": {
-  "source": "deezer",
-  "id": "2221156017",
+  "source": "musicbrainz",
+  "id": "9bb73901-c37b-4cc1-82f5-057202dc4a31",
   "was": "Nguwe"
  },
  "550-545-eMcimbini (Live)": {
-  "source": "deezer",
-  "id": "2221156017",
+  "source": "musicbrainz",
+  "id": "9bb73901-c37b-4cc1-82f5-057202dc4a31",
   "was": "Bamthathile"
  },
  "532-457-Idlozi Lami": {
@@ -57738,11 +56343,6 @@
   "source": "deezer",
   "id": "3790070342",
   "was": "Siyathandana"
- },
- "569-457-Trust Fund (Live)": {
-  "source": "deezer",
-  "id": "1797216957",
-  "was": "Mnike"
  },
  "569-544-Nazonke": {
   "source": "deezer",
@@ -60226,7 +58826,7 @@
  },
  "247-1257-Islands in the Stream": {
   "source": "deezer",
-  "id": "1750209627",
+  "id": "989305",
   "was": "Islands in the Stream"
  },
  "247-5266-rockin' years": {
@@ -60394,11 +58994,6 @@
   "id": "2492381",
   "was": "Good News Bad News"
  },
- "1199-1204-The Love Bug (Live)": {
-  "source": "deezer",
-  "id": "84313035",
-  "was": "Livin' and Livin' Well"
- },
  "248-1248-Pancho and Lefty": {
   "source": "deezer",
   "id": "102021909",
@@ -60506,7 +59101,7 @@
  },
  "1217-5275-I Hope You're Happy Now": {
   "source": "deezer",
-  "id": "1352266342",
+  "id": "903740632",
   "was": "I Hope You're Happy Now"
  },
  "1310-1234-Knee Deep": {
@@ -60876,7 +59471,7 @@
  },
  "1346-5301-Angel": {
   "source": "deezer",
-  "id": "2314543",
+  "id": "2122528",
   "was": "Angel"
  },
  "1346-5301-In the Summertime": {
@@ -62084,11 +60679,6 @@
   "id": "780135592",
   "was": "Lose My Mind"
  },
- "1500-1609-Line of Sight": {
-  "source": "deezer",
-  "id": "2752968091",
-  "was": "Line of Sight"
- },
  "1500-1686-Across The Room": {
   "source": "deezer",
   "id": "403915322",
@@ -62295,8 +60885,8 @@
   "was": "Beautiful Now"
  },
  "94-1669-One More Time": {
-  "source": "deezer",
-  "id": "3089397",
+  "source": "musicbrainz",
+  "id": "aa2cf13f-0b0a-40d6-9d0f-7dca8910d022",
   "was": "One More Time"
  },
  "396-1688-Some Minds": {
@@ -62750,8 +61340,8 @@
   "was": "Dinner (feat. Lomepal)"
  },
  "1766-1780-AVF (Live From Stade de France, France / 2013)": {
-  "source": "deezer",
-  "id": "73218114",
+  "source": "musicbrainz",
+  "id": "84ff2591-7a6c-4ba9-94a4-687809fb02c6",
   "was": "Bruxelles arrive"
  },
  "1766-1863-Casseurs Flowters Infinity": {
@@ -63964,11 +62554,6 @@
   "id": "7664620",
   "was": "Dildaara"
  },
- "2184-2315-Kehna Hi Kya (Live)": {
-  "source": "deezer",
-  "id": "13203637",
-  "was": "Urvasi Urvasi"
- },
  "2184-2231-Mazhai Thulli (From \"Sangamam\")": {
   "source": "deezer",
   "id": "2437025365",
@@ -64551,7 +63136,7 @@
  },
  "2207-5443-Chogada": {
   "source": "deezer",
-  "id": "3179967821",
+  "id": "3173813951",
   "was": "Chogada"
  },
  "2210-2187-Mile Ho Tum": {
@@ -65401,7 +63986,7 @@
  },
  "2231-2229-Tu Hi Re": {
   "source": "deezer",
-  "id": "13203644",
+  "id": "4115964861",
   "was": "Tu Hi Re"
  },
  "2184-2231-Kurukku Chiruthavale": {
@@ -65421,7 +64006,7 @@
  },
  "2184-2229-Tu Hi Re (Live)": {
   "source": "deezer",
-  "id": "13203644",
+  "id": "4198673082",
   "was": "Satrangi Re"
  },
  "2184-2222-O Paalanhaare": {
@@ -65588,11 +64173,6 @@
   "source": "deezer",
   "id": "124186476",
   "was": "Vorrei ma non posto"
- },
- "2413-2412-Il bello d'esser brutti": {
-  "source": "deezer",
-  "id": "426346192",
-  "was": "Il bello d'esser brutti"
  },
  "2398-2402-Demonio": {
   "source": "deezer",
@@ -65829,11 +64409,6 @@
   "id": "1087877272",
   "was": "1969"
  },
- "2414-2415-A mano a mano / Folle città": {
-  "source": "musicbrainz",
-  "id": "4ba979c4-bbc1-45bc-bc92-5c8ebd9256e2",
-  "was": "Tutto il contrario"
- },
  "2414-2413-MILLE": {
   "source": "deezer",
   "id": "1401865072",
@@ -65895,8 +64470,8 @@
   "was": "Primavera in anticipo"
  },
  "2418-2483-Tra te e il mare": {
-  "source": "deezer",
-  "id": "896437862",
+  "source": "musicbrainz",
+  "id": "6df62cac-f2ee-4c31-a05f-3bbe8ec1e9ce",
   "was": "Tra te e il mare"
  },
  "2418-2483-Il coraggio di andare": {
@@ -65916,7 +64491,7 @@
  },
  "2166-2420-Miserere": {
   "source": "musicbrainz",
-  "id": "b4af3b99-6bc4-4370-b855-bf152cd57a05",
+  "id": "79f87efb-b181-4810-9266-4a57ba3b8537",
   "was": "Miserere"
  },
  "2166-5484-Miserere": {
@@ -65946,7 +64521,7 @@
  },
  "2420-3092-The Prayer": {
   "source": "deezer",
-  "id": "15747111",
+  "id": "1105576",
   "was": "The Prayer"
  },
  "2420-2167-Vivo per lei": {
@@ -66044,11 +64619,6 @@
   "id": "1999245027",
   "was": "Muévete"
  },
- "2433-2434-Mi Soledad Y Yo (En Vivo)": {
-  "source": "deezer",
-  "id": "71881123",
-  "was": "Esta es la Hora"
- },
  "2434-37-Te lo agradezco, pero no": {
   "source": "deezer",
   "id": "726326",
@@ -66088,11 +64658,6 @@
   "source": "deezer",
   "id": "2526238181",
   "was": "Italodisco"
- },
- "2476-2415-Io di te non ho paura": {
-  "source": "musicbrainz",
-  "id": "33119044-9a11-447a-95f8-2fd1562da2c4",
-  "was": "Femme Fatale"
  },
  "2477-2476-Non è l’inferno": {
   "source": "musicbrainz",
@@ -66198,11 +64763,6 @@
   "source": "deezer",
   "id": "2313435675",
   "was": "Que Más Quisiera"
- },
- "2614-2165-Eppure sentire (Un senso di te)": {
-  "source": "musicbrainz",
-  "id": "ec2284a3-881e-4ad7-b04c-557821ac2408",
-  "was": "Senza dolore"
  },
  "2610-2165-La Signora Del Quinto Piano # 1522": {
   "source": "deezer",
@@ -66694,11 +65254,6 @@
   "id": "2144861257",
   "was": "Lean On Me"
  },
- "2733-233-Without You - Live": {
-  "source": "deezer",
-  "id": "1385015902",
-  "was": "It's Over"
- },
  "2686-2659-No Break": {
   "source": "deezer",
   "id": "2534146851",
@@ -66934,11 +65489,6 @@
   "id": "2316916185",
   "was": "El Original"
  },
- "2856-152-911 (En Vivo)": {
-  "source": "deezer",
-  "id": "2041834357",
-  "was": "Boda Soñada"
- },
  "2856-2854-Aunque Les Pese": {
   "source": "deezer",
   "id": "835759852",
@@ -66985,8 +65535,8 @@
   "was": "Por Qué No Fuimos"
  },
  "2863-2943-Yo Ya No Vuelvo Contigo (En Vivo)": {
-  "source": "deezer",
-  "id": "782199992",
+  "source": "musicbrainz",
+  "id": "afb32625-9df1-4340-9f12-62b4f43d5280",
   "was": "No Quiero Saber Nada"
  },
  "2863-2871-Hoy Más Que Nunca": {
@@ -67038,11 +65588,6 @@
   "source": "deezer",
   "id": "1240304822",
   "was": "Mi Turno"
- },
- "2874-2866-Bien Alerta (En Vivo) (En vivo)": {
-  "source": "deezer",
-  "id": "1883459207",
-  "was": "El Plan"
  },
  "2868-2944-Inseparables": {
   "source": "deezer",
@@ -67258,11 +65803,6 @@
   "source": "deezer",
   "id": "1249368612",
   "was": "Cuánto te Quiero"
- },
- "2903-2856-La Envidia Se Dio Cuenta (En Vivo)": {
-  "source": "deezer",
-  "id": "1869530087",
-  "was": "El Número Uno"
  },
  "2903-227-VVS": {
   "source": "deezer",
@@ -67801,7 +66341,7 @@
  },
  "418-52-Promise": {
   "source": "deezer",
-  "id": "61752144",
+  "id": "56894511",
   "was": "Promise"
  },
  "146-2526-No Me Ames": {
@@ -69325,8 +67865,8 @@
   "was": "Nina Cried Power"
  },
  "3228-2682-The Ghost of Tom Joad": {
-  "source": "deezer",
-  "id": "989519",
+  "source": "musicbrainz",
+  "id": "efc16d29-a9be-4806-8678-316bf1de19ac",
   "was": "The Ghost of Tom Joad"
  },
  "3229-5507-Riding with the King": {
@@ -69344,11 +67884,6 @@
   "id": "1156223862",
   "was": "Traveling Wilburys Vol. 1"
  },
- "255-3265-Hey Jude": {
-  "source": "musicbrainz",
-  "id": "40959e1a-40b0-408b-9644-73d4d37753d3",
-  "was": "A Love For You"
- },
  "255-3268-Beautiful Night (2020 Remaster)": {
   "source": "deezer",
   "id": "1033711472",
@@ -69356,7 +67891,7 @@
  },
  "3266-53-Whatever Gets You thru the Night": {
   "source": "deezer",
-  "id": "1144291",
+  "id": "1056714332",
   "was": "Whatever Gets You thru the Night"
  },
  "3267-3229-I Don't Want to Discuss It (Live: Falconer Theater, Copenhagen, Denmark, December 10, 1969)": {
@@ -69418,11 +67953,6 @@
   "source": "deezer",
   "id": "498130042",
   "was": "Girls Like You (remix)"
- },
- "3240-5512-Colour of the Trap": {
-  "source": "musicbrainz",
-  "id": "bab30497-5bc1-40ee-91d8-f3bd2f3b9d5f",
-  "was": "The Last Shadow Puppets - The Age of the Understatement"
  },
  "3241-5513-Joseph, Better You Than Me": {
   "source": "deezer",
@@ -69734,11 +68264,6 @@
   "id": "89823665",
   "was": "Through the Storm"
  },
- "3410-3409-Ooo Baby Baby": {
-  "source": "deezer",
-  "id": "1437677482",
-  "was": "Ooo Baby Baby"
- },
  "3411-5263-Baby It's Cold Outside": {
   "source": "deezer",
   "id": "1169642872",
@@ -69894,20 +68419,10 @@
   "id": "97b3cf0e-0a70-4ac6-a330-4abdc84ccff5",
   "was": "The Glamorous Life"
  },
- "413-54-Tell Me Something Good": {
-  "source": "musicbrainz",
-  "id": "4f946856-8179-48ab-912d-c73cbf7fc5e4",
-  "was": "So What the Fuss"
- },
  "413-1555-I Feel for You": {
   "source": "musicbrainz",
-  "id": "f5bbefaf-a79b-41ff-b151-58a923c18c07",
+  "id": "6cd7916c-8152-4a08-803c-d210f38e81e7",
   "was": "I Feel for You"
- },
- "413-3483-Jungle Love": {
-  "source": "musicbrainz",
-  "id": "5b9d7dc4-9fcb-4f4e-a11c-5af9d9b0d6fd",
-  "was": "Jungle Love"
  },
  "1555-3487-Tell Me Something Good": {
   "source": "deezer",
@@ -70124,14 +68639,9 @@
   "id": "74658392",
   "was": "Between You Baby and Me"
  },
- "3455-3451-Medley: By The Time I Get To Phoenix/I Say A Little Prayer (Live)": {
-  "source": "deezer",
-  "id": "115710032",
-  "was": "By the Time I Get to Phoenix"
- },
  "1664-1027-Tonight": {
-  "source": "deezer",
-  "id": "3124399",
+  "source": "musicbrainz",
+  "id": "b42bce0b-177c-490a-80c1-de5b370de1d5",
   "was": "Tonight"
  },
  "1664-3438-It Takes Two": {
@@ -70143,11 +68653,6 @@
   "source": "deezer",
   "id": "3136327",
   "was": "In Your Wildest Dreams"
- },
- "1664-53-The Bitch Is Back": {
-  "source": "deezer",
-  "id": "1261993962",
-  "was": "The Bitch Is Back"
  },
  "188-1528-One": {
   "source": "deezer",
@@ -70190,8 +68695,8 @@
   "was": "If Your Girl Only Knew"
  },
  "3480-3481-I'm a Sucker for Your Love": {
-  "source": "deezer",
-  "id": "2500464",
+  "source": "musicbrainz",
+  "id": "980fc5b3-d3d1-44a7-b116-7e1001d433df",
   "was": "I'm a Sucker for Your Love"
  },
  "3480-3409-Ebony Eyes": {
@@ -70420,8 +68925,8 @@
   "was": "A Song for You"
  },
  "3425-5576-River": {
-  "source": "deezer",
-  "id": "139794413",
+  "source": "musicbrainz",
+  "id": "578036eb-54f9-4b4a-a512-9d60c1fbb1f2",
   "was": "River"
  },
  "3099-5585-So in Love": {
@@ -70459,11 +68964,6 @@
   "id": "0ae244da-136c-4f72-b62d-d2e1c4d72a58",
   "was": "Bridge over Troubled Water"
  },
- "3441-3827-N'Kosi Sikelel iAfrica (Live: Rufaro Stadium, Harare, Zimbabwe 14 Feb '87)": {
-  "source": "deezer",
-  "id": "563894042",
-  "was": "Graceland"
- },
  "3264-3262-Band of the Hand": {
   "source": "deezer",
   "id": "2242270527",
@@ -70473,11 +68973,6 @@
   "source": "deezer",
   "id": "802287632",
   "was": "I'd Rather Go Blind"
- },
- "248-3360-Here We Go Again (Live)": {
-  "source": "deezer",
-  "id": "441854102",
-  "was": "Lonestar"
  },
  "54-3418-Let The Good Times Roll": {
   "source": "deezer",
@@ -72834,11 +71329,6 @@
   "id": "3139844621",
   "was": "Bamb'uphinde"
  },
- "3846-457-Phakathi Inside (Live)": {
-  "source": "deezer",
-  "id": "2221156077",
-  "was": "Nguwe"
- },
  "3863-457-MOKWEPA": {
   "source": "deezer",
   "id": "4235065982",
@@ -73074,11 +71564,6 @@
   "id": "519800062",
   "was": "Soukous Forever"
  },
- "3892-3891-Tokende ko voter": {
-  "source": "deezer",
-  "id": "2533316141",
-  "was": "Attention"
- },
  "3889-3891-Mbongo Na Ngai Moko": {
   "source": "deezer",
   "id": "3095432281",
@@ -73161,12 +71646,12 @@
  },
  "1906-1907-Abdel Kader (Live à Bercy, Paris / 1998)": {
   "source": "deezer",
-  "id": "1584476",
+  "id": "77490296",
   "was": "1, 2, 3 Soleils"
  },
  "1908-1906-Voila Voila": {
-  "source": "deezer",
-  "id": "1582738",
+  "source": "musicbrainz",
+  "id": "c0c17581-3da2-4dc8-a47f-24c10ddd1492",
   "was": "Voila Voila"
  },
  "3878-3881-GONYERA": {
@@ -73199,11 +71684,6 @@
   "id": "c252061e-bb58-4dd8-8c04-b383d5d9a7bc",
   "was": "African Queens Reunion"
  },
- "3825-3826-N'Kosi Sikelel iAfrica (Live: Rufaro Stadium, Harare, Zimbabwe 14 Feb '87)": {
-  "source": "deezer",
-  "id": "563894042",
-  "was": "Stimela"
- },
  "555-556-Egoli": {
   "source": "deezer",
   "id": "548508562",
@@ -73233,16 +71713,6 @@
   "source": "deezer",
   "id": "1685030077",
   "was": "Ngimtholile"
- },
- "3848-457-Trust Fund (Live)": {
-  "source": "deezer",
-  "id": "1797216957",
-  "was": "Akulaleki"
- },
- "3848-458-Trust Fund (Live)": {
-  "source": "deezer",
-  "id": "1797216957",
-  "was": "Nguwe"
  },
  "533-457-Sing It Back": {
   "source": "deezer",
@@ -73318,11 +71788,6 @@
   "source": "deezer",
   "id": "2948270521",
   "was": "Wena Wedwa"
- },
- "3827-3825-N'Kosi Sikelel iAfrica (Live: Rufaro Stadium, Harare, Zimbabwe 14 Feb '87)": {
-  "source": "deezer",
-  "id": "563894042",
-  "was": "Isicathamiya Soul"
  },
  "3841-457-Khethile Khethile": {
   "source": "deezer",
@@ -74439,11 +72904,6 @@
   "id": "989321",
   "was": "Everything's Beautiful"
  },
- "249-423-Midnight Summer Jam / Say Something (live at the BRITs)": {
-  "source": "musicbrainz",
-  "id": "9f810805-7868-4b8e-93b7-01836763f764",
-  "was": "Tennessee Whiskey"
- },
  "249-18-Blow": {
   "source": "deezer",
   "id": "707207482",
@@ -74684,11 +73144,6 @@
   "id": "f3127984-1ee8-435b-9cf3-700242797042",
   "was": "U Got the Look"
  },
- "413-3262-While My Guitar Gently Weeps": {
-  "source": "deezer",
-  "id": "1892177317",
-  "was": "While My Guitar Gently Weeps"
- },
  "414-147-Could I Have This Kiss Forever": {
   "source": "musicbrainz",
   "id": "f13e515d-06fe-45ad-a03c-23bb02207337",
@@ -74869,16 +73324,6 @@
   "id": "1089773472",
   "was": "Background"
  },
- "4097-908-Noel (Live)": {
-  "source": "deezer",
-  "id": "110147994",
-  "was": "God Only Knows"
- },
- "908-4116-How Great Thou Art (Until That Day) (Live)": {
-  "source": "deezer",
-  "id": "3189440691",
-  "was": "You Are Good"
- },
  "908-4261-Holy Is the Lord": {
   "source": "deezer",
   "id": "95774242",
@@ -74894,19 +73339,14 @@
   "id": "990250622",
   "was": "Open Heaven River Wild"
  },
- "4098-4153-My Heart Is Overwhelmed": {
-  "source": "deezer",
-  "id": "70411602",
-  "was": "What a Beautiful Name"
- },
  "910-4146-Graves into Gardens": {
-  "source": "deezer",
-  "id": "943155852",
+  "source": "musicbrainz",
+  "id": "d5f9102f-814b-4d73-ba30-62f371dae6b8",
   "was": "Graves into Gardens"
  },
  "910-4147-The Blessing (Live)": {
-  "source": "deezer",
-  "id": "904695312",
+  "source": "musicbrainz",
+  "id": "790e0a4d-5420-48ee-ba9e-a0a5fdd86d39",
   "was": "There Is a King"
  },
  "910-938-Mercy": {
@@ -74976,7 +73416,7 @@
  },
  "4099-4147-Holy Spirit (Live)": {
   "source": "deezer",
-  "id": "75945990",
+  "id": "107350238",
   "was": "The Garden"
  },
  "4100-4204-Bleed The Same": {
@@ -74993,11 +73433,6 @@
   "source": "musicbrainz",
   "id": "e2e322bb-2203-43af-aa28-8652a8021208",
   "was": "Heaven"
- },
- "4101-4122-Through It All (Live)": {
-  "source": "deezer",
-  "id": "3651867352",
-  "was": "Just Like That"
  },
  "4102-12-I'm Getting Ready": {
   "source": "deezer",
@@ -75039,11 +73474,6 @@
   "id": "1065569522",
   "was": "There Will Be a Day"
  },
- "4116-4260-Great Are You Lord (Live)": {
-  "source": "deezer",
-  "id": "462926782",
-  "was": "Your Grace Finds Me"
- },
  "4116-5660-Blessed Be Your Name": {
   "source": "deezer",
   "id": "73724675",
@@ -75070,8 +73500,8 @@
   "was": "Take It All"
  },
  "4123-4101-When You Love": {
-  "source": "deezer",
-  "id": "2926371",
+  "source": "musicbrainz",
+  "id": "64701923-a357-4f81-961c-70d4face6559",
   "was": "Holy Spirit"
  },
  "4124-4127-Chain Breaker 2.5": {
@@ -75119,16 +73549,6 @@
   "id": "2365863265",
   "was": "House of God"
  },
- "4146-910-Blessings Everywhere (Live)": {
-  "source": "deezer",
-  "id": "1843215507",
-  "was": "Praise"
- },
- "4147-4099-Our God Reigns (Over All The Earth) (Live)": {
-  "source": "deezer",
-  "id": "3348834061",
-  "was": "Nothing Else"
- },
  "4148-908-As For Me": {
   "source": "deezer",
   "id": "1249401732",
@@ -75143,11 +73563,6 @@
   "source": "deezer",
   "id": "1104002652",
   "was": "Touch the Sky"
- },
- "4152-4098-Mighty to Save": {
-  "source": "deezer",
-  "id": "71124767",
-  "was": "Mighty to Save"
  },
  "4153-4098-Be Still": {
   "source": "deezer",
@@ -75229,25 +73644,10 @@
   "id": "3492079941",
   "was": "When I Speak Your Name"
  },
- "4187-939-There Is a Name (Live)": {
-  "source": "deezer",
-  "id": "3491793281",
-  "was": "Wild Heart"
- },
- "4188-4148-Let The Light In (Live)": {
-  "source": "deezer",
-  "id": "709618192",
-  "was": "Good Good Father"
- },
  "4217-908-Kyrie Eleison": {
   "source": "deezer",
   "id": "134519508",
   "was": "Christ Is Risen"
- },
- "4231-4108-El Shaddai (Live)": {
-  "source": "deezer",
-  "id": "112657700",
-  "was": "I Believe in You"
  },
  "4237-4234-Mary, Did You Know?": {
   "source": "deezer",
@@ -75258,21 +73658,6 @@
   "source": "deezer",
   "id": "3492088361",
   "was": "Calling Out to You"
- },
- "4260-908-White Flag": {
-  "source": "deezer",
-  "id": "16644599",
-  "was": "White Flag"
- },
- "4260-5661-Forever Reign": {
-  "source": "deezer",
-  "id": "9969463",
-  "was": "Forever Reign"
- },
- "4172-4170-My Worship (Live)": {
-  "source": "deezer",
-  "id": "2423910245",
-  "was": "El Elyon"
  },
  "4131-4124-Cry On": {
   "source": "deezer",
@@ -75946,7 +74331,7 @@
  },
  "953-2888-Un Año (En Vivo)": {
   "source": "deezer",
-  "id": "767377342",
+  "id": "616987572",
   "was": "Perfecta"
  },
  "416-2581-la luz(Fín)": {
@@ -75985,8 +74370,8 @@
   "was": "Vino Tinto"
  },
  "2870-2943-Mi 45 (En Vivo)": {
-  "source": "deezer",
-  "id": "634992522",
+  "source": "musicbrainz",
+  "id": "323f8a36-ff84-4f51-b741-3b65c0f7ec0f",
   "was": "El Oso"
  },
  "2870-4460-Señor Zambada": {
@@ -76454,11 +74839,6 @@
   "id": "2361029865",
   "was": "El Watan"
  },
- "1906-1907-Aicha": {
-  "source": "deezer",
-  "id": "1584478",
-  "was": "Aicha"
- },
  "1906-3903-Soukane El Batima": {
   "source": "deezer",
   "id": "2660740472",
@@ -76744,11 +75124,6 @@
   "id": "2609821432",
   "was": "Teresa & Maria"
  },
- "4762-4773-Xronia Polla (Live)": {
-  "source": "deezer",
-  "id": "1604626752",
-  "was": "Greek Songwriting"
- },
  "4780-4781-Așa Ceva": {
   "source": "deezer",
   "id": "3326196641",
@@ -76833,11 +75208,6 @@
   "source": "musicbrainz",
   "id": "bdafc617-be98-4c1b-b154-10f3723bd329",
   "was": "BGYO x BINI"
- },
- "4847-4846-The Ordertaker (Live)": {
-  "source": "deezer",
-  "id": "2083936407",
-  "was": "Huwag Na Huwag Mong Sasabihin"
  },
  "4853-4854-Desiderata": {
   "source": "deezer",
@@ -77690,8 +76060,8 @@
   "was": "Singing in the Shower"
  },
  "5679-5680-You've Got a Friend": {
-  "source": "deezer",
-  "id": "68945966",
+  "source": "musicbrainz",
+  "id": "4402c8cd-59f4-48f0-a118-f779f6d883ea",
   "was": "You've Got a Friend"
  },
  "5188-3413-I've Been Loving You Too Long (To Stop Now)": {
@@ -77853,11 +76223,6 @@
   "source": "deezer",
   "id": "623348342",
   "was": "Baby I'm Yours"
- },
- "2454-5771-Presentazione": {
-  "source": "musicbrainz",
-  "id": "caa5cc66-317a-49cb-bb28-266ca15ba93e",
-  "was": "Fabrizio De André"
  },
  "5772-2454-La guerra di Piero": {
   "source": "deezer",
@@ -78024,11 +76389,6 @@
   "id": "98068146",
   "was": "Prison Riot"
  },
- "2772-5897-I wish (Live 2019 FNC KINGDOM -WINTER FOREST CAMP-@Makuhari International Exhibition Halls, Chiba)": {
-  "source": "deezer",
-  "id": "1056101132",
-  "was": "Gorgeous"
- },
  "1393-1345-One Love Version": {
   "source": "deezer",
   "id": "3418615041",
@@ -78075,8 +76435,8 @@
   "was": "Don't Wanna Know"
  },
  "1336-5260-Looking Into You (Remastered) (Live)": {
-  "source": "deezer",
-  "id": "124354150",
+  "source": "musicbrainz",
+  "id": "306cd2c4-e3aa-49e6-aa6a-f455fde4648f",
   "was": "James Dean"
  },
  "1444-219-Oye Mi Canto": {
@@ -78148,11 +76508,6 @@
   "source": "deezer",
   "id": "446068332",
   "was": "Jigelu Rani"
- },
- "2454-5771-Verranno a chiederti del nostro amore": {
-  "source": "musicbrainz",
-  "id": "2ca096ec-1d14-475b-a291-575fbce66096",
-  "was": "La buona novella"
  },
  "2454-2453-Crêuza de mä pe Zêna": {
   "source": "deezer",
@@ -78381,7 +76736,7 @@
  },
  "3185-2998-La Calle (En Vivo Estadio Olímpico De República Dominicana/2012)": {
   "source": "deezer",
-  "id": "67359710",
+  "id": "13470761",
   "was": "¿Quién Mató a los Dinosaurios?"
  },
  "3185-5058-Dios Así Lo Quiso": {
@@ -78396,7 +76751,7 @@
  },
  "2991-2990-Salsa Pa' Olvidar las Penas (En Vivo desde Puerto Rico)": {
   "source": "deezer",
-  "id": "681403152",
+  "id": "472084852",
   "was": "La Fuerza del Amor"
  },
  "2991-5042-A Celia": {
@@ -78428,11 +76783,6 @@
   "source": "deezer",
   "id": "68658102",
   "was": "Resistiré"
- },
- "1606-5032-Alo (En Vivo)": {
-  "source": "deezer",
-  "id": "137877259",
-  "was": "Pegao"
  },
  "2989-2884-El Ultimo Adiós": {
   "source": "deezer",
@@ -78681,7 +77031,7 @@
  },
  "418-5020-Debate de 4": {
   "source": "musicbrainz",
-  "id": "9495bfcb-9801-4407-9b19-419a5a04cfe0",
+  "id": "c39fe27a-e28f-483a-9c33-f373e24bc769",
   "was": "Llorarás"
  },
  "3118-143-El Clavo": {
@@ -78788,16 +77138,6 @@
   "source": "deezer",
   "id": "429988092",
   "was": "Vivir Lo Nuestro"
- },
- "5044-2991-Vivir Sin Ella (En Vivo desde Puerto Rico)": {
-  "source": "deezer",
-  "id": "681403162",
-  "was": "Que Siento"
- },
- "5047-2991-Vivir Sin Ella (En Vivo desde Puerto Rico)": {
-  "source": "deezer",
-  "id": "681403162",
-  "was": "El Torero"
  },
  "2997-2976-La Tierra del Olvido (2015)": {
   "source": "deezer",
@@ -79220,8 +77560,8 @@
   "was": "Invisible Touch"
  },
  "5161-3229-The Thrill Is Gone (Live)": {
-  "source": "deezer",
-  "id": "4318073842",
+  "source": "musicbrainz",
+  "id": "84605168-3a39-4c91-9499-b12e110105b2",
   "was": "Behind the Sun"
  },
  "5162-5163-The Silent Sun": {
@@ -79335,8 +77675,8 @@
   "was": "Music from Big Pink"
  },
  "5182-3264-Knockin' on Heaven's Door (Live at Madison Square Garden, New York, NY - January 1974)": {
-  "source": "deezer",
-  "id": "7511277",
+  "source": "musicbrainz",
+  "id": "199d1b3d-584e-45b0-91b2-436a2d488b45",
   "was": "Planet Waves"
  },
  "5183-3264-Does She Need Me": {
@@ -79403,11 +77743,6 @@
   "source": "deezer",
   "id": "77770269",
   "was": "The Magnificent 7"
- },
- "3423-3409-I Just Can’t Stop Loving You": {
-  "source": "musicbrainz",
-  "id": "80d031c8-5e90-4e6d-b172-a7c2d410822f",
-  "was": "Neither One of Us"
  },
  "53-5197-Don't Go Breaking My Heart": {
   "source": "deezer",
@@ -79701,13 +78036,8 @@
  },
  "5260-5261-Werewolves of London": {
   "source": "musicbrainz",
-  "id": "33235ba3-5b1f-4ade-9007-1c6bea68af10",
+  "id": "b11223ac-4322-4036-9602-6d6b26b61ae4",
   "was": "Werewolves of London"
- },
- "5138-3229-Bluebird (Live at Crypto.com Arena, Los Angeles, CA, 9/23/2023)": {
-  "source": "deezer",
-  "id": "3095460111",
-  "was": "Love the One You're With"
  },
  "5178-3229-Glad (Live from Madison Square Garden)": {
   "source": "deezer",
@@ -80181,7 +78511,7 @@
  },
  "95-5956-Andromeda": {
   "source": "musicbrainz",
-  "id": "9b2f91f5-9ef3-4d82-93e3-3f7f5fc8c673",
+  "id": "6f1ed72d-31b2-4786-b480-0a92b76dc8cc",
   "was": "Andromeda"
  },
  "97-61-Mile High": {
@@ -81619,11 +79949,6 @@
   "id": "68528885",
   "was": "People Talking"
  },
- "1416-648-Crazy Balheads (Live)": {
-  "source": "deezer",
-  "id": "2721836602",
-  "was": "Nail Pon Cross"
- },
  "1416-1358-Iron Bars": {
   "source": "deezer",
   "id": "623712552",
@@ -81804,11 +80129,6 @@
   "id": "103468178",
   "was": "Si jamais j'oublie"
  },
- "1878-1879-Viens on s'aime": {
-  "source": "musicbrainz",
-  "id": "52513107-a7b2-42e8-b4c8-b001500fb3ae",
-  "was": "La nuit nous appartient"
- },
  "1903-6051-Plus bleu que tes yeux": {
   "source": "deezer",
   "id": "89311501",
@@ -81945,8 +80265,8 @@
   "was": "Metiendo Mano!"
  },
  "2996-6058-Buscando América": {
-  "source": "deezer",
-  "id": "3105321581",
+  "source": "musicbrainz",
+  "id": "a16300b8-348e-4fa7-9ce7-43705fef3c22",
   "was": "Buscando América"
  },
  "3184-2993-R.M.M. Ritmo Mundo Musical": {
@@ -81964,14 +80284,9 @@
   "id": "13556378",
   "was": "La Nina"
  },
- "3224-19-Gimme Shelter": {
-  "source": "deezer",
-  "id": "2135214217",
-  "was": "Gimme Shelter"
- },
  "3224-200-Loving Cup": {
   "source": "musicbrainz",
-  "id": "ec65f1b1-8000-4a55-a187-a3a2e09402c2",
+  "id": "a3352c5c-4076-43eb-a4ac-c0e9a395d779",
   "was": "Ride 'Em On Down"
  },
  "3282-5482-Little Know It All": {
@@ -81993,11 +80308,6 @@
   "source": "deezer",
   "id": "3660914662",
   "was": "Century"
- },
- "3359-3336-You and I": {
-  "source": "musicbrainz",
-  "id": "24d9868f-8055-4552-a861-2050c411144c",
-  "was": "You and I"
  },
  "3361-5904-I Got a Man Crazy for Me (He's Funny That Way)": {
   "source": "musicbrainz",
@@ -82063,11 +80373,6 @@
   "source": "musicbrainz",
   "id": "60346222-d163-4889-a165-b30c5f015c48",
   "was": "Can We"
- },
- "3482-413-Jungle Love": {
-  "source": "musicbrainz",
-  "id": "53289443-1b71-46e0-b873-39dd8ef35e35",
-  "was": "Jungle Love"
  },
  "3486-413-Manic Monday": {
   "source": "musicbrainz",
@@ -82163,11 +80468,6 @@
   "source": "deezer",
   "id": "502745142",
   "was": "Harlequin"
- },
- "3566-3426-In a Silent Way": {
-  "source": "deezer",
-  "id": "1464113842",
-  "was": "In a Silent Way"
  },
  "3566-3567-Bitches Brew": {
   "source": "deezer",
@@ -82623,11 +80923,6 @@
   "source": "deezer",
   "id": "15762725",
   "was": "Senza Fine"
- },
- "2617-6095-Quando / Lontano, Lontano / Una brava ragazza / Mi sono innamorato di te (Omaggio a Tenco) (Live)": {
-  "source": "deezer",
-  "id": "3949598721",
-  "was": "La nostra estate"
  },
  "2607-5937-Un po' come la vita": {
   "source": "deezer",
@@ -83115,8 +81410,8 @@
   "was": "Memory Motel"
  },
  "3224-1323-Live with Me": {
-  "source": "deezer",
-  "id": "781045432",
+  "source": "musicbrainz",
+  "id": "06a57f83-d4e2-4512-96f8-279dcf702a5f",
   "was": "Live with Me"
  },
  "3635-1027-Without You I'm Nothing": {
@@ -83476,13 +81771,8 @@
  },
  "1242-1249-Streets of Bakersfield": {
   "source": "deezer",
-  "id": "5620452",
+  "id": "712595662",
   "was": "Streets of Bakersfield"
- },
- "1242-1323-On the Road Again (Live at The Hollywood Bowl, Los Angeles, CA - April 30, 2023)": {
-  "source": "deezer",
-  "id": "2749475171",
-  "was": "I Ain't Never / Long White Cadillac"
  },
  "1243-5686-Hold On Partner": {
   "source": "deezer",
@@ -83575,8 +81865,8 @@
   "was": "Good Man, Good Woman"
  },
  "1324-6088-Rock Steady": {
-  "source": "deezer",
-  "id": "3403545",
+  "source": "musicbrainz",
+  "id": "b2d05f40-7e89-476c-b8db-565d63d007cf",
   "was": "Rock Steady"
  },
  "1324-6171-Merry Christmas Baby": {
@@ -83625,8 +81915,8 @@
   "was": "Desperados Waiting for a Train"
  },
  "1330-6172-Strawberry Fields Forever (Live)": {
-  "source": "deezer",
-  "id": "2404054905",
+  "source": "musicbrainz",
+  "id": "cd9e5c76-9326-4c5b-aca4-1b2559fbef68",
   "was": "The Dark"
  },
  "1331-1325-If I Needed You": {
@@ -83946,7 +82236,7 @@
  },
  "2013-6224-Wind of Change": {
   "source": "musicbrainz",
-  "id": "6f1474e2-7d74-41ee-9641-d262f8f0bb04",
+  "id": "eeb45d66-062d-48dd-a613-b290a9770066",
   "was": "Wind of Change"
  },
  "2177-6225-Up Where We Belong": {
@@ -83963,11 +82253,6 @@
   "source": "musicbrainz",
   "id": "92e41148-5547-4c5e-9e32-51455f7a7ac2",
   "was": "Un Sasso Nel Cuore"
- },
- "3071-51-Wild Horses (Unplugged Live at the Brooklyn Academy of Music, Brooklyn, NY - July 2005)": {
-  "source": "deezer",
-  "id": "15413116",
-  "was": "Wild Heart"
  },
  "474-238-Drogba (Joanna)": {
   "source": "deezer",
@@ -84565,8 +82850,8 @@
   "was": "Here Comes the Weekend"
  },
  "156-6272-Santa Claus Is Coming To Town (Live At Jingleball, New York / 2016)": {
-  "source": "deezer",
-  "id": "138419999",
+  "source": "musicbrainz",
+  "id": "706a9846-20be-470c-b4de-d2cb9ea4dc66",
   "was": "Rule the World"
  },
  "21-2-Consideration": {
@@ -84755,8 +83040,8 @@
   "was": "F**kWithMeYouKnowIGotIt"
  },
  "4-6280-Big Pimpin'": {
-  "source": "deezer",
-  "id": "537853932",
+  "source": "musicbrainz",
+  "id": "1bb94b21-71f1-4d36-b90d-4c3cefa0fd91",
   "was": "Big Pimpin'"
  },
  "4-1985-Fiesta (Remix)": {
@@ -85158,11 +83443,6 @@
   "source": "deezer",
   "id": "90944597",
   "was": "I Told You So"
- },
- "256-1204-How Great Thou Art": {
-  "source": "deezer",
-  "id": "90944617",
-  "was": "How Great Thou Art"
  },
  "5-3082-Naughty Girl (featuring Lil' Kim)": {
   "source": "deezer",
@@ -86061,7 +84341,7 @@
  },
  "403-77-Girl, So Confusing (Remix)": {
   "source": "musicbrainz",
-  "id": "2ce74463-e581-4801-accd-78c85a7d65ff",
+  "id": "a7dc47a9-a19b-473d-836f-5c981327654c",
   "was": "Girl, So Confusing (Remix)"
  },
  "67-5982-Leave Before You Love Me": {
@@ -86468,21 +84748,6 @@
   "source": "musicbrainz",
   "id": "a321f23d-ebe1-4ab6-a766-250e26c1e900",
   "was": "Still Life"
- },
- "3230-5511-Somebody to Love": {
-  "source": "musicbrainz",
-  "id": "7b5dafef-26d2-4ad0-9a52-1723ae26a6ec",
-  "was": "Somebody to Love"
- },
- "3230-6358-Sunday Rain": {
-  "source": "musicbrainz",
-  "id": "1a5bed27-904f-4141-818b-5f1def07bec3",
-  "was": "Medicine at Midnight"
- },
- "3230-6300-Cherry Bomb": {
-  "source": "musicbrainz",
-  "id": "afb0c166-b715-4018-9aae-8254c97d73b8",
-  "was": "Cherry Bomb"
  },
  "238-11-Essence (Remix)": {
   "source": "deezer",
@@ -87049,11 +85314,6 @@
   "id": "2681813642",
   "was": "Orgulhoso"
  },
- "42-6382-Human Heart": {
-  "source": "musicbrainz",
-  "id": "e513b7e0-4a79-4a92-a679-50f317eb881d",
-  "was": "Human Heart"
- },
  "42-5537-MOON MUSiC": {
   "source": "deezer",
   "id": "3024257731",
@@ -87088,11 +85348,6 @@
   "source": "deezer",
   "id": "2159722407",
   "was": "Oil"
- },
- "198-1602-You've Got the Dirtee Love": {
-  "source": "deezer",
-  "id": "7561786",
-  "was": "You've Got the Dirtee Love"
  },
  "240-244-Tanana": {
   "source": "deezer",
@@ -87254,20 +85509,10 @@
   "id": "611666282",
   "was": "Rivals"
  },
- "52-106-Session 32 / Come Thru (live)": {
-  "source": "musicbrainz",
-  "id": "17469dbb-2b0c-4c12-8f88-10916a1523f0",
-  "was": "Come Back to Me"
- },
  "51-1-Un-Thinkable (Remix)": {
   "source": "deezer",
   "id": "6270376",
   "was": "Un-Thinkable (Remix)"
- },
- "51-1025-Love It or Leave It Alone/Welcome to Jamrock (Unplugged Live at the Brooklyn Academy of Music, Brooklyn, NY - July 2005)": {
-  "source": "deezer",
-  "id": "3578398621",
-  "was": "We Fight / We Love"
  },
  "157-3146-Easy": {
   "source": "deezer",
@@ -87605,8 +85850,8 @@
   "was": "La Modelo"
  },
  "100-219-Baila Baila (Live) (Remix)": {
-  "source": "deezer",
-  "id": "1183706212",
+  "source": "musicbrainz",
+  "id": "3ea0517b-f8ed-42ac-aabe-2caf1a6980c6",
   "was": "Explícame"
  },
  "100-143-X": {
@@ -88003,11 +86248,6 @@
   "source": "deezer",
   "id": "627112892",
   "was": "Who Did That to You"
- },
- "417-17-Ocean Eyes (Remix)": {
-  "source": "musicbrainz",
-  "id": "05916d68-28c9-4d8a-ac46-26c58f0750fe",
-  "was": "Ocean Eyes (Remix)"
  },
  "205-426-Can’t Catch Me": {
   "source": "musicbrainz",
@@ -89199,16 +87439,6 @@
   "id": "40718be5-b4a3-4310-844c-2e076e0faa3d",
   "was": "Bicycle Race"
  },
- "3230-6480-Everlong": {
-  "source": "musicbrainz",
-  "id": "cfe050db-c4f4-41f9-81ea-302e9fbd2877",
-  "was": "Shame Shame (Remix)"
- },
- "3230-6358-Come Together": {
-  "source": "musicbrainz",
-  "id": "e2abbf45-8a8e-4d8e-ae44-859ecc7bd330",
-  "was": "Hanukkah Sessions"
- },
  "238-630-Ojuelegba (Remix)": {
   "source": "musicbrainz",
   "id": "731de162-4814-48c6-b11a-04f172068b42",
@@ -89411,7 +87641,7 @@
  },
  "3-83-Off the Grid": {
   "source": "musicbrainz",
-  "id": "31c0a580-336c-446e-9ba7-ec549e53dc26",
+  "id": "c6dad483-f491-4a19-854f-eadd01eab465",
   "was": "Off the Grid"
  },
  "3-4-Drunk in Love Remix": {
@@ -90002,11 +88232,6 @@
  "3111-3409-We Are the World": {
   "source": "deezer",
   "id": "3613771402",
-  "was": "We Are the World"
- },
- "11-48-Overboard (Live)": {
-  "source": "deezer",
-  "id": "9836967",
   "was": "We Are the World"
  },
  "11-129-Where You Go I Follow": {
@@ -91765,8 +89990,8 @@
   "was": "How Long (remix)"
  },
  "47-156-Santa Claus Is Coming To Town (Live At Jingleball, New York / 2016)": {
-  "source": "deezer",
-  "id": "138419999",
+  "source": "musicbrainz",
+  "id": "706a9846-20be-470c-b4de-d2cb9ea4dc66",
   "was": "Lie to Me"
  },
  "101-1534-Love Goes": {
@@ -92291,7 +90516,7 @@
  },
  "219-100-No Quiere Enamorarse (Live) (Remix)": {
   "source": "deezer",
-  "id": "1183706202",
+  "id": "704074932",
   "was": "Mayor Que Yo 3"
  },
  "219-222-Tumba la Casa (Remix)": {
@@ -92869,11 +91094,6 @@
   "id": "3604476292",
   "was": "La Frontera"
  },
- "3562-5214-Rock’n’Roll Jelly": {
-  "source": "musicbrainz",
-  "id": "98d47f54-2469-4540-8e1d-27214f5565cb",
-  "was": "Hello Jeff (Journey to Love)"
- },
  "3675-1602-Bluku! Bluku!": {
   "source": "deezer",
   "id": "12639316",
@@ -93061,7 +91281,7 @@
  },
  "525-4170-Hallelujah": {
   "source": "deezer",
-  "id": "2481020241",
+  "id": "1434056612",
   "was": "Hallelujah"
  },
  "525-6693-Oba Awon Oba": {
@@ -93248,11 +91468,6 @@
   "source": "deezer",
   "id": "2420511235",
   "was": "Ammunition (Relient K Version)"
- },
- "4230-4110-Faithful Friend": {
-  "source": "deezer",
-  "id": "3748080",
-  "was": "Faithful Friend"
  },
  "4612-6706-Ey Bikhabar": {
   "source": "deezer",
@@ -93511,32 +91726,32 @@
  },
  "458-457-Emcimbini": {
   "source": "deezer",
-  "id": "2221156017",
+  "id": "3509033921",
   "was": "Emcimbini"
  },
  "550-457-Emcimbini": {
-  "source": "deezer",
-  "id": "2221156017",
+  "source": "musicbrainz",
+  "id": "9bb73901-c37b-4cc1-82f5-057202dc4a31",
   "was": "Emcimbini"
  },
  "545-457-Emcimbini": {
   "source": "deezer",
-  "id": "2221156017",
+  "id": "3509033921",
   "was": "Emcimbini"
  },
  "546-457-Emcimbini": {
   "source": "deezer",
-  "id": "2221156017",
+  "id": "3509033921",
   "was": "Emcimbini"
  },
  "458-457-Phoyisa": {
   "source": "deezer",
-  "id": "2221156117",
+  "id": "2215835757",
   "was": "Phoyisa"
  },
  "464-457-Phoyisa": {
   "source": "deezer",
-  "id": "2221156117",
+  "id": "2215835757",
   "was": "Phoyisa"
  },
  "458-457-Zaka": {
@@ -95034,11 +93249,6 @@
   "id": "698395412",
   "was": "Yo Te Quiero"
  },
- "1509-15-One Kiss/Real Groove (live from Studio 2054)": {
-  "source": "musicbrainz",
-  "id": "59f83af8-c36c-418e-b623-971d509e69f6",
-  "was": "Really Don't Like U"
- },
  "69-205-Sunshine": {
   "source": "deezer",
   "id": "62847158",
@@ -95511,7 +93721,7 @@
  },
  "3750-3-Off the Grid": {
   "source": "musicbrainz",
-  "id": "31c0a580-336c-446e-9ba7-ec549e53dc26",
+  "id": "c6dad483-f491-4a19-854f-eadd01eab465",
   "was": "Off the Grid"
  },
  "86-113-3 Headed Goat": {
@@ -95725,8 +93935,8 @@
   "was": "Hawái (Remix)"
  },
  "1174-219-Sola (Remix)": {
-  "source": "deezer",
-  "id": "1183706262",
+  "source": "musicbrainz",
+  "id": "cff11044-91fc-4185-a46d-abe259cf54f5",
   "was": "Sola (Remix)"
  },
  "3119-100-La Cama (Remix)": {
@@ -96231,7 +94441,7 @@
  },
  "3-13-Praise God": {
   "source": "musicbrainz",
-  "id": "5717892b-de8b-4f30-9667-de1ff6a4ac97",
+  "id": "10795497-ea74-4562-9e87-9690da221ee8",
   "was": "Praise God"
  },
  "124-11-Baby": {
@@ -96411,7 +94621,7 @@
  },
  "1972-5813-Beings": {
   "source": "musicbrainz",
-  "id": "8d86d1e9-0df9-4c3f-b514-8e8d36cc3397",
+  "id": "6a69f20f-dd32-41b1-8fd5-c780d8d057ca",
   "was": "(colhido 2023+)"
  },
  "667-1029-Look Good": {
@@ -96854,11 +95064,6 @@
   "id": "aa860f28-6c3f-4227-9a3e-35e3b2e4165b",
   "was": "(colhido 2023+)"
  },
- "2166-6094-Everybody's Talkin'": {
-  "source": "musicbrainz",
-  "id": "b5563454-404e-4f64-8425-6e283c6c0f3d",
-  "was": "(colhido 2023+)"
- },
  "639-3573-Call the Shots": {
   "source": "musicbrainz",
   "id": "1d4784c2-5ce4-4e9a-81bb-b2fcbbecc1b8",
@@ -96875,8 +95080,8 @@
   "was": "(colhido 2023+)"
  },
  "76-5952-Dear Theodosia": {
-  "source": "musicbrainz",
-  "id": "635560da-5842-4107-bf7e-8988486cf141",
+  "source": "deezer",
+  "id": "137041192",
   "was": "(colhido 2023+)"
  },
  "4330-6397-Soldier of the road": {
@@ -97130,13 +95335,13 @@
   "was": "(colhido 2023+)"
  },
  "4101-4129-Come Jesus Come": {
-  "source": "musicbrainz",
-  "id": "5ec3f2aa-a371-4a48-a2af-365cd811d9bb",
+  "source": "deezer",
+  "id": "3907272831",
   "was": "(colhido 2023+)"
  },
  "1188-4101-Come Jesus Come": {
-  "source": "musicbrainz",
-  "id": "52968e96-c313-4c5a-861f-861e4c7e69dc",
+  "source": "deezer",
+  "id": "3314477711",
   "was": "(colhido 2023+)"
  },
  "1204-1241-Praying Like Hell for Rain": {
@@ -97320,8 +95525,8 @@
   "was": "(colhido 2023+)"
  },
  "2416-2478-Piazza San Marco (live)": {
-  "source": "musicbrainz",
-  "id": "fb381a3a-1a89-4319-b612-ea5f9d710feb",
+  "source": "deezer",
+  "id": "3897830741",
   "was": "(colhido 2023+)"
  },
  "298-1097-A Tal Da Paz (Ao Vivo)": {
@@ -97330,8 +95535,8 @@
   "was": "(colhido 2023+)"
  },
  "432-457-Asambe (Live in London)": {
-  "source": "musicbrainz",
-  "id": "f9419605-05e9-4bb5-b62f-32f31d9e3957",
+  "source": "deezer",
+  "id": "3975693531",
   "was": "(colhido 2023+)"
  },
  "347-4043-Pra Não Falar Mal (Ao Vivo)": {
@@ -97352,6 +95557,456 @@
  "4146-4148-SAME GOD (ACOUSTIC) - IN THE ROOM!": {
   "source": "musicbrainz",
   "id": "fe86de39-f05e-4b35-95bc-efe903614694",
+  "was": "(colhido 2023+)"
+ },
+ "569-457-Tabela Hape": {
+  "source": "deezer",
+  "id": "2652947852",
+  "was": "Trust Fund (Live)"
+ },
+ "2433-2434-Himno A La Alegría": {
+  "source": "deezer",
+  "id": "1340888672",
+  "was": "Mi Soledad Y Yo (En Vivo)"
+ },
+ "2614-2165-Madre dolcissima": {
+  "source": "musicbrainz",
+  "id": "50cfd265-a620-4fb5-afd9-8ef8e222bc4b",
+  "was": "Eppure sentire (Un senso di te)"
+ },
+ "2856-152-911 (En Vivo)": {
+  "source": "deezer",
+  "id": "2041834357",
+  "was": "Boda Soñada"
+ },
+ "2874-2866-Bien Alerta (En Vivo) (En vivo)": {
+  "source": "deezer",
+  "id": "1883459207",
+  "was": "El Plan"
+ },
+ "2903-2856-La Envidia Se Dio Cuenta (En Vivo)": {
+  "source": "deezer",
+  "id": "1869530087",
+  "was": "El Número Uno"
+ },
+ "413-54-So What the Fuss (album version)": {
+  "source": "musicbrainz",
+  "id": "8406ceb5-3fa5-4bb1-b0bb-fde0ec3b5c8e",
+  "was": "Tell Me Something Good"
+ },
+ "3892-3891-Bayuma Bavida Kala": {
+  "source": "deezer",
+  "id": "1677397747",
+  "was": "Tokende ko voter"
+ },
+ "3825-3826-Quickly In Love (from \"King Kong\")": {
+  "source": "deezer",
+  "id": "832823472",
+  "was": "N'Kosi Sikelel iAfrica (Live: Rufaro Stadium, Harare, Zimbabwe 14 Feb '87)"
+ },
+ "3848-457-Ngwana Mani": {
+  "source": "deezer",
+  "id": "2215840227",
+  "was": "Trust Fund (Live)"
+ },
+ "4097-908-Noel (Live)": {
+  "source": "deezer",
+  "id": "110147994",
+  "was": "God Only Knows"
+ },
+ "908-4116-How Great Thou Art (Until That Day) (Live)": {
+  "source": "deezer",
+  "id": "3189440691",
+  "was": "You Are Good"
+ },
+ "4098-4153-My Heart Is Overwhelmed": {
+  "source": "deezer",
+  "id": "70411602",
+  "was": "What a Beautiful Name"
+ },
+ "4101-4122-Through It All (Live)": {
+  "source": "deezer",
+  "id": "3651867352",
+  "was": "Just Like That"
+ },
+ "4116-4260-Great Are You Lord (Live)": {
+  "source": "deezer",
+  "id": "462926782",
+  "was": "Your Grace Finds Me"
+ },
+ "4146-910-Blessings Everywhere (Live)": {
+  "source": "deezer",
+  "id": "1843215507",
+  "was": "Praise"
+ },
+ "4147-4099-Our God Reigns (Over All The Earth) (Live)": {
+  "source": "deezer",
+  "id": "3348834061",
+  "was": "Nothing Else"
+ },
+ "4152-4098-Mighty to Save": {
+  "source": "deezer",
+  "id": "71124767",
+  "was": "Mighty to Save"
+ },
+ "4187-939-There Is a Name (Live)": {
+  "source": "deezer",
+  "id": "3491793281",
+  "was": "Wild Heart"
+ },
+ "4188-4148-Let The Light In (Live)": {
+  "source": "deezer",
+  "id": "709618192",
+  "was": "Good Good Father"
+ },
+ "4231-4108-El Shaddai (Live)": {
+  "source": "deezer",
+  "id": "112657700",
+  "was": "I Believe in You"
+ },
+ "4260-908-White Flag": {
+  "source": "deezer",
+  "id": "16644599",
+  "was": "White Flag"
+ },
+ "4260-5661-Forever Reign": {
+  "source": "deezer",
+  "id": "9969463",
+  "was": "Forever Reign"
+ },
+ "4172-4170-My Worship (Live)": {
+  "source": "deezer",
+  "id": "2423910245",
+  "was": "El Elyon"
+ },
+ "4847-4846-American Junk": {
+  "source": "deezer",
+  "id": "2084669547",
+  "was": "The Ordertaker (Live)"
+ },
+ "1606-5032-Abracadabra (Remix)": {
+  "source": "deezer",
+  "id": "779689312",
+  "was": "Alo (En Vivo)"
+ },
+ "5044-2991-Caballo Viejo": {
+  "source": "deezer",
+  "id": "2725146281",
+  "was": "Vivir Sin Ella (En Vivo desde Puerto Rico)"
+ },
+ "5138-3229-Questions": {
+  "source": "musicbrainz",
+  "id": "9e392efe-138f-43d1-b512-8ea0f45ebab6",
+  "was": "Bluebird (Live at Crypto.com Arena, Los Angeles, CA, 9/23/2023)"
+ },
+ "1416-648-Violence In The Streets (Album Version)": {
+  "source": "deezer",
+  "id": "4190086",
+  "was": "Crazy Balheads (Live)"
+ },
+ "3224-19-Sweet Sounds Of Heaven": {
+  "source": "deezer",
+  "id": "2472547811",
+  "was": "Gimme Shelter"
+ },
+ "3482-413-The Latest Fashion": {
+  "source": "musicbrainz",
+  "id": "c960fe09-e45c-41f2-8281-47f898b6f0a4",
+  "was": "Jungle Love"
+ },
+ "3566-3426-Miles Runs the Voodoo Down": {
+  "source": "deezer",
+  "id": "7011529",
+  "was": "In a Silent Way"
+ },
+ "2617-6095-Aria di neve": {
+  "source": "musicbrainz",
+  "id": "4abe2500-5f6f-4441-a75d-459ef5f0264d",
+  "was": "Quando / Lontano, Lontano / Una brava ragazza / Mi sono innamorato di te (Omaggio a Tenco) (Live)"
+ },
+ "1242-1323-Baby Don't Go": {
+  "source": "deezer",
+  "id": "5621005",
+  "was": "On the Road Again (Live at The Hollywood Bowl, Los Angeles, CA - April 30, 2023)"
+ },
+ "2526-2993-R.M.M. Ritmo Mundo Musical": {
+  "source": "deezer",
+  "id": "25016501",
+  "was": "R.M.M. Ritmo Mundo Musical"
+ },
+ "4230-4110-Faithful Friend": {
+  "source": "deezer",
+  "id": "3748080",
+  "was": "Faithful Friend"
+ },
+ "414-4101-Bridge Over Troubled Water": {
+  "source": "musicbrainz",
+  "id": "fb66364d-fb1c-42b7-bb47-b550aa12b88a",
+  "was": "(colhido 2023+)"
+ },
+ "1189-3286-Truck Bed": {
+  "source": "musicbrainz",
+  "id": "8efd4652-aa11-4796-80a5-d025bac43193",
+  "was": "SOLD OUT"
+ },
+ "4326-5655-Comeback": {
+  "source": "deezer",
+  "id": "963368632",
+  "was": "Tiny Moves"
+ },
+ "2866-2871-El coach (en vivo)": {
+  "source": "musicbrainz",
+  "id": "b5dd78f2-fa91-402d-8b87-dfa450202cc5",
+  "was": "(colhido 2023+)"
+ },
+ "2859-2870-Fuerza - en vivo": {
+  "source": "musicbrainz",
+  "id": "321ac23e-1100-42ea-8e50-1e4b40ae4f64",
+  "was": "(colhido 2023+)"
+ },
+ "1358-1370-One Love (in support of UNICEF)": {
+  "source": "deezer",
+  "id": "1023598422",
+  "was": "Could You Be Loved (live)"
+ },
+ "3298-4673-Rise Again": {
+  "source": "deezer",
+  "id": "2022697247",
+  "was": "Rivers"
+ },
+ "2859-2958-Piensa en mi - en vivo": {
+  "source": "musicbrainz",
+  "id": "69767fa1-4243-4a90-ae13-e038ff06cdba",
+  "was": "(colhido 2023+)"
+ },
+ "2859-2958-Irrelevante - en vivo": {
+  "source": "musicbrainz",
+  "id": "6d18924a-b962-4e99-8fb8-3ed7565e90d6",
+  "was": "(colhido 2023+)"
+ },
+ "910-4146-So So Good (live)": {
+  "source": "musicbrainz",
+  "id": "87db7ac8-4f0e-4b32-96e4-fae3b95f2de9",
+  "was": "(colhido 2023+)"
+ },
+ "910-4189-So So Good (live)": {
+  "source": "musicbrainz",
+  "id": "87db7ac8-4f0e-4b32-96e4-fae3b95f2de9",
+  "was": "(colhido 2023+)"
+ },
+ "4146-4189-So So Good (live)": {
+  "source": "musicbrainz",
+  "id": "87db7ac8-4f0e-4b32-96e4-fae3b95f2de9",
+  "was": "(colhido 2023+)"
+ },
+ "908-4189-Song Of The Saints (Live)": {
+  "source": "musicbrainz",
+  "id": "ada08b40-b2bf-4a6b-8437-72206c51f5d1",
+  "was": "(colhido 2023+)"
+ },
+ "908-4181-Holy Forever (live from Good Friday)": {
+  "source": "musicbrainz",
+  "id": "99f392be-a8a9-4d73-a63f-98dbba2f6154",
+  "was": "(colhido 2023+)"
+ },
+ "908-4182-Holy Forever (live from Good Friday)": {
+  "source": "musicbrainz",
+  "id": "99f392be-a8a9-4d73-a63f-98dbba2f6154",
+  "was": "(colhido 2023+)"
+ },
+ "939-4149-One (live at Church)": {
+  "source": "musicbrainz",
+  "id": "664a0cd8-7d19-4dd8-b402-4dac8ad687dc",
+  "was": "(colhido 2023+)"
+ },
+ "1187-6404-When I Get Rich": {
+  "source": "deezer",
+  "id": "656116892",
+  "was": "Hollywood Nights"
+ },
+ "4099-4260-Center (live From Passion 2026)": {
+  "source": "musicbrainz",
+  "id": "9c7a2075-0689-4f59-9813-762bb073b2fc",
+  "was": "(colhido 2023+)"
+ },
+ "4099-4260-Holy Forever (live From Passion 2024)": {
+  "source": "musicbrainz",
+  "id": "33a8e5cb-9bd5-4849-a25c-0691f3400eef",
+  "was": "(colhido 2023+)"
+ },
+ "4099-4147-Firm Foundation (He Won't) / Great Are You Lord (Live From Europe)": {
+  "source": "musicbrainz",
+  "id": "a60c7158-867b-470b-8a9d-663d193379cb",
+  "was": "(colhido 2023+)"
+ },
+ "4099-4224-Obsession / Worthy Of It All (Live From Europe)": {
+  "source": "musicbrainz",
+  "id": "3be1822c-2037-43ce-9abe-e57775c7f42b",
+  "was": "(colhido 2023+)"
+ },
+ "4099-4147-Praise (Live From Europe)": {
+  "source": "musicbrainz",
+  "id": "185d38c4-3f9b-45bc-aab9-1d0de1275e94",
+  "was": "(colhido 2023+)"
+ },
+ "4099-4147-Run To The Father / Good Good Father (Live From Europe)": {
+  "source": "musicbrainz",
+  "id": "1841e00b-1e79-4706-a54e-508e4409996e",
+  "was": "(colhido 2023+)"
+ },
+ "4099-4224-Holy - Live": {
+  "source": "musicbrainz",
+  "id": "072937b2-0e5e-4798-947c-0f15bb69524e",
+  "was": "(colhido 2023+)"
+ },
+ "1184-4146-Talking to Jesus (Live from The Ryman)": {
+  "source": "musicbrainz",
+  "id": "ad45ec49-9f0f-45ad-9a76-7ee67ce298d7",
+  "was": "(colhido 2023+)"
+ },
+ "1184-4146-Intro + Talking to Jesus (Live From The Ryman)": {
+  "source": "musicbrainz",
+  "id": "78eef742-88cd-406e-ad6a-26463310d90b",
+  "was": "(colhido 2023+)"
+ },
+ "1686-6430-Gone Away": {
+  "source": "deezer",
+  "id": "550169652",
+  "was": "Night Life (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)"
+ },
+ "1325-3553-Corrine, Corrina": {
+  "source": "deezer",
+  "id": "585332512",
+  "was": "That Lovin' You Feelin' Again"
+ },
+ "1324-1325-Dixie Chicken": {
+  "source": "musicbrainz",
+  "id": "be4aac01-8b2b-4af9-9cb1-3251d1b35b1d",
+  "was": "Only the Lonely"
+ },
+ "1325-3264-My Blue Eyed Jane": {
+  "source": "musicbrainz",
+  "id": "d7f9446b-174f-45fe-bb64-d61952d6651f",
+  "was": "Only the Lonely"
+ },
+ "4116-4217-Unconditional - Live": {
+  "source": "musicbrainz",
+  "id": "6eca445c-4510-4931-81c9-c7148830c58f",
+  "was": "(colhido 2023+)"
+ },
+ "4125-5248-Imagine (Live)": {
+  "source": "musicbrainz",
+  "id": "d54efedf-12ea-418f-98b3-d46d3c04e1ec",
+  "was": "(colhido 2023+)"
+ },
+ "4102-4143-Great I Am (live)": {
+  "source": "musicbrainz",
+  "id": "d5cef81f-acd5-4acd-a097-8a443b130824",
+  "was": "(colhido 2023+)"
+ },
+ "4102-4146-This Is a Move (live From Greensboro)": {
+  "source": "musicbrainz",
+  "id": "c0580c6f-382a-4793-8400-98b9774d8c72",
+  "was": "(colhido 2023+)"
+ },
+ "5028-5034-Se Me Hace Agua La Boca": {
+  "source": "deezer",
+  "id": "4151005702",
+  "was": "A DORMIR JUNTITOS"
+ },
+ "4193-4260-Grave Robber (live From Passion 2024)": {
+  "source": "musicbrainz",
+  "id": "eb56a84d-eaaa-4f19-9eb7-0a0cf771e978",
+  "was": "(colhido 2023+)"
+ },
+ "4193-4260-It Really Is Amazing Grace (live From Passion 2026)": {
+  "source": "musicbrainz",
+  "id": "b2569e5a-5e0a-4a61-861c-06347a5c3aec",
+  "was": "(colhido 2023+)"
+ },
+ "4260-5661-Come, Lord Jesus (live From Passion 2024)": {
+  "source": "musicbrainz",
+  "id": "d78973e1-be76-4c74-9868-0cbf7ef1c9ef",
+  "was": "(colhido 2023+)"
+ },
+ "4260-5661-Come to Jesus (live From Passion 2025)": {
+  "source": "musicbrainz",
+  "id": "7e2ba317-f354-4d9d-aa2c-eb4a5cdcf59b",
+  "was": "(colhido 2023+)"
+ },
+ "4260-5661-Salvation Belongs to You (live From Passion 2024)": {
+  "source": "musicbrainz",
+  "id": "02a49d0f-ccbe-418f-a889-45f72021f664",
+  "was": "(colhido 2023+)"
+ },
+ "4260-5661-Praise Yahweh (live From Passion 2025)": {
+  "source": "musicbrainz",
+  "id": "0177f2e7-ff7d-497d-b6f4-ae3225faea4f",
+  "was": "(colhido 2023+)"
+ },
+ "4147-4260-Firm Foundation (He Won't) [live From Passion 2024]": {
+  "source": "musicbrainz",
+  "id": "6457d92c-6225-446c-b10a-6a1937ca732b",
+  "was": "(colhido 2023+)"
+ },
+ "4121-4143-Joy (live)": {
+  "source": "musicbrainz",
+  "id": "17a8d940-b20e-4b52-8ee7-b1c2a652cdf5",
+  "was": "(colhido 2023+)"
+ },
+ "4249-4250-Abba - Live": {
+  "source": "musicbrainz",
+  "id": "04bd3c41-af5a-4998-892d-71b48f69cb26",
+  "was": "(colhido 2023+)"
+ },
+ "4185-4250-Crowns Down - Live": {
+  "source": "musicbrainz",
+  "id": "0a2508bc-1b41-42ef-a9ef-de44395551cc",
+  "was": "(colhido 2023+)"
+ },
+ "4185-4250-My Help - Live": {
+  "source": "musicbrainz",
+  "id": "4becda7f-deba-4822-8a7b-2a16087286b8",
+  "was": "(colhido 2023+)"
+ },
+ "4224-4250-Joy (What The World Calls Foolish) - Live": {
+  "source": "musicbrainz",
+  "id": "2a53e22b-9b9d-4b5a-b761-16665239a715",
+  "was": "(colhido 2023+)"
+ },
+ "4158-4260-Glorious Day (live From Passion 2026)": {
+  "source": "musicbrainz",
+  "id": "ebdfb749-9510-4e80-b511-0c96a520be5c",
+  "was": "(colhido 2023+)"
+ },
+ "4158-5661-Glorious Day (live From Passion 2026)": {
+  "source": "musicbrainz",
+  "id": "ebdfb749-9510-4e80-b511-0c96a520be5c",
+  "was": "(colhido 2023+)"
+ },
+ "4147-4249-Taste And See (Live)": {
+  "source": "musicbrainz",
+  "id": "d10667df-e041-4952-9f95-4b8b2f5eeb92",
+  "was": "(colhido 2023+)"
+ },
+ "4143-4144-All (live)": {
+  "source": "musicbrainz",
+  "id": "d9bf2051-c788-4912-b047-bc2812ec0eca",
+  "was": "(colhido 2023+)"
+ },
+ "1650-5764-Spinning Away": {
+  "source": "deezer",
+  "id": "1053213992",
+  "was": "By This River (live at the Acropolis)"
+ },
+ "939-4184-Cathedral (Live At Church)": {
+  "source": "musicbrainz",
+  "id": "dc6b205f-66c1-41ca-be41-c132a963c461",
+  "was": "(colhido 2023+)"
+ },
+ "4183-4184-Cathedral (Live At Church)": {
+  "source": "musicbrainz",
+  "id": "dc6b205f-66c1-41ca-be41-c132a963c461",
   "was": "(colhido 2023+)"
  }
 }

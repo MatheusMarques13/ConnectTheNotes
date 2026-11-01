@@ -67,6 +67,13 @@ Cada uma dessas custou dado real ou quase custou:
 - **"Ao vivo" não é sinal de fabricação.** No sertanejo e no pagode o DVD ao vivo
   é o formato primário de lançamento. Purgar ao vivo apagaria repertório real.
   O eixo certo é *existe no catálogo × inventado*, nunca *ao vivo × estúdio*.
+- **Mas participação em show internacional não é feat.** A Olivia Rodrigo chamou
+  o David Byrne ao palco no Governors Ball e a gravação saiu num compacto: existe
+  no catálogo, e mesmo assim não é colaboração para o jogo. Linha internacional
+  cuja única prova é gravação ao vivo sai, a não ser que exista versão de estúdio
+  creditando os dois. O título pode não dizer "ao vivo": o sinal está na
+  descrição do MusicBrainz ("live, 2025-06-07: Gov Ball") e no tipo do
+  lançamento. A colheita já marca e recusa esses casos.
 - **Acústico ≠ ao vivo.** *Poesia Acústica* é cypher de estúdio.
 - **Membro de grupo.** Catálogos creditam "Migos" onde nós creditamos Offset e
   Quavo. Sem `data/artist_groups.json` a verificação de elenco os apagaria.

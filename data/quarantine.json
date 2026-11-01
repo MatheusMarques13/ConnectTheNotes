@@ -135199,6 +135199,5386 @@
    ],
    "reason": "mesmo artista em dois nos do elenco",
    "searched": 2
+  },
+  {
+   "row": [
+    200,
+    202,
+    "Cold Brains",
+    "live",
+    2012
+   ],
+   "line": "(200, 202, 'Cold Brains', 'live', 2012),",
+   "artists": [
+    "Jack White",
+    "Beck"
+   ],
+   "pair": [
+    "Jack White",
+    "Beck"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1199,
+    1204,
+    "The Love Bug (Live)",
+    "live",
+    2014
+   ],
+   "line": "(1199, 1204, 'The Love Bug (Live)', 'live', 2014),",
+   "artists": [
+    "George Strait",
+    "Vince Gill"
+   ],
+   "pair": [
+    "George Strait",
+    "Vince Gill"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1500,
+    1609,
+    "Line of Sight",
+    "song",
+    2017
+   ],
+   "line": "(1500, 1609, 'Line of Sight', 'song', 2017),",
+   "artists": [
+    "ODESZA",
+    "Naomi Wild"
+   ],
+   "pair": [
+    "ODESZA",
+    "Naomi Wild"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2184,
+    2315,
+    "Kehna Hi Kya (Live)",
+    "live",
+    2000
+   ],
+   "line": "(2184, 2315, 'Kehna Hi Kya (Live)', 'live', 2000),",
+   "artists": [
+    "A.R. Rahman",
+    "K.S. Chithra"
+   ],
+   "pair": [
+    "A.R. Rahman",
+    "K.S. Chithra"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2413,
+    2412,
+    "Il bello d'esser brutti",
+    "album",
+    2017
+   ],
+   "line": "(2413, 2412, \"Il bello d'esser brutti\", 'album', 2017),",
+   "artists": [
+    "Fedez",
+    "J-Ax"
+   ],
+   "pair": [
+    "Fedez",
+    "J-Ax"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2414,
+    2415,
+    "A mano a mano / Folle città",
+    "song",
+    2023
+   ],
+   "line": "(2414, 2415, 'A mano a mano / Folle città', 'song', 2023),",
+   "artists": [
+    "Achille Lauro",
+    "Elodie"
+   ],
+   "pair": [
+    "Achille Lauro",
+    "Elodie"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2476,
+    2415,
+    "Io di te non ho paura",
+    "song",
+    2016
+   ],
+   "line": "(2476, 2415, 'Io di te non ho paura', 'song', 2016),",
+   "artists": [
+    "Emma Marrone",
+    "Elodie"
+   ],
+   "pair": [
+    "Emma Marrone",
+    "Elodie"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2733,
+    233,
+    "Without You - Live",
+    "live",
+    2013
+   ],
+   "line": "(2733, 233, 'Without You - Live', 'live', 2013),",
+   "artists": [
+    "Lee Hi",
+    "G-Dragon"
+   ],
+   "pair": [
+    "Lee Hi",
+    "G-Dragon"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    255,
+    3265,
+    "Hey Jude",
+    "song",
+    2011
+   ],
+   "line": "(255, 3265, 'Hey Jude', 'song', 2011),",
+   "artists": [
+    "Paul McCartney",
+    "Neil Young"
+   ],
+   "pair": [
+    "Paul McCartney",
+    "Neil Young"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3240,
+    5512,
+    "Colour of the Trap",
+    "song",
+    2014
+   ],
+   "line": "(3240, 5512, 'Colour of the Trap', 'song', 2014),",
+   "artists": [
+    "Arctic Monkeys",
+    "Miles Kane"
+   ],
+   "pair": [
+    "Arctic Monkeys",
+    "Miles Kane"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3410,
+    3409,
+    "Ooo Baby Baby",
+    "song",
+    1979
+   ],
+   "line": "(3410, 3409, 'Ooo Baby Baby', 'song', 1979),",
+   "artists": [
+    "Aretha Franklin",
+    "Smokey Robinson"
+   ],
+   "pair": [
+    "Aretha Franklin",
+    "Smokey Robinson"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    413,
+    3483,
+    "Jungle Love",
+    "song",
+    1984
+   ],
+   "line": "(413, 3483, 'Jungle Love', 'song', 1984),",
+   "artists": [
+    "Prince",
+    "Morris Day"
+   ],
+   "pair": [
+    "Prince",
+    "Morris Day"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3455,
+    3451,
+    "Medley: By The Time I Get To Phoenix/I Say A Little Prayer (Live)",
+    "live",
+    2015
+   ],
+   "line": "(3455, 3451, 'Medley: By The Time I Get To Phoenix/I Say A Little Prayer (Live)', 'live', 2015),",
+   "artists": [
+    "Isaac Hayes",
+    "Dionne Warwick"
+   ],
+   "pair": [
+    "Isaac Hayes",
+    "Dionne Warwick"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1664,
+    53,
+    "The Bitch Is Back",
+    "song",
+    1993
+   ],
+   "line": "(1664, 53, 'The Bitch Is Back', 'song', 1993),",
+   "artists": [
+    "Tina Turner",
+    "Elton John"
+   ],
+   "pair": [
+    "Tina Turner",
+    "Elton John"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3441,
+    3827,
+    "N'Kosi Sikelel iAfrica (Live: Rufaro Stadium, Harare, Zimbabwe 14 Feb '87)",
+    "live",
+    2018
+   ],
+   "line": "(3441, 3827, \"N'Kosi Sikelel iAfrica (Live: Rufaro Stadium, Harare, Zimbabwe 14 Feb '87)\", 'live', 2018),",
+   "artists": [
+    "Paul Simon",
+    "Ladysmith Black Mambazo"
+   ],
+   "pair": [
+    "Paul Simon",
+    "Ladysmith Black Mambazo"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    248,
+    3360,
+    "Here We Go Again (Live)",
+    "live",
+    2011
+   ],
+   "line": "(248, 3360, 'Here We Go Again (Live)', 'live', 2011),",
+   "artists": [
+    "Willie Nelson",
+    "Norah Jones"
+   ],
+   "pair": [
+    "Willie Nelson",
+    "Norah Jones"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3846,
+    457,
+    "Phakathi Inside (Live)",
+    "live",
+    2020
+   ],
+   "line": "(3846, 457, 'Phakathi Inside (Live)', 'live', 2020),",
+   "artists": [
+    "Robot Boii",
+    "Kabza De Small"
+   ],
+   "pair": [
+    "Robot Boii",
+    "Kabza De Small"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3848,
+    458,
+    "Trust Fund (Live)",
+    "live",
+    2022
+   ],
+   "line": "(3848, 458, 'Trust Fund (Live)', 'live', 2022),",
+   "artists": [
+    "Mpura",
+    "DJ Maphorisa"
+   ],
+   "pair": [
+    "Mpura",
+    "DJ Maphorisa"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3827,
+    3825,
+    "N'Kosi Sikelel iAfrica (Live: Rufaro Stadium, Harare, Zimbabwe 14 Feb '87)",
+    "live",
+    2018
+   ],
+   "line": "(3827, 3825, \"N'Kosi Sikelel iAfrica (Live: Rufaro Stadium, Harare, Zimbabwe 14 Feb '87)\", 'live', 2018),",
+   "artists": [
+    "Ladysmith Black Mambazo",
+    "Miriam Makeba"
+   ],
+   "pair": [
+    "Ladysmith Black Mambazo",
+    "Miriam Makeba"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    249,
+    423,
+    "Midnight Summer Jam / Say Something (live at the BRITs)",
+    "live",
+    2018
+   ],
+   "line": "(249, 423, 'Midnight Summer Jam / Say Something (live at the BRITs)', 'live', 2018),",
+   "artists": [
+    "Chris Stapleton",
+    "Justin Timberlake"
+   ],
+   "pair": [
+    "Chris Stapleton",
+    "Justin Timberlake"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    413,
+    3262,
+    "While My Guitar Gently Weeps",
+    "song",
+    2004
+   ],
+   "line": "(413, 3262, 'While My Guitar Gently Weeps', 'song', 2004),",
+   "artists": [
+    "Prince",
+    "Tom Petty"
+   ],
+   "pair": [
+    "Prince",
+    "Tom Petty"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1906,
+    1907,
+    "Aicha",
+    "song",
+    1997
+   ],
+   "line": "(1906, 1907, 'Aicha', 'song', 1997),",
+   "artists": [
+    "Khaled",
+    "Faudel"
+   ],
+   "pair": [
+    "Khaled",
+    "Faudel"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    4762,
+    4773,
+    "Xronia Polla (Live)",
+    "live",
+    2021
+   ],
+   "line": "(4762, 4773, 'Xronia Polla (Live)', 'live', 2021),",
+   "artists": [
+    "Anna Vissi",
+    "Demy"
+   ],
+   "pair": [
+    "Anna Vissi",
+    "Demy"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2454,
+    5771,
+    "Presentazione",
+    "song",
+    2012
+   ],
+   "line": "(2454, 5771, 'Presentazione', 'song', 2012),",
+   "artists": [
+    "Fabrizio De André",
+    "PFM"
+   ],
+   "pair": [
+    "Fabrizio De André",
+    "PFM"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2772,
+    5897,
+    "I wish (Live 2019 FNC KINGDOM -WINTER FOREST CAMP-@Makuhari International Exhibition Halls, Chiba)",
+    "live",
+    2020
+   ],
+   "line": "(2772, 5897, 'I wish (Live 2019 FNC KINGDOM -WINTER FOREST CAMP-@Makuhari International Exhibition Halls, Chiba)', 'live', 2020),",
+   "artists": [
+    "N.Flying",
+    "FTIsland"
+   ],
+   "pair": [
+    "N.Flying",
+    "FTIsland"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2454,
+    5771,
+    "Verranno a chiederti del nostro amore",
+    "song",
+    2012
+   ],
+   "line": "(2454, 5771, 'Verranno a chiederti del nostro amore', 'song', 2012),",
+   "artists": [
+    "Fabrizio De André",
+    "PFM"
+   ],
+   "pair": [
+    "Fabrizio De André",
+    "PFM"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5047,
+    2991,
+    "Vivir Sin Ella (En Vivo desde Puerto Rico)",
+    "live",
+    2019
+   ],
+   "line": "(5047, 2991, 'Vivir Sin Ella (En Vivo desde Puerto Rico)', 'live', 2019),",
+   "artists": [
+    "Eddie Santiago",
+    "Gilberto Santa Rosa"
+   ],
+   "pair": [
+    "Eddie Santiago",
+    "Gilberto Santa Rosa"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3423,
+    3409,
+    "I Just Can’t Stop Loving You",
+    "song",
+    1973
+   ],
+   "line": "(3423, 3409, 'I Just Can’t Stop Loving You', 'song', 1973),",
+   "artists": [
+    "Gladys Knight",
+    "Smokey Robinson"
+   ],
+   "pair": [
+    "Gladys Knight",
+    "Smokey Robinson"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1878,
+    1879,
+    "Viens on s'aime",
+    "song",
+    2023
+   ],
+   "line": "(1878, 1879, \"Viens on s'aime\", 'song', 2023),",
+   "artists": [
+    "Zaz",
+    "Carla Bruni"
+   ],
+   "pair": [
+    "Zaz",
+    "Carla Bruni"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3359,
+    3336,
+    "You and I",
+    "song",
+    2009
+   ],
+   "line": "(3359, 3336, 'You and I', 'song', 2009),",
+   "artists": [
+    "Feist",
+    "Wilco"
+   ],
+   "pair": [
+    "Feist",
+    "Wilco"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3071,
+    51,
+    "Wild Horses (Unplugged Live at the Brooklyn Academy of Music, Brooklyn, NY - July 2005)",
+    "live",
+    2005
+   ],
+   "line": "(3071, 51, 'Wild Horses (Unplugged Live at the Brooklyn Academy of Music, Brooklyn, NY - July 2005)', 'live', 2005),",
+   "artists": [
+    "Adam Levine",
+    "Alicia Keys"
+   ],
+   "pair": [
+    "Adam Levine",
+    "Alicia Keys"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    256,
+    1204,
+    "How Great Thou Art",
+    "song",
+    2011
+   ],
+   "line": "(256, 1204, 'How Great Thou Art', 'song', 2011),",
+   "artists": [
+    "Carrie Underwood",
+    "Vince Gill"
+   ],
+   "pair": [
+    "Carrie Underwood",
+    "Vince Gill"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3230,
+    5511,
+    "Somebody to Love",
+    "song",
+    2007
+   ],
+   "line": "(3230, 5511, 'Somebody to Love', 'song', 2007),",
+   "artists": [
+    "Foo Fighters",
+    "Brian May"
+   ],
+   "pair": [
+    "Foo Fighters",
+    "Brian May"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3230,
+    6358,
+    "Sunday Rain",
+    "song",
+    2021
+   ],
+   "line": "(3230, 6358, 'Sunday Rain', 'song', 2021),",
+   "artists": [
+    "Foo Fighters",
+    "Greg Kurstin"
+   ],
+   "pair": [
+    "Foo Fighters",
+    "Greg Kurstin"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3230,
+    6300,
+    "Cherry Bomb",
+    "song",
+    2021
+   ],
+   "line": "(3230, 6300, 'Cherry Bomb', 'song', 2021),",
+   "artists": [
+    "Foo Fighters",
+    "Joan Jett"
+   ],
+   "pair": [
+    "Foo Fighters",
+    "Joan Jett"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    42,
+    6382,
+    "Human Heart",
+    "song",
+    2021
+   ],
+   "line": "(42, 6382, 'Human Heart', 'song', 2021),",
+   "artists": [
+    "Coldplay",
+    "We Are KING"
+   ],
+   "pair": [
+    "Coldplay",
+    "We Are KING"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    198,
+    1602,
+    "You've Got the Dirtee Love",
+    "song",
+    2010
+   ],
+   "line": "(198, 1602, \"You've Got the Dirtee Love\", 'song', 2010),",
+   "artists": [
+    "Florence + The Machine",
+    "Dizzee Rascal"
+   ],
+   "pair": [
+    "Florence + The Machine",
+    "Dizzee Rascal"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    52,
+    106,
+    "Session 32 / Come Thru (live)",
+    "live",
+    2020
+   ],
+   "line": "(52, 106, 'Session 32 / Come Thru (live)', 'live', 2020),",
+   "artists": [
+    "Usher",
+    "Summer Walker"
+   ],
+   "pair": [
+    "Usher",
+    "Summer Walker"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    51,
+    1025,
+    "Love It or Leave It Alone/Welcome to Jamrock (Unplugged Live at the Brooklyn Academy of Music, Brooklyn, NY - July 2005)",
+    "live",
+    2025
+   ],
+   "line": "(51, 1025, 'Love It or Leave It Alone/Welcome to Jamrock (Unplugged Live at the Brooklyn Academy of Music, Brooklyn, NY - July 2005)', 'live', 2025),",
+   "artists": [
+    "Alicia Keys",
+    "Common"
+   ],
+   "pair": [
+    "Alicia Keys",
+    "Common"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    417,
+    17,
+    "Ocean Eyes (Remix)",
+    "song",
+    2019
+   ],
+   "line": "(417, 17, 'Ocean Eyes (Remix)', 'song', 2019),",
+   "artists": [
+    "Lana Del Rey",
+    "Billie Eilish"
+   ],
+   "pair": [
+    "Lana Del Rey",
+    "Billie Eilish"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3230,
+    6480,
+    "Everlong",
+    "song",
+    2021
+   ],
+   "line": "(3230, 6480, 'Everlong', 'song', 2021),",
+   "artists": [
+    "Foo Fighters",
+    "Nandi Bushell"
+   ],
+   "pair": [
+    "Foo Fighters",
+    "Nandi Bushell"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3230,
+    6358,
+    "Come Together",
+    "song",
+    2021
+   ],
+   "line": "(3230, 6358, 'Come Together', 'song', 2021),",
+   "artists": [
+    "Foo Fighters",
+    "Greg Kurstin"
+   ],
+   "pair": [
+    "Foo Fighters",
+    "Greg Kurstin"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    11,
+    48,
+    "Overboard (Live)",
+    "live",
+    2011
+   ],
+   "line": "(11, 48, 'Overboard (Live)', 'live', 2011),",
+   "artists": [
+    "Justin Bieber",
+    "Miley Cyrus"
+   ],
+   "pair": [
+    "Justin Bieber",
+    "Miley Cyrus"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3562,
+    5214,
+    "Rock’n’Roll Jelly",
+    "song",
+    2009
+   ],
+   "line": "(3562, 5214, 'Rock’n’Roll Jelly', 'song', 2009),",
+   "artists": [
+    "Stanley Clarke",
+    "Jeff Beck"
+   ],
+   "pair": [
+    "Stanley Clarke",
+    "Jeff Beck"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1509,
+    15,
+    "One Kiss/Real Groove (live from Studio 2054)",
+    "live",
+    2020
+   ],
+   "line": "(1509, 15, 'One Kiss/Real Groove (live from Studio 2054)', 'live', 2020),",
+   "artists": [
+    "Kylie Minogue",
+    "Dua Lipa"
+   ],
+   "pair": [
+    "Kylie Minogue",
+    "Dua Lipa"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    42,
+    104,
+    "Let Somebody Go (Live at River Plate)",
+    "live",
+    2024
+   ],
+   "line": "(42, 104, 'Let Somebody Go (Live at River Plate)', 'live', 2024),",
+   "artists": [
+    "Coldplay",
+    "H.E.R."
+   ],
+   "pair": [
+    "Coldplay",
+    "H.E.R."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    20,
+    33,
+    "Still D.R.E.",
+    "song",
+    2024
+   ],
+   "line": "(20, 33, 'Still D.R.E.', 'song', 2024),",
+   "artists": [
+    "Kendrick Lamar",
+    "Dr. Dre"
+   ],
+   "pair": [
+    "Kendrick Lamar",
+    "Dr. Dre"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    20,
+    33,
+    "California Love",
+    "song",
+    2024
+   ],
+   "line": "(20, 33, 'California Love', 'song', 2024),",
+   "artists": [
+    "Kendrick Lamar",
+    "Dr. Dre"
+   ],
+   "pair": [
+    "Kendrick Lamar",
+    "Dr. Dre"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    33,
+    74,
+    "California Love",
+    "song",
+    2025
+   ],
+   "line": "(33, 74, 'California Love', 'song', 2025),",
+   "artists": [
+    "Dr. Dre",
+    "Anderson .Paak"
+   ],
+   "pair": [
+    "Dr. Dre",
+    "Anderson .Paak"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    33,
+    3484,
+    "California Love",
+    "song",
+    2025
+   ],
+   "line": "(33, 3484, 'California Love', 'song', 2025),",
+   "artists": [
+    "Dr. Dre",
+    "Sheila E."
+   ],
+   "pair": [
+    "Dr. Dre",
+    "Sheila E."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    74,
+    3484,
+    "California Love",
+    "song",
+    2025
+   ],
+   "line": "(74, 3484, 'California Love', 'song', 2025),",
+   "artists": [
+    "Anderson .Paak",
+    "Sheila E."
+   ],
+   "pair": [
+    "Anderson .Paak",
+    "Sheila E."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    33,
+    74,
+    "Still D.R.E.",
+    "song",
+    2025
+   ],
+   "line": "(33, 74, 'Still D.R.E.', 'song', 2025),",
+   "artists": [
+    "Dr. Dre",
+    "Anderson .Paak"
+   ],
+   "pair": [
+    "Dr. Dre",
+    "Anderson .Paak"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    33,
+    3484,
+    "Still D.R.E.",
+    "song",
+    2025
+   ],
+   "line": "(33, 3484, 'Still D.R.E.', 'song', 2025),",
+   "artists": [
+    "Dr. Dre",
+    "Sheila E."
+   ],
+   "pair": [
+    "Dr. Dre",
+    "Sheila E."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    74,
+    3484,
+    "Still D.R.E.",
+    "song",
+    2025
+   ],
+   "line": "(74, 3484, 'Still D.R.E.', 'song', 2025),",
+   "artists": [
+    "Anderson .Paak",
+    "Sheila E."
+   ],
+   "pair": [
+    "Anderson .Paak",
+    "Sheila E."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    128,
+    3484,
+    "Little Drummer Girl (live From the Eiffel Tower)",
+    "live",
+    2023
+   ],
+   "line": "(128, 3484, 'Little Drummer Girl (live From the Eiffel Tower)', 'live', 2023),",
+   "artists": [
+    "Christina Aguilera",
+    "Sheila E."
+   ],
+   "pair": [
+    "Christina Aguilera",
+    "Sheila E."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    630,
+    3437,
+    "Can’t Play Myself (A Tribute to Amy)",
+    "song",
+    2023
+   ],
+   "line": "(630, 3437, 'Can’t Play Myself (A Tribute to Amy)', 'song', 2023),",
+   "artists": [
+    "Skepta",
+    "Amy Winehouse"
+   ],
+   "pair": [
+    "Skepta",
+    "Amy Winehouse"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    70,
+    1501,
+    "Glow - Four Tet Duskus",
+    "song",
+    2024
+   ],
+   "line": "(70, 1501, 'Glow - Four Tet Duskus', 'song', 2024),",
+   "artists": [
+    "Skrillex",
+    "Fred again.."
+   ],
+   "pair": [
+    "Skrillex",
+    "Fred again.."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    50,
+    1277,
+    "Talk",
+    "song",
+    2023
+   ],
+   "line": "(50, 1277, 'Talk', 'song', 2023),",
+   "artists": [
+    "John Legend",
+    "Brandi Carlile"
+   ],
+   "pair": [
+    "John Legend",
+    "Brandi Carlile"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    50,
+    5982,
+    "I Believe",
+    "song",
+    2023
+   ],
+   "line": "(50, 5982, 'I Believe', 'song', 2023),",
+   "artists": [
+    "John Legend",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "John Legend",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    50,
+    1277,
+    "God Only Knows",
+    "song",
+    2023
+   ],
+   "line": "(50, 1277, 'God Only Knows', 'song', 2023),",
+   "artists": [
+    "John Legend",
+    "Brandi Carlile"
+   ],
+   "pair": [
+    "John Legend",
+    "Brandi Carlile"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1315,
+    3286,
+    "Flower Shops",
+    "song",
+    2024
+   ],
+   "line": "(1315, 3286, 'Flower Shops', 'song', 2024),",
+   "artists": [
+    "ERNEST",
+    "Nickelback"
+   ],
+   "pair": [
+    "ERNEST",
+    "Nickelback"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1190,
+    3286,
+    "Rockstar",
+    "song",
+    2024
+   ],
+   "line": "(1190, 3286, 'Rockstar', 'song', 2024),",
+   "artists": [
+    "Bailey Zimmerman",
+    "Nickelback"
+   ],
+   "pair": [
+    "Bailey Zimmerman",
+    "Nickelback"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2888,
+    2890,
+    "Que lloro (en vivo)",
+    "live",
+    2024
+   ],
+   "line": "(2888, 2890, 'Que lloro (en vivo)', 'live', 2024),",
+   "artists": [
+    "Reik",
+    "Sin Bandera"
+   ],
+   "pair": [
+    "Reik",
+    "Sin Bandera"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5842,
+    5982,
+    "I'm Yours",
+    "song",
+    2023
+   ],
+   "line": "(5842, 5982, \"I'm Yours\", 'song', 2023),",
+   "artists": [
+    "Jason Mraz",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "Jason Mraz",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3229,
+    5167,
+    "I Think I Love You Too Much",
+    "song",
+    2023
+   ],
+   "line": "(3229, 5167, 'I Think I Love You Too Much', 'song', 2023),",
+   "artists": [
+    "Eric Clapton",
+    "Dire Straits"
+   ],
+   "pair": [
+    "Eric Clapton",
+    "Dire Straits"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3229,
+    5167,
+    "Talk",
+    "song",
+    2023
+   ],
+   "line": "(3229, 5167, 'Talk', 'song', 2023),",
+   "artists": [
+    "Eric Clapton",
+    "Dire Straits"
+   ],
+   "pair": [
+    "Eric Clapton",
+    "Dire Straits"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1519,
+    5597,
+    "Shut Off The Lights – Ally Pally 2023",
+    "song",
+    2023
+   ],
+   "line": "(1519, 5597, 'Shut Off The Lights – Ally Pally 2023', 'song', 2023),",
+   "artists": [
+    "Bastille",
+    "Ella Eyre"
+   ],
+   "pair": [
+    "Bastille",
+    "Ella Eyre"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3228,
+    3241,
+    "Badlands",
+    "song",
+    2025
+   ],
+   "line": "(3228, 3241, 'Badlands', 'song', 2025),",
+   "artists": [
+    "Bruce Springsteen",
+    "The Killers"
+   ],
+   "pair": [
+    "Bruce Springsteen",
+    "The Killers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3228,
+    3241,
+    "Born to Run",
+    "song",
+    2025
+   ],
+   "line": "(3228, 3241, 'Born to Run', 'song', 2025),",
+   "artists": [
+    "Bruce Springsteen",
+    "The Killers"
+   ],
+   "pair": [
+    "Bruce Springsteen",
+    "The Killers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    16,
+    1142,
+    "LO QUE LE PASÓ A HAWAii",
+    "song",
+    2023
+   ],
+   "line": "(16, 1142, 'LO QUE LE PASÓ A HAWAii', 'song', 2023),",
+   "artists": [
+    "Bad Bunny",
+    "Ricky Martin"
+   ],
+   "pair": [
+    "Bad Bunny",
+    "Ricky Martin"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1697,
+    5982,
+    "She Looks So Perfect",
+    "song",
+    2023
+   ],
+   "line": "(1697, 5982, 'She Looks So Perfect', 'song', 2023),",
+   "artists": [
+    "5 Seconds of Summer",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "5 Seconds of Summer",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    35,
+    5982,
+    "Young Dumb & Broke",
+    "song",
+    2023
+   ],
+   "line": "(35, 5982, 'Young Dumb & Broke', 'song', 2023),",
+   "artists": [
+    "Khalid",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "Khalid",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3284,
+    5982,
+    "I'm Just a Kid",
+    "song",
+    2023
+   ],
+   "line": "(3284, 5982, \"I'm Just a Kid\", 'song', 2023),",
+   "artists": [
+    "Simple Plan",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "Simple Plan",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1201,
+    3093,
+    "From This Moment On (live from Miami/1999)",
+    "live",
+    2023
+   ],
+   "line": "(1201, 3093, 'From This Moment On (live from Miami/1999)', 'live', 2023),",
+   "artists": [
+    "Shania Twain",
+    "Backstreet Boys"
+   ],
+   "pair": [
+    "Shania Twain",
+    "Backstreet Boys"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3160,
+    4416,
+    "Hoy me voy al sol (live)",
+    "live",
+    2023
+   ],
+   "line": "(3160, 4416, 'Hoy me voy al sol (live)', 'live', 2023),",
+   "artists": [
+    "Bizarrap",
+    "Milo j"
+   ],
+   "pair": [
+    "Bizarrap",
+    "Milo j"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1900,
+    4538,
+    "Savoir aimer",
+    "song",
+    2025
+   ],
+   "line": "(1900, 4538, 'Savoir aimer', 'song', 2025),",
+   "artists": [
+    "Florent Pagny",
+    "Hiba Tawaji"
+   ],
+   "pair": [
+    "Florent Pagny",
+    "Hiba Tawaji"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1323,
+    5545,
+    "My Favorite Mistake",
+    "song",
+    2024
+   ],
+   "line": "(1323, 5545, 'My Favorite Mistake', 'song', 2024),",
+   "artists": [
+    "Sheryl Crow",
+    "John Mayer"
+   ],
+   "pair": [
+    "Sheryl Crow",
+    "John Mayer"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1310,
+    5545,
+    "Neon (live at Southern Ground Music & Food Festival, Nashville, TN, 09.22.2012)",
+    "live",
+    2023
+   ],
+   "line": "(1310, 5545, 'Neon (live at Southern Ground Music & Food Festival, Nashville, TN, 09.22.2012)', 'live', 2023),",
+   "artists": [
+    "Zac Brown Band",
+    "John Mayer"
+   ],
+   "pair": [
+    "Zac Brown Band",
+    "John Mayer"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3224,
+    5545,
+    "I’m Going Down",
+    "song",
+    2023
+   ],
+   "line": "(3224, 5545, 'I’m Going Down', 'song', 2023),",
+   "artists": [
+    "The Rolling Stones",
+    "John Mayer"
+   ],
+   "pair": [
+    "The Rolling Stones",
+    "John Mayer"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3224,
+    6430,
+    "I’m Going Down",
+    "song",
+    2023
+   ],
+   "line": "(3224, 6430, 'I’m Going Down', 'song', 2023),",
+   "artists": [
+    "The Rolling Stones",
+    "Gary Clark Jr."
+   ],
+   "pair": [
+    "The Rolling Stones",
+    "Gary Clark Jr."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5545,
+    6430,
+    "I’m Going Down",
+    "song",
+    2023
+   ],
+   "line": "(5545, 6430, 'I’m Going Down', 'song', 2023),",
+   "artists": [
+    "John Mayer",
+    "Gary Clark Jr."
+   ],
+   "pair": [
+    "John Mayer",
+    "Gary Clark Jr."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3072,
+    5151,
+    "Call on Me",
+    "song",
+    2024
+   ],
+   "line": "(3072, 5151, 'Call on Me', 'song', 2024),",
+   "artists": [
+    "Robin Thicke",
+    "Chicago"
+   ],
+   "pair": [
+    "Robin Thicke",
+    "Chicago"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3072,
+    5151,
+    "Saturday in the Park",
+    "song",
+    2024
+   ],
+   "line": "(3072, 5151, 'Saturday in the Park', 'song', 2024),",
+   "artists": [
+    "Robin Thicke",
+    "Chicago"
+   ],
+   "pair": [
+    "Robin Thicke",
+    "Chicago"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2429,
+    2584,
+    "YO TE ESPERARÉ - Live",
+    "live",
+    2026
+   ],
+   "line": "(2429, 2584, 'YO TE ESPERARÉ - Live', 'live', 2026),",
+   "artists": [
+    "Lola Indigo",
+    "Cali y El Dandee"
+   ],
+   "pair": [
+    "Lola Indigo",
+    "Cali y El Dandee"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    70,
+    650,
+    "Delilah (pull me out of this) / RATATA",
+    "song",
+    2023
+   ],
+   "line": "(70, 650, 'Delilah (pull me out of this) / RATATA', 'song', 2023),",
+   "artists": [
+    "Skrillex",
+    "Delilah Montagu"
+   ],
+   "pair": [
+    "Skrillex",
+    "Delilah Montagu"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    70,
+    1501,
+    "Delilah (pull me out of this) / RATATA",
+    "song",
+    2023
+   ],
+   "line": "(70, 1501, 'Delilah (pull me out of this) / RATATA', 'song', 2023),",
+   "artists": [
+    "Skrillex",
+    "Fred again.."
+   ],
+   "pair": [
+    "Skrillex",
+    "Fred again.."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    70,
+    1711,
+    "Delilah (pull me out of this) / RATATA",
+    "song",
+    2023
+   ],
+   "line": "(70, 1711, 'Delilah (pull me out of this) / RATATA', 'song', 2023),",
+   "artists": [
+    "Skrillex",
+    "Missy Elliott"
+   ],
+   "pair": [
+    "Skrillex",
+    "Missy Elliott"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    70,
+    5748,
+    "Delilah (pull me out of this) / RATATA",
+    "song",
+    2023
+   ],
+   "line": "(70, 5748, 'Delilah (pull me out of this) / RATATA', 'song', 2023),",
+   "artists": [
+    "Skrillex",
+    "Mr. Oizo"
+   ],
+   "pair": [
+    "Skrillex",
+    "Mr. Oizo"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    650,
+    1501,
+    "Delilah (pull me out of this) / RATATA",
+    "song",
+    2023
+   ],
+   "line": "(650, 1501, 'Delilah (pull me out of this) / RATATA', 'song', 2023),",
+   "artists": [
+    "Delilah Montagu",
+    "Fred again.."
+   ],
+   "pair": [
+    "Delilah Montagu",
+    "Fred again.."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    650,
+    1711,
+    "Delilah (pull me out of this) / RATATA",
+    "song",
+    2023
+   ],
+   "line": "(650, 1711, 'Delilah (pull me out of this) / RATATA', 'song', 2023),",
+   "artists": [
+    "Delilah Montagu",
+    "Missy Elliott"
+   ],
+   "pair": [
+    "Delilah Montagu",
+    "Missy Elliott"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    650,
+    5748,
+    "Delilah (pull me out of this) / RATATA",
+    "song",
+    2023
+   ],
+   "line": "(650, 5748, 'Delilah (pull me out of this) / RATATA', 'song', 2023),",
+   "artists": [
+    "Delilah Montagu",
+    "Mr. Oizo"
+   ],
+   "pair": [
+    "Delilah Montagu",
+    "Mr. Oizo"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1501,
+    1711,
+    "Delilah (pull me out of this) / RATATA",
+    "song",
+    2023
+   ],
+   "line": "(1501, 1711, 'Delilah (pull me out of this) / RATATA', 'song', 2023),",
+   "artists": [
+    "Fred again..",
+    "Missy Elliott"
+   ],
+   "pair": [
+    "Fred again..",
+    "Missy Elliott"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1501,
+    5748,
+    "Delilah (pull me out of this) / RATATA",
+    "song",
+    2023
+   ],
+   "line": "(1501, 5748, 'Delilah (pull me out of this) / RATATA', 'song', 2023),",
+   "artists": [
+    "Fred again..",
+    "Mr. Oizo"
+   ],
+   "pair": [
+    "Fred again..",
+    "Mr. Oizo"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1711,
+    5748,
+    "Delilah (pull me out of this) / RATATA",
+    "song",
+    2023
+   ],
+   "line": "(1711, 5748, 'Delilah (pull me out of this) / RATATA', 'song', 2023),",
+   "artists": [
+    "Missy Elliott",
+    "Mr. Oizo"
+   ],
+   "pair": [
+    "Missy Elliott",
+    "Mr. Oizo"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1842,
+    6684,
+    "Où va la vie",
+    "song",
+    2024
+   ],
+   "line": "(1842, 6684, 'Où va la vie', 'song', 2024),",
+   "artists": [
+    "IAM",
+    "Ibrahim Maalouf"
+   ],
+   "pair": [
+    "IAM",
+    "Ibrahim Maalouf"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3138,
+    3278,
+    "Buddy Holly",
+    "song",
+    2025
+   ],
+   "line": "(3138, 3278, 'Buddy Holly', 'song', 2025),",
+   "artists": [
+    "Olivia Rodrigo",
+    "Weezer"
+   ],
+   "pair": [
+    "Olivia Rodrigo",
+    "Weezer"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3138,
+    3278,
+    "Say It Ain’t So",
+    "song",
+    2025
+   ],
+   "line": "(3138, 3278, 'Say It Ain’t So', 'song', 2025),",
+   "artists": [
+    "Olivia Rodrigo",
+    "Weezer"
+   ],
+   "pair": [
+    "Olivia Rodrigo",
+    "Weezer"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1027,
+    3338,
+    "Five Years",
+    "song",
+    2025
+   ],
+   "line": "(1027, 3338, 'Five Years', 'song', 2025),",
+   "artists": [
+    "David Bowie",
+    "Arcade Fire"
+   ],
+   "pair": [
+    "David Bowie",
+    "Arcade Fire"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    134,
+    5982,
+    "Scars to Your Beautiful",
+    "song",
+    2023
+   ],
+   "line": "(134, 5982, 'Scars to Your Beautiful', 'song', 2023),",
+   "artists": [
+    "Alessia Cara",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "Alessia Cara",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5163,
+    5268,
+    "Don’t Give Up",
+    "song",
+    2023
+   ],
+   "line": "(5163, 5268, 'Don’t Give Up', 'song', 2023),",
+   "artists": [
+    "Peter Gabriel",
+    "Tracy Chapman"
+   ],
+   "pair": [
+    "Peter Gabriel",
+    "Tracy Chapman"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    495,
+    1375,
+    "Get Up, Stand Up",
+    "song",
+    2023
+   ],
+   "line": "(495, 1375, 'Get Up, Stand Up', 'song', 2023),",
+   "artists": [
+    "Youssou N'Dour",
+    "Sting"
+   ],
+   "pair": [
+    "Youssou N'Dour",
+    "Sting"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1375,
+    3228,
+    "Get Up, Stand Up",
+    "song",
+    2023
+   ],
+   "line": "(1375, 3228, 'Get Up, Stand Up', 'song', 2023),",
+   "artists": [
+    "Sting",
+    "Bruce Springsteen"
+   ],
+   "pair": [
+    "Sting",
+    "Bruce Springsteen"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1375,
+    5163,
+    "Get Up, Stand Up",
+    "song",
+    2023
+   ],
+   "line": "(1375, 5163, 'Get Up, Stand Up', 'song', 2023),",
+   "artists": [
+    "Sting",
+    "Peter Gabriel"
+   ],
+   "pair": [
+    "Sting",
+    "Peter Gabriel"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1375,
+    5268,
+    "Get Up, Stand Up",
+    "song",
+    2023
+   ],
+   "line": "(1375, 5268, 'Get Up, Stand Up', 'song', 2023),",
+   "artists": [
+    "Sting",
+    "Tracy Chapman"
+   ],
+   "pair": [
+    "Sting",
+    "Tracy Chapman"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5638,
+    5982,
+    "Bubbly",
+    "song",
+    2023
+   ],
+   "line": "(5638, 5982, 'Bubbly', 'song', 2023),",
+   "artists": [
+    "Colbie Caillat",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "Colbie Caillat",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    179,
+    6422,
+    "Laho",
+    "song",
+    2023
+   ],
+   "line": "(179, 6422, 'Laho', 'song', 2023),",
+   "artists": [
+    "Central Cee",
+    "Shallipopi"
+   ],
+   "pair": [
+    "Central Cee",
+    "Shallipopi"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    51,
+    2893,
+    "Underdog",
+    "song",
+    2023
+   ],
+   "line": "(51, 2893, 'Underdog', 'song', 2023),",
+   "artists": [
+    "Alicia Keys",
+    "Cazzu"
+   ],
+   "pair": [
+    "Alicia Keys",
+    "Cazzu"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    51,
+    2893,
+    "Nada",
+    "song",
+    2023
+   ],
+   "line": "(51, 2893, 'Nada', 'song', 2023),",
+   "artists": [
+    "Alicia Keys",
+    "Cazzu"
+   ],
+   "pair": [
+    "Alicia Keys",
+    "Cazzu"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1357,
+    1370,
+    "Could You Be Loved (live)",
+    "live",
+    2024
+   ],
+   "line": "(1357, 1370, 'Could You Be Loved (live)', 'live', 2024),",
+   "artists": [
+    "Ziggy Marley",
+    "Skip Marley"
+   ],
+   "pair": [
+    "Ziggy Marley",
+    "Skip Marley"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1501,
+    1708,
+    "2009 / Bleu (better with time)",
+    "song",
+    2023
+   ],
+   "line": "(1501, 1708, '2009 / Bleu (better with time)', 'song', 2023),",
+   "artists": [
+    "Fred again..",
+    "Four Tet"
+   ],
+   "pair": [
+    "Fred again..",
+    "Four Tet"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1277,
+    5557,
+    "I’m Still Standing",
+    "song",
+    2023
+   ],
+   "line": "(1277, 5557, 'I’m Still Standing', 'song', 2023),",
+   "artists": [
+    "Brandi Carlile",
+    "Annie Lennox"
+   ],
+   "pair": [
+    "Brandi Carlile",
+    "Annie Lennox"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1277,
+    5576,
+    "I’m Still Standing",
+    "song",
+    2023
+   ],
+   "line": "(1277, 5576, 'I’m Still Standing', 'song', 2023),",
+   "artists": [
+    "Brandi Carlile",
+    "Joni Mitchell"
+   ],
+   "pair": [
+    "Brandi Carlile",
+    "Joni Mitchell"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5557,
+    5576,
+    "I’m Still Standing",
+    "song",
+    2023
+   ],
+   "line": "(5557, 5576, 'I’m Still Standing', 'song', 2023),",
+   "artists": [
+    "Annie Lennox",
+    "Joni Mitchell"
+   ],
+   "pair": [
+    "Annie Lennox",
+    "Joni Mitchell"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    189,
+    1865,
+    "Echos 19",
+    "song",
+    2023
+   ],
+   "line": "(189, 1865, 'Echos 19', 'song', 2023),",
+   "artists": [
+    "Erykah Badu",
+    "The Alchemist"
+   ],
+   "pair": [
+    "Erykah Badu",
+    "The Alchemist"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1555,
+    1616,
+    "I Feel for You",
+    "song",
+    2023
+   ],
+   "line": "(1555, 1616, 'I Feel for You', 'song', 2023),",
+   "artists": [
+    "Chaka Khan",
+    "Nile Rodgers"
+   ],
+   "pair": [
+    "Chaka Khan",
+    "Nile Rodgers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    4538,
+    6684,
+    "Balad el tanaod",
+    "song",
+    2025
+   ],
+   "line": "(4538, 6684, 'Balad el tanaod', 'song', 2025),",
+   "artists": [
+    "Hiba Tawaji",
+    "Ibrahim Maalouf"
+   ],
+   "pair": [
+    "Hiba Tawaji",
+    "Ibrahim Maalouf"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1506,
+    4538,
+    "Le Radeau",
+    "song",
+    2025
+   ],
+   "line": "(1506, 4538, 'Le Radeau', 'song', 2025),",
+   "artists": [
+    "-M-",
+    "Hiba Tawaji"
+   ],
+   "pair": [
+    "-M-",
+    "Hiba Tawaji"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1506,
+    6684,
+    "Le Radeau",
+    "song",
+    2025
+   ],
+   "line": "(1506, 6684, 'Le Radeau', 'song', 2025),",
+   "artists": [
+    "-M-",
+    "Ibrahim Maalouf"
+   ],
+   "pair": [
+    "-M-",
+    "Ibrahim Maalouf"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    4538,
+    6684,
+    "Le Radeau",
+    "song",
+    2025
+   ],
+   "line": "(4538, 6684, 'Le Radeau', 'song', 2025),",
+   "artists": [
+    "Hiba Tawaji",
+    "Ibrahim Maalouf"
+   ],
+   "pair": [
+    "Hiba Tawaji",
+    "Ibrahim Maalouf"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5976,
+    5982,
+    "No Air",
+    "song",
+    2023
+   ],
+   "line": "(5976, 5982, 'No Air', 'song', 2023),",
+   "artists": [
+    "Jordin Sparks",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "Jordin Sparks",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1310,
+    5216,
+    "Sweet Emotion (live at Fenway Park, Boston, MA, 08.09.2015)",
+    "live",
+    2023
+   ],
+   "line": "(1310, 5216, 'Sweet Emotion (live at Fenway Park, Boston, MA, 08.09.2015)', 'live', 2023),",
+   "artists": [
+    "Zac Brown Band",
+    "Steven Tyler"
+   ],
+   "pair": [
+    "Zac Brown Band",
+    "Steven Tyler"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    248,
+    1199,
+    "Pancho & Lefty",
+    "song",
+    2023
+   ],
+   "line": "(248, 1199, 'Pancho & Lefty', 'song', 2023),",
+   "artists": [
+    "Willie Nelson",
+    "George Strait"
+   ],
+   "pair": [
+    "Willie Nelson",
+    "George Strait"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    248,
+    1199,
+    "Pancho & Lefty (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)",
+    "live",
+    2023
+   ],
+   "line": "(248, 1199, 'Pancho & Lefty (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)', 'live', 2023),",
+   "artists": [
+    "Willie Nelson",
+    "George Strait"
+   ],
+   "pair": [
+    "Willie Nelson",
+    "George Strait"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5151,
+    5723,
+    "Poem 58",
+    "song",
+    2024
+   ],
+   "line": "(5151, 5723, 'Poem 58', 'song', 2024),",
+   "artists": [
+    "Chicago",
+    "Steve Vai"
+   ],
+   "pair": [
+    "Chicago",
+    "Steve Vai"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5151,
+    5723,
+    "South California Purples",
+    "song",
+    2024
+   ],
+   "line": "(5151, 5723, 'South California Purples', 'song', 2024),",
+   "artists": [
+    "Chicago",
+    "Steve Vai"
+   ],
+   "pair": [
+    "Chicago",
+    "Steve Vai"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    74,
+    3484,
+    "Put Me Thru",
+    "song",
+    2025
+   ],
+   "line": "(74, 3484, 'Put Me Thru', 'song', 2025),",
+   "artists": [
+    "Anderson .Paak",
+    "Sheila E."
+   ],
+   "pair": [
+    "Anderson .Paak",
+    "Sheila E."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    74,
+    3484,
+    "Come Down",
+    "song",
+    2025
+   ],
+   "line": "(74, 3484, 'Come Down', 'song', 2025),",
+   "artists": [
+    "Anderson .Paak",
+    "Sheila E."
+   ],
+   "pair": [
+    "Anderson .Paak",
+    "Sheila E."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3441,
+    3827,
+    "Diamonds on the Soles of Her Shoes - Drums",
+    "song",
+    2023
+   ],
+   "line": "(3441, 3827, 'Diamonds on the Soles of Her Shoes - Drums', 'song', 2023),",
+   "artists": [
+    "Paul Simon",
+    "Ladysmith Black Mambazo"
+   ],
+   "pair": [
+    "Paul Simon",
+    "Ladysmith Black Mambazo"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    17,
+    6267,
+    "[talk]",
+    "song",
+    2025
+   ],
+   "line": "(17, 6267, '[talk]', 'song', 2025),",
+   "artists": [
+    "Billie Eilish",
+    "FINNEAS"
+   ],
+   "pair": [
+    "Billie Eilish",
+    "FINNEAS"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    17,
+    6267,
+    "WILDFLOWER",
+    "song",
+    2025
+   ],
+   "line": "(17, 6267, 'WILDFLOWER', 'song', 2025),",
+   "artists": [
+    "Billie Eilish",
+    "FINNEAS"
+   ],
+   "pair": [
+    "Billie Eilish",
+    "FINNEAS"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    17,
+    6267,
+    "THE GREATEST",
+    "song",
+    2025
+   ],
+   "line": "(17, 6267, 'THE GREATEST', 'song', 2025),",
+   "artists": [
+    "Billie Eilish",
+    "FINNEAS"
+   ],
+   "pair": [
+    "Billie Eilish",
+    "FINNEAS"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    17,
+    6267,
+    "BIRDS OF A FEATHER",
+    "song",
+    2025
+   ],
+   "line": "(17, 6267, 'BIRDS OF A FEATHER', 'song', 2025),",
+   "artists": [
+    "Billie Eilish",
+    "FINNEAS"
+   ],
+   "pair": [
+    "Billie Eilish",
+    "FINNEAS"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3361,
+    3473,
+    "Let Me Roll It",
+    "song",
+    2024
+   ],
+   "line": "(3361, 3473, 'Let Me Roll It', 'song', 2024),",
+   "artists": [
+    "Fiona Apple",
+    "The Roots"
+   ],
+   "pair": [
+    "Fiona Apple",
+    "The Roots"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    417,
+    1187,
+    "Save Me",
+    "song",
+    2025
+   ],
+   "line": "(417, 1187, 'Save Me', 'song', 2025),",
+   "artists": [
+    "Lana Del Rey",
+    "Jelly Roll"
+   ],
+   "pair": [
+    "Lana Del Rey",
+    "Jelly Roll"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1027,
+    5214,
+    "Medley: The Jean Genie / Love Me Do / The Jean Genie",
+    "song",
+    2023
+   ],
+   "line": "(1027, 5214, 'Medley: The Jean Genie / Love Me Do / The Jean Genie', 'song', 2023),",
+   "artists": [
+    "David Bowie",
+    "Jeff Beck"
+   ],
+   "pair": [
+    "David Bowie",
+    "Jeff Beck"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1027,
+    5214,
+    "Round and Round",
+    "song",
+    2023
+   ],
+   "line": "(1027, 5214, 'Round and Round', 'song', 2023),",
+   "artists": [
+    "David Bowie",
+    "Jeff Beck"
+   ],
+   "pair": [
+    "David Bowie",
+    "Jeff Beck"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Parchman Farm (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Parchman Farm (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Embryonic Journey (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Embryonic Journey (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "I'll Be Alright (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, \"I'll Be Alright (Live)\", 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Martha (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Martha (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "99 Year Blues (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, '99 Year Blues (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Carlos Fonseca (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Carlos Fonseca (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Let Us Get Together Right Down Her (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Let Us Get Together Right Down Her (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Third Week In The Chelsea (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Third Week In The Chelsea (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Walkin' Blues (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, \"Walkin' Blues (Live)\", 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Genesis (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Genesis (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "I Know You Rider (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'I Know You Rider (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Mariel (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Mariel (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Candy Man (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Candy Man (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Ice Age (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Ice Age (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Keep On Truckin' (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, \"Keep On Truckin' (Live)\", 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Papa John's Down Home Blues (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, \"Papa John's Down Home Blues (Live)\", 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "The Other Side Of This Life (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'The Other Side Of This Life (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Wooden Ships (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Wooden Ships (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Hesitation Blues (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Hesitation Blues (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "I See The Light (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'I See The Light (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Good Shepherd (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Good Shepherd (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "That's the Bag I'm In (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, \"That's the Bag I'm In (Live)\", 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "San Francisco Bay Blues (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'San Francisco Bay Blues (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Keep Your Lamps Trimmed And Burning (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, 'Keep Your Lamps Trimmed And Burning (Live)', 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "John's Other (Live)",
+    "live",
+    2025
+   ],
+   "line": "(5230, 5235, \"John's Other (Live)\", 'live', 2025),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Vampire Women - Live",
+    "live",
+    2023
+   ],
+   "line": "(5230, 5235, 'Vampire Women - Live', 'live', 2023),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Put It In My Hands - Live",
+    "live",
+    2023
+   ],
+   "line": "(5230, 5235, 'Put It In My Hands - Live', 'live', 2023),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Water Song - Live",
+    "live",
+    2023
+   ],
+   "line": "(5230, 5235, 'Water Song - Live', 'live', 2023),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Mann’s Fate - Live",
+    "live",
+    2023
+   ],
+   "line": "(5230, 5235, 'Mann’s Fate - Live', 'live', 2023),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Killing Time In The Crystal City - Live",
+    "live",
+    2023
+   ],
+   "line": "(5230, 5235, 'Killing Time In The Crystal City - Live', 'live', 2023),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1277,
+    1323,
+    "Rocket Man (I Think It’s Going to Be a Long, Long Time) (live)",
+    "live",
+    2023
+   ],
+   "line": "(1277, 1323, 'Rocket Man (I Think It’s Going to Be a Long, Long Time) (live)', 'live', 2023),",
+   "artists": [
+    "Brandi Carlile",
+    "Sheryl Crow"
+   ],
+   "pair": [
+    "Brandi Carlile",
+    "Sheryl Crow"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    77,
+    199,
+    "Stoned at the Nail Salon",
+    "song",
+    2023
+   ],
+   "line": "(77, 199, 'Stoned at the Nail Salon', 'song', 2023),",
+   "artists": [
+    "Lorde",
+    "Phoebe Bridgers"
+   ],
+   "pair": [
+    "Lorde",
+    "Phoebe Bridgers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5209,
+    5538,
+    "Wanton Song",
+    "song",
+    2025
+   ],
+   "line": "(5209, 5538, 'Wanton Song', 'song', 2025),",
+   "artists": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "pair": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5209,
+    5538,
+    "Jam (soundcheck)",
+    "song",
+    2025
+   ],
+   "line": "(5209, 5538, 'Jam (soundcheck)', 'song', 2025),",
+   "artists": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "pair": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5209,
+    5538,
+    "Hard to Handle",
+    "song",
+    2025
+   ],
+   "line": "(5209, 5538, 'Hard to Handle', 'song', 2025),",
+   "artists": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "pair": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5209,
+    5538,
+    "Bring It On Home",
+    "song",
+    2025
+   ],
+   "line": "(5209, 5538, 'Bring It On Home', 'song', 2025),",
+   "artists": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "pair": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5209,
+    5538,
+    "Wiser Time",
+    "song",
+    2025
+   ],
+   "line": "(5209, 5538, 'Wiser Time', 'song', 2025),",
+   "artists": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "pair": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5209,
+    5538,
+    "Band Intros",
+    "song",
+    2025
+   ],
+   "line": "(5209, 5538, 'Band Intros', 'song', 2025),",
+   "artists": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "pair": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5209,
+    5538,
+    "Mellow Down Easy",
+    "song",
+    2025
+   ],
+   "line": "(5209, 5538, 'Mellow Down Easy', 'song', 2025),",
+   "artists": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "pair": [
+    "Jimmy Page",
+    "The Black Crowes"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    870,
+    1501,
+    "ICEY.. / Flat Beat",
+    "song",
+    2023
+   ],
+   "line": "(870, 1501, 'ICEY.. / Flat Beat', 'song', 2023),",
+   "artists": [
+    "Bia",
+    "Fred again.."
+   ],
+   "pair": [
+    "Bia",
+    "Fred again.."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    870,
+    5748,
+    "ICEY.. / Flat Beat",
+    "song",
+    2023
+   ],
+   "line": "(870, 5748, 'ICEY.. / Flat Beat', 'song', 2023),",
+   "artists": [
+    "Bia",
+    "Mr. Oizo"
+   ],
+   "pair": [
+    "Bia",
+    "Mr. Oizo"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1501,
+    5748,
+    "ICEY.. / Flat Beat",
+    "song",
+    2023
+   ],
+   "line": "(1501, 5748, 'ICEY.. / Flat Beat', 'song', 2023),",
+   "artists": [
+    "Fred again..",
+    "Mr. Oizo"
+   ],
+   "pair": [
+    "Fred again..",
+    "Mr. Oizo"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1501,
+    5382,
+    "For Island Fires and Family / Lost / Dermot (See Yourself in My Eyes)",
+    "song",
+    2023
+   ],
+   "line": "(1501, 5382, 'For Island Fires and Family / Lost / Dermot (See Yourself in My Eyes)', 'song', 2023),",
+   "artists": [
+    "Fred again..",
+    "Dermot Kennedy"
+   ],
+   "pair": [
+    "Fred again..",
+    "Dermot Kennedy"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    70,
+    1728,
+    "Autobahn / Fine Day Anthem",
+    "song",
+    2023
+   ],
+   "line": "(70, 1728, 'Autobahn / Fine Day Anthem', 'song', 2023),",
+   "artists": [
+    "Skrillex",
+    "Boys Noize"
+   ],
+   "pair": [
+    "Skrillex",
+    "Boys Noize"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    70,
+    1748,
+    "Autobahn / Fine Day Anthem",
+    "song",
+    2023
+   ],
+   "line": "(70, 1748, 'Autobahn / Fine Day Anthem', 'song', 2023),",
+   "artists": [
+    "Skrillex",
+    "SCH"
+   ],
+   "pair": [
+    "Skrillex",
+    "SCH"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1728,
+    1748,
+    "Autobahn / Fine Day Anthem",
+    "song",
+    2023
+   ],
+   "line": "(1728, 1748, 'Autobahn / Fine Day Anthem', 'song', 2023),",
+   "artists": [
+    "Boys Noize",
+    "SCH"
+   ],
+   "pair": [
+    "Boys Noize",
+    "SCH"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1220,
+    1660,
+    "Without You",
+    "song",
+    2023
+   ],
+   "line": "(1220, 1660, 'Without You', 'song', 2023),",
+   "artists": [
+    "Elle King",
+    "Thomas Wesley"
+   ],
+   "pair": [
+    "Elle King",
+    "Thomas Wesley"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1206,
+    1270,
+    "Life In A Northern Town - Live",
+    "live",
+    2025
+   ],
+   "line": "(1206, 1270, 'Life In A Northern Town - Live', 'live', 2025),",
+   "artists": [
+    "Little Big Town",
+    "Sugarland"
+   ],
+   "pair": [
+    "Little Big Town",
+    "Sugarland"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1206,
+    5291,
+    "Life In A Northern Town - Live",
+    "live",
+    2025
+   ],
+   "line": "(1206, 5291, 'Life In A Northern Town - Live', 'live', 2025),",
+   "artists": [
+    "Little Big Town",
+    "Jake Owen"
+   ],
+   "pair": [
+    "Little Big Town",
+    "Jake Owen"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1270,
+    5291,
+    "Life In A Northern Town - Live",
+    "live",
+    2025
+   ],
+   "line": "(1270, 5291, 'Life In A Northern Town - Live', 'live', 2025),",
+   "artists": [
+    "Sugarland",
+    "Jake Owen"
+   ],
+   "pair": [
+    "Sugarland",
+    "Jake Owen"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1501,
+    3705,
+    "adore u / Bleu (better with time)",
+    "song",
+    2023
+   ],
+   "line": "(1501, 3705, 'adore u / Bleu (better with time)', 'song', 2023),",
+   "artists": [
+    "Fred again..",
+    "Obongjayar"
+   ],
+   "pair": [
+    "Fred again..",
+    "Obongjayar"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    650,
+    1501,
+    "Delilah (pull me out of this) / Billie (Loving Arms)",
+    "song",
+    2023
+   ],
+   "line": "(650, 1501, 'Delilah (pull me out of this) / Billie (Loving Arms)', 'song', 2023),",
+   "artists": [
+    "Delilah Montagu",
+    "Fred again.."
+   ],
+   "pair": [
+    "Delilah Montagu",
+    "Fred again.."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    54,
+    5546,
+    "Everybody Is a Star",
+    "song",
+    2025
+   ],
+   "line": "(54, 5546, 'Everybody Is a Star', 'song', 2025),",
+   "artists": [
+    "Stevie Wonder",
+    "Corinne Bailey Rae"
+   ],
+   "pair": [
+    "Stevie Wonder",
+    "Corinne Bailey Rae"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3440,
+    5201,
+    "I’d Rather Go Blind",
+    "song",
+    2025
+   ],
+   "line": "(3440, 5201, 'I’d Rather Go Blind', 'song', 2025),",
+   "artists": [
+    "Keith Richards",
+    "The Faces"
+   ],
+   "pair": [
+    "Keith Richards",
+    "The Faces"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3440,
+    5201,
+    "Sweet Little Rock and Roller",
+    "song",
+    2025
+   ],
+   "line": "(3440, 5201, 'Sweet Little Rock and Roller', 'song', 2025),",
+   "artists": [
+    "Keith Richards",
+    "The Faces"
+   ],
+   "pair": [
+    "Keith Richards",
+    "The Faces"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3440,
+    5201,
+    "Twistin’ the Night Away",
+    "song",
+    2025
+   ],
+   "line": "(3440, 5201, 'Twistin’ the Night Away', 'song', 2025),",
+   "artists": [
+    "Keith Richards",
+    "The Faces"
+   ],
+   "pair": [
+    "Keith Richards",
+    "The Faces"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    248,
+    3440,
+    "Live Forever",
+    "live",
+    2023
+   ],
+   "line": "(248, 3440, 'Live Forever', 'live', 2023),",
+   "artists": [
+    "Willie Nelson",
+    "Keith Richards"
+   ],
+   "pair": [
+    "Willie Nelson",
+    "Keith Richards"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    248,
+    3440,
+    "Live Forever (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)",
+    "live",
+    2023
+   ],
+   "line": "(248, 3440, 'Live Forever (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)', 'live', 2023),",
+   "artists": [
+    "Willie Nelson",
+    "Keith Richards"
+   ],
+   "pair": [
+    "Willie Nelson",
+    "Keith Richards"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    202,
+    5521,
+    "The Collector (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]",
+    "live",
+    2023
+   ],
+   "line": "(202, 5521, 'The Collector (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]', 'live', 2023),",
+   "artists": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "pair": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    202,
+    5521,
+    "Dandelion",
+    "song",
+    2023
+   ],
+   "line": "(202, 5521, 'Dandelion', 'song', 2023),",
+   "artists": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "pair": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    202,
+    5521,
+    "Masters Hands (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]",
+    "live",
+    2023
+   ],
+   "line": "(202, 5521, 'Masters Hands (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]', 'live', 2023),",
+   "artists": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "pair": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    202,
+    5521,
+    "Me and Jane Doe (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]",
+    "live",
+    2023
+   ],
+   "line": "(202, 5521, 'Me and Jane Doe (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]', 'live', 2023),",
+   "artists": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "pair": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    202,
+    5521,
+    "Time of the Assassins (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]",
+    "live",
+    2023
+   ],
+   "line": "(202, 5521, 'Time of the Assassins (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]', 'live', 2023),",
+   "artists": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "pair": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    202,
+    5521,
+    "Trick Pony",
+    "song",
+    2023
+   ],
+   "line": "(202, 5521, 'Trick Pony', 'song', 2023),",
+   "artists": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "pair": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    202,
+    5521,
+    "In the End",
+    "song",
+    2023
+   ],
+   "line": "(202, 5521, 'In the End', 'song', 2023),",
+   "artists": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "pair": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    202,
+    5521,
+    "Songs That We Sing",
+    "song",
+    2023
+   ],
+   "line": "(202, 5521, 'Songs That We Sing', 'song', 2023),",
+   "artists": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "pair": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    202,
+    5521,
+    "Vanities (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]",
+    "live",
+    2023
+   ],
+   "line": "(202, 5521, 'Vanities (Live) [01/27/10 KCRW \"Morning Becomes Eclectic, Santa Monica, CA]', 'live', 2023),",
+   "artists": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "pair": [
+    "Beck",
+    "Charlotte Gainsbourg"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    104,
+    6430,
+    "Let’s Go Crazy",
+    "song",
+    2023
+   ],
+   "line": "(104, 6430, 'Let’s Go Crazy', 'song', 2023),",
+   "artists": [
+    "H.E.R.",
+    "Gary Clark Jr."
+   ],
+   "pair": [
+    "H.E.R.",
+    "Gary Clark Jr."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1686,
+    6430,
+    "Night Life",
+    "song",
+    2023
+   ],
+   "line": "(1686, 6430, 'Night Life', 'song', 2023),",
+   "artists": [
+    "Leon Bridges",
+    "Gary Clark Jr."
+   ],
+   "pair": [
+    "Leon Bridges",
+    "Gary Clark Jr."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1325,
+    6390,
+    "Oh, Pretty Woman",
+    "song",
+    2023
+   ],
+   "line": "(1325, 6390, 'Oh, Pretty Woman', 'song', 2023),",
+   "artists": [
+    "Emmylou Harris",
+    "k.d. lang"
+   ],
+   "pair": [
+    "Emmylou Harris",
+    "k.d. lang"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1324,
+    1337,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(1324, 1337, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "Bonnie Raitt",
+    "John Fogerty"
+   ],
+   "pair": [
+    "Bonnie Raitt",
+    "John Fogerty"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1324,
+    3264,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(1324, 3264, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "Bonnie Raitt",
+    "Bob Dylan"
+   ],
+   "pair": [
+    "Bonnie Raitt",
+    "Bob Dylan"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1324,
+    5254,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(1324, 5254, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "Bonnie Raitt",
+    "The Byrds"
+   ],
+   "pair": [
+    "Bonnie Raitt",
+    "The Byrds"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1324,
+    6390,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(1324, 6390, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "Bonnie Raitt",
+    "k.d. lang"
+   ],
+   "pair": [
+    "Bonnie Raitt",
+    "k.d. lang"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1325,
+    1337,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(1325, 1337, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "Emmylou Harris",
+    "John Fogerty"
+   ],
+   "pair": [
+    "Emmylou Harris",
+    "John Fogerty"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1325,
+    5254,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(1325, 5254, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "Emmylou Harris",
+    "The Byrds"
+   ],
+   "pair": [
+    "Emmylou Harris",
+    "The Byrds"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1325,
+    6390,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(1325, 6390, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "Emmylou Harris",
+    "k.d. lang"
+   ],
+   "pair": [
+    "Emmylou Harris",
+    "k.d. lang"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1337,
+    3264,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(1337, 3264, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "John Fogerty",
+    "Bob Dylan"
+   ],
+   "pair": [
+    "John Fogerty",
+    "Bob Dylan"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1337,
+    5254,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(1337, 5254, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "John Fogerty",
+    "The Byrds"
+   ],
+   "pair": [
+    "John Fogerty",
+    "The Byrds"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1337,
+    6390,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(1337, 6390, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "John Fogerty",
+    "k.d. lang"
+   ],
+   "pair": [
+    "John Fogerty",
+    "k.d. lang"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3264,
+    5254,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(3264, 5254, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "Bob Dylan",
+    "The Byrds"
+   ],
+   "pair": [
+    "Bob Dylan",
+    "The Byrds"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3264,
+    6390,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(3264, 6390, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "Bob Dylan",
+    "k.d. lang"
+   ],
+   "pair": [
+    "Bob Dylan",
+    "k.d. lang"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5254,
+    6390,
+    "Only the Lonely",
+    "song",
+    2023
+   ],
+   "line": "(5254, 6390, 'Only the Lonely', 'song', 2023),",
+   "artists": [
+    "The Byrds",
+    "k.d. lang"
+   ],
+   "pair": [
+    "The Byrds",
+    "k.d. lang"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2665,
+    2682,
+    "METALI!! - 43 ver.",
+    "song",
+    2024
+   ],
+   "line": "(2665, 2682, 'METALI!! - 43 ver.', 'song', 2024),",
+   "artists": [
+    "Babymetal",
+    "Tom Morello"
+   ],
+   "pair": [
+    "Babymetal",
+    "Tom Morello"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    203,
+    3231,
+    "Breed",
+    "song",
+    2025
+   ],
+   "line": "(203, 3231, 'Breed', 'song', 2025),",
+   "artists": [
+    "St. Vincent",
+    "Nirvana"
+   ],
+   "pair": [
+    "St. Vincent",
+    "Nirvana"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1329,
+    3360,
+    "Help Me Make It Through the Night",
+    "song",
+    2023
+   ],
+   "line": "(1329, 3360, 'Help Me Make It Through the Night', 'song', 2023),",
+   "artists": [
+    "Kris Kristofferson",
+    "Norah Jones"
+   ],
+   "pair": [
+    "Kris Kristofferson",
+    "Norah Jones"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1326,
+    1329,
+    "Loving Her Was Easier (Than Anything I’ll Ever Do Again) (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)",
+    "live",
+    2023
+   ],
+   "line": "(1326, 1329, 'Loving Her Was Easier (Than Anything I’ll Ever Do Again) (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)', 'live', 2023),",
+   "artists": [
+    "Rosanne Cash",
+    "Kris Kristofferson"
+   ],
+   "pair": [
+    "Rosanne Cash",
+    "Kris Kristofferson"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1329,
+    3360,
+    "Help Me Make It Through the Night (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)",
+    "live",
+    2023
+   ],
+   "line": "(1329, 3360, 'Help Me Make It Through the Night (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)', 'live', 2023),",
+   "artists": [
+    "Kris Kristofferson",
+    "Norah Jones"
+   ],
+   "pair": [
+    "Kris Kristofferson",
+    "Norah Jones"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1326,
+    1329,
+    "Loving Her Was Easier (Than Anything I’ll Ever Do Again)",
+    "song",
+    2023
+   ],
+   "line": "(1326, 1329, 'Loving Her Was Easier (Than Anything I’ll Ever Do Again)', 'song', 2023),",
+   "artists": [
+    "Rosanne Cash",
+    "Kris Kristofferson"
+   ],
+   "pair": [
+    "Rosanne Cash",
+    "Kris Kristofferson"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    136,
+    5982,
+    "The Middle",
+    "song",
+    2023
+   ],
+   "line": "(136, 5982, 'The Middle', 'song', 2023),",
+   "artists": [
+    "Maren Morris",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "Maren Morris",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3231,
+    6300,
+    "Territorial Pissings",
+    "song",
+    2025
+   ],
+   "line": "(3231, 6300, 'Territorial Pissings', 'song', 2025),",
+   "artists": [
+    "Nirvana",
+    "Joan Jett"
+   ],
+   "pair": [
+    "Nirvana",
+    "Joan Jett"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1959,
+    4364,
+    "The End / [silence] / Incognito",
+    "live",
+    2024
+   ],
+   "line": "(1959, 4364, 'The End / [silence] / Incognito', 'live', 2024),",
+   "artists": [
+    "Justice",
+    "Thundercat"
+   ],
+   "pair": [
+    "Justice",
+    "Thundercat"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    17,
+    3385,
+    "when the party’s over",
+    "song",
+    2023
+   ],
+   "line": "(17, 3385, 'when the party’s over', 'song', 2023),",
+   "artists": [
+    "Billie Eilish",
+    "boygenius"
+   ],
+   "pair": [
+    "Billie Eilish",
+    "boygenius"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    4801,
+    4860,
+    "Nyawa dan Harapan",
+    "song",
+    2024
+   ],
+   "line": "(4801, 4860, 'Nyawa dan Harapan', 'song', 2024),",
+   "artists": [
+    "Raisa",
+    "Isyana Sarasvati"
+   ],
+   "pair": [
+    "Raisa",
+    "Isyana Sarasvati"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2420,
+    5511,
+    "Who Wants to Live Forever (live at “Teatro Del Silenzio” 2024, Tuscany)",
+    "live",
+    2025
+   ],
+   "line": "(2420, 5511, 'Who Wants to Live Forever (live at “Teatro Del Silenzio” 2024, Tuscany)', 'live', 2025),",
+   "artists": [
+    "Andrea Bocelli",
+    "Brian May"
+   ],
+   "pair": [
+    "Andrea Bocelli",
+    "Brian May"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1337,
+    5538,
+    "Have You Ever Seen the Rain",
+    "song",
+    2025
+   ],
+   "line": "(1337, 5538, 'Have You Ever Seen the Rain', 'song', 2025),",
+   "artists": [
+    "John Fogerty",
+    "The Black Crowes"
+   ],
+   "pair": [
+    "John Fogerty",
+    "The Black Crowes"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3639,
+    6628,
+    "Try Again (live at Wireless Festival 2005 / rehearsal & performance)",
+    "live",
+    2026
+   ],
+   "line": "(3639, 6628, 'Try Again (live at Wireless Festival 2005 / rehearsal & performance)', 'live', 2026),",
+   "artists": [
+    "Keane",
+    "Rufus Wainwright"
+   ],
+   "pair": [
+    "Keane",
+    "Rufus Wainwright"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1277,
+    6628,
+    "Who Know Where the Time Goes (live)",
+    "live",
+    2023
+   ],
+   "line": "(1277, 6628, 'Who Know Where the Time Goes (live)', 'live', 2023),",
+   "artists": [
+    "Brandi Carlile",
+    "Rufus Wainwright"
+   ],
+   "pair": [
+    "Brandi Carlile",
+    "Rufus Wainwright"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5934,
+    6308,
+    "Across the Universe",
+    "song",
+    2023
+   ],
+   "line": "(5934, 6308, 'Across the Universe', 'song', 2023),",
+   "artists": [
+    "Moby",
+    "Sean Ono Lennon"
+   ],
+   "pair": [
+    "Moby",
+    "Sean Ono Lennon"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    6308,
+    6628,
+    "Across the Universe",
+    "song",
+    2023
+   ],
+   "line": "(6308, 6628, 'Across the Universe', 'song', 2023),",
+   "artists": [
+    "Sean Ono Lennon",
+    "Rufus Wainwright"
+   ],
+   "pair": [
+    "Sean Ono Lennon",
+    "Rufus Wainwright"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    129,
+    1277,
+    "Nothing Compares 2 U (live)",
+    "live",
+    2023
+   ],
+   "line": "(129, 1277, 'Nothing Compares 2 U (live)', 'live', 2023),",
+   "artists": [
+    "P!nk",
+    "Brandi Carlile"
+   ],
+   "pair": [
+    "P!nk",
+    "Brandi Carlile"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    53,
+    1277,
+    "The Joke",
+    "song",
+    2023
+   ],
+   "line": "(53, 1277, 'The Joke', 'song', 2023),",
+   "artists": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "pair": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    53,
+    1277,
+    "Tiny Dancer",
+    "song",
+    2023
+   ],
+   "line": "(53, 1277, 'Tiny Dancer', 'song', 2023),",
+   "artists": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "pair": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    53,
+    1277,
+    "I’m Still Standing",
+    "song",
+    2023
+   ],
+   "line": "(53, 1277, 'I’m Still Standing', 'song', 2023),",
+   "artists": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "pair": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    53,
+    1277,
+    "Bennie and the Jets",
+    "song",
+    2023
+   ],
+   "line": "(53, 1277, 'Bennie and the Jets', 'song', 2023),",
+   "artists": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "pair": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    53,
+    1277,
+    "Don’t Let the Sun Go Down on Me",
+    "song",
+    2023
+   ],
+   "line": "(53, 1277, 'Don’t Let the Sun Go Down on Me', 'song', 2023),",
+   "artists": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "pair": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    53,
+    1277,
+    "You Without Me",
+    "song",
+    2023
+   ],
+   "line": "(53, 1277, 'You Without Me', 'song', 2023),",
+   "artists": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "pair": [
+    "Elton John",
+    "Brandi Carlile"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3333,
+    6555,
+    "Somethin’ Stupid",
+    "song",
+    2025
+   ],
+   "line": "(3333, 6555, 'Somethin’ Stupid', 'song', 2025),",
+   "artists": [
+    "Josh Homme",
+    "Orianthi"
+   ],
+   "pair": [
+    "Josh Homme",
+    "Orianthi"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3138,
+    5526,
+    "Just Like Heaven",
+    "song",
+    2025
+   ],
+   "line": "(3138, 5526, 'Just Like Heaven', 'song', 2025),",
+   "artists": [
+    "Olivia Rodrigo",
+    "Robert Smith"
+   ],
+   "pair": [
+    "Olivia Rodrigo",
+    "Robert Smith"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3138,
+    5526,
+    "Friday I'm in Love",
+    "song",
+    2023
+   ],
+   "line": "(3138, 5526, \"Friday I'm in Love\", 'song', 2023),",
+   "artists": [
+    "Olivia Rodrigo",
+    "Robert Smith"
+   ],
+   "pair": [
+    "Olivia Rodrigo",
+    "Robert Smith"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    10,
+    6569,
+    "What Is This Feeling? / Dear Old Shiz",
+    "song",
+    2025
+   ],
+   "line": "(10, 6569, 'What Is This Feeling? / Dear Old Shiz', 'song', 2025),",
+   "artists": [
+    "Ariana Grande",
+    "Cynthia Erivo"
+   ],
+   "pair": [
+    "Ariana Grande",
+    "Cynthia Erivo"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    10,
+    6569,
+    "Get Happy / Happy Days Are Here Again",
+    "song",
+    2025
+   ],
+   "line": "(10, 6569, 'Get Happy / Happy Days Are Here Again', 'song', 2025),",
+   "artists": [
+    "Ariana Grande",
+    "Cynthia Erivo"
+   ],
+   "pair": [
+    "Ariana Grande",
+    "Cynthia Erivo"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5513,
+    5872,
+    "Getting Away With It",
+    "song",
+    2025
+   ],
+   "line": "(5513, 5872, 'Getting Away With It', 'song', 2025),",
+   "artists": [
+    "Neil Tennant",
+    "Johnny Marr"
+   ],
+   "pair": [
+    "Neil Tennant",
+    "Johnny Marr"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3138,
+    5650,
+    "burning down the house",
+    "song",
+    2026
+   ],
+   "line": "(3138, 5650, 'burning down the house', 'song', 2026),",
+   "artists": [
+    "Olivia Rodrigo",
+    "David Byrne"
+   ],
+   "pair": [
+    "Olivia Rodrigo",
+    "David Byrne"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    179,
+    3693,
+    "Overseas",
+    "song",
+    2023
+   ],
+   "line": "(179, 3693, 'Overseas', 'song', 2023),",
+   "artists": [
+    "Central Cee",
+    "Young Adz"
+   ],
+   "pair": [
+    "Central Cee",
+    "Young Adz"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    3258,
+    3502,
+    "Maria Caracoles",
+    "song",
+    2023
+   ],
+   "line": "(3258, 3502, 'Maria Caracoles', 'song', 2023),",
+   "artists": [
+    "Santana",
+    "Tower of Power"
+   ],
+   "pair": [
+    "Santana",
+    "Tower of Power"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Have You Seen The Stars Tonite - Live",
+    "live",
+    2023
+   ],
+   "line": "(5230, 5235, 'Have You Seen The Stars Tonite - Live', 'live', 2023),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "America - Live",
+    "live",
+    2023
+   ],
+   "line": "(5230, 5235, 'America - Live', 'live', 2023),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5230,
+    5235,
+    "Volunteers - Live",
+    "live",
+    2023
+   ],
+   "line": "(5230, 5235, 'Volunteers - Live', 'live', 2023),",
+   "artists": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "pair": [
+    "Jefferson Airplane",
+    "Hot Tuna"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    248,
+    5138,
+    "Are There Any More Real Cowboys?",
+    "song",
+    2023
+   ],
+   "line": "(248, 5138, 'Are There Any More Real Cowboys?', 'song', 2023),",
+   "artists": [
+    "Willie Nelson",
+    "Stephen Stills"
+   ],
+   "pair": [
+    "Willie Nelson",
+    "Stephen Stills"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1025,
+    3484,
+    "Sign o’ the Times",
+    "song",
+    2023
+   ],
+   "line": "(1025, 3484, 'Sign o’ the Times', 'song', 2023),",
+   "artists": [
+    "Common",
+    "Sheila E."
+   ],
+   "pair": [
+    "Common",
+    "Sheila E."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5284,
+    5982,
+    "American Dreaming",
+    "song",
+    2023
+   ],
+   "line": "(5284, 5982, 'American Dreaming', 'song', 2023),",
+   "artists": [
+    "Sierra Ferrell",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "Sierra Ferrell",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    5576,
+    6392,
+    "A Case of You",
+    "song",
+    2023
+   ],
+   "line": "(5576, 6392, 'A Case of You', 'song', 2023),",
+   "artists": [
+    "Joni Mitchell",
+    "Marcus Mumford"
+   ],
+   "pair": [
+    "Joni Mitchell",
+    "Marcus Mumford"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    417,
+    6283,
+    "Blue Over You",
+    "song",
+    2024
+   ],
+   "line": "(417, 6283, 'Blue Over You', 'song', 2024),",
+   "artists": [
+    "Lana Del Rey",
+    "Mason Ramsey"
+   ],
+   "pair": [
+    "Lana Del Rey",
+    "Mason Ramsey"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1221,
+    1288,
+    "Told You I Could Drink (live)",
+    "live",
+    2023
+   ],
+   "line": "(1221, 1288, 'Told You I Could Drink (live)', 'live', 2023),",
+   "artists": [
+    "BRELAND",
+    "Charles Kelley"
+   ],
+   "pair": [
+    "BRELAND",
+    "Charles Kelley"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    1226,
+    1277,
+    "The Rose (Live)",
+    "live",
+    2023
+   ],
+   "line": "(1226, 1277, 'The Rose (Live)', 'live', 2023),",
+   "artists": [
+    "Wynonna Judd",
+    "Brandi Carlile"
+   ],
+   "pair": [
+    "Wynonna Judd",
+    "Brandi Carlile"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    248,
+    5189,
+    "Stardust (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)",
+    "live",
+    2023
+   ],
+   "line": "(248, 5189, 'Stardust (live at the Hollywood Bowl, Los Angeles, CA – April 30, 2023)', 'live', 2023),",
+   "artists": [
+    "Willie Nelson",
+    "Booker T. Jones"
+   ],
+   "pair": [
+    "Willie Nelson",
+    "Booker T. Jones"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    248,
+    5189,
+    "Stardust",
+    "song",
+    2023
+   ],
+   "line": "(248, 5189, 'Stardust', 'song', 2023),",
+   "artists": [
+    "Willie Nelson",
+    "Booker T. Jones"
+   ],
+   "pair": [
+    "Willie Nelson",
+    "Booker T. Jones"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    650,
+    1501,
+    "Delilah (pull me out of this) / solo",
+    "song",
+    2023
+   ],
+   "line": "(650, 1501, 'Delilah (pull me out of this) / solo', 'song', 2023),",
+   "artists": [
+    "Delilah Montagu",
+    "Fred again.."
+   ],
+   "pair": [
+    "Delilah Montagu",
+    "Fred again.."
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    417,
+    5953,
+    "hope is a dangerous thing for a woman like me to have – but I have it",
+    "song",
+    2024
+   ],
+   "line": "(417, 5953, 'hope is a dangerous thing for a woman like me to have – but I have it', 'song', 2024),",
+   "artists": [
+    "Lana Del Rey",
+    "Jack Antonoff"
+   ],
+   "pair": [
+    "Lana Del Rey",
+    "Jack Antonoff"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    16,
+    19,
+    "Die With a Smile",
+    "song",
+    2026
+   ],
+   "line": "(16, 19, 'Die With a Smile', 'song', 2026),",
+   "artists": [
+    "Bad Bunny",
+    "Lady Gaga"
+   ],
+   "pair": [
+    "Bad Bunny",
+    "Lady Gaga"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    150,
+    5982,
+    "Wouldn’t Change a Thing",
+    "song",
+    2026
+   ],
+   "line": "(150, 5982, 'Wouldn’t Change a Thing', 'song', 2026),",
+   "artists": [
+    "Demi Lovato",
+    "Jonas Brothers"
+   ],
+   "pair": [
+    "Demi Lovato",
+    "Jonas Brothers"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
+  },
+  {
+   "row": [
+    2166,
+    6094,
+    "Everybody's Talkin'",
+    "song",
+    2026
+   ],
+   "line": "(2166, 6094, \"Everybody's Talkin'\", 'song', 2026),",
+   "artists": [
+    "Zucchero",
+    "Francesco De Gregori"
+   ],
+   "pair": [
+    "Zucchero",
+    "Francesco De Gregori"
+   ],
+   "reason": "so ao vivo (participacao em show), nao e feat",
+   "searched": 2
   }
  ],
  "note": "cole a chave 'line' de volta em COLLABORATIONS para restaurar qualquer linha"

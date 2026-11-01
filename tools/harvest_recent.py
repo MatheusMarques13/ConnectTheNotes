@@ -105,6 +105,16 @@ def classify(title: str) -> tuple[str, str] | None:
     return base, "song"
 
 
+def is_live_recording(rec: dict) -> bool:
+    """A concert take titled like the studio song ("burning down the house",
+    Olivia Rodrigo with David Byrne at Governors Ball): MusicBrainz says so in
+    the disambiguation ("live, 2025-06-07") or in the release type."""
+    rels = rec.get("releases") or []
+    return bool(re.search(r"\blive\b", rec.get("disambiguation") or "", re.I)) or (
+        bool(rels) and all("Live" in ((r.get("release-group") or {}).get("secondary-types") or [])
+                           for r in rels))
+
+
 def _ssl_context() -> ssl.SSLContext:
     try:
         import certifi
@@ -252,6 +262,8 @@ def main() -> None:
             if not shaped:
                 continue
             title, ctype = shaped
+            if ctype == "song" and is_live_recording(rec):
+                ctype = "live"
             uniq = sorted(set(ids))
             for x in range(len(uniq)):
                 for y in range(x + 1, len(uniq)):
